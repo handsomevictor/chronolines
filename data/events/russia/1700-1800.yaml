@@ -1,0 +1,34 @@
+- id: russia_peter_great
+  year: 1700
+  endYear: 1725
+  level: 1
+  title: 彼得大帝改革时期
+  summary: 彼得一世推行西化改革，建立圣彼得堡，扩展波罗的海出海口，建立现代军队。
+  tags: [改革运动, 王朝更迭]
+  figures: [peter_great]
+
+- id: russia_great_northern_war
+  year: 1700
+  endYear: 1721
+  level: 1
+  title: 大北方战争
+  summary: 俄国与瑞典争夺波罗的海控制权，俄国胜利后获得出海口，大国地位确立。
+  tags: [战争, 条约外交]
+  figures: [peter_great]
+
+- id: russia_catherine_great
+  year: 1762
+  endYear: 1796
+  level: 1
+  title: 叶卡捷琳娜大帝执政
+  summary: 叶卡捷琳娜二世在位34年，扩张领土，推行开明专制，俄国进一步欧化。
+  tags: [王朝更迭, 改革运动]
+  figures: [catherine_great]
+
+- id: russia_pugachev_rebellion
+  year: 1773
+  endYear: 1775
+  level: 2
+  title: 普加乔夫起义
+  summary: 哥萨克领袖普加乔夫领导大规模农民起义，被镇压后普加乔夫被处决。
+  tags: [革命政变]

@@ -1,0 +1,40 @@
+- id: china_kangxi_death
+  year: 1722
+  level: 1
+  title: 康熙帝驾崩
+  summary: 康熙帝在位61年后驾崩，雍正帝继位，清朝进入新阶段。
+  tags: [王朝更迭]
+  figures: [kangxi]
+
+- id: china_yongzheng_reform
+  year: 1723
+  endYear: 1735
+  level: 2
+  title: 雍正朝改革
+  summary: 雍正帝推行摊丁入亩、改土归流等改革，强化中央集权。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_qianlong_reign
+  year: 1735
+  endYear: 1796
+  level: 1
+  title: 乾隆帝在位
+  summary: 乾隆帝在位61年，清朝疆域达到极盛，人口突破三亿。
+  tags: [王朝更迭]
+  figures: [qianlong]
+
+- id: china_macartney_mission
+  year: 1793
+  level: 2
+  title: 马戛尔尼使团访华
+  summary: 英国使团访华请求通商，乾隆帝拒绝，中英贸易谈判未能达成协议。
+  tags: [条约外交, 经济贸易]
+  related: [uk_industrial_revolution]
+
+- id: china_canton_system
+  year: 1757
+  level: 2
+  title: 广州一口通商
+  summary: 清廷规定西方商船只能在广州一口贸易，设立十三行管理对外贸易。
+  tags: [经济贸易, 条约外交]

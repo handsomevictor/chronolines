@@ -1,0 +1,48 @@
+- id: japan_russo_japanese
+  year: 1904
+  endYear: 1905
+  level: 1
+  title: 日俄战争
+  summary: 日本在满洲和朝鲜与俄国开战，对马海战中击败俄国舰队，签订《朴茨茅斯条约》。
+  tags: [战争, 条约外交]
+  related: [russia_russo_japanese_war]
+
+- id: japan_korea_annexation
+  year: 1910
+  level: 2
+  title: 吞并朝鲜
+  summary: 日本与朝鲜签订《日韩合并条约》，朝鲜成为日本殖民地。
+  tags: [殖民扩张, 条约外交]
+
+- id: japan_wwi_entry
+  year: 1914
+  level: 2
+  title: 参加第一次世界大战
+  summary: 日本以协约国身份参战，占领德国在中国和太平洋的殖民地。
+  tags: [战争, 殖民扩张]
+  related: [uk_wwi, germany_wwi]
+
+- id: japan_manchuria
+  year: 1931
+  level: 1
+  title: 九一八事变
+  summary: 日本关东军制造九一八事变，随后占领中国东北，建立满洲国傀儡政权。
+  tags: [战争, 殖民扩张]
+  related: [china_sino_japanese_war2]
+
+- id: japan_wwii_asia
+  year: 1937
+  endYear: 1945
+  level: 1
+  title: 太平洋战争
+  summary: 日本与中国全面开战，1941年发动珍珠港突袭，与美英开战，1945年战败投降。
+  tags: [战争]
+  related: [usa_wwii, china_sino_japanese_war2]
+
+- id: japan_wwii_end
+  year: 1945
+  level: 1
+  title: 战败投降
+  summary: 广岛长崎遭原子弹轰炸，苏联对日宣战，日本宣布无条件投降。
+  tags: [战争]
+  related: [usa_atomic_bomb]

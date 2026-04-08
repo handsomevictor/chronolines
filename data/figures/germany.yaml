@@ -1,0 +1,47 @@
+- id: frederick_great
+  name: 腓特烈大帝
+  birthYear: 1712
+  deathYear: 1786
+  level: 1
+  summary: 普鲁士国王，七年战争中以少胜多，将普鲁士确立为欧洲强国，重视文化艺术。
+  events: [germany_frederick_great, germany_seven_years_war_de]
+
+- id: bismarck
+  name: 奥托·冯·俾斯麦
+  birthYear: 1815
+  deathYear: 1898
+  level: 1
+  summary: 普鲁士-德国首相，通过外交和战争主导德意志统一，推行"铁血政策"。
+  events: [germany_unification, germany_bismarck_era]
+
+- id: kaiser_wilhelm_i
+  name: 威廉一世
+  birthYear: 1797
+  deathYear: 1888
+  level: 2
+  summary: 普鲁士国王和德意志帝国第一任皇帝，德意志统一的象征性领导人。
+  events: [germany_unification]
+
+- id: kaiser_wilhelm_ii
+  name: 威廉二世
+  birthYear: 1859
+  deathYear: 1941
+  level: 2
+  summary: 德意志帝国末代皇帝，一战期间实际掌控政策，战败后流亡荷兰。
+  events: [germany_wwi]
+
+- id: hitler
+  name: 阿道夫·希特勒
+  birthYear: 1889
+  deathYear: 1945
+  level: 1
+  summary: 纳粹德国领导人，发动第二次世界大战，主导大屠杀，1945年在柏林自杀身亡。
+  events: [germany_nazi_rise, germany_wwii, germany_holocaust]
+
+- id: rommel
+  name: 埃尔温·隆美尔
+  birthYear: 1891
+  deathYear: 1944
+  level: 2
+  summary: 德国陆军元帅，北非战场指挥官，被称为"沙漠之狐"，后被迫自杀。
+  events: [germany_wwii]

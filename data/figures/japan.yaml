@@ -1,0 +1,39 @@
+- id: meiji_emperor
+  name: 明治天皇
+  birthYear: 1852
+  deathYear: 1912
+  level: 1
+  summary: 日本第122代天皇，明治维新在其名义下推行，日本近代化的象征。
+  events: [japan_meiji_restoration]
+
+- id: okubo
+  name: 大久保利通
+  birthYear: 1830
+  deathYear: 1878
+  level: 2
+  summary: 明治维新三杰之一，主导政治改革和中央集权，推动日本近代化，遭暗杀身亡。
+  events: [japan_meiji_restoration]
+
+- id: ito
+  name: 伊藤博文
+  birthYear: 1841
+  deathYear: 1909
+  level: 2
+  summary: 明治时代政治家，起草明治宪法，四度出任首相，后在哈尔滨遭刺杀。
+  events: [japan_meiji_restoration, japan_constitution]
+
+- id: meiji_saigo
+  name: 西乡隆盛
+  birthYear: 1828
+  deathYear: 1877
+  level: 2
+  summary: 明治维新三杰之一，倒幕运动领袖，后因不满新政府政策发动西南战争，战败自刎。
+  events: [japan_meiji_restoration]
+
+- id: tojo_hideki
+  name: 东条英机
+  birthYear: 1884
+  deathYear: 1948
+  level: 2
+  summary: 日本战时首相兼陆军大臣，主导对美开战决策，战后以战争罪被处决。
+  events: [japan_wwii_asia]

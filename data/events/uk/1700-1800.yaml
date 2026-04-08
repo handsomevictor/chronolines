@@ -1,0 +1,40 @@
+- id: uk_act_of_union
+  year: 1707
+  level: 1
+  title: 英格兰与苏格兰合并
+  summary: 《联合法案》通过，英格兰与苏格兰合并为大不列颠王国。
+  tags: [条约外交, 王朝更迭]
+
+- id: uk_seven_years_war
+  year: 1756
+  endYear: 1763
+  level: 1
+  title: 七年战争
+  summary: 英国与法国等欧洲强国展开全球争霸，英国最终获得大量殖民地。
+  tags: [战争, 殖民扩张]
+  related: [france_seven_years_war]
+
+- id: uk_industrial_revolution
+  year: 1760
+  endYear: 1840
+  level: 1
+  title: 工业革命
+  summary: 英国率先发生工业革命，蒸汽机广泛应用，纺织、冶铁等行业机械化生产。
+  tags: [科技发明, 经济贸易]
+
+- id: uk_american_independence
+  year: 1776
+  endYear: 1783
+  level: 1
+  title: 美国独立战争
+  summary: 北美十三州宣布独立，经过战争后英国承认美国独立，签订《巴黎条约》。
+  tags: [战争, 条约外交]
+  related: [usa_independence]
+
+- id: uk_watt_steam
+  year: 1769
+  level: 2
+  title: 瓦特改良蒸汽机
+  summary: 詹姆斯·瓦特取得改良蒸汽机专利，为工业革命提供重要动力来源。
+  tags: [科技发明]
+  figures: [james_watt]

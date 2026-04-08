@@ -1,0 +1,49 @@
+- id: russia_1905_revolution
+  year: 1905
+  level: 2
+  title: 1905年革命
+  summary: 血腥星期日事件引发全国罢工和起义，沙皇颁布《十月宣言》，建立国家杜马。
+  tags: [革命政变]
+
+- id: russia_wwi
+  year: 1914
+  endYear: 1917
+  level: 1
+  title: 参加第一次世界大战
+  summary: 俄国以协约国身份参战，战线绵延，经济崩溃，加速了革命的爆发。
+  tags: [战争]
+  related: [germany_wwi, uk_wwi]
+
+- id: russia_revolution_1917
+  year: 1917
+  level: 1
+  title: 俄国革命
+  summary: 二月革命推翻沙皇，十月革命后布尔什维克夺取政权，苏维埃政权建立。
+  tags: [革命政变]
+  figures: [lenin, trotsky]
+
+- id: russia_civil_war
+  year: 1917
+  endYear: 1922
+  level: 1
+  title: 俄国内战
+  summary: 红军与白军展开内战，外国干涉军参与其中，红军最终获胜。
+  tags: [战争]
+  figures: [trotsky]
+
+- id: russia_ussr_founded
+  year: 1922
+  level: 1
+  title: 苏联成立
+  summary: 俄罗斯、乌克兰等苏维埃共和国联合成立苏维埃社会主义共和国联盟。
+  tags: [王朝更迭]
+
+- id: russia_wwii_east
+  year: 1941
+  endYear: 1945
+  level: 1
+  title: 苏德战争
+  summary: 德国入侵苏联，斯大林格勒战役成为转折点，苏联最终攻克柏林。
+  tags: [战争]
+  related: [germany_wwii]
+  figures: [zhukov]

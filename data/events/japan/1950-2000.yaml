@@ -1,0 +1,38 @@
+- id: japan_occupation
+  year: 1945
+  endYear: 1952
+  level: 1
+  title: 盟军占领
+  summary: 美国主导盟军占领日本，推行民主改革，制定新宪法，解散财阀。
+  tags: [改革运动, 条约外交]
+  related: [usa_cold_war]
+
+- id: japan_peace_treaty
+  year: 1951
+  level: 2
+  title: 《旧金山和约》签订
+  summary: 日本与盟国签订和平条约，结束战争状态，日本恢复主权，美军基地保留。
+  tags: [条约外交]
+
+- id: japan_economic_miracle
+  year: 1955
+  endYear: 1973
+  level: 1
+  title: 经济高速增长
+  summary: 日本经济年均增速超过10%，迅速成为世界第二大经济体，工业产品遍销全球。
+  tags: [经济贸易, 科技发明]
+
+- id: japan_tokyo_olympics
+  year: 1964
+  level: 2
+  title: 东京奥运会
+  summary: 日本举办东京奥运会，向世界展示战后复兴成就，新干线同年开通运营。
+  tags: [文化思想, 科技发明]
+
+- id: japan_bubble_economy
+  year: 1986
+  endYear: 1991
+  level: 2
+  title: 泡沫经济
+  summary: 日本股市和房地产价格急剧膨胀，随后泡沫破裂，日本进入长期经济停滞期。
+  tags: [经济贸易]

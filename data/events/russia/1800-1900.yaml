@@ -1,0 +1,41 @@
+- id: russia_napoleon_invasion
+  year: 1812
+  level: 1
+  title: 拿破仑入侵俄国
+  summary: 拿破仑率大军入侵俄国，占领莫斯科，随后被迫撤退，损失惨重。
+  tags: [战争]
+  related: [france_napoleon]
+  figures: [kutuzov]
+
+- id: russia_decembrist_revolt
+  year: 1825
+  level: 2
+  title: 十二月党人起义
+  summary: 俄国贵族军官发动起义，要求宪政改革，被镇压，领导者被处决或流放。
+  tags: [革命政变]
+
+- id: russia_crimean_war
+  year: 1853
+  endYear: 1856
+  level: 1
+  title: 克里米亚战争
+  summary: 俄国与英法土耳其联军在克里米亚半岛交战，俄国战败，签订《巴黎和约》。
+  tags: [战争, 条约外交]
+  related: [uk_crimean]
+
+- id: russia_serf_emancipation
+  year: 1861
+  level: 2
+  title: 废除农奴制
+  summary: 沙皇亚历山大二世颁布《解放法令》，正式废除农奴制度。
+  tags: [改革运动]
+  figures: [alexander_ii]
+
+- id: russia_russo_japanese_war
+  year: 1904
+  endYear: 1905
+  level: 1
+  title: 日俄战争
+  summary: 俄国在东北亚与日本争夺利益，战败后签订《朴茨茅斯条约》。
+  tags: [战争, 条约外交]
+  related: [japan_russo_japanese]

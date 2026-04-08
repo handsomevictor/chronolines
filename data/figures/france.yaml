@@ -1,0 +1,39 @@
+- id: louis_xvi
+  name: 路易十六
+  birthYear: 1754
+  deathYear: 1793
+  level: 2
+  summary: 法国国王，法国大革命期间被捕并送上断头台。
+  events: [france_revolution]
+
+- id: robespierre
+  name: 罗伯斯庇尔
+  birthYear: 1758
+  deathYear: 1794
+  level: 2
+  summary: 法国大革命期间雅各宾派领袖，主导恐怖统治，后被送上断头台。
+  events: [france_revolution]
+
+- id: napoleon
+  name: 拿破仑·波拿巴
+  birthYear: 1769
+  deathYear: 1821
+  level: 1
+  summary: 法国军事统帅和皇帝，建立帝国、颁布法典，最终在滑铁卢战败流放。
+  events: [france_napoleon]
+
+- id: napoleon_iii
+  name: 拿破仑三世
+  birthYear: 1808
+  deathYear: 1873
+  level: 2
+  summary: 法兰西第二帝国皇帝，推动巴黎城市改造，普法战争战败后被迫退位。
+  events: [france_second_empire, france_second_opium]
+
+- id: de_gaulle
+  name: 夏尔·戴高乐
+  birthYear: 1890
+  deathYear: 1970
+  level: 1
+  summary: 自由法国领导人，法兰西第五共和国创始人和首任总统。
+  events: [france_wwii, france_fifth_republic]

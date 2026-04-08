@@ -1,0 +1,38 @@
+- id: japan_perry_arrival
+  year: 1853
+  level: 1
+  title: 培里舰队来航
+  summary: 美国海军准将培里率蒸汽舰队抵达江户湾，要求日本开国，幕府被迫谈判。
+  tags: [条约外交, 经济贸易]
+  related: [usa_civil_war]
+
+- id: japan_ansei_treaties
+  year: 1858
+  level: 2
+  title: 安政五国条约
+  summary: 日本与美英法俄荷签订不平等条约，开放通商口岸，实行协定关税。
+  tags: [条约外交, 经济贸易]
+
+- id: japan_meiji_restoration
+  year: 1868
+  level: 1
+  title: 明治维新
+  summary: 倒幕运动成功，天皇亲政，日本开始大规模推行西化改革，废藩置县。
+  tags: [改革运动, 王朝更迭]
+  figures: [meiji_emperor, okubo, ito]
+
+- id: japan_meiji_expansion
+  year: 1894
+  endYear: 1895
+  level: 1
+  title: 甲午战争胜利
+  summary: 日本对清作战获胜，签订《马关条约》，获得台湾及赔款，跻身东亚强国。
+  tags: [战争, 条约外交]
+  related: [china_sino_japanese_war]
+
+- id: japan_constitution
+  year: 1889
+  level: 2
+  title: 明治宪法颁布
+  summary: 日本颁布《大日本帝国宪法》，建立议会制度，但天皇握有最高权力。
+  tags: [改革运动]

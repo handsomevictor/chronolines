@@ -1,0 +1,47 @@
+- id: washington
+  name: 乔治·华盛顿
+  birthYear: 1732
+  deathYear: 1799
+  level: 1
+  summary: 美国独立战争统帅，美国第一任总统，被称为"国父"之一。
+  events: [usa_independence, usa_first_president]
+
+- id: jefferson
+  name: 托马斯·杰斐逊
+  birthYear: 1743
+  deathYear: 1826
+  level: 1
+  summary: 《独立宣言》主要起草人，美国第三任总统，主导路易斯安那购地。
+  events: [usa_independence, usa_louisiana_purchase]
+
+- id: lincoln
+  name: 亚伯拉罕·林肯
+  birthYear: 1809
+  deathYear: 1865
+  level: 1
+  summary: 美国第16任总统，领导北方赢得内战，发布《解放宣言》，遇刺身亡。
+  events: [usa_civil_war, usa_emancipation]
+
+- id: roosevelt_fdr
+  name: 富兰克林·罗斯福
+  birthYear: 1882
+  deathYear: 1945
+  level: 1
+  summary: 美国第32任总统，推行新政应对大萧条，领导美国参加二战。
+  events: [usa_new_deal, usa_wwii]
+
+- id: eisenhower
+  name: 德怀特·艾森豪威尔
+  birthYear: 1890
+  deathYear: 1969
+  level: 2
+  summary: 二战欧洲盟军最高统帅，后任美国第34任总统。
+  events: [usa_wwii]
+
+- id: mlk
+  name: 马丁·路德·金
+  birthYear: 1929
+  deathYear: 1968
+  level: 1
+  summary: 美国民权运动领袖，以非暴力方式推动种族平等，发表"我有一个梦想"演讲，遇刺身亡。
+  events: [usa_civil_rights]

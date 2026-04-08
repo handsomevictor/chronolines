@@ -1,0 +1,43 @@
+- id: germany_wwi
+  year: 1914
+  endYear: 1918
+  level: 1
+  title: 第一次世界大战
+  summary: 德国以同盟国身份参战，发动西线进攻，战败后签订《凡尔赛条约》，割地赔款。
+  tags: [战争, 条约外交]
+  related: [france_wwi, uk_wwi, russia_wwi]
+  figures: [kaiser_wilhelm_ii]
+
+- id: germany_weimar_republic
+  year: 1919
+  endYear: 1933
+  level: 2
+  title: 魏玛共和国
+  summary: 德国战后建立议会共和国，面临经济危机和政治动荡，最终被纳粹夺权。
+  tags: [王朝更迭, 改革运动]
+
+- id: germany_nazi_rise
+  year: 1933
+  level: 1
+  title: 纳粹党执政
+  summary: 希特勒出任总理，纳粹党通过《授权法》取得独裁权力，建立一党专政。
+  tags: [革命政变, 王朝更迭]
+  figures: [hitler]
+
+- id: germany_wwii
+  year: 1939
+  endYear: 1945
+  level: 1
+  title: 第二次世界大战
+  summary: 德国发动闪电战入侵波兰，引发欧战，1941年入侵苏联，1945年战败投降。
+  tags: [战争]
+  related: [russia_wwii_east, uk_wwii, france_wwii, usa_wwii]
+  figures: [hitler, rommel]
+
+- id: germany_holocaust
+  year: 1941
+  endYear: 1945
+  level: 1
+  title: 大屠杀
+  summary: 纳粹德国在欧洲各地建立灭绝营，对犹太人及其他群体实施系统性屠杀。
+  tags: [战争]

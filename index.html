@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chronolines — 多轨道历史时间线</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-left">
+      <h1 class="app-title">Chronolines</h1>
+      <span class="app-subtitle">多轨道历史时间线 · 1700–2000</span>
+    </div>
+    <div class="header-right">
+      <div class="zoom-controls">
+        <button id="btn-zoom-in" class="ctrl-btn" title="放大">+</button>
+        <button id="btn-zoom-reset" class="ctrl-btn" title="重置视图">重置</button>
+        <button id="btn-zoom-out" class="ctrl-btn" title="缩小">−</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="tag-filter-bar" id="tag-filter-bar">
+    <span class="filter-label">筛选：</span>
+    <button class="tag-btn active" data-tag="all">全部</button>
+    <button class="tag-btn" data-tag="战争">战争</button>
+    <button class="tag-btn" data-tag="条约外交">条约外交</button>
+    <button class="tag-btn" data-tag="革命政变">革命政变</button>
+    <button class="tag-btn" data-tag="改革运动">改革运动</button>
+    <button class="tag-btn" data-tag="经济贸易">经济贸易</button>
+    <button class="tag-btn" data-tag="科技发明">科技发明</button>
+    <button class="tag-btn" data-tag="文化思想">文化思想</button>
+    <button class="tag-btn" data-tag="王朝更迭">王朝更迭</button>
+    <button class="tag-btn" data-tag="殖民扩张">殖民扩张</button>
+  </div>
+
+  <div class="timeline-container" id="timeline-container">
+    <div class="track-labels" id="track-labels"></div>
+    <div class="canvas-wrapper" id="canvas-wrapper">
+      <svg id="timeline-svg" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <filter id="glow">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
+            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          </filter>
+        </defs>
+        <g id="svg-content">
+          <g id="grid-layer"></g>
+          <g id="arcs-layer"></g>
+          <g id="tracks-layer"></g>
+          <g id="events-layer"></g>
+          <g id="labels-layer"></g>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <div id="detail-panel" class="detail-panel hidden">
+    <button class="detail-close" id="detail-close">×</button>
+    <div class="detail-content" id="detail-content"></div>
+  </div>
+
+  <script src="js/tooltip.js"></script>
+  <script src="js/layout.js"></script>
+  <script src="js/canvas.js"></script>
+  <script src="js/controls.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+- id: france_seven_years_war
+  year: 1756
+  endYear: 1763
+  level: 1
+  title: 七年战争
+  summary: 法国与英国争夺殖民地，战败后丧失北美和印度大部分殖民地。
+  tags: [战争, 殖民扩张]
+  related: [uk_seven_years_war]
+
+- id: france_revolution
+  year: 1789
+  endYear: 1799
+  level: 1
+  title: 法国大革命
+  summary: 路易十六被捕并处决，封建制度瓦解，共和国成立，社会结构发生根本变化。
+  tags: [革命政变, 文化思想]
+  figures: [robespierre, louis_xvi]
+
+- id: france_declaration_rights
+  year: 1789
+  level: 2
+  title: 《人权和公民权宣言》发布
+  summary: 国民议会通过《人权和公民权宣言》，宣示自由、平等和主权在民原则。
+  tags: [文化思想, 改革运动]
+
+- id: france_american_alliance
+  year: 1778
+  level: 2
+  title: 法美同盟
+  summary: 法国与北美殖民地签订同盟条约，向美国独立战争提供军事和财政支援。
+  tags: [条约外交, 战争]
+  related: [usa_independence]

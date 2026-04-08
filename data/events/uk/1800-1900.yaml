@@ -1,0 +1,51 @@
+- id: uk_napoleonic_wars
+  year: 1803
+  endYear: 1815
+  level: 1
+  title: 拿破仑战争
+  summary: 英国主导反法同盟，特拉法尔加海战确立英国海上霸权，滑铁卢之战结束战事。
+  tags: [战争]
+  related: [france_napoleon]
+  figures: [wellington, nelson]
+
+- id: uk_opium_war
+  year: 1840
+  endYear: 1842
+  level: 1
+  title: 第一次鸦片战争
+  summary: 英国对华宣战，签订《南京条约》，获得香港岛及通商口岸权益。
+  tags: [战争, 条约外交, 殖民扩张]
+  related: [opium_war_1]
+  figures: [palmerston]
+
+- id: uk_reform_act
+  year: 1832
+  level: 2
+  title: 改革法案
+  summary: 议会改革法案通过，扩大选举权，调整选区，推进议会民主化进程。
+  tags: [改革运动]
+
+- id: uk_abolition_slavery
+  year: 1833
+  level: 2
+  title: 废除奴隶制
+  summary: 《奴隶制废除法》通过，大英帝国境内奴隶制度正式废除。
+  tags: [改革运动]
+
+- id: uk_second_opium
+  year: 1856
+  endYear: 1860
+  level: 1
+  title: 第二次鸦片战争
+  summary: 英法联军攻入中国，签订《北京条约》，获得更多通商权益。
+  tags: [战争, 条约外交, 殖民扩张]
+  related: [opium_war_2]
+
+- id: uk_victoria_reign
+  year: 1837
+  endYear: 1901
+  level: 1
+  title: 维多利亚时代
+  summary: 维多利亚女王在位64年，英国工业和帝国实力达到顶峰，殖民地遍及全球。
+  tags: [王朝更迭, 殖民扩张]
+  figures: [queen_victoria]

@@ -1,0 +1,42 @@
+- id: france_wwi
+  year: 1914
+  endYear: 1918
+  level: 1
+  title: 第一次世界大战
+  summary: 法国本土成为主战场，凡尔登等战役造成巨大伤亡，战后收复阿尔萨斯-洛林。
+  tags: [战争]
+  related: [germany_wwi, uk_wwi]
+
+- id: france_versailles
+  year: 1919
+  level: 2
+  title: 《凡尔赛条约》签订
+  summary: 巴黎和会在法国召开，签订《凡尔赛条约》，确定战后欧洲秩序。
+  tags: [条约外交]
+  related: [germany_wwi]
+
+- id: france_maginot_line
+  year: 1930
+  endYear: 1936
+  level: 3
+  title: 马其诺防线建造
+  summary: 法国沿德法边境建造大规模防御工事体系，旨在防范德国入侵。
+  tags: [战争]
+
+- id: france_wwii
+  year: 1939
+  endYear: 1945
+  level: 1
+  title: 第二次世界大战
+  summary: 法国1940年沦陷，维希政府成立，戴高乐领导自由法国继续抵抗，1944年光复。
+  tags: [战争]
+  related: [germany_wwii, uk_wwii]
+  figures: [de_gaulle]
+
+- id: france_suez
+  year: 1956
+  level: 2
+  title: 参与苏伊士运河危机
+  summary: 法国与英国、以色列联合入侵埃及，迫于国际压力撤军。
+  tags: [战争, 条约外交]
+  related: [uk_suez_crisis]

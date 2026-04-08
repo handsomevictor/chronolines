@@ -1,0 +1,55 @@
+- id: china_prc_founded
+  year: 1949
+  level: 1
+  title: 中华人民共和国成立
+  summary: 中国人民政治协商会议召开，中华人民共和国正式宣告成立。
+  tags: [王朝更迭, 革命政变]
+  figures: [mao_zedong]
+
+- id: china_korean_war
+  year: 1950
+  endYear: 1953
+  level: 1
+  title: 抗美援朝
+  summary: 中国人民志愿军赴朝参战，与联合国军对峙，1953年签订停战协定。
+  tags: [战争]
+  related: [usa_korean_war]
+
+- id: china_great_leap
+  year: 1958
+  endYear: 1960
+  level: 2
+  title: 大跃进
+  summary: 大规模工农业生产运动，目标未能实现，随后出现严重饥荒，各方记载数字存在差异。
+  tags: [改革运动, 经济贸易]
+
+- id: china_cultural_revolution
+  year: 1966
+  endYear: 1976
+  level: 1
+  title: 文化大革命
+  summary: 全国性政治运动，大量文化遗产遭受破坏，各方对运动性质评价存在分歧。
+  tags: [革命政变, 文化思想]
+
+- id: china_reform_opening
+  year: 1978
+  level: 1
+  title: 改革开放
+  summary: 中共十一届三中全会确立改革开放路线，中国开始大规模经济改革。
+  tags: [改革运动, 经济贸易]
+  figures: [deng_xiaoping]
+
+- id: china_tiananmen
+  year: 1989
+  level: 2
+  title: 1989年政治风波
+  summary: 北京天安门广场发生大规模学生示威，随后政府实施戒严，各方记载存在差异。
+  tags: [革命政变]
+
+- id: china_hk_handover
+  year: 1997
+  level: 2
+  title: 香港回归
+  summary: 英国将香港主权移交中国，香港成为特别行政区，实行"一国两制"。
+  tags: [条约外交]
+  related: [uk_hk_handover]

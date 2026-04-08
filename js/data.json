@@ -1,0 +1,2648 @@
+{
+  "tracks": [
+    {
+      "id": "china",
+      "name": "中国",
+      "color": "#c0392b",
+      "order": 1
+    },
+    {
+      "id": "uk",
+      "name": "英国",
+      "color": "#2980b9",
+      "order": 2
+    },
+    {
+      "id": "france",
+      "name": "法国",
+      "color": "#8e44ad",
+      "order": 3
+    },
+    {
+      "id": "usa",
+      "name": "美国",
+      "color": "#27ae60",
+      "order": 4
+    },
+    {
+      "id": "russia",
+      "name": "俄国",
+      "color": "#e67e22",
+      "order": 5
+    },
+    {
+      "id": "germany",
+      "name": "德国",
+      "color": "#7f8c8d",
+      "order": 6
+    },
+    {
+      "id": "japan",
+      "name": "日本",
+      "color": "#d35400",
+      "order": 7
+    }
+  ],
+  "events": {
+    "china": [
+      {
+        "id": "china_kangxi_death",
+        "year": 1722,
+        "level": 1,
+        "title": "康熙帝驾崩",
+        "summary": "康熙帝在位61年后驾崩，雍正帝继位，清朝进入新阶段。",
+        "tags": [
+          "王朝更迭"
+        ],
+        "figures": [
+          "kangxi"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_yongzheng_reform",
+        "year": 1723,
+        "endYear": 1735,
+        "level": 2,
+        "title": "雍正朝改革",
+        "summary": "雍正帝推行摊丁入亩、改土归流等改革，强化中央集权。",
+        "tags": [
+          "改革运动"
+        ],
+        "figures": [
+          "yongzheng"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_qianlong_reign",
+        "year": 1735,
+        "endYear": 1796,
+        "level": 1,
+        "title": "乾隆帝在位",
+        "summary": "乾隆帝在位61年，清朝疆域达到极盛，人口突破三亿。",
+        "tags": [
+          "王朝更迭"
+        ],
+        "figures": [
+          "qianlong"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_macartney_mission",
+        "year": 1793,
+        "level": 2,
+        "title": "马戛尔尼使团访华",
+        "summary": "英国使团访华请求通商，乾隆帝拒绝，中英贸易谈判未能达成协议。",
+        "tags": [
+          "条约外交",
+          "经济贸易"
+        ],
+        "related": [
+          "uk_industrial_revolution"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_canton_system",
+        "year": 1757,
+        "level": 2,
+        "title": "广州一口通商",
+        "summary": "清廷规定西方商船只能在广州一口贸易，设立十三行管理对外贸易。",
+        "tags": [
+          "经济贸易",
+          "条约外交"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "opium_war_1",
+        "year": 1840,
+        "endYear": 1842,
+        "level": 1,
+        "title": "第一次鸦片战争",
+        "summary": "英国对华宣战，清军战败，签订《南京条约》割让香港岛、开放五口通商。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "uk_opium_war"
+        ],
+        "figures": [
+          "linzexu",
+          "daoguang"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_taiping",
+        "year": 1850,
+        "endYear": 1864,
+        "level": 1,
+        "title": "太平天国运动",
+        "summary": "洪秀全建立太平天国，与清廷长期对抗，各方记载伤亡人数存在差异。",
+        "tags": [
+          "革命政变"
+        ],
+        "figures": [
+          "hong_xiuquan"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "opium_war_2",
+        "year": 1856,
+        "endYear": 1860,
+        "level": 1,
+        "title": "第二次鸦片战争",
+        "summary": "英法联军攻入北京，火烧圆明园，清廷签订《北京条约》。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "uk_second_opium",
+          "france_second_opium"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_self_strengthening",
+        "year": 1861,
+        "endYear": 1895,
+        "level": 2,
+        "title": "洋务运动",
+        "summary": "清廷推行洋务运动，引进西方技术兴办军工、民用企业，建立近代海军。",
+        "tags": [
+          "改革运动",
+          "科技发明"
+        ],
+        "figures": [
+          "zeng_guofan",
+          "li_hongzhang"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_sino_japanese_war",
+        "year": 1894,
+        "endYear": 1895,
+        "level": 1,
+        "title": "甲午战争",
+        "summary": "清朝与日本因朝鲜问题开战，清军战败，签订《马关条约》割让台湾。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "japan_meiji_expansion"
+        ],
+        "figures": [
+          "li_hongzhang"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_hundred_days",
+        "year": 1898,
+        "level": 2,
+        "title": "戊戌变法",
+        "summary": "光绪帝支持康有为等推行变法，历时103天后被慈禧太后终止。",
+        "tags": [
+          "改革运动"
+        ],
+        "figures": [
+          "guangxu",
+          "kang_youwei"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_boxer_uprising",
+        "year": 1900,
+        "level": 1,
+        "title": "义和团运动与八国联军",
+        "summary": "义和团运动兴起，八国联军攻入北京，清廷签订《辛丑条约》。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_qing_end",
+        "year": 1912,
+        "level": 1,
+        "title": "清朝灭亡与中华民国成立",
+        "summary": "辛亥革命后清帝退位，中华民国宣告成立，孙中山就任临时大总统。",
+        "tags": [
+          "革命政变",
+          "王朝更迭"
+        ],
+        "figures": [
+          "sun_yatsen"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_may_fourth",
+        "year": 1919,
+        "level": 1,
+        "title": "五四运动",
+        "summary": "巴黎和会中国外交失败，北京学生发起示威，引发全国范围的文化运动。",
+        "tags": [
+          "改革运动",
+          "文化思想"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_cpc_founded",
+        "year": 1921,
+        "level": 2,
+        "title": "中国共产党成立",
+        "summary": "中国共产党在上海召开第一次全国代表大会，正式宣告成立。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_northern_expedition",
+        "year": 1926,
+        "endYear": 1928,
+        "level": 2,
+        "title": "北伐战争",
+        "summary": "国民革命军进行北伐，统一中国南方，国民政府定都南京。",
+        "tags": [
+          "战争"
+        ],
+        "figures": [
+          "chiang_kaishek"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_sino_japanese_war2",
+        "year": 1937,
+        "endYear": 1945,
+        "level": 1,
+        "title": "抗日战争",
+        "summary": "卢沟桥事变后中日全面开战，持续八年，各方记载伤亡数字存在差异。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "japan_wwii_asia"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_prc_founded",
+        "year": 1949,
+        "level": 1,
+        "title": "中华人民共和国成立",
+        "summary": "中国人民政治协商会议召开，中华人民共和国正式宣告成立。",
+        "tags": [
+          "王朝更迭",
+          "革命政变"
+        ],
+        "figures": [
+          "mao_zedong"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_korean_war",
+        "year": 1950,
+        "endYear": 1953,
+        "level": 1,
+        "title": "抗美援朝",
+        "summary": "中国人民志愿军赴朝参战，与联合国军对峙，1953年签订停战协定。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "usa_korean_war"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_great_leap",
+        "year": 1958,
+        "endYear": 1960,
+        "level": 2,
+        "title": "大跃进",
+        "summary": "大规模工农业生产运动，目标未能实现，随后出现严重饥荒，各方记载数字存在差异。",
+        "tags": [
+          "改革运动",
+          "经济贸易"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_cultural_revolution",
+        "year": 1966,
+        "endYear": 1976,
+        "level": 1,
+        "title": "文化大革命",
+        "summary": "全国性政治运动，大量文化遗产遭受破坏，各方对运动性质评价存在分歧。",
+        "tags": [
+          "革命政变",
+          "文化思想"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_reform_opening",
+        "year": 1978,
+        "level": 1,
+        "title": "改革开放",
+        "summary": "中共十一届三中全会确立改革开放路线，中国开始大规模经济改革。",
+        "tags": [
+          "改革运动",
+          "经济贸易"
+        ],
+        "figures": [
+          "deng_xiaoping"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_tiananmen",
+        "year": 1989,
+        "level": 2,
+        "title": "1989年政治风波",
+        "summary": "北京天安门广场发生大规模学生示威，随后政府实施戒严，各方记载存在差异。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "china"
+      },
+      {
+        "id": "china_hk_handover",
+        "year": 1997,
+        "level": 2,
+        "title": "香港回归",
+        "summary": "英国将香港主权移交中国，香港成为特别行政区，实行\"一国两制\"。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "uk_hk_handover"
+        ],
+        "track": "china"
+      }
+    ],
+    "uk": [
+      {
+        "id": "uk_act_of_union",
+        "year": 1707,
+        "level": 1,
+        "title": "英格兰与苏格兰合并",
+        "summary": "《联合法案》通过，英格兰与苏格兰合并为大不列颠王国。",
+        "tags": [
+          "条约外交",
+          "王朝更迭"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_seven_years_war",
+        "year": 1756,
+        "endYear": 1763,
+        "level": 1,
+        "title": "七年战争",
+        "summary": "英国与法国等欧洲强国展开全球争霸，英国最终获得大量殖民地。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "related": [
+          "france_seven_years_war"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_industrial_revolution",
+        "year": 1760,
+        "endYear": 1840,
+        "level": 1,
+        "title": "工业革命",
+        "summary": "英国率先发生工业革命，蒸汽机广泛应用，纺织、冶铁等行业机械化生产。",
+        "tags": [
+          "科技发明",
+          "经济贸易"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_american_independence",
+        "year": 1776,
+        "endYear": 1783,
+        "level": 1,
+        "title": "美国独立战争",
+        "summary": "北美十三州宣布独立，经过战争后英国承认美国独立，签订《巴黎条约》。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "usa_independence"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_watt_steam",
+        "year": 1769,
+        "level": 2,
+        "title": "瓦特改良蒸汽机",
+        "summary": "詹姆斯·瓦特取得改良蒸汽机专利，为工业革命提供重要动力来源。",
+        "tags": [
+          "科技发明"
+        ],
+        "figures": [
+          "james_watt"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_napoleonic_wars",
+        "year": 1803,
+        "endYear": 1815,
+        "level": 1,
+        "title": "拿破仑战争",
+        "summary": "英国主导反法同盟，特拉法尔加海战确立英国海上霸权，滑铁卢之战结束战事。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "france_napoleon"
+        ],
+        "figures": [
+          "wellington",
+          "nelson"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_opium_war",
+        "year": 1840,
+        "endYear": 1842,
+        "level": 1,
+        "title": "第一次鸦片战争",
+        "summary": "英国对华宣战，签订《南京条约》，获得香港岛及通商口岸权益。",
+        "tags": [
+          "战争",
+          "条约外交",
+          "殖民扩张"
+        ],
+        "related": [
+          "opium_war_1"
+        ],
+        "figures": [
+          "palmerston"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_reform_act",
+        "year": 1832,
+        "level": 2,
+        "title": "改革法案",
+        "summary": "议会改革法案通过，扩大选举权，调整选区，推进议会民主化进程。",
+        "tags": [
+          "改革运动"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_abolition_slavery",
+        "year": 1833,
+        "level": 2,
+        "title": "废除奴隶制",
+        "summary": "《奴隶制废除法》通过，大英帝国境内奴隶制度正式废除。",
+        "tags": [
+          "改革运动"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_second_opium",
+        "year": 1856,
+        "endYear": 1860,
+        "level": 1,
+        "title": "第二次鸦片战争",
+        "summary": "英法联军攻入中国，签订《北京条约》，获得更多通商权益。",
+        "tags": [
+          "战争",
+          "条约外交",
+          "殖民扩张"
+        ],
+        "related": [
+          "opium_war_2"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_victoria_reign",
+        "year": 1837,
+        "endYear": 1901,
+        "level": 1,
+        "title": "维多利亚时代",
+        "summary": "维多利亚女王在位64年，英国工业和帝国实力达到顶峰，殖民地遍及全球。",
+        "tags": [
+          "王朝更迭",
+          "殖民扩张"
+        ],
+        "figures": [
+          "queen_victoria"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_wwi",
+        "year": 1914,
+        "endYear": 1918,
+        "level": 1,
+        "title": "第一次世界大战",
+        "summary": "英国以协约国身份参战，战后签订《凡尔赛条约》，获得部分德国殖民地。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "germany_wwi",
+          "france_wwi"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_irish_independence",
+        "year": 1921,
+        "level": 2,
+        "title": "爱尔兰独立",
+        "summary": "英爱条约签订，爱尔兰自由邦成立，北爱尔兰留在英国版图内。",
+        "tags": [
+          "条约外交",
+          "革命政变"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_general_strike",
+        "year": 1926,
+        "level": 2,
+        "title": "英国总罢工",
+        "summary": "矿工罢工引发全国性总罢工，持续九天后工会停止行动。",
+        "tags": [
+          "改革运动"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_wwii",
+        "year": 1939,
+        "endYear": 1945,
+        "level": 1,
+        "title": "第二次世界大战",
+        "summary": "英国对德宣战，经历敦刻尔克撤退、不列颠之战，最终与盟国取得胜利。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "germany_wwii",
+          "france_wwii",
+          "usa_wwii"
+        ],
+        "figures": [
+          "churchill"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_welfare_state",
+        "year": 1945,
+        "level": 2,
+        "title": "福利国家建立",
+        "summary": "工党政府上台，建立国家医疗服务体系（NHS），推行一系列社会福利改革。",
+        "tags": [
+          "改革运动"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_decolonization",
+        "year": 1947,
+        "endYear": 1970,
+        "level": 1,
+        "title": "大英帝国去殖民化",
+        "summary": "印度、巴基斯坦等殖民地相继独立，大英帝国逐步解体，英联邦成立。",
+        "tags": [
+          "殖民扩张",
+          "条约外交"
+        ],
+        "related": [
+          "usa_cold_war"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_suez_crisis",
+        "year": 1956,
+        "level": 2,
+        "title": "苏伊士运河危机",
+        "summary": "英法以色列联合入侵埃及，迫于美苏压力撤军，标志英国国际影响力衰退。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "usa_suez",
+          "france_suez"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_eec_join",
+        "year": 1973,
+        "level": 2,
+        "title": "加入欧洲经济共同体",
+        "summary": "英国正式加入欧洲经济共同体（EEC），开启欧洲一体化进程参与。",
+        "tags": [
+          "条约外交",
+          "经济贸易"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_falklands_war",
+        "year": 1982,
+        "level": 2,
+        "title": "马岛战争",
+        "summary": "阿根廷占领福克兰群岛，英国派遣特遣舰队收复，历时74天结束。",
+        "tags": [
+          "战争"
+        ],
+        "track": "uk"
+      },
+      {
+        "id": "uk_hk_handover",
+        "year": 1997,
+        "level": 2,
+        "title": "香港回归中国",
+        "summary": "英国将香港主权移交中华人民共和国，结束对香港逾百年的管治。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "china_hk_handover"
+        ],
+        "track": "uk"
+      }
+    ],
+    "france": [
+      {
+        "id": "france_seven_years_war",
+        "year": 1756,
+        "endYear": 1763,
+        "level": 1,
+        "title": "七年战争",
+        "summary": "法国与英国争夺殖民地，战败后丧失北美和印度大部分殖民地。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "related": [
+          "uk_seven_years_war"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_revolution",
+        "year": 1789,
+        "endYear": 1799,
+        "level": 1,
+        "title": "法国大革命",
+        "summary": "路易十六被捕并处决，封建制度瓦解，共和国成立，社会结构发生根本变化。",
+        "tags": [
+          "革命政变",
+          "文化思想"
+        ],
+        "figures": [
+          "robespierre",
+          "louis_xvi"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_declaration_rights",
+        "year": 1789,
+        "level": 2,
+        "title": "《人权和公民权宣言》发布",
+        "summary": "国民议会通过《人权和公民权宣言》，宣示自由、平等和主权在民原则。",
+        "tags": [
+          "文化思想",
+          "改革运动"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_american_alliance",
+        "year": 1778,
+        "level": 2,
+        "title": "法美同盟",
+        "summary": "法国与北美殖民地签订同盟条约，向美国独立战争提供军事和财政支援。",
+        "tags": [
+          "条约外交",
+          "战争"
+        ],
+        "related": [
+          "usa_independence"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_napoleon",
+        "year": 1799,
+        "endYear": 1815,
+        "level": 1,
+        "title": "拿破仑时代",
+        "summary": "拿破仑从第一执政到皇帝，建立帝国并发动系列战争，最终战败流放。",
+        "tags": [
+          "战争",
+          "王朝更迭"
+        ],
+        "related": [
+          "uk_napoleonic_wars"
+        ],
+        "figures": [
+          "napoleon"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_restoration",
+        "year": 1815,
+        "endYear": 1830,
+        "level": 2,
+        "title": "波旁王朝复辟",
+        "summary": "维也纳会议后波旁王朝复辟，路易十八、查理十世相继执政。",
+        "tags": [
+          "王朝更迭"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_1848_revolution",
+        "year": 1848,
+        "level": 1,
+        "title": "1848年革命",
+        "summary": "法国爆发革命，七月王朝覆灭，第二共和国成立，路易·拿破仑当选总统。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_second_empire",
+        "year": 1852,
+        "endYear": 1870,
+        "level": 2,
+        "title": "法兰西第二帝国",
+        "summary": "路易·拿破仑称帝为拿破仑三世，法国经历工业化和城市改造时期。",
+        "tags": [
+          "王朝更迭",
+          "经济贸易"
+        ],
+        "figures": [
+          "napoleon_iii"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_second_opium",
+        "year": 1856,
+        "endYear": 1860,
+        "level": 2,
+        "title": "参与第二次鸦片战争",
+        "summary": "法国与英国联合对华作战，攻入北京，签订《北京条约》。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "related": [
+          "opium_war_2"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_franco_prussian",
+        "year": 1870,
+        "endYear": 1871,
+        "level": 1,
+        "title": "普法战争",
+        "summary": "法国战败，割让阿尔萨斯-洛林，巴黎公社短暂成立后被镇压。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "germany_unification"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_wwi",
+        "year": 1914,
+        "endYear": 1918,
+        "level": 1,
+        "title": "第一次世界大战",
+        "summary": "法国本土成为主战场，凡尔登等战役造成巨大伤亡，战后收复阿尔萨斯-洛林。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "germany_wwi",
+          "uk_wwi"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_versailles",
+        "year": 1919,
+        "level": 2,
+        "title": "《凡尔赛条约》签订",
+        "summary": "巴黎和会在法国召开，签订《凡尔赛条约》，确定战后欧洲秩序。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "germany_wwi"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_maginot_line",
+        "year": 1930,
+        "endYear": 1936,
+        "level": 3,
+        "title": "马其诺防线建造",
+        "summary": "法国沿德法边境建造大规模防御工事体系，旨在防范德国入侵。",
+        "tags": [
+          "战争"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_wwii",
+        "year": 1939,
+        "endYear": 1945,
+        "level": 1,
+        "title": "第二次世界大战",
+        "summary": "法国1940年沦陷，维希政府成立，戴高乐领导自由法国继续抵抗，1944年光复。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "germany_wwii",
+          "uk_wwii"
+        ],
+        "figures": [
+          "de_gaulle"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_suez",
+        "year": 1956,
+        "level": 2,
+        "title": "参与苏伊士运河危机",
+        "summary": "法国与英国、以色列联合入侵埃及，迫于国际压力撤军。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "uk_suez_crisis"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_indochina_war",
+        "year": 1946,
+        "endYear": 1954,
+        "level": 1,
+        "title": "第一次印度支那战争",
+        "summary": "法国与越盟在印度支那展开战争，奠边府战役后法军战败，签订《日内瓦协议》。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_algeria_war",
+        "year": 1954,
+        "endYear": 1962,
+        "level": 1,
+        "title": "阿尔及利亚战争",
+        "summary": "阿尔及利亚独立战争爆发，各方记载伤亡数字存在差异，1962年阿尔及利亚独立。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_fifth_republic",
+        "year": 1958,
+        "level": 2,
+        "title": "第五共和国成立",
+        "summary": "戴高乐主导新宪法制定，法兰西第五共和国成立，强化总统权力。",
+        "tags": [
+          "革命政变",
+          "改革运动"
+        ],
+        "figures": [
+          "de_gaulle"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_may_1968",
+        "year": 1968,
+        "level": 2,
+        "title": "五月风暴",
+        "summary": "学生与工人在法国发起大规模抗议示威，引发社会动荡，推动一定程度的社会改革。",
+        "tags": [
+          "革命政变",
+          "改革运动"
+        ],
+        "track": "france"
+      },
+      {
+        "id": "france_eu_founding",
+        "year": 1957,
+        "level": 2,
+        "title": "参与创立欧洲经济共同体",
+        "summary": "法国与西德等六国签订《罗马条约》，建立欧洲经济共同体。",
+        "tags": [
+          "条约外交",
+          "经济贸易"
+        ],
+        "related": [
+          "germany_eec"
+        ],
+        "track": "france"
+      }
+    ],
+    "usa": [
+      {
+        "id": "usa_independence",
+        "year": 1776,
+        "level": 1,
+        "title": "美国独立宣言",
+        "summary": "大陆会议通过《独立宣言》，十三州宣布脱离英国统治，独立建国。",
+        "tags": [
+          "革命政变",
+          "文化思想"
+        ],
+        "related": [
+          "uk_american_independence"
+        ],
+        "figures": [
+          "washington",
+          "jefferson"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_constitution",
+        "year": 1787,
+        "level": 1,
+        "title": "美国宪法制定",
+        "summary": "制宪会议通过美国宪法，确立联邦制和三权分立制度，1788年正式生效。",
+        "tags": [
+          "改革运动",
+          "文化思想"
+        ],
+        "figures": [
+          "madison",
+          "hamilton"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_first_president",
+        "year": 1789,
+        "level": 2,
+        "title": "华盛顿就任首任总统",
+        "summary": "乔治·华盛顿宣誓就职，成为美国第一任总统，联邦政府正式运作。",
+        "tags": [
+          "王朝更迭"
+        ],
+        "figures": [
+          "washington"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_louisiana_purchase",
+        "year": 1803,
+        "level": 2,
+        "title": "路易斯安那购地",
+        "summary": "美国以1500万美元从法国购买路易斯安那领地，领土面积几乎翻倍。",
+        "tags": [
+          "经济贸易",
+          "条约外交"
+        ],
+        "related": [
+          "france_napoleon"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_civil_war",
+        "year": 1861,
+        "endYear": 1865,
+        "level": 1,
+        "title": "美国内战",
+        "summary": "南北方因奴隶制问题爆发内战，北方联邦获胜，奴隶制随后废除。",
+        "tags": [
+          "战争",
+          "改革运动"
+        ],
+        "figures": [
+          "lincoln"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_emancipation",
+        "year": 1863,
+        "level": 2,
+        "title": "《解放宣言》发布",
+        "summary": "林肯总统发布《解放宣言》，宣布叛乱州内的奴隶获得自由。",
+        "tags": [
+          "改革运动"
+        ],
+        "figures": [
+          "lincoln"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_transcontinental_railroad",
+        "year": 1869,
+        "level": 2,
+        "title": "横贯大陆铁路建成",
+        "summary": "联合太平洋铁路与中央太平洋铁路在犹他州接轨，横贯大陆铁路竣工。",
+        "tags": [
+          "科技发明",
+          "经济贸易"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_spanish_american_war",
+        "year": 1898,
+        "level": 2,
+        "title": "美西战争",
+        "summary": "美国与西班牙开战，获得古巴、波多黎各和菲律宾，开始海外扩张。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_gilded_age",
+        "year": 1870,
+        "endYear": 1900,
+        "level": 2,
+        "title": "镀金时代",
+        "summary": "美国工业化快速发展，钢铁、铁路等行业崛起，贫富差距扩大。",
+        "tags": [
+          "经济贸易",
+          "科技发明"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_wwi_entry",
+        "year": 1917,
+        "level": 1,
+        "title": "参加第一次世界大战",
+        "summary": "美国宣布对德参战，向欧洲派遣军队，对协约国最终胜利起到重要作用。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "uk_wwi",
+          "france_wwi",
+          "germany_wwi"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_great_depression",
+        "year": 1929,
+        "endYear": 1933,
+        "level": 1,
+        "title": "大萧条",
+        "summary": "纽约股市崩盘引发全球经济危机，美国失业率大幅上升，工农业生产大幅下降。",
+        "tags": [
+          "经济贸易"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_new_deal",
+        "year": 1933,
+        "endYear": 1939,
+        "level": 2,
+        "title": "罗斯福新政",
+        "summary": "罗斯福总统推行新政，通过政府干预手段推动经济复苏和社会改革。",
+        "tags": [
+          "改革运动",
+          "经济贸易"
+        ],
+        "figures": [
+          "roosevelt_fdr"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_wwii",
+        "year": 1941,
+        "endYear": 1945,
+        "level": 1,
+        "title": "参加第二次世界大战",
+        "summary": "珍珠港事件后美国对日宣战，随后对德意宣战，参与欧亚两线作战。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "japan_wwii_asia",
+          "germany_wwii"
+        ],
+        "figures": [
+          "roosevelt_fdr",
+          "eisenhower"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_atomic_bomb",
+        "year": 1945,
+        "level": 1,
+        "title": "原子弹投放",
+        "summary": "美国在日本广岛和长崎投放原子弹，各方对其在结束战争中的作用评价存在分歧。",
+        "tags": [
+          "战争",
+          "科技发明"
+        ],
+        "related": [
+          "japan_wwii_end"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_korean_war",
+        "year": 1950,
+        "endYear": 1953,
+        "level": 1,
+        "title": "朝鲜战争",
+        "summary": "美国以联合国军名义参与朝鲜战争，与中朝军队对峙，1953年停战。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "china_korean_war"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_cold_war",
+        "year": 1947,
+        "endYear": 1991,
+        "level": 1,
+        "title": "冷战",
+        "summary": "美苏两国在政治、军事、经济等领域展开全球对抗，形成两极格局。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "russia_cold_war"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_civil_rights",
+        "year": 1955,
+        "endYear": 1968,
+        "level": 1,
+        "title": "民权运动",
+        "summary": "非裔美国人争取平等权利的运动，推动了《民权法》和《选举权法》的通过。",
+        "tags": [
+          "改革运动"
+        ],
+        "figures": [
+          "mlk"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_vietnam_war",
+        "year": 1965,
+        "endYear": 1975,
+        "level": 1,
+        "title": "越南战争",
+        "summary": "美国大规模军事介入越南，1975年撤军，越南统一于越南社会主义共和国。",
+        "tags": [
+          "战争"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_moon_landing",
+        "year": 1969,
+        "level": 2,
+        "title": "阿波罗登月",
+        "summary": "阿波罗11号载人飞船登月成功，宇航员阿姆斯特朗成为首位踏上月球的人类。",
+        "tags": [
+          "科技发明"
+        ],
+        "track": "usa"
+      },
+      {
+        "id": "usa_suez",
+        "year": 1956,
+        "level": 3,
+        "title": "苏伊士危机中的美国立场",
+        "summary": "美国对英法以色列入侵埃及施压，要求停火撤军，显示美国中东影响力上升。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "uk_suez_crisis"
+        ],
+        "track": "usa"
+      }
+    ],
+    "russia": [
+      {
+        "id": "russia_peter_great",
+        "year": 1700,
+        "endYear": 1725,
+        "level": 1,
+        "title": "彼得大帝改革时期",
+        "summary": "彼得一世推行西化改革，建立圣彼得堡，扩展波罗的海出海口，建立现代军队。",
+        "tags": [
+          "改革运动",
+          "王朝更迭"
+        ],
+        "figures": [
+          "peter_great"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_great_northern_war",
+        "year": 1700,
+        "endYear": 1721,
+        "level": 1,
+        "title": "大北方战争",
+        "summary": "俄国与瑞典争夺波罗的海控制权，俄国胜利后获得出海口，大国地位确立。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "figures": [
+          "peter_great"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_catherine_great",
+        "year": 1762,
+        "endYear": 1796,
+        "level": 1,
+        "title": "叶卡捷琳娜大帝执政",
+        "summary": "叶卡捷琳娜二世在位34年，扩张领土，推行开明专制，俄国进一步欧化。",
+        "tags": [
+          "王朝更迭",
+          "改革运动"
+        ],
+        "figures": [
+          "catherine_great"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_pugachev_rebellion",
+        "year": 1773,
+        "endYear": 1775,
+        "level": 2,
+        "title": "普加乔夫起义",
+        "summary": "哥萨克领袖普加乔夫领导大规模农民起义，被镇压后普加乔夫被处决。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_napoleon_invasion",
+        "year": 1812,
+        "level": 1,
+        "title": "拿破仑入侵俄国",
+        "summary": "拿破仑率大军入侵俄国，占领莫斯科，随后被迫撤退，损失惨重。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "france_napoleon"
+        ],
+        "figures": [
+          "kutuzov"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_decembrist_revolt",
+        "year": 1825,
+        "level": 2,
+        "title": "十二月党人起义",
+        "summary": "俄国贵族军官发动起义，要求宪政改革，被镇压，领导者被处决或流放。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_crimean_war",
+        "year": 1853,
+        "endYear": 1856,
+        "level": 1,
+        "title": "克里米亚战争",
+        "summary": "俄国与英法土耳其联军在克里米亚半岛交战，俄国战败，签订《巴黎和约》。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "uk_crimean"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_serf_emancipation",
+        "year": 1861,
+        "level": 2,
+        "title": "废除农奴制",
+        "summary": "沙皇亚历山大二世颁布《解放法令》，正式废除农奴制度。",
+        "tags": [
+          "改革运动"
+        ],
+        "figures": [
+          "alexander_ii"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_russo_japanese_war",
+        "year": 1904,
+        "endYear": 1905,
+        "level": 1,
+        "title": "日俄战争",
+        "summary": "俄国在东北亚与日本争夺利益，战败后签订《朴茨茅斯条约》。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "japan_russo_japanese"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_1905_revolution",
+        "year": 1905,
+        "level": 2,
+        "title": "1905年革命",
+        "summary": "血腥星期日事件引发全国罢工和起义，沙皇颁布《十月宣言》，建立国家杜马。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_wwi",
+        "year": 1914,
+        "endYear": 1917,
+        "level": 1,
+        "title": "参加第一次世界大战",
+        "summary": "俄国以协约国身份参战，战线绵延，经济崩溃，加速了革命的爆发。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "germany_wwi",
+          "uk_wwi"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_revolution_1917",
+        "year": 1917,
+        "level": 1,
+        "title": "俄国革命",
+        "summary": "二月革命推翻沙皇，十月革命后布尔什维克夺取政权，苏维埃政权建立。",
+        "tags": [
+          "革命政变"
+        ],
+        "figures": [
+          "lenin",
+          "trotsky"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_civil_war",
+        "year": 1917,
+        "endYear": 1922,
+        "level": 1,
+        "title": "俄国内战",
+        "summary": "红军与白军展开内战，外国干涉军参与其中，红军最终获胜。",
+        "tags": [
+          "战争"
+        ],
+        "figures": [
+          "trotsky"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_ussr_founded",
+        "year": 1922,
+        "level": 1,
+        "title": "苏联成立",
+        "summary": "俄罗斯、乌克兰等苏维埃共和国联合成立苏维埃社会主义共和国联盟。",
+        "tags": [
+          "王朝更迭"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_wwii_east",
+        "year": 1941,
+        "endYear": 1945,
+        "level": 1,
+        "title": "苏德战争",
+        "summary": "德国入侵苏联，斯大林格勒战役成为转折点，苏联最终攻克柏林。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "germany_wwii"
+        ],
+        "figures": [
+          "zhukov"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_cold_war",
+        "year": 1947,
+        "endYear": 1991,
+        "level": 1,
+        "title": "冷战",
+        "summary": "苏联与美国在政治、军事和意识形态领域展开全球对抗，形成两极格局。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "usa_cold_war"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_sputnik",
+        "year": 1957,
+        "level": 2,
+        "title": "人造卫星发射",
+        "summary": "苏联成功发射世界上第一颗人造地球卫星斯普特尼克1号，开启太空时代。",
+        "tags": [
+          "科技发明"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_cuban_missile",
+        "year": 1962,
+        "level": 2,
+        "title": "古巴导弹危机",
+        "summary": "苏联在古巴部署导弹，美苏紧张对峙13天，最终通过谈判解决危机。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "usa_cold_war"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_prague_spring",
+        "year": 1968,
+        "level": 2,
+        "title": "镇压布拉格之春",
+        "summary": "苏联及华约国家出兵捷克斯洛伐克，镇压捷克斯洛伐克的政治改革运动。",
+        "tags": [
+          "革命政变"
+        ],
+        "track": "russia"
+      },
+      {
+        "id": "russia_ussr_dissolution",
+        "year": 1991,
+        "level": 1,
+        "title": "苏联解体",
+        "summary": "各加盟共和国相继宣告独立，苏联正式宣告解体，俄罗斯联邦继承其主要遗产。",
+        "tags": [
+          "王朝更迭",
+          "革命政变"
+        ],
+        "figures": [
+          "gorbachev",
+          "yeltsin"
+        ],
+        "track": "russia"
+      }
+    ],
+    "germany": [
+      {
+        "id": "germany_prussia_rise",
+        "year": 1701,
+        "level": 2,
+        "title": "普鲁士王国建立",
+        "summary": "勃兰登堡选帝侯弗里德里希三世加冕，普鲁士王国正式建立。",
+        "tags": [
+          "王朝更迭"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_frederick_great",
+        "year": 1740,
+        "endYear": 1786,
+        "level": 1,
+        "title": "腓特烈大帝在位",
+        "summary": "腓特烈二世在位期间，普鲁士在七年战争中崛起，成为欧洲强国。",
+        "tags": [
+          "王朝更迭",
+          "战争"
+        ],
+        "figures": [
+          "frederick_great"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_austrian_succession",
+        "year": 1740,
+        "endYear": 1748,
+        "level": 2,
+        "title": "奥地利王位继承战争",
+        "summary": "普鲁士入侵奥地利西里西亚，引发欧洲多国卷入的大规模战争。",
+        "tags": [
+          "战争"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_seven_years_war_de",
+        "year": 1756,
+        "endYear": 1763,
+        "level": 1,
+        "title": "七年战争（普鲁士参战）",
+        "summary": "普鲁士在腓特烈大帝率领下，以较少力量对抗奥地利、俄国、法国等多强联盟。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "uk_seven_years_war",
+          "france_seven_years_war"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_napoleonic_wars_de",
+        "year": 1806,
+        "endYear": 1815,
+        "level": 1,
+        "title": "拿破仑战争期间的德意志",
+        "summary": "拿破仑击败普鲁士并解散神圣罗马帝国，莱茵邦联成立，后普鲁士参与反法同盟。",
+        "tags": [
+          "战争",
+          "王朝更迭"
+        ],
+        "related": [
+          "france_napoleon"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_unification",
+        "year": 1866,
+        "endYear": 1871,
+        "level": 1,
+        "title": "德意志统一",
+        "summary": "普鲁士通过三次战争统一德意志，1871年普法战争后德意志帝国宣告成立。",
+        "tags": [
+          "战争",
+          "王朝更迭"
+        ],
+        "related": [
+          "france_franco_prussian"
+        ],
+        "figures": [
+          "bismarck",
+          "kaiser_wilhelm_i"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_bismarck_era",
+        "year": 1871,
+        "endYear": 1890,
+        "level": 2,
+        "title": "俾斯麦时代",
+        "summary": "俾斯麦担任德国首相，推行现实政治，建立同盟体系，推进社会立法。",
+        "tags": [
+          "改革运动",
+          "条约外交"
+        ],
+        "figures": [
+          "bismarck"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_industrial_growth",
+        "year": 1871,
+        "endYear": 1900,
+        "level": 2,
+        "title": "德国工业化",
+        "summary": "德意志帝国工业快速发展，钢铁、化工、电气等行业崛起，挑战英国工业地位。",
+        "tags": [
+          "经济贸易",
+          "科技发明"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_wwi",
+        "year": 1914,
+        "endYear": 1918,
+        "level": 1,
+        "title": "第一次世界大战",
+        "summary": "德国以同盟国身份参战，发动西线进攻，战败后签订《凡尔赛条约》，割地赔款。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "france_wwi",
+          "uk_wwi",
+          "russia_wwi"
+        ],
+        "figures": [
+          "kaiser_wilhelm_ii"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_weimar_republic",
+        "year": 1919,
+        "endYear": 1933,
+        "level": 2,
+        "title": "魏玛共和国",
+        "summary": "德国战后建立议会共和国，面临经济危机和政治动荡，最终被纳粹夺权。",
+        "tags": [
+          "王朝更迭",
+          "改革运动"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_nazi_rise",
+        "year": 1933,
+        "level": 1,
+        "title": "纳粹党执政",
+        "summary": "希特勒出任总理，纳粹党通过《授权法》取得独裁权力，建立一党专政。",
+        "tags": [
+          "革命政变",
+          "王朝更迭"
+        ],
+        "figures": [
+          "hitler"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_wwii",
+        "year": 1939,
+        "endYear": 1945,
+        "level": 1,
+        "title": "第二次世界大战",
+        "summary": "德国发动闪电战入侵波兰，引发欧战，1941年入侵苏联，1945年战败投降。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "russia_wwii_east",
+          "uk_wwii",
+          "france_wwii",
+          "usa_wwii"
+        ],
+        "figures": [
+          "hitler",
+          "rommel"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_holocaust",
+        "year": 1941,
+        "endYear": 1945,
+        "level": 1,
+        "title": "大屠杀",
+        "summary": "纳粹德国在欧洲各地建立灭绝营，对犹太人及其他群体实施系统性屠杀。",
+        "tags": [
+          "战争"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_division",
+        "year": 1949,
+        "level": 1,
+        "title": "德国分裂为东西德",
+        "summary": "联邦德国（西德）和德意志民主共和国（东德）相继成立，德国一分为二。",
+        "tags": [
+          "王朝更迭",
+          "条约外交"
+        ],
+        "related": [
+          "usa_cold_war",
+          "russia_cold_war"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_eec",
+        "year": 1957,
+        "level": 2,
+        "title": "参与创立欧洲经济共同体",
+        "summary": "西德与法国等五国签订《罗马条约》，创立欧洲经济共同体。",
+        "tags": [
+          "条约外交",
+          "经济贸易"
+        ],
+        "related": [
+          "france_eu_founding"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_berlin_wall",
+        "year": 1961,
+        "level": 2,
+        "title": "柏林墙建造",
+        "summary": "东德当局修建柏林墙，将柏林分割为东西两部分，阻止东德居民外逃。",
+        "tags": [
+          "条约外交"
+        ],
+        "related": [
+          "usa_cold_war"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_wirtschaftswunder",
+        "year": 1950,
+        "endYear": 1965,
+        "level": 2,
+        "title": "经济奇迹",
+        "summary": "西德战后经济快速复苏，成为欧洲主要经济体，工业生产大幅增长。",
+        "tags": [
+          "经济贸易",
+          "改革运动"
+        ],
+        "track": "germany"
+      },
+      {
+        "id": "germany_reunification",
+        "year": 1990,
+        "level": 1,
+        "title": "德国统一",
+        "summary": "东西德统一条约签订，两德正式合并为统一的德意志联邦共和国。",
+        "tags": [
+          "王朝更迭",
+          "条约外交"
+        ],
+        "related": [
+          "russia_ussr_dissolution"
+        ],
+        "track": "germany"
+      }
+    ],
+    "japan": [
+      {
+        "id": "japan_edo_period",
+        "year": 1700,
+        "endYear": 1800,
+        "level": 1,
+        "title": "江户时代中期",
+        "summary": "德川幕府统治下日本维持锁国政策，仅与荷兰、中国等少数国家保持贸易往来。",
+        "tags": [
+          "经济贸易",
+          "王朝更迭"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_genroku_culture",
+        "year": 1688,
+        "endYear": 1704,
+        "level": 2,
+        "title": "元禄文化繁荣",
+        "summary": "元禄年间商人文化兴盛，俳句、浮世绘、歌舞伎等艺术形式蓬勃发展。",
+        "tags": [
+          "文化思想"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_tanuma_reform",
+        "year": 1772,
+        "endYear": 1786,
+        "level": 3,
+        "title": "田沼意次改革",
+        "summary": "田沼意次推行重商政策，扩大对外贸易，但因腐败问题引发批评最终失势。",
+        "tags": [
+          "改革运动",
+          "经济贸易"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_perry_arrival",
+        "year": 1853,
+        "level": 1,
+        "title": "培里舰队来航",
+        "summary": "美国海军准将培里率蒸汽舰队抵达江户湾，要求日本开国，幕府被迫谈判。",
+        "tags": [
+          "条约外交",
+          "经济贸易"
+        ],
+        "related": [
+          "usa_civil_war"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_ansei_treaties",
+        "year": 1858,
+        "level": 2,
+        "title": "安政五国条约",
+        "summary": "日本与美英法俄荷签订不平等条约，开放通商口岸，实行协定关税。",
+        "tags": [
+          "条约外交",
+          "经济贸易"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_meiji_restoration",
+        "year": 1868,
+        "level": 1,
+        "title": "明治维新",
+        "summary": "倒幕运动成功，天皇亲政，日本开始大规模推行西化改革，废藩置县。",
+        "tags": [
+          "改革运动",
+          "王朝更迭"
+        ],
+        "figures": [
+          "meiji_emperor",
+          "okubo",
+          "ito"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_meiji_expansion",
+        "year": 1894,
+        "endYear": 1895,
+        "level": 1,
+        "title": "甲午战争胜利",
+        "summary": "日本对清作战获胜，签订《马关条约》，获得台湾及赔款，跻身东亚强国。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "china_sino_japanese_war"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_constitution",
+        "year": 1889,
+        "level": 2,
+        "title": "明治宪法颁布",
+        "summary": "日本颁布《大日本帝国宪法》，建立议会制度，但天皇握有最高权力。",
+        "tags": [
+          "改革运动"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_russo_japanese",
+        "year": 1904,
+        "endYear": 1905,
+        "level": 1,
+        "title": "日俄战争",
+        "summary": "日本在满洲和朝鲜与俄国开战，对马海战中击败俄国舰队，签订《朴茨茅斯条约》。",
+        "tags": [
+          "战争",
+          "条约外交"
+        ],
+        "related": [
+          "russia_russo_japanese_war"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_korea_annexation",
+        "year": 1910,
+        "level": 2,
+        "title": "吞并朝鲜",
+        "summary": "日本与朝鲜签订《日韩合并条约》，朝鲜成为日本殖民地。",
+        "tags": [
+          "殖民扩张",
+          "条约外交"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_wwi_entry",
+        "year": 1914,
+        "level": 2,
+        "title": "参加第一次世界大战",
+        "summary": "日本以协约国身份参战，占领德国在中国和太平洋的殖民地。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "related": [
+          "uk_wwi",
+          "germany_wwi"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_manchuria",
+        "year": 1931,
+        "level": 1,
+        "title": "九一八事变",
+        "summary": "日本关东军制造九一八事变，随后占领中国东北，建立满洲国傀儡政权。",
+        "tags": [
+          "战争",
+          "殖民扩张"
+        ],
+        "related": [
+          "china_sino_japanese_war2"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_wwii_asia",
+        "year": 1937,
+        "endYear": 1945,
+        "level": 1,
+        "title": "太平洋战争",
+        "summary": "日本与中国全面开战，1941年发动珍珠港突袭，与美英开战，1945年战败投降。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "usa_wwii",
+          "china_sino_japanese_war2"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_wwii_end",
+        "year": 1945,
+        "level": 1,
+        "title": "战败投降",
+        "summary": "广岛长崎遭原子弹轰炸，苏联对日宣战，日本宣布无条件投降。",
+        "tags": [
+          "战争"
+        ],
+        "related": [
+          "usa_atomic_bomb"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_occupation",
+        "year": 1945,
+        "endYear": 1952,
+        "level": 1,
+        "title": "盟军占领",
+        "summary": "美国主导盟军占领日本，推行民主改革，制定新宪法，解散财阀。",
+        "tags": [
+          "改革运动",
+          "条约外交"
+        ],
+        "related": [
+          "usa_cold_war"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_peace_treaty",
+        "year": 1951,
+        "level": 2,
+        "title": "《旧金山和约》签订",
+        "summary": "日本与盟国签订和平条约，结束战争状态，日本恢复主权，美军基地保留。",
+        "tags": [
+          "条约外交"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_economic_miracle",
+        "year": 1955,
+        "endYear": 1973,
+        "level": 1,
+        "title": "经济高速增长",
+        "summary": "日本经济年均增速超过10%，迅速成为世界第二大经济体，工业产品遍销全球。",
+        "tags": [
+          "经济贸易",
+          "科技发明"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_tokyo_olympics",
+        "year": 1964,
+        "level": 2,
+        "title": "东京奥运会",
+        "summary": "日本举办东京奥运会，向世界展示战后复兴成就，新干线同年开通运营。",
+        "tags": [
+          "文化思想",
+          "科技发明"
+        ],
+        "track": "japan"
+      },
+      {
+        "id": "japan_bubble_economy",
+        "year": 1986,
+        "endYear": 1991,
+        "level": 2,
+        "title": "泡沫经济",
+        "summary": "日本股市和房地产价格急剧膨胀，随后泡沫破裂，日本进入长期经济停滞期。",
+        "tags": [
+          "经济贸易"
+        ],
+        "track": "japan"
+      }
+    ]
+  },
+  "figures": {
+    "china": [
+      {
+        "id": "kangxi",
+        "name": "康熙帝",
+        "birthYear": 1654,
+        "deathYear": 1722,
+        "level": 1,
+        "summary": "清朝第四位皇帝，在位61年，奠定清朝全盛基础，推行文治武功。",
+        "events": [
+          "china_kangxi_death"
+        ]
+      },
+      {
+        "id": "qianlong",
+        "name": "乾隆帝",
+        "birthYear": 1711,
+        "deathYear": 1799,
+        "level": 1,
+        "summary": "清朝第六位皇帝，在位61年，清朝疆域达到极盛，晚年出现腐败问题。",
+        "events": [
+          "china_qianlong_reign",
+          "china_macartney_mission"
+        ]
+      },
+      {
+        "id": "linzexu",
+        "name": "林则徐",
+        "birthYear": 1785,
+        "deathYear": 1850,
+        "level": 2,
+        "summary": "主导虎门销烟，是清末最早主张了解西方的官员之一。",
+        "events": [
+          "opium_war_1"
+        ]
+      },
+      {
+        "id": "hong_xiuquan",
+        "name": "洪秀全",
+        "birthYear": 1814,
+        "deathYear": 1864,
+        "level": 2,
+        "summary": "太平天国创立者，建立政权与清廷对抗长达十四年。",
+        "events": [
+          "china_taiping"
+        ]
+      },
+      {
+        "id": "li_hongzhang",
+        "name": "李鸿章",
+        "birthYear": 1823,
+        "deathYear": 1901,
+        "level": 1,
+        "summary": "洋务运动主要推动者之一，代表清廷签订多项条约，政治生涯颇具争议。",
+        "events": [
+          "china_self_strengthening",
+          "china_sino_japanese_war"
+        ]
+      },
+      {
+        "id": "sun_yatsen",
+        "name": "孙中山",
+        "birthYear": 1866,
+        "deathYear": 1925,
+        "level": 1,
+        "summary": "中华民国临时大总统，三民主义提出者，推动结束帝制。",
+        "events": [
+          "china_qing_end"
+        ]
+      },
+      {
+        "id": "mao_zedong",
+        "name": "毛泽东",
+        "birthYear": 1893,
+        "deathYear": 1976,
+        "level": 1,
+        "summary": "中国共产党主要领导人，中华人民共和国的主要缔造者之一。",
+        "events": [
+          "china_prc_founded",
+          "china_cultural_revolution"
+        ]
+      },
+      {
+        "id": "deng_xiaoping",
+        "name": "邓小平",
+        "birthYear": 1904,
+        "deathYear": 1997,
+        "level": 1,
+        "summary": "主导中国改革开放路线的制定，推动经济体制改革。",
+        "events": [
+          "china_reform_opening"
+        ]
+      }
+    ],
+    "uk": [
+      {
+        "id": "james_watt",
+        "name": "詹姆斯·瓦特",
+        "birthYear": 1736,
+        "deathYear": 1819,
+        "level": 2,
+        "summary": "改良蒸汽机，为工业革命提供核心动力来源，推动工业化进程。",
+        "events": [
+          "uk_watt_steam"
+        ]
+      },
+      {
+        "id": "nelson",
+        "name": "纳尔逊将军",
+        "birthYear": 1758,
+        "deathYear": 1805,
+        "level": 2,
+        "summary": "英国海军将领，特拉法尔加海战中击败法西联合舰队，战斗中阵亡。",
+        "events": [
+          "uk_napoleonic_wars"
+        ]
+      },
+      {
+        "id": "wellington",
+        "name": "威灵顿公爵",
+        "birthYear": 1769,
+        "deathYear": 1852,
+        "level": 2,
+        "summary": "英国陆军统帅，滑铁卢战役中击败拿破仑，后任英国首相。",
+        "events": [
+          "uk_napoleonic_wars"
+        ]
+      },
+      {
+        "id": "queen_victoria",
+        "name": "维多利亚女王",
+        "birthYear": 1819,
+        "deathYear": 1901,
+        "level": 1,
+        "summary": "英国女王，在位64年，大英帝国在其统治时期达到鼎盛。",
+        "events": [
+          "uk_victoria_reign"
+        ]
+      },
+      {
+        "id": "palmerston",
+        "name": "帕默斯顿勋爵",
+        "birthYear": 1784,
+        "deathYear": 1865,
+        "level": 2,
+        "summary": "英国外交大臣和首相，强硬的对外政策推动者，主导鸦片战争决策。",
+        "events": [
+          "uk_opium_war"
+        ]
+      },
+      {
+        "id": "churchill",
+        "name": "温斯顿·丘吉尔",
+        "birthYear": 1874,
+        "deathYear": 1965,
+        "level": 1,
+        "summary": "英国首相，二战期间领导英国抵御德国入侵，发表大量激励演讲。",
+        "events": [
+          "uk_wwii"
+        ]
+      }
+    ],
+    "france": [
+      {
+        "id": "louis_xvi",
+        "name": "路易十六",
+        "birthYear": 1754,
+        "deathYear": 1793,
+        "level": 2,
+        "summary": "法国国王，法国大革命期间被捕并送上断头台。",
+        "events": [
+          "france_revolution"
+        ]
+      },
+      {
+        "id": "robespierre",
+        "name": "罗伯斯庇尔",
+        "birthYear": 1758,
+        "deathYear": 1794,
+        "level": 2,
+        "summary": "法国大革命期间雅各宾派领袖，主导恐怖统治，后被送上断头台。",
+        "events": [
+          "france_revolution"
+        ]
+      },
+      {
+        "id": "napoleon",
+        "name": "拿破仑·波拿巴",
+        "birthYear": 1769,
+        "deathYear": 1821,
+        "level": 1,
+        "summary": "法国军事统帅和皇帝，建立帝国、颁布法典，最终在滑铁卢战败流放。",
+        "events": [
+          "france_napoleon"
+        ]
+      },
+      {
+        "id": "napoleon_iii",
+        "name": "拿破仑三世",
+        "birthYear": 1808,
+        "deathYear": 1873,
+        "level": 2,
+        "summary": "法兰西第二帝国皇帝，推动巴黎城市改造，普法战争战败后被迫退位。",
+        "events": [
+          "france_second_empire",
+          "france_second_opium"
+        ]
+      },
+      {
+        "id": "de_gaulle",
+        "name": "夏尔·戴高乐",
+        "birthYear": 1890,
+        "deathYear": 1970,
+        "level": 1,
+        "summary": "自由法国领导人，法兰西第五共和国创始人和首任总统。",
+        "events": [
+          "france_wwii",
+          "france_fifth_republic"
+        ]
+      }
+    ],
+    "usa": [
+      {
+        "id": "washington",
+        "name": "乔治·华盛顿",
+        "birthYear": 1732,
+        "deathYear": 1799,
+        "level": 1,
+        "summary": "美国独立战争统帅，美国第一任总统，被称为\"国父\"之一。",
+        "events": [
+          "usa_independence",
+          "usa_first_president"
+        ]
+      },
+      {
+        "id": "jefferson",
+        "name": "托马斯·杰斐逊",
+        "birthYear": 1743,
+        "deathYear": 1826,
+        "level": 1,
+        "summary": "《独立宣言》主要起草人，美国第三任总统，主导路易斯安那购地。",
+        "events": [
+          "usa_independence",
+          "usa_louisiana_purchase"
+        ]
+      },
+      {
+        "id": "lincoln",
+        "name": "亚伯拉罕·林肯",
+        "birthYear": 1809,
+        "deathYear": 1865,
+        "level": 1,
+        "summary": "美国第16任总统，领导北方赢得内战，发布《解放宣言》，遇刺身亡。",
+        "events": [
+          "usa_civil_war",
+          "usa_emancipation"
+        ]
+      },
+      {
+        "id": "roosevelt_fdr",
+        "name": "富兰克林·罗斯福",
+        "birthYear": 1882,
+        "deathYear": 1945,
+        "level": 1,
+        "summary": "美国第32任总统，推行新政应对大萧条，领导美国参加二战。",
+        "events": [
+          "usa_new_deal",
+          "usa_wwii"
+        ]
+      },
+      {
+        "id": "eisenhower",
+        "name": "德怀特·艾森豪威尔",
+        "birthYear": 1890,
+        "deathYear": 1969,
+        "level": 2,
+        "summary": "二战欧洲盟军最高统帅，后任美国第34任总统。",
+        "events": [
+          "usa_wwii"
+        ]
+      },
+      {
+        "id": "mlk",
+        "name": "马丁·路德·金",
+        "birthYear": 1929,
+        "deathYear": 1968,
+        "level": 1,
+        "summary": "美国民权运动领袖，以非暴力方式推动种族平等，发表\"我有一个梦想\"演讲，遇刺身亡。",
+        "events": [
+          "usa_civil_rights"
+        ]
+      }
+    ],
+    "russia": [
+      {
+        "id": "peter_great",
+        "name": "彼得大帝",
+        "birthYear": 1672,
+        "deathYear": 1725,
+        "level": 1,
+        "summary": "俄国沙皇，推行西化改革，建立圣彼得堡，将俄国确立为欧洲强国。",
+        "events": [
+          "russia_peter_great",
+          "russia_great_northern_war"
+        ]
+      },
+      {
+        "id": "catherine_great",
+        "name": "叶卡捷琳娜大帝",
+        "birthYear": 1729,
+        "deathYear": 1796,
+        "level": 1,
+        "summary": "俄国女皇，在位34年，扩张领土，推行开明专制，文化艺术赞助者。",
+        "events": [
+          "russia_catherine_great"
+        ]
+      },
+      {
+        "id": "kutuzov",
+        "name": "库图佐夫将军",
+        "birthYear": 1745,
+        "deathYear": 1813,
+        "level": 2,
+        "summary": "俄国陆军元帅，1812年率军抵御拿破仑入侵，以空间换时间策略奏效。",
+        "events": [
+          "russia_napoleon_invasion"
+        ]
+      },
+      {
+        "id": "alexander_ii",
+        "name": "亚历山大二世",
+        "birthYear": 1818,
+        "deathYear": 1881,
+        "level": 2,
+        "summary": "俄国沙皇，颁布解放法令废除农奴制，推行司法改革，遭暗杀身亡。",
+        "events": [
+          "russia_serf_emancipation"
+        ]
+      },
+      {
+        "id": "lenin",
+        "name": "列宁",
+        "birthYear": 1870,
+        "deathYear": 1924,
+        "level": 1,
+        "summary": "俄国布尔什维克党领袖，领导十月革命，建立苏维埃政权。",
+        "events": [
+          "russia_revolution_1917"
+        ]
+      },
+      {
+        "id": "trotsky",
+        "name": "托洛茨基",
+        "birthYear": 1879,
+        "deathYear": 1940,
+        "level": 2,
+        "summary": "布尔什维克领导人，组建红军并指挥内战，后与斯大林政治斗争失败被流放。",
+        "events": [
+          "russia_revolution_1917",
+          "russia_civil_war"
+        ]
+      },
+      {
+        "id": "gorbachev",
+        "name": "戈尔巴乔夫",
+        "birthYear": 1931,
+        "deathYear": 2022,
+        "level": 1,
+        "summary": "苏联最后一任领导人，推行开放和改革政策，苏联在其任内解体。",
+        "events": [
+          "russia_ussr_dissolution"
+        ]
+      },
+      {
+        "id": "yeltsin",
+        "name": "叶利钦",
+        "birthYear": 1931,
+        "deathYear": 2007,
+        "level": 2,
+        "summary": "俄罗斯联邦首任总统，苏联解体后主导俄罗斯政治转型。",
+        "events": [
+          "russia_ussr_dissolution"
+        ]
+      }
+    ],
+    "germany": [
+      {
+        "id": "frederick_great",
+        "name": "腓特烈大帝",
+        "birthYear": 1712,
+        "deathYear": 1786,
+        "level": 1,
+        "summary": "普鲁士国王，七年战争中以少胜多，将普鲁士确立为欧洲强国，重视文化艺术。",
+        "events": [
+          "germany_frederick_great",
+          "germany_seven_years_war_de"
+        ]
+      },
+      {
+        "id": "bismarck",
+        "name": "奥托·冯·俾斯麦",
+        "birthYear": 1815,
+        "deathYear": 1898,
+        "level": 1,
+        "summary": "普鲁士-德国首相，通过外交和战争主导德意志统一，推行\"铁血政策\"。",
+        "events": [
+          "germany_unification",
+          "germany_bismarck_era"
+        ]
+      },
+      {
+        "id": "kaiser_wilhelm_i",
+        "name": "威廉一世",
+        "birthYear": 1797,
+        "deathYear": 1888,
+        "level": 2,
+        "summary": "普鲁士国王和德意志帝国第一任皇帝，德意志统一的象征性领导人。",
+        "events": [
+          "germany_unification"
+        ]
+      },
+      {
+        "id": "kaiser_wilhelm_ii",
+        "name": "威廉二世",
+        "birthYear": 1859,
+        "deathYear": 1941,
+        "level": 2,
+        "summary": "德意志帝国末代皇帝，一战期间实际掌控政策，战败后流亡荷兰。",
+        "events": [
+          "germany_wwi"
+        ]
+      },
+      {
+        "id": "hitler",
+        "name": "阿道夫·希特勒",
+        "birthYear": 1889,
+        "deathYear": 1945,
+        "level": 1,
+        "summary": "纳粹德国领导人，发动第二次世界大战，主导大屠杀，1945年在柏林自杀身亡。",
+        "events": [
+          "germany_nazi_rise",
+          "germany_wwii",
+          "germany_holocaust"
+        ]
+      },
+      {
+        "id": "rommel",
+        "name": "埃尔温·隆美尔",
+        "birthYear": 1891,
+        "deathYear": 1944,
+        "level": 2,
+        "summary": "德国陆军元帅，北非战场指挥官，被称为\"沙漠之狐\"，后被迫自杀。",
+        "events": [
+          "germany_wwii"
+        ]
+      }
+    ],
+    "japan": [
+      {
+        "id": "meiji_emperor",
+        "name": "明治天皇",
+        "birthYear": 1852,
+        "deathYear": 1912,
+        "level": 1,
+        "summary": "日本第122代天皇，明治维新在其名义下推行，日本近代化的象征。",
+        "events": [
+          "japan_meiji_restoration"
+        ]
+      },
+      {
+        "id": "okubo",
+        "name": "大久保利通",
+        "birthYear": 1830,
+        "deathYear": 1878,
+        "level": 2,
+        "summary": "明治维新三杰之一，主导政治改革和中央集权，推动日本近代化，遭暗杀身亡。",
+        "events": [
+          "japan_meiji_restoration"
+        ]
+      },
+      {
+        "id": "ito",
+        "name": "伊藤博文",
+        "birthYear": 1841,
+        "deathYear": 1909,
+        "level": 2,
+        "summary": "明治时代政治家，起草明治宪法，四度出任首相，后在哈尔滨遭刺杀。",
+        "events": [
+          "japan_meiji_restoration",
+          "japan_constitution"
+        ]
+      },
+      {
+        "id": "meiji_saigo",
+        "name": "西乡隆盛",
+        "birthYear": 1828,
+        "deathYear": 1877,
+        "level": 2,
+        "summary": "明治维新三杰之一，倒幕运动领袖，后因不满新政府政策发动西南战争，战败自刎。",
+        "events": [
+          "japan_meiji_restoration"
+        ]
+      },
+      {
+        "id": "tojo_hideki",
+        "name": "东条英机",
+        "birthYear": 1884,
+        "deathYear": 1948,
+        "level": 2,
+        "summary": "日本战时首相兼陆军大臣，主导对美开战决策，战后以战争罪被处决。",
+        "events": [
+          "japan_wwii_asia"
+        ]
+      }
+    ]
+  },
+  "_meta": {
+    "built_at": "2026-04-08T23:00:16.386429Z",
+    "total_events": 142,
+    "total_figures": 44
+  }
+}

@@ -1,0 +1,32 @@
+- id: germany_prussia_rise
+  year: 1701
+  level: 2
+  title: 普鲁士王国建立
+  summary: 勃兰登堡选帝侯弗里德里希三世加冕，普鲁士王国正式建立。
+  tags: [王朝更迭]
+
+- id: germany_frederick_great
+  year: 1740
+  endYear: 1786
+  level: 1
+  title: 腓特烈大帝在位
+  summary: 腓特烈二世在位期间，普鲁士在七年战争中崛起，成为欧洲强国。
+  tags: [王朝更迭, 战争]
+  figures: [frederick_great]
+
+- id: germany_austrian_succession
+  year: 1740
+  endYear: 1748
+  level: 2
+  title: 奥地利王位继承战争
+  summary: 普鲁士入侵奥地利西里西亚，引发欧洲多国卷入的大规模战争。
+  tags: [战争]
+
+- id: germany_seven_years_war_de
+  year: 1756
+  endYear: 1763
+  level: 1
+  title: 七年战争（普鲁士参战）
+  summary: 普鲁士在腓特烈大帝率领下，以较少力量对抗奥地利、俄国、法国等多强联盟。
+  tags: [战争]
+  related: [uk_seven_years_war, france_seven_years_war]

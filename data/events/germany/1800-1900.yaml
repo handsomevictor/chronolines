@@ -1,0 +1,35 @@
+- id: germany_napoleonic_wars_de
+  year: 1806
+  endYear: 1815
+  level: 1
+  title: 拿破仑战争期间的德意志
+  summary: 拿破仑击败普鲁士并解散神圣罗马帝国，莱茵邦联成立，后普鲁士参与反法同盟。
+  tags: [战争, 王朝更迭]
+  related: [france_napoleon]
+
+- id: germany_unification
+  year: 1866
+  endYear: 1871
+  level: 1
+  title: 德意志统一
+  summary: 普鲁士通过三次战争统一德意志，1871年普法战争后德意志帝国宣告成立。
+  tags: [战争, 王朝更迭]
+  related: [france_franco_prussian]
+  figures: [bismarck, kaiser_wilhelm_i]
+
+- id: germany_bismarck_era
+  year: 1871
+  endYear: 1890
+  level: 2
+  title: 俾斯麦时代
+  summary: 俾斯麦担任德国首相，推行现实政治，建立同盟体系，推进社会立法。
+  tags: [改革运动, 条约外交]
+  figures: [bismarck]
+
+- id: germany_industrial_growth
+  year: 1871
+  endYear: 1900
+  level: 2
+  title: 德国工业化
+  summary: 德意志帝国工业快速发展，钢铁、化工、电气等行业崛起，挑战英国工业地位。
+  tags: [经济贸易, 科技发明]

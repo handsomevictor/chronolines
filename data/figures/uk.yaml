@@ -1,0 +1,47 @@
+- id: james_watt
+  name: 詹姆斯·瓦特
+  birthYear: 1736
+  deathYear: 1819
+  level: 2
+  summary: 改良蒸汽机，为工业革命提供核心动力来源，推动工业化进程。
+  events: [uk_watt_steam]
+
+- id: nelson
+  name: 纳尔逊将军
+  birthYear: 1758
+  deathYear: 1805
+  level: 2
+  summary: 英国海军将领，特拉法尔加海战中击败法西联合舰队，战斗中阵亡。
+  events: [uk_napoleonic_wars]
+
+- id: wellington
+  name: 威灵顿公爵
+  birthYear: 1769
+  deathYear: 1852
+  level: 2
+  summary: 英国陆军统帅，滑铁卢战役中击败拿破仑，后任英国首相。
+  events: [uk_napoleonic_wars]
+
+- id: queen_victoria
+  name: 维多利亚女王
+  birthYear: 1819
+  deathYear: 1901
+  level: 1
+  summary: 英国女王，在位64年，大英帝国在其统治时期达到鼎盛。
+  events: [uk_victoria_reign]
+
+- id: palmerston
+  name: 帕默斯顿勋爵
+  birthYear: 1784
+  deathYear: 1865
+  level: 2
+  summary: 英国外交大臣和首相，强硬的对外政策推动者，主导鸦片战争决策。
+  events: [uk_opium_war]
+
+- id: churchill
+  name: 温斯顿·丘吉尔
+  birthYear: 1874
+  deathYear: 1965
+  level: 1
+  summary: 英国首相，二战期间领导英国抵御德国入侵，发表大量激励演讲。
+  events: [uk_wwii]

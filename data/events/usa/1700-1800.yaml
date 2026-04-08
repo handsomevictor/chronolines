@@ -1,0 +1,32 @@
+- id: usa_independence
+  year: 1776
+  level: 1
+  title: 美国独立宣言
+  summary: 大陆会议通过《独立宣言》，十三州宣布脱离英国统治，独立建国。
+  tags: [革命政变, 文化思想]
+  related: [uk_american_independence]
+  figures: [washington, jefferson]
+
+- id: usa_constitution
+  year: 1787
+  level: 1
+  title: 美国宪法制定
+  summary: 制宪会议通过美国宪法，确立联邦制和三权分立制度，1788年正式生效。
+  tags: [改革运动, 文化思想]
+  figures: [madison, hamilton]
+
+- id: usa_first_president
+  year: 1789
+  level: 2
+  title: 华盛顿就任首任总统
+  summary: 乔治·华盛顿宣誓就职，成为美国第一任总统，联邦政府正式运作。
+  tags: [王朝更迭]
+  figures: [washington]
+
+- id: usa_louisiana_purchase
+  year: 1803
+  level: 2
+  title: 路易斯安那购地
+  summary: 美国以1500万美元从法国购买路易斯安那领地，领土面积几乎翻倍。
+  tags: [经济贸易, 条约外交]
+  related: [france_napoleon]

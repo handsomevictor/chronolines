@@ -1,0 +1,38 @@
+- id: usa_civil_war
+  year: 1861
+  endYear: 1865
+  level: 1
+  title: 美国内战
+  summary: 南北方因奴隶制问题爆发内战，北方联邦获胜，奴隶制随后废除。
+  tags: [战争, 改革运动]
+  figures: [lincoln]
+
+- id: usa_emancipation
+  year: 1863
+  level: 2
+  title: 《解放宣言》发布
+  summary: 林肯总统发布《解放宣言》，宣布叛乱州内的奴隶获得自由。
+  tags: [改革运动]
+  figures: [lincoln]
+
+- id: usa_transcontinental_railroad
+  year: 1869
+  level: 2
+  title: 横贯大陆铁路建成
+  summary: 联合太平洋铁路与中央太平洋铁路在犹他州接轨，横贯大陆铁路竣工。
+  tags: [科技发明, 经济贸易]
+
+- id: usa_spanish_american_war
+  year: 1898
+  level: 2
+  title: 美西战争
+  summary: 美国与西班牙开战，获得古巴、波多黎各和菲律宾，开始海外扩张。
+  tags: [战争, 殖民扩张]
+
+- id: usa_gilded_age
+  year: 1870
+  endYear: 1900
+  level: 2
+  title: 镀金时代
+  summary: 美国工业化快速发展，钢铁、铁路等行业崛起，贫富差距扩大。
+  tags: [经济贸易, 科技发明]

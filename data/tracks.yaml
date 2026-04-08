@@ -1,0 +1,29 @@
+tracks:
+  - id: china
+    name: 中国
+    color: "#c0392b"
+    order: 1
+  - id: uk
+    name: 英国
+    color: "#2980b9"
+    order: 2
+  - id: france
+    name: 法国
+    color: "#8e44ad"
+    order: 3
+  - id: usa
+    name: 美国
+    color: "#27ae60"
+    order: 4
+  - id: russia
+    name: 俄国
+    color: "#e67e22"
+    order: 5
+  - id: germany
+    name: 德国
+    color: "#7f8c8d"
+    order: 6
+  - id: japan
+    name: 日本
+    color: "#d35400"
+    order: 7

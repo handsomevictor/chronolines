@@ -1,0 +1,54 @@
+- id: opium_war_1
+  year: 1840
+  endYear: 1842
+  level: 1
+  title: 第一次鸦片战争
+  summary: 英国对华宣战，清军战败，签订《南京条约》割让香港岛、开放五口通商。
+  tags: [战争, 条约外交]
+  related: [uk_opium_war]
+  figures: [linzexu, daoguang]
+
+- id: china_taiping
+  year: 1850
+  endYear: 1864
+  level: 1
+  title: 太平天国运动
+  summary: 洪秀全建立太平天国，与清廷长期对抗，各方记载伤亡人数存在差异。
+  tags: [革命政变]
+  figures: [hong_xiuquan]
+
+- id: opium_war_2
+  year: 1856
+  endYear: 1860
+  level: 1
+  title: 第二次鸦片战争
+  summary: 英法联军攻入北京，火烧圆明园，清廷签订《北京条约》。
+  tags: [战争, 条约外交]
+  related: [uk_second_opium, france_second_opium]
+
+- id: china_self_strengthening
+  year: 1861
+  endYear: 1895
+  level: 2
+  title: 洋务运动
+  summary: 清廷推行洋务运动，引进西方技术兴办军工、民用企业，建立近代海军。
+  tags: [改革运动, 科技发明]
+  figures: [zeng_guofan, li_hongzhang]
+
+- id: china_sino_japanese_war
+  year: 1894
+  endYear: 1895
+  level: 1
+  title: 甲午战争
+  summary: 清朝与日本因朝鲜问题开战，清军战败，签订《马关条约》割让台湾。
+  tags: [战争, 条约外交]
+  related: [japan_meiji_expansion]
+  figures: [li_hongzhang]
+
+- id: china_hundred_days
+  year: 1898
+  level: 2
+  title: 戊戌变法
+  summary: 光绪帝支持康有为等推行变法，历时103天后被慈禧太后终止。
+  tags: [改革运动]
+  figures: [guangxu, kang_youwei]

@@ -1,0 +1,42 @@
+- id: usa_wwi_entry
+  year: 1917
+  level: 1
+  title: 参加第一次世界大战
+  summary: 美国宣布对德参战，向欧洲派遣军队，对协约国最终胜利起到重要作用。
+  tags: [战争]
+  related: [uk_wwi, france_wwi, germany_wwi]
+
+- id: usa_great_depression
+  year: 1929
+  endYear: 1933
+  level: 1
+  title: 大萧条
+  summary: 纽约股市崩盘引发全球经济危机，美国失业率大幅上升，工农业生产大幅下降。
+  tags: [经济贸易]
+
+- id: usa_new_deal
+  year: 1933
+  endYear: 1939
+  level: 2
+  title: 罗斯福新政
+  summary: 罗斯福总统推行新政，通过政府干预手段推动经济复苏和社会改革。
+  tags: [改革运动, 经济贸易]
+  figures: [roosevelt_fdr]
+
+- id: usa_wwii
+  year: 1941
+  endYear: 1945
+  level: 1
+  title: 参加第二次世界大战
+  summary: 珍珠港事件后美国对日宣战，随后对德意宣战，参与欧亚两线作战。
+  tags: [战争]
+  related: [japan_wwii_asia, germany_wwii]
+  figures: [roosevelt_fdr, eisenhower]
+
+- id: usa_atomic_bomb
+  year: 1945
+  level: 1
+  title: 原子弹投放
+  summary: 美国在日本广岛和长崎投放原子弹，各方对其在结束战争中的作用评价存在分歧。
+  tags: [战争, 科技发明]
+  related: [japan_wwii_end]

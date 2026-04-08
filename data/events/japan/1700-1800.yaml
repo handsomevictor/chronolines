@@ -1,0 +1,23 @@
+- id: japan_edo_period
+  year: 1700
+  endYear: 1800
+  level: 1
+  title: 江户时代中期
+  summary: 德川幕府统治下日本维持锁国政策，仅与荷兰、中国等少数国家保持贸易往来。
+  tags: [经济贸易, 王朝更迭]
+
+- id: japan_genroku_culture
+  year: 1688
+  endYear: 1704
+  level: 2
+  title: 元禄文化繁荣
+  summary: 元禄年间商人文化兴盛，俳句、浮世绘、歌舞伎等艺术形式蓬勃发展。
+  tags: [文化思想]
+
+- id: japan_tanuma_reform
+  year: 1772
+  endYear: 1786
+  level: 3
+  title: 田沼意次改革
+  summary: 田沼意次推行重商政策，扩大对外贸易，但因腐败问题引发批评最终失势。
+  tags: [改革运动, 经济贸易]

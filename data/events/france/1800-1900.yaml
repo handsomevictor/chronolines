@@ -1,0 +1,51 @@
+- id: france_napoleon
+  year: 1799
+  endYear: 1815
+  level: 1
+  title: 拿破仑时代
+  summary: 拿破仑从第一执政到皇帝，建立帝国并发动系列战争，最终战败流放。
+  tags: [战争, 王朝更迭]
+  related: [uk_napoleonic_wars]
+  figures: [napoleon]
+
+- id: france_restoration
+  year: 1815
+  endYear: 1830
+  level: 2
+  title: 波旁王朝复辟
+  summary: 维也纳会议后波旁王朝复辟，路易十八、查理十世相继执政。
+  tags: [王朝更迭]
+
+- id: france_1848_revolution
+  year: 1848
+  level: 1
+  title: 1848年革命
+  summary: 法国爆发革命，七月王朝覆灭，第二共和国成立，路易·拿破仑当选总统。
+  tags: [革命政变]
+
+- id: france_second_empire
+  year: 1852
+  endYear: 1870
+  level: 2
+  title: 法兰西第二帝国
+  summary: 路易·拿破仑称帝为拿破仑三世，法国经历工业化和城市改造时期。
+  tags: [王朝更迭, 经济贸易]
+  figures: [napoleon_iii]
+
+- id: france_second_opium
+  year: 1856
+  endYear: 1860
+  level: 2
+  title: 参与第二次鸦片战争
+  summary: 法国与英国联合对华作战，攻入北京，签订《北京条约》。
+  tags: [战争, 殖民扩张]
+  related: [opium_war_2]
+
+- id: france_franco_prussian
+  year: 1870
+  endYear: 1871
+  level: 1
+  title: 普法战争
+  summary: 法国战败，割让阿尔萨斯-洛林，巴黎公社短暂成立后被镇压。
+  tags: [战争]
+  related: [germany_unification]

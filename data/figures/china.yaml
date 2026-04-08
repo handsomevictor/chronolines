@@ -1,0 +1,63 @@
+- id: kangxi
+  name: 康熙帝
+  birthYear: 1654
+  deathYear: 1722
+  level: 1
+  summary: 清朝第四位皇帝，在位61年，奠定清朝全盛基础，推行文治武功。
+  events: [china_kangxi_death]
+
+- id: qianlong
+  name: 乾隆帝
+  birthYear: 1711
+  deathYear: 1799
+  level: 1
+  summary: 清朝第六位皇帝，在位61年，清朝疆域达到极盛，晚年出现腐败问题。
+  events: [china_qianlong_reign, china_macartney_mission]
+
+- id: linzexu
+  name: 林则徐
+  birthYear: 1785
+  deathYear: 1850
+  level: 2
+  summary: 主导虎门销烟，是清末最早主张了解西方的官员之一。
+  events: [opium_war_1]
+
+- id: hong_xiuquan
+  name: 洪秀全
+  birthYear: 1814
+  deathYear: 1864
+  level: 2
+  summary: 太平天国创立者，建立政权与清廷对抗长达十四年。
+  events: [china_taiping]
+
+- id: li_hongzhang
+  name: 李鸿章
+  birthYear: 1823
+  deathYear: 1901
+  level: 1
+  summary: 洋务运动主要推动者之一，代表清廷签订多项条约，政治生涯颇具争议。
+  events: [china_self_strengthening, china_sino_japanese_war]
+
+- id: sun_yatsen
+  name: 孙中山
+  birthYear: 1866
+  deathYear: 1925
+  level: 1
+  summary: 中华民国临时大总统，三民主义提出者，推动结束帝制。
+  events: [china_qing_end]
+
+- id: mao_zedong
+  name: 毛泽东
+  birthYear: 1893
+  deathYear: 1976
+  level: 1
+  summary: 中国共产党主要领导人，中华人民共和国的主要缔造者之一。
+  events: [china_prc_founded, china_cultural_revolution]
+
+- id: deng_xiaoping
+  name: 邓小平
+  birthYear: 1904
+  deathYear: 1997
+  level: 1
+  summary: 主导中国改革开放路线的制定，推动经济体制改革。
+  events: [china_reform_opening]

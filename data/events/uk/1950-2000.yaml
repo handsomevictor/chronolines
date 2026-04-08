@@ -1,0 +1,38 @@
+- id: uk_decolonization
+  year: 1947
+  endYear: 1970
+  level: 1
+  title: 大英帝国去殖民化
+  summary: 印度、巴基斯坦等殖民地相继独立，大英帝国逐步解体，英联邦成立。
+  tags: [殖民扩张, 条约外交]
+  related: [usa_cold_war]
+
+- id: uk_suez_crisis
+  year: 1956
+  level: 2
+  title: 苏伊士运河危机
+  summary: 英法以色列联合入侵埃及，迫于美苏压力撤军，标志英国国际影响力衰退。
+  tags: [战争, 条约外交]
+  related: [usa_suez, france_suez]
+
+- id: uk_eec_join
+  year: 1973
+  level: 2
+  title: 加入欧洲经济共同体
+  summary: 英国正式加入欧洲经济共同体（EEC），开启欧洲一体化进程参与。
+  tags: [条约外交, 经济贸易]
+
+- id: uk_falklands_war
+  year: 1982
+  level: 2
+  title: 马岛战争
+  summary: 阿根廷占领福克兰群岛，英国派遣特遣舰队收复，历时74天结束。
+  tags: [战争]
+
+- id: uk_hk_handover
+  year: 1997
+  level: 2
+  title: 香港回归中国
+  summary: 英国将香港主权移交中华人民共和国，结束对香港逾百年的管治。
+  tags: [条约外交]
+  related: [china_hk_handover]

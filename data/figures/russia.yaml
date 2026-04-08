@@ -1,0 +1,63 @@
+- id: peter_great
+  name: 彼得大帝
+  birthYear: 1672
+  deathYear: 1725
+  level: 1
+  summary: 俄国沙皇，推行西化改革，建立圣彼得堡，将俄国确立为欧洲强国。
+  events: [russia_peter_great, russia_great_northern_war]
+
+- id: catherine_great
+  name: 叶卡捷琳娜大帝
+  birthYear: 1729
+  deathYear: 1796
+  level: 1
+  summary: 俄国女皇，在位34年，扩张领土，推行开明专制，文化艺术赞助者。
+  events: [russia_catherine_great]
+
+- id: kutuzov
+  name: 库图佐夫将军
+  birthYear: 1745
+  deathYear: 1813
+  level: 2
+  summary: 俄国陆军元帅，1812年率军抵御拿破仑入侵，以空间换时间策略奏效。
+  events: [russia_napoleon_invasion]
+
+- id: alexander_ii
+  name: 亚历山大二世
+  birthYear: 1818
+  deathYear: 1881
+  level: 2
+  summary: 俄国沙皇，颁布解放法令废除农奴制，推行司法改革，遭暗杀身亡。
+  events: [russia_serf_emancipation]
+
+- id: lenin
+  name: 列宁
+  birthYear: 1870
+  deathYear: 1924
+  level: 1
+  summary: 俄国布尔什维克党领袖，领导十月革命，建立苏维埃政权。
+  events: [russia_revolution_1917]
+
+- id: trotsky
+  name: 托洛茨基
+  birthYear: 1879
+  deathYear: 1940
+  level: 2
+  summary: 布尔什维克领导人，组建红军并指挥内战，后与斯大林政治斗争失败被流放。
+  events: [russia_revolution_1917, russia_civil_war]
+
+- id: gorbachev
+  name: 戈尔巴乔夫
+  birthYear: 1931
+  deathYear: 2022
+  level: 1
+  summary: 苏联最后一任领导人，推行开放和改革政策，苏联在其任内解体。
+  events: [russia_ussr_dissolution]
+
+- id: yeltsin
+  name: 叶利钦
+  birthYear: 1931
+  deathYear: 2007
+  level: 2
+  summary: 俄罗斯联邦首任总统，苏联解体后主导俄罗斯政治转型。
+  events: [russia_ussr_dissolution]

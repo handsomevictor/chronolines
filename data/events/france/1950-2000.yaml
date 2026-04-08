@@ -1,0 +1,38 @@
+- id: france_indochina_war
+  year: 1946
+  endYear: 1954
+  level: 1
+  title: 第一次印度支那战争
+  summary: 法国与越盟在印度支那展开战争，奠边府战役后法军战败，签订《日内瓦协议》。
+  tags: [战争, 殖民扩张]
+
+- id: france_algeria_war
+  year: 1954
+  endYear: 1962
+  level: 1
+  title: 阿尔及利亚战争
+  summary: 阿尔及利亚独立战争爆发，各方记载伤亡数字存在差异，1962年阿尔及利亚独立。
+  tags: [战争, 殖民扩张]
+
+- id: france_fifth_republic
+  year: 1958
+  level: 2
+  title: 第五共和国成立
+  summary: 戴高乐主导新宪法制定，法兰西第五共和国成立，强化总统权力。
+  tags: [革命政变, 改革运动]
+  figures: [de_gaulle]
+
+- id: france_may_1968
+  year: 1968
+  level: 2
+  title: 五月风暴
+  summary: 学生与工人在法国发起大规模抗议示威，引发社会动荡，推动一定程度的社会改革。
+  tags: [革命政变, 改革运动]
+
+- id: france_eu_founding
+  year: 1957
+  level: 2
+  title: 参与创立欧洲经济共同体
+  summary: 法国与西德等六国签订《罗马条约》，建立欧洲经济共同体。
+  tags: [条约外交, 经济贸易]
+  related: [germany_eec]

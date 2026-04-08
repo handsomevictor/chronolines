@@ -1,0 +1,38 @@
+- id: russia_cold_war
+  year: 1947
+  endYear: 1991
+  level: 1
+  title: 冷战
+  summary: 苏联与美国在政治、军事和意识形态领域展开全球对抗，形成两极格局。
+  tags: [条约外交]
+  related: [usa_cold_war]
+
+- id: russia_sputnik
+  year: 1957
+  level: 2
+  title: 人造卫星发射
+  summary: 苏联成功发射世界上第一颗人造地球卫星斯普特尼克1号，开启太空时代。
+  tags: [科技发明]
+
+- id: russia_cuban_missile
+  year: 1962
+  level: 2
+  title: 古巴导弹危机
+  summary: 苏联在古巴部署导弹，美苏紧张对峙13天，最终通过谈判解决危机。
+  tags: [条约外交]
+  related: [usa_cold_war]
+
+- id: russia_prague_spring
+  year: 1968
+  level: 2
+  title: 镇压布拉格之春
+  summary: 苏联及华约国家出兵捷克斯洛伐克，镇压捷克斯洛伐克的政治改革运动。
+  tags: [革命政变]
+
+- id: russia_ussr_dissolution
+  year: 1991
+  level: 1
+  title: 苏联解体
+  summary: 各加盟共和国相继宣告独立，苏联正式宣告解体，俄罗斯联邦继承其主要遗产。
+  tags: [王朝更迭, 革命政变]
+  figures: [gorbachev, yeltsin]

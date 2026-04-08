@@ -1,0 +1,39 @@
+- id: uk_wwi
+  year: 1914
+  endYear: 1918
+  level: 1
+  title: 第一次世界大战
+  summary: 英国以协约国身份参战，战后签订《凡尔赛条约》，获得部分德国殖民地。
+  tags: [战争, 条约外交]
+  related: [germany_wwi, france_wwi]
+
+- id: uk_irish_independence
+  year: 1921
+  level: 2
+  title: 爱尔兰独立
+  summary: 英爱条约签订，爱尔兰自由邦成立，北爱尔兰留在英国版图内。
+  tags: [条约外交, 革命政变]
+
+- id: uk_general_strike
+  year: 1926
+  level: 2
+  title: 英国总罢工
+  summary: 矿工罢工引发全国性总罢工，持续九天后工会停止行动。
+  tags: [改革运动]
+
+- id: uk_wwii
+  year: 1939
+  endYear: 1945
+  level: 1
+  title: 第二次世界大战
+  summary: 英国对德宣战，经历敦刻尔克撤退、不列颠之战，最终与盟国取得胜利。
+  tags: [战争]
+  related: [germany_wwii, france_wwii, usa_wwii]
+  figures: [churchill]
+
+- id: uk_welfare_state
+  year: 1945
+  level: 2
+  title: 福利国家建立
+  summary: 工党政府上台，建立国家医疗服务体系（NHS），推行一系列社会福利改革。
+  tags: [改革运动]

@@ -1,0 +1,39 @@
+- id: germany_division
+  year: 1949
+  level: 1
+  title: 德国分裂为东西德
+  summary: 联邦德国（西德）和德意志民主共和国（东德）相继成立，德国一分为二。
+  tags: [王朝更迭, 条约外交]
+  related: [usa_cold_war, russia_cold_war]
+
+- id: germany_eec
+  year: 1957
+  level: 2
+  title: 参与创立欧洲经济共同体
+  summary: 西德与法国等五国签订《罗马条约》，创立欧洲经济共同体。
+  tags: [条约外交, 经济贸易]
+  related: [france_eu_founding]
+
+- id: germany_berlin_wall
+  year: 1961
+  level: 2
+  title: 柏林墙建造
+  summary: 东德当局修建柏林墙，将柏林分割为东西两部分，阻止东德居民外逃。
+  tags: [条约外交]
+  related: [usa_cold_war]
+
+- id: germany_wirtschaftswunder
+  year: 1950
+  endYear: 1965
+  level: 2
+  title: 经济奇迹
+  summary: 西德战后经济快速复苏，成为欧洲主要经济体，工业生产大幅增长。
+  tags: [经济贸易, 改革运动]
+
+- id: germany_reunification
+  year: 1990
+  level: 1
+  title: 德国统一
+  summary: 东西德统一条约签订，两德正式合并为统一的德意志联邦共和国。
+  tags: [王朝更迭, 条约外交]
+  related: [russia_ussr_dissolution]
