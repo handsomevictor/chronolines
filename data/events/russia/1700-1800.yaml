@@ -1,11 +1,6 @@
-- id: russia_peter_great
-  year: 1700
-  endYear: 1725
-  level: 1
-  title: 彼得大帝改革时期
-  summary: 彼得一世推行西化改革，建立圣彼得堡，扩展波罗的海出海口，建立现代军队。
-  tags: [改革运动, 王朝更迭]
-  figures: [peter_great]
+# 俄国 1700-1800 历史事件
+
+# ==================== Level 1 ====================
 
 - id: russia_great_northern_war
   year: 1700
@@ -16,19 +11,531 @@
   tags: [战争, 条约外交]
   figures: [peter_great]
 
-- id: russia_catherine_great
+- id: russia_peter_reforms
+  year: 1700
+  endYear: 1725
+  level: 1
+  title: 彼得大帝西化改革
+  summary: 彼得一世引进西方技术与制度，建立海军、改历法、推行行省制，推动俄国现代化。
+  tags: [改革运动, 王朝更迭]
+  figures: [peter_great]
+
+- id: russia_st_petersburg_founded
+  year: 1703
+  level: 1
+  title: 圣彼得堡建立
+  summary: 彼得一世在涅瓦河口建立新城圣彼得堡，并于1712年迁都至此，成为俄国政治中枢。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_battle_poltava
+  year: 1709
+  level: 1
+  title: 波尔塔瓦战役
+  summary: 俄军大败瑞典军队，瑞典国王查理十二世出逃，俄国确立东欧霸权地位。
+  tags: [战争]
+  figures: [peter_great]
+
+- id: russia_nystad_treaty
+  year: 1721
+  level: 1
+  title: 《尼斯塔德条约》
+  summary: 俄瑞签订和约，俄国获得爱沙尼亚、拉脱维亚等波罗的海地区，正式取得出海口。
+  tags: [条约外交]
+  figures: [peter_great]
+
+- id: russia_elizabeth_reign
+  year: 1741
+  endYear: 1762
+  level: 1
+  title: 伊丽莎白女皇执政
+  summary: 伊丽莎白一世在位期间俄国文化繁荣，参与七年战争，建立莫斯科大学，国力上升。
+  tags: [王朝更迭, 改革运动]
+  figures: [elizabeth_i]
+
+- id: russia_catherine_great_reign
   year: 1762
   endYear: 1796
   level: 1
   title: 叶卡捷琳娜大帝执政
-  summary: 叶卡捷琳娜二世在位34年，扩张领土，推行开明专制，俄国进一步欧化。
+  summary: 叶卡捷琳娜二世在位34年，扩张领土，推行开明专制，三次瓜分波兰，并入克里米亚。
   tags: [王朝更迭, 改革运动]
   figures: [catherine_great]
 
 - id: russia_pugachev_rebellion
   year: 1773
   endYear: 1775
-  level: 2
+  level: 1
   title: 普加乔夫起义
-  summary: 哥萨克领袖普加乔夫领导大规模农民起义，被镇压后普加乔夫被处决。
+  summary: 哥萨克领袖普加乔夫领导大规模农民武装起义，席卷伏尔加流域，被镇压后处决。
   tags: [革命政变]
+  figures: [pugachev]
+
+- id: russia_russo_turkish_war_1768
+  year: 1768
+  endYear: 1774
+  level: 1
+  title: 第一次俄土战争（18世纪）
+  summary: 俄国与奥斯曼帝国交战，以《库楚克-开纳吉条约》结束，俄国获黑海出海口权益。
+  tags: [战争, 条约外交]
+  figures: [catherine_great]
+
+- id: russia_crimea_annexed
+  year: 1783
+  level: 1
+  title: 克里米亚并入俄国
+  summary: 叶卡捷琳娜二世宣布克里米亚汗国并入俄国版图，俄国正式取得黑海北岸控制权。
+  tags: [殖民扩张, 条约外交]
+  figures: [catherine_great]
+
+- id: russia_polish_partitions
+  year: 1772
+  endYear: 1795
+  level: 1
+  title: 三次瓜分波兰
+  summary: 俄普奥三国先后三次瓜分波兰，至1795年波兰从欧洲地图消失，俄国领土大幅扩张。
+  tags: [殖民扩张, 条约外交]
+  figures: [catherine_great]
+
+# ==================== Level 2 ====================
+
+- id: russia_peter_navy_founded
+  year: 1696
+  level: 2
+  title: 俄国海军创建
+  summary: 彼得一世在亚速海战役后着手建立俄国正规海军，奠定海上力量基础。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_streltsy_revolt
+  year: 1698
+  level: 2
+  title: 射击军叛乱镇压
+  summary: 彼得大帝镇压射击军叛乱，随后解散旧式军队，推进军事现代化改革。
+  tags: [革命政变, 改革运动]
+  figures: [peter_great]
+
+- id: russia_peter_beard_tax
+  year: 1698
+  level: 2
+  title: 剃须令与西化礼仪改革
+  summary: 彼得一世颁布剃须令，要求贵族和官员剃须蓄发，强制推行西方生活方式。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_calendar_reform
+  year: 1700
+  level: 2
+  title: 历法改革
+  summary: 彼得一世将俄国历法改为儒略历，以公元纪年取代拜占庭纪年，与西欧接轨。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_peter_admin_reform
+  year: 1708
+  level: 2
+  title: 行省制改革
+  summary: 彼得大帝将全国划分为八大行省，建立地方行政体系，加强中央集权。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_senate_established
+  year: 1711
+  level: 2
+  title: 参政院建立
+  summary: 彼得一世设立参政院（枢密院）作为最高行政机构，取代旧式贵族杜马。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_peter_church_reform
+  year: 1721
+  level: 2
+  title: 教会改革
+  summary: 彼得一世废除牧首制，设立宗教院管理教会，使东正教会服从国家权力。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_peter_death
+  year: 1725
+  level: 2
+  title: 彼得大帝逝世
+  summary: 彼得一世在圣彼得堡病逝，享年52岁，其身后无明确继承人，引发宫廷政变频发。
+  tags: [王朝更迭]
+  figures: [peter_great]
+
+- id: russia_anna_reign
+  year: 1730
+  endYear: 1740
+  level: 2
+  title: 安娜女皇执政
+  summary: 安娜·伊万诺芙娜在位期间，俄国贵族势力扩大，德国人在朝廷中影响力增强。
+  tags: [王朝更迭]
+
+- id: russia_peter_iii_deposed
+  year: 1762
+  level: 2
+  title: 彼得三世被废黜
+  summary: 彼得三世在位仅六个月，因亲普鲁士政策引发贵族不满，被叶卡捷琳娜发动政变推翻。
+  tags: [革命政变, 王朝更迭]
+  figures: [catherine_great]
+
+- id: russia_seven_years_war
+  year: 1756
+  endYear: 1763
+  level: 2
+  title: 七年战争参战
+  summary: 俄国加入反普鲁士同盟参加七年战争，俄军一度占领柏林，后因彼得三世即位而撤军。
+  tags: [战争, 条约外交]
+
+- id: russia_moscow_university
+  year: 1755
+  level: 2
+  title: 莫斯科大学建立
+  summary: 在罗蒙诺索夫倡议下，莫斯科大学正式创立，成为俄国最早的综合性高等学府。
+  tags: [文化思想, 科技发明]
+  figures: [lomonosov]
+
+- id: russia_kuban_expansion
+  year: 1783
+  level: 2
+  title: 高加索北部扩张
+  summary: 俄国将库班地区及北高加索纳入版图，推进对南方的领土扩张战略。
+  tags: [殖民扩张]
+
+- id: russia_russo_turkish_war_1787
+  year: 1787
+  endYear: 1792
+  level: 2
+  title: 第二次俄土战争
+  summary: 俄国再次与奥斯曼交战，苏沃洛夫将军屡立战功，以《雅西条约》确认克里米亚归属。
+  tags: [战争, 条约外交]
+  figures: [suvorov]
+
+- id: russia_paul_i_reign
+  year: 1796
+  endYear: 1801
+  level: 2
+  title: 保罗一世执政
+  summary: 保罗一世即位后推翻叶卡捷琳娜多项政策，性情专断，最终在宫廷政变中被杀。
+  tags: [王朝更迭]
+
+- id: russia_suvorov_campaigns
+  year: 1787
+  endYear: 1800
+  level: 2
+  title: 苏沃洛夫的军事征伐
+  summary: 苏沃洛夫将军在俄土战争、波兰及意大利战役中屡创奇功，被封陆军元帅。
+  tags: [战争]
+  figures: [suvorov]
+
+- id: russia_polish_partition_1
+  year: 1772
+  level: 2
+  title: 第一次瓜分波兰
+  summary: 俄普奥三国第一次瓜分波兰，俄国获得白俄罗斯东部，开启波兰被瓜分的历史。
+  tags: [殖民扩张, 条约外交]
+  figures: [catherine_great]
+
+- id: russia_polish_partition_2
+  year: 1793
+  level: 2
+  title: 第二次瓜分波兰
+  summary: 俄普两国再次瓜分波兰，俄国获得立陶宛和乌克兰大片领土。
+  tags: [殖民扩张, 条约外交]
+  figures: [catherine_great]
+
+- id: russia_polish_partition_3
+  year: 1795
+  level: 2
+  title: 第三次瓜分波兰
+  summary: 俄普奥三国完成最终瓜分，波兰国家消亡，俄国获库尔兰及立陶宛余部。
+  tags: [殖民扩张, 条约外交]
+  figures: [catherine_great]
+
+- id: russia_kuchuk_treaty
+  year: 1774
+  level: 2
+  title: 《库楚克-开纳吉条约》
+  summary: 俄土战争结束后签订，俄国获得黑海北岸部分领土及黑海航行权，削弱奥斯曼势力。
+  tags: [条约外交]
+  figures: [catherine_great]
+
+- id: russia_iassy_treaty
+  year: 1792
+  level: 2
+  title: 《雅西条约》
+  summary: 第二次俄土战争结束，奥斯曼正式承认俄国对克里米亚的主权，黑海北岸划定。
+  tags: [条约外交]
+  figures: [catherine_great]
+
+- id: russia_elizabeth_winter_palace
+  year: 1754
+  endYear: 1762
+  level: 2
+  title: 冬宫建造
+  summary: 伊丽莎白女皇命建筑师拉斯特雷利设计建造圣彼得堡冬宫，成为沙俄皇室正式宫殿。
+  tags: [文化思想]
+  figures: [elizabeth_i]
+
+- id: russia_noble_charter
+  year: 1785
+  level: 2
+  title: 《贵族特许状》颁布
+  summary: 叶卡捷琳娜二世颁布贵族特许状，确认贵族免除徭役等特权，巩固贵族阶层地位。
+  tags: [改革运动]
+  figures: [catherine_great]
+
+- id: russia_free_economic_society
+  year: 1765
+  level: 2
+  title: 自由经济学会成立
+  summary: 俄国最早的公共学术机构之一，以推进农业改革和经济科学研究为宗旨。
+  tags: [经济贸易, 文化思想]
+
+# ==================== Level 3 ====================
+
+- id: russia_peter_great_born
+  year: 1672
+  level: 3
+  title: 彼得一世出生
+  summary: 彼得·阿列克谢耶维奇生于莫斯科，后成为俄国沙皇彼得一世，世称彼得大帝。
+  tags: [人物]
+  figures: [peter_great]
+
+- id: russia_peter_co_tsar
+  year: 1682
+  level: 3
+  title: 彼得一世与伊万五世共同执政
+  summary: 彼得一世年幼登基，与同父异母兄伊万五世共同担任沙皇，摄政权由姐姐索菲亚掌控。
+  tags: [王朝更迭]
+  figures: [peter_great]
+
+- id: russia_sophia_regency_ends
+  year: 1689
+  level: 3
+  title: 索菲亚摄政结束
+  summary: 彼得一世亲政，推翻姐姐索菲亚的摄政，将其软禁于修道院，开始独立执政。
+  tags: [王朝更迭]
+  figures: [peter_great]
+
+- id: russia_azov_campaigns
+  year: 1695
+  endYear: 1696
+  level: 3
+  title: 亚速征伐
+  summary: 彼得一世两次率军攻打亚速要塞，第二次借助新建舰队成功，获得黑海出口。
+  tags: [战争]
+  figures: [peter_great]
+
+- id: russia_grand_embassy
+  year: 1697
+  endYear: 1698
+  level: 3
+  title: 大使团出访西欧
+  summary: 彼得一世化名随大使团出访荷兰、英国等国，亲身学习造船技术与西方制度。
+  tags: [改革运动, 条约外交]
+  figures: [peter_great]
+
+- id: russia_lomonosov_born
+  year: 1711
+  level: 3
+  title: 罗蒙诺索夫出生
+  summary: 米哈伊尔·罗蒙诺索夫生于阿尔汉格尔斯克省，后成为俄国启蒙时代最重要的科学家。
+  tags: [人物]
+  figures: [lomonosov]
+
+- id: russia_peter_table_of_ranks
+  year: 1722
+  level: 3
+  title: 《官秩表》颁布
+  summary: 彼得一世颁布《官秩表》，将官员分为14等级，以能力和功勋取代出身决定仕途。
+  tags: [改革运动]
+  figures: [peter_great]
+
+- id: russia_academy_sciences
+  year: 1724
+  level: 3
+  title: 俄国科学院成立
+  summary: 彼得一世筹建俄国科学院，翌年在圣彼得堡正式开幕，成为俄国最高学术机构。
+  tags: [科技发明, 文化思想]
+  figures: [peter_great]
+
+- id: russia_catherine_i_reign
+  year: 1725
+  endYear: 1727
+  level: 3
+  title: 叶卡捷琳娜一世执政
+  summary: 彼得大帝遗孀叶卡捷琳娜一世继位，实权由缅希科夫掌控，在位两年后驾崩。
+  tags: [王朝更迭]
+
+- id: russia_peter_ii_reign
+  year: 1727
+  endYear: 1730
+  level: 3
+  title: 彼得二世执政
+  summary: 彼得大帝之孙彼得二世年幼即位，朝政由旧贵族把持，在位不足三年因病早逝。
+  tags: [王朝更迭]
+
+- id: russia_ivan_vi_reign
+  year: 1740
+  endYear: 1741
+  level: 3
+  title: 伊万六世短暂执政
+  summary: 安娜女皇身亡后，两月大的伊万六世被立为沙皇，一年后被伊丽莎白政变推翻。
+  tags: [王朝更迭]
+
+- id: russia_elizabeth_coup
+  year: 1741
+  level: 3
+  title: 伊丽莎白政变夺权
+  summary: 彼得大帝之女伊丽莎白联合禁卫军发动政变，推翻伊万六世摄政，登上皇位。
+  tags: [革命政变, 王朝更迭]
+  figures: [elizabeth_i]
+
+- id: russia_lomonosov_science_works
+  year: 1748
+  level: 3
+  title: 罗蒙诺索夫科学研究成果
+  summary: 罗蒙诺索夫提出物质守恒理论，在化学、物理、天文等领域作出多项奠基性贡献。
+  tags: [科技发明]
+  figures: [lomonosov]
+
+- id: russia_lomonosov_grammar
+  year: 1755
+  level: 3
+  title: 罗蒙诺索夫《俄语语法》出版
+  summary: 罗蒙诺索夫出版《俄语语法》，规范了现代俄语书写体系，是重要的语言学成就。
+  tags: [文化思想]
+  figures: [lomonosov]
+
+- id: russia_hermitage_founded
+  year: 1764
+  level: 3
+  title: 冬宫博物馆创建
+  summary: 叶卡捷琳娜二世购入大批西欧艺术品，存放于冬宫，冬宫博物馆（艾尔米塔什）由此肇始。
+  tags: [文化思想]
+  figures: [catherine_great]
+
+- id: russia_catherine_voltaire_correspondence
+  year: 1763
+  level: 3
+  title: 叶卡捷琳娜与伏尔泰通信
+  summary: 叶卡捷琳娜二世与法国启蒙思想家伏尔泰长期书信往来，宣扬开明专制理念。
+  tags: [文化思想]
+  figures: [catherine_great]
+
+- id: russia_pugachev_captured
+  year: 1775
+  level: 3
+  title: 普加乔夫被捕处决
+  summary: 普加乔夫起义失败，普加乔夫被部下出卖，押送莫斯科后在红场被处以极刑。
+  tags: [革命政变]
+  figures: [pugachev]
+
+- id: russia_naval_victory_chesma
+  year: 1770
+  level: 3
+  title: 切斯马海战
+  summary: 俄国舰队在爱琴海切斯马港全歼奥斯曼舰队，是俄国海军史上的辉煌胜利之一。
+  tags: [战争]
+  figures: [catherine_great]
+
+- id: russia_suvorov_born
+  year: 1730
+  level: 3
+  title: 苏沃洛夫出生
+  summary: 亚历山大·苏沃洛夫生于莫斯科，后成为俄国历史上从未战败的传奇将军，封陆军元帅。
+  tags: [人物]
+  figures: [suvorov]
+
+- id: russia_catherine_great_born
+  year: 1729
+  level: 3
+  title: 叶卡捷琳娜二世出生
+  summary: 索菲亚·弗里克里斯出生于普鲁士，后嫁入俄国皇室，改名叶卡捷琳娜，成为一代女皇。
+  tags: [人物]
+  figures: [catherine_great]
+
+- id: russia_radishchev_journey
+  year: 1790
+  level: 3
+  title: 拉季舍夫《从彼得堡到莫斯科的旅行》
+  summary: 拉季舍夫出版批评农奴制的著作，被叶卡捷琳娜以煽动叛乱罪流放西伯利亚。
+  tags: [文化思想]
+
+- id: russia_fonvizin_minor
+  year: 1782
+  level: 3
+  title: 冯维辛《未成年人》上演
+  summary: 冯维辛讽刺喜剧《未成年人》在圣彼得堡首演，揭露俄国贵族无知腐化，成为经典剧目。
+  tags: [文化思想]
+
+- id: russia_paul_i_murder
+  year: 1801
+  level: 3
+  title: 保罗一世遇刺
+  summary: 保罗一世在宫廷政变中被贵族官员谋杀，亚历山大一世随即即位，史称三月革命。
+  tags: [革命政变, 王朝更迭]
+
+- id: russia_peter_great_empire_title
+  year: 1721
+  level: 3
+  title: 俄国改称俄罗斯帝国
+  summary: 《尼斯塔德条约》签订后，元老院向彼得一世敬上"皇帝"称号，俄国正式成为帝国。
+  tags: [王朝更迭]
+  figures: [peter_great]
+
+- id: russia_golitsyn_reform_attempt
+  year: 1730
+  level: 3
+  title: 贵族限制皇权尝试
+  summary: 安娜女皇即位之初，高层贵族戈里岑等人尝试通过条件书限制皇权，安娜随后撕毁协议。
+  tags: [改革运动, 革命政变]
+
+- id: russia_lomonosov_death
+  year: 1765
+  level: 3
+  title: 罗蒙诺索夫逝世
+  summary: 米哈伊尔·罗蒙诺索夫在圣彼得堡逝世，享年53岁，留下物理、化学、语言等多领域遗产。
+  tags: [人物]
+  figures: [lomonosov]
+
+- id: russia_nakaz_published
+  year: 1767
+  level: 3
+  title: 叶卡捷琳娜《训令》发布
+  summary: 叶卡捷琳娜二世发布《训令》，以启蒙思想为蓝本阐述立法原则，显示开明专制理念。
+  tags: [改革运动, 文化思想]
+  figures: [catherine_great]
+
+- id: russia_pugachev_rebellion_start
+  year: 1773
+  level: 3
+  title: 普加乔夫起义爆发
+  summary: 哥萨克叶梅利扬·普加乔夫自称彼得三世，在乌拉尔地区发动武装起义，迅速扩散。
+  tags: [革命政变]
+  figures: [pugachev]
+
+- id: russia_suvorov_ismail
+  year: 1790
+  level: 3
+  title: 苏沃洛夫攻克伊兹梅尔要塞
+  summary: 苏沃洛夫率军强攻黑海要塞伊兹梅尔，一昼夜内攻克，歼灭守军，被视为军事奇迹。
+  tags: [战争]
+  figures: [suvorov]
+
+- id: russia_catherine_great_death
+  year: 1796
+  level: 3
+  title: 叶卡捷琳娜大帝驾崩
+  summary: 叶卡捷琳娜二世在圣彼得堡病逝，享年67岁，保罗一世随即继位，延续俄国帝位传承。
+  tags: [人物, 王朝更迭]
+  figures: [catherine_great]
+
+- id: russia_suvorov_italian_swiss
+  year: 1799
+  level: 3
+  title: 苏沃洛夫意大利与瑞士远征
+  summary: 苏沃洛夫率俄奥联军在意大利连胜法军，随后翻越阿尔卑斯山脉穿越瑞士，创军事传奇。
+  tags: [战争]
+  figures: [suvorov]

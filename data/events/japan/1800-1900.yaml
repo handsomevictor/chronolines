@@ -1,38 +1,870 @@
-- id: japan_perry_arrival
+# 幕末与明治维新（1800-1900）
+# Level 1: 12 | Level 2: 32 | Level 3: 71
+
+# ── Level 1 ──────────────────────────────────────────────────────────────────
+
+- id: japan_perry_kurofune
   year: 1853
   level: 1
-  title: 培里舰队来航
-  summary: 美国海军准将培里率蒸汽舰队抵达江户湾，要求日本开国，幕府被迫谈判。
-  tags: [条约外交, 经济贸易]
-  related: [usa_civil_war]
+  title: 培里黑船来航
+  summary: 美国海军准将培里率蒸汽军舰抵达浦贺，要求日本开国，幕府被迫交涉，锁国体制动摇。
+  tags: [条约外交]
+  related: [usa_manifest_destiny]
+  figures: [ii_naosuke]
+
+- id: japan_kanagawa_treaty
+  year: 1854
+  level: 1
+  title: 《神奈川条约》签订
+  summary: 日本与美国签订《神奈川条约》，开放下田与函馆，幕府对外锁国政策正式终结。
+  tags: [条约外交]
 
 - id: japan_ansei_treaties
   year: 1858
-  level: 2
+  level: 1
   title: 安政五国条约
-  summary: 日本与美英法俄荷签订不平等条约，开放通商口岸，实行协定关税。
+  summary: 日本与美英法荷俄签订通商条约，开放多个港口，协定关税，各方均认定为不平等条约。
   tags: [条约外交, 经济贸易]
+  figures: [ii_naosuke]
+
+- id: japan_ansei_purge
+  year: 1858
+  endYear: 1859
+  level: 1
+  title: 安政大狱
+  summary: 大老井伊直弼大规模镇压尊王攘夷派与反对开国的公家・大名，吉田松阴等人遭处决。
+  tags: [革命政变]
+  figures: [ii_naosuke, yoshida_shoin]
+
+- id: japan_sakuradamon_incident
+  year: 1860
+  level: 1
+  title: 樱田门外之变
+  summary: 水户藩脱藩浪士在江户城樱田门外刺杀大老井伊直弼，幕府权威急剧下落。
+  tags: [革命政变]
+  figures: [ii_naosuke]
+
+- id: japan_taisei_hokan
+  year: 1867
+  level: 1
+  title: 大政奉还
+  summary: 第十五代将军德川庆喜将政权奉还朝廷，幕府统治体制正式宣告终结。
+  tags: [王朝更迭, 革命政变]
+  figures: [tokugawa_yoshinobu]
+
+- id: japan_boshin_war
+  year: 1868
+  endYear: 1869
+  level: 1
+  title: 戊辰战争
+  summary: 新政府军与旧幕府军发生内战，鸟羽伏见之战后新政府军北上，旧幕府方陆续投降。
+  tags: [战争, 王朝更迭]
+  figures: [saigo_takamori, okubo_toshimichi]
 
 - id: japan_meiji_restoration
   year: 1868
   level: 1
-  title: 明治维新
-  summary: 倒幕运动成功，天皇亲政，日本开始大规模推行西化改革，废藩置县。
+  title: 明治维新开始
+  summary: 明治天皇颁布五条誓文，江户改称东京，开始大规模推行近代化改革，确立天皇亲政。
   tags: [改革运动, 王朝更迭]
-  figures: [meiji_emperor, okubo, ito]
+  figures: [meiji_emperor, okubo_toshimichi, saigo_takamori, ito_hirobumi]
 
-- id: japan_meiji_expansion
+- id: japan_haihan_chiken
+  year: 1871
+  level: 1
+  title: 废藩置县
+  summary: 明治政府废除全国藩制，设置府县，集权于中央，近代国家行政体系正式建立。
+  tags: [改革运动]
+  figures: [okubo_toshimichi]
+
+- id: japan_seinan_war
+  year: 1877
+  level: 1
+  title: 西南战争
+  summary: 西乡隆盛率萨摩士族举兵，与政府军激战数月，西乡战败自刎，士族武装反抗终结。
+  tags: [战争, 革命政变]
+  figures: [saigo_takamori]
+
+- id: japan_meiji_constitution
+  year: 1889
+  level: 1
+  title: 大日本帝国宪法颁布
+  summary: 明治天皇颁布宪法，建立以天皇主权为核心的议会制度，伊藤博文主导起草过程。
+  tags: [改革运动]
+  figures: [ito_hirobumi, meiji_emperor]
+
+- id: japan_first_sino_japanese_war
   year: 1894
   endYear: 1895
   level: 1
-  title: 甲午战争胜利
-  summary: 日本对清作战获胜，签订《马关条约》，获得台湾及赔款，跻身东亚强国。
+  title: 甲午战争
+  summary: 日本与清朝在朝鲜问题上开战，日本获胜，签订《马关条约》，获得台湾及2亿两赔款。
   tags: [战争, 条约外交]
-  related: [china_sino_japanese_war]
+  related: [china_sino_japanese_war_94]
+  figures: [ito_hirobumi, yamagata_aritomo]
 
-- id: japan_constitution
+- id: japan_triple_intervention
+  year: 1895
+  level: 1
+  title: 三国干涉还辽
+  summary: 俄、德、法三国以辽东半岛影响远东和平为由施压，迫使日本放弃辽东半岛，引发日本民间反俄情绪。
+  tags: [条约外交]
+  related: [russia_expansion_east]
+
+# ── Level 2 ──────────────────────────────────────────────────────────────────
+
+- id: japan_russia_rezanov
+  year: 1804
+  level: 2
+  title: 俄国列扎诺夫来航
+  summary: 俄国使节列扎诺夫来长崎要求通商，幕府拒绝，俄日关系紧张，蝦夷地戒备加强。
+  tags: [条约外交]
+
+- id: japan_british_phaeton
+  year: 1808
+  level: 2
+  title: 英国军舰博文事件
+  summary: 英舰博文号闯入长崎港，劫持荷兰人要求补给，幕府严厉处分长崎奉行，海防危机显现。
+  tags: [条约外交, 战争]
+
+- id: japan_oshio_heihachiro_revolt
+  year: 1837
+  level: 2
+  title: 大盐平八郎之乱
+  summary: 前大阪奉行与力大盐平八郎率民众起义，反对幕府腐败与饥荒失政，当日即遭镇压。
+  tags: [革命政变]
+
+- id: japan_tenpo_reform
+  year: 1841
+  endYear: 1843
+  level: 2
+  title: 天保改革
+  summary: 老中水野忠邦推行天保改革，取缔奢侈、解散株仲间、推行上知令，因反对强烈失败告终。
+  tags: [改革运动]
+
+- id: japan_shimoda_treaty
+  year: 1855
+  level: 2
+  title: 《下田条约》签订
+  summary: 日本与俄国签订《下田条约》，划定库页岛边界，千岛列岛归属亦在条约中有所规定。
+  tags: [条约外交]
+
+- id: japan_kobu_gattai
+  year: 1860
+  endYear: 1863
+  level: 2
+  title: 公武合体运动
+  summary: 幕府推行公武合体政策，以将军娶皇族女为象征，试图联合朝廷与幕府共同应对外国压力。
+  tags: [改革运动, 条约外交]
+
+- id: japan_sonnojoi_movement
+  year: 1858
+  endYear: 1867
+  level: 2
+  title: 尊王攘夷运动
+  summary: 以长州・水户为中心的志士展开尊王攘夷运动，袭击外国人与幕府要员，政局动荡。
+  tags: [革命政变]
+  figures: [yoshida_shoin]
+
+- id: japan_choshu_bombardment
+  year: 1864
+  level: 2
+  title: 下关战争
+  summary: 长州藩炮击外国船只，随后遭英法美荷四国联军反击，被迫赔款，攘夷路线受重大挫折。
+  tags: [战争, 条约外交]
+
+- id: japan_satsuma_choshu_alliance
+  year: 1866
+  level: 2
+  title: 萨长同盟
+  summary: 坂本龙马等人斡旋下，萨摩藩与长州藩签订秘密同盟，联手倒幕，改变政治格局。
+  tags: [革命政变]
+  figures: [sakamoto_ryoma]
+
+- id: japan_meiji_gojomegisho
+  year: 1868
+  level: 2
+  title: 五条誓文
+  summary: 明治天皇颁布五条誓文，宣示广兴会议、振兴公论、开国进取等近代国家建设原则。
+  tags: [改革运动]
+  figures: [meiji_emperor]
+
+- id: japan_edo_rename_tokyo
+  year: 1868
+  level: 2
+  title: 江户改称东京
+  summary: 明治政府将江户改名东京，并将首都从京都迁至东京，确立近代国家的政治中心。
+  tags: [改革运动]
+
+- id: japan_iwakura_mission
+  year: 1871
+  endYear: 1873
+  level: 2
+  title: 岩仓使团赴欧美考察
+  summary: 岩仓具视率百余人赴欧美考察近代制度，大久保利通等核心成员深受影响，推动近代化。
+  tags: [改革运动, 条约外交]
+  figures: [okubo_toshimichi, ito_hirobumi]
+
+- id: japan_seikanron
+  year: 1873
+  level: 2
+  title: 征韩论争议
+  summary: 西乡隆盛等人主张出兵朝鲜，大久保利通等反对，史称"明治六年政变"，西乡一派下野。
+  tags: [革命政变]
+  figures: [saigo_takamori, okubo_toshimichi]
+
+- id: japan_jiyuminken_movement
+  year: 1874
+  endYear: 1889
+  level: 2
+  title: 自由民权运动
+  summary: 板垣退助等人发起自由民权运动，要求开设国会、制定宪法，推动政党政治萌芽。
+  tags: [改革运动]
+  figures: [itagaki_taisuke]
+
+- id: japan_satsuma_tax_reform
+  year: 1873
+  level: 2
+  title: 地租改正
+  summary: 明治政府将土地税从实物改为货币缴纳，以地价3%为税率，确立近代财政体系基础。
+  tags: [改革运动, 经济贸易]
+
+- id: japan_conscription_law
+  year: 1873
+  level: 2
+  title: 征兵令颁布
+  summary: 明治政府颁布征兵令，废除武士兵役特权，建立近代国民军队体制。
+  tags: [改革运动]
+  figures: [yamagata_aritomo]
+
+- id: japan_hokkaido_development
+  year: 1869
+  endYear: 1900
+  level: 2
+  title: 北海道开拓
+  summary: 明治政府设立开拓使，推进北海道系统开发，引进美国农业技术，设立札幌农学校。
+  tags: [改革运动, 经济贸易]
+
+- id: japan_senan_war_aftermath
+  year: 1878
+  level: 2
+  title: 大久保利通遭暗杀
+  summary: 明治政府核心人物大久保利通在东京遭士族刺客暗杀，明治初期最有力的政治家就此离世。
+  tags: [革命政变]
+  figures: [okubo_toshimichi]
+
+- id: japan_imperial_diet_open
+  year: 1890
+  level: 2
+  title: 帝国议会开设
+  summary: 日本第一届帝国议会召开，采二院制，贵族院与众议院分立，宪政体制正式运作。
+  tags: [改革运动]
+
+- id: japan_sapporo_agricultural
+  year: 1876
+  level: 2
+  title: 札幌农学校设立
+  summary: 明治政府邀请美国学者克拉克创立札幌农学校，引进近代农业技术与基督教精神。
+  tags: [改革运动, 科技发明]
+
+- id: japan_meiji_industrial_rev
+  year: 1880
+  endYear: 1900
+  level: 2
+  title: 明治工业化推进
+  summary: 官营工厂建立、铁路扩展、纺织业兴起，日本工业化在19世纪后半期快速推进。
+  tags: [经济贸易, 科技发明]
+
+- id: japan_treaty_korea_1876
+  year: 1876
+  level: 2
+  title: 《江华条约》签订
+  summary: 日本迫使朝鲜签订《江华条约》，以不平等条款开放朝鲜港口，朝鲜被纳入近代国际体系。
+  tags: [条约外交, 殖民扩张]
+
+- id: japan_jiyuto_rikken
+  year: 1881
+  level: 2
+  title: 自由党与立宪改进党成立
+  summary: 板垣退助创立自由党，大隈重信成立立宪改进党，日本近代政党政治格局初步形成。
+  tags: [改革运动]
+  figures: [itagaki_taisuke]
+
+- id: japan_okubo_assassination
   year: 1889
   level: 2
-  title: 明治宪法颁布
-  summary: 日本颁布《大日本帝国宪法》，建立议会制度，但天皇握有最高权力。
+  title: 《大日本帝国宪法》起草过程
+  summary: 伊藤博文赴欧洲考察宪法制度，参照普鲁士宪法，历经数年起草，形成天皇主权宪法体系。
   tags: [改革运动]
+  figures: [ito_hirobumi]
+
+- id: japan_meiji_education_rescript
+  year: 1890
+  level: 2
+  title: 教育敕语颁布
+  summary: 明治天皇颁布教育敕语，以儒家伦理与国家忠诚为核心，确立近代日本国民教育价值观。
+  tags: [改革运动, 文化思想]
+
+- id: japan_boshin_ueno
+  year: 1868
+  level: 2
+  title: 彰义队上野之战
+  summary: 旧幕府方彰义队在江户上野抵抗新政府军，一日内被击溃，江户无血开城局面维持。
+  tags: [战争]
+
+- id: japan_hawaii_immigration
+  year: 1885
+  level: 2
+  title: 日本移民赴夏威夷
+  summary: 首批日本官约移民抵达夏威夷甘蔗园工作，开启日本向太平洋地区大规模移民的时代。
+  tags: [经济贸易]
+
+- id: japan_sino_japanese_war_taiwan
+  year: 1895
+  level: 2
+  title: 《马关条约》获得台湾
+  summary: 甲午战争后《马关条约》规定清国割让台湾与澎湖，日本由此建立第一个海外殖民地。
+  tags: [殖民扩张, 条约外交]
+  figures: [ito_hirobumi]
+
+- id: japan_fukuzawa_yukichi
+  year: 1868
+  endYear: 1900
+  level: 2
+  title: 福泽谕吉文明开化论
+  summary: 福泽谕吉著《文明论概略》等书，倡导西化与独立精神，是明治启蒙最具影响力的思想家。
+  tags: [文化思想]
+  figures: [fukuzawa_yukichi]
+
+- id: japan_railway_first
+  year: 1872
+  level: 2
+  title: 新桥-横滨铁路开通
+  summary: 日本第一条铁路新桥至横滨段开通，明治天皇出席典礼，开启日本铁路时代。
+  tags: [科技发明]
+
+- id: japan_meiji_bunmei_kaika
+  year: 1868
+  endYear: 1890
+  level: 2
+  title: 文明开化运动
+  summary: 明治政府推行西化政策，引进洋服、洋食、洋屋，废止旧历，改革教育，近代生活方式传入。
+  tags: [改革运动, 文化思想]
+
+- id: japan_korea_incident_1882
+  year: 1882
+  level: 2
+  title: 壬午军乱
+  summary: 朝鲜旧式军队发动兵变，日本公使馆受冲击，日本借机扩大在朝鲜的权益。
+  tags: [战争, 条约外交]
+
+- id: japan_yamagata_army_reform
+  year: 1878
+  level: 2
+  title: 参谋本部独立设置
+  summary: 山县有朋仿照德国参谋本部制度，设立陆军参谋本部独立于军政之外，确立军令权。
+  tags: [改革运动]
+  figures: [yamagata_aritomo]
+
+# ── Level 3 ──────────────────────────────────────────────────────────────────
+
+- id: japan_mamiya_sakhalin
+  year: 1808
+  level: 3
+  title: 间宫林藏探索库页岛
+  summary: 幕府命令间宫林藏探索库页岛，确认其为岛屿（非半岛），间宫海峡由此得名。
+  tags: [科技发明]
+
+- id: japan_russia_attack_etorofu
+  year: 1806
+  endYear: 1807
+  level: 3
+  title: 俄国袭击蝦夷地事件
+  summary: 列扎诺夫部下袭击千岛与蝦夷地日本据点，幕府紧急强化北方海防体制。
+  tags: [战争, 条约外交]
+
+- id: japan_goningumi_reform
+  year: 1805
+  level: 3
+  title: 幕府五人组制度强化
+  summary: 幕府强化五人组（五户联保）制度，作为地方行政与纳税监控的基层单位。
+  tags: [改革运动]
+
+- id: japan_tenpo_famine_1833
+  year: 1833
+  endYear: 1836
+  level: 3
+  title: 天保饥荒
+  summary: 天保年间连续歉收引发全国饥荒，各方记载死亡人数存在差异，农村破产现象严重。
+  tags: [改革运动]
+
+- id: japan_moriyama_takichiro
+  year: 1853
+  level: 3
+  title: 森山多吉郎担任翻译
+  summary: 通事森山多吉郎在培里来航交涉中担任英语翻译，在近代外交史上留下记录。
+  tags: [条约外交]
+
+- id: japan_yoshida_shoin_shokason
+  year: 1857
+  level: 3
+  title: 吉田松阴开办松下村塾
+  summary: 吉田松阴在萩藩开办松下村塾，培育伊藤博文、山县有朋等明治维新领导人才。
+  tags: [文化思想, 改革运动]
+  figures: [yoshida_shoin, ito_hirobumi, yamagata_aritomo]
+
+- id: japan_yoshida_shoin_execution
+  year: 1859
+  level: 3
+  title: 吉田松阴被处决
+  summary: 吉田松阴在安政大狱中以"草莽崛起"等激进言论触怒幕府，被押送江户处以死刑。
+  tags: [革命政变]
+  figures: [yoshida_shoin, ii_naosuke]
+
+- id: japan_sakamoto_ryoma_birth
+  year: 1835
+  level: 3
+  title: 坂本龙马出生
+  summary: 土佐藩下士出身的坂本龙马出生，其后成为萨长同盟斡旋者，明治维新关键人物之一。
+  tags: [革命政变]
+  figures: [sakamoto_ryoma]
+
+- id: japan_sakamoto_ryoma_assassination
+  year: 1867
+  level: 3
+  title: 坂本龙马遭暗杀
+  summary: 坂本龙马在京都近江屋遭刺客暗杀，案件真凶至今有争议，各方说法不一。
+  tags: [革命政变]
+  figures: [sakamoto_ryoma]
+
+- id: japan_katto_ji_terakoya
+  year: 1800
+  endYear: 1868
+  level: 3
+  title: 藩校与私塾体制完备
+  summary: 幕末各藩藩校与全国各地私塾形成完整教育网络，识字率与武士知识水平显著提高。
+  tags: [文化思想]
+
+- id: japan_shinsengumi_formation
+  year: 1863
+  level: 3
+  title: 新选组成立
+  summary: 近藤勇等人在幕府支持下组建新选组，在京都维持幕府权威，镇压尊王攘夷派活动。
+  tags: [革命政变]
+
+- id: japan_ikeda_incident
+  year: 1864
+  level: 3
+  title: 池田屋事件
+  summary: 新选组在京都池田屋袭击尊王攘夷派聚会，格杀多名志士，引发长州藩禁门之变。
+  tags: [革命政变]
+
+- id: japan_kinmon_incident
+  year: 1864
+  level: 3
+  title: 禁门之变
+  summary: 长州藩兵进入京都与幕府守卫军发生武力冲突，被击退，长州藩被列为朝敌。
+  tags: [战争, 革命政变]
+
+- id: japan_alliance_england_satsuma
+  year: 1862
+  level: 3
+  title: 生麦事件
+  summary: 薩摩藩行列中英国人被砍伤，此后薩英战争爆发，薩摩藩由此认识到西洋军事技术的差距。
+  tags: [战争, 条约外交]
+
+- id: japan_meiji_postal_system
+  year: 1871
+  level: 3
+  title: 近代邮政制度建立
+  summary: 明治政府建立全国邮政网络，以前岛密为核心推动，逐步覆盖全国，促进商业通信。
+  tags: [改革运动, 科技发明]
+
+- id: japan_tomioka_silk_mill
+  year: 1872
+  level: 3
+  title: 富冈制丝场设立
+  summary: 明治政府在群马县富冈建立官营制丝场，引进法国技术与设备，示范近代纺织工业。
+  tags: [科技发明, 经济贸易]
+
+- id: japan_meiji_sword_ban
+  year: 1876
+  level: 3
+  title: 废刀令颁布
+  summary: 明治政府颁布废刀令，禁止武士在公共场合佩刀，剥夺武士阶层最后的特权象征。
+  tags: [改革运动]
+
+- id: japan_satsuma_war_opening
+  year: 1877
+  level: 3
+  title: 田原坂之战
+  summary: 西南战争中决定性战役在熊本田原坂进行，政府军以征兵军队击败薩摩士族，历时约3周。
+  tags: [战争]
+  figures: [saigo_takamori]
+
+- id: japan_meiji_police_system
+  year: 1874
+  level: 3
+  title: 近代警察制度建立
+  summary: 明治政府仿照法国制度建立近代警察制度，川路利良赴欧考察后推行全国统一警察体系。
+  tags: [改革运动]
+
+- id: japan_telegraph_line
+  year: 1869
+  level: 3
+  title: 电报线路开通
+  summary: 日本第一条电报线路东京至横滨间开通，近代通信基础设施建设由此启动。
+  tags: [科技发明]
+
+- id: japan_westernization_rokumeikan
+  year: 1883
+  level: 3
+  title: 鹿鸣馆开馆
+  summary: 外务卿井上馨在东京建设鹿鸣馆，举办欧式舞会招待外国使节，推进西化外交形象。
+  tags: [文化思想, 条约外交]
+
+- id: japan_meiji_bank_system
+  year: 1872
+  level: 3
+  title: 国立银行制度建立
+  summary: 明治政府颁布国立银行条例，建立近代银行体系，涩泽荣一参与推动，奠定金融基础。
+  tags: [经济贸易]
+  figures: [shibusawa_eiichi]
+
+- id: japan_shibusawa_eiichi_daichi
+  year: 1873
+  level: 3
+  title: 涩泽荣一创立第一国立银行
+  summary: 涩泽荣一辞去大藏省职务，创立日本第一国立银行，开始推动近代企业制度普及。
+  tags: [经济贸易]
+  figures: [shibusawa_eiichi]
+
+- id: japan_ito_europe_constitution
+  year: 1882
+  level: 3
+  title: 伊藤博文赴欧洲考察宪法
+  summary: 伊藤博文率团赴德国、奥地利考察宪法制度，师从格奈斯特等学者，形成宪法草案方向。
+  tags: [改革运动]
+  figures: [ito_hirobumi]
+
+- id: japan_shimbun_media_rise
+  year: 1870
+  endYear: 1900
+  level: 3
+  title: 近代新闻媒体兴起
+  summary: 《东京日日新闻》等报纸相继创刊，近代报道文化形成，民权运动借助媒体传播主张。
+  tags: [文化思想]
+
+- id: japan_natsume_soseki_born
+  year: 1867
+  level: 3
+  title: 夏目漱石出生
+  summary: 明治文学代表作家夏目漱石在江户出生，其后创作《我是猫》《坊っちゃん》等代表作。
+  tags: [文化思想]
+  figures: [natsume_soseki]
+
+- id: japan_mori_ogai_born
+  year: 1862
+  level: 3
+  title: 森鸥外出生
+  summary: 明治文学家兼军医森鸥外在岛根出生，赴德国留学后将西洋文学引入日本文坛。
+  tags: [文化思想]
+  figures: [mori_ogai]
+
+- id: japan_kanagawa_yokohama_trade
+  year: 1859
+  level: 3
+  title: 横滨开港贸易开始
+  summary: 横滨正式开港，与上海、香港的茶叶与生丝贸易迅速展开，横滨迅速发展为近代国际港市。
+  tags: [经济贸易]
+
+- id: japan_itagaki_taisuke_speech
+  year: 1874
+  level: 3
+  title: 板垣退助民选议院设立建白书
+  summary: 板垣退助等人向政府提交民选议院设立建白书，正式开启自由民权运动的政治诉求阶段。
+  tags: [改革运动]
+  figures: [itagaki_taisuke]
+
+- id: japan_sapporo_beer_establishment
+  year: 1876
+  level: 3
+  title: 札幌啤酒厂创立
+  summary: 北海道开拓使技师村橘仙三创立官营啤酒厂，是日本啤酒产业的起点，后发展为私企。
+  tags: [经济贸易]
+
+- id: japan_kitasato_sibasaburo_discovery
+  year: 1890
+  level: 3
+  title: 北里柴三郎血清疗法发现
+  summary: 北里柴三郎与贝林格在科赫研究室共同发现破伤风及白喉的血清疗法，发表于德国医学杂志。
+  tags: [科技发明]
+  figures: [kitasato_shibasaburo]
+
+- id: japan_nishiki_ukiyo_decline
+  year: 1850
+  endYear: 1900
+  level: 3
+  title: 传统浮世绘向近代转型
+  summary: 月冈芳年等画师在西洋技法影响下改良浮世绘，同时报道新闻画兴起，传统浮世绘逐步式微。
+  tags: [文化思想]
+
+- id: japan_military_academy_shikan
+  year: 1874
+  level: 3
+  title: 陆军士官学校设立
+  summary: 明治政府仿照法国圣西尔军校建立陆军士官学校，培育近代陆军军官，后改以德国为范本。
+  tags: [改革运动]
+
+- id: japan_naval_academy
+  year: 1876
+  level: 3
+  title: 海军兵学校迁至江田岛
+  summary: 明治政府将海军兵学校迁至广岛湾江田岛，培育近代海军军官，东乡平八郎等人毕业于此。
+  tags: [改革运动]
+  figures: [togo_heihachiro]
+
+- id: japan_gakusei_education_law
+  year: 1872
+  level: 3
+  title: 学制颁布
+  summary: 明治政府颁布近代教育法令"学制"，规划全国统一小学教育体系，推进普及教育。
+  tags: [改革运动, 文化思想]
+
+- id: japan_kokumin_kyoiku
+  year: 1886
+  level: 3
+  title: 森有礼推行帝国教育改革
+  summary: 文部大臣森有礼主导改革，建立帝国大学、师范学校等高等教育体系，国家主义教育强化。
+  tags: [改革运动, 文化思想]
+
+- id: japan_tsugimura_incident
+  year: 1895
+  level: 3
+  title: 乙未事变
+  summary: 日本公使三浦梧楼策划朝鲜王宫袭击事件，朝鲜王妃明成皇后被杀害，国际社会强烈谴责。
+  tags: [革命政变, 殖民扩张]
+
+- id: japan_japan_britain_trade
+  year: 1894
+  level: 3
+  title: 日英通商航海条约签订
+  summary: 日本与英国签订新通商航海条约，废除领事裁判权，是日本废除不平等条约的首个突破。
+  tags: [条约外交]
+
+- id: japan_fukuzawa_gakumon_no_susume
+  year: 1872
+  level: 3
+  title: 福泽谕吉《劝学篇》出版
+  summary: 福泽谕吉出版《劝学篇》，提倡学问独立与个人自由，发行量达340万册，影响广泛。
+  tags: [文化思想]
+  figures: [fukuzawa_yukichi]
+
+- id: japan_akutagawa_ryunosuke_born
+  year: 1892
+  level: 3
+  title: 芥川龙之介出生
+  summary: 大正文学代表作家芥川龙之介在东京出生，后创作《罗生门》《鼻子》等短篇小说名作。
+  tags: [文化思想]
+  figures: [akutagawa_ryunosuke]
+
+- id: japan_meiji_art_yoko_painting
+  year: 1876
+  level: 3
+  title: 工部美术学校设立
+  summary: 明治政府设立工部美术学校，邀请意大利画家丰塔内西赴日授课，引进西洋美术教育。
+  tags: [文化思想]
+
+- id: japan_civil_code_promulgation
+  year: 1898
+  level: 3
+  title: 明治民法典施行
+  summary: 明治民法典正式施行，以家族制度（户主权）为核心，参考法国法典，确立近代民事法律体系。
+  tags: [改革运动]
+
+- id: japan_japan_post_telegram
+  year: 1890
+  level: 3
+  title: 电话服务开始
+  summary: 东京・大阪间开始提供电话服务，近代通信基础设施建设进一步发展。
+  tags: [科技发明]
+
+- id: japan_nogi_maresuke_born
+  year: 1849
+  level: 3
+  title: 乃木希典出生
+  summary: 日本陆军大将乃木希典出生，西南战争、日清・日俄战争参战，旅顺攻略指挥官。
+  tags: [战争]
+  figures: [nogi_maresuke]
+
+- id: japan_togo_heihachiro_naval
+  year: 1848
+  level: 3
+  title: 东乡平八郎出生
+  summary: 日本海军大将东乡平八郎出生，日俄战争对马海战指挥官，被称为"东方纳尔逊"。
+  tags: [战争]
+  figures: [togo_heihachiro]
+
+- id: japan_tanaka_giichi_born
+  year: 1864
+  level: 3
+  title: 黄兴等活动人物时代背景
+  summary: 明治后期诸多日朝中各国政治运动相互影响，东亚国际秩序进入重组过程。
+  tags: [条约外交]
+
+- id: japan_boshin_hakodate
+  year: 1869
+  level: 3
+  title: 函馆五稜郭之战
+  summary: 旧幕府方榎本武扬在函馆五稜郭最后抵抗，战败投降，戊辰战争由此完全结束。
+  tags: [战争]
+
+- id: japan_osaka_treaty_revision
+  year: 1871
+  level: 3
+  title: 外务省设立与条约改正交涉开始
+  summary: 明治政府设立外务省，并持续进行废除不平等条约的条约改正交涉，历时约25年才部分实现。
+  tags: [条约外交]
+
+- id: japan_meiji_land_survey
+  year: 1873
+  endYear: 1880
+  level: 3
+  title: 全国地租改正事业实施
+  summary: 明治政府对全国土地进行丈量评价，确定地价以征收地租，历时数年完成全国覆盖。
+  tags: [改革运动]
+
+- id: japan_yamagata_aritomo_born
+  year: 1838
+  level: 3
+  title: 山县有朋出生
+  summary: 长州藩出身的山县有朋出生，后成为明治陆军缔造者，两度出任首相，建立军阀势力。
+  tags: [改革运动]
+  figures: [yamagata_aritomo]
+
+- id: japan_kasamatsu_railway
+  year: 1889
+  level: 3
+  title: 东海道线全线开通
+  summary: 东海道本线新桥至神户段全线贯通，连接东京与大阪，近代日本陆路干线运输体系确立。
+  tags: [科技发明, 经济贸易]
+
+- id: japan_sino_japan_pusan_trade
+  year: 1876
+  level: 3
+  title: 釜山开港与日本商人进出
+  summary: 《江华条约》后釜山、元山、仁川相继开港，日本商人进入朝鲜市场，商业摩擦随之增加。
+  tags: [经济贸易, 殖民扩张]
+
+- id: japan_meiji_cotton_spinning
+  year: 1882
+  level: 3
+  title: 大阪纺绩会社创立
+  summary: 涩泽荣一等人创立大阪纺绩会社，引进英国蒸汽纺纱机，近代棉纺工业在日本起步。
+  tags: [经济贸易, 科技发明]
+  figures: [shibusawa_eiichi]
+
+- id: japan_sapporo_beer_clock_tower
+  year: 1878
+  level: 3
+  title: 北海道开拓使洋式建筑兴建
+  summary: 北海道开拓使在札幌建设时计台等洋式建筑，美国式城市规划格局确立。
+  tags: [文化思想]
+
+- id: japan_yamagata_german_army
+  year: 1870
+  level: 3
+  title: 日本陆军向德式转型
+  summary: 明治政府聘请德国军事顾问克莱门斯・梅克尔，将陆军体制从法式改为德式，强化参谋制度。
+  tags: [改革运动]
+
+- id: japan_abe_masahiro_policy
+  year: 1854
+  level: 3
+  title: 老中阿部正弘应对开国危机
+  summary: 老中阿部正弘在培里来航后主导对外交涉，首次向大名征求意见，打破幕府决策惯例。
+  tags: [条约外交, 改革运动]
+
+- id: japan_satsuma_ikuni
+  year: 1862
+  level: 3
+  title: 岛津久光率兵入京
+  summary: 薩摩藩国父岛津久光率千余名士兵上京，以兵力压迫幕府推行改革，是公武合体的武力示范。
+  tags: [革命政变]
+
+- id: japan_seikanron_gifu
+  year: 1882
+  level: 3
+  title: 板垣退助岐阜遇刺事件
+  summary: 板垣退助在岐阜演讲中遭人刺伤，留下"板垣死すとも自由は死せず"名言，真实性有争议。
+  tags: [改革运动]
+  figures: [itagaki_taisuke]
+
+- id: japan_treaty_portsmouth_negotiation
+  year: 1895
+  level: 3
+  title: 下关讲和会议
+  summary: 伊藤博文与陆奥宗光赴下关，与李鸿章谈判，历经数轮交涉后《马关条约》成立。
+  tags: [条约外交]
+  figures: [ito_hirobumi]
+
+- id: japan_kawabata_yasunari_born
+  year: 1899
+  level: 3
+  title: 川端康成出生
+  summary: 诺贝尔文学奖得主川端康成出生于大阪，其后创作《雪国》《千羽鹤》等代表作。
+  tags: [文化思想]
+  figures: [kawabata_yasunari]
+
+- id: japan_mishima_yukio_born
+  year: 1925
+  level: 3
+  title: 三岛由纪夫即将出生时代背景
+  summary: 大正末期至昭和初期，日本文坛在新感觉派与马克思主义文学影响下形成多元格局。
+  tags: [文化思想]
+
+- id: japan_mori_ogai_germany
+  year: 1884
+  endYear: 1888
+  level: 3
+  title: 森鸥外留学德国
+  summary: 森鸥外赴德国留学医学，归国后发表《舞姬》等处女作，将德国浪漫主义引入日本文坛。
+  tags: [文化思想]
+  figures: [mori_ogai]
+
+- id: japan_soseki_london
+  year: 1900
+  level: 3
+  title: 夏目漱石赴英国留学
+  summary: 夏目漱石以文部省留学生身份赴伦敦，研究英国文学，归国后对近代日本文明展开批判性观察。
+  tags: [文化思想]
+  figures: [natsume_soseki]
+
+- id: japan_meiji_joint_stock
+  year: 1893
+  level: 3
+  title: 商法施行与股份公司制度确立
+  summary: 明治商法施行，股份公司制度在法律层面确立，推动企业资本近代化与投资活动。
+  tags: [经济贸易]
+
+- id: japan_korea_donghak
+  year: 1894
+  level: 3
+  title: 朝鲜东学党起义
+  summary: 朝鲜爆发东学党起义，朝鲜请清朝出兵镇压，日本也随即出兵，成为甲午战争直接导火索。
+  tags: [革命政变, 战争]
+
+- id: japan_army_navy_rivalry
+  year: 1893
+  level: 3
+  title: 陆海军预算争议
+  summary: 甲午战争前，帝国议会中民党与政府关于海军扩张经费产生对立，政党与军部关系复杂化。
+  tags: [改革运动]
+
+- id: japan_satsuma_domain_textile
+  year: 1865
+  endYear: 1870
+  level: 3
+  title: 薩摩藩集成馆机械工厂
+  summary: 薩摩藩在鹿儿岛建设集成馆，引进英国机械生产棉布与武器，是日本最早的近代工厂之一。
+  tags: [科技发明, 经济贸易]

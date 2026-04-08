@@ -1,39 +1,429 @@
+# 法国历史人物
+
+# ===== 政治人物 =====
+
+- id: louis_xiv
+  name: 路易十四
+  birthYear: 1638
+  deathYear: 1715
+  level: 1
+  category: 政治
+  summary: 在位72年的"太阳王"，建立凡尔赛宫，推行绝对君主制，晚年对外战争耗尽国力。
+  events: [france_war_spanish_succession, france_louis_xiv_death, france_versailles_palace_complete]
+
+- id: louis_xv
+  name: 路易十五
+  birthYear: 1710
+  deathYear: 1774
+  level: 2
+  category: 政治
+  summary: 继承路易十四王位，亲政后对外战争频繁，七年战争中丧失大量海外殖民地。
+  events: [france_regency_orleans, france_louis_xv_reign, france_seven_years_war]
+
 - id: louis_xvi
   name: 路易十六
   birthYear: 1754
   deathYear: 1793
+  level: 1
+  category: 政治
+  summary: 法国国王，面对财政危机和社会动荡，大革命爆发后被捕并以叛国罪处决。
+  events: [france_louis_xvi_ascend, france_estates_general, france_flight_varennes, france_louis_xvi_execution]
+
+- id: marie_antoinette
+  name: 玛丽·安托瓦内特
+  birthYear: 1755
+  deathYear: 1793
   level: 2
-  summary: 法国国王，法国大革命期间被捕并送上断头台。
-  events: [france_revolution]
+  category: 政治
+  summary: 奥地利公主、法国王后，以奢靡著称，法国大革命中被处决，成为时代象征。
+  events: [france_diamond_necklace_affair, france_flight_varennes, france_marie_antoinette_execution]
 
 - id: robespierre
-  name: 罗伯斯庇尔
+  name: 马克西米连·罗伯斯庇尔
   birthYear: 1758
   deathYear: 1794
-  level: 2
-  summary: 法国大革命期间雅各宾派领袖，主导恐怖统治，后被送上断头台。
-  events: [france_revolution]
+  level: 1
+  category: 政治
+  summary: 雅各宾派领袖，主导公共安全委员会，推行恐怖统治，热月政变后被处决。
+  events: [france_reign_of_terror, france_jacobin_club, france_law_suspects, france_robespierre_execution]
 
 - id: napoleon
   name: 拿破仑·波拿巴
   birthYear: 1769
   deathYear: 1821
   level: 1
-  summary: 法国军事统帅和皇帝，建立帝国、颁布法典，最终在滑铁卢战败流放。
-  events: [france_napoleon]
+  category: 政治
+  summary: 法国军事统帅和皇帝，建立帝国、颁布民法典，最终在滑铁卢战败流放圣赫勒拿岛。
+  events: [france_napoleon_italy_campaign, france_18_brumaire, france_napoleon_emperor, france_civil_code, france_austerlitz, france_russia_campaign, france_napoleon_abdication, france_hundred_days, france_waterloo]
 
 - id: napoleon_iii
   name: 拿破仑三世
   birthYear: 1808
   deathYear: 1873
   level: 2
-  summary: 法兰西第二帝国皇帝，推动巴黎城市改造，普法战争战败后被迫退位。
-  events: [france_second_empire, france_second_opium]
+  category: 政治
+  summary: 拿破仑一世之侄，通过政变称帝，推动巴黎城市改造，普法战争中被俘后退位。
+  events: [france_napoleon_iii_coup, france_second_empire, france_haussmann_paris, france_second_opium, france_sedan_battle]
 
 - id: de_gaulle
   name: 夏尔·戴高乐
   birthYear: 1890
   deathYear: 1970
   level: 1
-  summary: 自由法国领导人，法兰西第五共和国创始人和首任总统。
-  events: [france_wwii, france_fifth_republic]
+  category: 政治
+  summary: 自由法国领导人，法兰西第五共和国创始人和首任总统，推行独立外交路线。
+  events: [france_free_france, france_liberation_1944, france_paris_liberation, france_fourth_republic, france_fifth_republic, france_de_gaulle_nato_withdrawal, france_may_1968, france_de_gaulle_resignation, france_de_gaulle_june18_appeal, france_algeria_independence]
+
+- id: mitterrand
+  name: 弗朗索瓦·密特朗
+  birthYear: 1916
+  deathYear: 1996
+  level: 1
+  category: 政治
+  summary: 社会党人，法国首位左翼长期执政总统，任期14年，推动欧洲一体化和国内社会改革。
+  events: [france_mitterrand_era, france_nationalizations_1981, france_maastricht_treaty, france_mitterrand_abolish_death_penalty, france_german_reunification_support]
+
+- id: chirac
+  name: 雅克·希拉克
+  birthYear: 1932
+  deathYear: 2019
+  level: 2
+  category: 政治
+  summary: 戴高乐主义政治家，两度任总理，1995年至2007年任总统，坚持独立外交。
+  events: [france_cohabitation, france_chirac_presidency, france_nuclear_tests_1995, france_euro_adoption]
+
+- id: petain
+  name: 菲利普·贝当
+  birthYear: 1856
+  deathYear: 1951
+  level: 2
+  category: 政治
+  summary: 凡尔登战役英雄，一战后声望卓著，二战中主导维希政府与德合作，战后以叛国罪定罪。
+  events: [france_verdun, france_petain_verdun_commander, france_mutinies_1917, france_vichy_regime, france_armistice_1940, france_vel_dhiv_roundup, france_petain_trial]
+
+- id: blum
+  name: 莱昂·布鲁姆
+  birthYear: 1872
+  deathYear: 1950
+  level: 2
+  category: 政治
+  summary: 法国历史上首位社会主义者兼犹太裔总理，人民阵线领袖，推行劳工权利立法。
+  events: [france_popular_front, france_40_hour_week, france_matignon_agreements, france_blum_election]
+
+- id: turgot
+  name: 安·罗伯特·蒂尔戈
+  birthYear: 1727
+  deathYear: 1781
+  level: 2
+  category: 经济金融
+  summary: 重农主义经济学家，任路易十六财政总监时推行自由化改革，遭贵族反对被免职。
+  events: [france_turgot_reform, france_turgot_dismissed]
+
+- id: john_law
+  name: 约翰·劳
+  birthYear: 1671
+  deathYear: 1729
+  level: 2
+  category: 经济金融
+  summary: 苏格兰金融家，在法国推行纸币制度和密西西比公司，泡沫破裂后出走欧洲各地。
+  events: [france_mississippi_bubble, france_john_law_bank, france_mississippi_company_founded, france_mississippi_collapse]
+
+# ===== 军事人物 =====
+
+- id: massena
+  name: 安德烈·马塞纳
+  birthYear: 1758
+  deathYear: 1817
+  level: 2
+  category: 军事
+  summary: 拿破仑麾下最重要的元帅之一，曾在意大利、埃及等地指挥作战，绰号"胜利之子"。
+  events: [france_napoleon_italy_campaign]
+
+- id: ney
+  name: 米歇尔·内伊
+  birthYear: 1769
+  deathYear: 1815
+  level: 2
+  category: 军事
+  summary: 拿破仑麾下勇猛的元帅，绰号"勇士中的勇士"，滑铁卢战役后被波旁王朝处决。
+  events: [france_waterloo, france_hundred_days]
+
+# ===== 科学人物 =====
+
+- id: lavoisier
+  name: 安托万-洛朗·拉瓦锡
+  birthYear: 1743
+  deathYear: 1794
+  level: 1
+  category: 科学
+  summary: 现代化学奠基人，发现氧气在燃烧中的作用，建立化学命名法，大革命恐怖统治中被处决。
+  events: [france_reign_of_terror]
+
+- id: ampere
+  name: 安德烈-马里·安培
+  birthYear: 1775
+  deathYear: 1836
+  level: 2
+  category: 科学
+  summary: 物理学家，建立电动力学理论，电流单位"安培"以其命名。
+  events: []
+
+- id: fourier
+  name: 约瑟夫·傅里叶
+  birthYear: 1768
+  deathYear: 1830
+  level: 2
+  category: 科学
+  summary: 数学家和物理学家，提出傅里叶级数理论，对热传导研究作出重要贡献。
+  events: []
+
+- id: pasteur
+  name: 路易·巴斯德
+  birthYear: 1822
+  deathYear: 1895
+  level: 1
+  category: 科学
+  summary: 微生物学奠基人，发明巴氏杀菌法和狂犬病疫苗，奠定现代免疫学基础。
+  events: [france_pasteur_vaccine, france_pasteur_institute]
+
+- id: marie_curie
+  name: 玛丽·居里
+  birthYear: 1867
+  deathYear: 1934
+  level: 1
+  category: 科学
+  summary: 波兰裔法国物理学家，发现镭和钋，两度获诺贝尔奖，是20世纪最杰出的科学家之一。
+  events: [france_curie_radium, france_curie_dissertation, france_curie_chemistry_nobel]
+
+- id: poincare
+  name: 昂利·庞加莱
+  birthYear: 1854
+  deathYear: 1912
+  level: 2
+  category: 科学
+  summary: 数学家和物理学家，在拓扑学、天体力学和相对论先期研究方面作出重要贡献。
+  events: []
+
+# ===== 文学人物 =====
+
+- id: voltaire
+  name: 伏尔泰
+  birthYear: 1694
+  deathYear: 1778
+  level: 1
+  category: 文学
+  summary: 启蒙运动代言人，以犀利文笔批判宗教专制和封建特权，影响法国大革命思想准备。
+  events: [france_voltaire_england_visit, france_voltaire_letters_anglaises, france_voltaire_candide]
+
+- id: rousseau
+  name: 让-雅克·卢梭
+  birthYear: 1712
+  deathYear: 1778
+  level: 1
+  category: 哲学思想
+  summary: 启蒙思想家，提出"主权在民"理论，《社会契约论》直接影响法国大革命政治主张。
+  events: [france_rousseau_discourse, france_rousseau_social_contract]
+
+- id: hugo
+  name: 维克多·雨果
+  birthYear: 1802
+  deathYear: 1885
+  level: 1
+  category: 文学
+  summary: 法国浪漫主义文学大师，《悲惨世界》《巴黎圣母院》影响深远，曾流亡海外反对拿破仑三世。
+  events: [france_hugo_first_works, france_hugo_les_miserables]
+
+- id: balzac
+  name: 奥诺雷·德·巴尔扎克
+  birthYear: 1799
+  deathYear: 1850
+  level: 2
+  category: 文学
+  summary: 法国批判现实主义文学奠基人，《人间喜剧》以近百部小说勾勒出法国社会的完整图景。
+  events: [france_balzac_comedie_humaine]
+
+- id: flaubert
+  name: 居斯塔夫·福楼拜
+  birthYear: 1821
+  deathYear: 1880
+  level: 2
+  category: 文学
+  summary: 法国现实主义小说大师，《包法利夫人》以精确语言刻画外省生活，开创现代小说技法。
+  events: [france_flaubert_bovary]
+
+- id: zola
+  name: 埃米尔·左拉
+  birthYear: 1840
+  deathYear: 1902
+  level: 2
+  category: 文学
+  summary: 自然主义文学代表人物，《萌芽》《娜娜》等揭示社会底层，德雷福斯案中发表《我控诉》。
+  events: [france_zola_germinal, france_zola_jaccuse, france_dreyfus_affair]
+
+- id: proust
+  name: 马塞尔·普鲁斯特
+  birthYear: 1871
+  deathYear: 1922
+  level: 2
+  category: 文学
+  summary: 意识流小说先驱，《追忆似水年华》共七卷，以内心独白探索记忆与时间，是现代文学里程碑。
+  events: [france_proust_swann]
+
+- id: camus
+  name: 阿尔贝·加缪
+  birthYear: 1913
+  deathYear: 1960
+  level: 2
+  category: 文学
+  summary: 法裔阿尔及利亚作家，《局外人》《鼠疫》探索荒诞与反抗，1957年获诺贝尔文学奖。
+  events: [france_camus_stranger]
+
+- id: sartre
+  name: 让-保罗·萨特
+  birthYear: 1905
+  deathYear: 1980
+  level: 2
+  category: 哲学思想
+  summary: 存在主义哲学家和文学家，战后法国最具影响力的公共知识分子，1964年拒绝诺贝尔文学奖。
+  events: [france_sartre_existentialism]
+
+- id: diderot
+  name: 德尼·狄德罗
+  birthYear: 1713
+  deathYear: 1784
+  level: 2
+  category: 文学
+  summary: 启蒙哲学家，《百科全书》主编，历时二十余年汇集启蒙时代知识，影响深远。
+  events: [france_encyclopedie_begins, france_encyclopedie_complete]
+
+# ===== 哲学人物 =====
+
+- id: montesquieu
+  name: 孟德斯鸠
+  birthYear: 1689
+  deathYear: 1755
+  level: 1
+  category: 哲学思想
+  summary: 法国启蒙思想家，《论法的精神》提出三权分立学说，深刻影响近代各国宪政制度建设。
+  events: [france_montesquieu_persian_letters, france_montesquieu_spirit_laws]
+
+- id: comte
+  name: 奥古斯特·孔德
+  birthYear: 1798
+  deathYear: 1857
+  level: 2
+  category: 哲学思想
+  summary: 社会学奠基人，创立实证主义哲学，认为科学方法应用于社会研究，提出人类知识发展三阶段论。
+  events: []
+
+# ===== 艺术人物 =====
+
+- id: david_painter
+  name: 雅克-路易·大卫
+  birthYear: 1748
+  deathYear: 1825
+  level: 2
+  category: 艺术
+  summary: 新古典主义绘画大师，法国大革命时期重要画家，曾为拿破仑绘制加冕画等重要历史画作。
+  events: [france_napoleon_emperor]
+
+- id: delacroix
+  name: 欧仁·德拉克洛瓦
+  birthYear: 1798
+  deathYear: 1863
+  level: 2
+  category: 艺术
+  summary: 法国浪漫主义绘画领军人物，《自由引导人民》成为法国革命精神的经典图像。
+  events: [france_1830_revolution]
+
+- id: manet
+  name: 爱德华·马奈
+  birthYear: 1832
+  deathYear: 1883
+  level: 2
+  category: 艺术
+  summary: 印象主义先驱，《草地上的午餐》等作品突破学院派传统，影响一代画家。
+  events: [france_monet_impressionism]
+
+- id: monet
+  name: 克劳德·莫奈
+  birthYear: 1840
+  deathYear: 1926
+  level: 2
+  category: 艺术
+  summary: 印象派核心人物，《印象·日出》为印象主义命名，晚年创作《睡莲》系列。
+  events: [france_monet_impressionism]
+
+- id: renoir
+  name: 皮埃尔-奥古斯特·雷诺阿
+  birthYear: 1841
+  deathYear: 1919
+  level: 2
+  category: 艺术
+  summary: 印象派画家，以温暖色调描绘人物和日常生活，《煎饼磨坊的舞会》为代表作。
+  events: [france_monet_impressionism]
+
+- id: cezanne
+  name: 保罗·塞尚
+  birthYear: 1839
+  deathYear: 1906
+  level: 2
+  category: 艺术
+  summary: 后印象派大师，以几何形体分析自然，被称为"现代艺术之父"，影响立体主义发展。
+  events: []
+
+- id: gauguin
+  name: 保罗·高更
+  birthYear: 1848
+  deathYear: 1903
+  level: 2
+  category: 艺术
+  summary: 后印象派画家，晚年移居塔希提岛，以大溪地题材创作色彩鲜明的原始主义画作。
+  events: []
+
+- id: rodin
+  name: 奥古斯特·罗丹
+  birthYear: 1840
+  deathYear: 1917
+  level: 2
+  category: 艺术
+  summary: 现代雕塑奠基人，《思想者》《地狱之门》等作品突破古典雕塑传统，影响后世深远。
+  events: []
+
+# ===== 音乐人物 =====
+
+- id: berlioz
+  name: 埃克托尔·柏辽兹
+  birthYear: 1803
+  deathYear: 1869
+  level: 2
+  category: 音乐
+  summary: 法国浪漫主义作曲家，《幻想交响曲》开创标题音乐新风，也是重要的音乐评论家。
+  events: []
+
+- id: saint_saens
+  name: 卡米尔·圣桑
+  birthYear: 1835
+  deathYear: 1921
+  level: 2
+  category: 音乐
+  summary: 法国作曲家，《动物狂欢节》《参孙与达丽拉》等作品兼具古典与浪漫风格。
+  events: []
+
+- id: debussy
+  name: 克洛德·德彪西
+  birthYear: 1862
+  deathYear: 1918
+  level: 2
+  category: 音乐
+  summary: 印象主义音乐创始人，《牧神午后前奏曲》《大海》等作品革新了音乐和声与结构。
+  events: [france_debussy_prelude]
+
+- id: ravel
+  name: 莫里斯·拉威尔
+  birthYear: 1875
+  deathYear: 1937
+  level: 2
+  category: 音乐
+  summary: 法国作曲家，《波莱罗舞曲》《达夫尼与克洛埃》等作品以精致配器和创新和声著称。
+  events: []

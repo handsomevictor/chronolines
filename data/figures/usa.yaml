@@ -1,47 +1,404 @@
+# 美国历史人物数据（30+人物）
+
+# ===== 政治人物 =====
+
 - id: washington
   name: 乔治·华盛顿
   birthYear: 1732
   deathYear: 1799
   level: 1
-  summary: 美国独立战争统帅，美国第一任总统，被称为"国父"之一。
-  events: [usa_independence, usa_first_president]
+  category: 政治
+  summary: 独立战争大陆军总司令，美国第一任总统，主持制宪会议，确立两届任期惯例。
+  events: [usa_revolution_75, usa_independence_76, usa_constitution_87, usa_first_president_89, usa_yorktown_81, usa_valley_forge_77, usa_whiskey_rebellion_94, usa_washingtons_farewell_96]
 
 - id: jefferson
   name: 托马斯·杰斐逊
   birthYear: 1743
   deathYear: 1826
   level: 1
-  summary: 《独立宣言》主要起草人，美国第三任总统，主导路易斯安那购地。
-  events: [usa_independence, usa_louisiana_purchase]
+  category: 政治
+  summary: 《独立宣言》主要起草人，美国第三任总统，主导路易斯安那购地，推动政教分离原则。
+  events: [usa_independence_76, usa_louisiana_purchase_03, usa_lewis_clark_04, usa_jefferson_election_00]
+
+- id: adams_j
+  name: 约翰·亚当斯
+  birthYear: 1735
+  deathYear: 1826
+  level: 2
+  category: 政治
+  summary: 美国第二任总统，独立运动参与者，参与《巴黎和约》谈判，任内处理法美准战争危机。
+  events: [usa_paris_treaty_83, usa_xyz_affair_97, usa_alien_sedition_98, usa_quasi_war_98, usa_jefferson_election_00]
+
+- id: madison
+  name: 詹姆斯·麦迪逊
+  birthYear: 1751
+  deathYear: 1836
+  level: 1
+  category: 政治
+  summary: 《宪法》与《权利法案》主要起草人，被称为"宪法之父"，美国第四任总统，主持1812年战争。
+  events: [usa_constitution_87, usa_federalist_papers_87, usa_bill_of_rights_91, usa_war_of_1812]
+
+- id: hamilton_a
+  name: 亚历山大·汉密尔顿
+  birthYear: 1755
+  deathYear: 1804
+  level: 1
+  category: 政治
+  summary: 美国首任财政部长，联邦主义者领袖，主持建立第一银行，《联邦党人文集》主要作者，决斗中身亡。
+  events: [usa_federalist_papers_87, usa_bill_of_rights_91, usa_bank_of_us_91, usa_whiskey_rebellion_94]
+
+- id: monroe_j
+  name: 詹姆斯·门罗
+  birthYear: 1758
+  deathYear: 1831
+  level: 2
+  category: 政治
+  summary: 美国第五任总统，提出门罗主义，宣告欧洲列强不得干涉美洲事务，主持"和睦时代"。
+  events: [usa_monroe_doctrine_23, usa_era_of_good_feelings_16]
+
+- id: jackson_a
+  name: 安德鲁·杰克逊
+  birthYear: 1767
+  deathYear: 1845
+  level: 1
+  category: 政治
+  summary: 美国第七任总统，民主党创始人之一，推行印第安人迁徙政策，主导杰克逊式民主扩大选举权范围。
+  events: [usa_battle_new_orleans_15, usa_jackson_era_28, usa_indian_removal_30, usa_trail_of_tears_38]
 
 - id: lincoln
   name: 亚伯拉罕·林肯
   birthYear: 1809
   deathYear: 1865
   level: 1
-  summary: 美国第16任总统，领导北方赢得内战，发布《解放宣言》，遇刺身亡。
-  events: [usa_civil_war, usa_emancipation]
+  category: 政治
+  summary: 美国第16任总统，领导北方联邦赢得内战，发布《解放宣言》正式废除奴隶制，遇刺身亡。
+  events: [usa_lincoln_elected_60, usa_civil_war_61, usa_emancipation_63, usa_gettysburg_63, usa_fort_sumter_61, usa_lincoln_assassination_65, usa_thirteenth_amendment_65]
+
+- id: grant_u
+  name: 尤利西斯·格兰特
+  birthYear: 1822
+  deathYear: 1885
+  level: 2
+  category: 军事
+  summary: 内战末期联邦军总司令，指挥维克斯堡等战役迫使南军投降，后任美国第18任总统。
+  events: [usa_civil_war_61, usa_gettysburg_63, usa_shermans_march_64, usa_reconstruction_65]
+
+- id: roosevelt_t
+  name: 西奥多·罗斯福
+  birthYear: 1858
+  deathYear: 1919
+  level: 1
+  category: 政治
+  summary: 美国第26任总统，推行反垄断与自然保护，推动巴拿马运河建设，进步主义时代的代表性人物。
+  events: [usa_rough_riders_98, usa_spanish_american_war_98, usa_mckinley_assassin_01, usa_theodore_roosevelt_01, usa_antitrust_02, usa_pure_food_06, usa_panama_canal_14, usa_progressive_era_00]
+
+- id: wilson_w
+  name: 伍德罗·威尔逊
+  birthYear: 1856
+  deathYear: 1924
+  level: 2
+  category: 政治
+  summary: 美国第28任总统，一战期间率美国参战，提出"十四点计划"，推动成立国际联盟，获诺贝尔和平奖。
+  events: [usa_wwi_entry_17, usa_wwi_armistice_18, usa_federal_reserve_13]
 
 - id: roosevelt_fdr
   name: 富兰克林·罗斯福
   birthYear: 1882
   deathYear: 1945
   level: 1
-  summary: 美国第32任总统，推行新政应对大萧条，领导美国参加二战。
-  events: [usa_new_deal, usa_wwii]
+  category: 政治
+  summary: 美国第32任总统，推行新政应对大萧条，领导美国参加二战，连续当选四届，任内病逝。
+  events: [usa_fdr_elected_32, usa_new_deal_33, usa_social_security_35, usa_fdic_33, usa_ccc_33, usa_tva_33, usa_lend_lease_41, usa_pearl_harbor_41, usa_japanese_internment_42, usa_war_industries_42, usa_yalta_45, usa_un_founding_45]
 
 - id: eisenhower
   name: 德怀特·艾森豪威尔
   birthYear: 1890
   deathYear: 1969
+  level: 1
+  category: 军事
+  summary: 二战欧洲盟军最高统帅，指挥诺曼底登陆，后任美国第34任总统，推动建立州际公路系统。
+  events: [usa_wwii_41, usa_d_day_44, usa_korean_war_50, usa_interstate_highway_56, usa_little_rock_57]
+
+- id: kennedy_j
+  name: 约翰·肯尼迪
+  birthYear: 1917
+  deathYear: 1963
+  level: 1
+  category: 政治
+  summary: 美国第35任总统，处理古巴导弹危机，提出登月计划，推动民权立法，1963年遇刺身亡。
+  events: [usa_kennedy_elected_60, usa_bay_of_pigs_61, usa_apollo_program_61, usa_cuban_missile_62, usa_kennedy_assassin_63, usa_march_on_washington_63]
+
+- id: reagan
+  name: 罗纳德·里根
+  birthYear: 1911
+  deathYear: 2004
+  level: 1
+  category: 政治
+  summary: 美国第40任总统，推行供给侧经济政策，加速冷战军备竞赛，任内苏联开始走向衰落。
+  events: [usa_reagan_era_81, usa_reagan_assassination_attempt_81, usa_reagan_coldwar_83, usa_iran_contra_86, usa_berlin_wall_89]
+
+- id: clinton_b
+  name: 比尔·克林顿
+  birthYear: 1946
+  deathYear: null
   level: 2
-  summary: 二战欧洲盟军最高统帅，后任美国第34任总统。
-  events: [usa_wwii]
+  category: 政治
+  summary: 美国第42任总统，任内经济高速增长，推动NAFTA与互联网经济，因莱温斯基案遭弹劾但未被定罪。
+  events: [usa_nafta_94, usa_internet_boom_94, usa_dont_ask_dont_tell_93, usa_health_care_reform_94, usa_lewinsky_98, usa_clinton_impeach_98]
+
+# ===== 军事人物 =====
+
+- id: lee_r
+  name: 罗伯特·李
+  birthYear: 1807
+  deathYear: 1870
+  level: 2
+  category: 军事
+  summary: 美国内战时期南方邦联军总司令，指挥多次重要战役，1865年在阿波马托克斯向格兰特投降。
+  events: [usa_civil_war_61, usa_gettysburg_63, usa_confederacy_61]
+
+- id: macarthur
+  name: 道格拉斯·麦克阿瑟
+  birthYear: 1880
+  deathYear: 1964
+  level: 2
+  category: 军事
+  summary: 二战太平洋战区盟军总司令，主持日本受降仪式，后任联合国军朝鲜战争统帅，因违令被解职。
+  events: [usa_bonus_army_32, usa_wwii_41, usa_korean_war_50, usa_inchon_landing_50, usa_macarthur_fired_51]
+
+- id: patton
+  name: 乔治·巴顿
+  birthYear: 1885
+  deathYear: 1945
+  level: 2
+  category: 军事
+  summary: 二战美国第三集团军指挥官，以快速装甲机动闻名，参与北非、西西里与西欧战役，战后车祸身亡。
+  events: [usa_wwii_41, usa_d_day_44]
+
+# ===== 科学人物 =====
+
+- id: franklin_b
+  name: 本杰明·富兰克林
+  birthYear: 1706
+  deathYear: 1790
+  level: 1
+  category: 科学
+  summary: 科学家、政治家与建国之父，证明雷电为电现象，发明避雷针，参与起草《独立宣言》，出使法国争取同盟。
+  events: [usa_franklin_born_06, usa_franklin_lightning_52, usa_american_philosophical_43, usa_albany_plan_54, usa_second_continental_congress_75, usa_french_alliance_78, usa_paris_treaty_83, usa_constitution_87]
+
+- id: edison
+  name: 托马斯·爱迪生
+  birthYear: 1847
+  deathYear: 1931
+  level: 1
+  category: 科学
+  summary: 发明家，拥有1000余项专利，发明实用白炽灯、留声机、电影摄影机，建立世界首个商业电力系统。
+  events: [usa_lightbulb_79, usa_phonograph_77]
+
+- id: tesla_n
+  name: 尼古拉·特斯拉
+  birthYear: 1856
+  deathYear: 1943
+  level: 2
+  category: 科学
+  summary: 塞尔维亚裔美国发明家，发展交流电系统，发明感应电动机，在电气工程领域做出奠基性贡献。
+  events: [usa_gilded_age_70]
+
+- id: wright_brothers
+  name: 莱特兄弟
+  birthYear: 1867
+  deathYear: 1948
+  level: 1
+  category: 科学
+  summary: 威尔伯与奥维尔·莱特于1903年完成动力飞行，开创航空时代，此后持续改进飞行器设计。
+  events: [usa_wright_brothers_03]
+
+- id: oppenheimer
+  name: 罗伯特·奥本海默
+  birthYear: 1904
+  deathYear: 1967
+  level: 2
+  category: 科学
+  summary: 物理学家，曼哈顿计划科学主任，主导原子弹研制，战后反对氢弹开发，遭麦卡锡时代安全审查。
+  events: [usa_manhattan_project_42, usa_atomic_bomb_45, usa_hiroshima_45]
+
+- id: ford_h
+  name: 亨利·福特
+  birthYear: 1863
+  deathYear: 1947
+  level: 1
+  category: 经济金融
+  summary: 福特汽车公司创始人，引入流水线生产使T型车价格大幅下降，推动汽车从奢侈品变为大众消费品。
+  events: [usa_model_t_08, usa_ford_assembly_line_13, usa_roaring_twenties_20]
+
+# ===== 经济金融人物 =====
+
+- id: rockefeller
+  name: 约翰·D·洛克菲勒
+  birthYear: 1839
+  deathYear: 1937
+  level: 2
+  category: 经济金融
+  summary: 标准石油创始人，美国历史上财富最多的实业家之一，后期转型为慈善家，创建芝加哥大学等机构。
+  events: [usa_standard_oil_70, usa_gilded_age_70, usa_sherman_antitrust_90, usa_muckrakers_02]
+
+- id: carnegie
+  name: 安德鲁·卡内基
+  birthYear: 1835
+  deathYear: 1919
+  level: 2
+  category: 经济金融
+  summary: 苏格兰裔美国钢铁大亨，垂直整合钢铁产业，后大规模捐资建立图书馆与卡内基音乐厅等文化机构。
+  events: [usa_carnegie_steel_75, usa_gilded_age_70]
+
+- id: morgan_jp
+  name: J.P.摩根
+  birthYear: 1837
+  deathYear: 1913
+  level: 2
+  category: 经济金融
+  summary: 美国金融业巨头，整合铁路、钢铁、电力等行业，1907年金融恐慌时以私人资本稳定市场，推动建立联邦储备系统。
+  events: [usa_gilded_age_70, usa_federal_reserve_13]
+
+- id: buffett_w
+  name: 沃伦·巴菲特
+  birthYear: 1930
+  deathYear: null
+  level: 2
+  category: 经济金融
+  summary: 伯克希尔·哈撒韦公司董事长，以长期价值投资策略积累巨额财富，晚年承诺将大部分财富捐出。
+  events: [usa_internet_boom_94]
+
+# ===== 文学人物 =====
+
+- id: twain_m
+  name: 马克·吐温
+  birthYear: 1835
+  deathYear: 1910
+  level: 2
+  category: 文学
+  summary: 美国作家，代表作《汤姆·索亚历险记》《哈克贝利·费恩历险记》，以幽默讽刺刻画美国社会。
+  events: [usa_gilded_age_70, usa_twain_gilded_age_73]
+
+- id: hemingway_e
+  name: 欧内斯特·海明威
+  birthYear: 1899
+  deathYear: 1961
+  level: 2
+  category: 文学
+  summary: 美国小说家，代表作《老人与海》《永别了武器》，以简洁硬朗文体著称，1954年获诺贝尔文学奖。
+  events: [usa_wwi_entry_17, usa_roaring_twenties_20]
+
+- id: faulkner_w
+  name: 威廉·福克纳
+  birthYear: 1897
+  deathYear: 1962
+  level: 2
+  category: 文学
+  summary: 美国南方作家，以意识流技法描写虚构的约克纳帕塔法县，1949年获诺贝尔文学奖。
+  events: [usa_roaring_twenties_20]
+
+- id: steinbeck_j
+  name: 约翰·斯坦贝克
+  birthYear: 1902
+  deathYear: 1968
+  level: 2
+  category: 文学
+  summary: 美国作家，代表作《愤怒的葡萄》描写大萧条时期移民困境，1962年获诺贝尔文学奖。
+  events: [usa_great_depression_29, usa_dust_bowl_30]
+
+- id: dickinson_e
+  name: 艾米莉·狄金森
+  birthYear: 1830
+  deathYear: 1886
+  level: 2
+  category: 文学
+  summary: 美国诗人，生前极少发表作品，身后出版的近1800首诗作奠定其在美国诗歌史上的重要地位。
+  events: [usa_civil_war_61]
+
+# ===== 音乐人物 =====
+
+- id: armstrong_l
+  name: 路易斯·阿姆斯特朗
+  birthYear: 1901
+  deathYear: 1971
+  level: 2
+  category: 音乐
+  summary: 爵士小号演奏家与歌手，对爵士乐的即兴演奏风格影响深远，是20世纪最具影响力的音乐人之一。
+  events: [usa_roaring_twenties_20, usa_harlem_renaissance_20]
+
+- id: dylan_b
+  name: 鲍勃·迪伦
+  birthYear: 1941
+  deathYear: null
+  level: 2
+  category: 音乐
+  summary: 美国创作歌手，歌词融合诗歌与社会批评，是1960年代反文化运动的重要声音，2016年获诺贝尔文学奖。
+  events: [usa_civil_rights_mov_55, usa_vietnam_war_64, usa_woodstock_69]
+
+- id: presley_e
+  name: 埃尔维斯·普雷斯利
+  birthYear: 1935
+  deathYear: 1977
+  level: 2
+  category: 音乐
+  summary: 美国摇滚乐先驱，融合乡村音乐与节奏布鲁斯，被称为"摇滚之王"，对流行音乐文化影响广泛。
+  events: [usa_roaring_twenties_20]
+
+- id: jackson_mj
+  name: 迈克尔·杰克逊
+  birthYear: 1958
+  deathYear: 2009
+  level: 2
+  category: 音乐
+  summary: 美国流行音乐演员，专辑《颤栗》为史上最畅销唱片，舞蹈与音乐视频风格深刻影响流行文化。
+  events: [usa_internet_boom_94]
+
+# ===== 哲学思想人物 =====
+
+- id: james_w
+  name: 威廉·詹姆斯
+  birthYear: 1842
+  deathYear: 1910
+  level: 2
+  category: 哲学思想
+  summary: 美国哲学家与心理学家，实用主义哲学的创立者之一，著有《心理学原理》，被称为"美国心理学之父"。
+  events: [usa_gilded_age_70]
+
+- id: dewey_j
+  name: 约翰·杜威
+  birthYear: 1859
+  deathYear: 1952
+  level: 2
+  category: 哲学思想
+  summary: 美国哲学家与教育改革家，实用主义代表人物，主张"做中学"，对美国现代公共教育理念影响深远。
+  events: [usa_progressive_era_00]
 
 - id: mlk
   name: 马丁·路德·金
   birthYear: 1929
   deathYear: 1968
   level: 1
-  summary: 美国民权运动领袖，以非暴力方式推动种族平等，发表"我有一个梦想"演讲，遇刺身亡。
-  events: [usa_civil_rights]
+  category: 哲学思想
+  summary: 美国民权运动领袖，浸信会牧师，以非暴力抵抗推动种族平等立法，1964年获诺贝尔和平奖，遇刺身亡。
+  events: [usa_civil_rights_mov_55, usa_montgomery_bus_55, usa_freedom_riders_61, usa_march_on_washington_63, usa_civil_rights_act_64, usa_voting_rights_65, usa_mlk_assassin_68]
+
+# ===== 艺术人物 =====
+
+- id: warhol_a
+  name: 安迪·沃霍尔
+  birthYear: 1928
+  deathYear: 1987
+  level: 2
+  category: 艺术
+  summary: 美国艺术家，波普艺术运动核心人物，以玛丽莲·梦露肖像、坎贝尔汤罐等作品模糊艺术与商业边界。
+  events: [usa_roaring_twenties_20]
+
+- id: okeeffe_g
+  name: 乔治亚·奥基弗
+  birthYear: 1887
+  deathYear: 1986
+  level: 2
+  category: 艺术
+  summary: 美国画家，以放大的花朵与新墨西哥沙漠景观著称，被视为美国现代艺术的奠基人之一。
+  events: [usa_roaring_twenties_20]

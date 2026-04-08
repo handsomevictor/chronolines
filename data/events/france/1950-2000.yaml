@@ -1,3 +1,7 @@
+# 法国 1950-2000 历史事件
+
+# ===== Level 1 =====
+
 - id: france_indochina_war
   year: 1946
   endYear: 1954
@@ -11,28 +15,396 @@
   endYear: 1962
   level: 1
   title: 阿尔及利亚战争
-  summary: 阿尔及利亚独立战争爆发，各方记载伤亡数字存在差异，1962年阿尔及利亚独立。
+  summary: 阿尔及利亚民族独立战争爆发，各方记载伤亡数字存在差异，1962年阿尔及利亚独立。
   tags: [战争, 殖民扩张]
 
 - id: france_fifth_republic
   year: 1958
-  level: 2
-  title: 第五共和国成立
-  summary: 戴高乐主导新宪法制定，法兰西第五共和国成立，强化总统权力。
+  level: 1
+  title: 法兰西第五共和国成立
+  summary: 戴高乐主导新宪法制定，强化总统权力，法兰西第五共和国成立，延续至今。
   tags: [革命政变, 改革运动]
   figures: [de_gaulle]
 
 - id: france_may_1968
   year: 1968
-  level: 2
+  level: 1
   title: 五月风暴
-  summary: 学生与工人在法国发起大规模抗议示威，引发社会动荡，推动一定程度的社会改革。
+  summary: 学生与工人在法国发起大规模抗议示威，引发社会动荡，推动一定程度社会改革。
   tags: [革命政变, 改革运动]
+  figures: [de_gaulle]
+
+- id: france_mitterrand_era
+  year: 1981
+  endYear: 1995
+  level: 1
+  title: 密特朗执政时代
+  summary: 社会党人密特朗当选总统，法国左翼首次长期执政，推行国有化和社会改革。
+  tags: [改革运动]
+  figures: [mitterrand]
+
+- id: france_maastricht_treaty
+  year: 1992
+  level: 1
+  title: 签署《马斯特里赫特条约》
+  summary: 法国经公投批准《马斯特里赫特条约》，欧洲联盟正式建立，法国是核心推动力量。
+  tags: [条约外交, 经济贸易]
+  figures: [mitterrand]
+
+# ===== Level 2 =====
+
+- id: france_dien_bien_phu
+  year: 1954
+  level: 2
+  title: 奠边府战役
+  summary: 法军在奠边府被越盟围困，历时约57天后投降，直接导致法国撤出印度支那。
+  tags: [战争, 殖民扩张]
+
+- id: france_geneva_accords
+  year: 1954
+  level: 2
+  title: 《日内瓦协议》签订
+  summary: 印度支那战争以《日内瓦协议》结束，越南以北纬17度线为界南北分治。
+  tags: [条约外交]
+
+- id: france_suez_crisis
+  year: 1956
+  level: 2
+  title: 参与苏伊士运河危机
+  summary: 法国与英国、以色列联合入侵埃及，迫于美苏压力撤军，法国国际影响力受挫。
+  tags: [战争, 条约外交]
+  related: [uk_suez_crisis]
 
 - id: france_eu_founding
   year: 1957
   level: 2
   title: 参与创立欧洲经济共同体
-  summary: 法国与西德等六国签订《罗马条约》，建立欧洲经济共同体。
+  summary: 法国与西德等六国签订《罗马条约》，建立欧洲经济共同体，法德轴心成形。
   tags: [条约外交, 经济贸易]
   related: [germany_eec]
+
+- id: france_de_gaulle_nato_withdrawal
+  year: 1966
+  level: 2
+  title: 退出北约军事指挥机构
+  summary: 戴高乐宣布法国退出北约军事一体化指挥机构，奉行独立防务政策。
+  tags: [条约外交]
+  figures: [de_gaulle]
+
+- id: france_de_gaulle_resignation
+  year: 1969
+  level: 2
+  title: 戴高乐辞职
+  summary: 五月风暴后戴高乐推动地方自治公投，结果否定，随即宣布辞职，退出政坛。
+  tags: [革命政变]
+  figures: [de_gaulle]
+
+- id: france_pompidou_presidency
+  year: 1969
+  endYear: 1974
+  level: 2
+  title: 蓬皮杜任总统
+  summary: 乔治·蓬皮杜继任总统，推行工业现代化政策，任内1974年因病去世。
+  tags: [改革运动, 经济贸易]
+
+- id: france_giscard_presidency
+  year: 1974
+  endYear: 1981
+  level: 2
+  title: 德斯坦任总统
+  summary: 中间派德斯坦执政，推行现代化改革，但受石油危机冲击，经济困难。
+  tags: [改革运动]
+
+- id: france_oil_crisis_impact
+  year: 1973
+  endYear: 1979
+  level: 2
+  title: 石油危机冲击法国
+  summary: 两次石油危机使法国经济增速放缓，推动核电开发以减少能源依赖。
+  tags: [经济贸易]
+
+- id: france_nuclear_power_program
+  year: 1974
+  endYear: 1990
+  level: 2
+  title: 大规模核电建设
+  summary: 石油危机后法国大规模建设核电站，核电占比逐步超过全国电力供应的70%。
+  tags: [科技发明, 经济贸易]
+
+- id: france_nationalizations_1981
+  year: 1981
+  endYear: 1982
+  level: 2
+  title: 密特朗推行国有化
+  summary: 密特朗上台后将主要银行和工业集团国有化，后因经济压力于1983年转向紧缩政策。
+  tags: [改革运动, 经济贸易]
+  figures: [mitterrand]
+
+- id: france_cohabitation
+  year: 1986
+  endYear: 1988
+  level: 2
+  title: 左右共治（第一次）
+  summary: 右派在议会选举获胜，密特朗任命希拉克为总理，法国出现总统与总理党派不同的共治局面。
+  tags: [改革运动]
+  figures: [mitterrand, chirac]
+
+- id: france_german_reunification_support
+  year: 1990
+  level: 2
+  title: 支持德国统一
+  summary: 密特朗最终支持德国统一，同时推动欧洲一体化以将统一后的德国纳入欧洲框架。
+  tags: [条约外交]
+  figures: [mitterrand]
+
+- id: france_chirac_presidency
+  year: 1995
+  endYear: 2007
+  level: 2
+  title: 希拉克任总统
+  summary: 雅克·希拉克当选总统，延续戴高乐主义独立外交路线，任期长达12年。
+  tags: [改革运动]
+  figures: [chirac]
+
+- id: france_nuclear_tests_1995
+  year: 1995
+  level: 2
+  title: 法国南太平洋核试验
+  summary: 法国在南太平洋穆鲁罗瓦环礁进行一系列核试验，引发国际社会强烈批评和抗议。
+  tags: [科技发明, 条约外交]
+  figures: [chirac]
+
+- id: france_eu_single_market
+  year: 1993
+  level: 2
+  title: 欧盟单一市场建立
+  summary: 欧盟单一市场正式启动，货物、人员、服务和资本在成员国间自由流动。
+  tags: [经济贸易, 条约外交]
+
+- id: france_euro_adoption
+  year: 1999
+  level: 2
+  title: 法国加入欧元区
+  summary: 法国作为首批成员国之一加入欧元区，欧元正式成为欧盟共同货币。
+  tags: [经济贸易, 条约外交]
+  figures: [chirac]
+
+# ===== Level 3 =====
+
+- id: france_algerian_fln_founded
+  year: 1954
+  level: 3
+  title: 阿尔及利亚民族解放阵线成立
+  summary: 阿尔及利亚民族解放阵线成立，发动武装起义，领导独立战争。
+  tags: [战争, 殖民扩张]
+
+- id: france_algeria_torture_controversy
+  year: 1957
+  level: 3
+  title: 阿尔及尔之战争议
+  summary: 法军在阿尔及尔镇压独立运动，各方对使用酷刑的记载和评价存在差异。
+  tags: [战争]
+
+- id: france_algerian_settlers_crisis
+  year: 1958
+  level: 3
+  title: 阿尔及利亚危机触发第四共和国崩溃
+  summary: 阿尔及利亚法国定居者与军方联合向巴黎施压，第四共和国议会邀请戴高乐复出。
+  tags: [革命政变]
+  figures: [de_gaulle]
+
+- id: france_de_gaulle_constitution_vote
+  year: 1958
+  level: 3
+  title: 第五共和国宪法公投通过
+  summary: 法国公民以压倒性多数通过新宪法，确立强总统制，戴高乐成为首任总统。
+  tags: [改革运动]
+  figures: [de_gaulle]
+
+- id: france_franco_german_treaty
+  year: 1963
+  level: 3
+  title: 《爱丽舍条约》法德友好
+  summary: 戴高乐与阿登纳签署《爱丽舍条约》，法德正式和解，奠定欧洲联合的核心轴心。
+  tags: [条约外交]
+  figures: [de_gaulle]
+
+- id: france_force_de_frappe
+  year: 1960
+  level: 3
+  title: 法国首次核试验
+  summary: 法国在阿尔及利亚撒哈拉沙漠成功进行首次核爆炸，成为世界第四个核国家。
+  tags: [科技发明, 战争]
+  figures: [de_gaulle]
+
+- id: france_algeria_independence
+  year: 1962
+  level: 3
+  title: 阿尔及利亚独立
+  summary: 《埃维昂协议》签署，阿尔及利亚正式独立，结束130余年法国殖民统治。
+  tags: [殖民扩张, 条约外交]
+  figures: [de_gaulle]
+
+- id: france_oas_assassination_attempts
+  year: 1962
+  level: 3
+  title: 秘密武装组织刺杀戴高乐未遂
+  summary: 反对阿尔及利亚独立的极右武装组织多次企图刺杀戴高乐，均未成功。
+  tags: [革命政变]
+  figures: [de_gaulle]
+
+- id: france_student_protests_may68
+  year: 1968
+  level: 3
+  title: 学生占领索邦大学
+  summary: 巴黎学生在五月风暴期间占领索邦大学，提出反权威和教育改革诉求。
+  tags: [革命政变, 改革运动]
+
+- id: france_general_strike_may68
+  year: 1968
+  level: 3
+  title: 全国大罢工
+  summary: 五月风暴中约1000万工人参加全国大罢工，各方记载参与人数存在差异。
+  tags: [革命政变, 改革运动]
+
+- id: france_pompidou_center
+  year: 1977
+  level: 3
+  title: 蓬皮杜艺术中心开放
+  summary: 蓬皮杜国家艺术和文化中心在巴黎开放，以外露管道的高技派建筑引发争议与关注。
+  tags: [文化思想, 科技发明]
+
+- id: france_tgv_launch
+  year: 1981
+  level: 3
+  title: TGV高速铁路开通
+  summary: 法国巴黎至里昂高速铁路正式开通，TGV时速超过260公里，开创高铁时代。
+  tags: [科技发明, 经济贸易]
+
+- id: france_concorde_commercial
+  year: 1976
+  level: 3
+  title: 协和超音速客机投入商业运营
+  summary: 法英联合研制的协和式超音速客机投入巴黎至纽约等航线，开创商业超音速飞行。
+  tags: [科技发明]
+
+- id: france_concorde_first_flight
+  year: 1969
+  level: 3
+  title: 协和飞机首次试飞
+  summary: 法英联合研制的协和式超音速飞机在图卢兹完成首次试飞，标志航空技术重大突破。
+  tags: [科技发明]
+
+- id: france_mitterrand_abolish_death_penalty
+  year: 1981
+  level: 3
+  title: 法国废除死刑
+  summary: 密特朗当选后司法部长巴丹戴推动通过法律，法国正式废除死刑。
+  tags: [改革运动]
+  figures: [mitterrand]
+
+- id: france_35_hour_week
+  year: 1998
+  endYear: 2000
+  level: 3
+  title: 每周35小时工作制立法
+  summary: 若斯潘政府推行每周35小时工作制，分阶段在法国大型企业中实施。
+  tags: [改革运动, 经济贸易]
+
+- id: france_tunnel_channel
+  year: 1994
+  level: 3
+  title: 英法海峡隧道开通
+  summary: 连接法国加莱与英国多佛的英法海峡隧道开通，法英两国首次陆路相通。
+  tags: [科技发明, 经济贸易]
+
+- id: france_pacs_civil_unions
+  year: 1999
+  level: 3
+  title: 民事结合契约法通过
+  summary: 法国议会通过民事结合契约（PACS）法，允许同性及异性伴侣登记共同生活关系。
+  tags: [改革运动]
+
+- id: france_world_cup_1998
+  year: 1998
+  level: 3
+  title: 法国举办并赢得世界杯
+  summary: 法国在本土举办世界杯并夺冠，齐达内在决赛中攻入两球，全国沉浸在欢庆中。
+  tags: [文化思想]
+
+- id: france_decolonization_africa
+  year: 1960
+  level: 3
+  title: 非洲殖民地相继独立
+  summary: 1960年法属撒哈拉以南非洲各地约17个殖民地相继独立，法国帝国时代基本终结。
+  tags: [殖民扩张, 条约外交]
+
+- id: france_simone_de_beauvoir_second_sex
+  year: 1949
+  level: 3
+  title: 波伏娃《第二性》出版
+  summary: 西蒙娜·德·波伏娃出版《第二性》，成为20世纪最重要的女性主义著作之一。
+  tags: [文化思想]
+
+- id: france_structuralism_movement
+  year: 1960
+  endYear: 1975
+  level: 3
+  title: 结构主义思潮兴盛
+  summary: 列维-斯特劳斯、拉康、阿尔都塞等人主导结构主义思潮，影响人文社会科学全领域。
+  tags: [文化思想]
+
+- id: france_pompidou_death
+  year: 1974
+  level: 3
+  title: 蓬皮杜总统任内去世
+  summary: 总统乔治·蓬皮杜因血液疾病在任内去世，引发紧急总统大选。
+  tags: [王朝更迭]
+
+- id: france_gaullist_rpf_reorganize
+  year: 1976
+  level: 3
+  title: 希拉克创建保卫共和联盟
+  summary: 雅克·希拉克将戴高乐主义政党重组为保卫共和联盟，成为法国主要右翼政党。
+  tags: [改革运动]
+  figures: [chirac]
+
+- id: france_rainbow_warrior
+  year: 1985
+  level: 3
+  title: 法国特工击沉彩虹勇士号
+  summary: 法国情报人员在新西兰奥克兰港炸沉绿色和平组织船只，造成人员死亡，引发外交危机。
+  tags: [战争, 条约外交]
+
+- id: france_gulf_war_participation
+  year: 1991
+  level: 3
+  title: 参与海湾战争
+  summary: 法国作为多国联军一员参与海湾战争，派遣地面和空中力量参战。
+  tags: [战争, 条约外交]
+  figures: [mitterrand]
+
+- id: france_rwanda_role
+  year: 1994
+  level: 3
+  title: 法国在卢旺达危机中的角色
+  summary: 卢旺达种族屠杀期间法国的行动和不作为受到质疑，各方记载和评价存在重大分歧。
+  tags: [战争]
+  figures: [mitterrand]
+
+- id: france_schengen_agreement
+  year: 1985
+  level: 3
+  title: 参与签署申根协定
+  summary: 法国与德国、比利时等国签署申根协定，欧洲边境管制逐步取消。
+  tags: [条约外交, 经济贸易]
+  figures: [mitterrand]
+
+# 以下为跨轨道 related 字段兼容 id
+
+- id: france_suez
+  year: 1956
+  level: 3
+  title: 苏伊士运河危机（跨轨道关联）
+  summary: 法国与英国联合入侵埃及苏伊士，迫于美苏压力撤军，西方协调性受挫。
+  tags: [战争, 条约外交]

@@ -1,47 +1,457 @@
+# 德国历史人物（30+人物）
+# 涵盖政治、军事、科学、文学、音乐、艺术、哲学思想、经济金融
+
+# ── 政治 ──────────────────────────────────────────
+
+- id: frederick_i_prussia
+  name: 腓特烈一世
+  birthYear: 1657
+  deathYear: 1713
+  level: 2
+  category: 政治
+  summary: 勃兰登堡选帝侯，1701年加冕成为首位普鲁士国王，建立普鲁士王国。
+  events: [germany_prussia_kingdom_1701]
+
+- id: frederick_william_i
+  name: 腓特烈·威廉一世
+  birthYear: 1688
+  deathYear: 1740
+  level: 2
+  category: 政治
+  summary: 普鲁士国王，以"军人国王"著称，大力扩充军队，建立高效军事官僚体制。
+  events: [germany_fw1_soldier_king, germany_prussian_education, germany_fw1_tall_guards, germany_prussia_bureaucracy]
+
 - id: frederick_great
   name: 腓特烈大帝
   birthYear: 1712
   deathYear: 1786
   level: 1
-  summary: 普鲁士国王，七年战争中以少胜多，将普鲁士确立为欧洲强国，重视文化艺术。
-  events: [germany_frederick_great, germany_seven_years_war_de]
+  category: 政治
+  summary: 普鲁士国王，七年战争中以少胜多，推行启蒙改革，将普鲁士确立为欧洲强国。
+  events: [germany_frederick_ii_reign, germany_silesia_wars, germany_seven_years_war_de, germany_rossbach_battle, germany_leuthen_battle, germany_sans_souci_palace, germany_religious_tolerance_edict, germany_first_poland_partition, germany_frederickgreat_death]
+
+- id: joseph_ii
+  name: 约瑟夫二世
+  birthYear: 1741
+  deathYear: 1790
+  level: 2
+  category: 政治
+  summary: 哈布斯堡帝国皇帝，推行废除农奴制、宗教宽容等系列开明专制改革。
+  events: [germany_joseph_ii_reforms, germany_edict_on_religion_joseph, germany_austrian_netherlands_revolt]
+
+- id: frederick_william_ii
+  name: 腓特烈·威廉二世
+  birthYear: 1744
+  deathYear: 1797
+  level: 3
+  category: 政治
+  summary: 普鲁士国王，腓特烈大帝之侄，参与第二次、第三次瓜分波兰。
+  events: [germany_third_poland_partition]
+
+- id: frederick_william_iv
+  name: 腓特烈·威廉四世
+  birthYear: 1795
+  deathYear: 1861
+  level: 2
+  category: 政治
+  summary: 普鲁士国王，1848年革命中拒绝接受法兰克福议会授予的德国皇冠，统一推迟。
+  events: [germany_revolution_1848, germany_frankfurt_parliament, germany_1848_hungarian_suppression]
 
 - id: bismarck
   name: 奥托·冯·俾斯麦
   birthYear: 1815
   deathYear: 1898
   level: 1
-  summary: 普鲁士-德国首相，通过外交和战争主导德意志统一，推行"铁血政策"。
-  events: [germany_unification, germany_bismarck_era]
+  category: 政治
+  summary: 普鲁士-德国首相，通过外交与战争主导德意志统一，推行铁血政策与社会保险立法。
+  events: [germany_bismarck_appointed, germany_austro_prussian_war, germany_franco_prussian_war, germany_empire_proclamation, germany_bismarck_era, germany_kulturkampf, germany_antisocialist_law, germany_triple_alliance, germany_reinsurance_treaty, germany_berlin_conference, germany_bismarck_dismissed, germany_bismarck_ems_dispatch, germany_versailles_mirror_hall, germany_frankfurt_treaty]
 
 - id: kaiser_wilhelm_i
   name: 威廉一世
   birthYear: 1797
   deathYear: 1888
   level: 2
+  category: 政治
   summary: 普鲁士国王和德意志帝国第一任皇帝，德意志统一的象征性领导人。
-  events: [germany_unification]
+  events: [germany_franco_prussian_war, germany_empire_proclamation, germany_versailles_mirror_hall]
 
 - id: kaiser_wilhelm_ii
   name: 威廉二世
   birthYear: 1859
   deathYear: 1941
+  level: 1
+  category: 政治
+  summary: 德意志帝国末代皇帝，迫使俾斯麦辞职后推行扩张政策，一战后退位流亡荷兰。
+  events: [germany_william_ii_accession, germany_bismarck_dismissed, germany_naval_buildup, germany_wwi, germany_nov_revolution, germany_moroccan_crisis_1905, germany_blank_check_austria, germany_worker_strike_1889]
+
+- id: stresemann
+  name: 古斯塔夫·施特莱斯曼
+  birthYear: 1878
+  deathYear: 1929
   level: 2
-  summary: 德意志帝国末代皇帝，一战期间实际掌控政策，战败后流亡荷兰。
-  events: [germany_wwi]
+  category: 政治
+  summary: 魏玛共和国外长，推动洛迦诺公约与德国加入国联，因外交成就荣获诺贝尔和平奖。
+  events: [germany_stresemann_era, germany_locarno_pact, germany_locarno_spirit]
+
+- id: hindenburg
+  name: 保罗·冯·兴登堡
+  birthYear: 1847
+  deathYear: 1934
+  level: 2
+  category: 政治
+  summary: 德国一战名将，坦能堡战役英雄，后任魏玛共和国总统，1933年任命希特勒为总理。
+  events: [germany_wwi, germany_tannenberg_battle]
 
 - id: hitler
   name: 阿道夫·希特勒
   birthYear: 1889
   deathYear: 1945
   level: 1
-  summary: 纳粹德国领导人，发动第二次世界大战，主导大屠杀，1945年在柏林自杀身亡。
-  events: [germany_nazi_rise, germany_wwii, germany_holocaust]
+  category: 政治
+  summary: 纳粹德国领导人，发动第二次世界大战，主导大屠杀，1945年在柏林地堡自杀。
+  events: [germany_beer_hall_putsch, germany_mein_kampf, germany_nazi_rise_power, germany_reichstag_fire, germany_enabling_act, germany_night_long_knives, germany_nuremberg_laws, germany_rhineland_remilitarization, germany_anschluss, germany_munich_agreement, germany_kristallnacht, germany_wwii, germany_holocaust, germany_july_plot, germany_berlin_fall, germany_unconditional_surrender, germany_nuremberg_rally, germany_four_year_plan, germany_molotov_ribbentrop]
+
+- id: adenauer
+  name: 康拉德·阿登纳
+  birthYear: 1876
+  deathYear: 1967
+  level: 1
+  category: 政治
+  summary: 西德首任总理，执政14年，推动西德与西方民主阵营整合，促成《爱丽舍条约》签署。
+  events: [germany_adenauer_chancellor, germany_nato_membership_west, germany_franco_german_treaty, germany_adenauer_sovereignty, germany_adenauer_resignation, germany_west_rearmament]
+
+- id: erhard
+  name: 路德维希·艾哈德
+  birthYear: 1897
+  deathYear: 1977
+  level: 2
+  category: 政治
+  summary: 西德经济部长后任总理，社会市场经济政策的主要设计者，被称为"经济奇迹之父"。
+  events: [germany_wirtschaftswunder, germany_social_market_economy]
+
+- id: brandt
+  name: 维利·勃兰特
+  birthYear: 1913
+  deathYear: 1992
+  level: 1
+  category: 政治
+  summary: 西德总理，推行东方政策改善东西关系，华沙跪拜成为德国战后历史责任的象征时刻。
+  events: [germany_ostpolitik, germany_brandt_warsaw_genuflection, germany_basic_treaty_east_west, germany_germany_un_member, germany_ostpolitik_treaties, germany_berlin_wall_fall, germany_reunification, germany_willy_brandt_spy_scandal]
+
+- id: kohl
+  name: 赫尔穆特·科尔
+  birthYear: 1930
+  deathYear: 2017
+  level: 1
+  category: 政治
+  summary: 西德及统一后德国总理，执政16年，主导两德统一与马斯特里赫特条约，推动欧洲一体化。
+  events: [germany_kohl_government, germany_berlin_wall_fall, germany_reunification, germany_two_plus_four_treaty, germany_maastricht_treaty, germany_treuhandanstalt, germany_currency_union, germany_kohl_final_unification_speech, germany_berlin_capital_decision, germany_yugoslavia_war_recognition, germany_euro_adoption_preparation]
+
+# ── 军事 ──────────────────────────────────────────
+
+- id: blucher
+  name: 格布哈德·冯·布吕歇尔
+  birthYear: 1742
+  deathYear: 1819
+  level: 2
+  category: 军事
+  summary: 普鲁士陆军元帅，解放战争中主力指挥官，莱比锡战役与滑铁卢战役关键参战者。
+  events: [germany_liberation_wars, germany_battle_of_leipzig, germany_lutzow_freikorps]
+
+- id: moltke_elder
+  name: 毛奇（老）
+  birthYear: 1800
+  deathYear: 1891
+  level: 2
+  category: 军事
+  summary: 普鲁士总参谋长，铁路机动战术先驱，主导普奥战争与普法战争的军事策划与指挥。
+  events: [germany_austro_prussian_war, germany_sadowa_battle, germany_franco_prussian_war, germany_sedan_battle]
 
 - id: rommel
   name: 埃尔温·隆美尔
   birthYear: 1891
   deathYear: 1944
   level: 2
-  summary: 德国陆军元帅，北非战场指挥官，被称为"沙漠之狐"，后被迫自杀。
-  events: [germany_wwii]
+  category: 军事
+  summary: 德国陆军元帅，北非战场指挥官，以机动战著称，被称为"沙漠之狐"，后被迫自杀。
+  events: [germany_wwii, germany_france_fall, germany_north_africa_campaign]
+
+# ── 科学 ──────────────────────────────────────────
+
+- id: leibniz
+  name: 戈特弗里德·威廉·莱布尼茨
+  birthYear: 1646
+  deathYear: 1716
+  level: 2
+  category: 科学
+  summary: 数学家、哲学家，独立发明微积分，创立柏林科学院，与牛顿并列近代数学奠基人。
+  events: [germany_leibniz_influence, germany_leibniz_calculus_dispute]
+
+- id: gauss
+  name: 卡尔·弗里德里希·高斯
+  birthYear: 1777
+  deathYear: 1855
+  level: 2
+  category: 科学
+  summary: 数学家，贡献涉及数论、统计、测地学等领域，被誉为"数学王子"。
+  events: [germany_gauss_born]
+
+- id: helmholtz
+  name: 赫尔曼·冯·亥姆霍兹
+  birthYear: 1821
+  deathYear: 1894
+  level: 2
+  category: 科学
+  summary: 物理学家与医学家，证明能量守恒定律，研究电动力学、声学与视觉感知。
+  events: [germany_helmholtz_energy]
+
+- id: hertz
+  name: 海因里希·赫兹
+  birthYear: 1857
+  deathYear: 1894
+  level: 2
+  category: 科学
+  summary: 物理学家，通过实验首次证实电磁波的存在，无线电通信技术的奠基者，频率单位以其命名。
+  events: [germany_hertz_electromagnetic]
+
+- id: roentgen
+  name: 威廉·伦琴
+  birthYear: 1845
+  deathYear: 1923
+  level: 2
+  category: 科学
+  summary: 物理学家，1895年发现X射线，获首届诺贝尔物理学奖，医学影像技术因此诞生。
+  events: [germany_roentgen_xray]
+
+- id: robert_koch
+  name: 罗伯特·科赫
+  birthYear: 1843
+  deathYear: 1910
+  level: 2
+  category: 科学
+  summary: 细菌学家，发现结核杆菌与霍乱弧菌，建立细菌培养方法，1905年获诺贝尔生理学或医学奖。
+  events: [germany_robert_koch_tb]
+
+- id: planck
+  name: 马克斯·普朗克
+  birthYear: 1858
+  deathYear: 1947
+  level: 1
+  category: 科学
+  summary: 物理学家，提出量子假说，开创量子物理学，1918年获诺贝尔物理学奖，晚年经历战争悲剧。
+  events: [germany_planck_quantum, germany_planck_bomb_aftermath]
+
+- id: einstein
+  name: 阿尔伯特·爱因斯坦
+  birthYear: 1879
+  deathYear: 1955
+  level: 1
+  category: 科学
+  summary: 物理学家，创立狭义与广义相对论，1921年获诺贝尔物理学奖，因纳粹迫害流亡美国。
+  events: [germany_einstein_relativity, germany_refugee_exodus, germany_einstein_us_letter, germany_atomic_bomb_program]
+
+- id: heisenberg
+  name: 维尔纳·海森堡
+  birthYear: 1901
+  deathYear: 1976
+  level: 2
+  category: 科学
+  summary: 物理学家，量子力学创始人之一，提出不确定性原理，1932年获诺贝尔物理学奖。
+  events: [germany_heisenberg_uncertainty, germany_atomic_bomb_program]
+
+# ── 文学 ──────────────────────────────────────────
+
+- id: goethe
+  name: 约翰·沃尔夫冈·冯·歌德
+  birthYear: 1749
+  deathYear: 1832
+  level: 1
+  category: 文学
+  summary: 德意志文学巨匠，代表作《少年维特之烦恼》《浮士德》，狂飙突进至魏玛古典主义核心人物。
+  events: [germany_young_werther, germany_weimar_classicism_start, germany_sturm_und_drang, germany_goethe_iphigenie]
+
+- id: schiller
+  name: 弗里德里希·席勒
+  birthYear: 1759
+  deathYear: 1805
+  level: 1
+  category: 文学
+  summary: 德意志剧作家与诗人，代表作《强盗》《威廉·退尔》，德国古典主义与浪漫主义的重要人物。
+  events: [germany_schiller_robbers, germany_sturm_und_drang, germany_schiller_don_carlos, germany_schiller_wallenstein_plan, germany_schiller_aesthetics]
+
+- id: heine
+  name: 海因里希·海涅
+  birthYear: 1797
+  deathYear: 1856
+  level: 2
+  category: 文学
+  summary: 德意志诗人，以政治讽刺诗著称，因立场遭驱逐，流亡巴黎，作品列入纳粹焚书名单。
+  events: [germany_heine_paris]
+
+- id: thomas_mann
+  name: 托马斯·曼
+  birthYear: 1875
+  deathYear: 1955
+  level: 2
+  category: 文学
+  summary: 德国作家，代表作《布登勃洛克家族》《魔山》，1929年获诺贝尔文学奖，纳粹时期流亡海外。
+  events: [germany_thomas_mann_buddenbrooks, germany_refugee_exodus]
+
+- id: brecht
+  name: 贝托尔特·布莱希特
+  birthYear: 1898
+  deathYear: 1956
+  level: 2
+  category: 文学
+  summary: 德国剧作家，《三分钱歌剧》《母亲勇气》代表作，创立叙事剧理论，纳粹时期流亡，后定居东柏林。
+  events: [germany_brecht_opera, germany_refugee_exodus]
+
+# ── 音乐 ──────────────────────────────────────────
+
+- id: bach
+  name: 约翰·塞巴斯蒂安·巴赫
+  birthYear: 1685
+  deathYear: 1750
+  level: 1
+  category: 音乐
+  summary: 巴洛克音乐集大成者，在莱比锡创作大量宗教与器乐作品，影响后世所有西方音乐。
+  events: [germany_bach_career_peak, germany_bach_mass_in_b_minor]
+
+- id: handel_de
+  name: 格奥尔格·弗里德里希·亨德尔
+  birthYear: 1685
+  deathYear: 1759
+  level: 2
+  category: 音乐
+  summary: 生于德意志，后在英国定居并成名，代表作清唱剧《弥赛亚》，是巴洛克音乐的重要人物。
+  events: [germany_handel_born, germany_handel_messiah]
+
+- id: beethoven
+  name: 路德维希·凡·贝多芬
+  birthYear: 1770
+  deathYear: 1827
+  level: 1
+  category: 音乐
+  summary: 德意志作曲家，古典向浪漫主义过渡的核心人物，《第九交响曲》在近乎全聋时完成。
+  events: [germany_beethoven_born, germany_beethoven_vienna, germany_beethoven_ninth]
+
+- id: schubert
+  name: 弗朗茨·舒伯特
+  birthYear: 1797
+  deathYear: 1828
+  level: 2
+  category: 音乐
+  summary: 奥地利作曲家，德国浪漫主义音乐代表，创作逾600首艺术歌曲，31岁英年早逝。
+  events: [germany_schubert_death, germany_schubert_lieder]
+
+- id: mendelssohn
+  name: 费利克斯·门德尔松
+  birthYear: 1809
+  deathYear: 1847
+  level: 2
+  category: 音乐
+  summary: 德国作曲家，推动巴赫作品复兴，代表作《仲夏夜之梦》序曲与小提琴协奏曲。
+  events: [germany_mendelssohn_bach_revival]
+
+- id: brahms
+  name: 约翰内斯·勃拉姆斯
+  birthYear: 1833
+  deathYear: 1897
+  level: 2
+  category: 音乐
+  summary: 德国作曲家，继承贝多芬传统，四部交响曲及大量室内乐奠定其浪漫主义音乐大师地位。
+  events: [germany_brahms_symphonies]
+
+- id: wagner
+  name: 理查德·瓦格纳
+  birthYear: 1813
+  deathYear: 1883
+  level: 1
+  category: 音乐
+  summary: 德国作曲家，创立乐剧理论，代表作《尼伯龙根的指环》，建立拜罗伊特音乐节。
+  events: [germany_wagner_ring, germany_bayreuth_festival]
+
+- id: richard_strauss
+  name: 理查·施特劳斯
+  birthYear: 1864
+  deathYear: 1949
+  level: 2
+  category: 音乐
+  summary: 德国作曲家与指挥家，交响诗《唐璜》《查拉图斯特拉如是说》与歌剧《莎乐美》代表作。
+  events: [germany_richard_strauss_debut]
+
+# ── 哲学思想 ──────────────────────────────────────────
+
+- id: kant
+  name: 伊曼努尔·康德
+  birthYear: 1724
+  deathYear: 1804
+  level: 1
+  category: 哲学思想
+  summary: 德国哲学家，批判哲学创始人，《纯粹理性批判》等三大批判奠定德国古典哲学基础。
+  events: [germany_enlightenment_philosophy, germany_kant_critiques, germany_konigssberg_circle, germany_kant_religion_book]
+
+- id: hegel
+  name: 格奥尔格·威廉·弗里德里希·黑格尔
+  birthYear: 1770
+  deathYear: 1831
+  level: 1
+  category: 哲学思想
+  summary: 德国哲学家，辩证法哲学体系的集大成者，柏林大学讲座影响整整一代德国知识分子。
+  events: [germany_hegel_born, germany_hegel_berlin_lectures]
+
+- id: schopenhauer
+  name: 阿图尔·叔本华
+  birthYear: 1788
+  deathYear: 1860
+  level: 2
+  category: 哲学思想
+  summary: 德国哲学家，以意志论哲学挑战理性主义，代表作《意志与表象的世界》，对尼采影响深远。
+  events: [germany_schopenhauer_world]
+
+- id: nietzsche
+  name: 弗里德里希·尼采
+  birthYear: 1844
+  deathYear: 1900
+  level: 1
+  category: 哲学思想
+  summary: 德国哲学家，提出超人学说、权力意志与永恒轮回，代表作《查拉图斯特拉如是说》。
+  events: [germany_nietzsche_birth_of_tragedy, germany_nietzsche_zarathustra]
+
+- id: marx
+  name: 卡尔·马克思
+  birthYear: 1818
+  deathYear: 1883
+  level: 1
+  category: 哲学思想
+  summary: 德国哲学家与经济学家，历史唯物主义创立者，《资本论》与《共产党宣言》影响世界历史。
+  events: [germany_marx_kapital, germany_marx_communist_manifesto, germany_marx_paris_1843, germany_marx_international]
+
+- id: engels
+  name: 弗里德里希·恩格斯
+  birthYear: 1820
+  deathYear: 1895
+  level: 2
+  category: 哲学思想
+  summary: 德国社会主义思想家，马克思的合作者，共同创立马克思主义理论体系。
+  events: [germany_marx_communist_manifesto, germany_marx_paris_1843]
+
+- id: max_weber
+  name: 马克斯·韦伯
+  birthYear: 1864
+  deathYear: 1920
+  level: 2
+  category: 哲学思想
+  summary: 德国社会学家，代表作《新教伦理与资本主义精神》，现代社会学奠基人之一。
+  events: [germany_weber_protestant_ethic]
+
+# ── 经济金融 ──────────────────────────────────────────
+
+- id: list_economist
+  name: 弗里德里希·李斯特
+  birthYear: 1789
+  deathYear: 1846
+  level: 2
+  category: 经济金融
+  summary: 德国经济学家，倡导国家主义经济学与保护性关税，推动德意志关税同盟的理论基础建立。
+  events: [germany_zollverein]

@@ -1,39 +1,507 @@
-- id: germany_division
+# 德国 1950-2000（西德/东德分裂→冷战→统一→后统一时代）
+# 1949-1990：东西德分裂并存
+# 1990-2000：统一后重建与欧洲整合
+
+# ── Level 1 ──────────────────────────────────────────
+
+- id: germany_two_states_founded
   year: 1949
   level: 1
-  title: 德国分裂为东西德
-  summary: 联邦德国（西德）和德意志民主共和国（东德）相继成立，德国一分为二。
+  title: 东西德相继建国
+  summary: 1949年联邦德国（西德）5月建立，德意志民主共和国（东德）10月建立，德国正式分裂。
   tags: [王朝更迭, 条约外交]
   related: [usa_cold_war, russia_cold_war]
-
-- id: germany_eec
-  year: 1957
-  level: 2
-  title: 参与创立欧洲经济共同体
-  summary: 西德与法国等五国签订《罗马条约》，创立欧洲经济共同体。
-  tags: [条约外交, 经济贸易]
-  related: [france_eu_founding]
-
-- id: germany_berlin_wall
-  year: 1961
-  level: 2
-  title: 柏林墙建造
-  summary: 东德当局修建柏林墙，将柏林分割为东西两部分，阻止东德居民外逃。
-  tags: [条约外交]
-  related: [usa_cold_war]
 
 - id: germany_wirtschaftswunder
   year: 1950
   endYear: 1965
-  level: 2
-  title: 经济奇迹
-  summary: 西德战后经济快速复苏，成为欧洲主要经济体，工业生产大幅增长。
+  level: 1
+  title: 西德经济奇迹
+  summary: 西德在路德维希·艾哈德社会市场经济政策下实现高速增长，成为欧洲最大工业经济体之一。
   tags: [经济贸易, 改革运动]
+  figures: [adenauer, erhard]
+
+- id: germany_berlin_wall_built
+  year: 1961
+  level: 1
+  title: 柏林墙建造
+  summary: 东德当局于1961年8月13日开始修建柏林墙，将柏林分隔，封锁东德居民出走西德的通道。
+  tags: [条约外交]
+  related: [usa_cold_war, russia_cold_war]
+
+- id: germany_ostpolitik
+  year: 1969
+  endYear: 1974
+  level: 1
+  title: 勃兰特东方政策
+  summary: 西德总理勃兰特推行东方政策，与东德及东欧国家改善关系，华沙跪拜姿态引发国际关注。
+  tags: [条约外交]
+  figures: [brandt]
 
 - id: germany_reunification
   year: 1990
   level: 1
-  title: 德国统一
-  summary: 东西德统一条约签订，两德正式合并为统一的德意志联邦共和国。
+  title: 两德统一
+  summary: 1990年10月3日东西德正式合并，德意志联邦共和国以统一之身重回欧洲政治舞台中心。
   tags: [王朝更迭, 条约外交]
-  related: [russia_ussr_dissolution]
+  figures: [kohl, brandt]
+  related: [russia_cold_war_end, usa_cold_war]
+
+- id: germany_berlin_wall_fall
+  year: 1989
+  level: 1
+  title: 柏林墙倒塌
+  summary: 1989年11月9日东德宣布开放边境，民众涌上柏林墙，冷战最具象征意义的分隔物随之瓦解。
+  tags: [革命政变, 王朝更迭]
+  figures: [kohl]
+  related: [russia_cold_war_end]
+
+- id: germany_nato_membership_west
+  year: 1955
+  level: 1
+  title: 西德加入北约
+  summary: 西德于1955年5月加入北大西洋公约组织，同年东德加入华约，德国分裂被纳入冷战对峙框架。
+  tags: [条约外交]
+  figures: [adenauer]
+  related: [usa_cold_war, russia_cold_war]
+
+- id: germany_eec_founding
+  year: 1957
+  level: 1
+  title: 参与创立欧洲经济共同体
+  summary: 西德与法国等六国签署《罗马条约》，创立欧洲经济共同体，欧洲一体化进程正式启动。
+  tags: [条约外交, 经济贸易]
+  related: [france_eu_founding]
+
+# ── Level 2 ──────────────────────────────────────────
+
+- id: germany_adenauer_chancellor
+  year: 1949
+  endYear: 1963
+  level: 2
+  title: 阿登纳首任联邦德国总理
+  summary: 73岁的阿登纳出任西德首任总理，执政14年，推动西德与西方民主体系和解与整合。
+  tags: [改革运动]
+  figures: [adenauer]
+
+- id: germany_east_uprising_1953
+  year: 1953
+  level: 2
+  title: 东德六月起义
+  summary: 东德工人因提高生产定额而发动罢工，抗议迅速蔓延至全国，苏联坦克出动镇压。
+  tags: [革命政变]
+  related: [russia_cold_war]
+
+- id: germany_west_rearmament
+  year: 1955
+  level: 2
+  title: 西德重新武装
+  summary: 西德加入北约后重建联邦国防军，结束战后非军事化，引发德国国内与邻国的广泛争议。
+  tags: [改革运动, 条约外交]
+  figures: [adenauer]
+
+- id: germany_east_warsaw_pact
+  year: 1955
+  level: 2
+  title: 东德加入华约
+  summary: 东德加入华沙条约组织，苏联在东德驻军合法化，德国分裂被双重联盟体系固化。
+  tags: [条约外交]
+  related: [russia_cold_war]
+
+- id: germany_franco_german_treaty
+  year: 1963
+  level: 2
+  title: 《爱丽舍条约》签订
+  summary: 阿登纳与戴高乐签订法德友好条约，终结百余年积怨，奠定欧洲一体化的核心轴心关系。
+  tags: [条约外交]
+  figures: [adenauer]
+  related: [france_de_gaulle]
+
+- id: germany_social_market_economy
+  year: 1949
+  endYear: 1960
+  level: 2
+  title: 社会市场经济政策
+  summary: 艾哈德推行"社会市场经济"模式，在自由市场与社会保障之间寻求平衡，成为西德经济奇迹基础。
+  tags: [经济贸易, 改革运动]
+  figures: [erhard]
+
+- id: germany_gastarbeiter
+  year: 1955
+  endYear: 1973
+  level: 2
+  title: 外籍劳工引进计划
+  summary: 西德与多国签署劳工协议，大批"客籍工人"从意大利、土耳其等国赴德，深刻改变德国社会结构。
+  tags: [经济贸易]
+
+- id: germany_student_movement_1968
+  year: 1968
+  level: 2
+  title: 1968年学生运动
+  summary: 西德大学生掀起反对权威、追究纳粹历史责任的大规模抗议运动，推动德国战后代际文化转变。
+  tags: [革命政变, 文化思想]
+
+- id: germany_basic_treaty_east_west
+  year: 1972
+  level: 2
+  title: 东西德《基础条约》
+  summary: 东西德签订《基础条约》，相互承认对方存在，双方于1973年同时加入联合国。
+  tags: [条约外交]
+  figures: [brandt]
+
+- id: germany_brandt_warsaw_genuflection
+  year: 1970
+  level: 2
+  title: 勃兰特华沙跪拜
+  summary: 西德总理勃兰特在华沙犹太区起义纪念碑前自发下跪，成为德国战后历史责任态度的象征性时刻。
+  tags: [条约外交, 文化思想]
+  figures: [brandt]
+
+- id: germany_red_army_faction
+  year: 1970
+  endYear: 1998
+  level: 2
+  title: 红军派恐怖主义
+  summary: 联邦德国极左恐怖组织红军派（Baader-Meinhof集团）发动系列暗杀、劫持行动，引发社会震动。
+  tags: [革命政变]
+
+- id: germany_german_autumn_1977
+  year: 1977
+  level: 2
+  title: 德国之秋
+  summary: 红军派绑架德国工业联合会主席施莱尔，并劫持汉莎航班，特种部队突袭解救，事件以人质遇害告终。
+  tags: [革命政变]
+
+- id: germany_schmidt_chancellor
+  year: 1974
+  endYear: 1982
+  level: 2
+  title: 施密特执政
+  summary: 赫尔穆特·施密特出任西德总理，以务实风格应对石油危机和欧洲安全挑战，强调跨大西洋合作。
+  tags: [改革运动]
+
+- id: germany_kohl_government
+  year: 1982
+  endYear: 1998
+  level: 2
+  title: 科尔政府长期执政
+  summary: 赫尔穆特·科尔出任总理，执政16年，主导两德统一，推动马斯特里赫特条约与欧元启动。
+  tags: [改革运动, 条约外交]
+  figures: [kohl]
+
+- id: germany_maastricht_treaty
+  year: 1992
+  level: 2
+  title: 《马斯特里赫特条约》签署
+  summary: 德国与欧共体各国签署《马斯特里赫特条约》，欧洲联盟正式成立，欧元一体化进程启动。
+  tags: [条约外交, 经济贸易]
+  figures: [kohl]
+  related: [france_eu_founding]
+
+- id: germany_two_plus_four_treaty
+  year: 1990
+  level: 2
+  title: 《二加四条约》
+  summary: 东西德与美英法苏四大国签订条约，确认统一德国的边界与主权，终结二战遗留的法律问题。
+  tags: [条约外交]
+  figures: [kohl]
+
+- id: germany_treuhandanstalt
+  year: 1990
+  endYear: 1994
+  level: 2
+  title: 托管局私有化东德企业
+  summary: 联邦托管局接管约8500家东德国有企业，进行私有化或清算，引发大规模失业与社会震荡。
+  tags: [经济贸易]
+
+- id: germany_schengen_agreement
+  year: 1985
+  level: 2
+  title: 《申根协议》签署
+  summary: 西德与法国、比荷卢在申根村签署协议，建立欧洲无护照边境区，德国是核心推动者之一。
+  tags: [条约外交]
+  related: [france_eu_founding]
+
+- id: germany_germany_un_member
+  year: 1973
+  level: 2
+  title: 东西德同时加入联合国
+  summary: 东西德于1973年同时加入联合国，标志两德分裂格局被国际社会正式承认。
+  tags: [条约外交]
+  figures: [brandt]
+
+- id: germany_ostpolitik_treaties
+  year: 1970
+  level: 2
+  title: 东方条约群签署
+  summary: 西德与苏联、波兰分别签署条约，确认战后边界，为东欧和解创造条件，勃兰特因此获诺贝尔和平奖。
+  tags: [条约外交]
+  figures: [brandt]
+
+- id: germany_post_unification_economy
+  year: 1990
+  endYear: 2000
+  level: 2
+  title: 统一后经济整合挑战
+  summary: 统一后东部重建耗资逾万亿欧元，东部失业率居高不下，东西差距成为德国长期社会议题。
+  tags: [经济贸易]
+  figures: [kohl]
+
+- id: germany_euro_adoption_preparation
+  year: 1999
+  level: 2
+  title: 欧元启动（账面货币）
+  summary: 1999年1月欧元作为账面货币正式启动，德国马克的退出成为统一欧洲货币体系的关键一步。
+  tags: [经济贸易, 条约外交]
+  figures: [kohl]
+
+# ── Level 3 ──────────────────────────────────────────
+
+- id: germany_berlin_airlift_end
+  year: 1949
+  level: 3
+  title: 柏林空运结束
+  summary: 苏联于1949年5月解除对西柏林的封锁，盟国空运胜利，成为西方对抗苏联压力的早期典范。
+  tags: [战争, 条约外交]
+  related: [usa_cold_war, russia_cold_war]
+
+- id: germany_adenauer_sovereignty
+  year: 1952
+  level: 3
+  title: 《德国条约》谈判
+  summary: 西德与西方盟国谈判签署《德国条约》，西德逐步获得主权，但正式主权恢复需等至1955年。
+  tags: [条约外交]
+  figures: [adenauer]
+
+- id: germany_west_german_constitution
+  year: 1949
+  level: 3
+  title: 《基本法》颁布
+  summary: 西德《基本法》以保障基本权利和防止独裁为核心，建立联邦制议会民主，被视为范本宪法。
+  tags: [改革运动]
+
+- id: germany_volkswagen_beetle_export
+  year: 1950
+  level: 3
+  title: 大众甲壳虫汽车出口兴起
+  summary: 大众甲壳虫汽车大量出口美国等市场，成为西德经济奇迹的标志性产品和出口符号。
+  tags: [经济贸易]
+
+- id: germany_sputnik_response
+  year: 1957
+  level: 3
+  title: 西德对苏联卫星的应对
+  summary: 苏联发射卫星冲击西方，西德学界和政府加大对理工科研究的投入，推动冷战技术竞争。
+  tags: [科技发明]
+  related: [usa_cold_war, russia_cold_war]
+
+- id: germany_eichmann_trial
+  year: 1961
+  level: 3
+  title: 艾希曼在耶路撒冷受审
+  summary: 以色列特工在阿根廷抓捕纳粹战犯艾希曼，在耶路撒冷公开受审并执行死刑，引发全球关注。
+  tags: [条约外交]
+
+- id: germany_jfk_berlin_speech
+  year: 1963
+  level: 3
+  title: 肯尼迪"我是柏林人"演讲
+  summary: 美国总统肯尼迪在西柏林发表演讲，以"Ich bin ein Berliner"表达对西德的支持，振奋人心。
+  tags: [条约外交]
+  related: [usa_cold_war]
+
+- id: germany_adenauer_resignation
+  year: 1963
+  level: 3
+  title: 阿登纳辞职
+  summary: 87岁的阿登纳辞去总理职务，由艾哈德继任，阿登纳任期奠定了战后西德的对外关系基础。
+  tags: [王朝更迭]
+  figures: [adenauer]
+
+- id: germany_spiegel_affair
+  year: 1962
+  level: 3
+  title: 《明镜》周刊事件
+  summary: 西德当局逮捕《明镜》周刊编辑，指控其泄露军事机密，引发新闻自由危机，国防部长被迫辞职。
+  tags: [改革运动]
+
+- id: germany_APO_movement
+  year: 1967
+  level: 3
+  title: 议外反对派（APO）运动
+  summary: 西德出现以学生为主体的议外反对派运动，抗议大联合政府、越战与纳粹历史遮掩。
+  tags: [革命政变, 文化思想]
+
+- id: germany_willy_brandt_spy_scandal
+  year: 1974
+  level: 3
+  title: 纪尧姆间谍案
+  summary: 勃兰特亲信纪尧姆被揭露为东德间谍，勃兰特随即辞职，施密特接任总理。
+  tags: [条约外交]
+  figures: [brandt]
+
+- id: germany_oil_crisis_1973
+  year: 1973
+  level: 3
+  title: 石油危机冲击西德
+  summary: 1973年石油禁运导致西德能源危机，政府实施无车日，推动能源政策转型与核能扩张。
+  tags: [经济贸易]
+
+- id: germany_ss20_nato_double_track
+  year: 1979
+  level: 3
+  title: 北约双轨决定
+  summary: 苏联部署SS-20导弹，北约通过双轨决议，计划在西德部署潘兴II导弹，引发德国国内激烈争议。
+  tags: [条约外交, 战争]
+  related: [usa_cold_war, russia_cold_war]
+
+- id: germany_peace_movement_1980s
+  year: 1981
+  endYear: 1983
+  level: 3
+  title: 反核平和运动高峰
+  summary: 数十万西德民众参与反核武器部署示威，1983年波恩大游行创下当时西德抗议人数纪录。
+  tags: [改革运动, 文化思想]
+
+- id: germany_chernobyl_impact
+  year: 1986
+  level: 3
+  title: 切尔诺贝利事故影响德国
+  summary: 苏联切尔诺贝利核事故引发德国反核情绪高涨，推动绿党势力上升和核能退出讨论。
+  tags: [科技发明, 文化思想]
+  related: [russia_cold_war]
+
+- id: germany_east_berlin_protest
+  year: 1989
+  level: 3
+  title: 莱比锡周一示威
+  summary: 1989年秋东德民众在莱比锡每周举行大规模示威，"我们是人民"的口号推动东德政权瓦解。
+  tags: [革命政变]
+
+- id: germany_egon_krenz_resignation
+  year: 1989
+  level: 3
+  title: 东德领导层更迭
+  summary: 昂纳克因健康原因辞职，克伦茨继任，随即宣布开放边境，东德共产党政权快速瓦解。
+  tags: [王朝更迭]
+
+- id: germany_volkskammer_election
+  year: 1990
+  level: 3
+  title: 东德最后一次自由选举
+  summary: 1990年3月东德举行历史上首次（也是最后一次）自由议会选举，基民盟大胜，统一进程加速。
+  tags: [改革运动]
+  figures: [kohl]
+
+- id: germany_currency_union
+  year: 1990
+  level: 3
+  title: 东西德货币联合
+  summary: 1990年7月1日东德马克与西德马克按一比一汇率统一，东德经济迅速暴露出竞争力不足问题。
+  tags: [经济贸易]
+  figures: [kohl]
+
+- id: germany_kohl_final_unification_speech
+  year: 1990
+  level: 3
+  title: 统一日庆典
+  summary: 1990年10月3日零时，两德统一庆典在柏林国会大厦前举行，勃兰登堡门彻夜灯火通明。
+  tags: [王朝更迭]
+  figures: [kohl]
+
+- id: germany_transfer_payments_east
+  year: 1991
+  endYear: 2000
+  level: 3
+  title: 团结税与东部重建
+  summary: 西德纳税人通过"团结附加税"为东部重建提供资金，累计转移支付逾万亿欧元，社会讨论持续。
+  tags: [经济贸易]
+
+- id: germany_berlin_capital_decision
+  year: 1991
+  level: 3
+  title: 迁都柏林决议
+  summary: 联邦议院以微弱多数通过决议，将首都和议会从波恩迁回柏林，迁移工作于1999年完成。
+  tags: [改革运动]
+  figures: [kohl]
+
+- id: germany_bundesbank_independence
+  year: 1957
+  level: 3
+  title: 联邦银行法颁布
+  summary: 西德建立独立的联邦银行体制，以维持货币稳定为首要目标，成为欧洲中央银行模式的蓝本。
+  tags: [经济贸易]
+
+- id: germany_yugoslavia_war_recognition
+  year: 1991
+  level: 3
+  title: 德国率先承认斯洛文尼亚和克罗地亚
+  summary: 德国率欧共体各国提前单独承认前南斯拉夫两个独立共和国，引发外交争议，影响巴尔干局势。
+  tags: [条约外交]
+  figures: [kohl]
+
+- id: germany_green_party_growth
+  year: 1983
+  level: 3
+  title: 绿党首次进入联邦议院
+  summary: 西德绿党于1983年以5.6%得票率进入联邦议院，成为第一个进入联邦议院的绿色政党。
+  tags: [改革运动]
+
+- id: germany_ossis_wessis_culture
+  year: 1990
+  endYear: 2000
+  level: 3
+  title: 东西德文化认同分歧
+  summary: 统一后东德人（Ossis）与西德人（Wessis）之间产生相互刻板印象，文化整合比经济整合更为缓慢。
+  tags: [文化思想]
+
+- id: germany_holocaust_memorial_debate
+  year: 1998
+  level: 3
+  title: 柏林大屠杀纪念馆辩论
+  summary: 联邦议院以压倒多数通过决议，在柏林市中心建造大屠杀纪念馆，相关辩论持续多年。
+  tags: [文化思想]
+
+- id: germany_bundeswehr_out_of_area
+  year: 1994
+  level: 3
+  title: 德军海外部署宪法判决
+  summary: 联邦宪法法院裁定德军可在联合国授权下参与海外行动，为德军参与国际任务扫除法律障碍。
+  tags: [条约外交, 改革运动]
+
+- id: germany_stasi_files
+  year: 1992
+  level: 3
+  title: 斯塔西档案开放
+  summary: 东德秘密警察斯塔西留下的大量档案向公众开放，揭露广泛监控网络，引发社会清算与震动。
+  tags: [文化思想]
+
+- id: germany_german_exports_1990s
+  year: 1995
+  endYear: 2000
+  level: 3
+  title: 统一后德国出口持续增长
+  summary: 尽管统一初期经济阵痛，德国制造业依靠机械、汽车、化工等优势维持出口竞争力。
+  tags: [经济贸易]
+
+- id: germany_schroder_government
+  year: 1998
+  level: 3
+  title: 施罗德政府上台
+  summary: 格哈德·施罗德领导社民党与绿党组成联合政府，结束科尔16年执政，启动"第三条道路"改革。
+  tags: [改革运动]
+
+- id: germany_nato_expansion_east
+  year: 1999
+  level: 3
+  title: 北约东扩
+  summary: 波兰、捷克、匈牙利加入北约，德国支持东扩，但同时须平衡对俄罗斯关系的外交考量。
+  tags: [条约外交]
+  related: [usa_cold_war, russia_cold_war_end]
+
+- id: germany_kosovo_war
+  year: 1999
+  level: 3
+  title: 德军参与科索沃战争
+  summary: 德国首次参与北约对南联盟的军事行动，是二战后首次在无联合国授权情况下参与战争，引发宪法争议。
+  tags: [战争, 条约外交]

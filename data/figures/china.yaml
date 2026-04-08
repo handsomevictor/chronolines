@@ -1,63 +1,421 @@
+# 中国历史人物数据
+# 覆盖 1700-2000 年间政治、军事、文学、科学、音乐、经济、哲学各领域
+
+# ===== 皇帝 / 政治领导人 =====
+
 - id: kangxi
-  name: 康熙帝
+  name: 康熙帝（爱新觉罗·玄烨）
   birthYear: 1654
   deathYear: 1722
+  category: 政治
   level: 1
-  summary: 清朝第四位皇帝，在位61年，奠定清朝全盛基础，推行文治武功。
-  events: [china_kangxi_death]
+  summary: 清朝第四位皇帝，在位61年，平三藩、收台湾、驱俄签约，奠定清朝全盛基础。
+  events: [china_kangxi_death, china_dzungar_war_1, china_kangxi_renounce_poll_tax, china_kangxi_jesuits_astronomy, china_gujin_tushu_jicheng, china_kangxi_circle_land_abolish, china_kangxi_south_tour, china_kangxi_six_south_tours]
+
+- id: yongzheng
+  name: 雍正帝（爱新觉罗·胤禛）
+  birthYear: 1678
+  deathYear: 1735
+  category: 政治
+  level: 1
+  summary: 清朝第五位皇帝，在位13年，推行摊丁入亩、火耗归公、军机处等改革，强化集权。
+  events: [china_yongzheng_ascends, china_yongzheng_tandingrumu, china_yongzheng_huohao, china_junjichu_established, china_yongzheng_gaitu, china_yongzheng_death, china_dzungar_war_2, china_russia_kyakhta_treaty, china_yongzheng_proscribe_christianity, china_yongzheng_secret_succession, china_yongzheng_literary_inquisition, china_yongzheng_abolish_jianmin, china_tibet_ambans_installed, china_yongzheng_suppresses_princes, china_yongzheng_inner_cabinet_decline, china_kangxi_proscribes_opium_1729]
 
 - id: qianlong
-  name: 乾隆帝
+  name: 乾隆帝（爱新觉罗·弘历）
   birthYear: 1711
   deathYear: 1799
+  category: 政治
   level: 1
-  summary: 清朝第六位皇帝，在位61年，清朝疆域达到极盛，晚年出现腐败问题。
-  events: [china_qianlong_reign, china_macartney_mission]
+  summary: 清朝第六位皇帝，在位61年，完成十全武功，清朝疆域与人口达极盛，晚年宠信和珅。
+  events: [china_qianlong_reign, china_macartney_mission, china_dzungar_final, china_xinjiang_pacify, china_jinchuan_war_1, china_jinchuan_war_2, china_taiwan_linshuangwen, china_burma_war, china_vietnam_war, china_tibet_gurkha_2, china_siku_quanshu, china_siku_quanshu_banned_books, china_heshen_rises, china_tibet_panchen_visits_beijing, china_qianlong_ascends, china_qianlong_literary_inquisition, china_qianlong_ten_victories_title, china_qianlong_retire, china_qianlong_death, china_staunton_macartney_refused, china_xinjiang_province_prep, china_imperial_garden_yuanmingyuan_expand]
 
-- id: linzexu
-  name: 林则徐
-  birthYear: 1785
+- id: jiaqing
+  name: 嘉庆帝（爱新觉罗·颙琰）
+  birthYear: 1760
+  deathYear: 1820
+  category: 政治
+  level: 2
+  summary: 清朝第七位皇帝，在位25年，乾隆帝禅位后赐死和珅，但未能有效遏制清朝衰落。
+  events: [china_jiaqing_ascends, china_white_lotus_uprising, china_heshen_fall, china_white_lotus_end, china_jiaqing_tianli_uprising, china_jiaqing_emperor_attack, china_jiaqing_death]
+
+- id: daoguang
+  name: 道光帝（爱新觉罗·旻宁）
+  birthYear: 1782
   deathYear: 1850
+  category: 政治
   level: 2
-  summary: 主导虎门销烟，是清末最早主张了解西方的官员之一。
-  events: [opium_war_1]
+  summary: 清朝第八位皇帝，在位30年，经历第一次鸦片战争失败，签订《南京条约》。
+  events: [china_daoguang_ascends, china_opium_ban_daoguang, china_opium_war_1, china_nanjing_treaty, china_daoguang_opium_ban_1820, china_linzexu_exile, china_daoguang_death]
 
-- id: hong_xiuquan
-  name: 洪秀全
-  birthYear: 1814
-  deathYear: 1864
+- id: xianfeng
+  name: 咸丰帝（爱新觉罗·奕詝）
+  birthYear: 1831
+  deathYear: 1861
+  category: 政治
   level: 2
-  summary: 太平天国创立者，建立政权与清廷对抗长达十四年。
-  events: [china_taiping]
+  summary: 清朝第九位皇帝，在位11年，经历太平天国与第二次鸦片战争，死于热河行宫。
+  events: [china_xianfeng_ascends, china_opium_war_2, china_beijing_treaty, china_xianfeng_flee_beijing, china_xianfeng_death]
 
-- id: li_hongzhang
-  name: 李鸿章
-  birthYear: 1823
-  deathYear: 1901
+- id: cixi
+  name: 慈禧太后（叶赫那拉·杏贞）
+  birthYear: 1835
+  deathYear: 1908
+  category: 政治
   level: 1
-  summary: 洋务运动主要推动者之一，代表清廷签订多项条约，政治生涯颇具争议。
-  events: [china_self_strengthening, china_sino_japanese_war]
+  summary: 清朝实际最高统治者，历经同治、光绪两朝垂帘听政，主导晚清政局约五十年。
+  events: [china_cixi_xinyou_coup, china_tongzhi_ascends, china_hundred_days, china_yihetuan, china_xinzheng_reform, china_abolish_keju, china_guangxu_imprisoned, china_wuxu_six_gentlemen, china_cixi_return_beijing, china_guangxu_cixi_death, china_xianfeng_flee_beijing]
+
+- id: guangxu
+  name: 光绪帝（爱新觉罗·载湉）
+  birthYear: 1871
+  deathYear: 1908
+  category: 政治
+  level: 2
+  summary: 清朝第十一位皇帝，支持戊戌变法，被慈禧软禁，1908年与慈禧相继驾崩。
+  events: [china_guangxu_ascends, china_hundred_days, china_guangxu_imprisoned, china_wuxu_six_gentlemen, china_academy_reform_attempt, china_guangxu_cixi_death]
+
+- id: heshen
+  name: 和珅（钮祜禄·和珅）
+  birthYear: 1750
+  deathYear: 1799
+  category: 政治
+  level: 2
+  summary: 乾隆帝宠臣，身兼军机大臣等要职，大肆敛财，乾隆死后被嘉庆帝赐死并抄家。
+  events: [china_heshen_rises, china_heshen_corruption, china_heshen_fall, china_heshen_executed]
+
+- id: yuan_shikai
+  name: 袁世凯
+  birthYear: 1859
+  deathYear: 1916
+  category: 政治
+  level: 1
+  summary: 北洋军阀领袖，中华民国第一任总统，1915年宣布称帝，遭各方反对后83天撤销。
+  events: [china_korea_suzerainty, china_yuan_becomes_president, china_twenty_one_demands, china_yuan_emperor, china_song_jiaoren_assassinated, china_second_revolution_fail, china_yuan_shikai_death, china_new_army_trained, china_xinzheng_reform]
 
 - id: sun_yatsen
-  name: 孙中山
+  name: 孙中山（孙文）
   birthYear: 1866
   deathYear: 1925
+  category: 政治
   level: 1
-  summary: 中华民国临时大总统，三民主义提出者，推动结束帝制。
-  events: [china_qing_end]
+  summary: 中华民国临时大总统，三民主义提出者，推动结束清朝帝制，倡导国共合作。
+  events: [china_qing_end, china_guangzhou_uprising_fail, china_guang_xuehui_founded, china_tongmenghui_founded, china_second_revolution_fail, china_first_kuomintang_cpc_cooperation, china_northern_expedition, china_sun_yatsen_death]
+
+- id: chiang_kaishek
+  name: 蒋介石（蒋中正）
+  birthYear: 1887
+  deathYear: 1975
+  category: 政治
+  level: 1
+  summary: 国民政府最高领导人，领导北伐统一南方，主持抗日战争，内战失利后退守台湾。
+  events: [china_northern_expedition, china_april_12_massacre, china_chiang_capital_nanjing, china_september_18_incident, china_xian_incident, china_sino_japanese_war2, china_taierzhuang_victory, china_wuhan_fall, china_chongqing_negotiations, china_pcc_conference, china_civil_war, china_encirclement_campaigns, china_nanjing_government_golden_decade, china_binyin_opium_suppression, china_lugouqiao_full_war, china_japan_surrender]
 
 - id: mao_zedong
   name: 毛泽东
   birthYear: 1893
   deathYear: 1976
+  category: 政治
   level: 1
-  summary: 中国共产党主要领导人，中华人民共和国的主要缔造者之一。
-  events: [china_prc_founded, china_cultural_revolution]
+  summary: 中国共产党主要领导人，中华人民共和国的主要缔造者之一，在位期间推行多项重大政治运动。
+  events: [china_cpc_founded, china_autumn_harvest_uprising, china_jiangxi_soviet, china_long_march, china_zunyi_conference, china_yan_an_rectification, china_ccp_seventh_congress, china_prc_founded, china_korean_war, china_first_five_year_plan, china_great_leap, china_great_famine, china_cultural_revolution, china_lin_biao_incident, china_un_seat_restored, china_nixon_visit, china_mao_death, china_ping_pong_diplomacy, china_april_fifth_movement, china_first_kuomintang_cpc_cooperation, china_land_reform_liberated_area, china_hundred_flowers, china_anti_rightist, china_peng_dehuai_dismissed, china_lushan_conference, china_red_guards_formed, china_liu_shaoqi_purge, china_deng_xiaoping_first_purge]
 
 - id: deng_xiaoping
   name: 邓小平
   birthYear: 1904
   deathYear: 1997
+  category: 政治
   level: 1
-  summary: 主导中国改革开放路线的制定，推动经济体制改革。
-  events: [china_reform_opening]
+  summary: 主导中国改革开放路线，推动家庭联产承包、经济特区、社会主义市场经济等重大改革。
+  events: [china_reform_opening, china_rural_responsibility, china_shenzhen_sez, china_one_child_policy, china_deng_third_return, china_gaokao_restored, china_deng_southern_tour, china_market_economy_confirmed, china_hk_handover, china_hk_handover_negotiations, china_coastal_open_cities, china_tiananmen_1989, china_gang_of_four_arrested, china_pingfan_policy, china_cultural_revolution, china_deng_xiaoping_first_purge, china_sino_vietnamese_war, china_sino_us_diplomatic, china_deng_death, china_gdp_growth_1990s, china_fourteen_th_party_congress]
+
+- id: liu_shaoqi
+  name: 刘少奇
+  birthYear: 1898
+  deathYear: 1969
+  category: 政治
+  level: 2
+  summary: 中华人民共和国主席，文化大革命中被打倒为"叛徒、内奸、工贼"，含冤去世。
+  events: [china_cultural_revolution, china_liu_shaoqi_purge]
+
+- id: peng_dehuai
+  name: 彭德怀
+  birthYear: 1898
+  deathYear: 1974
+  category: 军事
+  level: 2
+  summary: 抗美援朝志愿军司令员，庐山会议后因批评大跃进被撤职，文化大革命中含冤去世。
+  events: [china_korean_war, china_peng_dehuai_dismissed, china_lushan_conference]
+
+# ===== 军事将领 =====
+
+- id: linzexu
+  name: 林则徐
+  birthYear: 1785
+  deathYear: 1850
+  category: 军事
+  level: 2
+  summary: 道光朝重臣，主导虎门销烟，是清末最早主张了解西方的官员之一。
+  events: [china_opium_ban_daoguang, china_humen_burn_opium, china_opium_war_1, china_humen_fort_destroyed, china_linzexu_exile]
+
+- id: zeng_guofan
+  name: 曾国藩
+  birthYear: 1811
+  deathYear: 1872
+  category: 军事
+  level: 1
+  summary: 湘军创建者，镇压太平天国的主要将领，洋务运动的重要推动者，晚清最具影响力的汉官。
+  events: [china_self_strengthening, china_taiping, china_taiping_fall, china_zeng_guofan_xiangnan, china_zongli_yamen, china_tianjin_massacre, china_zeng_guofan_death]
+
+- id: li_hongzhang
+  name: 李鸿章
+  birthYear: 1823
+  deathYear: 1901
+  category: 军事
+  level: 1
+  summary: 洋务运动主要推动者，淮军创建者，代表清廷签订多项条约，政治生涯颇具争议。
+  events: [china_self_strengthening, china_sino_japanese_war, china_nanjing_treaty, china_shimonoseki_treaty, china_li_hongzhang_huai_army, china_nian_rebellion, china_jiangnan_arsenal, china_northern_fleet, china_student_study_abroad, china_telegraphs_expand, china_first_railway, china_li_hongzhang_foreign_affairs, china_chefoo_convention, china_ili_treaty, china_yalu_battle, china_weihaiwei_fall, china_xinchou_treaty, china_li_hongzhang_death]
+
+- id: zuo_zongtang
+  name: 左宗棠
+  birthYear: 1812
+  deathYear: 1885
+  category: 军事
+  level: 1
+  summary: 湘军将领，创办福州船政局，领军平定陕甘回乱并收复新疆，维护国家领土完整。
+  events: [china_self_strengthening, china_fuzhou_shipyard, china_shaangansu_muslim_uprising, china_zuo_xinjiang, china_xinjiang_province, china_sino_french_war, china_sino_french_halong, china_ili_treaty]
+
+- id: hong_xiuquan
+  name: 洪秀全
+  birthYear: 1814
+  deathYear: 1864
+  category: 政治
+  level: 2
+  summary: 太平天国创立者，以拜上帝会为基础发动农民起义，建立政权与清廷对抗长达十四年。
+  events: [china_taiping, china_taiping_jintian, china_taiping_nanjing_capital, china_taiping_tianjing_incident, china_taiping_fall]
+
+- id: liu_yongfu
+  name: 刘永福
+  birthYear: 1837
+  deathYear: 1917
+  category: 军事
+  level: 2
+  summary: 黑旗军统领，参与中法战争，甲午战后领导台湾民主国抗日，被迫撤回内地。
+  events: [china_sino_french_war, china_taiwan_guerrilla_resist]
+
+- id: zhu_de
+  name: 朱德
+  birthYear: 1886
+  deathYear: 1976
+  category: 军事
+  level: 1
+  summary: 中国人民解放军主要创始人之一，与毛泽东合编红军，担任总司令，参与三大战役。
+  events: [china_nanchang_uprising, china_red_army_founded, china_jiangxi_soviet, china_long_march, china_sino_japanese_war2, china_hundred_regiments_battle, china_prc_founded, china_huaihai_battle, china_liaoshen_battle, china_pingjin_battle, china_land_crossing_yangzi]
+
+- id: lin_biao
+  name: 林彪
+  birthYear: 1907
+  deathYear: 1971
+  category: 军事
+  level: 2
+  summary: 解放军将领，指挥辽沈战役，文化大革命中被定为接班人，1971年死于坠机事故。
+  events: [china_long_march, china_liaoshen_battle, china_pingjin_battle, china_huaihai_battle, china_hundred_regiments_battle, china_cultural_revolution, china_lin_biao_incident, china_civil_war]
+
+# ===== 思想家 / 改革家 =====
+
+- id: kang_youwei
+  name: 康有为
+  birthYear: 1858
+  deathYear: 1927
+  category: 哲学思想
+  level: 2
+  summary: 戊戌变法领袖，公车上书组织者，主张君主立宪，政变后流亡海外从事保皇活动。
+  events: [china_hundred_days, china_kang_youwei_memorial, china_kang_youwei_exile, china_luoyang_railway_proposed]
+
+- id: liang_qichao
+  name: 梁启超
+  birthYear: 1873
+  deathYear: 1929
+  category: 哲学思想
+  level: 2
+  summary: 康有为弟子，维新思想传播者，创办《新民丛报》，对近代中国政治思想影响深远。
+  events: [china_hundred_days, china_kang_youwei_memorial, china_kang_youwei_exile, china_liang_qichao_new_citizen]
+
+- id: yan_fu
+  name: 严复
+  birthYear: 1854
+  deathYear: 1921
+  category: 哲学思想
+  level: 2
+  summary: 翻译家，将赫胥黎《天演论》等西方著作译介中国，将进化论引入中国思想界。
+  events: [china_xue_fucheng_yan_fu_west_learning, china_yan_fu_evolution]
+
+- id: chen_duxiu
+  name: 陈独秀
+  birthYear: 1879
+  deathYear: 1942
+  category: 哲学思想
+  level: 2
+  summary: 《新青年》创办者，新文化运动领袖，中国共产党主要创始人之一。
+  events: [china_may_fourth, china_new_youth_magazine, china_new_culture_movement, china_cpc_founded, china_first_kuomintang_cpc_cooperation, china_april_12_massacre, china_canton_massacre_1927, china_yellow_banner_communist_comintern]
+
+- id: li_dazhao
+  name: 李大钊
+  birthYear: 1889
+  deathYear: 1927
+  category: 哲学思想
+  level: 2
+  summary: 中国最早的马克思主义传播者之一，中共创始人之一，1927年被奉系军阀处死。
+  events: [china_may_fourth, china_new_culture_movement, china_cpc_founded, china_peking_university_reform]
+
+- id: hu_shi
+  name: 胡适
+  birthYear: 1891
+  deathYear: 1962
+  category: 哲学思想
+  level: 2
+  summary: 五四新文化运动重要人物，提倡白话文，推动实用主义哲学在中国的传播。
+  events: [china_may_fourth, china_new_culture_movement, china_hu_shi_vernacular, china_peking_university_reform]
+
+# ===== 文学家 =====
+
+- id: caoxueqin
+  name: 曹雪芹
+  birthYear: 1715
+  deathYear: 1763
+  category: 文学
+  level: 1
+  summary: 《红楼梦》作者，中国古典小说的集大成者，前八十回约完成于乾隆年间。
+  events: [china_red_dream_completed]
+
+- id: gong_zizhen
+  name: 龚自珍
+  birthYear: 1792
+  deathYear: 1841
+  category: 文学
+  level: 2
+  summary: 清朝晚期思想家与诗人，《己亥杂诗》批评清廷政治，呼唤变革，对后世影响深远。
+  events: [china_gong_zizhen_poetry]
+
+- id: lu_xun
+  name: 鲁迅（周树人）
+  birthYear: 1881
+  deathYear: 1936
+  category: 文学
+  level: 1
+  summary: 中国现代文学奠基人，代表作《狂人日记》《阿Q正传》，对封建礼教进行深刻批判。
+  events: [china_lu_xun_madman_diary, china_new_culture_movement, china_lu_xun_death]
+
+- id: guo_moruo
+  name: 郭沫若
+  birthYear: 1892
+  deathYear: 1978
+  category: 文学
+  level: 2
+  summary: 作家、历史学家，创造社创始人之一，代表作《女神》，后任中国科学院院长。
+  events: [china_guo_moruo_creation_society]
+
+- id: mao_dun
+  name: 茅盾（沈德鸿）
+  birthYear: 1896
+  deathYear: 1981
+  category: 文学
+  level: 2
+  summary: 中国现代著名小说家，代表作《子夜》《春蚕》，以现实主义手法描绘民国社会。
+  events: [china_new_culture_movement]
+
+- id: ba_jin
+  name: 巴金（李尧棠）
+  birthYear: 1904
+  deathYear: 2005
+  category: 文学
+  level: 2
+  summary: 中国现代著名作家，代表作《家》《春》《秋》，以家族故事反映封建制度的崩溃。
+  events: [china_new_culture_movement]
+
+- id: lao_she
+  name: 老舍（舒庆春）
+  birthYear: 1899
+  deathYear: 1966
+  category: 文学
+  level: 2
+  summary: 北京籍作家，代表作《骆驼祥子》《茶馆》，以北京市民生活为题材，文革期间含冤去世。
+  events: [china_cultural_revolution]
+
+# ===== 科学家 =====
+
+- id: hua_luogeng
+  name: 华罗庚
+  birthYear: 1910
+  deathYear: 1985
+  category: 科学
+  level: 2
+  summary: 中国著名数学家，自学成才，在解析数论、多复变函数等领域做出重要贡献。
+  events: [china_first_five_year_plan]
+
+- id: qian_xuesen
+  name: 钱学森
+  birthYear: 1911
+  deathYear: 2009
+  category: 科学
+  level: 1
+  summary: 中国航空航天与火箭研究奠基人，回国后主持导弹与航天工程，被称为"两弹一星"功勋。
+  events: [china_satellite_launch, china_nuclear_test_1964]
+
+- id: li_siguang
+  name: 李四光
+  birthYear: 1889
+  deathYear: 1971
+  category: 科学
+  level: 2
+  summary: 地质学家，创立地质力学理论，主持发现大庆等油田，为中国石油工业作出重大贡献。
+  events: [china_first_five_year_plan]
+
+- id: deng_jiaxian
+  name: 邓稼先
+  birthYear: 1924
+  deathYear: 1986
+  category: 科学
+  level: 2
+  summary: 核物理学家，主持中国原子弹与氢弹的研制工作，被誉为中国核武器研发关键贡献者。
+  events: [china_nuclear_test_1964, china_hydrogen_bomb_test]
+
+# ===== 音乐家 =====
+
+- id: nie_er
+  name: 聂耳
+  birthYear: 1912
+  deathYear: 1935
+  category: 音乐
+  level: 2
+  summary: 作曲家，创作《义勇军进行曲》，后被定为中华人民共和国国歌，英年早逝。
+  events: [china_nie_er_compose]
+
+- id: xian_xinghai
+  name: 冼星海
+  birthYear: 1905
+  deathYear: 1945
+  category: 音乐
+  level: 2
+  summary: 作曲家，在延安创作《黄河大合唱》，是中国近现代音乐史上的代表性作品。
+  events: [china_xian_er_yellow_river_cantata]
+
+# ===== 经济 / 商业 =====
+
+- id: hu_xueyan
+  name: 胡雪岩
+  birthYear: 1823
+  deathYear: 1885
+  category: 经济金融
+  level: 2
+  summary: 清末著名商人，以钱庄起家，协助左宗棠筹措军饷，后因政治失势、商业失败破产。
+  events: [china_zuo_xinjiang]
+
+- id: sheng_xuanhuai
+  name: 盛宣怀
+  birthYear: 1844
+  deathYear: 1916
+  category: 经济金融
+  level: 2
+  summary: 洋务派官员兼商人，主持轮船招商局、汉冶萍公司等近代企业，推动中国工业化。
+  events: [china_self_strengthening, china_telegraphs_expand]

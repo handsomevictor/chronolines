@@ -1,48 +1,889 @@
-- id: japan_russo_japanese
+# 明治末期・大正・昭和前期（1900-1950）
+# Level 1: 13 | Level 2: 33 | Level 3: 69
+
+# ── Level 1 ──────────────────────────────────────────────────────────────────
+
+- id: japan_anglo_japanese_alliance
+  year: 1902
+  level: 1
+  title: 日英同盟
+  summary: 日本与英国签订同盟条约，相互承认在远东的利益，日本外交孤立局面被打破。
+  tags: [条约外交]
+  related: [uk_colonial_empire]
+
+- id: japan_russo_japanese_war
   year: 1904
   endYear: 1905
   level: 1
   title: 日俄战争
-  summary: 日本在满洲和朝鲜与俄国开战，对马海战中击败俄国舰队，签订《朴茨茅斯条约》。
+  summary: 日本与俄国因满洲朝鲜权益开战，旅顺攻略、奉天会战后签订《朴茨茅斯条约》，日本获胜。
   tags: [战争, 条约外交]
   related: [russia_russo_japanese_war]
+  figures: [nogi_maresuke, togo_heihachiro, yamamoto_isoroku]
 
-- id: japan_korea_annexation
-  year: 1910
-  level: 2
-  title: 吞并朝鲜
-  summary: 日本与朝鲜签订《日韩合并条约》，朝鲜成为日本殖民地。
-  tags: [殖民扩张, 条约外交]
+- id: japan_meiji_death_taisho
+  year: 1912
+  level: 1
+  title: 明治天皇驾崩・大正时代开始
+  summary: 明治天皇驾崩，大正天皇即位，乃木希典夫妇殉死，明治时代正式落幕。
+  tags: [王朝更迭]
+  figures: [meiji_emperor, nogi_maresuke]
 
-- id: japan_wwi_entry
-  year: 1914
-  level: 2
-  title: 参加第一次世界大战
-  summary: 日本以协约国身份参战，占领德国在中国和太平洋的殖民地。
-  tags: [战争, 殖民扩张]
-  related: [uk_wwi, germany_wwi]
+- id: japan_taisho_democracy
+  year: 1912
+  endYear: 1926
+  level: 1
+  title: 大正民主主义
+  summary: 大正年间政党政治、普选运动、劳动运动、自由主义思想兴盛，被称为"大正民主"时期。
+  tags: [改革运动]
+  figures: [hara_takashi]
 
-- id: japan_manchuria
+- id: japan_kanto_earthquake
+  year: 1923
+  level: 1
+  title: 关东大地震
+  summary: 关东地区发生强烈地震并引发大火，东京横滨受灾严重，各方记载死亡人数存在差异。
+  tags: [改革运动]
+
+- id: japan_manchurian_incident
   year: 1931
   level: 1
   title: 九一八事变
-  summary: 日本关东军制造九一八事变，随后占领中国东北，建立满洲国傀儡政权。
+  summary: 关东军在柳条湖制造爆炸事件，以此为借口占领东北，幕后策划者石原莞尔等人主导。
   tags: [战争, 殖民扩张]
-  related: [china_sino_japanese_war2]
+  related: [china_manchuria_incident]
 
-- id: japan_wwii_asia
+- id: japan_226_incident
+  year: 1936
+  level: 1
+  title: 二二六事件
+  summary: 皇道派陆军青年将校率部队占领东京要害，杀害多名政府要人，三天后被镇压，主犯被处决。
+  tags: [革命政变]
+
+- id: japan_china_war_1937
   year: 1937
   endYear: 1945
   level: 1
-  title: 太平洋战争
-  summary: 日本与中国全面开战，1941年发动珍珠港突袭，与美英开战，1945年战败投降。
+  title: 中日全面战争
+  summary: 卢沟桥事变后中日进入全面战争状态，战线扩大至全中国，持续至1945年日本投降。
   tags: [战争]
-  related: [usa_wwii, china_sino_japanese_war2]
+  related: [china_second_sino_japanese]
+  figures: [tojo_hideki]
 
-- id: japan_wwii_end
+- id: japan_pacific_war
+  year: 1941
+  endYear: 1945
+  level: 1
+  title: 太平洋战争
+  summary: 日本偷袭珍珠港，同时在马来亚登陆，与美英开战，形成太平洋战场，至1945年战败结束。
+  tags: [战争]
+  related: [usa_wwii_pacific]
+  figures: [tojo_hideki, yamamoto_isoroku]
+
+- id: japan_hiroshima_nagasaki_bomb
   year: 1945
   level: 1
-  title: 战败投降
-  summary: 广岛长崎遭原子弹轰炸，苏联对日宣战，日本宣布无条件投降。
+  title: 广岛・长崎原子弹爆炸
+  summary: 8月6日广岛、8月9日长崎遭美国原子弹轰炸，各方记载死亡人数存在差异，日本随即决定投降。
   tags: [战争]
   related: [usa_atomic_bomb]
+
+- id: japan_surrender_1945
+  year: 1945
+  level: 1
+  title: 日本无条件投降
+  summary: 昭和天皇于8月15日通过广播宣读终战诏书，9月2日在密苏里舰上签署投降文书。
+  tags: [战争, 条约外交]
+  figures: [hirohito]
+
+- id: japan_occupation_reform
+  year: 1945
+  endYear: 1952
+  level: 1
+  title: 盟军占领日本
+  summary: 麦克阿瑟主导盟军占领，推行民主化改革，制定新宪法、解散财阀、推行土地改革。
+  tags: [改革运动, 条约外交]
+  related: [usa_cold_war_start]
+  figures: [yoshida_shigeru]
+
+- id: japan_showa_hirohito_accession
+  year: 1926
+  level: 1
+  title: 昭和天皇即位
+  summary: 大正天皇驾崩，裕仁亲王正式即位为昭和天皇，昭和时代开始，在位64年至1989年。
+  tags: [王朝更迭]
+  figures: [hirohito]
+
+# ── Level 2 ──────────────────────────────────────────────────────────────────
+
+- id: japan_portsmouth_treaty
+  year: 1905
+  level: 2
+  title: 《朴茨茅斯条约》签订
+  summary: 日俄战争后，美国调停下签订《朴茨茅斯条约》，日本获得旅顺・大连租借权与南满铁路权益。
+  tags: [条约外交]
+  figures: [yamagata_aritomo]
+
+- id: japan_korea_protectorate
+  year: 1905
+  level: 2
+  title: 朝鲜保护国化
+  summary: 《乙巳条约》签订，日本取得朝鲜外交权，伊藤博文任首任统监，朝鲜实质沦为保护国。
+  tags: [殖民扩张, 条约外交]
+  figures: [ito_hirobumi]
+
+- id: japan_hibiya_riot
+  year: 1905
+  level: 2
+  title: 日比谷烧打事件
+  summary: 国民对《朴茨茅斯条约》内容不满，东京爆发大规模骚乱，内阁被迫戒严，民族主义情绪高涨。
+  tags: [革命政变]
+
+- id: japan_korea_annexation_1910
+  year: 1910
+  level: 2
+  title: 吞并朝鲜
+  summary: 日韩合并条约生效，朝鲜王朝灭亡，朝鲜成为日本殖民地，设朝鲜总督府统治。
+  tags: [殖民扩张, 条约外交]
+
+- id: japan_hara_takashi_cabinet
+  year: 1918
+  level: 2
+  title: 原敬政党内阁成立
+  summary: 平民出身的立宪政友会总裁原敬就任首相，组织第一届真正意义上的政党内阁。
+  tags: [改革运动]
+  figures: [hara_takashi]
+
+- id: japan_21_demands
+  year: 1915
+  level: 2
+  title: 二十一条要求
+  summary: 日本向中国提出二十一条要求，扩大在华权益，引发中国强烈反对与国际批评。
+  tags: [条约外交, 殖民扩张]
+  related: [china_21_demands]
+
+- id: japan_rice_riots
+  year: 1918
+  level: 2
+  title: 米骚动
+  summary: 因米价暴涨，富山渔村女性率先抗议，引发全国大规模骚动，寺内正毅内阁因此下台。
+  tags: [革命政变]
+
+- id: japan_hara_assassination
+  year: 1921
+  level: 2
+  title: 原敬遇刺身亡
+  summary: 首相原敬在东京车站遭青年刺客暗杀，政党内阁受挫，被称为"平民宰相"的原敬就此离世。
+  tags: [革命政变]
+  figures: [hara_takashi]
+
+- id: japan_universal_suffrage
+  year: 1925
+  level: 2
+  title: 普通选举法成立
+  summary: 日本实现25岁以上男性普通选举权，同年《治安维持法》随之颁布，限制社会主义运动。
+  tags: [改革运动]
+
+- id: japan_financial_panic
+  year: 1927
+  level: 2
+  title: 金融恐慌
+  summary: 震灾手形处理问题引发银行挤兑潮，多家银行倒闭，若槻内阁倒台，田中义一组阁。
+  tags: [经济贸易]
+
+- id: japan_manchukuo_establishment
+  year: 1932
+  level: 2
+  title: 满洲国成立
+  summary: 关东军扶植清朝末代皇帝溥仪成立满洲国，国际联盟对此提出批评，日本拒绝撤军。
+  tags: [殖民扩张, 战争]
+  related: [china_manchukuo]
+
+- id: japan_515_incident
+  year: 1932
+  level: 2
+  title: 五一五事件
+  summary: 海军青年将校袭击首相官邸，首相犬养毅遭枪杀，政党内阁时代实质终结。
+  tags: [革命政变]
+  figures: [inukai_tsuyoshi]
+
+- id: japan_withdrawal_league_nations
+  year: 1933
+  level: 2
+  title: 退出国际联盟
+  summary: 国际联盟通过李顿报告书批评日本满洲政策，日本代表松冈洋右宣布退出国联。
+  tags: [条约外交]
+
+- id: japan_anti_comintern_pact
+  year: 1936
+  level: 2
+  title: 日德防共协定
+  summary: 日本与德国签订防共协定，以反对共产国际为名义，形成日德轴心关系基础。
+  tags: [条约外交]
+  related: [germany_anti_comintern]
+
+- id: japan_nanjing_battle
+  year: 1937
+  level: 2
+  title: 南京攻陷
+  summary: 日本军队于1937年12月攻占南京，此后发生的事件各方记载存在重大差异，学术界尚有争议。
+  tags: [战争]
+  related: [china_nanjing_1937]
+
+- id: japan_tripartite_pact
+  year: 1940
+  level: 2
+  title: 日德意三国同盟
+  summary: 日本与德国、意大利签订三国同盟条约，形成轴心国阵营，与英美对立加深。
+  tags: [条约外交]
+  related: [germany_axis_pact]
+
+- id: japan_pearl_harbor
+  year: 1941
+  level: 2
+  title: 偷袭珍珠港
+  summary: 日本海军航空兵偷袭美国夏威夷珍珠港，美国随即对日宣战，太平洋战争全面爆发。
+  tags: [战争]
+  related: [usa_pearl_harbor]
+  figures: [yamamoto_isoroku]
+
+- id: japan_midway_battle
+  year: 1942
+  level: 2
+  title: 中途岛海战
+  summary: 日本海军在中途岛海战中损失四艘主力航母，制海权逐渐转向美国，战略形势逆转。
+  tags: [战争]
+  figures: [yamamoto_isoroku]
+
+- id: japan_guadalcanal
+  year: 1942
+  endYear: 1943
+  level: 2
+  title: 瓜达尔卡纳尔岛战役
+  summary: 日美在瓜达尔卡纳尔岛进行长达半年的激战，日军最终撤退，为太平洋战争的重要转折点。
+  tags: [战争]
+
+- id: japan_saipan_fall
+  year: 1944
+  level: 2
+  title: 塞班岛失守
+  summary: 塞班岛被美军攻占，日本本土进入美军轰炸范围，东条英机内阁因此倒台。
+  tags: [战争]
+  figures: [tojo_hideki]
+
+- id: japan_yamamoto_death
+  year: 1943
+  level: 2
+  title: 山本五十六战死
+  summary: 联合舰队司令山本五十六乘机视察前线，遭美军截击击落身亡，日军士气受重大打击。
+  tags: [战争]
+  figures: [yamamoto_isoroku]
+
+- id: japan_new_constitution_draft
+  year: 1946
+  level: 2
+  title: 日本国宪法制定
+  summary: 盟军占领当局（GHQ）主导起草，日本国宪法草案通过，规定放弃战争、保障基本人权。
+  tags: [改革运动]
+  figures: [yoshida_shigeru]
+
+- id: japan_zaibatsu_dissolution
+  year: 1945
+  endYear: 1948
+  level: 2
+  title: 财阀解体
+  summary: 盟军占领当局命令解散三井、三菱、住友、安田等财阀，对日本经济结构产生深远影响。
+  tags: [经济贸易, 改革运动]
+
+- id: japan_land_reform_postwar
+  year: 1946
+  level: 2
+  title: 战后农地改革
+  summary: 占领当局推行农地改革，强制购买地主土地转让给佃农，改变日本农村土地所有结构。
+  tags: [改革运动, 经济贸易]
+
+- id: japan_wwi_shandong
+  year: 1914
+  level: 2
+  title: 占领青岛
+  summary: 日本对德宣战后占领德国在中国的青岛租界，取得山东权益，引发中国强烈反应。
+  tags: [战争, 殖民扩张]
+  related: [germany_wwi_china]
+
+- id: japan_versailles_peace
+  year: 1919
+  level: 2
+  title: 巴黎和会参与
+  summary: 日本作为战胜国出席巴黎和会，虽争取种族平等条款未成，但保留山东权益与南洋委任统治。
+  tags: [条约外交]
+  related: [france_versailles]
+
+- id: japan_labor_movement_rise
+  year: 1918
+  endYear: 1928
+  level: 2
+  title: 劳动运动兴起
+  summary: 大正期间工厂劳动者数量增加，工会组织成立，劳资争议频发，社会主义运动随之活跃。
+  tags: [改革运动]
+
+- id: japan_manchuria_smr_railway
+  year: 1906
+  level: 2
+  title: 南满洲铁道株式会社设立
+  summary: 日本设立南满洲铁道株式会社，接管俄国旧有路线，满铁成为日本在满洲的核心利权机构。
+  tags: [经济贸易, 殖民扩张]
+
+- id: japan_taisho_culture
+  year: 1912
+  endYear: 1926
+  level: 2
+  title: 大正文化（大众文化兴盛）
+  summary: 大正期间报纸、杂志、电影、广播文化兴盛，都市中间层扩大，大众消费文化形成。
+  tags: [文化思想]
+
+- id: japan_northern_sakhalin_occupation
+  year: 1920
+  endYear: 1925
+  level: 2
+  title: 日本占领北库页岛
+  summary: 西伯利亚干涉期间日本出兵占领北库页岛，苏俄建立后以换取石油利权为条件撤兵。
+  tags: [战争, 条约外交]
+
+- id: japan_kempeitai_expansion
+  year: 1931
+  endYear: 1945
+  level: 2
+  title: 军部主导政治体制确立
+  summary: 九一八事变后军部影响力急剧扩大，陆军省与参谋本部逐步主导外交与国内政策。
+  tags: [革命政变]
+
+- id: japan_tonghak_era_colonize
+  year: 1919
+  level: 2
+  title: 朝鲜三一运动与殖民地统治
+  summary: 朝鲜爆发三一独立运动，日本殖民当局镇压，各方记载死伤人数存在差异，统治政策随后调整。
+  tags: [殖民扩张, 革命政变]
+  related: [china_korean_march_first]
+
+- id: japan_siberia_intervention
+  year: 1918
+  endYear: 1922
+  level: 2
+  title: 西伯利亚干涉
+  summary: 日本出兵西伯利亚配合协约国干涉俄国革命，规模远超其他国家，至1922年才全部撤兵。
+  tags: [战争]
+  related: [russia_civil_war]
+
+# ── Level 3 ──────────────────────────────────────────────────────────────────
+
+- id: japan_ito_assassination_harbin
+  year: 1909
+  level: 3
+  title: 伊藤博文哈尔滨遇刺
+  summary: 前首相伊藤博文在哈尔滨火车站遭朝鲜义士安重根枪击身亡，日韩合并进程由此加速。
+  tags: [革命政变]
+  figures: [ito_hirobumi]
+
+- id: japan_nogi_meiji_junshi
+  year: 1912
+  level: 3
+  title: 乃木希典殉死
+  summary: 明治天皇驾崩当日，陆军大将乃木希典与妻子共同自刎，引发社会广泛讨论与感动。
+  tags: [王朝更迭]
+  figures: [nogi_maresuke]
+
+- id: japan_tsushima_battle
+  year: 1905
+  level: 3
+  title: 对马海战
+  summary: 东乡平八郎率联合舰队在对马海峡几乎全歼俄国第二太平洋舰队，被称为近代海战经典。
+  tags: [战争]
+  figures: [togo_heihachiro]
+
+- id: japan_port_arthur_siege
+  year: 1904
+  level: 3
+  title: 旅顺口围攻战
+  summary: 乃木希典率第三军围攻俄军要塞旅顺，经历约五个月激战付出惨重伤亡后攻克。
+  tags: [战争]
+  figures: [nogi_maresuke]
+
+- id: japan_mukden_battle
+  year: 1905
+  level: 3
+  title: 奉天会战
+  summary: 奉天（沈阳）附近爆发日俄战争规模最大的陆上会战，日本军队最终占领奉天。
+  tags: [战争]
+
+- id: japan_taisho_emperor_ill
+  year: 1921
+  level: 3
+  title: 大正天皇摄政令
+  summary: 大正天皇因病难以执行公务，皇太子裕仁成为摄政，实质代行天皇职务至1926年。
+  tags: [王朝更迭]
+
+- id: japan_kitasato_institute
+  year: 1914
+  level: 3
+  title: 北里研究所设立
+  summary: 北里柴三郎创立北里研究所，推动日本近代医学研究体制化，成为传染病研究重要机构。
+  tags: [科技发明]
+  figures: [kitasato_shibasaburo]
+
+- id: japan_noguchi_hideyo_research
+  year: 1900
+  endYear: 1928
+  level: 3
+  title: 野口英世海外研究活动
+  summary: 野口英世赴美国洛克菲勒研究所，研究梅毒、黄热病等疾病，在国际医学界获得声誉。
+  tags: [科技发明]
+  figures: [noguchi_hideyo]
+
+- id: japan_ukiyoe_shin_hanga
+  year: 1915
+  endYear: 1940
+  level: 3
+  title: 新版画运动
+  summary: 川濑巳水等画师推动"新版画"运动，将传统木版画技法与近代审美融合，向西方输出。
+  tags: [文化思想]
+
+- id: japan_akutagawa_rashomon
+  year: 1915
+  level: 3
+  title: 芥川龙之介《罗生门》发表
+  summary: 芥川龙之介在东京帝国大学在学中发表短篇小说《罗生门》，崭露文坛头角。
+  tags: [文化思想]
+  figures: [akutagawa_ryunosuke]
+
+- id: japan_akutagawa_suicide
+  year: 1927
+  level: 3
+  title: 芥川龙之介自杀
+  summary: 芥川龙之介服用大量安眠药去世，留下"唯有对我将来的模糊不安"的遗言，享年35岁。
+  tags: [文化思想]
+  figures: [akutagawa_ryunosuke]
+
+- id: japan_soseki_wagahai_cat
+  year: 1905
+  level: 3
+  title: 夏目漱石《我是猫》发表
+  summary: 夏目漱石以知识分子家中猫的视角讽刺明治社会，连载于《杜鹃》杂志，获得广泛好评。
+  tags: [文化思想]
+  figures: [natsume_soseki]
+
+- id: japan_soseki_death
+  year: 1916
+  level: 3
+  title: 夏目漱石去世
+  summary: 夏目漱石在胃溃疡连作《明暗》途中去世，享年49岁，其后被印于日本千元纸币正面。
+  tags: [文化思想]
+  figures: [natsume_soseki]
+
+- id: japan_mori_ogai_death
+  year: 1922
+  level: 3
+  title: 森鸥外去世
+  summary: 军医总监兼作家森鸥外去世，享年60岁，遗言要求以市井小民身份下葬，无军衔记载。
+  tags: [文化思想]
+  figures: [mori_ogai]
+
+- id: japan_radio_broadcast_start
+  year: 1925
+  level: 3
+  title: 广播放送开始
+  summary: 东京放送局（后为NHK前身）开始广播播出，是日本大众媒体时代的开端。
+  tags: [科技发明, 文化思想]
+
+- id: japan_kanto_koreans_massacre
+  year: 1923
+  level: 3
+  title: 关东大地震后在日朝鲜人被害事件
+  summary: 关东大地震混乱中，有关在日朝鲜人的流言导致大量朝鲜人被杀害，各方记载数字存在差异。
+  tags: [革命政变]
+
+- id: japan_osaka_mainichi_newspaper
+  year: 1922
+  level: 3
+  title: 大阪毎日・东京日日新闻网络扩大
+  summary: 大正期间报纸发行量急增，形成全国性媒体网络，大众舆论空间显著扩大。
+  tags: [文化思想]
+
+- id: japan_taisho_electric_power
+  year: 1912
+  endYear: 1926
+  level: 3
+  title: 电力事业扩展
+  summary: 大正期间电力公司网络扩大，工厂与家庭用电普及，推动都市化与轻工业发展。
+  tags: [科技发明, 经济贸易]
+
+- id: japan_nichi_ro_treaty_1925
+  year: 1925
+  level: 3
+  title: 日苏基本条约
+  summary: 日本与苏联签订基本条约，相互承认，日本从北库页岛撤兵，获得石油与煤炭利权。
+  tags: [条约外交]
+
+- id: japan_military_officer_age
+  year: 1930
+  endYear: 1936
+  level: 3
+  title: 皇道派・统制派对立
+  summary: 陆军内部皇道派与统制派围绕军事政策展开激烈对立，导致多次政治暴力事件。
+  tags: [革命政变]
+
+- id: japan_inukai_tsuyoshi_premier
+  year: 1931
+  level: 3
+  title: 犬养毅出任首相
+  summary: 立宪政友会总裁犬养毅就任首相，试图通过政治途径解决满洲问题，但遭军部反对。
+  tags: [改革运动]
+  figures: [inukai_tsuyoshi]
+
+- id: japan_lytton_report
+  year: 1932
+  level: 3
+  title: 李顿调查团报告书
+  summary: 国际联盟李顿调查团赴满洲调查，报告书认定九一八事变出于日本策划，建议满洲国际共管。
+  tags: [条约外交]
+
+- id: japan_saionji_last_genro
+  year: 1940
+  level: 3
+  title: 西园寺公望去世
+  summary: 最后的元老西园寺公望去世，享年91岁，此后再无制度性的元老可制衡军部与内阁。
+  tags: [王朝更迭]
+
+- id: japan_tokyo_bombing_march
+  year: 1945
+  level: 3
+  title: 东京大空袭
+  summary: 1945年3月10日美军B-29轰炸机夜袭东京，引发大规模火灾，各方记载死亡人数存在差异。
+  tags: [战争]
+
+- id: japan_okinawa_battle
+  year: 1945
+  level: 3
+  title: 冲绳战役
+  summary: 日美在冲绳展开激烈地面战，日本平民伤亡惨重，各方记载死亡人数存在差异，日军全军覆没。
+  tags: [战争]
+
+- id: japan_kamikaze_tokko
+  year: 1944
+  endYear: 1945
+  level: 3
+  title: 神风特攻队出击
+  summary: 日本海军组建神风特别攻击队，执行飞机撞舰自杀式攻击，对美军舰队造成一定损害。
+  tags: [战争]
+
+- id: japan_soviets_declare_war
+  year: 1945
+  level: 3
+  title: 苏联对日宣战
+  summary: 1945年8月8日苏联对日宣战，次日进攻满洲，加速日本决定投降的进程。
+  tags: [战争]
+  related: [russia_ww2_end]
+
+- id: japan_surrender_broadcast
+  year: 1945
+  level: 3
+  title: 玉音放送
+  summary: 昭和天皇于1945年8月15日正午通过广播宣读终战诏书，是日本历史上天皇首次通过广播发表声明。
+  tags: [战争]
+  figures: [hirohito]
+
+- id: japan_tojo_arrest
+  year: 1945
+  level: 3
+  title: 东条英机被捕
+  summary: 战败后东条英机自杀未遂被捕，随后以战争犯罪被起诉，1948年执行绞刑。
+  tags: [战争]
+  figures: [tojo_hideki]
+
+- id: japan_macarthur_ghq
+  year: 1945
+  level: 3
+  title: 麦克阿瑟到达日本
+  summary: 盟军最高司令麦克阿瑟乘机抵达厚木机场，随即设立盟军最高司令部（GHQ），主导占领改革。
+  tags: [改革运动, 条约外交]
+
+- id: japan_constitution_nov_1946
+  year: 1946
+  level: 3
+  title: 日本国宪法公布
+  summary: 日本国宪法于1946年11月3日公布，翌年5月3日施行，第九条放弃战争条款引发持续争议。
+  tags: [改革运动]
+
+- id: japan_women_suffrage
+  year: 1945
+  level: 3
+  title: 女性参政权实现
+  summary: 战后改革赋予女性选举权，1946年日本首次实现男女平等选举，39名女性当选众议员。
+  tags: [改革运动]
+
+- id: japan_labor_reform_postwar
+  year: 1945
+  endYear: 1947
+  level: 3
+  title: 战后劳动立法
+  summary: 占领当局推动颁布劳动组合法、劳动基准法等，确立工会权利与劳动条件保护制度。
+  tags: [改革运动]
+
+- id: japan_yukawa_hideki_meson
+  year: 1935
+  level: 3
+  title: 汤川秀树介子理论发表
+  summary: 汤川秀树发表核力介子理论论文，预言介子的存在，1949年因此获诺贝尔物理学奖。
+  tags: [科技发明]
+  figures: [yukawa_hideki]
+
+- id: japan_nishina_yoshio_cyclotron
+  year: 1937
+  level: 3
+  title: 仁科芳雄回旋加速器建成
+  summary: 物理学家仁科芳雄在理化学研究所建成日本首台回旋加速器，推动核物理研究。
+  tags: [科技发明]
+
+- id: japan_murakami_prewar_novel
+  year: 1906
+  level: 3
+  title: 明治末期自然主义文学
+  summary: 岛崎藤村、田山花袋等人将法国自然主义引入日本，私小说文学类型由此形成。
+  tags: [文化思想]
+
+- id: japan_tanizaki_junichiro_debut
+  year: 1910
+  level: 3
+  title: 谷崎润一郎文坛出道
+  summary: 谷崎润一郎发表处女作《刺青》，以唯美颓废风格登上文坛，大正至昭和文学代表人物。
+  tags: [文化思想]
+
+- id: japan_yokohama_kogyoku
+  year: 1923
+  level: 3
+  title: 横滨关东震灾重建
+  summary: 后藤新平主持关东大震灾后横滨・东京重建计划，采取近代都市规划布局，道路系统更新。
+  tags: [改革运动]
+
+- id: japan_ntt_telephone
+  year: 1926
+  level: 3
+  title: 电话自动交换机普及开始
+  summary: 大正末期电话交换机改为自动式，电话用户数持续增加，通信基础设施向都市普及。
+  tags: [科技发明]
+
+- id: japan_peace_preservation_law
+  year: 1925
+  level: 3
+  title: 治安维持法颁布
+  summary: 普选法同年通过的治安维持法，以"国体变革"为由限制社会主义与无政府主义运动。
+  tags: [改革运动]
+
+- id: japan_proletarian_literature
+  year: 1920
+  endYear: 1934
+  level: 3
+  title: 无产阶级文学运动
+  summary: 小林多喜二等人推动无产阶级文学运动，描写工人生存状况，遭治安维持法打压。
+  tags: [文化思想]
+
+- id: japan_kawabata_izu_dancer
+  year: 1926
+  level: 3
+  title: 川端康成《伊豆的舞女》发表
+  summary: 川端康成发表《伊豆的舞女》，以细腻抒情笔触描写青春旅途，是其早期代表作。
+  tags: [文化思想]
+  figures: [kawabata_yasunari]
+
+- id: japan_yamada_kosaku_music
+  year: 1912
+  endYear: 1950
+  level: 3
+  title: 山田耕筰西洋音乐普及
+  summary: 山田耕筰推动日本西洋音乐教育与创作，创立多个管弦乐团，是近代日本音乐奠基者。
+  tags: [文化思想]
+  figures: [yamada_kosaku]
+
+- id: japan_imperial_hotel_1923
+  year: 1923
+  level: 3
+  title: 帝国酒店关东震灾中存活
+  summary: 弗兰克・劳埃德・赖特设计的帝国酒店在关东大震灾中保持结构完好，建筑设计广受关注。
+  tags: [科技发明, 文化思想]
+
+- id: japan_koidzu_aircraft
+  year: 1936
+  endYear: 1945
+  level: 3
+  title: 零式舰载战斗机开发
+  summary: 三菱重工开发的零式舰载机于1940年服役，航程远、机动性高，初期在太平洋称霸制空权。
+  tags: [科技发明, 战争]
+
+- id: japan_nomura_kitasaburo
+  year: 1941
+  level: 3
+  title: 野村・来栖日美外交交涉
+  summary: 日本驻美大使野村与特使来栖进行最后外交努力，珍珠港偷袭使交涉最终失败。
+  tags: [条约外交]
+
+- id: japan_baataan_death_march
+  year: 1942
+  level: 3
+  title: 巴丹死亡行军
+  summary: 日军在菲律宾俘获大批美菲战俘，强制长途行军转移，死亡人数各方记载存在差异。
+  tags: [战争]
+
+- id: japan_battle_leyte_gulf
+  year: 1944
+  level: 3
+  title: 莱特湾海战
+  summary: 太平洋战争规模最大的海战在菲律宾莱特湾爆发，日本联合舰队实质上被歼灭。
+  tags: [战争]
+
+- id: japan_atomic_bomb_hiroshima
+  year: 1945
+  level: 3
+  title: 广岛原子弹（小男孩）
+  summary: 美军B-29"埃诺拉・盖伊"号于1945年8月6日在广岛投下铀弹，即时与长期死亡人数各方记载差异大。
+  tags: [战争]
+  related: [usa_manhattan_project]
+
+- id: japan_atomic_bomb_nagasaki
+  year: 1945
+  level: 3
+  title: 长崎原子弹（胖子）
+  summary: 美军于1945年8月9日在长崎投下钚弹，城市大部分被摧毁，死亡人数各方记载存在差异。
+  tags: [战争]
+  related: [usa_manhattan_project]
+
+- id: japan_a_bomb_survivors
+  year: 1945
+  endYear: 2000
+  level: 3
+  title: 原爆幸存者（被爆者）
+  summary: 广岛・长崎原子弹幸存者长期面对辐射后遗症与社会歧视，其证言成为反核运动重要依据。
+  tags: [战争]
+
+- id: japan_postwar_education_reform
+  year: 1947
+  level: 3
+  title: 教育基本法颁布
+  summary: 战后教育基本法取代教育敕语，确立民主主义教育原则，六三三四学制体系建立。
+  tags: [改革运动]
+
+- id: japan_purge_public_officials
+  year: 1946
+  level: 3
+  title: 公职追放令
+  summary: 盟军占领当局对战时军国主义领导人实施公职追放，约21万人被禁止担任公职。
+  tags: [改革运动]
+
+- id: japan_postwar_inflation
+  year: 1945
+  endYear: 1949
+  level: 3
+  title: 战后严重通货膨胀
+  summary: 战后日本出现严重通货膨胀，粮食与物资极度匮乏，黑市横行，占领当局主导经济稳定。
+  tags: [经济贸易]
+
+- id: japan_tokyotrial
+  year: 1946
+  endYear: 1948
+  level: 3
+  title: 远东国际军事法庭（东京审判）
+  summary: 盟军主持东京审判，28名甲级战犯被起诉，东条英机等7人被判处死刑，至今仍有争议。
+  tags: [战争, 条约外交]
+  figures: [tojo_hideki]
+
+- id: japan_national_police_reserve
+  year: 1950
+  level: 3
+  title: 警察预备队创立
+  summary: 朝鲜战争爆发后美国要求日本重新武装，警察预备队设立，是自卫队的前身组织。
+  tags: [改革运动]
+
+- id: japan_zaibatsu_new_keiretsu
+  year: 1948
+  endYear: 1955
+  level: 3
+  title: 企业集团（系列）重组
+  summary: 财阀解体后，原财阀系企业通过相互持股与主力银行制度重新结合，形成"系列"结构。
+  tags: [经济贸易]
+
+- id: japan_nonstop_pacific_flight
+  year: 1931
+  level: 3
+  title: 太平洋横断飞行挑战
+  summary: 日本飞行家多次尝试太平洋横断飞行，体现军民两用航空技术发展的热潮。
+  tags: [科技发明]
+
+- id: japan_tonarigumi_wartime
+  year: 1940
+  level: 3
+  title: 邻组制度
+  summary: 战时体制下幕府实行邻组（邻保班）制度，每十户一组进行战时动员与相互监控。
+  tags: [改革运动]
+
+- id: japan_national_mobilization_law
+  year: 1938
+  level: 3
+  title: 国家总动员法
+  summary: 国家总动员法赋予政府无需议会批准即可调配物资与劳动力的权力，战时体制完成。
+  tags: [改革运动, 战争]
+
+- id: japan_nanking_massacre_debate
+  year: 1937
+  level: 3
+  title: 南京事件史学争议
+  summary: 日本军队进入南京后发生的事件，其规模与性质在学术界存在重大争议，各方记载与解读差异显著。
+  tags: [战争]
+
+- id: japan_unit_731
+  year: 1936
+  endYear: 1945
+  level: 3
+  title: 关东军防疫给水部（七三一部队）
+  summary: 日本陆军在哈尔滨附近设立细菌战研究机构，相关行为各方记载存在差异，战后部分研究人员未受审判。
+  tags: [战争, 科技发明]
+
+- id: japan_battleship_yamato
+  year: 1941
+  level: 3
+  title: 战列舰大和号竣工
+  summary: 世界最大战列舰大和号竣工服役，排水量超过7万吨，但在太平洋战争中收效甚微，1945年沉没。
+  tags: [战争, 科技发明]
+
+- id: japan_marco_polo_bridge
+  year: 1937
+  level: 3
+  title: 卢沟桥事变
+  summary: 1937年7月7日夜，日中两军在北平郊外卢沟桥发生冲突，事件起因各方说法不一，成为全面战争导火索。
+  tags: [战争]
+  related: [china_lugouqiao_incident]
+
+- id: japan_shanghai_battle_1937
+  year: 1937
+  level: 3
+  title: 淞沪会战
+  summary: 日中两军在上海展开大规模战役，中国军队抵抗数月后撤退，日军伤亡亦较惨重。
+  tags: [战争]
+
+- id: japan_nomo_nomonhan
+  year: 1939
+  level: 3
+  title: 诺门罕事变
+  summary: 日苏军队在满蒙边境发生大规模武装冲突，日本关东军遭受重大损失，日苏签订停战协定。
+  tags: [战争]
+
+- id: japan_yokohama_specie_bank
+  year: 1880
+  level: 3
+  title: 横滨正金银行设立
+  summary: 明治政府设立专门外汇银行横滨正金银行，支援贸易融资，战后被解散重组为东京银行。
+  tags: [经济贸易]
+
+- id: japan_taisho_earthquake_rebuild_plan
+  year: 1924
+  level: 3
+  title: 帝都复兴计划推进
+  summary: 后藤新平主导的帝都复兴事业推进，规划大道与公园，近代东京城市骨架由此确立。
+  tags: [改革运动]

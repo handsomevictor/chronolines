@@ -1,35 +1,709 @@
-- id: germany_napoleonic_wars_de
+# 德意志地区 1800-1900（解放战争→统一→德意志帝国）
+# 1800-1866：神圣罗马帝国解散、德意志邦联、走向统一
+# 1866-1871：普奥战争、普法战争、德意志帝国建立
+# 1871-1900：俾斯麦时代、工业化、社会立法
+
+# ── Level 1 ──────────────────────────────────────────
+
+- id: germany_hre_dissolved
   year: 1806
+  level: 1
+  title: 神圣罗马帝国解散
+  summary: 弗朗茨二世在拿破仑压力下宣布放弃神圣罗马帝国皇位，帝国正式解散，持续千年的政体终结。
+  tags: [王朝更迭]
+  related: [france_napoleon_empire]
+
+- id: germany_liberation_wars
+  year: 1813
   endYear: 1815
   level: 1
-  title: 拿破仑战争期间的德意志
-  summary: 拿破仑击败普鲁士并解散神圣罗马帝国，莱茵邦联成立，后普鲁士参与反法同盟。
-  tags: [战争, 王朝更迭]
-  related: [france_napoleon]
+  title: 德意志解放战争
+  summary: 莱比锡战役中普鲁士、奥地利、俄国等联军击败拿破仑，德意志民族意识空前高涨。
+  tags: [战争]
+  figures: [blucher]
+  related: [france_waterloo]
 
-- id: germany_unification
+- id: germany_german_confederation
+  year: 1815
+  level: 1
+  title: 德意志邦联成立
+  summary: 维也纳会议确立德意志邦联，由39个成员邦组成，设联邦议会于法兰克福。
+  tags: [条约外交, 王朝更迭]
+  related: [france_congress_vienna]
+
+- id: germany_revolution_1848
+  year: 1848
+  level: 1
+  title: 1848年革命
+  summary: 自由主义与民族主义浪潮席卷德意志各邦，法兰克福议会召开，讨论统一方案，最终失败。
+  tags: [革命政变, 改革运动]
+  figures: [frederick_william_iv]
+  related: [france_revolution_1848]
+
+- id: germany_bismarck_appointed
+  year: 1862
+  level: 1
+  title: 俾斯麦出任普鲁士首相
+  summary: 威廉一世任命俾斯麦为普鲁士首相，俾斯麦宣告"铁血政策"，主导德意志统一进程。
+  tags: [王朝更迭, 改革运动]
+  figures: [bismarck]
+
+- id: germany_austro_prussian_war
   year: 1866
+  level: 1
+  title: 普奥战争
+  summary: 普鲁士以七周击败奥地利，《布拉格和约》将奥地利排除在德意志统一进程之外。
+  tags: [战争, 条约外交]
+  figures: [bismarck, moltke_elder]
+
+- id: germany_franco_prussian_war
+  year: 1870
   endYear: 1871
   level: 1
-  title: 德意志统一
-  summary: 普鲁士通过三次战争统一德意志，1871年普法战争后德意志帝国宣告成立。
-  tags: [战争, 王朝更迭]
-  related: [france_franco_prussian]
-  figures: [bismarck, kaiser_wilhelm_i]
+  title: 普法战争
+  summary: 普鲁士率北德联盟对法开战，色当战役法皇拿破仑三世被俘，法国战败，普鲁士主导统一。
+  tags: [战争]
+  figures: [bismarck, moltke_elder, kaiser_wilhelm_i]
+  related: [france_franco_prussian_war]
+
+- id: germany_empire_proclamation
+  year: 1871
+  level: 1
+  title: 德意志帝国建立
+  summary: 1871年1月18日，威廉一世在凡尔赛镜厅加冕，德意志帝国正式成立，俾斯麦任帝国宰相。
+  tags: [王朝更迭]
+  figures: [kaiser_wilhelm_i, bismarck]
+  related: [france_franco_prussian_war]
 
 - id: germany_bismarck_era
   year: 1871
   endYear: 1890
-  level: 2
+  level: 1
   title: 俾斯麦时代
-  summary: 俾斯麦担任德国首相，推行现实政治，建立同盟体系，推进社会立法。
+  summary: 俾斯麦主导帝国内外政策近20年，推行文化斗争、社会立法与同盟外交，奠定帝国格局。
   tags: [改革运动, 条约外交]
   figures: [bismarck]
 
-- id: germany_industrial_growth
-  year: 1871
-  endYear: 1900
+- id: germany_marx_kapital
+  year: 1867
+  level: 1
+  title: 马克思《资本论》第一卷出版
+  summary: 马克思在汉堡出版《资本论》第一卷，系统批判资本主义政治经济学，影响世界历史进程。
+  tags: [文化思想, 经济贸易]
+  figures: [marx]
+
+- id: germany_social_insurance
+  year: 1883
+  endYear: 1889
+  level: 1
+  title: 俾斯麦社会保险立法
+  summary: 俾斯麦主导通过医疗、工伤、养老三大社会保险法，建立欧洲最早的国家社会保障体系。
+  tags: [改革运动]
+  figures: [bismarck]
+
+- id: germany_bismarck_dismissed
+  year: 1890
+  level: 1
+  title: 俾斯麦辞职
+  summary: 威廉二世与俾斯麦政见不合，迫使俾斯麦辞去帝国宰相，德国外交战略转向激进扩张。
+  tags: [王朝更迭]
+  figures: [bismarck, kaiser_wilhelm_ii]
+
+- id: germany_robert_koch_tb
+  year: 1882
+  level: 1
+  title: 科赫发现结核杆菌
+  summary: 罗伯特·科赫发现结核病病原体结核杆菌，1883年又发现霍乱弧菌，奠定细菌学基础。
+  tags: [科技发明]
+  figures: [robert_koch]
+
+# ── Level 2 ──────────────────────────────────────────
+
+- id: germany_rheinbund
+  year: 1806
   level: 2
-  title: 德国工业化
-  summary: 德意志帝国工业快速发展，钢铁、化工、电气等行业崛起，挑战英国工业地位。
+  title: 莱茵邦联成立
+  summary: 拿破仑操控16个德意志邦组成莱茵邦联，引入法国法律与改革，加速德意志传统体制瓦解。
+  tags: [王朝更迭, 条约外交]
+  related: [france_napoleon_empire]
+
+- id: germany_stein_hardenberg_reforms
+  year: 1807
+  endYear: 1812
+  level: 2
+  title: 斯坦因-哈登堡改革
+  summary: 普鲁士大臣斯坦因和哈登堡推行废除农奴制、军事改革、市政自治等系列现代化改革。
+  tags: [改革运动]
+
+- id: germany_battle_of_jena
+  year: 1806
+  level: 2
+  title: 耶拿-奥尔施泰特战役
+  summary: 拿破仑率军在耶拿和奥尔施泰特双线击溃普鲁士军队，拿破仑随后进入柏林。
+  tags: [战争]
+  related: [france_napoleon_empire]
+
+- id: germany_battle_of_leipzig
+  year: 1813
+  level: 2
+  title: 莱比锡战役（民族会战）
+  summary: 四国联军在莱比锡以约33万兵力击败拿破仑18万军队，是欧洲拿破仑战争的转折点。
+  tags: [战争]
+  figures: [blucher]
+
+- id: germany_wartburg_festival
+  year: 1817
+  level: 2
+  title: 瓦尔特堡庆典
+  summary: 来自德意志各邦的大学生在瓦尔特堡集会，呼吁民族统一与自由主义，点燃民族运动火焰。
+  tags: [改革运动, 文化思想]
+
+- id: germany_carlsbad_decrees
+  year: 1819
+  level: 2
+  title: 卡尔斯巴德决议
+  summary: 梅特涅主导通过卡尔斯巴德决议，限制新闻自由与大学生运动，压制民族自由主义。
+  tags: [改革运动]
+
+- id: germany_zollverein
+  year: 1834
+  level: 2
+  title: 德意志关税同盟成立
+  summary: 普鲁士主导建立德意志关税同盟，消除内部关税壁垒，促进各邦经济一体化。
+  tags: [经济贸易]
+  figures: [list_economist]
+
+- id: germany_frankfurt_parliament
+  year: 1848
+  endYear: 1849
+  level: 2
+  title: 法兰克福议会
+  summary: 德意志各邦代表在法兰克福召开国民议会，讨论统一方案，因普鲁士国王拒绝皇冠而失败。
+  tags: [革命政变, 改革运动]
+  figures: [frederick_william_iv]
+
+- id: germany_sadowa_battle
+  year: 1866
+  level: 2
+  title: 柯尼希格雷茨战役
+  summary: 毛奇率普军在柯尼希格雷茨以精准的铁路调兵和炮兵战术大败奥地利军队。
+  tags: [战争]
+  figures: [moltke_elder, bismarck]
+
+- id: germany_north_german_confederation
+  year: 1867
+  level: 2
+  title: 北德意志联邦建立
+  summary: 普奥战争后，普鲁士建立北德意志联邦，为1871年德意志帝国统一奠定政治框架。
+  tags: [王朝更迭]
+  figures: [bismarck]
+
+- id: germany_sedan_battle
+  year: 1870
+  level: 2
+  title: 色当战役
+  summary: 普军在色当包围并俘虏法皇拿破仑三世，10万法军投降，普法战争决定性胜利。
+  tags: [战争]
+  figures: [moltke_elder]
+  related: [france_franco_prussian_war]
+
+- id: germany_paris_siege
+  year: 1870
+  endYear: 1871
+  level: 2
+  title: 巴黎围城
+  summary: 普军围困巴黎达数月，法国政府被迫求和，签订《法兰克福和约》，法国割让阿尔萨斯-洛林。
+  tags: [战争, 条约外交]
+  figures: [bismarck]
+  related: [france_franco_prussian_war]
+
+- id: germany_kulturkampf
+  year: 1871
+  endYear: 1878
+  level: 2
+  title: 文化斗争
+  summary: 俾斯麦与天主教会展开"文化斗争"，限制教会权力，通过《五月法》管控神职人员。
+  tags: [改革运动, 文化思想]
+  figures: [bismarck]
+
+- id: germany_antisocialist_law
+  year: 1878
+  endYear: 1890
+  level: 2
+  title: 反社会党人法
+  summary: 俾斯麦通过《反社会党人法》取缔工人组织活动，同时以社会立法安抚工人阶级。
+  tags: [改革运动]
+  figures: [bismarck]
+
+- id: germany_triple_alliance
+  year: 1882
+  level: 2
+  title: 三国同盟成立
+  summary: 德、奥、意三国签订同盟条约，俾斯麦外交体系的核心，旨在孤立法国。
+  tags: [条约外交]
+  figures: [bismarck]
+
+- id: germany_reinsurance_treaty
+  year: 1887
+  level: 2
+  title: 再保险条约
+  summary: 俾斯麦与俄国秘密签订《再保险条约》，维持与俄国关系，防止两线作战，1890年后被放弃。
+  tags: [条约外交]
+  figures: [bismarck]
+
+- id: germany_berlin_conference
+  year: 1884
+  endYear: 1885
+  level: 2
+  title: 柏林非洲会议
+  summary: 俾斯麦主持欧洲列强在柏林会议上划分非洲殖民势力范围，德国正式参与非洲殖民竞争。
+  tags: [殖民扩张, 条约外交]
+  figures: [bismarck]
+
+- id: germany_william_ii_accession
+  year: 1888
+  level: 2
+  title: 威廉二世即位
+  summary: 1888年三帝之年，威廉一世、腓特烈三世相继逝世，威廉二世即位，外交政策趋于冒险。
+  tags: [王朝更迭]
+  figures: [kaiser_wilhelm_ii]
+
+- id: germany_siemens_founded
+  year: 1847
+  level: 2
+  title: 西门子公司创立
+  summary: 维尔纳·冯·西门子在柏林创立电报公司，后发展为电气工业巨头，引领德国工业化。
   tags: [经济贸易, 科技发明]
+
+- id: germany_krupp_expansion
+  year: 1850
+  endYear: 1880
+  level: 2
+  title: 克虏伯钢铁帝国崛起
+  summary: 克虏伯家族的埃森钢铁厂迅速扩张，成为德国最大军工企业，为普鲁士战争提供关键装备。
+  tags: [经济贸易, 战争]
+
+- id: germany_basf_founded
+  year: 1865
+  level: 2
+  title: 巴斯夫化学公司创立
+  summary: 巴登苯胺纯碱公司（巴斯夫）在路德维希港创立，成为全球最大化工企业之一的前身。
+  tags: [经济贸易, 科技发明]
+
+- id: germany_helmholtz_energy
+  year: 1847
+  level: 2
+  title: 亥姆霍兹能量守恒定律
+  summary: 赫尔曼·冯·亥姆霍兹发表论文论证能量守恒定律，为热力学奠定重要理论基础。
+  tags: [科技发明]
+  figures: [helmholtz]
+
+- id: germany_hertz_electromagnetic
+  year: 1887
+  level: 2
+  title: 赫兹证实电磁波存在
+  summary: 海因里希·赫兹通过实验证实麦克斯韦理论，发现电磁波，为无线电通信奠定基础。
+  tags: [科技发明]
+  figures: [hertz]
+
+- id: germany_wagner_ring
+  year: 1876
+  level: 2
+  title: 瓦格纳《尼伯龙根的指环》首演
+  summary: 瓦格纳在拜罗伊特首演四部曲《尼伯龙根的指环》，标志其乐剧理想的完全实现。
+  tags: [文化思想]
+  figures: [wagner]
+
+- id: germany_bayreuth_festival
+  year: 1876
+  level: 2
+  title: 拜罗伊特音乐节创立
+  summary: 瓦格纳创立拜罗伊特音乐节，专门演出其歌剧作品，成为德国重要文化传统延续至今。
+  tags: [文化思想]
+  figures: [wagner]
+
+- id: germany_nietzsche_birth_of_tragedy
+  year: 1872
+  level: 2
+  title: 尼采《悲剧的诞生》
+  summary: 尼采出版首部著作《悲剧的诞生》，以日神与酒神对立阐释希腊文化，引发文化界争论。
+  tags: [文化思想]
+  figures: [nietzsche]
+
+- id: germany_hegel_berlin_lectures
+  year: 1818
+  endYear: 1831
+  level: 2
+  title: 黑格尔执教柏林大学
+  summary: 黑格尔在柏林大学讲授哲学，吸引全德学生，辩证法哲学体系在此期间臻于完备。
+  tags: [文化思想]
+  figures: [hegel]
+
+- id: germany_marx_communist_manifesto
+  year: 1848
+  level: 2
+  title: 《共产党宣言》出版
+  summary: 马克思与恩格斯在布鲁塞尔联名发表《共产党宣言》，系统阐述历史唯物主义与阶级斗争理论。
+  tags: [文化思想, 革命政变]
+  figures: [marx, engels]
+
+- id: germany_german_spd_founded
+  year: 1875
+  level: 2
+  title: 德国社会民主党成立
+  summary: 爱森纳赫派与拉萨尔派合并，在哥达成立德国社会民主党，成为欧洲最大工人政党。
+  tags: [改革运动]
+
+- id: germany_frankfurt_treaty
+  year: 1871
+  level: 2
+  title: 《法兰克福和约》签订
+  summary: 法国割让阿尔萨斯-洛林给德国，并赔款50亿法郎，确立德国在欧洲大陆的霸主地位。
+  tags: [条约外交]
+  figures: [bismarck]
+  related: [france_franco_prussian_war]
+
+# ── Level 3 ──────────────────────────────────────────
+
+- id: germany_prussian_defeat_1806
+  year: 1806
+  level: 3
+  title: 《蒂尔西特和约》
+  summary: 普鲁士在耶拿战役后向拿破仑求和，签订《蒂尔西特和约》，失去约一半领土。
+  tags: [条约外交]
+
+- id: germany_scharnhorst_military_reform
+  year: 1808
+  level: 3
+  title: 普鲁士军事改革
+  summary: 沙恩霍斯特等人推行军事改革，废除贵族垄断军官制度，引入义务兵役制度萌芽。
+  tags: [改革运动]
+
+- id: germany_napoleon_berlin_decree
+  year: 1806
+  level: 3
+  title: 柏林敕令与大陆封锁
+  summary: 拿破仑在柏林发布敕令实施大陆封锁，禁止欧陆各国与英国贸易，对德意志经济冲击明显。
+  tags: [经济贸易]
+  related: [france_napoleon_empire]
+
+- id: germany_fichte_addresses
+  year: 1808
+  level: 3
+  title: 费希特《告德意志国民书》
+  summary: 哲学家费希特在被占领的柏林发表演讲，呼吁德意志民族通过教育实现精神自立与统一。
+  tags: [文化思想]
+
+- id: germany_lutzow_freikorps
+  year: 1813
+  level: 3
+  title: 吕措夫自由军团成立
+  summary: 解放战争中，吕措夫组建自愿者军团，许多诗人和学生参军，成为民族运动的浪漫象征。
+  tags: [战争]
+  figures: [blucher]
+
+- id: germany_vienna_congress
+  year: 1814
+  endYear: 1815
+  level: 3
+  title: 维也纳会议参与
+  summary: 普鲁士与列强在维也纳会议重绘欧洲版图，获得莱茵兰和威斯特法伦，实力显著增强。
+  tags: [条约外交]
+
+- id: germany_burschenschaft
+  year: 1815
+  level: 3
+  title: 大学生联合会运动
+  summary: 耶拿大学生建立第一个Burschenschaft（学生兄弟会），以民族统一和自由主义为旗帜。
+  tags: [改革运动, 文化思想]
+
+- id: germany_kotzebue_assassination
+  year: 1819
+  level: 3
+  title: 科采比遇刺事件
+  summary: 大学生桑德刺杀戏剧家科采比，事件成为梅特涅推行卡尔斯巴德决议压制自由运动的导火索。
+  tags: [革命政变]
+
+- id: germany_grimm_brothers
+  year: 1812
+  level: 3
+  title: 格林兄弟《儿童与家庭童话集》
+  summary: 格林兄弟出版第一版童话集，搜集整理德意志民间故事，成为德意志文化认同的重要符号。
+  tags: [文化思想]
+
+- id: germany_beethoven_ninth
+  year: 1824
+  level: 3
+  title: 贝多芬《第九交响曲》首演
+  summary: 贝多芬在已近全聋时完成《第九交响曲》，维也纳首演时观众起立鼓掌，作曲家本人未能听见。
+  tags: [文化思想]
+  figures: [beethoven]
+
+- id: germany_mendelssohn_bach_revival
+  year: 1829
+  level: 3
+  title: 门德尔松复兴巴赫《马太受难曲》
+  summary: 门德尔松在柏林指挥巴赫《马太受难曲》，此距首演已百年，推动巴赫作品的重新发现。
+  tags: [文化思想]
+  figures: [mendelssohn]
+
+- id: germany_schubert_death
+  year: 1828
+  level: 3
+  title: 舒伯特逝世
+  summary: 弗朗茨·舒伯特31岁因伤寒病逝，留下600余首艺术歌曲，是浪漫主义音乐的奠基人之一。
+  tags: [文化思想]
+  figures: [schubert]
+
+- id: germany_customs_union_economic
+  year: 1834
+  level: 3
+  title: 关税同盟统一市场效应
+  summary: 德意志关税同盟消除内部贸易壁垒，制造业和铁路建设迅速扩张，推动工业化进程。
+  tags: [经济贸易]
+
+- id: germany_railway_first
+  year: 1835
+  level: 3
+  title: 德意志第一条铁路开通
+  summary: 纽伦堡至菲尔特铁路开通，全长约6公里，是德意志历史上第一条蒸汽铁路。
+  tags: [科技发明, 经济贸易]
+
+- id: germany_socialist_party_gotha
+  year: 1863
+  level: 3
+  title: 德国工人总联合会成立
+  summary: 拉萨尔在莱比锡创立德国工人总联合会，是德国工人政党的前身，推动工人参政运动。
+  tags: [改革运动]
+
+- id: germany_1848_vienna_berlin_revolt
+  year: 1848
+  level: 3
+  title: 柏林三月革命
+  summary: 柏林爆发街垒战，数百平民与普鲁士军队冲突，威廉四世被迫撤军，允诺推行改革。
+  tags: [革命政变]
+
+- id: germany_1848_hungarian_suppression
+  year: 1849
+  level: 3
+  title: 法兰克福议会失败
+  summary: 普鲁士国王拒绝法兰克福议会授予的德国皇冠，议会随后解散，德意志统一再度推迟。
+  tags: [革命政变]
+  figures: [frederick_william_iv]
+
+- id: germany_schopenhauer_world
+  year: 1819
+  level: 3
+  title: 叔本华《意志与表象的世界》
+  summary: 叔本华出版主要著作，以意志论哲学挑战理性主义传统，对尼采、瓦格纳等影响深远。
+  tags: [文化思想]
+  figures: [schopenhauer]
+
+- id: germany_heine_paris
+  year: 1831
+  level: 3
+  title: 海涅流亡巴黎
+  summary: 海涅因政治立场被迫离开德意志，定居巴黎，以犀利的政治讽刺诗闻名欧洲。
+  tags: [文化思想]
+  figures: [heine]
+
+- id: germany_marx_paris_1843
+  year: 1843
+  level: 3
+  title: 马克思流亡巴黎
+  summary: 马克思因办报被普鲁士当局驱逐，流亡巴黎，开始研究政治经济学，结识恩格斯。
+  tags: [文化思想, 革命政变]
+  figures: [marx, engels]
+
+- id: germany_erfurt_union_1850
+  year: 1850
+  level: 3
+  title: 奥尔米茨协议
+  summary: 普鲁士在奥地利与俄国联合压力下被迫放弃统一德意志计划，史称"奥尔米茨屈辱"。
+  tags: [条约外交]
+
+- id: germany_bismarck_ems_dispatch
+  year: 1870
+  level: 3
+  title: 埃姆斯电报事件
+  summary: 俾斯麦删改埃姆斯电报内容后公开发布，激怒法国，成为普法战争直接导火索。
+  tags: [条约外交, 战争]
+  figures: [bismarck]
+
+- id: germany_versailles_mirror_hall
+  year: 1871
+  level: 3
+  title: 凡尔赛镜厅加冕典礼
+  summary: 德意志帝国在法国凡尔赛宫镜厅内宣告成立，此举对法国民族感情是巨大刺激。
+  tags: [王朝更迭]
+  figures: [kaiser_wilhelm_i, bismarck]
+
+- id: germany_reichstag_building
+  year: 1884
+  endYear: 1894
+  level: 3
+  title: 帝国国会大厦建造
+  summary: 柏林帝国国会大厦历时十年建造，1894年竣工，成为德意志民族国家的重要政治象征。
+  tags: [文化思想]
+
+- id: germany_colonial_africa
+  year: 1884
+  level: 3
+  title: 德国取得西南非洲殖民地
+  summary: 德国宣布对今纳米比亚地区实施保护，获得首块非洲殖民地，殖民扩张正式开始。
+  tags: [殖民扩张]
+
+- id: germany_roentgen_xray
+  year: 1895
+  level: 3
+  title: 伦琴发现X射线
+  summary: 威廉·伦琴在维尔茨堡发现X射线，1901年获首届诺贝尔物理学奖，开创医学影像新纪元。
+  tags: [科技发明]
+  figures: [roentgen]
+
+- id: germany_nietzsche_zarathustra
+  year: 1883
+  level: 3
+  title: 尼采《查拉图斯特拉如是说》
+  summary: 尼采出版哲学散文诗《查拉图斯特拉如是说》，提出超人学说，成为其最著名的代表作。
+  tags: [文化思想]
+  figures: [nietzsche]
+
+- id: germany_freud_berlin_studies
+  year: 1886
+  level: 3
+  title: 弗洛伊德早期神经科学研究
+  summary: 弗洛伊德在柏林随夏科学习神经学，此后发展精神分析理论，影响20世纪思想。
+  tags: [科技发明, 文化思想]
+
+- id: germany_brahms_symphonies
+  year: 1876
+  endYear: 1885
+  level: 3
+  title: 勃拉姆斯四部交响曲完成
+  summary: 勃拉姆斯在汉堡和维也纳创作完成四部交响曲，被视为继承贝多芬传统的重要作品。
+  tags: [文化思想]
+  figures: [brahms]
+
+- id: germany_richard_strauss_debut
+  year: 1889
+  level: 3
+  title: 理查·施特劳斯《唐璜》首演
+  summary: 理查·施特劳斯指挥首演交响诗《唐璜》，以大胆的和声与配器引发广泛关注。
+  tags: [文化思想]
+  figures: [richard_strauss]
+
+- id: germany_thomas_mann_buddenbrooks
+  year: 1901
+  level: 3
+  title: 托马斯·曼《布登勃洛克家族》
+  summary: 托马斯·曼出版小说《布登勃洛克家族》，描绘德国商业家族四代盛衰，1929年获诺贝尔文学奖。
+  tags: [文化思想]
+  figures: [thomas_mann]
+
+- id: germany_weber_protestant_ethic
+  year: 1904
+  level: 3
+  title: 韦伯《新教伦理与资本主义精神》
+  summary: 马克斯·韦伯发表社会学名著，论证新教伦理对近代资本主义形成的影响，影响持续至今。
+  tags: [文化思想, 经济贸易]
+  figures: [max_weber]
+
+- id: germany_planck_quantum
+  year: 1900
+  level: 3
+  title: 普朗克量子假说
+  summary: 马克斯·普朗克提出能量量子化假说，标志量子物理学的诞生，彻底改变物理学基础。
+  tags: [科技发明]
+  figures: [planck]
+
+- id: germany_krupp_steel_boom
+  year: 1860
+  endYear: 1890
+  level: 3
+  title: 克虏伯大炮与钢铁产量飞升
+  summary: 克虏伯钢铁厂研制的铸钢大炮在普法战争中大显身手，德国钢铁产量跃居世界前列。
+  tags: [经济贸易, 战争]
+
+- id: germany_habsburg_austria_dual_monarchy
+  year: 1867
+  level: 3
+  title: 奥匈帝国成立
+  summary: 奥地利与匈牙利达成协议，哈布斯堡帝国改组为奥匈帝国，与德国关系更趋紧密。
+  tags: [王朝更迭, 条约外交]
+
+- id: germany_social_darwinism_spread
+  year: 1880
+  endYear: 1900
+  level: 3
+  title: 社会达尔文主义在德意志传播
+  summary: 进化论被转化为社会政治理论，在德意志知识界广泛传播，影响帝国主义与民族主义思潮。
+  tags: [文化思想]
+
+- id: germany_antisemitism_movement
+  year: 1880
+  endYear: 1900
+  level: 3
+  title: 政治反犹主义兴起
+  summary: 德国出现有组织的反犹太人政治运动，反犹政党参选帝国议会，为后来的排犹政策埋下伏笔。
+  tags: [文化思想]
+
+- id: germany_bernhard_liszt
+  year: 1861
+  level: 3
+  title: 李斯特在魏玛宫廷
+  summary: 匈牙利裔作曲家李斯特长期在魏玛任职，将魏玛再度带回德意志音乐文化的中心。
+  tags: [文化思想]
+
+- id: germany_worker_strike_1889
+  year: 1889
+  level: 3
+  title: 鲁尔矿工大罢工
+  summary: 约13万鲁尔矿工举行大罢工，要求改善工作条件，促使威廉二世启动工人保护立法。
+  tags: [改革运动, 经济贸易]
+  figures: [kaiser_wilhelm_ii]
+
+- id: germany_marx_international
+  year: 1864
+  level: 3
+  title: 第一国际成立
+  summary: 马克思参与创立第一国际（国际工人联合会），在伦敦组织各国工人运动，影响遍及欧洲。
+  tags: [改革运动]
+  figures: [marx]
+
+- id: germany_last_gasp_of_hre
+  year: 1803
+  level: 3
+  title: 德意志帝国缩编（Reichsdeputationshauptschluss）
+  summary: 帝国代表大会主要决议通过，大批教会领地被世俗化，众多小邦被合并，帝国实质瓦解加速。
+  tags: [王朝更迭]
+
+- id: germany_schubert_lieder
+  year: 1815
+  endYear: 1828
+  level: 3
+  title: 舒伯特艺术歌曲创作高峰
+  summary: 舒伯特在短暂生命中创作超过600首艺术歌曲，将德意志浪漫诗歌与音乐融合推向新高度。
+  tags: [文化思想]
+  figures: [schubert]
+
+- id: germany_benz_automobile
+  year: 1885
+  level: 3
+  title: 奔驰发明汽车
+  summary: 卡尔·奔驰研制出以汽油发动机驱动的三轮车，被视为现代汽车的原型，开创汽车工业。
+  tags: [科技发明, 经济贸易]
+
+- id: germany_daimler_engine
+  year: 1885
+  level: 3
+  title: 戴姆勒与迈巴赫研制高速汽油机
+  summary: 戴姆勒和迈巴赫在斯图加特研制出高转速汽油内燃机，为汽车和航空工业奠定技术基础。
+  tags: [科技发明]
+
+- id: germany_humboldt_berlin_university
+  year: 1810
+  level: 3
+  title: 柏林洪堡大学创立
+  summary: 威廉·冯·洪堡创立柏林大学，以科研与教学统一为理念，成为近代研究型大学的模板。
+  tags: [文化思想, 改革运动]

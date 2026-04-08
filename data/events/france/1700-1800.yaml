@@ -1,3 +1,25 @@
+# 法国 1700-1800 历史事件
+
+# ===== Level 1 =====
+
+- id: france_war_spanish_succession
+  year: 1701
+  endYear: 1714
+  level: 1
+  title: 西班牙王位继承战争
+  summary: 法国支持波旁王朝继承西班牙王位，与英荷奥联军交战，签订《乌得勒支条约》。
+  tags: [战争, 条约外交]
+  figures: [louis_xiv]
+
+- id: france_mississippi_bubble
+  year: 1716
+  endYear: 1720
+  level: 1
+  title: 密西西比泡沫
+  summary: 约翰·劳主导密西西比公司股票狂潮，泡沫破裂引发法国严重金融危机。
+  tags: [经济贸易]
+  figures: [john_law]
+
 - id: france_seven_years_war
   year: 1756
   endYear: 1763
@@ -12,21 +34,521 @@
   endYear: 1799
   level: 1
   title: 法国大革命
-  summary: 路易十六被捕并处决，封建制度瓦解，共和国成立，社会结构发生根本变化。
+  summary: 巴士底狱陷落，封建制度瓦解，路易十六被处决，共和国成立。
   tags: [革命政变, 文化思想]
-  figures: [robespierre, louis_xvi]
+  figures: [robespierre, louis_xvi, marie_antoinette]
 
-- id: france_declaration_rights
-  year: 1789
+- id: france_reign_of_terror
+  year: 1793
+  endYear: 1794
+  level: 1
+  title: 恐怖统治
+  summary: 雅各宾派主导公共安全委员会，大规模处决政敌，各方记载死亡人数存在差异。
+  tags: [革命政变]
+  figures: [robespierre]
+
+- id: france_directory
+  year: 1795
+  endYear: 1799
+  level: 1
+  title: 督政府时期
+  summary: 热月政变后督政府成立，政局动荡，最终被拿破仑雾月政变推翻。
+  tags: [革命政变, 王朝更迭]
+
+- id: france_napoleon_italy_campaign
+  year: 1796
+  endYear: 1797
+  level: 1
+  title: 拿破仑意大利战役
+  summary: 拿破仑率军在意大利北部连续获胜，奠定其军事声望，签订《坎波福米奥条约》。
+  tags: [战争, 条约外交]
+  figures: [napoleon]
+
+- id: france_18_brumaire
+  year: 1799
+  level: 1
+  title: 雾月政变
+  summary: 拿破仑发动政变推翻督政府，建立执政府，自任第一执政，大革命时代结束。
+  tags: [革命政变, 王朝更迭]
+  figures: [napoleon]
+
+# ===== Level 2 =====
+
+- id: france_regency_orleans
+  year: 1715
+  endYear: 1723
   level: 2
-  title: 《人权和公民权宣言》发布
-  summary: 国民议会通过《人权和公民权宣言》，宣示自由、平等和主权在民原则。
-  tags: [文化思想, 改革运动]
+  title: 奥尔良公爵摄政
+  summary: 路易十四驾崩，幼王路易十五即位，奥尔良公爵任摄政，放宽宫廷管制。
+  tags: [王朝更迭]
+  figures: [louis_xv]
+
+- id: france_louis_xiv_death
+  year: 1715
+  level: 2
+  title: 路易十四驾崩
+  summary: 在位72年的路易十四驾崩，法国绝对君主制盛极而衰，国家债务沉重。
+  tags: [王朝更迭]
+  figures: [louis_xiv]
+
+- id: france_john_law_bank
+  year: 1716
+  level: 2
+  title: 约翰·劳建立皇家银行
+  summary: 苏格兰金融家约翰·劳获准在法国建立皇家银行，发行纸币，推动金融改革尝试。
+  tags: [经济贸易]
+  figures: [john_law]
+
+- id: france_louis_xv_reign
+  year: 1723
+  endYear: 1774
+  level: 2
+  title: 路易十五亲政
+  summary: 路易十五正式亲政，其统治期间法国对外战争频繁，内政相对保守。
+  tags: [王朝更迭]
+  figures: [louis_xv]
+
+- id: france_austrian_alliance
+  year: 1756
+  level: 2
+  title: 法奥同盟（外交革命）
+  summary: 法国与奥地利结盟，颠覆欧洲传统外交格局，史称"外交革命"。
+  tags: [条约外交]
 
 - id: france_american_alliance
   year: 1778
   level: 2
-  title: 法美同盟
+  title: 法美同盟条约
   summary: 法国与北美殖民地签订同盟条约，向美国独立战争提供军事和财政支援。
   tags: [条约外交, 战争]
-  related: [usa_independence]
+
+- id: france_treaty_paris_1763
+  year: 1763
+  level: 2
+  title: 《巴黎条约》1763年
+  summary: 七年战争结束，法国将加拿大、密西西比河以东领土割让英国，丧失印度据点。
+  tags: [条约外交, 殖民扩张]
+
+- id: france_louis_xvi_ascend
+  year: 1774
+  level: 2
+  title: 路易十六即位
+  summary: 路易十六即位，面临严峻财政危机，多次改革尝试遭贵族阻挠。
+  tags: [王朝更迭]
+  figures: [louis_xvi]
+
+- id: france_turgot_reform
+  year: 1774
+  endYear: 1776
+  level: 2
+  title: 蒂尔戈改革
+  summary: 财政总监蒂尔戈推行自由主义经济改革，废除行会制度，遭贵族反对后被免职。
+  tags: [改革运动, 经济贸易]
+  figures: [turgot]
+
+- id: france_financial_crisis_1780s
+  year: 1786
+  endYear: 1789
+  level: 2
+  title: 财政危机加剧
+  summary: 法国因美国独立战争借债和宫廷开支，国家财政几近崩溃，贵族拒绝纳税改革。
+  tags: [经济贸易, 改革运动]
+
+- id: france_estates_general
+  year: 1789
+  level: 2
+  title: 三级会议召开
+  summary: 路易十六召开175年来首次三级会议，第三等级代表要求改革，引发政治对抗。
+  tags: [革命政变, 改革运动]
+  figures: [louis_xvi]
+
+- id: france_national_assembly
+  year: 1789
+  level: 2
+  title: 国民议会成立
+  summary: 第三等级代表宣布成立国民议会，路易十六被迫承认，君主立宪派暂时主导政局。
+  tags: [革命政变, 改革运动]
+
+- id: france_declaration_rights
+  year: 1789
+  level: 2
+  title: 《人权和公民权宣言》
+  summary: 国民议会通过《人权和公民权宣言》，宣示自由、平等和主权在民原则。
+  tags: [文化思想, 改革运动]
+
+- id: france_constitutional_monarchy
+  year: 1791
+  level: 2
+  title: 1791年宪法颁布
+  summary: 国民制宪议会通过宪法，确立君主立宪制，限制王权，设立立法议会。
+  tags: [改革运动, 革命政变]
+  figures: [louis_xvi]
+
+- id: france_war_of_first_coalition
+  year: 1792
+  endYear: 1797
+  level: 2
+  title: 第一次反法同盟战争
+  summary: 奥地利、普鲁士等国组成反法同盟干涉法国大革命，法国革命军奋力抵抗。
+  tags: [战争]
+
+- id: france_republic_proclaimed
+  year: 1792
+  level: 2
+  title: 第一共和国成立
+  summary: 国民公会宣布废除王制，法兰西第一共和国成立。
+  tags: [革命政变, 王朝更迭]
+
+- id: france_jacobin_club
+  year: 1793
+  level: 2
+  title: 雅各宾派掌权
+  summary: 雅各宾派击败吉伦特派，控制国民公会和公共安全委员会，推行激进革命政策。
+  tags: [革命政变]
+  figures: [robespierre]
+
+- id: france_thermidor_coup
+  year: 1794
+  level: 2
+  title: 热月政变
+  summary: 国民公会议员联合推翻罗伯斯庇尔，恐怖统治结束，雅各宾派失势。
+  tags: [革命政变]
+  figures: [robespierre]
+
+- id: france_egypt_campaign
+  year: 1798
+  endYear: 1801
+  level: 2
+  title: 拿破仑埃及远征
+  summary: 拿破仑率军远征埃及，战胜马穆鲁克军队，英国海军在阿布基尔湾击败法国舰队。
+  tags: [战争, 殖民扩张]
+  figures: [napoleon]
+
+# ===== Level 3 =====
+
+- id: france_versailles_palace_complete
+  year: 1710
+  level: 3
+  title: 凡尔赛宫扩建完工
+  summary: 路易十四主导的凡尔赛宫大规模扩建完成，成为欧洲君主制的象征。
+  tags: [文化思想, 王朝更迭]
+  figures: [louis_xiv]
+
+- id: france_utrecht_treaty
+  year: 1713
+  level: 3
+  title: 《乌得勒支条约》签订
+  summary: 西班牙王位继承战争结束，法国保留西班牙王位继承权但放弃部分殖民地。
+  tags: [条约外交]
+
+- id: france_louis_xiv_wars_debt
+  year: 1715
+  level: 3
+  title: 路易十四遗留战争债务
+  summary: 路易十四驾崩时法国国债高企，历次战争开支使财政陷入困境。
+  tags: [经济贸易, 战争]
+
+- id: france_mississippi_company_founded
+  year: 1717
+  level: 3
+  title: 密西西比公司成立
+  summary: 约翰·劳获特许成立密西西比公司，垄断法属路易斯安那贸易权。
+  tags: [经济贸易, 殖民扩张]
+  figures: [john_law]
+
+- id: france_mississippi_collapse
+  year: 1720
+  level: 3
+  title: 密西西比公司股价崩溃
+  summary: 密西西比公司股价暴跌，约翰·劳被迫出走，法国纸币体系崩溃，民众损失惨重。
+  tags: [经济贸易]
+  figures: [john_law]
+
+- id: france_montesquieu_persian_letters
+  year: 1721
+  level: 3
+  title: 孟德斯鸠《波斯人信札》出版
+  summary: 孟德斯鸠以波斯人视角讽刺法国社会，为启蒙运动奠定批判基础。
+  tags: [文化思想]
+  figures: [montesquieu]
+
+- id: france_voltaire_england_visit
+  year: 1726
+  endYear: 1729
+  level: 3
+  title: 伏尔泰流亡英国
+  summary: 伏尔泰因得罪贵族被迫流亡英国，接触洛克和牛顿思想，影响其启蒙思想形成。
+  tags: [文化思想]
+  figures: [voltaire]
+
+- id: france_voltaire_letters_anglaises
+  year: 1733
+  level: 3
+  title: 伏尔泰《哲学通信》出版
+  summary: 伏尔泰出版《哲学通信》，介绍英国自由思想，被法国当局列为禁书。
+  tags: [文化思想]
+  figures: [voltaire]
+
+- id: france_war_austrian_succession
+  year: 1740
+  endYear: 1748
+  level: 3
+  title: 奥地利王位继承战争
+  summary: 法国加入奥地利王位继承战争，战争结束后领土格局基本维持原状。
+  tags: [战争]
+
+- id: france_treaty_aix_la_chapelle
+  year: 1748
+  level: 3
+  title: 《亚琛条约》签订
+  summary: 奥地利王位继承战争结束，法国归还占领地，未能实现实质领土扩张。
+  tags: [条约外交]
+
+- id: france_montesquieu_spirit_laws
+  year: 1748
+  level: 3
+  title: 孟德斯鸠《论法的精神》出版
+  summary: 孟德斯鸠出版《论法的精神》，提出三权分立学说，深刻影响近代宪政理论。
+  tags: [文化思想]
+  figures: [montesquieu]
+
+- id: france_encyclopedie_begins
+  year: 1751
+  level: 3
+  title: 狄德罗《百科全书》开始出版
+  summary: 狄德罗主编《百科全书》第一卷出版，汇聚启蒙思想，多次遭当局禁止。
+  tags: [文化思想]
+  figures: [diderot]
+
+- id: france_rousseau_discourse
+  year: 1755
+  level: 3
+  title: 卢梭《论不平等的起源》出版
+  summary: 卢梭出版《论不平等的起源》，批判文明社会对自然人性的腐蚀。
+  tags: [文化思想]
+  figures: [rousseau]
+
+- id: france_seven_years_war_canada_loss
+  year: 1759
+  level: 3
+  title: 魁北克战役法军失守
+  summary: 英军在魁北克城击败法军，法国在北美的统治地位开始崩溃。
+  tags: [战争, 殖民扩张]
+
+- id: france_rousseau_social_contract
+  year: 1762
+  level: 3
+  title: 卢梭《社会契约论》出版
+  summary: 卢梭发表《社会契约论》，提出"主权在民"理论，为革命提供思想依据。
+  tags: [文化思想]
+  figures: [rousseau]
+
+- id: france_encyclopedie_complete
+  year: 1772
+  level: 3
+  title: 《百科全书》全集完成
+  summary: 狄德罗主编的《百科全书》全28卷出版完毕，成为启蒙运动最重要的文献之一。
+  tags: [文化思想]
+  figures: [diderot]
+
+- id: france_turgot_dismissed
+  year: 1776
+  level: 3
+  title: 蒂尔戈被免职
+  summary: 路易十六迫于贵族压力免除蒂尔戈财政总监职务，改革努力中断。
+  tags: [改革运动, 经济贸易]
+  figures: [turgot, louis_xvi]
+
+- id: france_necker_dismissed_1781
+  year: 1781
+  level: 3
+  title: 内克尔第一次被免职
+  summary: 财政总监内克尔因公开财政账目触怒贵族，路易十六将其免职。
+  tags: [经济贸易, 改革运动]
+  figures: [louis_xvi]
+
+- id: france_diamond_necklace_affair
+  year: 1785
+  level: 3
+  title: 钻石项链事件
+  summary: 一起涉及王室名誉的骗局，损害了玛丽·安托瓦内特的公众形象，加剧王室危机。
+  tags: [王朝更迭]
+  figures: [marie_antoinette]
+
+- id: france_notables_assembly
+  year: 1787
+  level: 3
+  title: 贵族会议召开
+  summary: 路易十六召集名流会议讨论税制改革，贵族拒绝放弃免税特权，改革再次受阻。
+  tags: [改革运动, 经济贸易]
+  figures: [louis_xvi]
+
+- id: france_necker_dismissed_1789
+  year: 1789
+  level: 3
+  title: 内克尔被解职引发巴黎骚乱
+  summary: 路易十六解雇改革派财政总监内克尔，消息传至巴黎引发民众骚动。
+  tags: [革命政变]
+  figures: [louis_xvi]
+
+- id: france_bastille_stormed
+  year: 1789
+  level: 3
+  title: 攻占巴士底狱
+  summary: 1789年7月14日，巴黎民众攻占巴士底狱，此日后成为法国国庆日。
+  tags: [革命政变]
+
+- id: france_august_decrees
+  year: 1789
+  level: 3
+  title: 八月法令废除封建制度
+  summary: 国民制宪议会通过八月法令，废除封建义务和贵族特权，结束封建制度。
+  tags: [改革运动, 革命政变]
+
+- id: france_womens_march_versailles
+  year: 1789
+  level: 3
+  title: 妇女向凡尔赛进军
+  summary: 数千名巴黎妇女因面包短缺游行至凡尔赛，迫使王室返回巴黎。
+  tags: [革命政变]
+
+- id: france_civil_constitution_clergy
+  year: 1790
+  level: 3
+  title: 教士公民组织法
+  summary: 国民议会通过法令将法国天主教会置于国家管辖下，引发教会与革命政府冲突。
+  tags: [革命政变, 文化思想]
+
+- id: france_flight_varennes
+  year: 1791
+  level: 3
+  title: 路易十六出逃瓦雷讷
+  summary: 路易十六一家秘密出逃被识破，在瓦雷讷被捕押回巴黎，王室声誉彻底崩溃。
+  tags: [革命政变]
+  figures: [louis_xvi, marie_antoinette]
+
+- id: france_war_declared_austria
+  year: 1792
+  level: 3
+  title: 法国对奥宣战
+  summary: 法国立法议会对奥地利宣战，欧洲革命战争正式开始。
+  tags: [战争]
+
+- id: france_valmy_battle
+  year: 1792
+  level: 3
+  title: 瓦尔米战役
+  summary: 法国革命军在瓦尔米阻止普奥联军推进，成为革命战争的重要转折点。
+  tags: [战争]
+
+- id: france_king_trial
+  year: 1792
+  endYear: 1793
+  level: 3
+  title: 路易十六受审
+  summary: 国民公会对路易十六进行审判，以叛国罪定罪，表决处以极刑。
+  tags: [革命政变]
+  figures: [louis_xvi]
+
+- id: france_louis_xvi_execution
+  year: 1793
+  level: 3
+  title: 路易十六被处决
+  summary: 1793年1月21日，路易十六在巴黎革命广场被送上断头台处决。
+  tags: [革命政变, 王朝更迭]
+  figures: [louis_xvi]
+
+- id: france_levee_en_masse
+  year: 1793
+  level: 3
+  title: 全国总动员令
+  summary: 国民公会颁布全国总动员令，征召数十万公民入伍，建立近代全民军队雏形。
+  tags: [战争, 改革运动]
+
+- id: france_marie_antoinette_execution
+  year: 1793
+  level: 3
+  title: 玛丽·安托瓦内特被处决
+  summary: 王后玛丽·安托瓦内特以叛国罪被处决，距丈夫路易十六被处决不足9个月。
+  tags: [革命政变]
+  figures: [marie_antoinette]
+
+- id: france_law_suspects
+  year: 1793
+  level: 3
+  title: 《嫌疑犯法》颁布
+  summary: 公共安全委员会颁布《嫌疑犯法》，授权大规模逮捕，恐怖统治进入高峰。
+  tags: [革命政变]
+  figures: [robespierre]
+
+- id: france_robespierre_execution
+  year: 1794
+  level: 3
+  title: 罗伯斯庇尔被处决
+  summary: 热月政变后，罗伯斯庇尔及其同僚被送上断头台，恐怖统治正式终结。
+  tags: [革命政变]
+  figures: [robespierre]
+
+- id: france_constitution_1795
+  year: 1795
+  level: 3
+  title: 1795年宪法颁布
+  summary: 热月党人制定新宪法，建立两院制议会和五人督政府，限制民主以防止激进主义。
+  tags: [革命政变, 改革运动]
+
+- id: france_napoleon_toulon
+  year: 1793
+  level: 3
+  title: 拿破仑土伦战役
+  summary: 年轻炮兵军官拿破仑在土伦围城战中表现出色，因此晋升旅长，初露锋芒。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_nile_battle
+  year: 1798
+  level: 3
+  title: 尼罗河口海战
+  summary: 英国海军上将纳尔逊在阿布基尔湾全歼法国舰队，拿破仑埃及军队被困。
+  tags: [战争]
+
+- id: france_consulate_constitution
+  year: 1799
+  level: 3
+  title: 执政府宪法颁布
+  summary: 雾月政变后新宪法确立执政府体制，拿破仑任第一执政，握有实质权力。
+  tags: [改革运动, 王朝更迭]
+  figures: [napoleon]
+
+- id: france_voltaire_candide
+  year: 1759
+  level: 3
+  title: 伏尔泰《老实人》出版
+  summary: 伏尔泰发表讽刺小说《老实人》，批判盲目乐观主义和宗教专制。
+  tags: [文化思想]
+  figures: [voltaire]
+
+# 以下为跨轨道 related 字段兼容 id
+
+- id: france_seven_years_war_1756
+  year: 1756
+  endYear: 1763
+  level: 3
+  title: 七年战争（法德关联）
+  summary: 七年战争中法国在欧洲大陆战场与普鲁士交战，最终失利，丧失多处殖民地。
+  tags: [战争]
+
+- id: france_revolutionary_wars
+  year: 1792
+  endYear: 1802
+  level: 3
+  title: 法国革命战争
+  summary: 法兰西第一共和国对抗欧洲各反法同盟国家，先后发动多次战役，拿破仑因此崛起。
+  tags: [战争, 革命政变]
+
+- id: france_revolution_1789
+  year: 1789
+  endYear: 1799
+  level: 3
+  title: 法国大革命（跨轨道关联）
+  summary: 1789年法国大革命引发欧洲旧制度震动，影响德意志、荷兰、意大利等地政治变革。
+  tags: [革命政变, 文化思想]

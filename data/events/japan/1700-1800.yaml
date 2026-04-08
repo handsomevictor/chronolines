@@ -1,23 +1,810 @@
-- id: japan_edo_period
-  year: 1700
+# 江户时代中期（1700-1800）
+# Level 1: 8-15 | Level 2: 25-40 | Level 3: 60-100
+
+# ── Level 1 ──────────────────────────────────────────────────────────────────
+
+- id: japan_tokugawa_tsunayoshi_death
+  year: 1709
+  level: 1
+  title: 德川纲吉去世
+  summary: 德川幕府第五代将军德川纲吉去世，任内颁布"生类怜悯令"，推崇儒学。
+  tags: [王朝更迭]
+  figures: [tokugawa_tsunayoshi]
+
+- id: japan_kyoho_reform
+  year: 1716
+  endYear: 1745
+  level: 1
+  title: 享保改革
+  summary: 德川吉宗主导享保改革，整顿财政、强化参勤交代、部分解禁洋书，幕府权威得到巩固。
+  tags: [改革运动]
+  figures: [tokugawa_yoshimune]
+
+- id: japan_dutch_trade_nagasaki
+  year: 1720
+  level: 1
+  title: 洋书解禁令
+  summary: 德川吉宗解除汉译以外洋书进口禁令，允许实用科学书籍流通，兰学由此兴起。
+  tags: [改革运动, 经济贸易, 文化思想]
+  figures: [tokugawa_yoshimune]
+
+- id: japan_tanuma_era
+  year: 1767
+  endYear: 1786
+  level: 1
+  title: 田沼意次时代
+  summary: 田沼意次以老中身份主导幕政，推行重商主义，扩大株仲间特权，开发蝦夷地。
+  tags: [改革运动, 经济贸易]
+  figures: [tanuma_okitsugu]
+
+- id: japan_tenmei_famine
+  year: 1782
+  endYear: 1788
+  level: 1
+  title: 天明大饥荒
+  summary: 浅间山喷发与气候异常引发全国性饥荒，死亡人数各方记载存在差异，多地爆发一揆。
+  tags: [改革运动]
+
+- id: japan_kaitai_shinsho
+  year: 1774
+  level: 1
+  title: 《解体新书》出版
+  summary: 杉田玄白等人翻译荷兰解剖学著作出版，为日本引入近代西洋医学知识体系。
+  tags: [科技发明, 文化思想]
+  figures: [sugita_genpaku]
+
+- id: japan_kansei_reform
+  year: 1787
+  endYear: 1793
+  level: 1
+  title: 宽政改革
+  summary: 松平定信推行宽政改革，禁奢侈、整肃风俗、限制思想，确立朱子学为官学。
+  tags: [改革运动]
+  figures: [matsudaira_sadanobu]
+
+- id: japan_hayashi_shihei_kaikoku
+  year: 1791
+  level: 1
+  title: 《海国兵谈》出版
+  summary: 林子平著《海国兵谈》，警告俄国等西方势力对日本海防的威胁，后遭幕府处分。
+  tags: [文化思想]
+  figures: [hayashi_shihei]
+
+- id: japan_edo_culture_peak
+  year: 1750
   endYear: 1800
   level: 1
-  title: 江户时代中期
-  summary: 德川幕府统治下日本维持锁国政策，仅与荷兰、中国等少数国家保持贸易往来。
-  tags: [经济贸易, 王朝更迭]
+  title: 宝历・天明文化兴盛
+  summary: 浮世绘黄金期到来，北斋、歌麿等画师活跃，黄表纸、洒落本等通俗文学繁荣。
+  tags: [文化思想]
+  figures: [katsushika_hokusai, kitagawa_utamaro]
 
-- id: japan_genroku_culture
-  year: 1688
-  endYear: 1704
+# ── Level 2 ──────────────────────────────────────────────────────────────────
+
+- id: japan_tokugawa_ienobu
+  year: 1709
+  endYear: 1712
   level: 2
-  title: 元禄文化繁荣
-  summary: 元禄年间商人文化兴盛，俳句、浮世绘、歌舞伎等艺术形式蓬勃发展。
+  title: 德川家宣就任将军
+  summary: 德川幕府第六代将军德川家宣即位，废除部分"生类怜悯令"，推行儒学政治。
+  tags: [王朝更迭]
+
+- id: japan_tokugawa_ietsugu
+  year: 1713
+  endYear: 1716
+  level: 2
+  title: 德川家继就任将军
+  summary: 德川幕府第七代将军德川家继年仅三岁即位，新井白石辅政，推行"正德之治"。
+  tags: [王朝更迭]
+
+- id: japan_arai_hakuseki_reforms
+  year: 1709
+  endYear: 1716
+  level: 2
+  title: 新井白石正德之治
+  summary: 儒学者新井白石在德川家宣・家继时期辅政，整顿货币、改定外交礼仪，被称为"正德之治"。
+  tags: [改革运动]
+
+- id: japan_tokugawa_yoshimune_shogun
+  year: 1716
+  level: 2
+  title: 德川吉宗就任将军
+  summary: 德川幕府第八代将军德川吉宗即位，此后推行享保改革，是幕府中兴之主。
+  tags: [王朝更迭]
+  figures: [tokugawa_yoshimune]
+
+- id: japan_meyasubako
+  year: 1721
+  level: 2
+  title: 目安箱设置
+  summary: 德川吉宗在江户设置"目安箱"，允许庶民投书直接反映民情，是一种民意收集机制。
+  tags: [改革运动]
+
+- id: japan_kabu_nakama_expansion
+  year: 1721
+  level: 2
+  title: 株仲间公认制度化
+  summary: 幕府正式公认株仲间（商业行会），通过征收冥加金换取垄断权，成为财政来源。
+  tags: [经济贸易]
+
+- id: japan_sankinkotai_reform
+  year: 1730
+  level: 2
+  title: 参勤交代制度强化
+  summary: 享保改革中，幕府强化大名参勤交代制度，规范各藩往返江户的时间与规格。
+  tags: [改革运动]
+
+- id: japan_ainu_matsumae_trade
+  year: 1700
+  endYear: 1800
+  level: 2
+  title: 松前藩与阿伊努人贸易
+  summary: 松前藩对阿伊努人实行场所请负制，将渔场贸易权承包给商人，阿伊努人处境日益恶化。
+  tags: [经济贸易]
+
+- id: japan_ezo_exploration
+  year: 1785
+  level: 2
+  title: 幕府蝦夷地调查
+  summary: 田沼意次派遣工藤平助等人赴北海道调查，为开发蝦夷地与俄国交涉做准备。
+  tags: [经济贸易]
+
+- id: japan_tokugawa_ieharu_shogun
+  year: 1760
+  level: 2
+  title: 德川家治就任将军
+  summary: 德川幕府第十代将军德川家治即位，实际政务逐渐落入侧用人田沼意次之手。
+  tags: [王朝更迭]
+
+- id: japan_tokugawa_ieshige_shogun
+  year: 1745
+  level: 2
+  title: 德川家重就任将军
+  summary: 德川幕府第九代将军德川家重即位，言语不清，政务倚重大冈忠光，内政较为平稳。
+  tags: [王朝更迭]
+
+- id: japan_tokugawa_ienari_shogun
+  year: 1787
+  level: 2
+  title: 德川家齐就任将军
+  summary: 德川幕府第十一代将军德川家齐即位，在位五十年，前期宽政改革后期政治弛缓。
+  tags: [王朝更迭]
+
+- id: japan_tanuma_downfall
+  year: 1786
+  level: 2
+  title: 田沼意次失势
+  summary: 德川家治去世后，田沼意次随即失去权位，宽政改革派取而代之，重商政策遭到否定。
+  tags: [改革运动]
+  figures: [tanuma_okitsugu]
+
+- id: japan_russia_contact_1792
+  year: 1792
+  level: 2
+  title: 俄国拉克斯曼来航
+  summary: 俄国使节拉克斯曼来航根室，送还漂流民，要求开国通商，幕府拒绝并仅给予长崎渡航许可证。
+  tags: [条约外交]
+
+- id: japan_matsumae_han
+  year: 1700
+  endYear: 1800
+  level: 2
+  title: 松前藩对蝦夷地统治
+  summary: 松前藩垄断对阿伊努人贸易，通过场所制度控制北海道资源，引发多次阿伊努人反抗。
+  tags: [经济贸易]
+
+- id: japan_utagawa_hiroshige_era
+  year: 1780
+  level: 2
+  title: 浮世绘画师活跃期
+  summary: 喜多川歌麿、葛饰北斋等浮世绘大师相继出道，美人画与风景画进入全盛期。
+  tags: [文化思想]
+  figures: [kitagawa_utamaro, katsushika_hokusai]
+
+- id: japan_rangaku_development
+  year: 1750
+  endYear: 1800
+  level: 2
+  title: 兰学发展
+  summary: 荷兰语学习与西洋知识研究在日本知识界扩展，医学、天文、地理等领域相继引进。
+  tags: [科技发明, 文化思想]
+  figures: [sugita_genpaku]
+
+- id: japan_sharebon_kibyoshi
+  year: 1770
+  endYear: 1800
+  level: 2
+  title: 通俗文学兴盛
+  summary: 洒落本、黄表纸、读本等通俗文学在江户市民中流行，山东京传、恋川春町等作家活跃。
   tags: [文化思想]
 
-- id: japan_tanuma_reform
-  year: 1772
-  endYear: 1786
+- id: japan_kabuki_development
+  year: 1700
+  endYear: 1800
+  level: 2
+  title: 歌舞伎成熟期
+  summary: 歌舞伎在18世纪进入成熟期，市川团十郎等名优确立荒事・和事等演技体系。
+  tags: [文化思想]
+
+- id: japan_haiku_culture
+  year: 1700
+  endYear: 1800
+  level: 2
+  title: 俳句文化传承发展
+  summary: 松尾芭蕉去世后，其门下蕉门继承俳风，与谢芜村等人形成各具风格的俳句流派。
+  tags: [文化思想]
+
+- id: japan_tenpo_famine_precursor
+  year: 1755
+  level: 2
+  title: 宝历饥荒
+  summary: 宝历年间东北地区发生饥荒，农村破产与人口流动加剧，幕府财政压力增大。
+  tags: [改革运动]
+
+- id: japan_asama_eruption
+  year: 1783
+  level: 2
+  title: 浅间山大喷发
+  summary: 浅间山喷发引发天仁大崩，火山灰覆盖关东农田，加剧天明饥荒的粮食危机。
+  tags: [改革运动]
+
+- id: japan_ikki_uprising_tenmei
+  year: 1786
+  level: 2
+  title: 天明打毁事件
+  summary: 天明饥荒期间江户发生大规模"打毁"骚乱，市民冲击米商，幕府威信受损。
+  tags: [革命政变]
+
+- id: japan_nagasaki_dutch_trade
+  year: 1700
+  endYear: 1800
+  level: 2
+  title: 长崎荷兰商馆贸易
+  summary: 长崎出岛荷兰商馆持续运营，每年船只带来铜、硫磺输出与进口商品，是锁国下唯一西洋贸易口。
+  tags: [经济贸易]
+
+- id: japan_china_trade_nagasaki
+  year: 1700
+  endYear: 1800
+  level: 2
+  title: 长崎中国商船贸易
+  summary: 唐人屋敷内中国商人持续进行贸易活动，带来生丝、书籍，带走铜和海产品。
+  tags: [经济贸易]
+
+- id: japan_kansei_igaku_no_kin
+  year: 1790
+  level: 2
+  title: 宽政异学之禁
+  summary: 松平定信颁布宽政异学之禁，规定昌平坂学问所只许教授朱子学，排除其他学派。
+  tags: [改革运动, 文化思想]
+  figures: [matsudaira_sadanobu]
+
+- id: japan_ino_tadataka_survey_start
+  year: 1800
+  level: 2
+  title: 伊能忠敬开始全国测量
+  summary: 伊能忠敬获幕府许可，开始对日本全国进行系统地理测量，历时17年完成精确地图。
+  tags: [科技发明]
+  figures: [ino_tadataka]
+
+# ── Level 3 ──────────────────────────────────────────────────────────────────
+
+- id: japan_tsunayoshi_shoeireirei
+  year: 1687
+  endYear: 1709
   level: 3
-  title: 田沼意次改革
-  summary: 田沼意次推行重商政策，扩大对外贸易，但因腐败问题引发批评最终失势。
+  title: 生类怜悯令
+  summary: 德川纲吉颁布生类怜悯令，禁止杀生，尤其保护犬类，成为江户时期著名苛政。
+  tags: [改革运动]
+
+- id: japan_new_currency_shotoku
+  year: 1714
+  level: 3
+  title: 正德金银改铸
+  summary: 新井白石主导货币改铸，恢复元禄以前含金量标准，遏制通货膨胀，稳定物价。
+  tags: [经济贸易]
+
+- id: japan_ohashi_aqueduct
+  year: 1720
+  level: 3
+  title: 小石川养生所设立
+  summary: 德川吉宗采纳目安箱投书建议，在江户设立小石川养生所，为贫困病人提供医疗救治。
+  tags: [改革运动, 科技发明]
+
+- id: japan_yoshimune_rice_policy
+  year: 1722
+  level: 3
+  title: 享保米政策
+  summary: 德川吉宗为稳定米价实施上米之制，要求大名献米换取参勤交代缩减，筹措幕府财政。
   tags: [改革运动, 经济贸易]
+
+- id: japan_kumamoto_ikki
+  year: 1723
+  level: 3
+  title: 肥后国百姓一揆
+  summary: 熊本藩内因年贡负担过重爆发百姓一揆，是享保改革期间地方矛盾的典型表现之一。
+  tags: [革命政变]
+
+- id: japan_ogata_koan_prelife
+  year: 1710
+  level: 3
+  title: 汉方医学体系规范化
+  summary: 18世纪初汉方医学流派分化，后世方与古方相互论争，推动医学理论的系统整理。
+  tags: [科技发明]
+
+- id: japan_tokugawa_mitsukuni_mito
+  year: 1700
+  level: 3
+  title: 《大日本史》编纂继续
+  summary: 水户藩主德川光圀发起的《大日本史》编纂在其身后继续进行，奠定水户学根基。
+  tags: [文化思想]
+
+- id: japan_confucian_education_terakoya
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 寺子屋教育普及
+  summary: 江户时期寺子屋（私塾）在各地大量增加，识字率在庶民中不断提高。
+  tags: [文化思想]
+
+- id: japan_kabuki_ichikawa_danjuro
+  year: 1704
+  level: 3
+  title: 市川团十郎初代去世
+  summary: 歌舞伎名优市川团十郎初代遭弟子刺杀身亡，荒事演技传统由历代团十郎继承传续。
+  tags: [文化思想]
+
+- id: japan_chikamatsu_play
+  year: 1703
+  level: 3
+  title: 近松门左卫门《曾根崎情死》
+  summary: 近松门左卫门创作人形净琉璃《曾根崎情死》，以真实事件为题材，开创世话物传统。
+  tags: [文化思想]
+  figures: [chikamatsu_monzaemon]
+
+- id: japan_nishikawa_joken_book
+  year: 1708
+  level: 3
+  title: 西川如见《长崎夜话草》
+  summary: 天文学者西川如见出版《长崎夜话草》，介绍海外地理与贸易知识，促进地理学发展。
+  tags: [文化思想, 科技发明]
+
+- id: japan_genbun_currency
+  year: 1736
+  level: 3
+  title: 元文货币改铸
+  summary: 幕府进行元文货币改铸，降低含金量以增加货币流通量，短期缓解财政压力。
+  tags: [经济贸易]
+
+- id: japan_inaba_ikki
+  year: 1739
+  level: 3
+  title: 奥州各地一揆
+  summary: 享保末年东北地区因年贡政策引发数起百姓一揆，反映农村经济紧张状况。
+  tags: [革命政变]
+
+- id: japan_yoshimune_western_astronomy
+  year: 1740
+  level: 3
+  title: 西洋天文学引入
+  summary: 德川吉宗命令学者翻译荷兰天文历书，引入西洋天文历法，推动历法改革研究。
+  tags: [科技发明]
+
+- id: japan_motoori_norinaga_birth
+  year: 1730
+  level: 3
+  title: 本居宣长出生
+  summary: 国学大家本居宣长出生，其后研究《古事记》，完成《古事记传》，奠定国学基础。
+  tags: [文化思想]
+  figures: [motoori_norinaga]
+
+- id: japan_kamo_mabuchi_kokugaku
+  year: 1736
+  level: 3
+  title: 贺茂真渊确立国学方向
+  summary: 国学者贺茂真渊倡导通过研究万叶集理解日本古代精神，确立国学研究方法论。
+  tags: [文化思想]
+
+- id: japan_ueda_akinari_ugetsu
+  year: 1776
+  level: 3
+  title: 上田秋成《雨月物语》出版
+  summary: 上田秋成出版奇异怪谈小说集《雨月物语》，融合中国文学与日本物语，影响深远。
+  tags: [文化思想]
+
+- id: japan_tanuma_hokkaido_policy
+  year: 1785
+  level: 3
+  title: 田沼意次蝦夷地开发计划
+  summary: 田沼意次派遣调查队赴蝦夷地，拟定开发计划应对俄国南下，因其失势计划中止。
+  tags: [经济贸易]
+  figures: [tanuma_okitsugu]
+
+- id: japan_osaka_dojima_rice
+  year: 1730
+  level: 3
+  title: 堂岛米市场正式公认
+  summary: 幕府正式公认大阪堂岛米市场期货交易，该市场成为当时世界最早的期货交易所之一。
+  tags: [经济贸易]
+
+- id: japan_kabu_nakama_tanuma
+  year: 1770
+  level: 3
+  title: 株仲间制度扩大
+  summary: 田沼意次大规模扩张株仲间制度，收取冥加金充实财政，商人势力因此急速膨胀。
+  tags: [经济贸易]
+  figures: [tanuma_okitsugu]
+
+- id: japan_copper_export_limit
+  year: 1715
+  level: 3
+  title: 海舶互市新例颁布
+  summary: 新井白石颁布海舶互市新例，限制长崎贸易中铜与银的出口量，以防贵金属外流。
+  tags: [经济贸易]
+
+- id: japan_norinaga_kojikiden
+  year: 1798
+  level: 3
+  title: 本居宣长《古事记传》完成
+  summary: 本居宣长历时35年完成《古事记传》44卷，以语言学方法注解古事记，确立国学权威。
+  tags: [文化思想]
+  figures: [motoori_norinaga]
+
+- id: japan_hayashi_shihei_punishment
+  year: 1792
+  level: 3
+  title: 林子平遭幕府处分
+  summary: 幕府以"国家机密外泄"为由没收林子平著作，并将其软禁，宽政改革下言论受压。
+  tags: [改革运动]
+  figures: [hayashi_shihei]
+
+- id: japan_matsudaira_kansei_kyofusho
+  year: 1789
+  level: 3
+  title: 宽政旧里帰农令
+  summary: 松平定信颁布旧里帰农令，鼓励流入江户的农民返乡，以应对城市人口膨胀问题。
+  tags: [改革运动]
+  figures: [matsudaira_sadanobu]
+
+- id: japan_shintei_seikoku
+  year: 1790
+  level: 3
+  title: 人足寄场设立
+  summary: 松平定信在江户设立人足寄场，收容游民进行职业训练，是早期社会救济机构。
+  tags: [改革运动]
+
+- id: japan_russia_laxman
+  year: 1792
+  level: 3
+  title: 俄国使节进入根室
+  summary: 俄国使节拉克斯曼携大黑屋光太夫等漂流民来到根室，是俄日正式接触的最早记录之一。
+  tags: [条约外交]
+
+- id: japan_oranda_shokan_kapitan
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 荷兰商馆长参府制度
+  summary: 出岛荷兰商馆长每年赴江户谒见将军，携带世界情报，成为幕府获取西洋信息渠道。
+  tags: [经济贸易, 条约外交]
+
+- id: japan_hiraga_gennai_activity
+  year: 1760
+  endYear: 1780
+  level: 3
+  title: 平贺源内发明活动
+  summary: 平贺源内从事物产学、西洋画等多领域研究，发明起电器（摩擦起电机），体现兰学应用探索。
+  tags: [科技发明]
+
+- id: japan_osaka_ikki_1789
+  year: 1789
+  level: 3
+  title: 关东各地天明一揆余波
+  summary: 天明饥荒平息后，各地仍有断续一揆发生，地方藩政腐败与年贡负担是主因。
+  tags: [革命政变]
+
+- id: japan_kibyoshi_culture
+  year: 1775
+  endYear: 1800
+  level: 3
+  title: 黄表纸文学流行
+  summary: 黄表纸（附图讽刺小说）在江户书摊广泛流通，山东京传、恋川春町作品受庶民追捧。
+  tags: [文化思想]
+
+- id: japan_utagawa_toyokuni
+  year: 1769
+  level: 3
+  title: 歌川丰国出生
+  summary: 浮世绘画师歌川丰国出生，后创立歌川派，培育歌川广重等弟子，深刻影响后世浮世绘。
+  tags: [文化思想]
+
+- id: japan_santokudo_kabuki
+  year: 1780
+  endYear: 1800
+  level: 3
+  title: 江户三座歌舞伎繁盛
+  summary: 中村座、市村座、森田座三大歌舞伎剧场在江户竞相演出，观众覆盖各阶层市民。
+  tags: [文化思想]
+
+- id: japan_wasan_mathematics
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 和算发展
+  summary: 关孝和创立的和算在18世纪持续发展，算额奉纳于神社文化盛行，展示数学成就。
+  tags: [科技发明]
+
+- id: japan_maeno_ryotaku_rangaku
+  year: 1771
+  level: 3
+  title: 前野良泽参与解体新书翻译
+  summary: 前野良泽与杉田玄白共同翻译荷兰解剖书，前野学识更深，是翻译工作的核心人物。
+  tags: [科技发明, 文化思想]
+
+- id: japan_shibue_chusai_era
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 汉方医学诊疗体系成熟
+  summary: 18世纪江户各地藩医与町医制度逐渐成熟，形成以汉方为主的医疗服务体系。
+  tags: [科技发明]
+
+- id: japan_kofukuji_temple_repair
+  year: 1717
+  level: 3
+  title: 兴福寺修缮工程
+  summary: 幕府拨款修缮奈良兴福寺，该工程是享保改革期间寺社整顿政策的重要组成部分。
+  tags: [文化思想]
+
+- id: japan_jizamurai_decline
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 地侍阶层衰落
+  summary: 江户中期地侍（在地武士）因商品经济冲击与幕藩政策，普遍面临经济困难和身份动摇。
+  tags: [改革运动]
+
+- id: japan_silk_production_kyoto
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 京都西阵织产业繁盛
+  summary: 京都西阵地区丝织业在18世纪持续繁荣，其产品成为上层阶级服饰用料的代表。
+  tags: [经济贸易]
+
+- id: japan_ina_china_commerce
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 中部山地商品经济发展
+  summary: 信州・越后等山间地区生产棉布、绢织物、蜡等商品流通全国，推动地域经济活化。
+  tags: [经济贸易]
+
+- id: japan_daimyo_financial_strain
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 诸藩财政困难加深
+  summary: 参勤交代负担、奢侈消费与商品经济发展导致多数藩财政困窘，借债于商人现象普遍。
+  tags: [经济贸易]
+
+- id: japan_ikeda_mitsumasa_okayama
+  year: 1700
+  level: 3
+  title: 藩政改革各地推行
+  summary: 18世纪初多藩相继推行藩政改革，整顿财政、推广产业，成为后来幕末诸藩改革的先例。
+  tags: [改革运动]
+
+- id: japan_tenmei_ikki_national
+  year: 1783
+  endYear: 1787
+  level: 3
+  title: 天明一揆全国爆发
+  summary: 天明饥荒期间，全国各地百姓一揆与打毁事件达到幕府历史高峰，幕藩体制受严峻考验。
+  tags: [革命政变]
+
+- id: japan_katsushika_hokusai_debut
+  year: 1779
+  level: 3
+  title: 葛饰北斋画师出道
+  summary: 葛饰北斋以胜川春朗名义发表浮世绘处女作，其后成为日本史上最具影响力的画师之一。
+  tags: [文化思想]
+  figures: [katsushika_hokusai]
+
+- id: japan_kitagawa_utamaro_debut
+  year: 1788
+  level: 3
+  title: 喜多川歌麿美人画全盛
+  summary: 喜多川歌麿出版《画本虫选》与美人大首绘，确立其在浮世绘美人画领域的宗师地位。
+  tags: [文化思想]
+  figures: [kitagawa_utamaro]
+
+- id: japan_tsuga_teisho_fiction
+  year: 1750
+  endYear: 1780
+  level: 3
+  title: 読本小説兴起
+  summary: 都贺庭鐘等人创作読本（读物），以中国白话小说为蓝本，推动日本叙事文学发展。
+  tags: [文化思想]
+
+- id: japan_kokubunji_excavation
+  year: 1730
+  level: 3
+  title: 古代遗址调查风气兴起
+  summary: 国学兴盛背景下，学者开始系统调查各地国分寺遗址，金石学与考古意识逐渐萌发。
+  tags: [文化思想]
+
+- id: japan_salt_monopoly_policy
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 各藩专卖制度推行
+  summary: 各藩相继设立盐、蜡、棉等专卖制度，通过垄断贩卖充实藩财政，限制自由商业。
+  tags: [经济贸易]
+
+- id: japan_jukichi_pacific_castaway
+  year: 1793
+  level: 3
+  title: 漂流民与西洋接触
+  summary: 多起日本渔民漂流至北太平洋被俄美船只救助的事件，带来民间层面的西洋接触经验。
+  tags: [条约外交]
+
+- id: japan_watarai_shinto_reform
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 神道学说复兴
+  summary: 国学与吉田神道、伊势神道各流派在18世纪重新论争，推动神道理论整理与复兴。
+  tags: [文化思想]
+
+- id: japan_kaga_han_arts
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 加贺藩文化繁荣
+  summary: 加贺藩（金泽）以百万石财力培育能乐、香道、陶艺等传统文化，形成"加贺百万石文化"。
+  tags: [文化思想]
+
+- id: japan_bureta_sankin
+  year: 1720
+  endYear: 1760
+  level: 3
+  title: 参勤交代道路整备
+  summary: 幕府与各藩因参勤交代需要整备五街道，东海道、中山道等沿线宿场町得到发展。
+  tags: [经济贸易]
+
+- id: japan_sendai_han_famine
+  year: 1783
+  level: 3
+  title: 仙台藩天明饥荒惨状
+  summary: 仙台藩在天明饥荒中损失极为惨重，各方记载死者众多，藩政长期受此影响。
+  tags: [改革运动]
+
+- id: japan_mito_gakumon
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 水户学体系形成
+  summary: 水户藩学者整理大日本史编纂成果，形成以尊王论为核心的水户学，影响后来尊攘运动。
+  tags: [文化思想]
+
+- id: japan_ryukyu_tribute
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 琉球王国朝贡贸易维持
+  summary: 琉球在萨摩藩支配下对清朝维持朝贡关系，同时向幕府进献，处于双重从属状态。
+  tags: [经济贸易, 条约外交]
+
+- id: japan_tosa_han_kochi
+  year: 1759
+  level: 3
+  title: 土佐藩山内氏藩政整顿
+  summary: 土佐藩推行改革整顿财政，上士与下士的身份矛盾制度化，埋下幕末倒幕运动的社会基础。
+  tags: [改革运动]
+
+- id: japan_kansei_literary_ban
+  year: 1791
+  level: 3
+  title: 宽政出版取缔令
+  summary: 松平定信对洒落本作者山东京传实施处罚，出版商蔦屋重三郎受罚，言论出版受到管控。
+  tags: [改革运动, 文化思想]
+
+- id: japan_nagasaki_trade_regulation
+  year: 1790
+  level: 3
+  title: 长崎贸易额限制强化
+  summary: 幕府进一步限制长崎对荷兰与中国的贸易额度，防止贵金属外流，锁国体制持续强化。
+  tags: [经济贸易]
+
+- id: japan_ino_tadataka_training
+  year: 1794
+  level: 3
+  title: 伊能忠敬拜师高桥至时
+  summary: 伊能忠敬50岁时拜天文学者高桥至时为师，学习西洋天文测量技术，为全国测量做准备。
+  tags: [科技发明]
+  figures: [ino_tadataka]
+
+- id: japan_shingaku_movement
+  year: 1729
+  level: 3
+  title: 心学运动兴起
+  summary: 石田梅岩创立心学，融合儒、佛、神道思想，向商人宣讲诚实与节俭的道德规范。
+  tags: [文化思想]
+
+- id: japan_watarai_okuni
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 诸藩医学馆设立
+  summary: 各大藩相继设立藩医学馆，培养汉方医生，部分引入兰学课程，形成各具特色医学传统。
+  tags: [科技发明]
+
+- id: japan_edozu_urban_planning
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 江户城市人口增长
+  summary: 18世纪江户人口突破百万，成为当时世界最大城市之一，城市消费文化高度发达。
+  tags: [经济贸易]
+
+- id: japan_chikamatsu_death
+  year: 1725
+  level: 3
+  title: 近松门左卫门去世
+  summary: 净琉璃・歌舞伎剧作家近松门左卫门去世，其约100部作品奠定日本传统戏剧文学基础。
+  tags: [文化思想]
+  figures: [chikamatsu_monzaemon]
+
+- id: japan_sendai_han_medicine
+  year: 1750
+  level: 3
+  title: 仙台藩兰学医学引入
+  summary: 仙台藩大槻玄泽等兰学医师兴起，将西洋医学知识传播至东北地区，扩大兰学影响。
+  tags: [科技发明]
+
+- id: japan_nihonbashi_commerce
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 日本桥商业中心繁荣
+  summary: 江户日本桥作为五街道起点与最大商业地区，三井越后屋等大商家汇聚，零售业兴盛。
+  tags: [经济贸易]
+
+- id: japan_nishiki_print_technique
+  year: 1765
+  level: 3
+  title: 锦绘（多色浮世绘）技术确立
+  summary: 铃木春信开发多色套版印刷锦绘技术，使浮世绘得以呈现丰富色彩，引发浮世绘革命。
+  tags: [科技发明, 文化思想]
+
+- id: japan_ryoanji_rock_garden
+  year: 1797
+  level: 3
+  title: 龙安寺石庭修缮
+  summary: 京都龙安寺枯山水庭园经历修缮维护，江户后期庭园文化在大名与富商间持续流行。
+  tags: [文化思想]
+
+- id: japan_atsuta_shrine_festival
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 尾张热田祭典制度化
+  summary: 名古屋热田神宫祭典在尾张藩支持下规范化，带动地区物产交流与民间文化活动。
+  tags: [文化思想]
+
+- id: japan_kaiserliche_fauna_survey
+  year: 1775
+  endYear: 1800
+  level: 3
+  title: 本草学物产调查
+  summary: 平贺源内推动物产会风气，全国各地博物学者收集动植物标本，本草学研究系统化。
+  tags: [科技发明]
+
+- id: japan_osaka_wealthy_merchant
+  year: 1700
+  endYear: 1800
+  level: 3
+  title: 大阪豪商文化
+  summary: 大阪鸿池、住友等豪商阶层文化兴盛，资助戏剧、茶道、连歌等艺术活动。
+  tags: [经济贸易, 文化思想]

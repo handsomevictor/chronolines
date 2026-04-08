@@ -1,4 +1,25 @@
-- id: opium_war_1
+# 中国 1800-1900 历史事件
+# 涵盖嘉庆、道光、咸丰、同治、光绪朝
+
+# ===== Level 1 事件 =====
+
+- id: china_heshen_fall
+  year: 1799
+  level: 1
+  title: 和珅被赐死、抄家
+  summary: 乾隆帝驾崩后，嘉庆帝立即逮捕和珅，列二十大罪赐其自尽，抄没巨额家产。
+  tags: [人物, 革命政变]
+  figures: [heshen, jiaqing]
+
+- id: china_white_lotus_end
+  year: 1804
+  level: 1
+  title: 白莲教起义平定
+  summary: 历时近九年的白莲教起义被清军镇压，耗费清廷约两亿两白银，财政大为损耗。
+  tags: [革命政变]
+  figures: [jiaqing]
+
+- id: china_opium_war_1
   year: 1840
   endYear: 1842
   level: 1
@@ -8,47 +29,708 @@
   related: [uk_opium_war]
   figures: [linzexu, daoguang]
 
+- id: china_nanjing_treaty
+  year: 1842
+  level: 1
+  title: 《南京条约》签订
+  summary: 中英签订《南京条约》，开放广州等五口通商，割让香港岛，赔款两千一百万银元。
+  tags: [条约外交]
+  figures: [daoguang, li_hongzhang]
+  related: [uk_opium_war]
+
 - id: china_taiping
-  year: 1850
+  year: 1851
   endYear: 1864
   level: 1
   title: 太平天国运动
-  summary: 洪秀全建立太平天国，与清廷长期对抗，各方记载伤亡人数存在差异。
+  summary: 洪秀全建立太平天国，定都天京，与清廷长期对抗，各方记载伤亡数字存在差异。
   tags: [革命政变]
-  figures: [hong_xiuquan]
+  figures: [hong_xiuquan, zeng_guofan, li_hongzhang]
 
-- id: opium_war_2
+- id: china_opium_war_2
   year: 1856
   endYear: 1860
   level: 1
   title: 第二次鸦片战争
-  summary: 英法联军攻入北京，火烧圆明园，清廷签订《北京条约》。
+  summary: 英法联军攻入北京，火烧圆明园，清廷签订《北京条约》割让九龙半岛。
   tags: [战争, 条约外交]
   related: [uk_second_opium, france_second_opium]
+  figures: [xianfeng]
+
+- id: china_beijing_treaty
+  year: 1860
+  level: 1
+  title: 《北京条约》签订
+  summary: 中英、中法、中俄分别签订《北京条约》，割让九龙、开放天津，赔款大幅增加。
+  tags: [条约外交]
+  figures: [xianfeng]
 
 - id: china_self_strengthening
   year: 1861
   endYear: 1895
-  level: 2
+  level: 1
   title: 洋务运动
   summary: 清廷推行洋务运动，引进西方技术兴办军工、民用企业，建立近代海军。
   tags: [改革运动, 科技发明]
-  figures: [zeng_guofan, li_hongzhang]
+  figures: [zeng_guofan, li_hongzhang, zuo_zongtang]
 
 - id: china_sino_japanese_war
   year: 1894
   endYear: 1895
   level: 1
   title: 甲午战争
-  summary: 清朝与日本因朝鲜问题开战，清军战败，签订《马关条约》割让台湾。
+  summary: 清朝与日本因朝鲜问题开战，清军战败，签订《马关条约》割让台湾及辽东半岛。
   tags: [战争, 条约外交]
   related: [japan_meiji_expansion]
   figures: [li_hongzhang]
 
+- id: china_shimonoseki_treaty
+  year: 1895
+  level: 1
+  title: 《马关条约》签订
+  summary: 中日签订《马关条约》，割让台湾、澎湖列岛及辽东半岛，赔款二亿两白银。
+  tags: [条约外交]
+  figures: [li_hongzhang]
+
 - id: china_hundred_days
   year: 1898
-  level: 2
+  level: 1
   title: 戊戌变法
-  summary: 光绪帝支持康有为等推行变法，历时103天后被慈禧太后终止。
+  summary: 光绪帝支持康有为等推行变法，历时103天后被慈禧太后发动政变终止。
   tags: [改革运动]
-  figures: [guangxu, kang_youwei]
+  figures: [guangxu, kang_youwei, liang_qichao, cixi]
+
+- id: china_yihetuan
+  year: 1899
+  endYear: 1901
+  level: 1
+  title: 义和团运动
+  summary: 义和团在北方各地兴起，攻击教堂与外国人，清廷一度支持，引发八国联军干涉。
+  tags: [革命政变, 战争]
+  figures: [cixi]
+
+# ===== Level 2 事件 =====
+
+- id: china_jiaqing_tianli_uprising
+  year: 1813
+  level: 2
+  title: 天理教攻入紫禁城
+  summary: 天理教信徒趁嘉庆帝出巡，攻入紫禁城，被守军击退，震动朝廷。
+  tags: [革命政变]
+  figures: [jiaqing]
+
+- id: china_opium_ban_daoguang
+  year: 1838
+  level: 2
+  title: 道光帝严令禁烟
+  summary: 道光帝任命林则徐为钦差大臣赴广东查禁鸦片，开始严厉禁烟行动。
+  tags: [改革运动]
+  figures: [daoguang, linzexu]
+
+- id: china_humen_burn_opium
+  year: 1839
+  level: 2
+  title: 虎门销烟
+  summary: 林则徐在广东虎门收缴英美商人鸦片共约两百余万斤，公开销毁，中英关系急剧恶化。
+  tags: [改革运动, 经济贸易]
+  figures: [linzexu]
+
+- id: china_wangxia_treaty
+  year: 1844
+  level: 2
+  title: 《望厦条约》签订
+  summary: 中美签订《望厦条约》，美国获得领事裁判权及最惠国待遇，清朝对外开放扩大。
+  tags: [条约外交]
+
+- id: china_huangpu_treaty
+  year: 1844
+  level: 2
+  title: 《黄埔条约》签订
+  summary: 中法签订《黄埔条约》，法国获得与英美相同的领事裁判权及贸易权利。
+  tags: [条约外交]
+
+- id: china_tianjin_treaty
+  year: 1858
+  level: 2
+  title: 《天津条约》签订
+  summary: 清廷与英、法、俄、美分别签订《天津条约》，进一步扩大通商口岸和外交权利。
+  tags: [条约外交]
+
+- id: china_yuanmingyuan_burning
+  year: 1860
+  level: 2
+  title: 英法联军火烧圆明园
+  summary: 英法联军占领北京后火烧圆明园，大量文物遭破坏或被掠走，建筑群被毁。
+  tags: [战争, 文化思想]
+
+- id: china_zongli_yamen
+  year: 1861
+  level: 2
+  title: 总理各国事务衙门成立
+  summary: 清廷设立总理各国事务衙门，专门处理对外事务，为中国近代外交机构之始。
+  tags: [改革运动, 条约外交]
+  figures: [zeng_guofan]
+
+- id: china_jiangnan_arsenal
+  year: 1865
+  level: 2
+  title: 江南制造总局创建
+  summary: 李鸿章在上海创建江南制造总局，引进西方机器设备，生产枪炮弹药舰船。
+  tags: [科技发明, 改革运动]
+  figures: [li_hongzhang]
+
+- id: china_fuzhou_shipyard
+  year: 1866
+  level: 2
+  title: 福州船政局创办
+  summary: 左宗棠创办福州船政局，建造近代军舰，并附设船政学堂培养近代海军人才。
+  tags: [科技发明, 改革运动]
+  figures: [zuo_zongtang]
+
+- id: china_taiping_fall
+  year: 1864
+  level: 2
+  title: 太平天国灭亡
+  summary: 湘军攻破天京（南京），洪秀全已死，太平天国政权彻底覆灭，历时14年。
+  tags: [革命政变]
+  figures: [zeng_guofan, hong_xiuquan]
+
+- id: china_nian_rebellion
+  year: 1851
+  endYear: 1868
+  level: 2
+  title: 捻军起义
+  summary: 淮河流域捻军长期活动，与太平天国互相呼应，至同治年间被李鸿章最终平定。
+  tags: [革命政变]
+  figures: [li_hongzhang]
+
+- id: china_yunnan_muslim_uprising
+  year: 1856
+  endYear: 1873
+  level: 2
+  title: 云南回民起义
+  summary: 杜文秀领导云南回民起义，建立大理政权，清军历时十余年平定，各方记载伤亡存在差异。
+  tags: [革命政变]
+
+- id: china_shaangansu_muslim_uprising
+  year: 1862
+  endYear: 1873
+  level: 2
+  title: 陕甘回民起义
+  summary: 陕西、甘肃、宁夏回民大规模起义，清军在左宗棠率领下历时十年平定。
+  tags: [革命政变]
+  figures: [zuo_zongtang]
+
+- id: china_zuo_xinjiang
+  year: 1876
+  endYear: 1878
+  level: 2
+  title: 左宗棠收复新疆
+  summary: 左宗棠率军西征，击败已占据新疆的阿古柏政权，将新疆重新纳入清朝版图。
+  tags: [战争]
+  figures: [zuo_zongtang]
+
+- id: china_xinjiang_province
+  year: 1884
+  level: 2
+  title: 新疆建省
+  summary: 清廷将新疆改设为省，刘锦棠为首任巡抚，改变此前以伊犁将军统辖的体制。
+  tags: [改革运动]
+  figures: [zuo_zongtang]
+
+- id: china_sino_french_war
+  year: 1884
+  endYear: 1885
+  level: 2
+  title: 中法战争
+  summary: 法国进攻越南与中国，双方在陆海两线均有胜负，签订《中法新约》后法国获越南保护权。
+  tags: [战争, 条约外交]
+  figures: [zuo_zongtang, liu_yongfu]
+
+- id: china_northern_fleet
+  year: 1888
+  level: 2
+  title: 北洋海军正式成军
+  summary: 北洋舰队在李鸿章主持下于威海卫正式建军，拥有"定远""镇远"等主力铁甲舰。
+  tags: [科技发明, 改革运动]
+  figures: [li_hongzhang]
+
+- id: china_taiwan_guerrilla_resist
+  year: 1895
+  level: 2
+  title: 台湾民主国抗日
+  summary: 台湾绅民成立台湾民主国，由唐景崧、刘永福领导抵抗日本接收，历时数月后失败。
+  tags: [战争, 革命政变]
+  figures: [liu_yongfu]
+
+- id: china_triple_intervention
+  year: 1895
+  level: 2
+  title: 三国干涉还辽
+  summary: 俄法德三国联合向日本施压，迫使日本归还辽东半岛，但清朝需额外付款赎回。
+  tags: [条约外交]
+
+- id: china_kang_youwei_memorial
+  year: 1895
+  level: 2
+  title: 公车上书
+  summary: 康有为联合各省举人在北京联署上书，请求拒绝和约、变法图强，参与者达千余人。
+  tags: [改革运动]
+  figures: [kang_youwei, liang_qichao]
+
+- id: china_treaty_ports_expand
+  year: 1842
+  endYear: 1900
+  level: 2
+  title: 通商口岸体系持续扩大
+  summary: 历次条约使中国开放口岸从五个扩展至数十个，形成租界与通商口岸并存的双轨体系。
+  tags: [条约外交, 经济贸易]
+
+- id: china_yamen_school_tongwenguan
+  year: 1862
+  level: 2
+  title: 同文馆创建
+  summary: 清廷在北京设立同文馆，教授外语与西方知识，为中国近代外语教育的开端。
+  tags: [改革运动, 科技发明]
+
+- id: china_student_study_abroad
+  year: 1872
+  endYear: 1875
+  level: 2
+  title: 幼童留美计划
+  summary: 清廷派遣120名幼童赴美留学，由容闳主持，为中国近代派遣官费留学生的首批。
+  tags: [改革运动, 文化思想]
+  figures: [li_hongzhang]
+
+- id: china_tianjin_massacre
+  year: 1870
+  level: 2
+  title: 天津教案
+  summary: 天津民众与法国人冲突，导致大批外国传教士及中国教民死伤，清廷被迫赔偿道歉。
+  tags: [条约外交]
+  figures: [zeng_guofan]
+
+# ===== Level 3 事件 =====
+
+- id: china_jiaqing_death
+  year: 1820
+  level: 3
+  title: 嘉庆帝驾崩
+  summary: 嘉庆帝在热河行宫突然驾崩，道光帝继位，为清朝首位在北京以外去世的皇帝。
+  tags: [王朝更迭]
+  figures: [jiaqing]
+
+- id: china_daoguang_ascends
+  year: 1820
+  level: 3
+  title: 道光帝继位
+  summary: 爱新觉罗旻宁继位，年号道光，在位期间清朝内忧外患日益严峻。
+  tags: [王朝更迭]
+  figures: [daoguang]
+
+- id: china_opium_import_grows
+  year: 1820
+  endYear: 1839
+  level: 3
+  title: 鸦片进口量急剧增加
+  summary: 英国东印度公司从印度输入中国的鸦片从每年数千箱增至数万箱，白银大量外流。
+  tags: [经济贸易]
+
+- id: china_humen_fort_destroyed
+  year: 1841
+  level: 3
+  title: 虎门炮台失守
+  summary: 英军炮击广东虎门炮台，守将关天培战死，英军顺利进入珠江，广州门户洞开。
+  tags: [战争]
+  figures: [linzexu]
+
+- id: china_shashi_treaty_ports
+  year: 1842
+  level: 3
+  title: 五口通商开放
+  summary: 依据《南京条约》，广州、厦门、福州、宁波、上海五口对外正式开放通商。
+  tags: [条约外交, 经济贸易]
+
+- id: china_xianfeng_ascends
+  year: 1850
+  level: 3
+  title: 咸丰帝继位
+  summary: 道光帝驾崩，皇四子奕詝继位，是为咸丰帝，在位期间内忧外患达顶点。
+  tags: [王朝更迭]
+  figures: [xianfeng]
+
+- id: china_daoguang_death
+  year: 1850
+  level: 3
+  title: 道光帝驾崩
+  summary: 道光帝在位30年后驾崩，终年68岁，其在位期间清朝遭受第一次鸦片战争失败。
+  tags: [王朝更迭]
+  figures: [daoguang]
+
+- id: china_taiping_jintian
+  year: 1851
+  level: 3
+  title: 太平天国金田起义
+  summary: 洪秀全在广西金田村宣布起义，建号太平天国，拜上帝会众追随，起义正式爆发。
+  tags: [革命政变]
+  figures: [hong_xiuquan]
+
+- id: china_taiping_nanjing_capital
+  year: 1853
+  level: 3
+  title: 太平天国定都天京
+  summary: 太平军攻占南京，改名天京，定为太平天国首都，颁布《天朝田亩制度》。
+  tags: [革命政变]
+  figures: [hong_xiuquan]
+
+- id: china_taiping_tianjing_incident
+  year: 1856
+  level: 3
+  title: 天京事变
+  summary: 太平天国内部东王杨秀清、北王韦昌辉相继被杀，翼王石达开出走，政权由盛转衰。
+  tags: [革命政变]
+  figures: [hong_xiuquan]
+
+- id: china_xianfeng_flee_beijing
+  year: 1860
+  level: 3
+  title: 咸丰帝出走热河
+  summary: 英法联军进逼北京，咸丰帝携皇后嫔妃出走热河避难，由此未能直接处置危机。
+  tags: [战争]
+  figures: [xianfeng, cixi]
+
+- id: china_xianfeng_death
+  year: 1861
+  level: 3
+  title: 咸丰帝驾崩于热河
+  summary: 咸丰帝在热河行宫驾崩，年仅31岁，皇子载淳继位，是为同治帝。
+  tags: [王朝更迭]
+  figures: [xianfeng, cixi]
+
+- id: china_cixi_xinyou_coup
+  year: 1861
+  level: 3
+  title: 辛酉政变
+  summary: 慈禧太后与恭亲王奕訢联手，推翻热河顾命八大臣，慈禧开始垂帘听政。
+  tags: [革命政变]
+  figures: [cixi]
+
+- id: china_tongzhi_ascends
+  year: 1861
+  level: 3
+  title: 同治帝继位
+  summary: 载淳继位，年号同治，由慈安太后与慈禧太后垂帘听政，恭亲王辅政。
+  tags: [王朝更迭]
+  figures: [cixi]
+
+- id: china_ever_victorious_army
+  year: 1862
+  endYear: 1864
+  level: 3
+  title: 常胜军参与镇压太平天国
+  summary: 洋枪队改组为常胜军，先后由华尔、戈登（"中国戈登"）指挥，协助清军作战。
+  tags: [战争]
+
+- id: china_li_hongzhang_huai_army
+  year: 1862
+  level: 3
+  title: 李鸿章创建淮军
+  summary: 李鸿章在曾国藩支持下在安徽组建淮军，装备洋枪，成为镇压太平天国的重要力量。
+  tags: [战争, 改革运动]
+  figures: [li_hongzhang, zeng_guofan]
+
+- id: china_zeng_guofan_death
+  year: 1872
+  level: 3
+  title: 曾国藩逝世
+  summary: 曾国藩在南京两江总督任上病逝，为晚清最具影响力的汉族官员之一。
+  tags: [人物]
+  figures: [zeng_guofan]
+
+- id: china_tongzhi_death
+  year: 1875
+  level: 3
+  title: 同治帝驾崩
+  summary: 同治帝驾崩，年仅19岁，无子，慈禧太后择其侄载湉继位，是为光绪帝。
+  tags: [王朝更迭]
+  figures: [cixi]
+
+- id: china_guangxu_ascends
+  year: 1875
+  level: 3
+  title: 光绪帝继位
+  summary: 光绪帝即位，年仅四岁，慈禧太后继续垂帘听政，掌握清廷最高权力。
+  tags: [王朝更迭]
+  figures: [guangxu, cixi]
+
+- id: china_chefoo_convention
+  year: 1876
+  level: 3
+  title: 《烟台条约》签订
+  summary: 中英就马嘉理案签订《烟台条约》，增开口岸，英国获进一步通商及司法特权。
+  tags: [条约外交]
+  figures: [li_hongzhang]
+
+- id: china_ili_treaty
+  year: 1881
+  level: 3
+  title: 《伊犁条约》签订
+  summary: 清俄签订《伊犁条约》，俄国归还伊犁，但保留部分领土及贸易特权，清朝支付赔款。
+  tags: [条约外交]
+  figures: [zuo_zongtang, li_hongzhang]
+
+- id: china_li_hongzhang_foreign_affairs
+  year: 1870
+  endYear: 1895
+  level: 3
+  title: 李鸿章主持外交事务
+  summary: 李鸿章主持北洋通商大臣职务期间，代表清廷处理对外交涉，签署多项条约。
+  tags: [条约外交]
+  figures: [li_hongzhang]
+
+- id: china_rehe_province_reform
+  year: 1877
+  level: 3
+  title: 清廷整顿吏治
+  summary: 光绪初年，慈禧太后与翁同龢等力图整顿吏治，多名贪腐官员被查处。
+  tags: [改革运动]
+
+- id: china_sino_french_halong
+  year: 1884
+  level: 3
+  title: 马江海战
+  summary: 中法战争中，法国舰队在福州马江突袭中国福建水师，福建水师几乎全军覆没。
+  tags: [战争]
+  figures: [zuo_zongtang]
+
+- id: china_zhennan_pass_victory
+  year: 1885
+  level: 3
+  title: 镇南关大捷
+  summary: 冯子材率军在广西镇南关击败法军，为中法战争中清军少数重大胜利之一。
+  tags: [战争]
+
+- id: china_sino_french_treaty
+  year: 1885
+  level: 3
+  title: 《中法新约》签订
+  summary: 中法签订《中法新约》，法国取得越南宗主权，清朝放弃对越南的藩属关系。
+  tags: [条约外交]
+
+- id: china_korea_suzerainty
+  year: 1882
+  endYear: 1894
+  level: 3
+  title: 清朝与朝鲜宗主关系强化
+  summary: 清廷派袁世凯驻朝，强化对朝鲜的宗主权，为日后甲午战争的导火索之一。
+  tags: [条约外交]
+  figures: [yuan_shikai]
+
+- id: china_yalu_battle
+  year: 1894
+  level: 3
+  title: 黄海海战
+  summary: 甲午战争中中日两国海军在黄海交战，北洋舰队主力受重创，制海权易手。
+  tags: [战争]
+  figures: [li_hongzhang]
+
+- id: china_weihaiwei_fall
+  year: 1895
+  level: 3
+  title: 威海卫失守
+  summary: 日军陆海夹击威海卫基地，北洋舰队提督丁汝昌自杀，北洋海军全军覆没。
+  tags: [战争]
+  figures: [li_hongzhang]
+
+- id: china_wuxu_six_gentlemen
+  year: 1898
+  level: 3
+  title: 戊戌六君子被杀
+  summary: 慈禧太后发动政变后，谭嗣同等六位变法人士被捕处斩，史称"戊戌六君子"。
+  tags: [革命政变]
+  figures: [cixi, guangxu]
+
+- id: china_guangxu_imprisoned
+  year: 1898
+  level: 3
+  title: 光绪帝被软禁
+  summary: 戊戌政变后，光绪帝被慈禧太后软禁于瀛台，政权完全回到慈禧手中。
+  tags: [革命政变]
+  figures: [guangxu, cixi]
+
+- id: china_kang_youwei_exile
+  year: 1898
+  level: 3
+  title: 康有为、梁启超出走海外
+  summary: 戊戌政变后康有为、梁启超分别逃往英国和日本，继续在海外从事保皇运动。
+  tags: [革命政变]
+  figures: [kang_youwei, liang_qichao]
+
+- id: china_leasehold_scramble
+  year: 1897
+  endYear: 1899
+  level: 3
+  title: 列强租借港湾
+  summary: 德国租借胶州湾、俄国租借旅顺大连、英国租借威海卫及九龙新界、法国租借广州湾。
+  tags: [条约外交, 殖民扩张]
+
+- id: china_railway_concessions
+  year: 1895
+  endYear: 1900
+  level: 3
+  title: 列强争夺铁路修建权
+  summary: 甲午战后列强纷纷获取在华修筑铁路特权，形成所谓"铁路利权"的竞争局面。
+  tags: [经济贸易, 殖民扩张]
+
+- id: china_foreign_missions_expand
+  year: 1860
+  endYear: 1900
+  level: 3
+  title: 传教士在华活动扩大
+  summary: 《北京条约》后外国传教士获准深入内地，各教会扩大建堂办学，引发民教纠纷。
+  tags: [文化思想]
+
+- id: china_shanghai_foreign_settlements
+  year: 1845
+  endYear: 1900
+  level: 3
+  title: 上海租界发展
+  summary: 上海英美租界与法租界相继建立并持续扩张，形成独立于清朝行政管辖的城市区域。
+  tags: [殖民扩张, 经济贸易]
+
+- id: china_telegraphs_expand
+  year: 1881
+  level: 3
+  title: 中国电报线路开通
+  summary: 李鸿章主持铺设中国首条陆路电报线津沪线，近代通信事业开始起步。
+  tags: [科技发明]
+  figures: [li_hongzhang]
+
+- id: china_first_railway
+  year: 1881
+  level: 3
+  title: 唐胥铁路建成
+  summary: 中国第一条由中国人自建的铁路唐山至胥各庄段建成通车，用于运煤。
+  tags: [科技发明]
+  figures: [li_hongzhang]
+
+- id: china_daoguang_opium_ban_1820
+  year: 1821
+  level: 3
+  title: 道光帝颁布鸦片严禁令
+  summary: 道光帝继位后颁布鸦片禁令，但因执行不力，走私规模仍持续扩大。
+  tags: [改革运动]
+  figures: [daoguang]
+
+- id: china_linzexu_exile
+  year: 1841
+  level: 3
+  title: 林则徐被革职发配
+  summary: 第一次鸦片战争失利后，林则徐被道光帝革职，流放新疆伊犁，后遇赦召回。
+  tags: [人物]
+  figures: [linzexu, daoguang]
+
+- id: china_gong_zizhen_poetry
+  year: 1839
+  level: 3
+  title: 龚自珍《己亥杂诗》出版
+  summary: 龚自珍创作《己亥杂诗》315首，以诗歌形式批评清朝政治，呼唤社会变革。
+  tags: [文化思想]
+  figures: [gong_zizhen]
+
+- id: china_li_hongzhang_born
+  year: 1823
+  level: 3
+  title: 李鸿章出生
+  summary: 李鸿章生于安徽合肥，后成为洋务运动代表人物，参与签订多项近代条约。
+  tags: [人物]
+  figures: [li_hongzhang]
+
+- id: china_zeng_guofan_xiangnan
+  year: 1853
+  level: 3
+  title: 曾国藩创建湘军
+  summary: 曾国藩在湖南组建湘军，以团练为基础，以儒家纲纪为凝聚，成为镇压太平天国主力。
+  tags: [战争, 改革运动]
+  figures: [zeng_guofan]
+
+- id: china_yuan_shikai_tianjin_small_station
+  year: 1895
+  level: 3
+  title: 袁世凯编练新建陆军
+  summary: 袁世凯在天津小站编练新建陆军，引入西式训练与武器，成为清末新军重要一支。
+  tags: [改革运动]
+  figures: [yuan_shikai]
+
+- id: china_xue_fucheng_yan_fu_west_learning
+  year: 1895
+  endYear: 1900
+  level: 3
+  title: 严复等翻译西学著作
+  summary: 严复翻译赫胥黎《天演论》等西方著作，将进化论与社会达尔文主义引入中国思想界。
+  tags: [文化思想]
+  figures: [yan_fu]
+
+- id: china_guang_xuehui_founded
+  year: 1894
+  level: 3
+  title: 兴中会成立
+  summary: 孙中山在檀香山创建兴中会，以"驱除鞑虏、恢复中华"为宗旨，为革命团体之始。
+  tags: [革命政变]
+  figures: [sun_yatsen]
+
+- id: china_guangzhou_uprising_fail
+  year: 1895
+  level: 3
+  title: 广州起义失败
+  summary: 兴中会策划广州起义，事泄失败，陆皓东等人被捕处死，孙中山出走海外。
+  tags: [革命政变]
+  figures: [sun_yatsen]
+
+- id: china_cixi_return_power
+  year: 1898
+  level: 3
+  title: 慈禧太后重新训政
+  summary: 慈禧发动政变恢复训政后，将主要国政收归己手，光绪帝仅保留名义上的帝位。
+  tags: [革命政变]
+  figures: [cixi]
+
+- id: china_luoyang_railway_proposed
+  year: 1898
+  level: 3
+  title: 戊戌变法期间铁路提案
+  summary: 维新运动期间康有为等提出大规模修建铁路计划，但因政变未能实施。
+  tags: [改革运动]
+  figures: [kang_youwei]
+
+- id: china_academy_reform_attempt
+  year: 1898
+  level: 3
+  title: 废除八股取士
+  summary: 戊戌变法期间，光绪帝下令废除八股文，改试策论，但政变后被取消。
+  tags: [改革运动]
+  figures: [guangxu]
+
+- id: china_boxer_shandong_origins
+  year: 1899
+  level: 3
+  title: 义和团在山东兴起
+  summary: 义和拳在山东、直隶一带以"扶清灭洋"为口号兴起，屡与外国传教士及教民冲突。
+  tags: [革命政变]
+
+- id: china_tianjin_concessions_map
+  year: 1860
+  endYear: 1900
+  level: 3
+  title: 天津各国租界陆续建立
+  summary: 第二次鸦片战争后，英、法、美、德、日、俄等国在天津设立租界，形成特殊城市格局。
+  tags: [殖民扩张, 条约外交]
+
+- id: china_qing_navy_purchase
+  year: 1885
+  endYear: 1888
+  level: 3
+  title: 北洋海军购置铁甲舰
+  summary: 清廷向德国等国购置"定远""镇远"等巨型铁甲舰，编入北洋舰队，是当时远东最强战舰。
+  tags: [科技发明]
+  figures: [li_hongzhang]

@@ -3,27 +3,648 @@ tracks:
     name: 中国
     color: "#c0392b"
     order: 1
+    rulers:
+      - name: 康熙帝（爱新觉罗·玄烨）
+        title: 清朝皇帝
+        startYear: 1661
+        endYear: 1722
+      - name: 雍正帝（爱新觉罗·胤禛）
+        title: 清朝皇帝
+        startYear: 1722
+        endYear: 1735
+      - name: 乾隆帝（爱新觉罗·弘历）
+        title: 清朝皇帝
+        startYear: 1735
+        endYear: 1796
+      - name: 嘉庆帝（爱新觉罗·颙琰）
+        title: 清朝皇帝
+        startYear: 1796
+        endYear: 1820
+      - name: 道光帝（爱新觉罗·旻宁）
+        title: 清朝皇帝
+        startYear: 1820
+        endYear: 1850
+      - name: 咸丰帝（爱新觉罗·奕詝）
+        title: 清朝皇帝
+        startYear: 1850
+        endYear: 1861
+      - name: 同治帝（爱新觉罗·载淳）
+        title: 清朝皇帝（慈禧太后摄政）
+        startYear: 1861
+        endYear: 1875
+      - name: 光绪帝（爱新觉罗·载湉）
+        title: 清朝皇帝（慈禧太后垂帘听政）
+        startYear: 1875
+        endYear: 1908
+      - name: 宣统帝（爱新觉罗·溥仪）
+        title: 清朝皇帝
+        startYear: 1908
+        endYear: 1912
+      - name: 袁世凯
+        title: 中华民国大总统
+        startYear: 1912
+        endYear: 1916
+      - name: 北洋政府（历届总统）
+        title: 中华民国政府
+        startYear: 1916
+        endYear: 1928
+      - name: 蒋介石
+        title: 国民政府主席/行政院长
+        startYear: 1928
+        endYear: 1949
+      - name: 毛泽东
+        title: 中华人民共和国主席/中共中央主席
+        startYear: 1949
+        endYear: 1976
+      - name: 邓小平
+        title: 中央军委主席/实际最高领导人
+        startYear: 1978
+        endYear: 1997
+      - name: 江泽民
+        title: 中共中央总书记/国家主席
+        startYear: 1993
+        endYear: 2003
+
   - id: uk
     name: 英国
     color: "#2980b9"
     order: 2
+    rulers:
+      - name: 安妮女王
+        title: 英国女王
+        startYear: 1702
+        endYear: 1714
+      - name: 乔治一世
+        title: 英国国王
+        startYear: 1714
+        endYear: 1727
+      - name: 乔治二世
+        title: 英国国王
+        startYear: 1727
+        endYear: 1760
+      - name: 乔治三世
+        title: 英国国王
+        startYear: 1760
+        endYear: 1820
+      - name: 乔治四世
+        title: 英国国王
+        startYear: 1820
+        endYear: 1830
+      - name: 威廉四世
+        title: 英国国王
+        startYear: 1830
+        endYear: 1837
+      - name: 维多利亚女王
+        title: 英国女王
+        startYear: 1837
+        endYear: 1901
+      - name: 爱德华七世
+        title: 英国国王
+        startYear: 1901
+        endYear: 1910
+      - name: 乔治五世
+        title: 英国国王
+        startYear: 1910
+        endYear: 1936
+      - name: 爱德华八世
+        title: 英国国王（退位）
+        startYear: 1936
+        endYear: 1936
+      - name: 乔治六世
+        title: 英国国王
+        startYear: 1936
+        endYear: 1952
+      - name: 伊丽莎白二世
+        title: 英国女王
+        startYear: 1952
+        endYear: 2022
+
   - id: france
     name: 法国
     color: "#8e44ad"
     order: 3
+    rulers:
+      - name: 路易十四
+        title: 法国国王
+        startYear: 1643
+        endYear: 1715
+      - name: 路易十五
+        title: 法国国王
+        startYear: 1715
+        endYear: 1774
+      - name: 路易十六
+        title: 法国国王
+        startYear: 1774
+        endYear: 1792
+      - name: 法兰西第一共和国（督政府等）
+        title: 法国共和政府
+        startYear: 1792
+        endYear: 1799
+      - name: 拿破仑·波拿巴
+        title: 法兰西第一执政
+        startYear: 1799
+        endYear: 1804
+      - name: 拿破仑一世
+        title: 法国皇帝
+        startYear: 1804
+        endYear: 1814
+      - name: 路易十八
+        title: 法国国王
+        startYear: 1814
+        endYear: 1824
+      - name: 查理十世
+        title: 法国国王
+        startYear: 1824
+        endYear: 1830
+      - name: 路易-菲利普
+        title: 法国国王（七月王朝）
+        startYear: 1830
+        endYear: 1848
+      - name: 路易-拿破仑·波拿巴
+        title: 法兰西第二共和国总统
+        startYear: 1848
+        endYear: 1852
+      - name: 拿破仑三世
+        title: 法国皇帝（第二帝国）
+        startYear: 1852
+        endYear: 1870
+      - name: 梯也尔
+        title: 法兰西第三共和国总统
+        startYear: 1871
+        endYear: 1873
+      - name: 麦克马洪
+        title: 法兰西第三共和国总统
+        startYear: 1873
+        endYear: 1879
+      - name: 格雷维
+        title: 法兰西第三共和国总统
+        startYear: 1879
+        endYear: 1887
+      - name: 卡诺
+        title: 法兰西第三共和国总统
+        startYear: 1887
+        endYear: 1894
+      - name: 富尔
+        title: 法兰西第三共和国总统
+        startYear: 1895
+        endYear: 1899
+      - name: 卢贝
+        title: 法兰西第三共和国总统
+        startYear: 1899
+        endYear: 1906
+      - name: 法利埃
+        title: 法兰西第三共和国总统
+        startYear: 1906
+        endYear: 1913
+      - name: 彭加勒
+        title: 法兰西第三共和国总统
+        startYear: 1913
+        endYear: 1920
+      - name: 米勒兰
+        title: 法兰西第三共和国总统
+        startYear: 1920
+        endYear: 1924
+      - name: 戴高乐
+        title: 法兰西第五共和国总统
+        startYear: 1959
+        endYear: 1969
+      - name: 蓬皮杜
+        title: 法兰西第五共和国总统
+        startYear: 1969
+        endYear: 1974
+      - name: 德斯坦
+        title: 法兰西第五共和国总统
+        startYear: 1974
+        endYear: 1981
+      - name: 密特朗
+        title: 法兰西第五共和国总统
+        startYear: 1981
+        endYear: 1995
+      - name: 希拉克
+        title: 法兰西第五共和国总统
+        startYear: 1995
+        endYear: 2007
+
   - id: usa
     name: 美国
     color: "#27ae60"
     order: 4
+    rulers:
+      - name: 乔治·华盛顿
+        title: 美国总统
+        startYear: 1789
+        endYear: 1797
+      - name: 约翰·亚当斯
+        title: 美国总统
+        startYear: 1797
+        endYear: 1801
+      - name: 托马斯·杰斐逊
+        title: 美国总统
+        startYear: 1801
+        endYear: 1809
+      - name: 詹姆斯·麦迪逊
+        title: 美国总统
+        startYear: 1809
+        endYear: 1817
+      - name: 詹姆斯·门罗
+        title: 美国总统
+        startYear: 1817
+        endYear: 1825
+      - name: 约翰·昆西·亚当斯
+        title: 美国总统
+        startYear: 1825
+        endYear: 1829
+      - name: 安德鲁·杰克逊
+        title: 美国总统
+        startYear: 1829
+        endYear: 1837
+      - name: 马丁·范布伦
+        title: 美国总统
+        startYear: 1837
+        endYear: 1841
+      - name: 威廉·亨利·哈里森
+        title: 美国总统
+        startYear: 1841
+        endYear: 1841
+      - name: 约翰·泰勒
+        title: 美国总统
+        startYear: 1841
+        endYear: 1845
+      - name: 詹姆斯·波尔克
+        title: 美国总统
+        startYear: 1845
+        endYear: 1849
+      - name: 扎卡里·泰勒
+        title: 美国总统
+        startYear: 1849
+        endYear: 1850
+      - name: 米勒德·菲尔莫尔
+        title: 美国总统
+        startYear: 1850
+        endYear: 1853
+      - name: 富兰克林·皮尔斯
+        title: 美国总统
+        startYear: 1853
+        endYear: 1857
+      - name: 詹姆斯·布坎南
+        title: 美国总统
+        startYear: 1857
+        endYear: 1861
+      - name: 亚伯拉罕·林肯
+        title: 美国总统
+        startYear: 1861
+        endYear: 1865
+      - name: 安德鲁·约翰逊
+        title: 美国总统
+        startYear: 1865
+        endYear: 1869
+      - name: 尤利西斯·格兰特
+        title: 美国总统
+        startYear: 1869
+        endYear: 1877
+      - name: 拉瑟福德·海斯
+        title: 美国总统
+        startYear: 1877
+        endYear: 1881
+      - name: 詹姆斯·加菲尔德
+        title: 美国总统
+        startYear: 1881
+        endYear: 1881
+      - name: 切斯特·阿瑟
+        title: 美国总统
+        startYear: 1881
+        endYear: 1885
+      - name: 格罗弗·克利夫兰（第一任）
+        title: 美国总统
+        startYear: 1885
+        endYear: 1889
+      - name: 本杰明·哈里森
+        title: 美国总统
+        startYear: 1889
+        endYear: 1893
+      - name: 格罗弗·克利夫兰（第二任）
+        title: 美国总统
+        startYear: 1893
+        endYear: 1897
+      - name: 威廉·麦金利
+        title: 美国总统
+        startYear: 1897
+        endYear: 1901
+      - name: 西奥多·罗斯福
+        title: 美国总统
+        startYear: 1901
+        endYear: 1909
+      - name: 威廉·塔夫脱
+        title: 美国总统
+        startYear: 1909
+        endYear: 1913
+      - name: 伍德罗·威尔逊
+        title: 美国总统
+        startYear: 1913
+        endYear: 1921
+      - name: 沃伦·哈丁
+        title: 美国总统
+        startYear: 1921
+        endYear: 1923
+      - name: 卡尔文·柯立芝
+        title: 美国总统
+        startYear: 1923
+        endYear: 1929
+      - name: 赫伯特·胡佛
+        title: 美国总统
+        startYear: 1929
+        endYear: 1933
+      - name: 富兰克林·罗斯福
+        title: 美国总统
+        startYear: 1933
+        endYear: 1945
+      - name: 哈里·杜鲁门
+        title: 美国总统
+        startYear: 1945
+        endYear: 1953
+      - name: 德怀特·艾森豪威尔
+        title: 美国总统
+        startYear: 1953
+        endYear: 1961
+      - name: 约翰·肯尼迪
+        title: 美国总统
+        startYear: 1961
+        endYear: 1963
+      - name: 林登·约翰逊
+        title: 美国总统
+        startYear: 1963
+        endYear: 1969
+      - name: 理查德·尼克松
+        title: 美国总统
+        startYear: 1969
+        endYear: 1974
+      - name: 杰拉尔德·福特
+        title: 美国总统
+        startYear: 1974
+        endYear: 1977
+      - name: 吉米·卡特
+        title: 美国总统
+        startYear: 1977
+        endYear: 1981
+      - name: 罗纳德·里根
+        title: 美国总统
+        startYear: 1981
+        endYear: 1989
+      - name: 乔治·H·W·布什
+        title: 美国总统
+        startYear: 1989
+        endYear: 1993
+      - name: 比尔·克林顿
+        title: 美国总统
+        startYear: 1993
+        endYear: 2001
+
   - id: russia
     name: 俄国
     color: "#e67e22"
     order: 5
+    rulers:
+      - name: 彼得大帝（彼得一世）
+        title: 俄国沙皇/皇帝
+        startYear: 1682
+        endYear: 1725
+      - name: 叶卡捷琳娜一世
+        title: 俄国女皇
+        startYear: 1725
+        endYear: 1727
+      - name: 彼得二世
+        title: 俄国沙皇
+        startYear: 1727
+        endYear: 1730
+      - name: 安娜女皇
+        title: 俄国女皇
+        startYear: 1730
+        endYear: 1740
+      - name: 伊万六世
+        title: 俄国沙皇
+        startYear: 1740
+        endYear: 1741
+      - name: 伊丽莎白女皇
+        title: 俄国女皇
+        startYear: 1741
+        endYear: 1762
+      - name: 彼得三世
+        title: 俄国沙皇
+        startYear: 1762
+        endYear: 1762
+      - name: 叶卡捷琳娜大帝（叶卡捷琳娜二世）
+        title: 俄国女皇
+        startYear: 1762
+        endYear: 1796
+      - name: 保罗一世
+        title: 俄国皇帝
+        startYear: 1796
+        endYear: 1801
+      - name: 亚历山大一世
+        title: 俄国皇帝
+        startYear: 1801
+        endYear: 1825
+      - name: 尼古拉一世
+        title: 俄国皇帝
+        startYear: 1825
+        endYear: 1855
+      - name: 亚历山大二世
+        title: 俄国皇帝
+        startYear: 1855
+        endYear: 1881
+      - name: 亚历山大三世
+        title: 俄国皇帝
+        startYear: 1881
+        endYear: 1894
+      - name: 尼古拉二世
+        title: 俄国皇帝
+        startYear: 1894
+        endYear: 1917
+      - name: 列宁（弗拉基米尔·伊里奇·乌里扬诺夫）
+        title: 苏俄人民委员会主席
+        startYear: 1917
+        endYear: 1924
+      - name: 约瑟夫·斯大林
+        title: 苏联最高领导人
+        startYear: 1924
+        endYear: 1953
+      - name: 尼基塔·赫鲁晓夫
+        title: 苏联共产党第一书记
+        startYear: 1953
+        endYear: 1964
+      - name: 列昂尼德·勃列日涅夫
+        title: 苏联共产党总书记
+        startYear: 1964
+        endYear: 1982
+      - name: 尤里·安德罗波夫
+        title: 苏联共产党总书记
+        startYear: 1982
+        endYear: 1984
+      - name: 康斯坦丁·契尔年科
+        title: 苏联共产党总书记
+        startYear: 1984
+        endYear: 1985
+      - name: 米哈伊尔·戈尔巴乔夫
+        title: 苏联总统
+        startYear: 1985
+        endYear: 1991
+      - name: 鲍里斯·叶利钦
+        title: 俄罗斯总统
+        startYear: 1991
+        endYear: 1999
+
   - id: germany
     name: 德国
     color: "#7f8c8d"
     order: 6
+    rulers:
+      - name: 腓特烈一世
+        title: 普鲁士国王
+        startYear: 1701
+        endYear: 1713
+      - name: 腓特烈·威廉一世
+        title: 普鲁士国王
+        startYear: 1713
+        endYear: 1740
+      - name: 腓特烈大帝（腓特烈二世）
+        title: 普鲁士国王
+        startYear: 1740
+        endYear: 1786
+      - name: 腓特烈·威廉二世
+        title: 普鲁士国王
+        startYear: 1786
+        endYear: 1797
+      - name: 腓特烈·威廉三世
+        title: 普鲁士国王
+        startYear: 1797
+        endYear: 1840
+      - name: 腓特烈·威廉四世
+        title: 普鲁士国王
+        startYear: 1840
+        endYear: 1861
+      - name: 威廉一世
+        title: 普鲁士国王/德意志皇帝
+        startYear: 1861
+        endYear: 1888
+      - name: 腓特烈三世
+        title: 德意志皇帝
+        startYear: 1888
+        endYear: 1888
+      - name: 威廉二世
+        title: 德意志皇帝
+        startYear: 1888
+        endYear: 1918
+      - name: 弗里德里希·艾伯特
+        title: 魏玛共和国总统
+        startYear: 1919
+        endYear: 1925
+      - name: 保罗·冯·兴登堡
+        title: 魏玛共和国总统
+        startYear: 1925
+        endYear: 1934
+      - name: 阿道夫·希特勒
+        title: 德国元首
+        startYear: 1933
+        endYear: 1945
+      - name: 康拉德·阿登纳
+        title: 西德联邦总理
+        startYear: 1949
+        endYear: 1963
+      - name: 路德维希·艾哈德
+        title: 西德联邦总理
+        startYear: 1963
+        endYear: 1966
+      - name: 库尔特·基辛格
+        title: 西德联邦总理
+        startYear: 1966
+        endYear: 1969
+      - name: 维利·勃兰特
+        title: 西德联邦总理
+        startYear: 1969
+        endYear: 1974
+      - name: 赫尔穆特·施密特
+        title: 西德联邦总理
+        startYear: 1974
+        endYear: 1982
+      - name: 赫尔穆特·科尔
+        title: 西德/统一德国联邦总理
+        startYear: 1982
+        endYear: 1998
+      - name: 瓦尔特·乌布利希
+        title: 东德领导人
+        startYear: 1950
+        endYear: 1971
+      - name: 埃里希·昂纳克
+        title: 东德领导人
+        startYear: 1971
+        endYear: 1989
+
   - id: japan
     name: 日本
     color: "#d35400"
     order: 7
+    rulers:
+      - name: 德川纲吉
+        title: 江户幕府将军
+        startYear: 1680
+        endYear: 1709
+      - name: 德川家宣
+        title: 江户幕府将军
+        startYear: 1709
+        endYear: 1712
+      - name: 德川家继
+        title: 江户幕府将军
+        startYear: 1712
+        endYear: 1716
+      - name: 德川吉宗
+        title: 江户幕府将军
+        startYear: 1716
+        endYear: 1745
+      - name: 德川家重
+        title: 江户幕府将军
+        startYear: 1745
+        endYear: 1760
+      - name: 德川家治
+        title: 江户幕府将军
+        startYear: 1760
+        endYear: 1786
+      - name: 德川家齐
+        title: 江户幕府将军
+        startYear: 1787
+        endYear: 1837
+      - name: 德川家庆
+        title: 江户幕府将军
+        startYear: 1837
+        endYear: 1853
+      - name: 德川家定
+        title: 江户幕府将军
+        startYear: 1853
+        endYear: 1858
+      - name: 德川家茂
+        title: 江户幕府将军
+        startYear: 1858
+        endYear: 1866
+      - name: 德川庆喜
+        title: 江户幕府将军（末代）
+        startYear: 1866
+        endYear: 1867
+      - name: 孝明天皇
+        title: 日本天皇
+        startYear: 1846
+        endYear: 1867
+      - name: 明治天皇
+        title: 日本天皇
+        startYear: 1867
+        endYear: 1912
+      - name: 大正天皇
+        title: 日本天皇
+        startYear: 1912
+        endYear: 1926
+      - name: 昭和天皇
+        title: 日本天皇
+        startYear: 1926
+        endYear: 1989
+      - name: 平成天皇（明仁）
+        title: 日本天皇
+        startYear: 1989
+        endYear: 2019

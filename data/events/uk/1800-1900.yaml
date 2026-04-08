@@ -1,51 +1,932 @@
+# UK Events 1800-1900
+# Level 1: 12 events | Level 2: 35 events | Level 3: 75 events
+
+# ─── Level 1 ───────────────────────────────────────────────────────────────
+
 - id: uk_napoleonic_wars
   year: 1803
   endYear: 1815
   level: 1
   title: 拿破仑战争
-  summary: 英国主导反法同盟，特拉法尔加海战确立英国海上霸权，滑铁卢之战结束战事。
+  summary: 英国主导反法联盟，历经十余年战争，最终在滑铁卢击败拿破仑，重塑欧洲秩序。
+  tags: [战争, 条约外交]
+  related: [france_napoleonic_wars]
+  figures: [nelson, wellington, pitt_younger]
+
+- id: uk_trafalgar
+  year: 1805
+  level: 1
+  title: 特拉法加海战
+  summary: 纳尔逊率英国舰队大败法西联合舰队，确立英国百年海上霸权，纳尔逊阵亡。
   tags: [战争]
-  related: [france_napoleon]
-  figures: [wellington, nelson]
+  figures: [nelson]
 
-- id: uk_opium_war
-  year: 1840
-  endYear: 1842
+- id: uk_waterloo
+  year: 1815
   level: 1
-  title: 第一次鸦片战争
-  summary: 英国对华宣战，签订《南京条约》，获得香港岛及通商口岸权益。
-  tags: [战争, 条约外交, 殖民扩张]
-  related: [opium_war_1]
-  figures: [palmerston]
+  title: 滑铁卢战役
+  summary: 威灵顿公爵联合普鲁士军队击败拿破仑，拿破仑被流放圣赫勒拿岛，战争终结。
+  tags: [战争]
+  figures: [wellington]
+  related: [france_hundred_days]
 
-- id: uk_reform_act
+- id: uk_abolish_slave_trade
+  year: 1807
+  level: 1
+  title: 废除奴隶贸易
+  summary: 英国议会通过《奴隶贸易废除法》，禁止英国公民参与跨大西洋奴隶贸易。
+  tags: [改革运动]
+  figures: [wilberforce]
+
+- id: uk_reform_act_1832
   year: 1832
-  level: 2
-  title: 改革法案
-  summary: 议会改革法案通过，扩大选举权，调整选区，推进议会民主化进程。
-  tags: [改革运动]
-
-- id: uk_abolition_slavery
-  year: 1833
-  level: 2
-  title: 废除奴隶制
-  summary: 《奴隶制废除法》通过，大英帝国境内奴隶制度正式废除。
-  tags: [改革运动]
-
-- id: uk_second_opium
-  year: 1856
-  endYear: 1860
   level: 1
-  title: 第二次鸦片战争
-  summary: 英法联军攻入中国，签订《北京条约》，获得更多通商权益。
-  tags: [战争, 条约外交, 殖民扩张]
-  related: [opium_war_2]
+  title: 第一次改革法案
+  summary: 议会通过改革法案，废除腐败选区，扩大城市中产阶级选举权，开启民主改革时代。
+  tags: [改革运动]
 
 - id: uk_victoria_reign
   year: 1837
   endYear: 1901
   level: 1
-  title: 维多利亚时代
-  summary: 维多利亚女王在位64年，英国工业和帝国实力达到顶峰，殖民地遍及全球。
-  tags: [王朝更迭, 殖民扩张]
+  title: 维多利亚女王在位
+  summary: 维多利亚女王即位，在位64年，大英帝国版图达到鼎盛，史称"维多利亚时代"。
+  tags: [王朝更迭]
   figures: [queen_victoria]
+
+- id: uk_abolish_slavery
+  year: 1833
+  level: 1
+  title: 废除奴隶制
+  summary: 英国议会通过《奴隶制废除法》，大英帝国范围内奴隶制全面废除，赔偿奴隶主。
+  tags: [改革运动]
+  figures: [wilberforce]
+
+- id: uk_indian_rebellion
+  year: 1857
+  endYear: 1858
+  level: 1
+  title: 印度大起义
+  summary: 印度兵哗变引发大规模反英起义，波及北印度多地，英国镇压后解散东印度公司。
+  tags: [战争, 殖民扩张]
+
+- id: uk_victoria_empress_india
+  year: 1876
+  level: 1
+  title: 维多利亚女王成为印度女皇
+  summary: 英国议会通过《皇家称号法》，维多利亚女王兼任印度女皇，大英帝国达到顶峰。
+  tags: [殖民扩张, 王朝更迭]
+  figures: [queen_victoria, disraeli]
+
+- id: uk_chartism
+  year: 1838
+  endYear: 1857
+  level: 1
+  title: 宪章运动
+  summary: 工人阶级发起宪章运动，要求普选权、无记名投票等六项民主改革，三次请愿均被拒。
+  tags: [改革运动, 革命政变]
+
+- id: uk_crimean_war
+  year: 1853
+  endYear: 1856
+  level: 1
+  title: 克里米亚战争
+  summary: 英法联合奥斯曼帝国对抗俄国，经历围攻塞瓦斯托波尔等战役后签订《巴黎条约》。
+  tags: [战争, 条约外交]
+  related: [russia_crimean_war]
+
+- id: uk_corn_laws_repeal
+  year: 1846
+  level: 1
+  title: 废除《谷物法》
+  summary: 首相罗伯特·皮尔废除限制粮食进口的《谷物法》，确立自由贸易原则，分裂保守党。
+  tags: [经济贸易, 改革运动]
+  figures: [peel]
+
+# ─── Level 2 ───────────────────────────────────────────────────────────────
+
+- id: uk_vienna_congress
+  year: 1815
+  level: 2
+  title: 维也纳会议
+  summary: 英国外相卡斯尔雷参与维也纳会议，重塑欧洲版图，确立"协调欧洲"体系。
+  tags: [条约外交]
+  figures: [castlereagh]
+
+- id: uk_luddite_movement
+  year: 1811
+  endYear: 1816
+  level: 2
+  title: 卢德运动
+  summary: 纺织工人因机器取代手工业而捣毁机器，政府出动军队镇压，多名卢德分子被处决。
+  tags: [革命政变, 经济贸易]
+
+- id: uk_peterloo_massacre
+  year: 1819
+  level: 2
+  title: 彼得卢大屠杀
+  summary: 曼彻斯特骑兵冲击和平示威人群，15人死亡、数百人受伤，引发全国舆论震动。
+  tags: [革命政变, 改革运动]
+
+- id: uk_six_acts_1819
+  year: 1819
+  level: 2
+  title: 六项法令颁布
+  summary: 彼得卢事件后政府通过六项镇压法令，严格限制集会、出版及军事训练等活动。
+  tags: [改革运动]
+
+- id: uk_railroad_liverpool_manchester
+  year: 1830
+  level: 2
+  title: 利物浦—曼彻斯特铁路开通
+  summary: 世界第一条城际蒸汽铁路正式通车，开创铁路运输时代，首日发生铁路历史首次死亡事故。
+  tags: [科技发明, 经济贸易]
+  figures: [george_stephenson]
+
+- id: uk_great_western_railway
+  year: 1838
+  level: 2
+  title: 大西部铁路建成
+  summary: 布鲁内尔设计的伦敦至布里斯托铁路通车，展现宽轨技术优势，推动英国铁路大扩张。
+  tags: [科技发明, 经济贸易]
+  figures: [brunel]
+
+- id: uk_factory_act_1833
+  year: 1833
+  level: 2
+  title: 1833年工厂法
+  summary: 首部有效工厂法通过，禁止9岁以下儿童进纺织厂，设立工厂督察员制度。
+  tags: [改革运动]
+
+- id: uk_poor_law_amendment
+  year: 1834
+  level: 2
+  title: 济贫法修正案
+  summary: 新济贫法以济贫院为核心，以"比最低工资更差"条件削减室外救济，饱受批评。
+  tags: [改革运动, 经济贸易]
+
+- id: uk_penny_post
+  year: 1840
+  level: 2
+  title: 一便士邮政建立
+  summary: 罗兰·希尔推行邮政改革，固定一便士邮费，发行世界第一枚邮票，通信革命开始。
+  tags: [科技发明, 经济贸易]
+
+- id: uk_opium_war
+  year: 1839
+  endYear: 1842
+  level: 2
+  title: 第一次鸦片战争
+  summary: 英国以清朝禁毁鸦片为由对华开战，清军战败，签订《南京条约》，香港岛割让英国。
+  tags: [战争, 条约外交, 殖民扩张]
+  related: [china_opium_war_40]
+  figures: [palmerston]
+
+- id: uk_second_opium_war
+  year: 1856
+  endYear: 1860
+  level: 2
+  title: 第二次鸦片战争
+  summary: 英法联军再度对华开战，攻入北京，火烧圆明园，清朝签订《北京条约》。
+  tags: [战争, 条约外交, 殖民扩张]
+  related: [china_second_opium_war]
+
+- id: uk_electric_telegraph
+  year: 1837
+  endYear: 1850
+  level: 2
+  title: 电报网络建立
+  summary: 库克与惠斯通发明实用电报，铁路沿线快速铺设，英国率先建成商业电报网络。
+  tags: [科技发明]
+
+- id: uk_great_exhibition
+  year: 1851
+  level: 2
+  title: 万国工业博览会
+  summary: 伦敦水晶宫举办世界首届国际博览会，展示各国工业成就，英国工业领先地位彰显。
+  tags: [经济贸易, 科技发明]
+  figures: [prince_albert]
+
+- id: uk_darwin_origin_species
+  year: 1859
+  level: 2
+  title: 《物种起源》出版
+  summary: 查尔斯·达尔文出版《物种起源》，提出自然选择进化论，引发科学与宗教界巨大争论。
+  tags: [科技发明, 文化思想]
+  figures: [darwin]
+
+- id: uk_east_india_company_dissolved
+  year: 1858
+  level: 2
+  title: 东印度公司解散
+  summary: 印度大起义后，英国议会通过《印度政府法》，东印度公司正式解散，印度直属王室。
+  tags: [殖民扩张, 改革运动]
+
+- id: uk_second_reform_act
+  year: 1867
+  level: 2
+  title: 第二次改革法案
+  summary: 迪斯雷利主导通过第二次改革法案，城市工人阶级获得选举权，选民人数翻倍。
+  tags: [改革运动]
+  figures: [disraeli]
+
+- id: uk_third_reform_act
+  year: 1884
+  level: 2
+  title: 第三次改革法案
+  summary: 格拉斯顿推动通过第三次改革法案，农村工人获选举权，英国男性选民大幅增加。
+  tags: [改革运动]
+  figures: [gladstone]
+
+- id: uk_suez_canal_shares
+  year: 1875
+  level: 2
+  title: 收购苏伊士运河股份
+  summary: 迪斯雷利以400万英镑秘密购入苏伊士运河公司44%股份，控制英印通道战略要地。
+  tags: [经济贸易, 殖民扩张]
+  figures: [disraeli]
+
+- id: uk_ireland_famine
+  year: 1845
+  endYear: 1852
+  level: 2
+  title: 爱尔兰大饥荒
+  summary: 马铃薯病害导致爱尔兰大规模饥荒，约百万人死亡，另有百万人移民，人口锐减。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_maxwell_electromagnetism
+  year: 1873
+  level: 2
+  title: 麦克斯韦电磁理论
+  summary: 詹姆斯·克拉克·麦克斯韦出版《电磁通论》，建立电磁场统一理论，预言电磁波存在。
+  tags: [科技发明]
+  figures: [maxwell]
+
+- id: uk_london_underground
+  year: 1863
+  level: 2
+  title: 伦敦地铁开通
+  summary: 世界第一条城市地下铁路在伦敦开通，连接帕丁顿与法灵顿街，以蒸汽机车牵引。
+  tags: [科技发明, 经济贸易]
+
+- id: uk_telephone_introduction
+  year: 1878
+  level: 2
+  title: 电话引入英国
+  summary: 贝尔电话专利获批后传入英国，首家电话交换局在伦敦开业，通信方式再度变革。
+  tags: [科技发明]
+
+- id: uk_bessemer_steel
+  year: 1856
+  level: 2
+  title: 贝西默转炉炼钢法
+  summary: 亨利·贝西默发明转炉炼钢法，生产成本大幅降低，推动钢铁工业和铁路建设加速扩张。
+  tags: [科技发明, 经济贸易]
+  figures: [bessemer]
+
+- id: uk_education_act_1870
+  year: 1870
+  level: 2
+  title: 1870年教育法
+  summary: 《福斯特教育法》建立公立小学体系，要求地方设立学校委员会，推动初等教育普及。
+  tags: [改革运动]
+
+- id: uk_mines_act_1842
+  year: 1842
+  level: 2
+  title: 1842年矿山法
+  summary: 议会禁止妇女和10岁以下儿童在矿井下工作，首次设立矿山督察制度。
+  tags: [改革运动]
+
+- id: uk_boer_war
+  year: 1899
+  endYear: 1902
+  level: 2
+  title: 布尔战争
+  summary: 英国与南非布尔共和国爆发战争，英军初期受挫，最终取胜，代价惨重，帝国主义受质疑。
+  tags: [战争, 殖民扩张]
+
+- id: uk_scramble_for_africa
+  year: 1880
+  endYear: 1900
+  level: 2
+  title: 瓜分非洲
+  summary: 英国积极参与列强瓜分非洲，取得埃及、东非、西非等大片领地，帝国版图迅速扩大。
+  tags: [殖民扩张]
+
+- id: uk_egypt_occupation
+  year: 1882
+  level: 2
+  title: 占领埃及
+  summary: 英军在特勒凯比尔战役击败埃及军队，占领开罗，对埃及实施实际控制达数十年。
+  tags: [战争, 殖民扩张]
+
+- id: uk_trade_union_legalization
+  year: 1871
+  level: 2
+  title: 工会合法化
+  summary: 格拉斯顿政府通过《工会法》，赋予工会法律人格和罢工保护，英国劳工运动获法律保障。
+  tags: [改革运动, 经济贸易]
+
+- id: uk_nightingale_nursing
+  year: 1854
+  endYear: 1856
+  level: 2
+  title: 南丁格尔改革军队护理
+  summary: 弗洛伦斯·南丁格尔赴克里米亚战地医院，大幅改善卫生条件，开创现代护理学。
+  tags: [改革运动, 科技发明]
+  figures: [nightingale]
+
+- id: uk_free_trade_policy
+  year: 1846
+  endYear: 1880
+  level: 2
+  title: 自由贸易政策全面推行
+  summary: 废除谷物法后英国全面推行自由贸易，关税壁垒大幅削减，成为全球贸易主导力量。
+  tags: [经济贸易]
+
+- id: uk_faraday_em_induction
+  year: 1831
+  level: 2
+  title: 法拉第发现电磁感应
+  summary: 迈克尔·法拉第发现电磁感应定律，奠定发电机与变压器的理论基础。
+  tags: [科技发明]
+  figures: [faraday]
+
+- id: uk_brunel_ss_great_britain
+  year: 1843
+  level: 2
+  title: 大不列颠号轮船建成
+  summary: 布鲁内尔设计的大不列颠号以铁壳与螺旋桨推进，是首艘横渡大西洋的铁壳蒸汽船。
+  tags: [科技发明, 经济贸易]
+  figures: [brunel]
+
+- id: uk_london_sewers
+  year: 1858
+  endYear: 1875
+  level: 2
+  title: 伦敦大下水道工程
+  summary: 巴扎尔盖特主持修建伦敦现代下水道系统，根治泰晤士河污染，显著降低霍乱死亡率。
+  tags: [科技发明, 改革运动]
+
+# ─── Level 3 ───────────────────────────────────────────────────────────────
+
+- id: uk_ireland_union_1801
+  year: 1801
+  level: 3
+  title: 联合王国正式成立
+  summary: 英国与爱尔兰联合法令生效，联合王国旗帜（Union Jack）加入圣帕特里克十字。
+  tags: [王朝更迭]
+
+- id: uk_copenhagen_bombardment
+  year: 1807
+  level: 3
+  title: 炮击哥本哈根
+  summary: 英国军队炮击哥本哈根，强占丹麦舰队以防其落入拿破仑之手，引发外交争议。
+  tags: [战争]
+
+- id: uk_peninsular_war
+  year: 1808
+  endYear: 1814
+  level: 3
+  title: 伊比利亚半岛战争
+  summary: 英军在威灵顿指挥下支援葡萄牙与西班牙抗法，历经六年战役将法军逐出半岛。
+  tags: [战争]
+  figures: [wellington]
+
+- id: uk_abolition_slave_trade_act
+  year: 1807
+  level: 3
+  title: 《废除奴隶贸易法》正式生效
+  summary: 1807年3月25日法令正式生效，英国皇家海军开始在大西洋拦截奴隶船只。
+  tags: [改革运动]
+  figures: [wilberforce]
+
+- id: uk_peel_police_act
+  year: 1829
+  level: 3
+  title: 伦敦大都会警察厅建立
+  summary: 罗伯特·皮尔推动通过《大都会警察法》，建立现代警察制度，警员俗称"皮尔人"。
+  tags: [改革运动]
+  figures: [peel]
+
+- id: uk_george_iv_reign
+  year: 1820
+  endYear: 1830
+  level: 3
+  title: 乔治四世即位
+  summary: 摄政王乔治正式即位为乔治四世，以奢靡生活著称，在位期间无重大政治改革。
+  tags: [王朝更迭]
+
+- id: uk_william_iv_reign
+  year: 1830
+  endYear: 1837
+  level: 3
+  title: 威廉四世即位
+  summary: 乔治四世之弟威廉继位，在位期间议会通过第一次改革法案，又称"改革王"。
+  tags: [王朝更迭]
+
+- id: uk_victoria_coronation
+  year: 1838
+  level: 3
+  title: 维多利亚女王加冕
+  summary: 维多利亚女王在威斯敏斯特教堂举行正式加冕典礼，全国庆祝，时年19岁。
+  tags: [王朝更迭]
+  figures: [queen_victoria]
+
+- id: uk_prince_albert_marriage
+  year: 1840
+  level: 3
+  title: 维多利亚女王与阿尔伯特亲王成婚
+  summary: 维多利亚女王与萨克森科堡哥达的阿尔伯特亲王成婚，阿尔伯特成为重要政治顾问。
+  tags: [王朝更迭]
+  figures: [queen_victoria, prince_albert]
+
+- id: uk_robert_peel_corn_law_split
+  year: 1846
+  level: 3
+  title: 皮尔分裂保守党
+  summary: 皮尔坚持废除谷物法，保守党内出现"皮尔派"与保护主义派分裂，皮尔随后辞职。
+  tags: [改革运动, 经济贸易]
+  figures: [peel]
+
+- id: uk_ten_hours_act
+  year: 1847
+  level: 3
+  title: 《十小时工作法》通过
+  summary: 议会规定纺织厂妇女和青少年每日工作不超过10小时，工人权益获得重要法律保障。
+  tags: [改革运动]
+
+- id: uk_public_health_act_1848
+  year: 1848
+  level: 3
+  title: 1848年公共卫生法
+  summary: 英国通过首部公共卫生法，建立卫生总局，要求改善下水道与供水，以应对霍乱威胁。
+  tags: [改革运动]
+
+- id: uk_cholera_1832
+  year: 1832
+  level: 3
+  title: 1832年霍乱大流行
+  summary: 亚洲霍乱传入英国，数万人死亡，引发公众对城市卫生条件的广泛关注。
+  tags: [改革运动]
+
+- id: uk_chartist_petition_1839
+  year: 1839
+  level: 3
+  title: 第一次宪章请愿书
+  summary: 宪章运动者向议会提交首份请愿书，签名逾百万，议会以214对46票拒绝审议。
+  tags: [改革运动, 革命政变]
+
+- id: uk_chartist_petition_1842
+  year: 1842
+  level: 3
+  title: 第二次宪章请愿书
+  summary: 宪章运动者提交第二份请愿书，签名逾三百万，议会再度拒绝，多地爆发工人罢工。
+  tags: [改革运动, 革命政变]
+
+- id: uk_john_snow_cholera_map
+  year: 1854
+  level: 3
+  title: 斯诺霍乱地图研究
+  summary: 医生约翰·斯诺绘制伦敦宽街霍乱传播地图，证明霍乱经水传播，奠定流行病学基础。
+  tags: [科技发明]
+
+- id: uk_crystal_palace_built
+  year: 1851
+  level: 3
+  title: 水晶宫建成
+  summary: 约瑟夫·帕克斯顿设计的水晶宫以铸铁玻璃建造，为万国博览会专用展馆，工程奇迹。
+  tags: [科技发明, 文化思想]
+
+- id: uk_albert_death
+  year: 1861
+  level: 3
+  title: 阿尔伯特亲王逝世
+  summary: 维多利亚女王的丈夫阿尔伯特亲王因伤寒病逝，女王此后长期服丧，减少公开露面。
+  tags: [王朝更迭]
+  figures: [queen_victoria, prince_albert]
+
+- id: uk_telegraph_atlantic
+  year: 1866
+  level: 3
+  title: 大西洋海底电报电缆铺设
+  summary: 英美合作铺设大西洋海底电报电缆成功，欧美洲际通讯时间从数周缩短为数分钟。
+  tags: [科技发明]
+
+- id: uk_charles_dickens_oliver_twist
+  year: 1837
+  endYear: 1839
+  level: 3
+  title: 狄更斯《雾都孤儿》连载
+  summary: 查尔斯·狄更斯《雾都孤儿》在杂志连载，揭露济贫制度与贫民窟生活，引发社会关注。
+  tags: [文化思想]
+  figures: [dickens]
+
+- id: uk_bleak_house_dickens
+  year: 1852
+  level: 3
+  title: 狄更斯《荒凉山庄》出版
+  summary: 狄更斯出版《荒凉山庄》，批判英国司法腐败，成为社会批评小说的典范之作。
+  tags: [文化思想]
+  figures: [dickens]
+
+- id: uk_charlotte_bronte_jane_eyre
+  year: 1847
+  level: 3
+  title: 《简·爱》出版
+  summary: 夏洛蒂·勃朗特出版《简·爱》，以女性视角描写独立自主，成为英国文学经典。
+  tags: [文化思想]
+  figures: [charlotte_bronte]
+
+- id: uk_emily_bronte_wuthering
+  year: 1847
+  level: 3
+  title: 《呼啸山庄》出版
+  summary: 艾米莉·勃朗特出版《呼啸山庄》，以荒野与激情为主题，被视为维多利亚文学杰作。
+  tags: [文化思想]
+  figures: [emily_bronte]
+
+- id: uk_pre_raphaelites
+  year: 1848
+  level: 3
+  title: 前拉斐尔派成立
+  summary: 罗塞蒂、米莱斯等画家成立前拉斐尔兄弟会，反对学院派，追求中世纪题材与精细写实。
+  tags: [文化思想]
+
+- id: uk_faraday_field_theory
+  year: 1845
+  level: 3
+  title: 法拉第建立电场理论
+  summary: 法拉第提出"力线"概念与场论思想，被麦克斯韦发展为完整电磁场数学理论。
+  tags: [科技发明]
+  figures: [faraday]
+
+- id: uk_joule_heat_work
+  year: 1843
+  level: 3
+  title: 焦耳测定热功当量
+  summary: 詹姆斯·焦耳精确测定热量与机械功的当量关系，为热力学第一定律确立实验基础。
+  tags: [科技发明]
+  figures: [joule]
+
+- id: uk_huxley_evolution_debate
+  year: 1860
+  level: 3
+  title: 赫胥黎与威尔伯福斯进化论辩论
+  summary: 托马斯·赫胥黎与主教威尔伯福斯在牛津就达尔文进化论展开著名辩论，引发广泛讨论。
+  tags: [文化思想, 科技发明]
+  figures: [darwin]
+
+- id: uk_afghan_war_first
+  year: 1839
+  endYear: 1842
+  level: 3
+  title: 第一次英阿战争
+  summary: 英军入侵阿富汗，占领喀布尔后遭顽强抵抗，撤退时惨遭重创，英国受辱。
+  tags: [战争, 殖民扩张]
+
+- id: uk_afghan_war_second
+  year: 1878
+  endYear: 1880
+  level: 3
+  title: 第二次英阿战争
+  summary: 英国出于对俄国势力扩张的担忧再度入侵阿富汗，最终获得阿富汗外交权，撤出内地。
+  tags: [战争, 殖民扩张]
+
+- id: uk_zulu_war
+  year: 1879
+  level: 3
+  title: 英祖鲁战争
+  summary: 英军入侵祖鲁王国，在伊散德尔瓦纳遭重大失败后最终击败祖鲁军队，并入纳塔尔。
+  tags: [战争, 殖民扩张]
+
+- id: uk_gordon_khartoum
+  year: 1885
+  level: 3
+  title: 喀土穆陷落与戈登之死
+  summary: 马赫迪军队攻陷喀土穆，英国将领查尔斯·戈登被杀，救援部队晚到两日，引发政治风波。
+  tags: [战争, 殖民扩张]
+
+- id: uk_burma_annexation
+  year: 1885
+  level: 3
+  title: 英国并吞缅甸
+  summary: 英军在第三次英缅战争中迅速击败缅王蒂保，将上缅甸并入英属印度，缅甸王朝终结。
+  tags: [战争, 殖民扩张]
+
+- id: uk_trades_union_congress
+  year: 1868
+  level: 3
+  title: 英国工会联盟成立
+  summary: 英国各地工会代表在曼彻斯特召开首次工会联盟大会（TUC），建立劳工运动协调组织。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_victoria_golden_jubilee
+  year: 1887
+  level: 3
+  title: 维多利亚女王登基金禧
+  summary: 维多利亚女王庆祝登基五十周年，来自帝国各地代表云集伦敦，彰显大英帝国盛况。
+  tags: [王朝更迭]
+  figures: [queen_victoria]
+
+- id: uk_victoria_diamond_jubilee
+  year: 1897
+  level: 3
+  title: 维多利亚女王登基钻禧
+  summary: 维多利亚女王庆祝登基六十周年，殖民地军队参加阅兵，举国庆祝大英帝国鼎盛。
+  tags: [王朝更迭]
+  figures: [queen_victoria]
+
+- id: uk_london_dock_strike
+  year: 1889
+  level: 3
+  title: 伦敦码头工人大罢工
+  summary: 伦敦码头工人发动大规模罢工，要求提高日薪至6便士，获胜后推动新工会运动发展。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_match_girls_strike
+  year: 1888
+  level: 3
+  title: 火柴女工大罢工
+  summary: 伦敦火柴女工因磷中毒与恶劣条件罢工，获胜后引发新工会运动浪潮，成为劳工里程碑。
+  tags: [改革运动, 经济贸易]
+
+- id: uk_railway_mania_1840s
+  year: 1844
+  endYear: 1847
+  level: 3
+  title: 铁路投资热潮
+  summary: 英国爆发铁路投资狂潮，议会批准数千英里铁路建设，随后崩溃，大量投资者破产。
+  tags: [经济贸易]
+
+- id: uk_george_eliot_middlemarch
+  year: 1871
+  level: 3
+  title: 乔治·艾略特《米德尔马契》出版
+  summary: 玛丽·安·埃文斯（笔名乔治·艾略特）出版《米德尔马契》，被誉为英语小说最高成就之一。
+  tags: [文化思想]
+
+- id: uk_thomas_hardy_tess
+  year: 1891
+  level: 3
+  title: 托马斯·哈代《德伯家的苔丝》出版
+  summary: 托马斯·哈代出版《德伯家的苔丝》，以批判维多利亚道德虚伪著称，引发争议。
+  tags: [文化思想]
+  figures: [thomas_hardy]
+
+- id: uk_oscar_wilde_importance
+  year: 1895
+  level: 3
+  title: 王尔德《认真的重要性》首演
+  summary: 奥斯卡·王尔德讽刺喜剧《认真的重要性》在伦敦首演，被视为英国戏剧的顶峰之作。
+  tags: [文化思想]
+  figures: [oscar_wilde]
+
+- id: uk_oscar_wilde_trial
+  year: 1895
+  level: 3
+  title: 王尔德被审判入狱
+  summary: 奥斯卡·王尔德因与昆斯伯里侯爵之子关系被以猥亵罪起诉，判处两年苦役。
+  tags: [文化思想]
+  figures: [oscar_wilde]
+
+- id: uk_turner_rain_steam
+  year: 1844
+  level: 3
+  title: 透纳《雨、蒸汽和速度》展出
+  summary: 威廉·透纳画作《雨、蒸汽和速度》在皇家艺术学院展出，以朦胧手法捕捉工业时代。
+  tags: [文化思想]
+  figures: [turner]
+
+- id: uk_constable_hay_wain
+  year: 1821
+  level: 3
+  title: 康斯太勃尔《干草车》展出
+  summary: 约翰·康斯太勃尔《干草车》在皇家艺术学院展出，1824年获巴黎沙龙金奖，影响法国画坛。
+  tags: [文化思想]
+  figures: [constable]
+
+- id: uk_independent_labour_party
+  year: 1893
+  level: 3
+  title: 独立工党成立
+  summary: 基尔·哈迪等人在布拉德福德成立独立工党，奠定日后工党建立的政治基础。
+  tags: [改革运动]
+
+- id: uk_mill_on_liberty
+  year: 1859
+  level: 3
+  title: 约翰·斯图尔特·穆勒《论自由》出版
+  summary: 约翰·斯图尔特·穆勒出版《论自由》，系统论述个人自由与国家权力边界，影响自由主义。
+  tags: [文化思想]
+  figures: [js_mill]
+
+- id: uk_mill_womens_subjection
+  year: 1869
+  level: 3
+  title: 穆勒《妇女的屈从》出版
+  summary: 约翰·斯图尔特·穆勒出版《妇女的屈从》，主张女性政治与法律平等权利。
+  tags: [文化思想, 改革运动]
+  figures: [js_mill]
+
+- id: uk_married_women_property
+  year: 1882
+  level: 3
+  title: 已婚妇女财产法
+  summary: 议会通过法令，赋予已婚妇女独立持有财产的法律权利，改变传统婚姻财产制度。
+  tags: [改革运动]
+
+- id: uk_disraeli_berlin_congress
+  year: 1878
+  level: 3
+  title: 柏林会议与英国外交
+  summary: 迪斯雷利参加柏林会议，阻止俄国过度扩张，争取塞浦路斯岛，声称带回"体面的和平"。
+  tags: [条约外交]
+  figures: [disraeli]
+
+- id: uk_gladstone_irish_home_rule
+  year: 1886
+  level: 3
+  title: 爱尔兰自治法案遭否决
+  summary: 格拉斯顿提出爱尔兰自治法案，自由党内部分裂，法案在下议院以343比313票否决。
+  tags: [改革运动]
+  figures: [gladstone]
+
+- id: uk_british_museum_reading_room
+  year: 1857
+  level: 3
+  title: 大英博物馆圆形阅览室开放
+  summary: 大英博物馆新建圆形阅览室对外开放，铁架穹顶设计宏伟，马克思曾长期在此研究写作。
+  tags: [文化思想]
+
+- id: uk_oxford_movement
+  year: 1833
+  endYear: 1845
+  level: 3
+  title: 牛津运动
+  summary: 约翰·纽曼等英国国教学者发起牛津运动，强调教会传统与仪式，部分成员后转信天主教。
+  tags: [文化思想]
+
+- id: uk_bank_charter_act
+  year: 1844
+  level: 3
+  title: 《银行特许法》通过
+  summary: 议会通过《银行特许法》，规定英格兰银行发行纸币须以黄金储备为担保，规范货币体系。
+  tags: [经济贸易]
+
+- id: uk_jameson_raid
+  year: 1895
+  endYear: 1896
+  level: 3
+  title: 詹姆森袭击事件
+  summary: 英国殖民地官员詹姆森率队闯入布尔共和国，遭俘虏后引发外交风波，加剧布尔战争紧张。
+  tags: [殖民扩张]
+
+- id: uk_fashoda_incident
+  year: 1898
+  level: 3
+  title: 法绍达事件
+  summary: 英法军队在苏丹法绍达对峙，法国最终退让，英国确立对苏丹的控制，避免战争爆发。
+  tags: [条约外交, 殖民扩张]
+
+- id: uk_omdurman_battle
+  year: 1898
+  level: 3
+  title: 恩图曼战役
+  summary: 基钦纳将军率英埃联军在恩图曼以机枪歼灭马赫迪军主力，重新控制苏丹。
+  tags: [战争, 殖民扩张]
+
+- id: uk_cobden_commercial_treaty
+  year: 1860
+  level: 3
+  title: 英法科布登—谢瓦利埃条约
+  summary: 科布登与法国谈判签订自由贸易条约，大幅降低英法关税，推动欧洲自由贸易浪潮。
+  tags: [条约外交, 经济贸易]
+
+- id: uk_salvation_army_founded
+  year: 1865
+  level: 3
+  title: 救世军成立
+  summary: 威廉·布思在伦敦东区成立救世军前身"基督教布道团"，后改名救世军，向贫民传教救助。
+  tags: [文化思想, 改革运动]
+
+- id: uk_electric_underground
+  year: 1890
+  level: 3
+  title: 伦敦地铁改用电力
+  summary: 伦敦城市南方铁路率先改用电力驱动，摆脱蒸汽污染，现代地铁雏形形成。
+  tags: [科技发明]
+
+- id: uk_first_motor_car_law
+  year: 1865
+  level: 3
+  title: 《红旗法》颁布
+  summary: 议会规定机动车行驶时须有人在前持红旗引导，蒸汽汽车速度被限制至4英里每小时。
+  tags: [经济贸易, 科技发明]
+
+- id: uk_enfield_rifle_cartridge
+  year: 1857
+  level: 3
+  title: 印度步枪子弹事件
+  summary: 新式恩菲尔德步枪子弹传言涂有猪牛油脂，触犯印度士兵宗教禁忌，引发印度大起义。
+  tags: [战争, 殖民扩张]
+
+- id: uk_manning_cardinal
+  year: 1865
+  level: 3
+  title: 曼宁成为伦敦天主教大主教
+  summary: 牛津运动转化者亨利·曼宁出任威斯敏斯特大主教，后成为枢机主教，推动社会改革。
+  tags: [文化思想]
+
+- id: uk_national_portrait_gallery
+  year: 1856
+  level: 3
+  title: 国家肖像画廊成立
+  summary: 英国国家肖像画廊在伦敦开馆，收藏英国历史名人肖像，成为重要历史与文化机构。
+  tags: [文化思想]
+
+- id: uk_darwin_descent_of_man
+  year: 1871
+  level: 3
+  title: 达尔文《人类的由来》出版
+  summary: 达尔文出版《人类的由来》，将进化论延伸至人类起源，引发宗教与科学界再度争论。
+  tags: [科技发明, 文化思想]
+  figures: [darwin]
+
+- id: uk_maxwell_color_photography
+  year: 1861
+  level: 3
+  title: 麦克斯韦三色叠印彩色摄影
+  summary: 詹姆斯·克拉克·麦克斯韦展示世界首张彩色照片，以三色叠印法实现彩色成像。
+  tags: [科技发明]
+  figures: [maxwell]
+
+- id: uk_royal_society_women_ban
+  year: 1830
+  endYear: 1945
+  level: 3
+  title: 皇家学会长期拒绝女性入会
+  summary: 皇家学会在整个19世纪拒绝女性成为正式会员，直到1945年才接纳首位女性会员。
+  tags: [文化思想, 改革运动]
+
+- id: uk_sanitary_commission_1869
+  year: 1869
+  level: 3
+  title: 皇家卫生委员会报告
+  summary: 皇家卫生委员会发布报告，推动英国城市卫生改革立法，为1875年公共卫生法奠基。
+  tags: [改革运动]
+
+- id: uk_salisbury_splendid_isolation
+  year: 1895
+  endYear: 1902
+  level: 3
+  title: '"光荣孤立"政策'
+  summary: 英国在索尔兹伯里任内拒绝加入欧洲同盟体系，以海军优势维持独立外交，史称"光荣孤立"。
+  tags: [条约外交]
+
+- id: uk_entente_cordiale_prelude
+  year: 1898
+  endYear: 1903
+  level: 3
+  title: 英法关系改善
+  summary: 法绍达危机解决后英法关系逐步缓和，为1904年英法协约签订奠定基础。
+  tags: [条约外交]
+
+- id: uk_joseph_lister_antiseptic
+  year: 1867
+  level: 3
+  title: 李斯特推行外科消毒技术
+  summary: 约瑟夫·李斯特将巴斯德细菌理论应用于外科，推广石碳酸消毒，大幅降低手术感染死亡率。
+  tags: [科技发明]
+
+- id: uk_elgar_enigma_variations
+  year: 1899
+  level: 3
+  title: 埃尔加《谜语变奏曲》首演
+  summary: 爱德华·埃尔加的《谜语变奏曲》在伦敦首演，成为英国音乐复兴的标志性作品。
+  tags: [文化思想]
+  figures: [elgar]
+
+- id: uk_birth_labour_party_prep
+  year: 1899
+  level: 3
+  title: 工会大会决议建立工党
+  summary: 英国工会联盟大会通过决议，推动成立独立的工人政治代表机构，次年工党正式成立。
+  tags: [改革运动]
+
+- id: uk_second_boer_war_begin
+  year: 1899
+  level: 3
+  title: 第二次布尔战争爆发
+  summary: 英国与德兰士瓦及奥兰治自由邦爆发战争，初期英军接连受挫，遭遇游击战困扰。
+  tags: [战争, 殖民扩张]
+
+- id: uk_tory_democracy_gorst
+  year: 1867
+  endYear: 1880
+  level: 3
+  title: 保守党党机器建设
+  summary: 约翰·高斯特主持改组保守党中央办公室，建立现代党组织架构，支撑迪斯雷利执政。
+  tags: [改革运动]
+  figures: [disraeli]

@@ -1,32 +1,485 @@
-- id: usa_independence
+# 美国 1700-1800 事件数据
+
+# ===== Level 1 =====
+
+- id: usa_great_awakening_40
+  year: 1730
+  endYear: 1745
+  level: 1
+  title: 大觉醒运动
+  summary: 殖民地爆发宗教复兴浪潮，乔纳森·爱德华兹等布道者引发广泛信仰热潮，促进殖民地认同感形成。
+  tags: [文化思想]
+
+- id: usa_french_indian_war_54
+  year: 1754
+  endYear: 1763
+  level: 1
+  title: 法国与印第安人战争
+  summary: 英法两国在北美争夺殖民地控制权，英国最终获胜，法国失去加拿大及密西西比河以东领地。
+  tags: [战争, 殖民扩张]
+  related: [uk_seven_years_war, france_seven_years_war]
+
+- id: usa_stamp_act_65
+  year: 1765
+  level: 1
+  title: 印花税法危机
+  summary: 英国议会通过《印花税法》，殖民地爆发大规模抗议，提出"无代表不纳税"原则，翌年法案被废除。
+  tags: [改革运动, 革命政变]
+
+- id: usa_revolution_75
+  year: 1775
+  endYear: 1783
+  level: 1
+  title: 美国独立战争
+  summary: 十三殖民地对英国宣战，历经八年战争，最终以英国承认美国独立告终。
+  tags: [战争, 革命政变]
+  related: [uk_american_independence]
+  figures: [washington]
+
+- id: usa_independence_76
   year: 1776
   level: 1
-  title: 美国独立宣言
-  summary: 大陆会议通过《独立宣言》，十三州宣布脱离英国统治，独立建国。
+  title: 《独立宣言》发布
+  summary: 大陆会议于7月4日通过《独立宣言》，十三州正式宣告独立，宣言阐述天赋人权理念。
   tags: [革命政变, 文化思想]
   related: [uk_american_independence]
-  figures: [washington, jefferson]
+  figures: [jefferson, franklin_b]
 
-- id: usa_constitution
+- id: usa_constitution_87
   year: 1787
   level: 1
   title: 美国宪法制定
-  summary: 制宪会议通过美国宪法，确立联邦制和三权分立制度，1788年正式生效。
+  summary: 费城制宪会议通过联邦宪法，确立三权分立与联邦制度，1788年经各州批准正式生效。
   tags: [改革运动, 文化思想]
-  figures: [madison, hamilton]
+  figures: [madison, hamilton_a, washington]
 
-- id: usa_first_president
+- id: usa_first_president_89
   year: 1789
-  level: 2
-  title: 华盛顿就任首任总统
-  summary: 乔治·华盛顿宣誓就职，成为美国第一任总统，联邦政府正式运作。
+  level: 1
+  title: 联邦政府正式运作
+  summary: 华盛顿宣誓就任第一任总统，联邦国会在纽约召开，美国联邦政府正式运作。
   tags: [王朝更迭]
+  figures: [washington, adams_j]
+
+- id: usa_bill_of_rights_91
+  year: 1791
+  level: 1
+  title: 《权利法案》生效
+  summary: 宪法前十条修正案批准生效，保障言论、宗教、集会等公民基本权利。
+  tags: [改革运动, 文化思想]
+  figures: [madison]
+
+# ===== Level 2 =====
+
+- id: usa_colonial_charter_32
+  year: 1732
+  level: 2
+  title: 佐治亚殖民地建立
+  summary: 英王乔治二世批准佐治亚殖民地宪章，詹姆斯·奥格尔索普率移民建立萨凡纳城，第十三块殖民地成形。
+  tags: [殖民扩张]
+
+- id: usa_albany_plan_54
+  year: 1754
+  level: 2
+  title: 《奥尔巴尼联合计划》
+  summary: 本杰明·富兰克林提出各殖民地联合计划，以协调应对法国威胁，计划未获批准但奠定联合思想基础。
+  tags: [条约外交, 文化思想]
+  figures: [franklin_b]
+
+- id: usa_pontiac_rebellion_63
+  year: 1763
+  level: 2
+  title: 庞蒂亚克起义
+  summary: 渥太华酋长庞蒂亚克率多部落反抗英国西进，英军艰难平定，随后颁布《1763年公告》限制殖民扩张。
+  tags: [战争, 殖民扩张]
+
+- id: usa_proclamation_63
+  year: 1763
+  level: 2
+  title: 《1763年皇家公告》
+  summary: 英国禁止殖民者越过阿巴拉契亚山脉向西扩张，引发殖民地不满，被视为激化矛盾的政策之一。
+  tags: [殖民扩张, 改革运动]
+
+- id: usa_townshend_acts_67
+  year: 1767
+  level: 2
+  title: 《唐森德法案》
+  summary: 英国对殖民地进口玻璃、铅、纸张和茶叶征税，殖民地以抵制英货回应，矛盾进一步激化。
+  tags: [经济贸易, 革命政变]
+
+- id: usa_boston_massacre_70
+  year: 1770
+  level: 2
+  title: 波士顿惨案
+  summary: 英国士兵向波士顿人群开枪，5人死亡，事件经殖民地报纸广泛传播，成为反英情绪催化剂。
+  tags: [革命政变, 战争]
+
+- id: usa_boston_tea_party_73
+  year: 1773
+  level: 2
+  title: 波士顿倾茶事件
+  summary: 殖民地人士乔装印第安人登上英国商船，将342箱茶叶倒入波士顿湾，抗议《茶税法》。
+  tags: [革命政变, 经济贸易]
+
+- id: usa_first_continental_congress_74
+  year: 1774
+  level: 2
+  title: 第一届大陆会议
+  summary: 十二个殖民地代表在费城集会，协调应对英国强制法案，通过对英国货物联合抵制决议。
+  tags: [革命政变, 条约外交]
+
+- id: usa_lexington_concord_75
+  year: 1775
+  level: 2
+  title: 莱克星顿与康科德战役
+  summary: 英军出击搜缴武器，与民兵在莱克星顿交火，独立战争第一枪由此打响。
+  tags: [战争, 革命政变]
   figures: [washington]
 
-- id: usa_louisiana_purchase
-  year: 1803
+- id: usa_second_continental_congress_75
+  year: 1775
   level: 2
-  title: 路易斯安那购地
-  summary: 美国以1500万美元从法国购买路易斯安那领地，领土面积几乎翻倍。
-  tags: [经济贸易, 条约外交]
-  related: [france_napoleon]
+  title: 第二届大陆会议
+  summary: 各殖民地代表成立大陆军，任命华盛顿为总司令，逐步承担战时中央政府职能。
+  tags: [革命政变]
+  figures: [washington, franklin_b, jefferson]
+
+- id: usa_saratoga_77
+  year: 1777
+  level: 2
+  title: 萨拉托加战役
+  summary: 美军在萨拉托加大败英军，俘获6000余人，促使法国正式承认美国并结成同盟。
+  tags: [战争]
+  related: [france_american_alliance]
+  figures: [washington]
+
+- id: usa_french_alliance_78
+  year: 1778
+  level: 2
+  title: 法美同盟条约
+  summary: 法国承认美国独立，与美国签订同盟条约，向美国提供军事与财政援助，改变战争态势。
+  tags: [条约外交]
+  related: [france_american_alliance]
+  figures: [franklin_b]
+
+- id: usa_yorktown_81
+  year: 1781
+  level: 2
+  title: 约克城战役
+  summary: 华盛顿率美法联军围困科沃利斯所部，英军于10月投降，独立战争主要战事结束。
+  tags: [战争]
+  figures: [washington]
+
+- id: usa_paris_treaty_83
+  year: 1783
+  level: 2
+  title: 《巴黎和约》签订
+  summary: 英美签订和约，英国正式承认美国独立，将密西西比河以东领土割让，战争正式结束。
+  tags: [条约外交]
+  related: [uk_american_independence]
+  figures: [franklin_b, adams_j]
+
+- id: usa_articles_confederation_81
+  year: 1781
+  level: 2
+  title: 《邦联条例》生效
+  summary: 十三州批准《邦联条例》，建立松散的国家联盟，因中央权力过弱，后被联邦宪法取代。
+  tags: [改革运动]
+
+- id: usa_shays_rebellion_86
+  year: 1786
+  level: 2
+  title: 谢斯叛乱
+  summary: 马萨诸塞州农民因债务与税务危机武装起义，事件暴露邦联体制弱点，加速制宪进程。
+  tags: [革命政变, 改革运动]
+
+- id: usa_federalist_papers_87
+  year: 1787
+  level: 2
+  title: 《联邦党人文集》发表
+  summary: 汉密尔顿、麦迪逊、杰伊撰写85篇政论文章，为宪法批准辩护，是美国政治理论的重要文献。
+  tags: [文化思想]
+  figures: [hamilton_a, madison]
+
+- id: usa_bank_of_us_91
+  year: 1791
+  level: 2
+  title: 美国第一银行建立
+  summary: 汉密尔顿推动国会批准建立第一合众国银行，统一货币信用，引发联邦权力边界论争。
+  tags: [经济贸易]
+  figures: [hamilton_a]
+
+- id: usa_whiskey_rebellion_94
+  year: 1794
+  level: 2
+  title: 威士忌叛乱
+  summary: 宾夕法尼亚农民抗拒联邦烈酒税而武装起义，华盛顿亲率军队镇压，联邦权威得以确立。
+  tags: [革命政变, 改革运动]
+  figures: [washington, hamilton_a]
+
+- id: usa_jay_treaty_95
+  year: 1795
+  level: 2
+  title: 《杰伊条约》
+  summary: 美英签订条约，化解独立战争后遗留争端，批准过程引发国内激烈争议。
+  tags: [条约外交]
+  figures: [adams_j]
+
+- id: usa_xyz_affair_97
+  year: 1797
+  level: 2
+  title: XYZ事件
+  summary: 法国特工要求美国外交使团行贿，美国国内掀起反法情绪，引发准战争状态。
+  tags: [条约外交, 战争]
+  figures: [adams_j]
+
+- id: usa_alien_sedition_98
+  year: 1798
+  level: 2
+  title: 《外侨法》与《煽动叛乱法》
+  summary: 亚当斯政府通过针对外国人和批评者的立法，引发宪法争议，成为联邦党衰落的原因之一。
+  tags: [改革运动, 文化思想]
+  figures: [adams_j]
+
+- id: usa_capital_dc_00
+  year: 1800
+  level: 2
+  title: 首都迁往华盛顿特区
+  summary: 联邦政府从费城迁至专为首都而建的华盛顿特区，国会大厦与总统府开始启用。
+  tags: [改革运动]
+
+# ===== Level 3 =====
+
+- id: usa_harvard_founding_36
+  year: 1636
+  level: 3
+  title: 哈佛学院建立
+  summary: 马萨诸塞湾殖民地建立哈佛学院，为北美最早的高等教育机构，主要培养清教牧师。
+  tags: [文化思想]
+
+- id: usa_navigation_acts_51
+  year: 1651
+  level: 3
+  title: 《航海条例》实施
+  summary: 英国规定殖民地贸易须经英国船只，限制殖民地与他国直接贸易，殖民地经济受到管控。
+  tags: [经济贸易, 殖民扩张]
+
+- id: usa_salem_witch_92
+  year: 1692
+  level: 3
+  title: 塞勒姆审巫案
+  summary: 马萨诸塞州塞勒姆镇爆发巫术指控风波，19人被处决，事件后被视为司法失当的历史教训。
+  tags: [文化思想]
+
+- id: usa_yale_founded_01
+  year: 1701
+  level: 3
+  title: 耶鲁学院建立
+  summary: 康涅狄格殖民地牧师集会创立学院，后命名为耶鲁学院，成为美国东北部重要高等学府。
+  tags: [文化思想]
+
+- id: usa_franklin_born_06
+  year: 1706
+  level: 3
+  title: 本杰明·富兰克林出生
+  summary: 富兰克林生于波士顿，后成为科学家、外交家和建国之父，参与起草《独立宣言》。
+  tags: [人物]
+  figures: [franklin_b]
+
+- id: usa_zenger_trial_35
+  year: 1735
+  level: 3
+  title: 曾格新闻自由案
+  summary: 约翰·曾格因批评纽约总督被捕，陪审团裁定无罪，奠定殖民地新闻自由的早期判例。
+  tags: [文化思想, 改革运动]
+
+- id: usa_georgia_trustees_33
+  year: 1733
+  level: 3
+  title: 萨凡纳城建立
+  summary: 奥格尔索普率移民在佐治亚建立萨凡纳城，殖民地最初禁止奴隶制与烈酒，后相继废除。
+  tags: [殖民扩张]
+
+- id: usa_french_acadians_55
+  year: 1755
+  level: 3
+  title: 阿卡迪亚人驱逐事件
+  summary: 英军将数千名法裔阿卡迪亚人强制驱逐出新斯科舍，流散至各地，引发持久人道争议。
+  tags: [战争, 殖民扩张]
+
+- id: usa_pitt_william_57
+  year: 1757
+  level: 3
+  title: 威廉·皮特主导战时政策
+  summary: 英国首相小皮特集中资源投入北美战场，调拨大量资金与军队，扭转七年战争初期颓势。
+  tags: [战争]
+
+- id: usa_fort_duquesne_58
+  year: 1758
+  level: 3
+  title: 英军占领杜肯堡
+  summary: 英军攻占法国重要据点杜肯堡，改名匹兹堡，切断法国在俄亥俄河谷的战略通道。
+  tags: [战争, 殖民扩张]
+
+- id: usa_quebec_fall_59
+  year: 1759
+  level: 3
+  title: 魁北克战役
+  summary: 英军占领法属北美首府魁北克，沃尔夫与蒙卡尔姆双方将领均阵亡，法国控制局势崩溃。
+  tags: [战争, 殖民扩张]
+
+- id: usa_nonimportation_68
+  year: 1768
+  level: 3
+  title: 波士顿不进口协议
+  summary: 波士顿商人签署协议抵制英国进口商品，各地殖民地纷纷跟进，以经济手段抗议英国税法。
+  tags: [经济贸易, 革命政变]
+
+- id: usa_committees_correspondence_72
+  year: 1772
+  level: 3
+  title: 通讯委员会网络建立
+  summary: 塞缪尔·亚当斯推动建立殖民地间通讯委员会网络，协调信息与政治立场，为革命组织奠基。
+  tags: [革命政变]
+
+- id: usa_intolerable_acts_74
+  year: 1774
+  level: 3
+  title: 《强制法案》颁布
+  summary: 英国为惩罚马萨诸塞而颁布系列法案，殖民地称之为"难以忍受的法案"，激化抵抗情绪。
+  tags: [革命政变]
+
+- id: usa_minutemen_75
+  year: 1775
+  level: 3
+  title: 民兵"分钟人"组织
+  summary: 殖民地各地组建随时备战的民兵部队，称"分钟人"，构成独立战争初期的主要地方武装力量。
+  tags: [战争, 革命政变]
+
+- id: usa_paine_common_sense_76
+  year: 1776
+  level: 3
+  title: 《常识》小册子出版
+  summary: 托马斯·潘恩出版《常识》，呼吁殖民地立即独立，发行量超50万册，广泛影响公众舆论。
+  tags: [文化思想, 革命政变]
+
+- id: usa_valley_forge_77
+  year: 1777
+  level: 3
+  title: 福吉谷越冬
+  summary: 大陆军在福吉谷度过严酷冬季，缺粮少衣，华盛顿稳定军心，普鲁士军官施陶本协助整训。
+  tags: [战争]
+  figures: [washington]
+
+- id: usa_articles_of_war_76
+  year: 1776
+  level: 3
+  title: 《战争条例》颁布
+  summary: 大陆会议颁布《战争条例》，规范大陆军纪律与指挥架构，仿照英国军事法典制定。
+  tags: [战争]
+
+- id: usa_monmouth_78
+  year: 1778
+  level: 3
+  title: 蒙茅斯战役
+  summary: 华盛顿率军在新泽西与英军激战，两军各自撤退，是独立战争北方战场最后一次大规模交锋。
+  tags: [战争]
+  figures: [washington]
+
+- id: usa_benedict_arnold_80
+  year: 1780
+  level: 3
+  title: 本尼迪克特·阿诺德叛变
+  summary: 大陆军将领阿诺德秘密与英军谈判，出卖西点要塞情报，事败后投奔英军，成为叛国的代名词。
+  tags: [战争, 革命政变]
+
+- id: usa_articles_ratified_81
+  year: 1781
+  level: 3
+  title: 马里兰州批准邦联条例
+  summary: 马里兰州最后一个批准《邦联条例》，十三州联合政府正式在法律上确立。
+  tags: [改革运动]
+
+- id: usa_northwest_ordinance_87
+  year: 1787
+  level: 3
+  title: 《西北条例》颁布
+  summary: 邦联国会通过《西北条例》，规定俄亥俄河以北领土的治理框架，禁止新领土引入奴隶制。
+  tags: [改革运动, 殖民扩张]
+
+- id: usa_ratification_debates_88
+  year: 1788
+  level: 3
+  title: 宪法批准论战
+  summary: 各州召开批准大会，联邦派与反联邦派激烈辩论，纽约与弗吉尼亚等关键州最终批准宪法。
+  tags: [文化思想, 改革运动]
+  figures: [hamilton_a, madison]
+
+- id: usa_first_census_90
+  year: 1790
+  level: 3
+  title: 首次人口普查
+  summary: 联邦政府进行首次全国人口普查，统计人口约393万，其中包含约70万奴隶。
+  tags: [改革运动]
+
+- id: usa_dc_plan_91
+  year: 1791
+  level: 3
+  title: 华盛顿特区城市规划
+  summary: 法裔工程师朗方受命规划新首都，设计放射状街道与宏大林荫道，奠定特区城市格局。
+  tags: [改革运动]
+
+- id: usa_cotton_gin_93
+  year: 1793
+  level: 3
+  title: 轧棉机发明
+  summary: 伊莱·惠特尼发明轧棉机，大幅提升棉花处理效率，南方棉花种植业与奴隶制随之扩张。
+  tags: [科技发明, 经济贸易]
+
+- id: usa_washingtons_farewell_96
+  year: 1796
+  level: 3
+  title: 华盛顿告别演说
+  summary: 华盛顿宣布不寻求第三任期，在告别演说中警告党派纷争与外国纠葛，确立两届任期惯例。
+  tags: [文化思想]
+  figures: [washington]
+
+- id: usa_quasi_war_98
+  year: 1798
+  endYear: 1800
+  level: 3
+  title: 美法准战争
+  summary: 美法两国在大西洋爆发未宣战的海上冲突，美国扩充海军，最终以外交协议结束对峙。
+  tags: [战争, 条约外交]
+  figures: [adams_j]
+
+- id: usa_library_congress_00
+  year: 1800
+  level: 3
+  title: 国会图书馆建立
+  summary: 国会批准拨款购置图书，建立国会图书馆，初设于国会大厦内，后发展为世界最大图书馆之一。
+  tags: [文化思想]
+
+- id: usa_jefferson_election_00
+  year: 1800
+  level: 3
+  title: 1800年总统选举
+  summary: 杰斐逊击败亚当斯当选总统，史称"1800年革命"，实现美国历史上首次执政党和平权力交接。
+  tags: [革命政变]
+  figures: [jefferson, adams_j]
+
+- id: usa_franklin_lightning_52
+  year: 1752
+  level: 3
+  title: 富兰克林风筝实验
+  summary: 富兰克林以风筝与莱顿瓶证明闪电为电现象，随后发明避雷针，获欧洲学界广泛认可。
+  tags: [科技发明]
+  figures: [franklin_b]
+
+- id: usa_american_philosophical_43
+  year: 1743
+  level: 3
+  title: 美国哲学学会成立
+  summary: 富兰克林在费城创立美国哲学学会，为北美最早的学术组织，促进科学与人文知识交流。
+  tags: [文化思想, 科技发明]
+  figures: [franklin_b]

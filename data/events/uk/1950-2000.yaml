@@ -1,38 +1,731 @@
+# UK Events 1950-2000
+# Level 1: 10 events | Level 2: 30 events | Level 3: 68 events
+
+# ─── Level 1 ───────────────────────────────────────────────────────────────
+
 - id: uk_decolonization
   year: 1947
-  endYear: 1970
+  endYear: 1975
   level: 1
   title: 大英帝国去殖民化
   summary: 印度、巴基斯坦等殖民地相继独立，大英帝国逐步解体，英联邦成立。
   tags: [殖民扩张, 条约外交]
-  related: [usa_cold_war]
 
 - id: uk_suez_crisis
   year: 1956
-  level: 2
+  level: 1
   title: 苏伊士运河危机
-  summary: 英法以色列联合入侵埃及，迫于美苏压力撤军，标志英国国际影响力衰退。
+  summary: 英法以色列联合入侵埃及，迫于美苏压力撤军，标志英国大国地位显著衰退。
   tags: [战争, 条约外交]
-  related: [usa_suez, france_suez]
+  figures: [eden]
 
-- id: uk_eec_join
+- id: uk_elizabeth_ii_reign
+  year: 1952
+  endYear: 2022
+  level: 1
+  title: 伊丽莎白二世即位
+  summary: 乔治六世驾崩后，伊丽莎白二世继位，在位70年，历经英国社会与帝国的深刻变迁。
+  tags: [王朝更迭]
+  figures: [elizabeth_ii]
+
+- id: uk_thatcher_era
+  year: 1979
+  endYear: 1990
+  level: 1
+  title: 撒切尔时代
+  summary: 玛格丽特·撒切尔连续三届当选首相，推行私有化、削减工会权力、市场化改革，影响深远。
+  tags: [改革运动, 经济贸易]
+  figures: [thatcher]
+
+- id: uk_eec_membership
   year: 1973
-  level: 2
-  title: 加入欧洲经济共同体
-  summary: 英国正式加入欧洲经济共同体（EEC），开启欧洲一体化进程参与。
+  level: 1
+  title: 加入欧洲共同体
+  summary: 英国正式加入欧洲经济共同体，开始参与欧洲一体化进程，历经数十年争议。
   tags: [条约外交, 经济贸易]
 
 - id: uk_falklands_war
   year: 1982
-  level: 2
+  level: 1
   title: 马岛战争
-  summary: 阿根廷占领福克兰群岛，英国派遣特遣舰队收复，历时74天结束。
+  summary: 阿根廷占领福克兰群岛，英国派遣特遣舰队南大西洋作战，历时74天收复，双方均有伤亡。
   tags: [战争]
+  figures: [thatcher]
 
 - id: uk_hk_handover
   year: 1997
-  level: 2
-  title: 香港回归中国
-  summary: 英国将香港主权移交中华人民共和国，结束对香港逾百年的管治。
-  tags: [条约外交]
+  level: 1
+  title: 香港回归
+  summary: 英国将香港主权移交中华人民共和国，结束对香港155年的管治，"一国两制"承诺50年不变。
+  tags: [条约外交, 殖民扩张]
   related: [china_hk_handover]
+
+- id: uk_blair_new_labour
+  year: 1997
+  endYear: 2007
+  level: 1
+  title: 布莱尔"新工党"执政
+  summary: 托尼·布莱尔率改革后的工党在大选中大胜，开始十年执政，推行苏格兰等地权力下放。
+  tags: [改革运动]
+  figures: [blair]
+
+- id: uk_miners_strike
+  year: 1984
+  endYear: 1985
+  level: 1
+  title: 矿工大罢工
+  summary: 全国矿工联合会因抗议矿山关闭而罢工逾一年，最终以矿工失败告终，工会力量大为削弱。
+  tags: [改革运动, 经济贸易]
+  figures: [thatcher]
+
+- id: uk_devolution_1997
+  year: 1997
+  endYear: 1999
+  level: 1
+  title: 苏格兰与威尔士权力下放
+  summary: 布莱尔政府推动公投，苏格兰与威尔士分别成立议会，英国宪制格局发生重大变化。
+  tags: [改革运动]
+  figures: [blair]
+
+# ─── Level 2 ───────────────────────────────────────────────────────────────
+
+- id: uk_elizabeth_coronation
+  year: 1953
+  level: 2
+  title: 伊丽莎白二世加冕
+  summary: 伊丽莎白二世在威斯敏斯特教堂举行加冕典礼，首次通过电视直播，数百万人收看。
+  tags: [王朝更迭]
+  figures: [elizabeth_ii]
+
+- id: uk_crick_watson_dna
+  year: 1953
+  level: 2
+  title: DNA双螺旋结构发现
+  summary: 英国科学家沃森（美）与克里克在剑桥发现DNA双螺旋结构，开创分子生物学新时代。
+  tags: [科技发明]
+  figures: [crick]
+
+- id: uk_korean_war
+  year: 1950
+  endYear: 1953
+  level: 2
+  title: 参与朝鲜战争
+  summary: 英国以联合国名义参加朝鲜战争，派遣数万名士兵，伤亡数千，战争以停战协定结束。
+  tags: [战争]
+
+- id: uk_nato_cold_war_role
+  year: 1949
+  endYear: 1991
+  level: 2
+  title: 冷战中的北约角色
+  summary: 英国在冷战期间作为北约核心成员，驻扎西德英军，维持核威慑能力，抗衡苏联。
+  tags: [战争, 条约外交]
+
+- id: uk_nuclear_bomb_test
+  year: 1952
+  level: 2
+  title: 英国首次核武器试验
+  summary: 英国在澳大利亚蒙特贝洛群岛成功试爆首枚原子弹，成为继美苏之后第三个核国家。
+  tags: [科技发明, 战争]
+
+- id: uk_wind_of_change_speech
+  year: 1960
+  level: 2
+  title: 麦克米伦"变革之风"演讲
+  summary: 英国首相麦克米伦在南非议会发表"变革之风"演讲，宣告英国认可非洲殖民地的独立运动。
+  tags: [殖民扩张, 条约外交]
+  figures: [macmillan]
+
+- id: uk_common_market_referendum
+  year: 1975
+  level: 2
+  title: 英国欧共体成员资格公投
+  summary: 英国就是否留在欧洲共同体进行全国公投，约67%选民投票留欧，威尔逊政府得以继续执政。
+  tags: [条约外交, 经济贸易]
+
+- id: uk_thatcher_privatization
+  year: 1979
+  endYear: 1990
+  level: 2
+  title: 撒切尔私有化改革
+  summary: 英国电信、英国天然气、英国航空等国有企业相继私有化，改变英国经济结构。
+  tags: [经济贸易, 改革运动]
+  figures: [thatcher]
+
+- id: uk_ira_troubles
+  year: 1968
+  endYear: 1998
+  level: 2
+  title: 北爱尔兰"动乱"时期
+  summary: 北爱尔兰爆发天主教共和派与新教统一派武装冲突，英军介入，三十年间逾3500人死亡。
+  tags: [战争, 革命政变]
+
+- id: uk_good_friday_agreement
+  year: 1998
+  level: 2
+  title: 《耶稣受难日协议》
+  summary: 英爱双方与北爱尔兰各派签署协议，结束大规模武装冲突，建立权力分享制度。
+  tags: [条约外交, 革命政变]
+  figures: [blair]
+
+- id: uk_winter_of_discontent
+  year: 1978
+  endYear: 1979
+  level: 2
+  title: "不满之冬"
+  summary: 英国爆发大规模工人罢工，垃圾堆积路旁、殡仪馆停止运作，加速卡拉汉工党政府倒台。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_stagflation_1970s
+  year: 1973
+  endYear: 1979
+  level: 2
+  title: 1970年代经济滞胀
+  summary: 石油危机引发英国严重通胀与经济停滞并存，史称"滞胀"，工业竞争力持续下降。
+  tags: [经济贸易]
+
+- id: uk_three_day_week
+  year: 1974
+  level: 2
+  title: 三日工作周危机
+  summary: 矿工罢工导致电力短缺，希斯政府宣布实行三日工作周，英国经济陷入混乱，政府倒台。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_race_relations_acts
+  year: 1965
+  endYear: 1976
+  level: 2
+  title: 种族关系法立法
+  summary: 英国陆续通过1965、1968、1976年《种族关系法》，建立反种族歧视法律框架。
+  tags: [改革运动]
+
+- id: uk_new_towns_movement
+  year: 1946
+  endYear: 1970
+  level: 2
+  title: 新城建设运动
+  summary: 英国政府依据《新城法》在全国建设哈洛、斯蒂夫尼奇等新城，分散大城市人口压力。
+  tags: [改革运动, 经济贸易]
+
+- id: uk_margaret_thatcher_elected
+  year: 1979
+  level: 2
+  title: 撒切尔夫人当选首相
+  summary: 玛格丽特·撒切尔率保守党赢得大选，成为英国及欧洲历史上首位女性首相。
+  tags: [改革运动]
+  figures: [thatcher]
+
+- id: uk_brixton_riots
+  year: 1981
+  level: 2
+  title: 布里克斯顿骚乱
+  summary: 伦敦布里克斯顿黑人社区爆发严重骚乱，引发英国政府对种族歧视与经济不平等的审视。
+  tags: [革命政变]
+
+- id: uk_poll_tax_riots
+  year: 1990
+  level: 2
+  title: 人头税骚乱与撒切尔下台
+  summary: 人头税引发全国抗议，伦敦特拉法加广场发生大规模骚乱，撒切尔随后在党内投票中失去领导权。
+  tags: [革命政变, 改革运动]
+  figures: [thatcher]
+
+- id: uk_major_government
+  year: 1990
+  endYear: 1997
+  level: 2
+  title: 约翰·梅杰执政
+  summary: 约翰·梅杰接替撒切尔，推动马斯特里赫特条约，在欧洲问题上保守党内部深度分裂。
+  tags: [条约外交, 改革运动]
+  figures: [john_major]
+
+- id: uk_black_wednesday
+  year: 1992
+  level: 2
+  title: 黑色星期三
+  summary: 英镑遭投机者狙击，英国被迫宣布退出欧洲汇率机制，政府损失数十亿英镑，保守党声誉受损。
+  tags: [经济贸易]
+
+- id: uk_maastricht_treaty
+  year: 1992
+  level: 2
+  title: 《马斯特里赫特条约》签署
+  summary: 英国签署欧盟条约，但保留选择不加入货币联盟权利，欧洲问题成为英国政治长期争议焦点。
+  tags: [条约外交]
+  figures: [john_major]
+
+- id: uk_diana_death
+  year: 1997
+  level: 2
+  title: 戴安娜王妃逝世
+  summary: 威尔士王妃戴安娜在巴黎车祸中遇难，英国爆发前所未有的公众悼念浪潮，媒体报道铺天盖地。
+  tags: [王朝更迭]
+
+- id: uk_cnd_nuclear_protests
+  year: 1958
+  endYear: 1963
+  level: 2
+  title: 核裁军运动
+  summary: 英国核裁军运动（CND）兴起，奥尔德马斯顿游行成为大规模和平示威，影响英国防务辩论。
+  tags: [改革运动]
+  figures: [bertrand_russell]
+
+- id: uk_swinging_sixties
+  year: 1963
+  endYear: 1970
+  level: 2
+  title: "摇摆的六十年代"
+  summary: 以披头士为代表的英国流行文化席卷全球，时装、音乐、摄影革新，英国成为流行文化中心。
+  tags: [文化思想]
+
+- id: uk_decimal_currency
+  year: 1971
+  level: 2
+  title: 英国货币十进位制化
+  summary: 英国将货币从旧制（英镑/先令/便士）改为十进位制新便士制，完成货币现代化改革。
+  tags: [经济贸易]
+
+- id: uk_gender_equality_acts
+  year: 1970
+  endYear: 1975
+  level: 2
+  title: 性别平等立法
+  summary: 英国通过《同酬法》（1970年）与《性别歧视法》（1975年），确立工作场所性别平等法律原则。
+  tags: [改革运动]
+
+- id: uk_channel_tunnel
+  year: 1994
+  level: 2
+  title: 英吉利海峡隧道通车
+  summary: 英法合作建造的英吉利海峡隧道正式通车，连接英国与欧洲大陆，实现历史性突破。
+  tags: [科技发明, 经济贸易]
+
+- id: uk_north_sea_oil
+  year: 1975
+  endYear: 2000
+  level: 2
+  title: 北海石油开发
+  summary: 北海油田大规模开采，英国石油收入支撑撒切尔时代财政，但同时加速制造业衰退。
+  tags: [经济贸易]
+
+- id: uk_big_bang_financial
+  year: 1986
+  level: 2
+  title: 金融大爆炸
+  summary: 伦敦证券交易所推行全面去管制改革，伦敦成为全球最重要的金融中心之一。
+  tags: [经济贸易]
+  figures: [thatcher]
+
+- id: uk_scottish_parliament_est
+  year: 1999
+  level: 2
+  title: 苏格兰议会成立
+  summary: 苏格兰议会依据权力下放法令在爱丁堡正式开幕，苏格兰获得立法自治权。
+  tags: [改革运动]
+  figures: [blair]
+
+# ─── Level 3 ───────────────────────────────────────────────────────────────
+
+- id: uk_korean_war_start
+  year: 1950
+  level: 3
+  title: 英国参加朝鲜战争
+  summary: 英国跟随美国以联合国名义出兵朝鲜，参战英军约9万人，为战后最早海外军事行动之一。
+  tags: [战争]
+
+- id: uk_festival_of_britain
+  year: 1951
+  level: 3
+  title: 英国节博览会
+  summary: 为庆祝战后重建与1851年博览会百年，英国举办"英国节"，展示设计与文化现代化。
+  tags: [文化思想]
+
+- id: uk_george_vi_death
+  year: 1952
+  level: 3
+  title: 乔治六世驾崩
+  summary: 乔治六世于1952年2月6日驾崩，伊丽莎白公主当时正在肯尼亚访问，即刻回国继承王位。
+  tags: [王朝更迭]
+  figures: [george_vi, elizabeth_ii]
+
+- id: uk_smog_london_1952
+  year: 1952
+  level: 3
+  title: 伦敦大烟雾事件
+  summary: 伦敦爆发严重烟雾，煤烟与雾气混合，短短数日内数千人死亡，推动《清洁空气法》立法。
+  tags: [改革运动]
+
+- id: uk_hillary_everest_1953
+  year: 1953
+  level: 3
+  title: 埃德蒙·希拉里登顶珠穆朗玛峰
+  summary: 新西兰人希拉里与尼泊尔向导丹增·诺尔盖代表英国探险队首次登顶珠穆朗玛峰。
+  tags: [科技发明]
+
+- id: uk_clean_air_act
+  year: 1956
+  level: 3
+  title: 《清洁空气法》通过
+  summary: 议会通过《清洁空气法》，规定烟尘排放标准，推动城市从煤炭转向清洁燃料，改善空气质量。
+  tags: [改革运动]
+
+- id: uk_roger_bannister_mile
+  year: 1954
+  level: 3
+  title: 班尼斯特首破四分钟一英里
+  summary: 罗杰·班尼斯特在牛津创造首次四分钟内跑完一英里纪录，成为体育史上的标志性时刻。
+  tags: [文化思想]
+
+- id: uk_suez_eden_resign
+  year: 1957
+  level: 3
+  title: 艾登因苏伊士危机辞职
+  summary: 苏伊士运河危机后英国被迫撤军，首相安东尼·艾登因健康问题与政治压力辞职下台。
+  tags: [条约外交]
+  figures: [eden]
+
+- id: uk_macmillan_pm
+  year: 1957
+  endYear: 1963
+  level: 3
+  title: 麦克米伦出任首相
+  summary: 哈罗德·麦克米伦出任首相，以"你们从未有过如此好的生活"著称，主导后苏伊士英国外交转型。
+  tags: [改革运动]
+  figures: [macmillan]
+
+- id: uk_bevan_nhs_resign
+  year: 1951
+  level: 3
+  title: 贝万因NHS收费辞职
+  summary: NHS创立者安奈林·贝万因反对引入处方费而辞去内阁职务，工党左右翼分歧加深。
+  tags: [改革运动]
+  figures: [bevan]
+
+- id: uk_ghana_independence
+  year: 1957
+  level: 3
+  title: 加纳独立
+  summary: 英属黄金海岸成为撒哈拉以南非洲首个独立国家加纳，揭开英国非洲去殖民化序幕。
+  tags: [殖民扩张]
+
+- id: uk_africa_year_1960
+  year: 1960
+  level: 3
+  title: 非洲独立年
+  summary: 1960年英国多个非洲殖民地相继宣告独立，包括尼日利亚、塞拉利昂、索马里等国。
+  tags: [殖民扩张]
+
+- id: uk_malaya_independence
+  year: 1957
+  level: 3
+  title: 马来亚独立
+  summary: 英属马来亚经历1948至1960年共产党叛乱后，于1957年宣告独立，英国保留军事基地。
+  tags: [殖民扩张]
+
+- id: uk_beatles_debut
+  year: 1963
+  level: 3
+  title: 披头士乐队登上全国舞台
+  summary: 披头士乐队在英国的首张专辑发布，迅速风靡全国，随后征服美国，开创"英伦入侵"浪潮。
+  tags: [文化思想]
+
+- id: uk_profumo_affair
+  year: 1963
+  level: 3
+  title: 普罗富莫丑闻
+  summary: 英国国防大臣普罗富莫承认与一名女子的情事，该女子同时与苏联海军武官有往来，政治震动。
+  tags: [革命政变]
+
+- id: uk_wilson_govt_1964
+  year: 1964
+  level: 3
+  title: 哈罗德·威尔逊工党政府
+  summary: 哈罗德·威尔逊率工党以微弱优势赢得大选，提出"白热化技术革命"，强调现代化改革。
+  tags: [改革运动]
+
+- id: uk_immigration_act_1962
+  year: 1962
+  level: 3
+  title: 《英联邦移民法》
+  summary: 英国通过法令限制英联邦公民移民，首次对有色人种移民施加系统性限制，引发争议。
+  tags: [改革运动]
+
+- id: uk_enoch_powell_rivers_blood
+  year: 1968
+  level: 3
+  title: 鲍威尔"血流成河"演讲
+  summary: 保守党议员伊诺克·鲍威尔发表反移民演讲，引发全国争论，随即被影子内阁解除职务。
+  tags: [文化思想, 改革运动]
+
+- id: uk_decriminalize_homosexuality
+  year: 1967
+  level: 3
+  title: 同性恋去罪化
+  summary: 英格兰与威尔士通过法令，将成年男性间私下自愿的同性性行为去罪化，苏格兰1980年跟进。
+  tags: [改革运动]
+
+- id: uk_abortion_act_1967
+  year: 1967
+  level: 3
+  title: 堕胎合法化
+  summary: 英国议会通过《堕胎法》，在特定条件下允许合法堕胎，英格兰、苏格兰与威尔士适用。
+  tags: [改革运动]
+
+- id: uk_concorde_first_flight
+  year: 1969
+  level: 3
+  title: 协和式飞机首飞
+  summary: 英法合作研制的超音速客机协和号完成首次飞行，1976年投入商业运营，飞越大西洋仅需3.5小时。
+  tags: [科技发明]
+
+- id: uk_troubles_bloody_sunday
+  year: 1972
+  level: 3
+  title: 北爱尔兰"血腥星期日"
+  summary: 英军在德里射杀14名天主教徒民权示威者，事件引发强烈愤慨，各方记载存在差异。
+  tags: [战争, 革命政变]
+
+- id: uk_ira_mainland_bombs
+  year: 1973
+  endYear: 1996
+  level: 3
+  title: 爱尔兰共和军英伦本土爆炸
+  summary: 爱尔兰共和军在英格兰多地实施炸弹袭击，包括伦敦、伯明翰等城市，造成平民伤亡。
+  tags: [战争, 革命政变]
+
+- id: uk_uk_inflation_high_1975
+  year: 1975
+  level: 3
+  title: 通货膨胀率达25%
+  summary: 1975年英国通胀率达到25%，为战后峰值，购买力急剧下降，工会与政府陷入工资谈判僵局。
+  tags: [经济贸易]
+
+- id: uk_imf_bailout
+  year: 1976
+  level: 3
+  title: 英国向IMF申请救助
+  summary: 英镑危机迫使英国向国际货币基金组织申请贷款，附带财政紧缩条件，引发政治风波。
+  tags: [经济贸易]
+
+- id: uk_thatcher_monetarism
+  year: 1979
+  endYear: 1983
+  level: 3
+  title: 撒切尔紧缩货币政策
+  summary: 撒切尔政府实施严格货币主义，以抑制通胀为首要目标，但引发深度衰退，失业率急升。
+  tags: [经济贸易]
+  figures: [thatcher]
+
+- id: uk_falklands_san_carlos
+  year: 1982
+  level: 3
+  title: 英军在圣卡洛斯登陆
+  summary: 英国特遣舰队在福克兰群岛圣卡洛斯水域登陆，随后进攻斯坦利港，阿根廷守军投降。
+  tags: [战争]
+  figures: [thatcher]
+
+- id: uk_miners_defeat
+  year: 1985
+  level: 3
+  title: 矿工罢工失败
+  summary: 全国矿工联合会在罢工一年后宣告停止，政府随后推进矿山关闭计划，煤炭工业急速萎缩。
+  tags: [经济贸易, 改革运动]
+  figures: [thatcher]
+
+- id: uk_bbc_world_service
+  year: 1965
+  level: 3
+  title: BBC世界广播扩展
+  summary: BBC世界广播服务以数十种语言向全球播出，成为英国软实力与新闻自由的重要代表。
+  tags: [文化思想]
+
+- id: uk_ira_brighton_bomb
+  year: 1984
+  level: 3
+  title: 爱尔兰共和军袭击保守党大会
+  summary: 爱尔兰共和军在布莱顿旅馆放置炸弹，袭击保守党年会，撒切尔险未遇难，5人死亡。
+  tags: [革命政变, 战争]
+  figures: [thatcher]
+
+- id: uk_lords_reform_1999
+  year: 1999
+  level: 3
+  title: 上议院世袭贵族改革
+  summary: 布莱尔政府通过法令，废除大多数世袭贵族在上议院的自动议席，推动上议院现代化改革。
+  tags: [改革运动]
+  figures: [blair]
+
+- id: uk_minimum_wage
+  year: 1999
+  level: 3
+  title: 全国最低工资制度建立
+  summary: 英国引入全国最低工资制度，初定每小时3.6英镑，填补劳工保护重要空白。
+  tags: [改革运动, 经济贸易]
+  figures: [blair]
+
+- id: uk_stephen_hawking_brief_history
+  year: 1988
+  level: 3
+  title: 霍金《时间简史》出版
+  summary: 斯蒂芬·霍金出版《时间简史》，以通俗方式阐述宇宙学与黑洞理论，全球销量过千万。
+  tags: [文化思想, 科技发明]
+  figures: [hawking]
+
+- id: uk_berners_lee_www
+  year: 1991
+  level: 3
+  title: 万维网公开发布
+  summary: 英国科学家蒂姆·伯纳斯-李在欧洲核子研究中心发明万维网，并于1991年向公众开放。
+  tags: [科技发明]
+  figures: [berners_lee]
+
+- id: uk_cern_higgs
+  year: 1964
+  level: 3
+  title: 希格斯提出玻色子理论
+  summary: 英国物理学家彼得·希格斯提出希格斯场与希格斯玻色子理论，2012年实验证实，获诺贝尔奖。
+  tags: [科技发明]
+
+- id: uk_human_rights_act
+  year: 1998
+  level: 3
+  title: 《人权法》通过
+  summary: 英国将《欧洲人权公约》纳入国内法，通过《人权法》，公民可直接在英国法院援引公约权利。
+  tags: [改革运动]
+  figures: [blair]
+
+- id: uk_stephen_lawrence_inquiry
+  year: 1999
+  level: 3
+  title: 史蒂芬·劳伦斯调查报告
+  summary: 麦克弗森报告认定伦敦警察厅在处理黑人少年史蒂芬·劳伦斯案时存在"制度性种族主义"。
+  tags: [改革运动]
+
+- id: uk_closing_coal_mines
+  year: 1985
+  endYear: 1995
+  level: 3
+  title: 大规模煤矿关闭
+  summary: 罢工失败后英国煤矿陆续关闭，煤矿工人数量从二十万骤降至数万，传统煤矿社区凋零。
+  tags: [经济贸易]
+
+- id: uk_brent_spar_controversy
+  year: 1995
+  level: 3
+  title: 布伦特斯帕石油平台事件
+  summary: 壳牌计划将废弃石油平台沉入北海，遭绿色和平组织强烈抗议并引发国际抵制，最终撤回计划。
+  tags: [改革运动]
+
+- id: uk_dunblane_massacre
+  year: 1996
+  level: 3
+  title: 邓布兰学校枪击事件
+  summary: 一名枪手在苏格兰邓布兰小学射杀16名儿童与一名教师，事件推动英国严格管控枪支立法。
+  tags: [改革运动]
+
+- id: uk_handgun_ban
+  year: 1997
+  level: 3
+  title: 英国禁止私人拥有手枪
+  summary: 邓布兰事件后，议会通过法令全面禁止私人拥有手枪，英国枪支管制成为全球最严格之列。
+  tags: [改革运动]
+
+- id: uk_diana_marriage
+  year: 1981
+  level: 3
+  title: 查尔斯王子与戴安娜婚礼
+  summary: 查尔斯王子与戴安娜·斯宾塞在圣保罗大教堂举行婚礼，全球7亿人通过电视收看。
+  tags: [王朝更迭]
+
+- id: uk_diana_divorce
+  year: 1996
+  level: 3
+  title: 查尔斯与戴安娜离婚
+  summary: 查尔斯王子与戴安娜王妃正式离婚，婚姻破裂过程被媒体广泛报道，引发公众对王室的质疑。
+  tags: [王朝更迭]
+
+- id: uk_new_labour_third_way
+  year: 1997
+  level: 3
+  title: 布莱尔"第三条道路"
+  summary: 布莱尔工党放弃传统左翼政策，以市场经济结合社会公正的"第三条道路"赢得中间选民。
+  tags: [改革运动]
+  figures: [blair]
+
+- id: uk_bank_of_england_independence
+  year: 1997
+  level: 3
+  title: 英格兰银行独立设定利率
+  summary: 布莱尔政府授予英格兰银行货币政策独立权，货币委员会开始自主决定利率水平。
+  tags: [经济贸易]
+  figures: [blair]
+
+- id: uk_welsh_assembly
+  year: 1999
+  level: 3
+  title: 威尔士国民议会成立
+  summary: 威尔士国民议会在卡迪夫正式开幕，威尔士获得有限立法权，权力下放格局完善。
+  tags: [改革运动]
+  figures: [blair]
+
+- id: uk_sinn_fein_peace_process
+  year: 1994
+  level: 3
+  title: 爱尔兰共和军宣布停火
+  summary: 爱尔兰共和军宣布暂时停止武装行动，梅杰政府与新芬党开启政治谈判，北爱和平进程启动。
+  tags: [革命政变, 条约外交]
+  figures: [john_major]
+
+- id: uk_chunnel_ceremony
+  year: 1994
+  level: 3
+  title: 英吉利海峡隧道开幕典礼
+  summary: 伊丽莎白二世与法国总统密特朗共同主持英吉利海峡隧道开幕，两国元首互驾火车穿越隧道。
+  tags: [科技发明, 条约外交]
+  figures: [elizabeth_ii]
+
+- id: uk_new_labour_election_landslide
+  year: 1997
+  level: 3
+  title: 工党1997年大选压倒性胜利
+  summary: 工党赢得418席，保守党降至165席，保守党遭受自1906年以来最大败选，结束18年执政。
+  tags: [改革运动]
+  figures: [blair]
+
+- id: uk_unemployment_thatcher_peak
+  year: 1984
+  level: 3
+  title: 失业率突破三百万
+  summary: 撒切尔执政期间英国失业人数突破三百万，为战后最高水平，工业重镇受创尤深。
+  tags: [经济贸易]
+  figures: [thatcher]
+
+- id: uk_hiv_aids_awareness
+  year: 1986
+  level: 3
+  title: 英国艾滋病公众教育运动
+  summary: 英国政府发起大规模艾滋病公众教育宣传，成为全球最早、最系统推行艾滋病预防教育的国家之一。
+  tags: [改革运动]
+
+- id: uk_poll_tax_introduced
+  year: 1989
+  level: 3
+  title: 人头税在苏格兰先行推出
+  summary: 撒切尔政府在苏格兰率先以人头税取代地方财产税，引发强烈反对，翌年推广至英格兰。
+  tags: [经济贸易, 改革运动]
+  figures: [thatcher]
+
+- id: uk_lockerbie_bombing
+  year: 1988
+  level: 3
+  title: 洛克比空难
+  summary: 泛美航空103号班机在苏格兰洛克比上空被炸毁，270人罹难，随后调查矛头指向利比亚。
+  tags: [战争]
+
+- id: uk_john_smith_death
+  year: 1994
+  level: 3
+  title: 工党领袖约翰·史密斯猝逝
+  summary: 工党领袖约翰·史密斯突发心脏病逝世，布莱尔随后当选领袖，推动工党大幅改革。
+  tags: [改革运动]
+  figures: [blair]

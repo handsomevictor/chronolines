@@ -1,47 +1,722 @@
-- id: james_watt
-  name: 詹姆斯·瓦特
-  birthYear: 1736
-  deathYear: 1819
-  level: 2
-  summary: 改良蒸汽机，为工业革命提供核心动力来源，推动工业化进程。
-  events: [uk_watt_steam]
+# UK Historical Figures
+# Total: 52 figures
 
-- id: nelson
-  name: 纳尔逊将军
-  birthYear: 1758
-  deathYear: 1805
-  level: 2
-  summary: 英国海军将领，特拉法尔加海战中击败法西联合舰队，战斗中阵亡。
-  events: [uk_napoleonic_wars]
+# ─── 政治 ───────────────────────────────────────────────────────────────────
 
-- id: wellington
-  name: 威灵顿公爵
-  birthYear: 1769
-  deathYear: 1852
+- id: queen_anne
+  name: 安妮女王
+  birthYear: 1665
+  deathYear: 1714
+  category: 政治
   level: 2
-  summary: 英国陆军统帅，滑铁卢战役中击败拿破仑，后任英国首相。
-  events: [uk_napoleonic_wars]
+  summary: 英格兰、苏格兰及爱尔兰女王，斯图亚特王朝末代君主，在位期间实现英苏合并。
+  events: [uk_queen_anne_reign, uk_act_of_union_1707, uk_spain_succession_war]
 
-- id: queen_victoria
-  name: 维多利亚女王
-  birthYear: 1819
-  deathYear: 1901
+- id: george_i
+  name: 乔治一世
+  birthYear: 1660
+  deathYear: 1727
+  category: 政治
+  level: 2
+  summary: 汉诺威选帝侯，依据《定居法》继承英国王位，开创汉诺威王朝，不通英语。
+  events: [uk_hanover_dynasty, uk_george_i_accession]
+
+- id: george_iii
+  name: 乔治三世
+  birthYear: 1738
+  deathYear: 1820
+  category: 政治
   level: 1
-  summary: 英国女王，在位64年，大英帝国在其统治时期达到鼎盛。
-  events: [uk_victoria_reign]
+  summary: 英国国王，在位60年，任内经历美国独立、工业革命兴起，晚年罹患精神疾病。
+  events: [uk_george_iii_reign, uk_american_revolution, uk_george_iii_illness]
+
+- id: walpole
+  name: 罗伯特·沃波尔
+  birthYear: 1676
+  deathYear: 1745
+  category: 政治
+  level: 2
+  summary: 被视为英国事实上的首位首相，执政二十余年，确立内阁对议会负责的宪政惯例。
+  events: [uk_walpole_pm]
+
+- id: pitt_elder
+  name: 老皮特
+  birthYear: 1708
+  deathYear: 1778
+  category: 政治
+  level: 2
+  summary: 威廉·皮特（一世），七年战争期间主导英国全球军事战略，赢得广大殖民地，称"大皮特"。
+  events: [uk_seven_years_war, uk_pitt_elder_pm]
+
+- id: pitt_younger
+  name: 小皮特
+  birthYear: 1759
+  deathYear: 1806
+  category: 政治
+  level: 1
+  summary: 威廉·皮特（二世），英国最年轻首相，推行财政改革与自由贸易，主导对法战争准备。
+  events: [uk_pitt_younger_pm, uk_pitt_india_budget, uk_pitt_treason_acts, uk_napoleonic_wars]
+
+- id: burke
+  name: 埃德蒙·伯克
+  birthYear: 1729
+  deathYear: 1797
+  category: 政治
+  level: 2
+  summary: 爱尔兰裔英国政治家与思想家，保守主义奠基人，以批判法国大革命的著作著称。
+  events: [uk_french_revolution_response, uk_warren_hastings_trial]
+
+- id: wilberforce
+  name: 威廉·威伯福斯
+  birthYear: 1759
+  deathYear: 1833
+  category: 政治
+  level: 1
+  summary: 英国议员，毕生致力于废除奴隶贸易与奴隶制运动，1807年奴隶贸易废除法通过。
+  events: [uk_abolitionist_movement, uk_abolish_slave_trade, uk_abolish_slavery, uk_slave_trade_lobbying, uk_abolition_slave_trade_act]
+
+- id: castlereagh
+  name: 卡斯尔雷勋爵
+  birthYear: 1769
+  deathYear: 1822
+  category: 政治
+  level: 2
+  summary: 英国外相，维也纳会议主要设计者之一，主导战后欧洲"协调"体系的建立。
+  events: [uk_vienna_congress]
+
+- id: peel
+  name: 罗伯特·皮尔
+  birthYear: 1788
+  deathYear: 1850
+  category: 政治
+  level: 2
+  summary: 英国首相，建立现代警察制度，废除《谷物法》确立自由贸易，保守党的重要改革者。
+  events: [uk_peel_police_act, uk_corn_laws_repeal, uk_robert_peel_corn_law_split]
 
 - id: palmerston
   name: 帕默斯顿勋爵
   birthYear: 1784
   deathYear: 1865
+  category: 政治
   level: 2
-  summary: 英国外交大臣和首相，强硬的对外政策推动者，主导鸦片战争决策。
-  events: [uk_opium_war]
+  summary: 英国外交大臣与首相，以强硬炮舰外交著称，主导鸦片战争决策，晚年以首相职任内辞世。
+  events: [uk_opium_war, uk_lord_palmerston_death]
+
+- id: disraeli
+  name: 本杰明·迪斯雷利
+  birthYear: 1804
+  deathYear: 1881
+  category: 政治
+  level: 1
+  summary: 英国首相，保守党领袖，推动第二次改革法案，收购苏伊士运河股份，主张帝国主义扩张。
+  events: [uk_victoria_empress_india, uk_second_reform_act, uk_suez_canal_shares, uk_disraeli_berlin_congress, uk_tory_democracy_gorst]
+
+- id: gladstone
+  name: 威廉·格拉斯顿
+  birthYear: 1809
+  deathYear: 1898
+  category: 政治
+  level: 1
+  summary: 英国首相，四度出任，推动第三次改革法案、工会合法化与爱尔兰自治立法，自由主义代表。
+  events: [uk_third_reform_act, uk_trade_union_legalization, uk_gladstone_disraeli_rivalry, uk_gladstone_irish_home_rule]
+
+- id: queen_victoria
+  name: 维多利亚女王
+  birthYear: 1819
+  deathYear: 1901
+  category: 政治
+  level: 1
+  summary: 英国女王，在位64年，大英帝国在其统治时期达到顶峰，帝国版图逾四分之一个地球。
+  events: [uk_victoria_reign, uk_victoria_coronation, uk_prince_albert_marriage, uk_albert_death, uk_victoria_empress_india, uk_victoria_golden_jubilee, uk_victoria_diamond_jubilee, uk_victoria_death]
+
+- id: prince_albert
+  name: 阿尔伯特亲王
+  birthYear: 1819
+  deathYear: 1861
+  category: 政治
+  level: 2
+  summary: 维多利亚女王的丈夫，积极参与政治顾问工作，主导万国工业博览会筹办，英年早逝。
+  events: [uk_prince_albert_marriage, uk_great_exhibition, uk_albert_death]
+
+- id: lloyd_george
+  name: 劳合·乔治
+  birthYear: 1863
+  deathYear: 1945
+  category: 政治
+  level: 1
+  summary: 英国首相，推行国民保险与养老金改革，一战期间出任战时首相，参与凡尔赛和约谈判。
+  events: [uk_old_age_pensions, uk_national_insurance_act, uk_budget_crisis_1909, uk_paris_peace_conference, uk_wwi]
+
+- id: emmeline_pankhurst
+  name: 艾米琳·潘克赫斯特
+  birthYear: 1858
+  deathYear: 1928
+  category: 政治
+  level: 1
+  summary: 英国妇女参政运动领袖，创立妇女社会政治联盟，以激进手段争取妇女选举权。
+  events: [uk_suffragette_movement, uk_womens_suffrage, uk_suffragette_emily_davidson]
+
+- id: chamberlain
+  name: 内维尔·张伯伦
+  birthYear: 1869
+  deathYear: 1940
+  category: 政治
+  level: 2
+  summary: 英国首相，以慕尼黑协议对纳粹德国实行绥靖政策，二战爆发后被丘吉尔取代。
+  events: [uk_appeasement_policy, uk_munich_agreement]
 
 - id: churchill
   name: 温斯顿·丘吉尔
   birthYear: 1874
   deathYear: 1965
+  category: 政治
   level: 1
-  summary: 英国首相，二战期间领导英国抵御德国入侵，发表大量激励演讲。
-  events: [uk_wwii]
+  summary: 英国首相，二战期间领导英国抵御德国入侵，以演讲激励国民，1945年大选意外落败。
+  events: [uk_wwii, uk_dunkirk_evacuation, uk_battle_of_britain, uk_atlantic_charter, uk_d_day_normandy, uk_churchill_becomes_pm, uk_blitz, uk_potsdam_conference, uk_general_election_1945, uk_victory_wwii_europe, uk_raf_fighter_command, uk_gallipoli_campaign, uk_election_1906_liberals]
+
+- id: attlee
+  name: 克莱门特·艾德礼
+  birthYear: 1883
+  deathYear: 1967
+  category: 政治
+  level: 1
+  summary: 英国首相，工党领袖，1945年大选获胜后建立NHS与福利国家体系，主导印度独立谈判。
+  events: [uk_labour_victory_1945, uk_nhs_founded, uk_nationalization_1945, uk_india_independence, uk_potsdam_conference, uk_national_coal_board, uk_railways_nationalised]
+
+- id: bevan
+  name: 安奈林·贝万
+  birthYear: 1897
+  deathYear: 1960
+  category: 政治
+  level: 2
+  summary: 英国卫生大臣，国家卫生服务（NHS）的创立者，工党左翼代表，因反对NHS收费而辞职。
+  events: [uk_nhs_founded, uk_bevan_nhs_resign]
+
+- id: edward_viii
+  name: 爱德华八世
+  birthYear: 1894
+  deathYear: 1972
+  category: 政治
+  level: 2
+  summary: 英国国王，为迎娶离婚美国女子沃利斯·辛普森，宣布退位，在位仅325天。
+  events: [uk_edward_viii_abdication, uk_abdication_crisis]
+
+- id: george_v
+  name: 乔治五世
+  birthYear: 1865
+  deathYear: 1936
+  category: 政治
+  level: 2
+  summary: 英国国王，一战期间将王室改名为温莎家族，以稳健风格赢得民心，开创王室广播传统。
+  events: [uk_george_v_reign, uk_george_v_silver_jubilee, uk_george_v_death]
+
+- id: george_vi
+  name: 乔治六世
+  birthYear: 1895
+  deathYear: 1952
+  category: 政治
+  level: 2
+  summary: 英国国王，在爱德华退位后继位，二战期间坚守伦敦、亲赴前线，以口吃克服困难鼓励国民。
+  events: [uk_george_vi_reign, uk_george_vi_coronation, uk_george_vi_death]
+
+- id: elizabeth_ii
+  name: 伊丽莎白二世
+  birthYear: 1926
+  deathYear: 2022
+  category: 政治
+  level: 1
+  summary: 英国女王，在位70年，历经大英帝国解体、冷战、脱欧等历史巨变，成为英国稳定象征。
+  events: [uk_elizabeth_ii_reign, uk_elizabeth_coronation, uk_george_vi_death, uk_chunnel_ceremony]
+
+- id: thatcher
+  name: 玛格丽特·撒切尔
+  birthYear: 1925
+  deathYear: 2013
+  category: 政治
+  level: 1
+  summary: 英国首位女性首相，推行私有化与市场化改革，赢得马岛战争，以强硬风格著称。
+  events: [uk_thatcher_era, uk_falklands_war, uk_miners_strike, uk_margaret_thatcher_elected, uk_thatcher_privatization, uk_poll_tax_riots, uk_ira_brighton_bomb, uk_big_bang_financial, uk_thatcher_monetarism, uk_miners_defeat, uk_falklands_san_carlos, uk_poll_tax_introduced, uk_unemployment_thatcher_peak]
+
+- id: blair
+  name: 托尼·布莱尔
+  birthYear: 1953
+  deathYear: null
+  category: 政治
+  level: 1
+  summary: 英国首相，以"第三条道路"理念率工党大胜，推行权力下放改革，推动北爱和平协议。
+  events: [uk_blair_new_labour, uk_devolution_1997, uk_good_friday_agreement, uk_lords_reform_1999, uk_minimum_wage, uk_human_rights_act, uk_bank_of_england_independence, uk_new_labour_election_landslide, uk_new_labour_third_way, uk_scottish_parliament_est, uk_welsh_assembly, uk_john_smith_death]
+
+- id: john_major
+  name: 约翰·梅杰
+  birthYear: 1943
+  deathYear: null
+  category: 政治
+  level: 2
+  summary: 英国首相，接替撒切尔执政，签署马斯特里赫特条约，主导北爱停火谈判，执政期间黑色星期三重创声誉。
+  events: [uk_major_government, uk_maastricht_treaty, uk_black_wednesday, uk_sinn_fein_peace_process]
+
+- id: eden
+  name: 安东尼·艾登
+  birthYear: 1897
+  deathYear: 1977
+  category: 政治
+  level: 2
+  summary: 英国首相，以外交能力著称，因苏伊士运河危机决策失误被迫辞职，标志英国国际地位下滑。
+  events: [uk_suez_crisis, uk_suez_eden_resign]
+
+- id: macmillan
+  name: 哈罗德·麦克米伦
+  birthYear: 1894
+  deathYear: 1986
+  category: 政治
+  level: 2
+  summary: 英国首相，以"你们从未有过如此好的生活"著称，主导非洲去殖民化，推动英国申请加入欧共体。
+  events: [uk_wind_of_change_speech, uk_macmillan_pm]
+
+# ─── 军事 ───────────────────────────────────────────────────────────────────
+
+- id: marlborough
+  name: 马尔博罗公爵
+  birthYear: 1650
+  deathYear: 1722
+  category: 军事
+  level: 1
+  summary: 英国军事统帅，布伦海姆、拉米利等役中大败法军，被视为英国历史上最杰出将领之一。
+  events: [uk_marlborough_campaigns, uk_blenheim_battle, uk_ramillies_battle]
+
+- id: nelson
+  name: 霍雷肖·纳尔逊
+  birthYear: 1758
+  deathYear: 1805
+  category: 军事
+  level: 1
+  summary: 英国海军将领，特拉法加海战中击败法西联合舰队，战斗中阵亡，成为英国民族英雄。
+  events: [uk_trafalgar, uk_nelson_battle_of_nile]
+
+- id: wellington
+  name: 威灵顿公爵
+  birthYear: 1769
+  deathYear: 1852
+  category: 军事
+  level: 1
+  summary: 英国陆军统帅，伊比利亚半岛战争与滑铁卢战役中击败拿破仑，后出任英国首相。
+  events: [uk_waterloo, uk_peninsular_war]
+
+- id: haig
+  name: 道格拉斯·黑格
+  birthYear: 1861
+  deathYear: 1928
+  category: 军事
+  level: 2
+  summary: 英国陆军元帅，一战西线总指挥，索姆河与帕斯尚尔战役指挥决策至今存在争议。
+  events: [uk_wwi, uk_somme_battle, uk_passchendaele]
+
+- id: montgomery
+  name: 伯纳德·蒙哥马利
+  birthYear: 1887
+  deathYear: 1976
+  category: 军事
+  level: 1
+  summary: 英国陆军元帅，北非阿拉曼战役与诺曼底登陆中战功卓著，二战最著名的英国将领之一。
+  events: [uk_el_alamein, uk_d_day_normandy, uk_north_africa_campaign, uk_sicily_italy_invasion, uk_wwii]
+
+- id: clive_of_india
+  name: 印度克莱夫
+  birthYear: 1725
+  deathYear: 1774
+  category: 军事
+  level: 2
+  summary: 罗伯特·克莱夫，普拉西战役中以少胜多，奠定英国控制孟加拉与印度的军事基础。
+  events: [uk_battle_of_plassey, uk_east_india_clive_return]
+
+# ─── 科学 ───────────────────────────────────────────────────────────────────
+
+- id: james_watt
+  name: 詹姆斯·瓦特
+  birthYear: 1736
+  deathYear: 1819
+  category: 科学
+  level: 1
+  summary: 改良蒸汽机，引入独立冷凝器等重要发明，与博尔顿合伙商业化推广，成为工业革命核心推动力。
+  events: [uk_watt_steam_engine, uk_james_watt_partnership]
+
+- id: faraday
+  name: 迈克尔·法拉第
+  birthYear: 1791
+  deathYear: 1867
+  category: 科学
+  level: 1
+  summary: 发现电磁感应定律，奠定发电机理论基础，提出电磁场概念，被视为实验物理学大师。
+  events: [uk_faraday_em_induction, uk_faraday_field_theory]
+
+- id: darwin
+  name: 查尔斯·达尔文
+  birthYear: 1809
+  deathYear: 1882
+  category: 科学
+  level: 1
+  summary: 提出自然选择进化论，著《物种起源》，改变人类对生命起源的认知，影响延续至今。
+  events: [uk_darwin_origin_species, uk_huxley_evolution_debate, uk_darwin_descent_of_man]
+
+- id: maxwell
+  name: 詹姆斯·克拉克·麦克斯韦
+  birthYear: 1831
+  deathYear: 1879
+  category: 科学
+  level: 1
+  summary: 建立电磁场统一理论，预言电磁波存在，被爱因斯坦视为继牛顿之后最伟大的物理学家。
+  events: [uk_maxwell_electromagnetism, uk_maxwell_color_photography]
+
+- id: joule
+  name: 詹姆斯·焦耳
+  birthYear: 1818
+  deathYear: 1889
+  category: 科学
+  level: 2
+  summary: 精确测定热功当量，为热力学第一定律确立实验基础，热量单位"焦耳"以其命名。
+  events: [uk_joule_heat_work]
+
+- id: rutherford
+  name: 欧内斯特·卢瑟福
+  birthYear: 1871
+  deathYear: 1937
+  category: 科学
+  level: 1
+  summary: 发现原子核，提出行星式原子模型，发现质子，奠定核物理学基础，获1908年诺贝尔化学奖。
+  events: [uk_rutherford_nucleus, uk_rutherford_proton]
+
+- id: fleming
+  name: 亚历山大·弗莱明
+  birthYear: 1881
+  deathYear: 1955
+  category: 科学
+  level: 1
+  summary: 发现青霉素的抗菌作用，为抗生素医学革命奠基，与弗洛里、钱恩共同获得诺贝尔生理学奖。
+  events: [uk_penicillin_discovery]
+
+- id: turing
+  name: 艾伦·图灵
+  birthYear: 1912
+  deathYear: 1954
+  category: 科学
+  level: 1
+  summary: 计算机科学奠基人，提出图灵机理论，二战期间破解德军密码，后因同性恋被迫化学阉割后去世。
+  events: [uk_turing_computing, uk_bletchley_park]
+
+- id: hawking
+  name: 斯蒂芬·霍金
+  birthYear: 1942
+  deathYear: 2018
+  category: 科学
+  level: 1
+  summary: 理论物理学家，研究黑洞辐射与宇宙学，身患渐冻症仍坚持工作，著《时间简史》广为人知。
+  events: [uk_stephen_hawking_brief_history]
+
+- id: crick
+  name: 弗朗西斯·克里克
+  birthYear: 1916
+  deathYear: 2004
+  category: 科学
+  level: 1
+  summary: 与沃森合作发现DNA双螺旋结构，开创分子生物学新时代，1962年获诺贝尔生理学奖。
+  events: [uk_crick_watson_dna]
+
+- id: jenner
+  name: 爱德华·詹纳
+  birthYear: 1749
+  deathYear: 1823
+  category: 科学
+  level: 2
+  summary: 发明天花疫苗，以牛痘病毒成功免疫人体，开创现代免疫学与疫苗技术先河。
+  events: [uk_edward_jenner_vaccine]
+
+- id: nightingale
+  name: 弗洛伦斯·南丁格尔
+  birthYear: 1820
+  deathYear: 1910
+  category: 科学
+  level: 1
+  summary: 克里米亚战争中改革战地护理，大幅降低伤亡，开创现代护理学，推动医疗卫生统计学发展。
+  events: [uk_nightingale_nursing]
+
+- id: berners_lee
+  name: 蒂姆·伯纳斯-李
+  birthYear: 1955
+  deathYear: null
+  category: 科学
+  level: 1
+  summary: 在欧洲核子研究中心发明万维网，并将其免费向公众开放，彻底改变人类获取信息的方式。
+  events: [uk_berners_lee_www]
+
+# ─── 文学 ───────────────────────────────────────────────────────────────────
+
+- id: samuel_johnson
+  name: 塞缪尔·约翰逊
+  birthYear: 1709
+  deathYear: 1784
+  category: 文学
+  level: 2
+  summary: 英国文学评论家与词典编纂家，历时九年编成《英语词典》，奠定现代英语规范基础。
+  events: [uk_samuel_johnson_dictionary]
+
+- id: dickens
+  name: 查尔斯·狄更斯
+  birthYear: 1812
+  deathYear: 1870
+  category: 文学
+  level: 1
+  summary: 英国小说家，以《雾都孤儿》《双城记》《荒凉山庄》等作品批判社会不公，影响深远。
+  events: [uk_charles_dickens_oliver_twist, uk_bleak_house_dickens]
+
+- id: charlotte_bronte
+  name: 夏洛蒂·勃朗特
+  birthYear: 1816
+  deathYear: 1855
+  category: 文学
+  level: 2
+  summary: 英国小说家，著《简·爱》，以女性独立自主视角展现维多利亚时代社会，成为文学经典。
+  events: [uk_charlotte_bronte_jane_eyre]
+
+- id: emily_bronte
+  name: 艾米莉·勃朗特
+  birthYear: 1818
+  deathYear: 1848
+  category: 文学
+  level: 2
+  summary: 英国小说家与诗人，著《呼啸山庄》，以荒野与激情描绘人性深处，英年早逝。
+  events: [uk_emily_bronte_wuthering]
+
+- id: thomas_hardy
+  name: 托马斯·哈代
+  birthYear: 1840
+  deathYear: 1928
+  category: 文学
+  level: 2
+  summary: 英国小说家，以《德伯家的苔丝》《无名的裘德》等描绘农村社会变迁，揭示维多利亚道德虚伪。
+  events: [uk_thomas_hardy_tess]
+
+- id: oscar_wilde
+  name: 奥斯卡·王尔德
+  birthYear: 1854
+  deathYear: 1900
+  category: 文学
+  level: 2
+  summary: 爱尔兰裔英国作家，以机智讽刺著称，剧作《认真的重要性》为英语喜剧经典，后遭猥亵罪入狱。
+  events: [uk_oscar_wilde_importance, uk_oscar_wilde_trial]
+
+- id: george_orwell
+  name: 乔治·奥威尔
+  birthYear: 1903
+  deathYear: 1950
+  category: 文学
+  level: 1
+  summary: 英国作家，著《动物农场》与《一九八四》，以反极权主义文学警示20世纪政治压迫。
+  events: [uk_orwell_nineteen_eighty_four, uk_orwell_animal_farm]
+
+- id: virginia_woolf
+  name: 弗吉尼亚·伍尔夫
+  birthYear: 1882
+  deathYear: 1941
+  category: 文学
+  level: 2
+  summary: 英国意识流小说先驱，著《达洛维夫人》《海浪》等，亦是早期女权主义文学批评的重要声音。
+  events: [uk_virginia_woolf_death]
+
+# ─── 音乐 ───────────────────────────────────────────────────────────────────
+
+- id: handel
+  name: 亨德尔
+  birthYear: 1685
+  deathYear: 1759
+  category: 音乐
+  level: 2
+  summary: 德裔英国作曲家，定居伦敦后创作《弥赛亚》《水上音乐》等，成为英国音乐生活的核心人物。
+  events: []
+
+- id: elgar
+  name: 爱德华·埃尔加
+  birthYear: 1857
+  deathYear: 1934
+  category: 音乐
+  level: 2
+  summary: 英国作曲家，《谜语变奏曲》与《威风凛凛进行曲》标志英国音乐复兴，成为英国精神象征。
+  events: [uk_elgar_enigma_variations]
+
+# ─── 艺术 ───────────────────────────────────────────────────────────────────
+
+- id: turner
+  name: 约瑟夫·透纳
+  birthYear: 1775
+  deathYear: 1851
+  category: 艺术
+  level: 2
+  summary: 英国风景画家，以光与色彩的朦胧处理著称，被视为印象主义的先驱，作品列为国家珍宝。
+  events: [uk_turner_rain_steam]
+
+- id: constable
+  name: 约翰·康斯太勃尔
+  birthYear: 1776
+  deathYear: 1837
+  category: 艺术
+  level: 2
+  summary: 英国风景画家，以自然主义手法描绘英国乡村，《干草车》获巴黎金奖，影响法国巴比松画派。
+  events: [uk_constable_hay_wain]
+
+- id: gainsborough
+  name: 托马斯·根兹伯勒
+  birthYear: 1727
+  deathYear: 1788
+  category: 艺术
+  level: 2
+  summary: 英国肖像与风景画家，皇家艺术学院创始成员，以优雅笔触描绘英国贵族肖像与田园风景。
+  events: [uk_royal_academy_founded]
+
+- id: reynolds
+  name: 约书亚·雷诺兹
+  birthYear: 1723
+  deathYear: 1792
+  category: 艺术
+  level: 2
+  summary: 英国肖像画家，皇家艺术学院首任院长，以系列演讲确立学院派美学，对英国艺术影响深远。
+  events: [uk_royal_academy_founded]
+
+- id: blake
+  name: 威廉·布莱克
+  birthYear: 1757
+  deathYear: 1827
+  category: 艺术
+  level: 2
+  summary: 英国诗人与版画家，浪漫主义代表，以神秘主义诗歌和手工着色版画著称，生前几乎不被认可。
+  events: [uk_william_blake_songs]
+
+# ─── 经济金融 ────────────────────────────────────────────────────────────────
+
+- id: adam_smith
+  name: 亚当·斯密
+  birthYear: 1723
+  deathYear: 1790
+  category: 经济金融
+  level: 1
+  summary: 苏格兰经济学家，现代经济学奠基人，著《国富论》，系统阐述自由市场与劳动分工理论。
+  events: [uk_wealth_of_nations]
+
+- id: keynes
+  name: 约翰·梅纳德·凯恩斯
+  birthYear: 1883
+  deathYear: 1946
+  category: 经济金融
+  level: 1
+  summary: 英国经济学家，著《就业、利息与货币通论》，提出政府干预理论，改变20世纪宏观经济政策。
+  events: [uk_keynes_general_theory, uk_bretton_woods]
+
+# ─── 哲学思想 ────────────────────────────────────────────────────────────────
+
+- id: david_hume
+  name: 大卫·休谟
+  birthYear: 1711
+  deathYear: 1776
+  category: 哲学思想
+  level: 1
+  summary: 苏格兰哲学家，经验主义代表，著《人性论》与《英格兰史》，对认识论与道德哲学贡献深远。
+  events: [uk_david_hume_treatise, uk_hume_history_england]
+
+- id: bentham
+  name: 杰里米·边沁
+  birthYear: 1748
+  deathYear: 1832
+  category: 哲学思想
+  level: 2
+  summary: 英国哲学家，功利主义奠基人，主张以"最大多数人的最大幸福"为立法与道德判断标准。
+  events: [uk_bentham_intro_morals]
+
+- id: js_mill
+  name: 约翰·斯图尔特·穆勒
+  birthYear: 1806
+  deathYear: 1873
+  category: 哲学思想
+  level: 1
+  summary: 英国哲学家与经济学家，著《论自由》与《妇女的屈从》，发展功利主义，倡导个人自由与性别平等。
+  events: [uk_mill_on_liberty, uk_mill_womens_subjection]
+
+- id: bertrand_russell
+  name: 伯特兰·罗素
+  birthYear: 1872
+  deathYear: 1970
+  category: 哲学思想
+  level: 1
+  summary: 英国哲学家与数学家，著《数学原理》，倡导和平主义，积极参与核裁军运动，获诺贝尔文学奖。
+  events: [uk_russell_principia, uk_cnd_nuclear_protests]
+
+- id: wollstonecraft
+  name: 玛丽·沃斯通克拉夫特
+  birthYear: 1759
+  deathYear: 1797
+  category: 哲学思想
+  level: 2
+  summary: 英国女权主义先驱，著《女权辩护》，系统论述女性平等教育与政治权利，开现代女权思想先河。
+  events: [uk_wollstonecraft_vindication]
+
+- id: john_wesley
+  name: 约翰·卫斯理
+  birthYear: 1703
+  deathYear: 1791
+  category: 哲学思想
+  level: 2
+  summary: 英国神学家，卫理公会创立者，布道工人阶级与贫民，被视为影响英国社会改革的重要宗教人物。
+  events: [uk_methodism_founded]
+
+# ─── 工业与发明 ──────────────────────────────────────────────────────────────
+
+- id: arkwright
+  name: 理查德·阿克赖特
+  birthYear: 1732
+  deathYear: 1792
+  category: 科学
+  level: 2
+  summary: 发明水力纺纱机，建立工厂制度，被视为工厂制现代化生产的开拓者，工业革命重要推手。
+  events: [uk_arkwright_water_frame]
+
+- id: hargreaves
+  name: 詹姆斯·哈格里夫斯
+  birthYear: 1720
+  deathYear: 1778
+  category: 科学
+  level: 2
+  summary: 发明珍妮纺纱机，大幅提升棉纱产量，推动英国纺织工业由手工向机械化生产转变。
+  events: [uk_hargreaves_jenny]
+
+- id: george_stephenson
+  name: 乔治·斯蒂芬森
+  birthYear: 1781
+  deathYear: 1848
+  category: 科学
+  level: 2
+  summary: 英国工程师，设计实用蒸汽机车，主导利物浦—曼彻斯特铁路建设，被称为"铁路之父"。
+  events: [uk_railroad_liverpool_manchester]
+
+- id: brunel
+  name: 伊桑巴德·金德姆·布鲁内尔
+  birthYear: 1806
+  deathYear: 1859
+  category: 科学
+  level: 2
+  summary: 英国工程师，设计大西部铁路、悬索桥与大不列颠号铁壳轮船，维多利亚时代最著名工程师。
+  events: [uk_great_western_railway, uk_brunel_ss_great_britain]
+
+- id: bessemer
+  name: 亨利·贝西默
+  birthYear: 1813
+  deathYear: 1898
+  category: 科学
+  level: 2
+  summary: 发明转炉炼钢法，大幅降低钢铁生产成本，推动铁路与建筑业的钢铁革命。
+  events: [uk_bessemer_steel]
+
+- id: swan_joseph
+  name: 约瑟夫·斯旺
+  birthYear: 1828
+  deathYear: 1914
+  category: 科学
+  level: 2
+  summary: 英国发明家，与爱迪生几乎同时独立发明实用白炽灯泡，英国首批电灯使用斯旺专利。
+  events: [uk_electric_light_swansea]

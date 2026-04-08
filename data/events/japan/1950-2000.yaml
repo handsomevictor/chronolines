@@ -1,38 +1,726 @@
-- id: japan_occupation
-  year: 1945
-  endYear: 1952
-  level: 1
-  title: 盟军占领
-  summary: 美国主导盟军占领日本，推行民主改革，制定新宪法，解散财阀。
-  tags: [改革运动, 条约外交]
-  related: [usa_cold_war]
+# 昭和后期・平成初期（1950-2000）
+# Level 1: 10 | Level 2: 28 | Level 3: 62
 
-- id: japan_peace_treaty
+# ── Level 1 ──────────────────────────────────────────────────────────────────
+
+- id: japan_sf_peace_treaty
   year: 1951
-  level: 2
-  title: 《旧金山和约》签订
-  summary: 日本与盟国签订和平条约，结束战争状态，日本恢复主权，美军基地保留。
+  level: 1
+  title: 旧金山和约签订
+  summary: 日本与48国签订旧金山和约，结束盟军占领状态，同日签订日美安保条约，日本恢复主权。
   tags: [条约外交]
+  figures: [yoshida_shigeru]
+
+- id: japan_jsdf_establishment
+  year: 1954
+  level: 1
+  title: 自卫队成立
+  summary: 保安队改组为陆海空三军自卫队，防卫厅设立，日本在宪法第九条框架下建立武装力量。
+  tags: [改革运动]
 
 - id: japan_economic_miracle
   year: 1955
   endYear: 1973
   level: 1
-  title: 经济高速增长
-  summary: 日本经济年均增速超过10%，迅速成为世界第二大经济体，工业产品遍销全球。
+  title: 高度经济成长
+  summary: 日本经济年均增速超10%，成为世界第二大经济体，汽车・电器・钢铁等产业跃居世界前列。
   tags: [经济贸易, 科技发明]
+  figures: [ikeda_hayato, yoshida_shigeru]
 
-- id: japan_tokyo_olympics
+- id: japan_anpo_struggle
+  year: 1960
+  level: 1
+  title: 安保斗争
+  summary: 日美安保条约修订引发大规模抗议运动，岸信介内阁强行通过条约，随后宣布辞职。
+  tags: [改革运动, 革命政变]
+  figures: [kishi_nobusuke]
+
+- id: japan_tokyo_olympics_1964
+  year: 1964
+  level: 1
+  title: 东京奥运会
+  summary: 日本举办第18届奥运会，向世界展示战后经济复兴成果，东海道新干线同日开通运营。
+  tags: [文化思想, 科技发明]
+
+- id: japan_oil_crisis_1973
+  year: 1973
+  level: 1
+  title: 石油危机
+  summary: 第一次石油危机冲击日本经济，高度成长期结束，日本产业转向节能技术与知识密集型产业。
+  tags: [经济贸易]
+  related: [usa_oil_crisis]
+
+- id: japan_bubble_economy_collapse
+  year: 1991
+  level: 1
+  title: 泡沫经济崩溃
+  summary: 1991年股价与地价急速下跌，泡沫经济崩溃，日本进入"失去的十年"长期经济停滞期。
+  tags: [经济贸易]
+
+- id: japan_hirohito_death
+  year: 1989
+  level: 1
+  title: 昭和天皇驾崩・平成开始
+  summary: 昭和天皇裕仁于1989年1月7日驾崩，明仁天皇即位，年号改为平成，昭和时代终结。
+  tags: [王朝更迭]
+
+- id: japan_kobe_earthquake
+  year: 1995
+  level: 1
+  title: 阪神大地震
+  summary: 1995年1月17日发生里氏7.3级大地震，神户・西宫等地受灾严重，死亡人数超过6400人。
+  tags: [改革运动]
+
+- id: japan_sarin_attack_subway
+  year: 1995
+  level: 1
+  title: 东京地铁沙林事件
+  summary: 奥姆真理教成员在东京地铁投放神经毒剂沙林，造成死亡及大量伤者，震惊日本社会。
+  tags: [革命政变]
+
+# ── Level 2 ──────────────────────────────────────────────────────────────────
+
+- id: japan_postwar_constitution_enforce
+  year: 1947
+  level: 2
+  title: 日本国宪法施行
+  summary: 日本国宪法正式施行，确立议会主权、基本人权与和平主义三大原则，延续至今。
+  tags: [改革运动]
+
+- id: japan_ldp_formation
+  year: 1955
+  level: 2
+  title: 自由民主党成立
+  summary: 自由党与民主党合并成立自由民主党，随后长期执政，形成所谓"1955年体制"。
+  tags: [改革运动]
+
+- id: japan_income_doubling_plan
+  year: 1960
+  level: 2
+  title: 所得倍增计划
+  summary: 池田勇人内阁提出十年内使国民所得翻倍的计划，推动高度经济成长期政策框架形成。
+  tags: [经济贸易]
+  figures: [ikeda_hayato]
+
+- id: japan_shinkansen_tokaido
   year: 1964
   level: 2
-  title: 东京奥运会
-  summary: 日本举办东京奥运会，向世界展示战后复兴成就，新干线同年开通运营。
-  tags: [文化思想, 科技发明]
+  title: 东海道新干线开通
+  summary: 世界首条高速铁路东海道新干线东京至大阪段开通，最高时速210km，成为日本技术象征。
+  tags: [科技发明]
+
+- id: japan_osaka_expo_1970
+  year: 1970
+  level: 2
+  title: 大阪世界博览会
+  summary: 日本在大阪举办万国博览会，主题"人类的进步与调和"，吸引77国参展与6400万人参观。
+  tags: [文化思想, 经济贸易]
+
+- id: japan_okinawa_reversion
+  year: 1972
+  level: 2
+  title: 冲绳归还日本
+  summary: 美国将战后持续管辖的冲绳归还日本，美军基地问题此后持续成为政治议题。
+  tags: [条约外交]
+
+- id: japan_lockheed_scandal
+  year: 1976
+  level: 2
+  title: 洛克希德丑闻
+  summary: 美国洛克希德公司行贿案曝光，前首相田中角荣因涉嫌受贿被逮捕，引发政治地震。
+  tags: [改革运动]
+  figures: [tanaka_kakuei]
+
+- id: japan_japan_china_normalization
+  year: 1972
+  level: 2
+  title: 日中邦交正常化
+  summary: 田中角荣首相访问北京，日中两国发表联合声明，恢复邦交，日华和约随之终止。
+  tags: [条约外交]
+  figures: [tanaka_kakuei]
+
+- id: japan_japan_china_peace_treaty
+  year: 1978
+  level: 2
+  title: 日中和平友好条约
+  summary: 日本与中国签订日中和平友好条约，正式建立和平友好关系，含"反霸权条款"。
+  tags: [条约外交]
+  related: [china_japan_china_treaty]
 
 - id: japan_bubble_economy
   year: 1986
   endYear: 1991
   level: 2
   title: 泡沫经济
-  summary: 日本股市和房地产价格急剧膨胀，随后泡沫破裂，日本进入长期经济停滞期。
+  summary: 超低利率与金融自由化促使股价与地价急剧膨胀，1989年日经指数触顶，随后泡沫崩溃。
   tags: [经济贸易]
+
+- id: japan_ntt_privatization
+  year: 1985
+  level: 2
+  title: NTT・JR民营化
+  summary: 日本电信电话公社与国铁相继民营化，推动电信与铁路产业的市场竟争化改革。
+  tags: [经济贸易, 改革运动]
+
+- id: japan_plaza_accord
+  year: 1985
+  level: 2
+  title: 广场协议
+  summary: G5在纽约广场饭店达成协议，日元大幅升值，日本出口产业受冲击，随后低利率刺激泡沫。
+  tags: [经济贸易, 条约外交]
+  related: [usa_plaza_accord]
+
+- id: japan_korean_war_special_procurement
+  year: 1950
+  endYear: 1953
+  level: 2
+  title: 朝鲜战争特需景气
+  summary: 朝鲜战争爆发，美军在日特需订单推动日本工业复苏，成为经济高度成长的重要起点。
+  tags: [经济贸易, 战争]
+  related: [usa_korean_war]
+
+- id: japan_honda_sony_rise
+  year: 1950
+  endYear: 1970
+  level: 2
+  title: 本田・索尼等企业崛起
+  summary: 本田技研工业、索尼等战后新兴企业崛起，以摩托车・收音机・晶体管等产品开拓世界市场。
+  tags: [经济贸易, 科技发明]
+  figures: [honda_soichiro, morita_akio]
+
+- id: japan_mishima_incident
+  year: 1970
+  level: 2
+  title: 三岛由纪夫事件
+  summary: 作家三岛由纪夫率盾会成员占领自卫队东部总监部，演讲后自杀，震撼日本文化界。
+  tags: [革命政变]
+  figures: [mishima_yukio]
+
+- id: japan_kawabata_nobel
+  year: 1968
+  level: 2
+  title: 川端康成获诺贝尔文学奖
+  summary: 川端康成以《雪国》《古都》《千羽鹤》等作品获诺贝尔文学奖，是日本首位获奖文学家。
+  tags: [文化思想]
+  figures: [kawabata_yasunari]
+
+- id: japan_pollution_minamata
+  year: 1956
+  endYear: 1973
+  level: 2
+  title: 四大公害病问题
+  summary: 水俣病、四日市哮喘、痛痛病等公害病曝光，受害者诉讼推动日本环境法制建立。
+  tags: [改革运动]
+
+- id: japan_takeshita_consumption_tax
+  year: 1989
+  level: 2
+  title: 消费税引入
+  summary: 竹下登内阁引入3%消费税，是战后日本重大税制改革，竹下本人随后因利库路特丑闻辞职。
+  tags: [经济贸易]
+
+- id: japan_student_movement_zenkyoto
+  year: 1968
+  endYear: 1969
+  level: 2
+  title: 全共斗学生运动
+  summary: 全国各大学生运动高涨，东大安田讲堂事件后被镇压，1969年东大入试停办一年。
+  tags: [革命政变]
+
+- id: japan_first_oil_crisis_response
+  year: 1973
+  endYear: 1980
+  level: 2
+  title: 能源节约・技术革新
+  summary: 石油危机后日本企业加大节能投入与技术创新，半导体・家电产业的国际竞争力因此提升。
+  tags: [经济贸易, 科技发明]
+
+- id: japan_japan_us_trade_friction
+  year: 1980
+  endYear: 1995
+  level: 2
+  title: 日美贸易摩擦
+  summary: 日本汽车・半导体等产品在美国大量销售引发贸易摩擦，日本接受自愿出口限制等压力。
+  tags: [经济贸易, 条约外交]
+  related: [usa_trade_deficit]
+
+- id: japan_recruit_scandal
+  year: 1988
+  level: 2
+  title: 利库路特丑闻
+  summary: 利库路特公司向政界人士提供上市前股票案曝光，多名政治家辞职，引发政治道德争议。
+  tags: [改革运动]
+
+- id: japan_gulf_war_contribution
+  year: 1991
+  level: 2
+  title: 海湾战争与日本国际贡献问题
+  summary: 日本提供130亿美元财政支援但未出兵，引发"汽车支票外交"批评，促使和平合作法讨论。
+  tags: [条约外交]
+
+- id: japan_political_reform_1993
+  year: 1993
+  level: 2
+  title: 55年体制崩溃
+  summary: 自民党在众议院选举中首次失去过半数，细川护熙率非自民联合内阁成立，1955年体制终结。
+  tags: [改革运动]
+
+- id: japan_aum_arrest
+  year: 1995
+  level: 2
+  title: 麻原彰晃逮捕
+  summary: 东京地铁沙林事件后，奥姆真理教教主麻原彰晃在山梨县被捕，相关人员相继被逮捕。
+  tags: [革命政变]
+
+- id: japan_bridge_akashi
+  year: 1998
+  level: 2
+  title: 明石海峡大桥开通
+  summary: 全长3911米、世界最长吊桥明石海峡大桥开通，连接本州与淡路岛。
+  tags: [科技发明]
+
+- id: japan_ryukyu_reversion_base
+  year: 1996
+  level: 2
+  title: 冲绳美军基地问题激化
+  summary: 美军基地相关事件引发冲绳县民大规模抗议，日美协议调整基地布局，但争议持续。
+  tags: [条约外交]
+
+- id: japan_aging_society
+  year: 1990
+  endYear: 2000
+  level: 2
+  title: 少子高龄化问题浮现
+  summary: 出生率持续下降与老龄化加速并行，1994年日本成为"超高龄社会"，社会保障制度压力增大。
+  tags: [改革运动]
+
+# ── Level 3 ──────────────────────────────────────────────────────────────────
+
+- id: japan_yoshida_doctrine
+  year: 1951
+  endYear: 1960
+  level: 3
+  title: 吉田路线
+  summary: 吉田茂推行"经济优先・轻武装・依赖美国"路线，为战后日本外交安全政策奠定基本框架。
+  tags: [条约外交, 改革运动]
+  figures: [yoshida_shigeru]
+
+- id: japan_treaty_commerce_us
+  year: 1960
+  level: 3
+  title: 新日美安保条约
+  summary: 岸信介与美国签订修订版安保条约，明确共同防卫义务，但国内因此爆发大规模安保斗争。
+  tags: [条约外交]
+  figures: [kishi_nobusuke]
+
+- id: japan_honda_motorbike_export
+  year: 1958
+  level: 3
+  title: 本田超级幼兽（Super Cub）发售
+  summary: 本田技研发售Super Cub摩托车，设计实用、价格亲民，后成为史上销量最高的摩托车系列。
+  tags: [经济贸易, 科技发明]
+  figures: [honda_soichiro]
+
+- id: japan_transistor_radio_sony
+  year: 1955
+  level: 3
+  title: 索尼晶体管收音机发售
+  summary: 索尼（当时商号为东通工）发售日本首台晶体管收音机，开创日本小型电子产品出口时代。
+  tags: [科技发明, 经济贸易]
+  figures: [morita_akio]
+
+- id: japan_toyota_production_system
+  year: 1950
+  endYear: 1970
+  level: 3
+  title: 丰田生产方式确立
+  summary: 大野耐一等人开发的丰田生产方式（Just-In-Time）成熟，后成为全球制造业效率典范。
+  tags: [经济贸易, 科技发明]
+
+- id: japan_yukawa_nobel
+  year: 1949
+  level: 3
+  title: 汤川秀树获诺贝尔物理学奖
+  summary: 汤川秀树因介子理论获诺贝尔物理学奖，是日本首位诺贝尔奖得主，战后科学复兴象征。
+  tags: [科技发明]
+  figures: [yukawa_hideki]
+
+- id: japan_tomonaga_shinichiro_nobel
+  year: 1965
+  level: 3
+  title: 朝永振一郎获诺贝尔物理学奖
+  summary: 朝永振一郎与费曼、施温格共享诺贝尔物理学奖，表彰量子电动力学研究贡献。
+  tags: [科技发明]
+  figures: [tomonaga_shinichiro]
+
+- id: japan_anpo_60_kishi
+  year: 1960
+  level: 3
+  title: 岸信介辞职
+  summary: 安保斗争平息后岸信介宣布辞职，继任池田勇人推出"宽容与忍耐"路线，转向经济优先。
+  tags: [改革运动]
+  figures: [kishi_nobusuke, ikeda_hayato]
+
+- id: japan_olympic_torch_relay
+  year: 1964
+  level: 3
+  title: 东京奥运圣火传递
+  summary: 广岛原子弹幸存者之子坂井义则点燃东京奥运圣火，仪式具有高度象征意义，引发国际关注。
+  tags: [文化思想]
+
+- id: japan_monster_godzilla
+  year: 1954
+  level: 3
+  title: 《哥斯拉》首映
+  summary: 本多猪四郎执导《哥斯拉》上映，以怪兽为载体折射核武器恐惧，成为日本特摄文化起点。
+  tags: [文化思想]
+
+- id: japan_kawabata_death
+  year: 1972
+  level: 3
+  title: 川端康成去世
+  summary: 川端康成于1972年4月在工作室煤气中毒死亡，是否为自杀各方说法不一，享年72岁。
+  tags: [文化思想]
+  figures: [kawabata_yasunari]
+
+- id: japan_mishima_novels
+  year: 1954
+  endYear: 1969
+  level: 3
+  title: 三岛由纪夫主要文学创作期
+  summary: 三岛由纪夫创作《潮骚》《金阁寺》《丰饶之海》四部曲等代表作，被多次提名诺贝尔文学奖。
+  tags: [文化思想]
+  figures: [mishima_yukio]
+
+- id: japan_minamata_disease
+  year: 1956
+  level: 3
+  title: 水俣病正式确认
+  summary: 熊本县水俣市发现汞中毒引起的神经系统疾病，原因为氮肥工厂排放有机汞污染海湾。
+  tags: [改革运动, 科技发明]
+
+- id: japan_itai_itai_pollution
+  year: 1955
+  endYear: 1972
+  level: 3
+  title: 痛痛病公害
+  summary: 富山县神通川流域发生镉污染导致的"痛痛病"，受害者提起诉讼，1972年法院判企业败诉。
+  tags: [改革运动]
+
+- id: japan_bullet_train_first_ride
+  year: 1964
+  level: 3
+  title: 昭和天皇新干线首乘
+  summary: 昭和天皇乘坐东海道新干线首班列车，从东京至京都，最高时速达210公里。
+  tags: [科技发明]
+  figures: [hirohito]
+
+- id: japan_expo70_capsule_tower
+  year: 1970
+  level: 3
+  title: 中银胶囊塔楼与新陈代谢派
+  summary: 大阪万博前后，黑川纪章等建筑家推动"新陈代谢派"建筑运动，探索都市可更换单元。
+  tags: [科技发明, 文化思想]
+
+- id: japan_osaka_expo_attendance
+  year: 1970
+  level: 3
+  title: 大阪万博创历史参观人数
+  summary: 大阪万博总参观人数达约6420万，超过当时世界博览会历史最高记录，月平均单日逾50万人。
+  tags: [文化思想]
+
+- id: japan_tanaka_archipelago
+  year: 1972
+  level: 3
+  title: 田中角荣《日本列岛改造论》
+  summary: 田中角荣出版《日本列岛改造论》，以大规模基础设施建设均衡全国发展，成为政策纲领。
+  tags: [经济贸易, 改革运动]
+  figures: [tanaka_kakuei]
+
+- id: japan_tanaka_arrest
+  year: 1976
+  level: 3
+  title: 田中角荣因受贿被逮捕
+  summary: 东京地检特搜部以外汇及外贸管理法违反为由逮捕前首相田中角荣，后追加受贿罪起诉。
+  tags: [改革运动]
+  figures: [tanaka_kakuei]
+
+- id: japan_semiconductor_industry
+  year: 1975
+  endYear: 1990
+  level: 3
+  title: 日本半导体产业全盛期
+  summary: 富士通、NEC、东芝等企业在DRAM领域跃居全球首位，1980年代末日本占全球半导体市场五成以上。
+  tags: [科技发明, 经济贸易]
+
+- id: japan_famicom_nintendo
+  year: 1983
+  level: 3
+  title: 任天堂Family Computer发售
+  summary: 任天堂发售Family Computer（红白机），以低价与丰富软件普及家庭游戏，开创游戏机时代。
+  tags: [科技发明, 文化思想]
+
+- id: japan_sony_walkman
+  year: 1979
+  level: 3
+  title: 索尼Walkman发售
+  summary: 索尼发售便携卡带随身听Walkman，改变音乐收听方式，成为1980年代全球流行文化象征。
+  tags: [科技发明, 经济贸易]
+  figures: [morita_akio]
+
+- id: japan_bubble_stock_peak
+  year: 1989
+  level: 3
+  title: 日经平均指数历史高点
+  summary: 1989年12月29日，日经平均股价触及38915点历史最高点，翌年起急速下跌，泡沫崩溃。
+  tags: [经济贸易]
+
+- id: japan_heisei_recession
+  year: 1991
+  endYear: 2000
+  level: 3
+  title: 平成萧条与金融机构破产
+  summary: 泡沫崩溃后，山一证券・北海道拓殖银行等大型金融机构相继破产，银行坏账问题积重难返。
+  tags: [经济贸易]
+
+- id: japan_takeshima_senkaku_disputes
+  year: 1952
+  endYear: 2000
+  level: 3
+  title: 领土问题持续化
+  summary: 竹岛（独岛）・尖阁诸岛（钓鱼岛）・北方领土等领土主权问题在战后持续存在，各方立场对立。
+  tags: [条约外交]
+
+- id: japan_northern_territories_issue
+  year: 1956
+  level: 3
+  title: 日苏共同宣言
+  summary: 日苏共同宣言结束战争状态，恢复外交关系，但因北方领土问题，和平条约至今未能签订。
+  tags: [条约外交]
+
+- id: japan_expo_tsukuba
+  year: 1985
+  level: 3
+  title: 筑波科学博览会
+  summary: 筑波举办科学技术主题世博会，展示日本高技术产业成就，筑波研究学园都市形象确立。
+  tags: [科技发明]
+
+- id: japan_maglev_linear_test
+  year: 1979
+  level: 3
+  title: 磁悬浮列车试验
+  summary: 日本国铁于宫崎试验线进行磁悬浮列车实验，最终实现时速517km，技术验证成功。
+  tags: [科技发明]
+
+- id: japan_sanrizuka_struggle
+  year: 1971
+  endYear: 1978
+  level: 3
+  title: 成田机场反对运动
+  summary: 三里塚芝山联合空港反对同盟长期抗议成田机场建设，机场开港推迟，成为激进市民运动案例。
+  tags: [革命政变]
+
+- id: japan_anime_manga_industry
+  year: 1963
+  endYear: 2000
+  level: 3
+  title: 动画・漫画产业成长
+  summary: 手冢治虫《铁臂阿童木》动画化，推动日本动画产业兴起，1990年代成为全球重要文化输出。
+  tags: [文化思想, 经济贸易]
+
+- id: japan_j_league_foundation
+  year: 1993
+  level: 3
+  title: J联赛成立
+  summary: 日本职业足球联赛J联赛成立，10支俱乐部参赛，推动足球运动普及与职业体育发展。
+  tags: [文化思想]
+
+- id: japan_aum_sarin_matsumoto
+  year: 1994
+  level: 3
+  title: 松本沙林事件
+  summary: 奥姆真理教在长野县松本市进行沙林毒气实验性袭击，是东京地铁事件的前一年预谋行为。
+  tags: [革命政变]
+
+- id: japan_kobe_volunteer_disaster
+  year: 1995
+  level: 3
+  title: 阪神大地震志愿者活动
+  summary: 阪神大地震引发日本史上最大规模志愿者活动，1995年被称为"日本志愿者元年"。
+  tags: [改革运动]
+
+- id: japan_hanshin_awaji_reconstruction
+  year: 1995
+  endYear: 2000
+  level: 3
+  title: 阪神・淡路大震灾重建
+  summary: 神户等受灾地区推进都市重建，基础设施恢复迅速，但经济复兴与人口回流仍面临长期课题。
+  tags: [改革运动]
+
+- id: japan_fujitsu_nec_mainframe
+  year: 1960
+  endYear: 1980
+  level: 3
+  title: 日本计算机产业发展
+  summary: 富士通・NEC・日立等企业开发国产大型计算机，通过政策保护与技术投入追赶IBM。
+  tags: [科技发明, 经济贸易]
+
+- id: japan_shoji_hamada_mingei
+  year: 1950
+  endYear: 1980
+  level: 3
+  title: 民艺运动与工艺传承
+  summary: 滨田庄司、河井宽次郎等民艺运动者持续推广手工艺美学，在战后现代化浪潮中保存传统工艺。
+  tags: [文化思想]
+
+- id: japan_issey_miyake_fashion
+  year: 1970
+  endYear: 2000
+  level: 3
+  title: 日本时装设计走向国际
+  summary: 三宅一生、山本耀司、川久保玲等设计师在巴黎时装周引起关注，日本时装设计获国际认可。
+  tags: [文化思想]
+
+- id: japan_seikan_tunnel
+  year: 1988
+  level: 3
+  title: 青函隧道开通
+  summary: 连接本州与北海道的青函海底隧道开通，全长53.85公里，是当时世界最长海底隧道。
+  tags: [科技发明]
+
+- id: japan_toyota_globalization
+  year: 1980
+  endYear: 2000
+  level: 3
+  title: 丰田汽车全球化
+  summary: 丰田在北美、欧洲建设现地工厂，同时推广TPS生产方式，成为全球规模最大的汽车制造商之一。
+  tags: [经济贸易]
+
+- id: japan_asahi_shimbun_circulation
+  year: 1970
+  endYear: 2000
+  level: 3
+  title: 日本报纸发行量世界最高
+  summary: 读卖新闻、朝日新闻发行量分别超过1000万份，日本长期保持世界人均报纸消费量最高水平。
+  tags: [文化思想]
+
+- id: japan_kurosawa_rashomon_oscar
+  year: 1951
+  level: 3
+  title: 黑泽明《罗生门》获奥斯卡荣誉奖
+  summary: 黑泽明《罗生门》在威尼斯电影节获金狮奖后荣获奥斯卡荣誉奖，日本电影由此走向国际。
+  tags: [文化思想]
+
+- id: japan_fuji_television_start
+  year: 1959
+  level: 3
+  title: 民营电视网络扩张
+  summary: 富士电视台等民营电视网相继开播，电视机普及迅速，1960年代末覆盖全国家庭逾九成。
+  tags: [文化思想, 科技发明]
+
+- id: japan_auto_export_boom
+  year: 1970
+  endYear: 1990
+  level: 3
+  title: 汽车出口激增
+  summary: 日本汽车对美出口激增，1980年日本超越美国成为世界第一汽车生产国，引发贸易摩擦。
+  tags: [经济贸易]
+
+- id: japan_endaka_recession
+  year: 1985
+  endYear: 1987
+  level: 3
+  title: 日元升值萧条（円高不況）
+  summary: 广场协议后日元急升，出口产业受冲击，内需刺激政策与超低利率随之引发泡沫经济。
+  tags: [经济贸易]
+
+- id: japan_pacific_rim_trade
+  year: 1960
+  endYear: 2000
+  level: 3
+  title: 日本与东亚经济圈联系深化
+  summary: 日本对韩国、台湾、东南亚投资与技术转移推动东亚工业化，形成以日本为顶点的产业分工。
+  tags: [经济贸易]
+
+- id: japan_zainichi_korean_issues
+  year: 1952
+  endYear: 2000
+  level: 3
+  title: 在日朝鲜人・韩国人法律地位问题
+  summary: 旧金山和约生效后在日朝鲜人失去日本国籍，公民权与社会保障权问题经历漫长法律改善过程。
+  tags: [改革运动]
+
+- id: japan_environmental_law
+  year: 1970
+  level: 3
+  title: 公害对策基本法修正与环境厅设立
+  summary: 国会通过多项公害防止法案，1971年环境厅设立，日本公害规制法制体系基本完成。
+  tags: [改革运动]
+
+- id: japan_washi_paper_tradition
+  year: 1950
+  endYear: 2000
+  level: 3
+  title: 传统和纸产业保护
+  summary: 工业纸普及压力下，文化财保护法等政策保护传统和纸制作技艺，部分产地维持手工生产。
+  tags: [文化思想]
+
+- id: japan_hayabusa_spacecraft_predev
+  year: 1990
+  endYear: 2000
+  level: 3
+  title: ISAS宇宙科学研究
+  summary: 宇宙科学研究所开发ミュー火箭与探测卫星，为后来隼鸟号小行星探测任务奠定技术基础。
+  tags: [科技发明]
+
+- id: japan_futenma_base_incident
+  year: 1995
+  level: 3
+  title: 冲绳美军少女暴行事件
+  summary: 美军士兵在冲绳犯罪事件引发冲绳县民10万人抗议集会，要求减轻基地负担与修改地位协定。
+  tags: [条约外交]
+
+- id: japan_hashimoto_reform
+  year: 1996
+  endYear: 1998
+  level: 3
+  title: 桥本行政改革
+  summary: 首相桥本龙太郎推动行政、金融、经济结构、社会保障等六大改革，但金融危机使推进受阻。
+  tags: [改革运动]
+
+- id: japan_nikkei_crash_1990
+  year: 1990
+  level: 3
+  title: 日经指数年初急速下跌
+  summary: 1990年初日经平均股价从历史高点急速下跌，当年年末跌幅接近四成，泡沫崩溃正式开始。
+  tags: [经济贸易]
+
+- id: japan_lost_decade_employment
+  year: 1993
+  endYear: 2000
+  level: 3
+  title: 就职冰河期
+  summary: 泡沫崩溃后企业大幅减少正式录用，1990年代后半出现"就职冰河期"，非正规雇用扩大。
+  tags: [经济贸易]
+
+- id: japan_heisei_emperor_accession
+  year: 1989
+  level: 3
+  title: 明仁天皇即位・平成改元
+  summary: 明仁天皇即位，年号改为平成，新天皇以亲民姿态与平民皇后美智子子共同塑造皇室新形象。
+  tags: [王朝更迭]
+
+- id: japan_sony_playstation
+  year: 1994
+  level: 3
+  title: 索尼PlayStation发售
+  summary: 索尼发售PlayStation家用游戏主机，3D多边形图像技术引发游戏机革命，成为全球最畅销主机。
+  tags: [科技发明, 文化思想]
+
+- id: japan_internet_spread
+  year: 1995
+  endYear: 2000
+  level: 3
+  title: 互联网普及开始
+  summary: Windows 95发售与网络服务商扩张推动日本互联网快速普及，1990年代末网民突破千万。
+  tags: [科技发明]

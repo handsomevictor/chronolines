@@ -1,33 +1,56 @@
+# 俄国 1900-1950 历史事件
+
+# ==================== Level 1 ====================
+
+- id: russia_russo_japanese_war
+  year: 1904
+  endYear: 1905
+  level: 1
+  title: 日俄战争
+  summary: 俄国与日本争夺东北亚控制权，在陆海两线均告失败，签订《朴茨茅斯条约》。
+  tags: [战争, 条约外交]
+  related: [japan_russo_japanese]
+
 - id: russia_1905_revolution
   year: 1905
-  level: 2
+  level: 1
   title: 1905年革命
-  summary: 血腥星期日事件引发全国罢工和起义，沙皇颁布《十月宣言》，建立国家杜马。
-  tags: [革命政变]
+  summary: 血腥星期日事件引发全国罢工和武装起义，沙皇颁布《十月宣言》，建立国家杜马。
+  tags: [革命政变, 改革运动]
+  figures: [nicholas_ii]
 
-- id: russia_wwi
+- id: russia_wwi_eastern_front
   year: 1914
   endYear: 1917
   level: 1
-  title: 参加第一次世界大战
-  summary: 俄国以协约国身份参战，战线绵延，经济崩溃，加速了革命的爆发。
+  title: 第一次世界大战东线
+  summary: 俄国以协约国身份参战，东线战场绵延数千里，伤亡惨重，经济崩溃，加速革命爆发。
   tags: [战争]
   related: [germany_wwi, uk_wwi]
+  figures: [nicholas_ii]
 
-- id: russia_revolution_1917
+- id: russia_february_revolution
   year: 1917
   level: 1
-  title: 俄国革命
-  summary: 二月革命推翻沙皇，十月革命后布尔什维克夺取政权，苏维埃政权建立。
+  title: 二月革命
+  summary: 彼得格勒工人和士兵起义，尼古拉二世被迫退位，罗曼诺夫王朝覆灭，临时政府成立。
+  tags: [革命政变, 王朝更迭]
+  figures: [nicholas_ii, alexander_kerensky]
+
+- id: russia_october_revolution
+  year: 1917
+  level: 1
+  title: 十月革命
+  summary: 布尔什维克在列宁领导下武装夺取政权，推翻临时政府，建立苏维埃政权。
   tags: [革命政变]
   figures: [lenin, trotsky]
 
 - id: russia_civil_war
-  year: 1917
+  year: 1918
   endYear: 1922
   level: 1
   title: 俄国内战
-  summary: 红军与白军展开内战，外国干涉军参与其中，红军最终获胜。
+  summary: 红军与白军及外国干涉军展开内战，历时五年，红军最终获胜，布尔什维克政权巩固。
   tags: [战争]
   figures: [trotsky]
 
@@ -35,15 +58,524 @@
   year: 1922
   level: 1
   title: 苏联成立
-  summary: 俄罗斯、乌克兰等苏维埃共和国联合成立苏维埃社会主义共和国联盟。
+  summary: 俄罗斯、乌克兰、白俄罗斯、外高加索等苏维埃共和国联合成立苏维埃社会主义共和国联盟。
   tags: [王朝更迭]
+  figures: [lenin]
 
-- id: russia_wwii_east
+- id: russia_stalinist_purges
+  year: 1936
+  endYear: 1938
+  level: 1
+  title: 大清洗
+  summary: 斯大林主导大规模政治镇压，数十万人被处决，数百万人被关押或流放，党政军领导层遭清洗。
+  tags: [革命政变]
+  figures: [stalin]
+
+- id: russia_ww2_eastern
   year: 1941
   endYear: 1945
   level: 1
-  title: 苏德战争
-  summary: 德国入侵苏联，斯大林格勒战役成为转折点，苏联最终攻克柏林。
+  title: 苏德战争（卫国战争）
+  summary: 德国发动"巴巴罗萨"行动入侵苏联，苏联经历惨烈抵抗后转入反攻，最终攻克柏林。
   tags: [战争]
   related: [germany_wwii]
+  figures: [zhukov, stalin]
+
+- id: russia_collectivization
+  year: 1929
+  endYear: 1933
+  level: 1
+  title: 农业集体化运动
+  summary: 斯大林强制推行农业集体化，消灭富农阶层，引发乌克兰等地严重饥荒，数百万人死亡。
+  tags: [改革运动, 经济贸易]
+  figures: [stalin]
+
+# ==================== Level 2 ====================
+
+- id: russia_bloody_sunday
+  year: 1905
+  level: 2
+  title: 血腥星期日
+  summary: 加邦神父率工人向冬宫请愿，遭军队枪击，逾百人死亡，引发全国革命浪潮。
+  tags: [革命政变]
+  figures: [nicholas_ii]
+
+- id: russia_potemkin_mutiny
+  year: 1905
+  level: 2
+  title: 波将金号战舰起义
+  summary: 黑海舰队波将金号战列舰水兵发动兵变，成为1905年革命的重要标志性事件。
+  tags: [革命政变]
+
+- id: russia_october_manifesto
+  year: 1905
+  level: 2
+  title: 《十月宣言》颁布
+  summary: 尼古拉二世颁布《十月宣言》，承诺公民自由与召开国家杜马，暂时平息革命高潮。
+  tags: [改革运动]
+  figures: [nicholas_ii]
+
+- id: russia_stolypin_reforms
+  year: 1906
+  endYear: 1911
+  level: 2
+  title: 斯托雷平农业改革
+  summary: 首相斯托雷平推行农业改革，允许农民退出村社独立持地，以稳定农村、遏制革命。
+  tags: [改革运动]
+  figures: [stolypin]
+
+- id: russia_stolypin_assassinated
+  year: 1911
+  level: 2
+  title: 斯托雷平遇刺
+  summary: 首相彼得·斯托雷平在基辅歌剧院遭无政府主义者枪击，数日后不治身亡。
+  tags: [革命政变]
+  figures: [stolypin]
+
+- id: russia_rasputin_influence
+  year: 1905
+  endYear: 1916
+  level: 2
+  title: 拉斯普京宫廷影响
+  summary: 神秘人物拉斯普京获皇后亚历山德拉信任，影响宫廷政务，成为末代沙皇政权的争议象征。
+  tags: [王朝更迭]
+  figures: [nicholas_ii]
+
+- id: russia_rasputin_murdered
+  year: 1916
+  level: 2
+  title: 拉斯普京被杀
+  summary: 贵族阴谋者在圣彼得堡杀死拉斯普京，结束其对宫廷的影响，沙皇政权随之加速崩溃。
+  tags: [革命政变]
+
+- id: russia_nicholas_ii_abdication
+  year: 1917
+  level: 2
+  title: 尼古拉二世退位
+  summary: 二月革命后，尼古拉二世被迫退位，罗曼诺夫王朝三百余年统治宣告终结。
+  tags: [王朝更迭, 革命政变]
+  figures: [nicholas_ii]
+
+- id: russia_provisional_government
+  year: 1917
+  level: 2
+  title: 临时政府成立
+  summary: 二月革命后，以克伦斯基为首的临时政府成立，决定继续参与一战，引发更深矛盾。
+  tags: [革命政变]
+  figures: [alexander_kerensky]
+
+- id: russia_brest_litovsk_treaty
+  year: 1918
+  level: 2
+  title: 《布列斯特-立托夫斯克条约》
+  summary: 苏俄与同盟国签订和约，放弃大片领土退出一战，以换取喘息时机巩固苏维埃政权。
+  tags: [条约外交]
+  figures: [trotsky, lenin]
+
+- id: russia_romanov_execution
+  year: 1918
+  level: 2
+  title: 尼古拉二世全家被杀
+  summary: 尼古拉二世及皇后、子女与随从在叶卡捷琳堡被布尔什维克处决，罗曼诺夫王朝绝嗣。
+  tags: [革命政变]
+  figures: [nicholas_ii]
+
+- id: russia_red_army_founded
+  year: 1918
+  level: 2
+  title: 红军建立
+  summary: 布尔什维克政府建立工农红军，由托洛茨基主持，成为内战中击败白军的主要武装力量。
+  tags: [战争, 革命政变]
+  figures: [trotsky]
+
+- id: russia_war_communism
+  year: 1918
+  endYear: 1921
+  level: 2
+  title: 战时共产主义
+  summary: 布尔什维克实行战时共产主义政策，强制征购粮食，国有化工业，引发严重经济危机。
+  tags: [经济贸易, 革命政变]
+  figures: [lenin]
+
+- id: russia_nep_policy
+  year: 1921
+  level: 2
+  title: 新经济政策（NEP）
+  summary: 列宁推行新经济政策，恢复部分市场机制，允许小农和小商业，经济逐步复苏。
+  tags: [经济贸易, 改革运动]
+  figures: [lenin]
+
+- id: russia_kronstadt_rebellion
+  year: 1921
+  level: 2
+  title: 喀琅施塔得水兵起义
+  summary: 波罗的海舰队水兵在喀琅施塔得发动反苏维埃起义，要求政治自由，被红军镇压。
+  tags: [革命政变]
+  figures: [trotsky]
+
+- id: russia_lenin_death
+  year: 1924
+  level: 2
+  title: 列宁逝世
+  summary: 弗拉基米尔·列宁在高尔基村病逝，享年53岁，身后遗体被安置于莫斯科红场陵墓。
+  tags: [王朝更迭, 人物]
+  figures: [lenin]
+
+- id: russia_stalin_rise
+  year: 1924
+  endYear: 1929
+  level: 2
+  title: 斯大林权力巩固
+  summary: 列宁死后，斯大林通过排斥托洛茨基、季诺维也夫等对手，逐步掌控苏联最高权力。
+  tags: [革命政变, 王朝更迭]
+  figures: [stalin, trotsky]
+
+- id: russia_five_year_plan_1
+  year: 1928
+  endYear: 1932
+  level: 2
+  title: 第一个五年计划
+  summary: 苏联启动第一个五年计划，大力推进重工业建设，经济迅速工业化但农村代价惨重。
+  tags: [经济贸易, 改革运动]
+  figures: [stalin]
+
+- id: russia_great_terror_show_trials
+  year: 1936
+  endYear: 1938
+  level: 2
+  title: 莫斯科审判
+  summary: 布哈林、季诺维也夫等老布尔什维克领袖被迫在公开审判中认罪，随即被处决。
+  tags: [革命政变]
+  figures: [stalin]
+
+- id: russia_molotov_ribbentrop_pact
+  year: 1939
+  level: 2
+  title: 苏德互不侵犯条约
+  summary: 苏联与纳粹德国签订互不侵犯条约及秘密议定书，划分东欧势力范围，震惊世界。
+  tags: [条约外交]
+  figures: [stalin]
+
+- id: russia_soviet_finnish_war
+  year: 1939
+  endYear: 1940
+  level: 2
+  title: 苏芬战争（冬季战争）
+  summary: 苏联进攻芬兰，芬军顽强抵抗，苏联付出重大伤亡，最终以领土割让换取停战。
+  tags: [战争]
+  figures: [stalin]
+
+- id: russia_leningrad_siege
+  year: 1941
+  endYear: 1944
+  level: 2
+  title: 列宁格勒围城
+  summary: 德军围困列宁格勒长达872天，城内居民以数十万计死于饥饿与炮击，最终解围。
+  tags: [战争]
   figures: [zhukov]
+
+- id: russia_stalingrad_battle
+  year: 1942
+  endYear: 1943
+  level: 2
+  title: 斯大林格勒战役
+  summary: 苏德双方在斯大林格勒展开惨烈巷战，苏军最终包围并歼灭德军第六集团军，成为转折点。
+  tags: [战争]
+  figures: [zhukov, stalin]
+
+- id: russia_kursk_battle
+  year: 1943
+  level: 2
+  title: 库尔斯克战役
+  summary: 史上最大规模坦克会战在库尔斯克发生，苏军击败德军装甲突击，掌握战略主动权。
+  tags: [战争]
+  figures: [zhukov]
+
+- id: russia_berlin_capture
+  year: 1945
+  level: 2
+  title: 攻克柏林
+  summary: 苏联红军经过激烈巷战攻克柏林，希特勒自杀，德国宣告无条件投降，二战欧洲战场结束。
+  tags: [战争]
+  figures: [zhukov, stalin]
+
+- id: russia_yalta_conference
+  year: 1945
+  level: 2
+  title: 雅尔塔会议
+  summary: 罗斯福、丘吉尔、斯大林在雅尔塔会晤，划定战后欧洲势力范围，确立战后国际秩序框架。
+  tags: [条约外交]
+  figures: [stalin]
+
+- id: russia_atomic_project_start
+  year: 1943
+  level: 2
+  title: 苏联核武器研究启动
+  summary: 斯大林批准核武器研究计划，科学家库尔恰托夫主持，泽尔多维奇等人参与理论工作。
+  tags: [科技发明]
+  figures: [zeldovich, stalin]
+
+# ==================== Level 3 ====================
+
+- id: russia_port_arthur_siege
+  year: 1904
+  level: 3
+  title: 旅顺口围城
+  summary: 日军围攻俄国旅顺口要塞历时五个月，俄军守将斯特塞尔最终投降，俄国遭受重大损失。
+  tags: [战争]
+
+- id: russia_tsushima_battle
+  year: 1905
+  level: 3
+  title: 对马海战
+  summary: 日本舰队在对马海峡几乎全歼俄国波罗的海舰队，是海战史上最具决定性的战役之一。
+  tags: [战争]
+
+- id: russia_portsmouth_treaty
+  year: 1905
+  level: 3
+  title: 《朴茨茅斯条约》签订
+  summary: 日俄战争以俄国割让旅顺、库页岛南部及朝鲜宗主权告终，各方记载伤亡人数存在差异。
+  tags: [条约外交]
+
+- id: russia_first_duma
+  year: 1906
+  level: 3
+  title: 第一届国家杜马召开
+  summary: 俄国第一届国家杜马在圣彼得堡开幕，以自由派为主，与沙皇政府多次冲突，两月后被解散。
+  tags: [改革运动]
+  figures: [nicholas_ii]
+
+- id: russia_stolypin_prime_minister
+  year: 1906
+  level: 3
+  title: 斯托雷平出任首相
+  summary: 彼得·斯托雷平就任首相，以铁腕镇压革命同时推行改革，其"绞刑架"政策争议极大。
+  tags: [改革运动]
+  figures: [stolypin]
+
+- id: russia_tolstoy_death
+  year: 1910
+  level: 3
+  title: 托尔斯泰逝世
+  summary: 列夫·托尔斯泰在阿斯塔波沃火车站病逝，享年82岁，其逝世引发全俄乃至全球哀悼。
+  tags: [人物]
+  figures: [tolstoy]
+
+- id: russia_chekhov_three_sisters
+  year: 1901
+  level: 3
+  title: 契诃夫《三姐妹》首演
+  summary: 契诃夫剧作《三姐妹》在莫斯科艺术剧院首演，由斯坦尼斯拉夫斯基执导，大获成功。
+  tags: [文化思想]
+  figures: [chekhov]
+
+- id: russia_chekhov_death
+  year: 1904
+  level: 3
+  title: 契诃夫逝世
+  summary: 安东·契诃夫在德国巴登维勒疗养时病逝，享年44岁，留下众多短篇小说与剧作。
+  tags: [人物]
+  figures: [chekhov]
+
+- id: russia_gorky_mother_published
+  year: 1906
+  level: 3
+  title: 高尔基《母亲》出版
+  summary: 高尔基小说《母亲》在美国出版，描绘工人革命觉醒，被视为无产阶级文学代表作。
+  tags: [文化思想]
+  figures: [gorky]
+
+- id: russia_stravinsky_firebird
+  year: 1910
+  level: 3
+  title: 斯特拉文斯基《火鸟》首演
+  summary: 伊戈尔·斯特拉文斯基芭蕾舞剧《火鸟》在巴黎首演，引起轰动，确立其国际声誉。
+  tags: [文化思想]
+  figures: [stravinsky]
+
+- id: russia_stravinsky_rite_of_spring
+  year: 1913
+  level: 3
+  title: 斯特拉文斯基《春之祭》首演
+  summary: 《春之祭》在巴黎首演引发观众骚动，其革命性的不和谐音效和节奏成为现代音乐里程碑。
+  tags: [文化思想]
+  figures: [stravinsky]
+
+- id: russia_kandinsky_abstract_painting
+  year: 1910
+  level: 3
+  title: 康定斯基创作首幅抽象画
+  summary: 瓦西里·康定斯基创作据信是史上首幅完全抽象的水彩画，开创了抽象主义艺术流派。
+  tags: [文化思想]
+  figures: [kandinsky]
+
+- id: russia_rachmaninoff_second_concerto
+  year: 1901
+  level: 3
+  title: 拉赫玛尼诺夫《第二钢琴协奏曲》首演
+  summary: 拉赫玛尼诺夫《第二钢琴协奏曲》在莫斯科首演，是其最受欢迎的作品，影响延续至今。
+  tags: [文化思想]
+  figures: [rachmaninoff]
+
+- id: russia_rachmaninoff_emigrates
+  year: 1917
+  level: 3
+  title: 拉赫玛尼诺夫流亡海外
+  summary: 十月革命后，拉赫玛尼诺夫离开俄国，辗转定居美国，此后鲜少创作，以演奏为主。
+  tags: [人物]
+  figures: [rachmaninoff]
+
+- id: russia_pavlov_nobel
+  year: 1904
+  level: 3
+  title: 巴甫洛夫获诺贝尔奖
+  summary: 伊万·巴甫洛夫因消化腺研究获得诺贝尔生理学或医学奖，是俄国首位诺贝尔科学奖得主。
+  tags: [科技发明]
+  figures: [pavlov]
+
+- id: russia_mendeleev_death
+  year: 1907
+  level: 3
+  title: 门捷列夫逝世
+  summary: 德米特里·门捷列夫在圣彼得堡病逝，享年72岁，身后留下元素周期律等奠基性科学贡献。
+  tags: [人物]
+  figures: [mendeleev]
+
+- id: russia_bolshevik_party_founded
+  year: 1903
+  level: 3
+  title: 布尔什维克派别形成
+  summary: 俄国社会民主工党在伦敦召开第二次代表大会，列宁领导的多数派（布尔什维克）与少数派分裂。
+  tags: [革命政变]
+  figures: [lenin]
+
+- id: russia_trotsky_permanent_revolution
+  year: 1905
+  level: 3
+  title: 托洛茨基"不断革命论"提出
+  summary: 托洛茨基在1905年革命背景下提出不断革命论，认为俄国可跨越资本主义直接进入社会主义。
+  tags: [文化思想, 革命政变]
+  figures: [trotsky]
+
+- id: russia_repin_ivan_terrible
+  year: 1885
+  level: 3
+  title: 列宾《伊万雷帝杀子》完成
+  summary: 列宾完成油画《伊万雷帝杀子》，描绘沙皇痛苦地抱着亲手杀死的儿子，引发巨大轰动。
+  tags: [文化思想]
+  figures: [repin]
+
+- id: russia_pasternак_early_poems
+  year: 1913
+  level: 3
+  title: 帕斯捷尔纳克早期诗歌创作
+  summary: 鲍里斯·帕斯捷尔纳克开始发表诗歌，与俄国象征主义和未来主义文学运动密切相关。
+  tags: [文化思想]
+  figures: [pasternak]
+
+- id: russia_solzhenitsyn_born
+  year: 1918
+  level: 3
+  title: 索尔仁尼琴出生
+  summary: 亚历山大·索尔仁尼琴生于基斯洛沃茨克，后成为苏联著名异见作家，揭露古拉格体系。
+  tags: [人物]
+  figures: [solzhenitsyn]
+
+- id: russia_shostakovich_first_symphony
+  year: 1926
+  level: 3
+  title: 肖斯塔科维奇《第一交响曲》首演
+  summary: 季米特里·肖斯塔科维奇年仅20岁时创作的《第一交响曲》在列宁格勒首演，引起广泛关注。
+  tags: [文化思想]
+  figures: [shostakovich]
+
+- id: russia_gulag_system_established
+  year: 1918
+  endYear: 1930
+  level: 3
+  title: 古拉格劳改营体系建立
+  summary: 苏联逐步建立劳改营（古拉格）体系，至1930年代大规模扩张，数百万人先后遭羁押。
+  tags: [革命政变]
+  figures: [stalin]
+
+- id: russia_ussr_constitution_1936
+  year: 1936
+  level: 3
+  title: 苏联1936年宪法颁布
+  summary: 苏联颁布新宪法，宣称完成社会主义建设，赋予公民各项权利，但实际政治仍是专制体制。
+  tags: [改革运动]
+  figures: [stalin]
+
+- id: russia_molotov_foreign_minister
+  year: 1939
+  level: 3
+  title: 莫洛托夫任外交人民委员
+  summary: 维亚切斯拉夫·莫洛托夫出任外交人民委员，主持签订苏德互不侵犯条约，深刻影响二战走向。
+  tags: [条约外交]
+  figures: [stalin]
+
+- id: russia_operation_barbarossa
+  year: 1941
+  level: 3
+  title: 德国"巴巴罗萨"行动
+  summary: 1941年6月22日德国发动大规模入侵苏联，战线长达数千公里，苏军初期损失惨重。
+  tags: [战争]
+  figures: [zhukov, stalin]
+
+- id: russia_trotsky_assassinated
+  year: 1940
+  level: 3
+  title: 托洛茨基遇刺
+  summary: 流亡墨西哥的列夫·托洛茨基被斯大林派遣的特工用冰镐刺杀身亡，享年60岁。
+  tags: [人物, 革命政变]
+  figures: [trotsky, stalin]
+
+- id: russia_zhukov_moscow_defense
+  year: 1941
+  level: 3
+  title: 朱可夫指挥莫斯科保卫战
+  summary: 格奥尔基·朱可夫率军保卫莫斯科，在严冬中击退德军，是苏联卫国战争的重要转折之一。
+  tags: [战争]
+  figures: [zhukov]
+
+- id: russia_gorky_death
+  year: 1936
+  level: 3
+  title: 高尔基逝世
+  summary: 马克西姆·高尔基在莫斯科病逝，享年68岁，其死亡原因各方记载存在差异。
+  tags: [人物]
+  figures: [gorky]
+
+- id: russia_shostakovich_7th_symphony
+  year: 1942
+  level: 3
+  title: 肖斯塔科维奇《第七交响曲》（列宁格勒）
+  summary: 肖斯塔科维奇创作《第七交响曲》献给被围困的列宁格勒，成为苏联抵抗纳粹侵略的文化象征。
+  tags: [文化思想]
+  figures: [shostakovich]
+
+- id: russia_nuremberg_trials_participation
+  year: 1945
+  endYear: 1946
+  level: 3
+  title: 参与纽伦堡审判
+  summary: 苏联作为主要盟国之一参与纽伦堡国际军事法庭，对纳粹战犯进行审判。
+  tags: [条约外交]
+
+- id: russia_pasternак_doctor_zhivago_written
+  year: 1945
+  endYear: 1955
+  level: 3
+  title: 帕斯捷尔纳克写作《日瓦戈医生》
+  summary: 帕斯捷尔纳克历时十年创作长篇小说《日瓦戈医生》，记录革命时代个人命运，后遭苏联当局打压。
+  tags: [文化思想]
+  figures: [pasternak]
+
+- id: russia_zeldovich_nuclear_theory
+  year: 1940
+  level: 3
+  title: 泽尔多维奇核物理理论研究
+  summary: 雅科夫·泽尔多维奇与哈里顿研究铀裂变链式反应，为苏联核武器理论研究奠定基础。
+  tags: [科技发明]
+  figures: [zeldovich]

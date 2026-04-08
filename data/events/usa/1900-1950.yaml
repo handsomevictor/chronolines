@@ -1,42 +1,502 @@
-- id: usa_wwi_entry
+# 美国 1900-1950 事件数据
+
+# ===== Level 1 =====
+
+- id: usa_theodore_roosevelt_01
+  year: 1901
+  endYear: 1909
+  level: 1
+  title: 西奥多·罗斯福执政
+  summary: 麦金利遇刺后罗斯福继任，推行反垄断、自然资源保护，推动巴拿马运河建设，塑造进步主义时代政策基调。
+  tags: [改革运动]
+  figures: [roosevelt_t]
+
+- id: usa_wwi_entry_17
   year: 1917
   level: 1
   title: 参加第一次世界大战
-  summary: 美国宣布对德参战，向欧洲派遣军队，对协约国最终胜利起到重要作用。
+  summary: 美国宣布对德参战，约200万士兵赴欧作战，对协约国最终胜利发挥重要作用。
   tags: [战争]
   related: [uk_wwi, france_wwi, germany_wwi]
 
-- id: usa_great_depression
+- id: usa_great_depression_29
   year: 1929
   endYear: 1933
   level: 1
   title: 大萧条
-  summary: 纽约股市崩盘引发全球经济危机，美国失业率大幅上升，工农业生产大幅下降。
+  summary: 1929年10月华尔街股市崩盘引发全球经济危机，美国失业率峰值超过25%，银行大批倒闭。
   tags: [经济贸易]
 
-- id: usa_new_deal
+- id: usa_new_deal_33
   year: 1933
   endYear: 1939
-  level: 2
+  level: 1
   title: 罗斯福新政
-  summary: 罗斯福总统推行新政，通过政府干预手段推动经济复苏和社会改革。
+  summary: FDR推行系列经济与社会改革，建立社会保障、银行监管、就业救助体系，改变政府与经济的关系。
   tags: [改革运动, 经济贸易]
   figures: [roosevelt_fdr]
 
-- id: usa_wwii
+- id: usa_wwii_41
   year: 1941
   endYear: 1945
   level: 1
   title: 参加第二次世界大战
-  summary: 珍珠港事件后美国对日宣战，随后对德意宣战，参与欧亚两线作战。
+  summary: 珍珠港事件后美国对日宣战，随后参与欧亚两线作战，在同盟国战略物资供应与军事胜利中发挥关键作用。
   tags: [战争]
   related: [japan_wwii_asia, germany_wwii]
-  figures: [roosevelt_fdr, eisenhower]
+  figures: [roosevelt_fdr, eisenhower, patton]
 
-- id: usa_atomic_bomb
+- id: usa_atomic_bomb_45
   year: 1945
   level: 1
-  title: 原子弹投放
-  summary: 美国在日本广岛和长崎投放原子弹，各方对其在结束战争中的作用评价存在分歧。
+  title: 原子弹研制与投放
+  summary: 曼哈顿计划完成原子弹研制，美国先后在广岛与长崎投放原子弹，各方对其在结束战争中的作用记载存在差异。
   tags: [战争, 科技发明]
   related: [japan_wwii_end]
+  figures: [oppenheimer]
+
+- id: usa_un_founding_45
+  year: 1945
+  level: 1
+  title: 联合国成立
+  summary: 旧金山会议通过《联合国宪章》，美国为发起国之一，联合国总部最终设于纽约。
+  tags: [条约外交]
+  figures: [roosevelt_fdr]
+
+- id: usa_cold_war_start_47
+  year: 1947
+  level: 1
+  title: 冷战开始
+  summary: 杜鲁门主义与马歇尔计划相继出台，美国确立对苏遏制战略，冷战对抗格局正式形成。
+  tags: [条约外交, 战争]
+  related: [russia_cold_war]
+
+# ===== Level 2 =====
+
+- id: usa_mckinley_assassin_01
+  year: 1901
+  level: 2
+  title: 麦金利总统遇刺
+  summary: 总统麦金利在布法罗博览会遭无政府主义者枪击，八日后身亡，罗斯福随即继任总统。
+  tags: [革命政变]
+  figures: [roosevelt_t]
+
+- id: usa_antitrust_02
+  year: 1902
+  level: 2
+  title: 反垄断运动
+  summary: 罗斯福政府起诉北方证券公司，最终获最高法院支持下令解散，开创联邦积极反垄断先例。
+  tags: [改革运动, 经济贸易]
+  figures: [roosevelt_t]
+
+- id: usa_wright_brothers_03
+  year: 1903
+  level: 2
+  title: 莱特兄弟首次飞行
+  summary: 威尔伯与奥维尔·莱特在北卡罗来纳基蒂霍克完成动力飞行，持续约12秒，航空时代由此开启。
+  tags: [科技发明]
+  figures: [wright_brothers]
+
+- id: usa_panama_canal_14
+  year: 1914
+  level: 2
+  title: 巴拿马运河开通
+  summary: 美国主导建设的巴拿马运河正式通航，连接大西洋与太平洋，改变全球航运格局。
+  tags: [科技发明, 条约外交]
+  figures: [roosevelt_t]
+
+- id: usa_progressive_era_00
+  year: 1900
+  endYear: 1920
+  level: 2
+  title: 进步主义时代
+  summary: 记者、政治家与社会改革者推动食品安全、劳工保护、反腐败立法，重塑联邦政府职能边界。
+  tags: [改革运动]
+  figures: [roosevelt_t]
+
+- id: usa_federal_reserve_13
+  year: 1913
+  level: 2
+  title: 联邦储备系统建立
+  summary: 国会通过《联邦储备法》，建立中央银行体系，统一货币政策，以应对周期性银行恐慌。
+  tags: [经济贸易, 改革运动]
+
+- id: usa_wwi_armistice_18
+  year: 1918
+  level: 2
+  title: 一战停战与凡尔赛谈判
+  summary: 威尔逊携"十四点计划"赴巴黎参加和会，主张民族自决与国际联盟，但参议院拒绝批准《凡尔赛条约》。
+  tags: [条约外交]
+  figures: [wilson_w]
+
+- id: usa_prohibition_20
+  year: 1920
+  endYear: 1933
+  level: 2
+  title: 禁酒令时期
+  summary: 宪法第18修正案禁止酒精饮料生产与销售，助长走私与有组织犯罪，1933年第21修正案予以废除。
+  tags: [改革运动]
+
+- id: usa_womens_suffrage_20
+  year: 1920
+  level: 2
+  title: 女性获得选举权
+  summary: 宪法第19修正案批准，全国女性获得选举权，结束数十年争取普选权的运动。
+  tags: [改革运动]
+
+- id: usa_roaring_twenties_20
+  year: 1920
+  endYear: 1929
+  level: 2
+  title: 咆哮的二十年代
+  summary: 经济繁荣、爵士乐兴盛、汽车普及与消费文化兴起，城市中产阶级生活方式大幅改变。
+  tags: [经济贸易, 文化思想]
+  figures: [armstrong_l, ford_h]
+
+- id: usa_stock_crash_29
+  year: 1929
+  level: 2
+  title: 华尔街股市崩盘
+  summary: 1929年10月"黑色星期四"和"黑色星期二"股市暴跌，数十亿美元市值蒸发，引发全球经济危机。
+  tags: [经济贸易]
+
+- id: usa_fdr_elected_32
+  year: 1932
+  level: 2
+  title: 富兰克林·罗斯福当选总统
+  summary: 罗斯福以大萧条为背景赢得压倒性胜利，承诺"新政"，此后连续当选4届，为美国历史仅有。
+  tags: [改革运动]
+  figures: [roosevelt_fdr]
+
+- id: usa_social_security_35
+  year: 1935
+  level: 2
+  title: 《社会保障法》通过
+  summary: 国会通过《社会保障法》，建立联邦养老金与失业保险体系，奠定美国现代福利制度基础。
+  tags: [改革运动]
+  figures: [roosevelt_fdr]
+
+- id: usa_dust_bowl_30
+  year: 1930
+  endYear: 1936
+  level: 2
+  title: 沙尘暴灾害
+  summary: 大平原持续干旱与土地过度开垦引发大规模沙尘暴，数十万农民流离失所，大批人涌向加州。
+  tags: [改革运动]
+
+- id: usa_lend_lease_41
+  year: 1941
+  level: 2
+  title: 《租借法案》
+  summary: 美国通过《租借法案》，向英国、苏联等盟国提供大量军事物资，名义中立实已支持同盟国。
+  tags: [经济贸易, 条约外交, 战争]
+  figures: [roosevelt_fdr]
+
+- id: usa_pearl_harbor_41
+  year: 1941
+  level: 2
+  title: 珍珠港事件
+  summary: 1941年12月7日日本突袭夏威夷珍珠港，美军损失惨重，美国随即对日宣战，全面参战。
+  tags: [战争]
+  related: [japan_wwii_asia]
+  figures: [roosevelt_fdr]
+
+- id: usa_manhattan_project_42
+  year: 1942
+  endYear: 1945
+  level: 2
+  title: 曼哈顿计划
+  summary: 美英加联合实施原子弹研发计划，汇集顶尖物理学家，1945年7月于新墨西哥州完成首次核试验。
+  tags: [科技发明, 战争]
+  figures: [oppenheimer]
+
+- id: usa_d_day_44
+  year: 1944
+  level: 2
+  title: 诺曼底登陆
+  summary: 盟军在艾森豪威尔指挥下对法国诺曼底实施大规模两栖登陆，开辟欧洲第二战场，加速德国战败。
+  tags: [战争]
+  related: [germany_wwii]
+  figures: [eisenhower, patton]
+
+- id: usa_marshall_plan_48
+  year: 1948
+  level: 2
+  title: 马歇尔计划
+  summary: 美国向西欧16国提供约130亿美元援助，推动欧洲战后经济重建，同时遏制共产主义影响扩张。
+  tags: [条约外交, 经济贸易]
+
+- id: usa_nato_49
+  year: 1949
+  level: 2
+  title: 北大西洋公约组织成立
+  summary: 美国与西欧11国签署《北大西洋公约》，建立集体防御联盟，北约在冷战中成为西方安全体系核心。
+  tags: [条约外交, 战争]
+
+- id: usa_berlin_airlift_48
+  year: 1948
+  endYear: 1949
+  level: 2
+  title: 柏林空运
+  summary: 苏联封锁西柏林后，美英两国组织大规模空中补给，历时约15个月，苏联最终解除封锁。
+  tags: [战争, 条约外交]
+  related: [russia_berlin_blockade]
+
+- id: usa_japanese_internment_42
+  year: 1942
+  level: 2
+  title: 日裔美国人强制收容
+  summary: 罗斯福签署行政令，约11万日裔美国人被强制迁入收容营，其中多数持有美国公民身份。
+  tags: [战争, 改革运动]
+  figures: [roosevelt_fdr]
+
+- id: usa_iwo_jima_45
+  year: 1945
+  level: 2
+  title: 硫磺岛战役
+  summary: 美军历经36天激战攻占硫磺岛，双方伤亡惨重，美军插旗照片成为二战最具标志性的战地图像。
+  tags: [战争]
+
+# ===== Level 3 =====
+
+- id: usa_muckrakers_02
+  year: 1902
+  level: 3
+  title: 扒粪者新闻运动
+  summary: 艾达·塔贝尔等记者深度揭露标准石油、食品安全等社会问题，推动进步主义立法改革。
+  tags: [文化思想, 改革运动]
+  figures: [rockefeller]
+
+- id: usa_pure_food_06
+  year: 1906
+  level: 3
+  title: 《纯净食品与药品法》
+  summary: 辛克莱《屠场》小说揭露肉类加工业黑幕，国会通过纯净食品法，建立联邦食品药品监管职能。
+  tags: [改革运动]
+  figures: [roosevelt_t]
+
+- id: usa_model_t_08
+  year: 1908
+  level: 3
+  title: 福特T型车问世
+  summary: 亨利·福特推出廉价实用的T型车，1913年引入流水线生产，汽车开始普及至普通家庭。
+  tags: [科技发明, 经济贸易]
+  figures: [ford_h]
+
+- id: usa_naacp_09
+  year: 1909
+  level: 3
+  title: 全国有色人种促进协会成立
+  summary: 杜波依斯等人创立NAACP，以法律与舆论手段推动黑人民权，成为民权运动最重要的组织之一。
+  tags: [改革运动]
+
+- id: usa_titanic_12
+  year: 1912
+  level: 3
+  title: 泰坦尼克号沉没
+  summary: 英国邮轮"泰坦尼克号"在北大西洋撞冰山沉没，1500余人遇难，促进国际海上安全条约签订。
+  tags: [科技发明]
+
+- id: usa_16th_17th_amend_13
+  year: 1913
+  level: 3
+  title: 第16、17修正案批准
+  summary: 第16修正案授权联邦征收所得税，第17修正案规定参议员由选民直接选举，两项均为进步主义成果。
+  tags: [改革运动]
+
+- id: usa_lusitania_15
+  year: 1915
+  level: 3
+  title: 卢西塔尼亚号被击沉
+  summary: 德国潜艇击沉英国邮轮卢西塔尼亚号，1198人遇难，含128名美国公民，激化美国反德情绪。
+  tags: [战争]
+
+- id: usa_zimmermann_17
+  year: 1917
+  level: 3
+  title: 齐默尔曼电报事件
+  summary: 德国外交电报建议墨西哥对美开战，英国情报截获并公开，成为美国参战的重要舆论推动力。
+  tags: [战争, 条约外交]
+
+- id: usa_espionage_act_17
+  year: 1917
+  level: 3
+  title: 《间谍法》与《煽动法》颁布
+  summary: 战时立法严格限制反战言论，多名社会主义者遭检控，引发公民自由争议。
+  tags: [战争, 改革运动]
+
+- id: usa_flu_pandemic_18
+  year: 1918
+  level: 3
+  title: 流感大流行
+  summary: 1918年流感席卷全球，美国约67.5万人死亡，对军队与城市社区造成严重冲击。
+  tags: [改革运动]
+
+- id: usa_red_scare_19
+  year: 1919
+  level: 3
+  title: 第一次红色恐慌
+  summary: 俄国革命后美国政府大规模逮捕涉嫌共产主义与无政府主义者，帕尔默突袭引发公民自由争议。
+  tags: [革命政变]
+
+- id: usa_harlem_renaissance_20
+  year: 1920
+  endYear: 1930
+  level: 3
+  title: 哈莱姆文艺复兴
+  summary: 纽约哈莱姆区涌现大批黑人诗人、作家、音乐家，兰斯顿·休斯等人奠定非裔美国文化的现代基础。
+  tags: [文化思想]
+  figures: [armstrong_l]
+
+- id: usa_scopes_trial_25
+  year: 1925
+  level: 3
+  title: 斯科普斯审判
+  summary: 田纳西州教师斯科普斯因教授进化论被起诉，"猴子审判"引发全国关于宗教与科学的公共争论。
+  tags: [文化思想]
+
+- id: usa_lindbergh_flight_27
+  year: 1927
+  level: 3
+  title: 林德伯格横渡大西洋飞行
+  summary: 查尔斯·林德伯格驾"圣路易斯精神号"完成史上首次大西洋不着陆单人飞行，历时33.5小时。
+  tags: [科技发明]
+
+- id: usa_hoover_dam_31
+  year: 1931
+  endYear: 1936
+  level: 3
+  title: 胡佛水坝建设
+  summary: 联邦政府在科罗拉多河建造胡佛水坝，为大萧条时期最大公共工程之一，提供西南地区电力与水源。
+  tags: [科技发明, 改革运动]
+
+- id: usa_bonus_army_32
+  year: 1932
+  level: 3
+  title: 奖金军事件
+  summary: 约2万名一战退伍军人聚集华盛顿要求提前发放奖金，麦克阿瑟奉命驱散，引发全国舆论争议。
+  tags: [改革运动]
+  figures: [macarthur]
+
+- id: usa_fdic_33
+  year: 1933
+  level: 3
+  title: 联邦存款保险公司建立
+  summary: 新政立法建立FDIC，为银行存款提供联邦担保，重建公众对银行体系的信心。
+  tags: [改革运动, 经济贸易]
+  figures: [roosevelt_fdr]
+
+- id: usa_ccc_33
+  year: 1933
+  level: 3
+  title: 平民保育团计划
+  summary: 新政就业计划雇用约300万年轻人参与自然资源保护工程，建设公园、植树造林、修缮步道。
+  tags: [改革运动]
+  figures: [roosevelt_fdr]
+
+- id: usa_tva_33
+  year: 1933
+  level: 3
+  title: 田纳西河谷管理局建立
+  summary: 新政建立TVA，对田纳西河流域进行综合开发，提供电力、防洪与区域经济发展支持。
+  tags: [改革运动, 科技发明]
+  figures: [roosevelt_fdr]
+
+- id: usa_jesse_owens_36
+  year: 1936
+  level: 3
+  title: 杰西·欧文斯柏林奥运会夺金
+  summary: 美国黑人运动员杰西·欧文斯在柏林奥运会夺得4枚金牌，引发广泛关注。
+  tags: [文化思想]
+
+- id: usa_war_industries_42
+  year: 1942
+  level: 3
+  title: 战时工业动员
+  summary: 美国将工业产能迅速转为军事生产，汽车厂改产坦克与飞机，女性大量进入工厂，"铆钉工罗西"成为符号。
+  tags: [战争, 经济贸易]
+  figures: [roosevelt_fdr]
+
+- id: usa_gijoe_bill_44
+  year: 1944
+  level: 3
+  title: 《军人权利法案》
+  summary: 国会通过《军人调适法》（GI Bill），为退伍军人提供教育、住房与就业援助，推动战后中产阶级扩张。
+  tags: [改革运动]
+
+- id: usa_yalta_45
+  year: 1945
+  level: 3
+  title: 雅尔塔会议
+  summary: 罗斯福、丘吉尔、斯大林在克里米亚会谈，商定战后欧洲秩序与联合国安理会机制，各方对结果评价存在差异。
+  tags: [条约外交]
+  related: [uk_wwii, russia_wwii]
+  figures: [roosevelt_fdr]
+
+- id: usa_hiroshima_45
+  year: 1945
+  level: 3
+  title: 广岛原子弹投放
+  summary: 1945年8月6日，B-29"伊诺拉盖伊"号投下"小男孩"原子弹，广岛约7至8万人当日死亡。
+  tags: [战争, 科技发明]
+  related: [japan_wwii_end]
+  figures: [oppenheimer]
+
+- id: usa_nagasaki_45
+  year: 1945
+  level: 3
+  title: 长崎原子弹投放
+  summary: 1945年8月9日，"胖子"原子弹在长崎爆炸，约4万人当日死亡，日本随后宣布投降。
+  tags: [战争, 科技发明]
+  related: [japan_wwii_end]
+
+- id: usa_truman_doctrine_47
+  year: 1947
+  level: 3
+  title: 杜鲁门主义
+  summary: 杜鲁门宣告美国将援助所有受共产主义威胁的国家，首先援助希腊与土耳其，确立遏制政策方向。
+  tags: [条约外交]
+
+- id: usa_cia_nsc_47
+  year: 1947
+  level: 3
+  title: 《国家安全法》颁布
+  summary: 国会通过法案，建立中央情报局、国家安全委员会与参谋长联席会议，重塑国家安全机构架构。
+  tags: [改革运动, 战争]
+
+- id: usa_israel_recognition_48
+  year: 1948
+  level: 3
+  title: 美国承认以色列
+  summary: 以色列独立宣言发布后11分钟，杜鲁门宣布美国承认以色列国，是首批承认以色列的国家之一。
+  tags: [条约外交]
+
+- id: usa_china_white_paper_49
+  year: 1949
+  level: 3
+  title: 《中国白皮书》发布
+  summary: 国务卿艾奇逊发布白皮书，认定国民党政府失去中国是其自身原因所致，美国不对此承担责任。
+  tags: [条约外交]
+  related: [china_prc_founding]
+
+- id: usa_ford_assembly_line_13
+  year: 1913
+  level: 3
+  title: 福特汽车流水线投入使用
+  summary: 福特海兰德帕克工厂引入移动式装配线，T型车生产时间从12小时降至93分钟，工业史上的里程碑。
+  tags: [科技发明, 经济贸易]
+  figures: [ford_h]
+
+- id: usa_radio_broadcasting_20
+  year: 1920
+  level: 3
+  title: 商业广播电台开播
+  summary: 匹兹堡KDKA电台于1920年11月完成首次商业广播，开启广播媒体时代，广告与娱乐形态随之变革。
+  tags: [科技发明, 文化思想]
+
+- id: usa_tvaintl_44
+  year: 1944
+  level: 3
+  title: 布雷顿森林会议
+  summary: 44国代表在新罕布什尔州开会，建立战后国际货币体系，确立美元与黄金挂钩的固定汇率制度。
+  tags: [经济贸易, 条约外交]

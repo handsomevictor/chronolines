@@ -1,38 +1,540 @@
-- id: usa_civil_war
+# 美国 1800-1900 事件数据
+
+# ===== Level 1 =====
+
+- id: usa_louisiana_purchase_03
+  year: 1803
+  level: 1
+  title: 路易斯安那购地
+  summary: 美国以1500万美元从法国购入路易斯安那领地约215万平方公里，国土面积近乎翻倍。
+  tags: [经济贸易, 条约外交]
+  related: [france_napoleon]
+  figures: [jefferson]
+
+- id: usa_war_of_1812
+  year: 1812
+  endYear: 1815
+  level: 1
+  title: 1812年战争
+  summary: 美英因海上权益与边境争端再次开战，英军一度攻入华盛顿焚烧白宫，最终两国恢复战前边界。
+  tags: [战争]
+  related: [uk_war_of_1812]
+
+- id: usa_monroe_doctrine_23
+  year: 1823
+  level: 1
+  title: 门罗主义
+  summary: 总统门罗宣告欧洲列强不得再在美洲建立新殖民地，美国将干涉任何欧洲介入美洲的行动。
+  tags: [条约外交, 殖民扩张]
+  figures: [monroe_j]
+
+- id: usa_indian_removal_30
+  year: 1830
+  level: 1
+  title: 《印第安人迁徙法》
+  summary: 国会通过法案，强制将东部各印第安部落迁往密西西比河以西，史称"血泪之路"。
+  tags: [改革运动, 殖民扩张]
+  figures: [jackson_a]
+
+- id: usa_civil_war_61
   year: 1861
   endYear: 1865
   level: 1
   title: 美国内战
-  summary: 南北方因奴隶制问题爆发内战，北方联邦获胜，奴隶制随后废除。
-  tags: [战争, 改革运动]
-  figures: [lincoln]
+  summary: 南方各州以奴隶制存废为核心争议脱离联邦，南北双方爆发内战，北方联邦最终获胜。
+  tags: [战争, 革命政变]
+  figures: [lincoln, grant_u, lee_r]
 
-- id: usa_emancipation
+- id: usa_emancipation_63
   year: 1863
-  level: 2
+  level: 1
   title: 《解放宣言》发布
-  summary: 林肯总统发布《解放宣言》，宣布叛乱州内的奴隶获得自由。
+  summary: 林肯宣布叛乱州内奴隶自1月1日起获得自由，从道义层面重新定义内战目标。
   tags: [改革运动]
   figures: [lincoln]
 
-- id: usa_transcontinental_railroad
+- id: usa_reconstruction_65
+  year: 1865
+  endYear: 1877
+  level: 1
+  title: 重建时期
+  summary: 内战结束后联邦主导南方政治与社会重组，通过第13至15条宪法修正案，扩展黑人公民权利。
+  tags: [改革运动]
+  figures: [lincoln]
+
+- id: usa_gilded_age_70
+  year: 1870
+  endYear: 1900
+  level: 1
+  title: 镀金时代
+  summary: 工业化高速推进，钢铁、铁路、石油大亨崛起，财富高度集中，劳工与社会矛盾加剧。
+  tags: [经济贸易, 科技发明]
+  figures: [rockefeller, carnegie, morgan_jp]
+
+- id: usa_spanish_american_war_98
+  year: 1898
+  level: 1
+  title: 美西战争
+  summary: 美国与西班牙开战，西班牙战败，割让菲律宾、波多黎各，古巴独立，美国踏上海外扩张道路。
+  tags: [战争, 殖民扩张]
+  figures: [roosevelt_t]
+
+# ===== Level 2 =====
+
+- id: usa_lewis_clark_04
+  year: 1804
+  endYear: 1806
+  level: 2
+  title: 刘易斯与克拉克探险
+  summary: 杰斐逊委派刘易斯与克拉克率队穿越新购领地，抵达太平洋沿岸，绘制路线图并记录动植物资源。
+  tags: [科技发明, 殖民扩张]
+  figures: [jefferson]
+
+- id: usa_marbury_madison_03
+  year: 1803
+  level: 2
+  title: 马伯里诉麦迪逊案
+  summary: 最高法院首席大法官马歇尔确立司法审查原则，确认联邦法院有权审核立法合宪性。
+  tags: [改革运动]
+
+- id: usa_war_of_1812_peace_15
+  year: 1815
+  level: 2
+  title: 《根特条约》签订
+  summary: 美英签订停战条约，双方恢复战前状态，未解决根本分歧，但确立了北美长期和平格局。
+  tags: [条约外交]
+
+- id: usa_era_of_good_feelings_16
+  year: 1816
+  endYear: 1824
+  level: 2
+  title: 和睦时代
+  summary: 联邦党解体后美国一度出现无明显党派对立局面，门罗政府推行民族主义政策，经济稳步发展。
+  tags: [改革运动]
+  figures: [monroe_j]
+
+- id: usa_missouri_compromise_20
+  year: 1820
+  level: 2
+  title: 《密苏里妥协案》
+  summary: 国会以北纬36°30'为界划分自由州与蓄奴州区域，密苏里作为蓄奴州、缅因作为自由州同时加入联邦。
+  tags: [改革运动]
+
+- id: usa_erie_canal_25
+  year: 1825
+  level: 2
+  title: 伊利运河开通
+  summary: 连接纽约州奥尔巴尼与布法罗的伊利运河竣工，大幅降低货运成本，推动纽约成为商业中心。
+  tags: [经济贸易, 科技发明]
+
+- id: usa_jackson_era_28
+  year: 1828
+  endYear: 1836
+  level: 2
+  title: 杰克逊时代
+  summary: 安德鲁·杰克逊当选总统，推行民主党政治，扩大选举权，推行边疆扩张与反精英政策。
+  tags: [改革运动, 革命政变]
+  figures: [jackson_a]
+
+- id: usa_trail_of_tears_38
+  year: 1838
+  level: 2
+  title: 血泪之路
+  summary: 切罗基族被强制迁往俄克拉荷马，途中约4000人因饥寒病死，史称"血泪之路"。
+  tags: [殖民扩张]
+
+- id: usa_texas_annexation_45
+  year: 1845
+  level: 2
+  title: 德克萨斯并入美国
+  summary: 德克萨斯共和国并入美国，成为第28个州，引发美墨边境争端，直接导致美墨战争爆发。
+  tags: [殖民扩张, 条约外交]
+
+- id: usa_mexican_american_war_46
+  year: 1846
+  endYear: 1848
+  level: 2
+  title: 美墨战争
+  summary: 美军深入墨西哥领土，占领墨西哥城，战后美国获得加利福尼亚和新墨西哥等大片领土。
+  tags: [战争, 殖民扩张]
+
+- id: usa_california_gold_48
+  year: 1848
+  level: 2
+  title: 加利福尼亚淘金热
+  summary: 萨特磨坊发现金矿，次年数十万人涌入加州，人口剧增，加速了加州的快速建州进程。
+  tags: [经济贸易, 殖民扩张]
+
+- id: usa_compromise_1850
+  year: 1850
+  level: 2
+  title: 1850年妥协案
+  summary: 亨利·克莱推动一揽子妥协立法，暂时平息奴隶制争议，但《逃奴法》引发北方强烈不满。
+  tags: [改革运动]
+
+- id: usa_kansas_nebraska_54
+  year: 1854
+  level: 2
+  title: 《堪萨斯-内布拉斯加法案》
+  summary: 法案废除密苏里妥协案，允许新领地居民自决是否引入奴隶制，引发"流血堪萨斯"冲突。
+  tags: [改革运动, 革命政变]
+
+- id: usa_republican_party_54
+  year: 1854
+  level: 2
+  title: 共和党成立
+  summary: 反奴隶制扩张人士在密歇根州里彭建立共和党，六年后林肯以该党候选人身份当选总统。
+  tags: [革命政变]
+
+- id: usa_lincoln_elected_60
+  year: 1860
+  level: 2
+  title: 林肯当选总统
+  summary: 林肯以共和党候选人身份赢得大选，南方各州随即宣布脱离联邦，内战危机迅速升级。
+  tags: [革命政变]
+  figures: [lincoln]
+
+- id: usa_confederacy_61
+  year: 1861
+  level: 2
+  title: 南方邦联建立
+  summary: 七个南方州在蒙哥马利成立美利坚联盟国，推举杰斐逊·戴维斯为总统，脱离联邦。
+  tags: [革命政变]
+
+- id: usa_gettysburg_63
+  year: 1863
+  level: 2
+  title: 葛底斯堡战役
+  summary: 宾夕法尼亚州爆发内战最大规模战役，双方伤亡逾5万人，南军入侵北方行动宣告失败。
+  tags: [战争]
+  figures: [lincoln, grant_u, lee_r]
+
+- id: usa_lincoln_assassination_65
+  year: 1865
+  level: 2
+  title: 林肯遇刺
+  summary: 内战结束数日后，林肯在福特剧院遭刺客约翰·威尔克斯·布斯枪击，次日身亡。
+  tags: [革命政变]
+  figures: [lincoln]
+
+- id: usa_thirteenth_amendment_65
+  year: 1865
+  level: 2
+  title: 第十三修正案批准
+  summary: 宪法第十三修正案经各州批准，正式废除美国境内奴隶制与强制奴役，内战奴隶制争议终结。
+  tags: [改革运动]
+  figures: [lincoln]
+
+- id: usa_transcontinental_railroad_69
   year: 1869
   level: 2
   title: 横贯大陆铁路建成
-  summary: 联合太平洋铁路与中央太平洋铁路在犹他州接轨，横贯大陆铁路竣工。
+  summary: 联合太平洋与中央太平洋铁路在犹他州普罗蒙托里接轨，东西海岸首次以铁路连接。
   tags: [科技发明, 经济贸易]
 
-- id: usa_spanish_american_war
+- id: usa_14th_15th_amend_68
+  year: 1868
+  level: 2
+  title: 第14、15修正案批准
+  summary: 第14修正案确立平等保护原则，第15修正案禁止因种族剥夺选举权，奠定重建时期法律基础。
+  tags: [改革运动]
+
+- id: usa_telephone_76
+  year: 1876
+  level: 2
+  title: 电话发明
+  summary: 亚历山大·格雷厄姆·贝尔获得电话专利，完成首次通话，开启电信产业革命。
+  tags: [科技发明]
+
+- id: usa_lightbulb_79
+  year: 1879
+  level: 2
+  title: 实用电灯发明
+  summary: 托马斯·爱迪生发明碳丝白炽灯，持续点亮超过13小时，推动电力照明系统的商业化发展。
+  tags: [科技发明]
+  figures: [edison]
+
+- id: usa_labor_movement_86
+  year: 1886
+  level: 2
+  title: 劳工运动兴起与干草市场事件
+  summary: 美国劳工联合会（AFL）成立，芝加哥干草市场爆炸引发工人与警察冲突，劳资矛盾激化。
+  tags: [改革运动]
+
+- id: usa_sherman_antitrust_90
+  year: 1890
+  level: 2
+  title: 《谢尔曼反垄断法》
+  summary: 国会通过首部联邦反垄断立法，禁止限制贸易的联合与垄断行为，为后来拆分大公司提供法律依据。
+  tags: [改革运动, 经济贸易]
+
+- id: usa_hawaii_annexation_98
   year: 1898
   level: 2
-  title: 美西战争
-  summary: 美国与西班牙开战，获得古巴、波多黎各和菲律宾，开始海外扩张。
+  title: 夏威夷并入美国
+  summary: 国会通过决议正式将夏威夷群岛纳入美国版图，结束夏威夷共和国，1959年成为第50州。
+  tags: [殖民扩张, 条约外交]
+
+- id: usa_open_door_99
+  year: 1899
+  level: 2
+  title: 门户开放政策
+  summary: 国务卿海约翰致函列强，提出各国在华贸易机会均等原则，维护中国领土完整与美国商业利益。
+  tags: [条约外交, 经济贸易]
+  related: [china_boxer_00]
+
+# ===== Level 3 =====
+
+- id: usa_slave_trade_ban_08
+  year: 1808
+  level: 3
+  title: 跨大西洋奴隶贸易禁令生效
+  summary: 联邦法律禁止从非洲进口奴隶正式生效，但国内奴隶贸易与奴隶制本身继续合法存在。
+  tags: [改革运动]
+
+- id: usa_battle_new_orleans_15
+  year: 1815
+  level: 3
+  title: 新奥尔良战役
+  summary: 杰克逊率军在条约签订后仍击败英军进攻，因消息传递迟缓，双方在停战后仍发生交战。
+  tags: [战争]
+  figures: [jackson_a]
+
+- id: usa_first_steamboat_07
+  year: 1807
+  level: 3
+  title: 富尔顿汽船成功运营
+  summary: 罗伯特·富尔顿的"克莱蒙特号"汽船完成哈德逊河试航，内河蒸汽航运由此开启商业运营。
+  tags: [科技发明, 经济贸易]
+
+- id: usa_dartmouth_case_19
+  year: 1819
+  level: 3
+  title: 达特茅斯学院诉伍德沃德案
+  summary: 最高法院裁定州政府不得单方面修改已颁发的公司特许状，确立私有合同受宪法保护原则。
+  tags: [改革运动]
+
+- id: usa_mcculloch_19
+  year: 1819
+  level: 3
+  title: 麦卡洛克诉马里兰州案
+  summary: 最高法院确认国会有权建立联邦银行，州政府无权对其征税，联邦权力优于州权得到确认。
+  tags: [改革运动]
+
+- id: usa_lowell_mills_23
+  year: 1823
+  level: 3
+  title: 洛厄尔纺织厂建立
+  summary: 马萨诸塞州洛厄尔建立大规模纺织厂，雇用大量年轻女性工人，是美国早期工业化的典型案例。
+  tags: [经济贸易, 科技发明]
+
+- id: usa_abolition_movement_31
+  year: 1831
+  level: 3
+  title: 《解放者》报创刊
+  summary: 威廉·劳埃德·加里森在波士顿创刊《解放者》，呼吁立即无条件废除奴隶制，废奴运动进入激进阶段。
+  tags: [改革运动, 文化思想]
+
+- id: usa_nat_turner_rebellion_31
+  year: 1831
+  level: 3
+  title: 纳特·特纳起义
+  summary: 弗吉尼亚州奴隶纳特·特纳率约70人起义，60余名白人遇难，事后约200名黑人遭报复杀害。
+  tags: [革命政变]
+
+- id: usa_underground_railroad_30s
+  year: 1830
+  endYear: 1860
+  level: 3
+  title: 地下铁路网络活跃
+  summary: 废奴人士建立秘密协助逃奴北逃的网络，哈丽特·塔布曼等人引导数千奴隶抵达自由州。
+  tags: [改革运动]
+
+- id: usa_alamo_36
+  year: 1836
+  level: 3
+  title: 阿拉莫战役
+  summary: 德克萨斯革命者坚守阿拉莫堡13天后被墨西哥军歼灭，成为德克萨斯独立战争的象征性事件。
+  tags: [战争]
+
+- id: usa_texas_republic_36
+  year: 1836
+  level: 3
+  title: 德克萨斯共和国独立
+  summary: 德克萨斯脱离墨西哥独立，建立共和国，首任总统斯蒂芬·奥斯汀，1845年并入美国。
+  tags: [革命政变, 殖民扩张]
+
+- id: usa_seneca_falls_48
+  year: 1848
+  level: 3
+  title: 塞内卡福尔斯大会
+  summary: 美国首届女权大会在纽约召开，伊丽莎白·卡迪·斯坦顿主持，发布《情感宣言》争取女性选举权。
+  tags: [改革运动, 文化思想]
+
+- id: usa_harriet_beecher_stowe_52
+  year: 1852
+  level: 3
+  title: 《汤姆叔叔的小屋》出版
+  summary: 斯托夫人出版反奴隶制小说，首年售出30余万册，极大激发北方废奴情绪，林肯称其为内战导火索之一。
+  tags: [文化思想, 改革运动]
+
+- id: usa_dred_scott_57
+  year: 1857
+  level: 3
+  title: 德雷德·斯科特案裁决
+  summary: 最高法院裁定奴隶无公民资格、国会无权禁止奴隶制进入领地，判决引发北方强烈抗议。
+  tags: [改革运动]
+
+- id: usa_john_brown_59
+  year: 1859
+  level: 3
+  title: 约翰·布朗袭击哈珀斯费里
+  summary: 废奴激进人士约翰·布朗率18人袭击联邦军火库，图谋发动武装起义，事败被处决。
+  tags: [革命政变]
+
+- id: usa_fort_sumter_61
+  year: 1861
+  level: 3
+  title: 萨姆特堡炮击
+  summary: 南方邦联炮击联邦军驻守的萨姆特堡，林肯随即征召75000名志愿兵，内战正式开始。
+  tags: [战争]
+  figures: [lincoln]
+
+- id: usa_monitor_merrimack_62
+  year: 1862
+  level: 3
+  title: 铁甲舰海战
+  summary: 联邦"监察者号"与邦联"维吉尼亚号"在汉普顿锚地交战，为世界上首次铁甲舰对决。
+  tags: [战争, 科技发明]
+
+- id: usa_shermans_march_64
+  year: 1864
+  level: 3
+  title: 谢尔曼向海进军
+  summary: 联邦军谢尔曼将军率6万人从亚特兰大向萨凡纳行军，对沿途实施焦土战术，加速南方崩溃。
+  tags: [战争]
+  figures: [grant_u]
+
+- id: usa_13th_amendment_ratified_65
+  year: 1865
+  level: 3
+  title: 第十三修正案正式批准
+  summary: 乔治亚州批准后，第十三修正案达到批准门槛，奴隶制在全美正式废除。
+  tags: [改革运动]
+
+- id: usa_johnson_impeachment_68
+  year: 1868
+  level: 3
+  title: 约翰逊总统弹劾案
+  summary: 国会众院对总统约翰逊提起弹劾，参院以一票之差未通过定罪，是美国首次总统弹劾审判。
+  tags: [革命政变]
+
+- id: usa_yellowstone_72
+  year: 1872
+  level: 3
+  title: 黄石公园建立
+  summary: 国会通过立法建立黄石国家公园，面积超过220万英亩，为全球首个国家公园。
+  tags: [改革运动]
+
+- id: usa_centennial_expo_76
+  year: 1876
+  level: 3
+  title: 美国建国百年博览会
+  summary: 费城举办国际博览会庆祝建国百年，展出电话、打字机等新发明，彰显工业实力。
+  tags: [科技发明, 文化思想]
+
+- id: usa_standard_oil_70
+  year: 1870
+  level: 3
+  title: 标准石油公司成立
+  summary: 洛克菲勒在俄亥俄州建立标准石油，通过收购与协议逐步控制全美90%以上炼油产能。
+  tags: [经济贸易]
+  figures: [rockefeller]
+
+- id: usa_carnegie_steel_75
+  year: 1875
+  level: 3
+  title: 卡内基钢铁公司建立
+  summary: 安德鲁·卡内基在匹兹堡建立钢铁公司，采用贝塞默炼钢法，推动美国钢铁产量超越英国。
+  tags: [经济贸易, 科技发明]
+  figures: [carnegie]
+
+- id: usa_brooklyn_bridge_83
+  year: 1883
+  level: 3
+  title: 布鲁克林大桥建成
+  summary: 历时14年修建的布鲁克林大桥通车，连接曼哈顿与布鲁克林，是当时世界最长的悬索桥。
+  tags: [科技发明]
+
+- id: usa_statue_liberty_86
+  year: 1886
+  level: 3
+  title: 自由女神像落成
+  summary: 法国赠送的自由女神像在纽约港落成揭幕，成为美国自由与民主理念的标志性建筑。
+  tags: [文化思想, 条约外交]
+
+- id: usa_frontier_closed_90
+  year: 1890
+  level: 3
+  title: 边疆关闭宣告
+  summary: 人口普查报告宣告美国内陆边疆已不复存在，西进运动时代象征性终结，伤膝河屠杀同年发生。
+  tags: [殖民扩张]
+
+- id: usa_wounded_knee_90
+  year: 1890
+  level: 3
+  title: 伤膝河屠杀
+  summary: 美军第七骑兵团与拉科塔苏族冲突，约250至300名印第安人遇难，西部印第安人抵抗运动终结。
   tags: [战争, 殖民扩张]
 
-- id: usa_gilded_age
-  year: 1870
-  endYear: 1900
-  level: 2
-  title: 镀金时代
-  summary: 美国工业化快速发展，钢铁、铁路等行业崛起，贫富差距扩大。
-  tags: [经济贸易, 科技发明]
+- id: usa_plessy_96
+  year: 1896
+  level: 3
+  title: 普莱西诉弗格森案
+  summary: 最高法院裁定"隔离但平等"合宪，确立种族隔离制度的法律依据，该原则延续至1954年。
+  tags: [改革运动]
+
+- id: usa_uss_maine_98
+  year: 1898
+  level: 3
+  title: '"缅因号"军舰爆炸'
+  summary: 美国战列舰"缅因号"在哈瓦那港爆炸沉没，261人遇难，美国媒体将其归因于西班牙，成为美西战争导火索。
+  tags: [战争]
+
+- id: usa_rough_riders_98
+  year: 1898
+  level: 3
+  title: 罗斯福与"莽骑兵"
+  summary: 西奥多·罗斯福率志愿骑兵团参加古巴战役，圣胡安山战役使其声名大振，助力其政治晋升。
+  tags: [战争]
+  figures: [roosevelt_t]
+
+- id: usa_twain_gilded_age_73
+  year: 1873
+  level: 3
+  title: 马克·吐温出版《镀金时代》
+  summary: 马克·吐温与查尔斯·沃纳合著《镀金时代》，讽刺战后美国的政治腐败与拜金风气。
+  tags: [文化思想]
+  figures: [twain_m]
+
+- id: usa_phonograph_77
+  year: 1877
+  level: 3
+  title: 留声机发明
+  summary: 爱迪生发明留声机，首次实现声音录制与回放，开创音乐与语音记录的新纪元。
+  tags: [科技发明]
+  figures: [edison]
+
+- id: usa_grange_movement_67
+  year: 1867
+  level: 3
+  title: 农业保护者运动
+  summary: 农民组织"农业保护者"（Grange）成立，推动州立法规范铁路运费，是进步主义运动的先驱。
+  tags: [改革运动]
+
+- id: usa_populist_party_92
+  year: 1892
+  level: 3
+  title: 人民党建立
+  summary: 农民与劳工联合建立人民党，要求货币改革与铁路国有化，是美国历史上最重要的第三党之一。
+  tags: [改革运动]

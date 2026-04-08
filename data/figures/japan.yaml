@@ -1,39 +1,438 @@
+# 日本历史人物（30+）
+
+# ── 政治 ──────────────────────────────────────────────────────────────────────
+
+- id: tokugawa_tsunayoshi
+  name: 德川纲吉
+  birthYear: 1646
+  deathYear: 1709
+  level: 2
+  category: 政治
+  summary: 江户幕府第五代将军，颁布生类怜悯令，推崇儒学礼仪，货币改铸引发通货膨胀。
+  events: [japan_tokugawa_tsunayoshi_death]
+
+- id: tokugawa_yoshimune
+  name: 德川吉宗
+  birthYear: 1684
+  deathYear: 1751
+  level: 1
+  category: 政治
+  summary: 江户幕府第八代将军，推行享保改革，整顿财政、强化参勤交代、部分解禁洋书。
+  events: [japan_kyoho_reform, japan_dutch_trade_nagasaki, japan_meyasubako]
+
+- id: tanuma_okitsugu
+  name: 田沼意次
+  birthYear: 1719
+  deathYear: 1788
+  level: 2
+  category: 政治
+  summary: 江户幕府老中，以重商主义政策主导幕政，扩大株仲间，因腐败问题失势。
+  events: [japan_tanuma_era, japan_tanuma_downfall, japan_tanuma_hokkaido_policy, japan_kabu_nakama_tanuma]
+
+- id: matsudaira_sadanobu
+  name: 松平定信
+  birthYear: 1759
+  deathYear: 1829
+  level: 2
+  category: 政治
+  summary: 江户幕府老中，推行宽政改革，整肃风俗奢侈、限制异学，确立朱子学为官学。
+  events: [japan_kansei_reform, japan_kansei_igaku_no_kin, japan_matsudaira_kansei_kyofusho]
+
+- id: hayashi_shihei
+  name: 林子平
+  birthYear: 1738
+  deathYear: 1793
+  level: 3
+  category: 政治
+  summary: 江户时代思想家，著《海国兵谈》警告西方威胁，因此遭幕府处分。
+  events: [japan_hayashi_shihei_kaikoku, japan_hayashi_shihei_punishment]
+
+- id: ii_naosuke
+  name: 井伊直弼
+  birthYear: 1815
+  deathYear: 1860
+  level: 2
+  category: 政治
+  summary: 彦根藩主、江户幕府大老，推动安政五国条约签订，安政大狱后遭刺杀身亡。
+  events: [japan_perry_kurofune, japan_ansei_treaties, japan_ansei_purge, japan_sakuradamon_incident]
+
+- id: yoshida_shoin
+  name: 吉田松阴
+  birthYear: 1830
+  deathYear: 1859
+  level: 2
+  category: 政治
+  summary: 长州藩思想家，开办松下村塾育才，安政大狱中被处决，影响伊藤博文等明治领导人。
+  events: [japan_ansei_purge, japan_yoshida_shoin_shokason, japan_yoshida_shoin_execution]
+
+- id: sakamoto_ryoma
+  name: 坂本龙马
+  birthYear: 1835
+  deathYear: 1867
+  level: 2
+  category: 政治
+  summary: 土佐藩下士出身，斡旋萨长同盟、起草船中八策，1867年遭暗杀，真凶至今有争议。
+  events: [japan_satsuma_choshu_alliance, japan_sakamoto_ryoma_birth, japan_sakamoto_ryoma_assassination]
+
+- id: saigo_takamori
+  name: 西乡隆盛
+  birthYear: 1828
+  deathYear: 1877
+  level: 1
+  category: 政治
+  summary: 明治维新三杰之一，倒幕运动领袖，后发动西南战争，战败在鹿儿岛自刎。
+  events: [japan_boshin_war, japan_meiji_restoration, japan_seikanron, japan_seinan_war]
+
+- id: okubo_toshimichi
+  name: 大久保利通
+  birthYear: 1830
+  deathYear: 1878
+  level: 1
+  category: 政治
+  summary: 明治维新三杰之一，主导废藩置县与殖产兴业，1878年遭士族暗杀。
+  events: [japan_boshin_war, japan_meiji_restoration, japan_haihan_chiken, japan_iwakura_mission, japan_seikanron, japan_senan_war_aftermath]
+
+- id: ito_hirobumi
+  name: 伊藤博文
+  birthYear: 1841
+  deathYear: 1909
+  level: 1
+  category: 政治
+  summary: 长州藩出身，起草明治宪法，四度出任首相，1909年在哈尔滨遭朝鲜义士安重根刺杀。
+  events: [japan_meiji_restoration, japan_iwakura_mission, japan_meiji_constitution, japan_first_sino_japanese_war, japan_ito_europe_constitution, japan_sino_japanese_war_taiwan, japan_korea_protectorate, japan_ito_assassination_harbin]
+
 - id: meiji_emperor
   name: 明治天皇
   birthYear: 1852
   deathYear: 1912
   level: 1
-  summary: 日本第122代天皇，明治维新在其名义下推行，日本近代化的象征。
-  events: [japan_meiji_restoration]
+  category: 政治
+  summary: 日本第122代天皇，在位期间推进明治维新，日本完成近代化转型，1912年驾崩。
+  events: [japan_meiji_restoration, japan_meiji_gojomegisho, japan_meiji_constitution, japan_meiji_death_taisho]
 
-- id: okubo
-  name: 大久保利通
-  birthYear: 1830
-  deathYear: 1878
+- id: yamagata_aritomo
+  name: 山县有朋
+  birthYear: 1838
+  deathYear: 1922
   level: 2
-  summary: 明治维新三杰之一，主导政治改革和中央集权，推动日本近代化，遭暗杀身亡。
-  events: [japan_meiji_restoration]
+  category: 政治
+  summary: 长州藩出身，创立近代陆军，两度出任首相，建立军阀体制，是明治政界最具权力者之一。
+  events: [japan_conscription_law, japan_first_sino_japanese_war, japan_portsmouth_treaty, japan_yamagata_army_reform, japan_yamagata_aritomo_born]
 
-- id: ito
-  name: 伊藤博文
-  birthYear: 1841
-  deathYear: 1909
+- id: itagaki_taisuke
+  name: 板垣退助
+  birthYear: 1837
+  deathYear: 1919
   level: 2
-  summary: 明治时代政治家，起草明治宪法，四度出任首相，后在哈尔滨遭刺杀。
-  events: [japan_meiji_restoration, japan_constitution]
+  category: 政治
+  summary: 土佐藩出身，发起自由民权运动，创立自由党，提出民选议院设立建白书。
+  events: [japan_jiyuminken_movement, japan_jiyuto_rikken, japan_itagaki_taisuke_speech, japan_seikanron_gifu]
 
-- id: meiji_saigo
-  name: 西乡隆盛
-  birthYear: 1828
-  deathYear: 1877
+- id: fukuzawa_yukichi
+  name: 福泽谕吉
+  birthYear: 1835
+  deathYear: 1901
   level: 2
-  summary: 明治维新三杰之一，倒幕运动领袖，后因不满新政府政策发动西南战争，战败自刎。
-  events: [japan_meiji_restoration]
+  category: 政治
+  summary: 明治启蒙思想家，著《劝学篇》《文明论概略》，倡导独立自尊与西化，创立庆应义塾。
+  events: [japan_fukuzawa_yukichi, japan_fukuzawa_gakumon_no_susume]
+
+- id: hara_takashi
+  name: 原敬
+  birthYear: 1856
+  deathYear: 1921
+  level: 2
+  category: 政治
+  summary: 立宪政友会总裁，日本首位平民宰相，组织第一届政党内阁，1921年在东京车站遭刺杀。
+  events: [japan_taisho_democracy, japan_hara_takashi_cabinet, japan_hara_assassination]
+
+- id: inukai_tsuyoshi
+  name: 犬养毅
+  birthYear: 1855
+  deathYear: 1932
+  level: 2
+  category: 政治
+  summary: 立宪政友会总裁，内阁总理大臣，批评关东军满洲行动，1932年五一五事件中遭海军将校枪杀。
+  events: [japan_515_incident, japan_inukai_tsuyoshi_premier]
 
 - id: tojo_hideki
   name: 东条英机
   birthYear: 1884
   deathYear: 1948
+  level: 1
+  category: 政治
+  summary: 陆军大将兼内阁总理大臣，主导太平洋战争开战决策，战后以甲级战争犯罪被处以绞刑。
+  events: [japan_pacific_war, japan_saipan_fall, japan_tojo_arrest, japan_tokyotrial]
+
+- id: hirohito
+  name: 昭和天皇（裕仁）
+  birthYear: 1901
+  deathYear: 1989
+  level: 1
+  category: 政治
+  summary: 日本第124代天皇，在位63年，经历太平洋战争，以玉音放送宣告终战，1989年驾崩。
+  events: [japan_showa_hirohito_accession, japan_surrender_broadcast, japan_bullet_train_first_ride, japan_hirohito_death]
+
+- id: yoshida_shigeru
+  name: 吉田茂
+  birthYear: 1878
+  deathYear: 1967
+  level: 1
+  category: 政治
+  summary: 战后日本首相，主持旧金山和约与日美安保条约签订，确立"轻武装・经济优先"的吉田路线。
+  events: [japan_occupation_reform, japan_new_constitution_draft, japan_sf_peace_treaty, japan_yoshida_doctrine]
+
+- id: kishi_nobusuke
+  name: 岸信介
+  birthYear: 1896
+  deathYear: 1987
   level: 2
-  summary: 日本战时首相兼陆军大臣，主导对美开战决策，战后以战争罪被处决。
-  events: [japan_wwii_asia]
+  category: 政治
+  summary: 曾被列为甲级战犯嫌疑人，后出任首相，强行通过新日美安保条约，安保斗争后辞职。
+  events: [japan_anpo_struggle, japan_treaty_commerce_us, japan_anpo_60_kishi]
+
+- id: ikeda_hayato
+  name: 池田勇人
+  birthYear: 1899
+  deathYear: 1965
+  level: 2
+  category: 政治
+  summary: 岸信介后任首相，提出所得倍增计划，推动高度经济成长，主持东京奥运，任内因病辞职。
+  events: [japan_economic_miracle, japan_income_doubling_plan, japan_anpo_60_kishi]
+
+- id: tanaka_kakuei
+  name: 田中角荣
+  birthYear: 1918
+  deathYear: 1993
+  level: 2
+  category: 政治
+  summary: 首相任内实现日中邦交正常化，著《日本列岛改造论》，后因洛克希德丑闻被逮捕起诉。
+  events: [japan_lockheed_scandal, japan_japan_china_normalization, japan_tanaka_archipelago, japan_tanaka_arrest]
+
+# ── 军事 ──────────────────────────────────────────────────────────────────────
+
+- id: nogi_maresuke
+  name: 乃木希典
+  birthYear: 1849
+  deathYear: 1912
+  level: 2
+  category: 军事
+  summary: 陆军大将，旅顺口围攻战指挥官，明治天皇驾崩当日与妻共同自刎殉死。
+  events: [japan_russo_japanese_war, japan_port_arthur_siege, japan_nogi_maresuke_born, japan_nogi_meiji_junshi, japan_meiji_death_taisho]
+
+- id: togo_heihachiro
+  name: 东乡平八郎
+  birthYear: 1848
+  deathYear: 1934
+  level: 2
+  category: 军事
+  summary: 海军大将，日俄战争中指挥对马海战歼灭俄国舰队，被誉为"东方纳尔逊"。
+  events: [japan_russo_japanese_war, japan_tsushima_battle, japan_naval_academy, japan_togo_heihachiro_naval]
+
+- id: yamamoto_isoroku
+  name: 山本五十六
+  birthYear: 1884
+  deathYear: 1943
+  level: 2
+  category: 军事
+  summary: 联合舰队司令长官，策划珍珠港偷袭与中途岛作战，1943年视察途中遭美军截击身亡。
+  events: [japan_russo_japanese_war, japan_pacific_war, japan_pearl_harbor, japan_midway_battle, japan_yamamoto_death]
+
+# ── 科学 ──────────────────────────────────────────────────────────────────────
+
+- id: sugita_genpaku
+  name: 杉田玄白
+  birthYear: 1733
+  deathYear: 1817
+  level: 2
+  category: 科学
+  summary: 兰学医师，与前野良泽合作翻译荷兰解剖书，出版《解体新书》，开拓日本西洋医学研究。
+  events: [japan_kaitai_shinsho, japan_rangaku_development, japan_maeno_ryotaku_rangaku]
+
+- id: ino_tadataka
+  name: 伊能忠敬
+  birthYear: 1745
+  deathYear: 1818
+  level: 2
+  category: 科学
+  summary: 江户时代测量家，50岁起步历时17年完成全国系统地理测量，制成精确的《大日本沿海舆地全图》。
+  events: [japan_ino_tadataka_survey_start, japan_ino_tadataka_training]
+
+- id: kitasato_shibasaburo
+  name: 北里柴三郎
+  birthYear: 1853
+  deathYear: 1931
+  level: 2
+  category: 科学
+  summary: 医学家，在科赫研究室发现破伤风与白喉血清疗法，创立北里研究所，推动日本近代医学体制化。
+  events: [japan_kitasato_sibasaburo_discovery, japan_kitasato_institute]
+
+- id: noguchi_hideyo
+  name: 野口英世
+  birthYear: 1876
+  deathYear: 1928
+  level: 2
+  category: 科学
+  summary: 细菌学家，赴美从事梅毒・黄热病研究，在洛克菲勒研究所取得成就，1928年在西非因黄热病去世。
+  events: [japan_noguchi_hideyo_research]
+
+- id: yukawa_hideki
+  name: 汤川秀树
+  birthYear: 1907
+  deathYear: 1981
+  level: 2
+  category: 科学
+  summary: 理论物理学家，1935年预言介子存在，1949年获诺贝尔物理学奖，是日本首位诺贝尔奖得主。
+  events: [japan_yukawa_hideki_meson, japan_yukawa_nobel]
+
+- id: tomonaga_shinichiro
+  name: 朝永振一郎
+  birthYear: 1906
+  deathYear: 1979
+  level: 2
+  category: 科学
+  summary: 理论物理学家，量子电动力学研究奠基者之一，1965年与费曼・施温格共获诺贝尔物理学奖。
+  events: [japan_tomonaga_shinichiro_nobel]
+
+# ── 文学 ──────────────────────────────────────────────────────────────────────
+
+- id: chikamatsu_monzaemon
+  name: 近松门左卫门
+  birthYear: 1653
+  deathYear: 1725
+  level: 2
+  category: 文学
+  summary: 江户时代剧作家，创作百余部净琉璃与歌舞伎作品，《曾根崎情死》开创世话物传统。
+  events: [japan_chikamatsu_play, japan_chikamatsu_death]
+
+- id: motoori_norinaga
+  name: 本居宣长
+  birthYear: 1730
+  deathYear: 1801
+  level: 2
+  category: 文学
+  summary: 国学大家，历时35年完成《古事记传》44卷，以语言学方法研究古典，确立国学学术体系。
+  events: [japan_motoori_norinaga_birth, japan_norinaga_kojikiden]
+
+- id: natsume_soseki
+  name: 夏目漱石
+  birthYear: 1867
+  deathYear: 1916
+  level: 1
+  category: 文学
+  summary: 明治文学代表作家，赴英留学后创作《我是猫》《心》《明暗》等，1984年起印于千元纸币。
+  events: [japan_natsume_soseki_born, japan_soseki_wagahai_cat, japan_soseki_london, japan_soseki_death]
+
+- id: mori_ogai
+  name: 森鸥外
+  birthYear: 1862
+  deathYear: 1922
+  level: 2
+  category: 文学
+  summary: 陆军军医总监兼作家，留学德国后引入欧洲文学，创作《舞姬》《高濑舟》等，任帝室博物馆总长。
+  events: [japan_mori_ogai_born, japan_mori_ogai_germany, japan_mori_ogai_death]
+
+- id: akutagawa_ryunosuke
+  name: 芥川龙之介
+  birthYear: 1892
+  deathYear: 1927
+  level: 2
+  category: 文学
+  summary: 大正时代短篇小说家，创作《罗生门》《鼻子》《地狱变》等，35岁时自杀身亡，芥川奖以其命名。
+  events: [japan_akutagawa_ryunosuke_born, japan_akutagawa_rashomon, japan_akutagawa_suicide]
+
+- id: kawabata_yasunari
+  name: 川端康成
+  birthYear: 1899
+  deathYear: 1972
+  level: 1
+  category: 文学
+  summary: 昭和文学代表作家，以《雪国》《古都》《千羽鹤》获1968年诺贝尔文学奖，1972年去世。
+  events: [japan_kawabata_yasunari_born, japan_kawabata_izu_dancer, japan_kawabata_nobel, japan_kawabata_death]
+
+- id: mishima_yukio
+  name: 三岛由纪夫
+  birthYear: 1925
+  deathYear: 1970
+  level: 2
+  category: 文学
+  summary: 昭和文学家，创作《金阁寺》《丰饶之海》等，1970年率盾会成员发动政变未遂后自杀。
+  events: [japan_mishima_incident, japan_mishima_novels]
+
+# ── 艺术 ──────────────────────────────────────────────────────────────────────
+
+- id: katsushika_hokusai
+  name: 葛饰北斋
+  birthYear: 1760
+  deathYear: 1849
+  level: 1
+  category: 艺术
+  summary: 浮世绘大师，《富岳三十六景》《神奈川冲浪里》等作品对欧洲印象派产生深远影响。
+  events: [japan_edo_culture_peak, japan_katsushika_hokusai_debut]
+
+- id: kitagawa_utamaro
+  name: 喜多川歌麿
+  birthYear: 1753
+  deathYear: 1806
+  level: 2
+  category: 艺术
+  summary: 浮世绘画师，以美人大首绘确立独特画风，以细腻线条表现女性之美，影响欧洲艺术界。
+  events: [japan_edo_culture_peak, japan_utagawa_hiroshige_era, japan_kitagawa_utamaro_debut]
+
+- id: utagawa_hiroshige
+  name: 歌川广重
+  birthYear: 1797
+  deathYear: 1858
+  level: 2
+  category: 艺术
+  summary: 浮世绘画师，《东海道五十三次》《名所江户百景》等风景版画与梵高等欧洲画家相互影响。
+  events: []
+
+# ── 音乐 ──────────────────────────────────────────────────────────────────────
+
+- id: yamada_kosaku
+  name: 山田耕筰
+  birthYear: 1886
+  deathYear: 1965
+  level: 2
+  category: 音乐
+  summary: 日本近代音乐奠基者，赴德学习作曲后归国，创立日本最早管弦乐团，作歌曲《红蜻蜓》等。
+  events: [japan_yamada_kosaku_music]
+
+- id: takemitsu_toru
+  name: 武满彻
+  birthYear: 1930
+  deathYear: 1996
+  level: 2
+  category: 音乐
+  summary: 20世纪日本代表性作曲家，融合西洋前卫音乐与日本传统音色，并创作多部电影配乐。
+  events: []
+
+# ── 经济金融 ──────────────────────────────────────────────────────────────────
+
+- id: shibusawa_eiichi
+  name: 涩泽荣一
+  birthYear: 1840
+  deathYear: 1931
+  level: 1
+  category: 经济金融
+  summary: 明治时代实业家，创立第一国立银行、大阪纺绩等约500家企业，被称为"日本近代资本主义之父"。
+  events: [japan_meiji_bank_system, japan_shibusawa_eiichi_daichi, japan_meiji_cotton_spinning]
+
+- id: honda_soichiro
+  name: 本田宗一郎
+  birthYear: 1906
+  deathYear: 1991
+  level: 2
+  category: 经济金融
+  summary: 本田技研工业创始人，从摩托车制造起步，将本田发展为全球领先汽车与摩托车制造商。
+  events: [japan_honda_sony_rise, japan_honda_motorbike_export]
+
+- id: morita_akio
+  name: 盛田昭夫
+  birthYear: 1921
+  deathYear: 1999
+  level: 2
+  category: 经济金融
+  summary: 索尼联合创始人，将索尼推向国际市场，Walkman与Trinitron等产品成为全球消费电子标志。
+  events: [japan_honda_sony_rise, japan_transistor_radio_sony, japan_sony_walkman]

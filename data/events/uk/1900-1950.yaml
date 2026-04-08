@@ -1,39 +1,770 @@
+# UK Events 1900-1950
+# Level 1: 10 events | Level 2: 30 events | Level 3: 65 events
+
+# ─── Level 1 ───────────────────────────────────────────────────────────────
+
 - id: uk_wwi
   year: 1914
   endYear: 1918
   level: 1
   title: 第一次世界大战
-  summary: 英国以协约国身份参战，战后签订《凡尔赛条约》，获得部分德国殖民地。
+  summary: 英国以协约国身份参战，数百万人伤亡，战后签订《凡尔赛条约》，重塑全球格局。
   tags: [战争, 条约外交]
   related: [germany_wwi, france_wwi]
-
-- id: uk_irish_independence
-  year: 1921
-  level: 2
-  title: 爱尔兰独立
-  summary: 英爱条约签订，爱尔兰自由邦成立，北爱尔兰留在英国版图内。
-  tags: [条约外交, 革命政变]
-
-- id: uk_general_strike
-  year: 1926
-  level: 2
-  title: 英国总罢工
-  summary: 矿工罢工引发全国性总罢工，持续九天后工会停止行动。
-  tags: [改革运动]
+  figures: [haig, lloyd_george]
 
 - id: uk_wwii
   year: 1939
   endYear: 1945
   level: 1
   title: 第二次世界大战
-  summary: 英国对德宣战，经历敦刻尔克撤退、不列颠之战，最终与盟国取得胜利。
+  summary: 英国对德宣战，经历敦刻尔克撤退、不列颠之战，与盟国最终取得胜利。
   tags: [战争]
-  related: [germany_wwii, france_wwii, usa_wwii]
+  related: [germany_wwii, france_wwii]
+  figures: [churchill, montgomery]
+
+- id: uk_ireland_independence
+  year: 1921
+  level: 1
+  title: 爱尔兰独立
+  summary: 英爱条约签订，爱尔兰自由邦成立，北爱尔兰留在英国版图，爱尔兰问题延续。
+  tags: [条约外交, 革命政变]
+
+- id: uk_labour_victory_1945
+  year: 1945
+  level: 1
+  title: 工党大选获胜
+  summary: 工党在1945年大选中以压倒性优势击败丘吉尔领导的保守党，开始建立福利国家。
+  tags: [革命政变, 改革运动]
+  figures: [attlee]
+
+- id: uk_nhs_founded
+  year: 1948
+  level: 1
+  title: 国家医疗服务建立
+  summary: 国家卫生服务（NHS）正式成立，向全体英国居民提供免费医疗，成为福利国家核心制度。
+  tags: [改革运动]
+  figures: [attlee, bevan]
+
+- id: uk_india_independence
+  year: 1947
+  level: 1
+  title: 印度与巴基斯坦独立
+  summary: 英国放弃印度统治权，印度与巴基斯坦分治独立，大英帝国瓦解进程正式开始。
+  tags: [殖民扩张, 条约外交]
+  related: [india_independence_47]
+
+- id: uk_edward_viii_abdication
+  year: 1936
+  level: 1
+  title: 爱德华八世退位
+  summary: 爱德华八世为娶离婚美国女子辛普森夫人，宣布退位，其弟乔治六世继位。
+  tags: [王朝更迭]
+  figures: [edward_viii]
+
+- id: uk_easter_rising_ireland
+  year: 1916
+  level: 1
+  title: 爱尔兰复活节起义
+  summary: 爱尔兰共和主义者在都柏林发动武装起义，遭英军镇压，领袖被处决，加速爱尔兰独立运动。
+  tags: [革命政变]
+
+- id: uk_great_depression_impact
+  year: 1929
+  endYear: 1933
+  level: 1
+  title: 大萧条冲击英国
+  summary: 全球经济危机席卷英国，失业率攀升至逾20%，国民政府采取财政紧缩与脱离金本位措施。
+  tags: [经济贸易]
+
+- id: uk_boer_war_end
+  year: 1902
+  level: 1
+  title: 布尔战争结束
+  summary: 英布双方签订《弗里宁欣条约》，布尔共和国归并英国，布尔人获有限自治，争议延续。
+  tags: [战争, 条约外交, 殖民扩张]
+
+# ─── Level 2 ───────────────────────────────────────────────────────────────
+
+- id: uk_entente_cordiale
+  year: 1904
+  level: 2
+  title: 英法协约
+  summary: 英法签署协约，解决殖民地争端，建立战略合作关系，奠定一战协约国基础。
+  tags: [条约外交]
+
+- id: uk_triple_entente
+  year: 1907
+  level: 2
+  title: 英俄协约
+  summary: 英俄签署协约，划定波斯、阿富汗势力范围，形成英法俄三国协约对抗德奥同盟。
+  tags: [条约外交]
+
+- id: uk_labour_party_founded
+  year: 1900
+  level: 2
+  title: 工党成立
+  summary: 工会联盟与独立工党合作成立"劳工代表委员会"，1906年正式更名为工党。
+  tags: [改革运动]
+
+- id: uk_old_age_pensions
+  year: 1908
+  level: 2
+  title: 养老金法通过
+  summary: 自由党政府通过《养老金法》，为70岁以上贫困老人提供每周5先令国家养老金。
+  tags: [改革运动]
+  figures: [lloyd_george]
+
+- id: uk_national_insurance_act
+  year: 1911
+  level: 2
+  title: 国民保险法
+  summary: 劳合·乔治主导通过《国民保险法》，建立失业与疾病保险制度，福利国家雏形形成。
+  tags: [改革运动]
+  figures: [lloyd_george]
+
+- id: uk_womens_suffrage
+  year: 1918
+  level: 2
+  title: 女性获得部分选举权
+  summary: 议会通过法案，授予30岁以上且满足财产条件的女性选举权，1928年扩展至所有成年女性。
+  tags: [改革运动]
+  figures: [emmeline_pankhurst]
+
+- id: uk_somme_battle
+  year: 1916
+  level: 2
+  title: 索姆河战役
+  summary: 英法联军在索姆河发动大规模进攻，第一天英军伤亡约五万七千人，战役持续数月。
+  tags: [战争]
+  figures: [haig]
+
+- id: uk_passchendaele
+  year: 1917
+  level: 2
+  title: 帕斯尚尔战役
+  summary: 英军在比利时帕斯尚尔发动进攻，泥泞战场与顽强防守造成英军约三十万伤亡。
+  tags: [战争]
+  figures: [haig]
+
+- id: uk_general_strike_1926
+  year: 1926
+  level: 2
+  title: 英国总罢工
+  summary: 矿工工资削减引发全国总罢工，持续九天后工会停止行动，矿工单独抗争数月仍失败。
+  tags: [改革运动, 革命政变]
+
+- id: uk_appeasement_policy
+  year: 1937
+  endYear: 1939
+  level: 2
+  title: 绥靖政策
+  summary: 张伯伦首相以慕尼黑协议向希特勒让步，割让捷克苏台德区，绥靖政策最终失败。
+  tags: [条约外交]
+  figures: [chamberlain]
+
+- id: uk_dunkirk_evacuation
+  year: 1940
+  level: 2
+  title: 敦刻尔克大撤退
+  summary: 英法军队在德军包围下从敦刻尔克海滩撤回英国，共撤出逾三十三万人，英国得以继续抗战。
+  tags: [战争]
   figures: [churchill]
 
-- id: uk_welfare_state
+- id: uk_battle_of_britain
+  year: 1940
+  level: 2
+  title: 不列颠之战
+  summary: 德国空军对英国发动大规模空袭，英国皇家空军成功抵御，希特勒放弃入侵英伦岛计划。
+  tags: [战争]
+  figures: [churchill]
+
+- id: uk_el_alamein
+  year: 1942
+  level: 2
+  title: 阿拉曼战役
+  summary: 蒙哥马利将军率英军在北非阿拉曼击败隆美尔非洲军团，成为二战重要转折点之一。
+  tags: [战争]
+  figures: [montgomery]
+
+- id: uk_d_day_normandy
+  year: 1944
+  level: 2
+  title: 诺曼底登陆
+  summary: 英美等盟军发动诺曼底两栖登陆，开辟欧洲第二战场，加速纳粹德国的最终失败。
+  tags: [战争]
+  figures: [montgomery, churchill]
+
+- id: uk_atlantic_charter
+  year: 1941
+  level: 2
+  title: 《大西洋宪章》
+  summary: 丘吉尔与罗斯福发表《大西洋宪章》，宣布战后国际秩序原则，奠定联合国基础。
+  tags: [条约外交]
+  figures: [churchill]
+
+- id: uk_welfare_state_beveridge
+  year: 1942
+  level: 2
+  title: 《贝弗里奇报告》发布
+  summary: 威廉·贝弗里奇发布社会保险改革报告，提出以国家福利消除"五大恶"，影响深远。
+  tags: [改革运动]
+
+- id: uk_suffragette_movement
+  year: 1903
+  endYear: 1918
+  level: 2
+  title: 妇女参政权运动
+  summary: 潘克赫斯特等人成立妇女社会政治联盟，以激进手段争取妇女选举权，经历监禁与绝食。
+  tags: [改革运动]
+  figures: [emmeline_pankhurst]
+
+- id: uk_parliament_act_1911
+  year: 1911
+  level: 2
+  title: 1911年议会法
+  summary: 议会通过法令，剥夺上议院对财政法案的否决权，上议院只能延迟一般法案两年。
+  tags: [改革运动]
+
+- id: uk_balfour_declaration
+  year: 1917
+  level: 2
+  title: 《贝尔福宣言》
+  summary: 英国外相贝尔福致函犹太复国主义领袖，支持在巴勒斯坦建立犹太民族家园。
+  tags: [条约外交, 殖民扩张]
+
+- id: uk_versailles_treaty
+  year: 1919
+  level: 2
+  title: 《凡尔赛条约》
+  summary: 英法等战胜国与德国签订《凡尔赛条约》，德国赔款与领土割让引发持续争议。
+  tags: [条约外交]
+
+- id: uk_irish_war_independence
+  year: 1919
+  endYear: 1921
+  level: 2
+  title: 爱尔兰独立战争
+  summary: 爱尔兰共和军与英国军警展开游击战，英国最终谈判，签订英爱条约。
+  tags: [战争, 革命政变]
+
+- id: uk_george_v_reign
+  year: 1910
+  endYear: 1936
+  level: 2
+  title: 乔治五世在位
+  summary: 乔治五世在位期间经历第一次世界大战、爱尔兰独立与大萧条，王室更名为温莎家族。
+  tags: [王朝更迭]
+  figures: [george_v]
+
+- id: uk_turing_computing
+  year: 1936
+  level: 2
+  title: 图灵发表可计算性理论
+  summary: 艾伦·图灵发表论文提出"图灵机"概念，奠定现代计算机科学的理论基础。
+  tags: [科技发明]
+  figures: [turing]
+
+- id: uk_radar_development
+  year: 1935
+  endYear: 1940
+  level: 2
+  title: 雷达系统研发与部署
+  summary: 罗伯特·沃森-瓦特主导英国雷达网络（Chain Home）建设，为不列颠之战提供关键预警能力。
+  tags: [科技发明, 战争]
+
+- id: uk_penicillin_discovery
+  year: 1928
+  level: 2
+  title: 青霉素发现
+  summary: 亚历山大·弗莱明在圣玛丽医院发现青霉素的抗菌作用，后由弗洛里与钱恩开发为药物。
+  tags: [科技发明]
+  figures: [fleming]
+
+- id: uk_munich_agreement
+  year: 1938
+  level: 2
+  title: 慕尼黑协议
+  summary: 英法德意四国签订协议，将捷克苏台德区割让德国，张伯伦宣称"我们时代的和平"。
+  tags: [条约外交]
+  figures: [chamberlain]
+
+- id: uk_nationalization_1945
+  year: 1945
+  endYear: 1951
+  level: 2
+  title: 战后工业国有化
+  summary: 工党政府将煤矿、铁路、钢铁等重要工业国有化，建立混合经济体制。
+  tags: [经济贸易, 改革运动]
+  figures: [attlee]
+
+- id: uk_edward_vii_reign
+  year: 1901
+  endYear: 1910
+  level: 2
+  title: 爱德华七世在位
+  summary: 维多利亚女王之子爱德华七世即位，以外交活动著称，促成英法协约，史称"爱德华时代"。
+  tags: [王朝更迭, 条约外交]
+
+- id: uk_george_vi_reign
+  year: 1936
+  endYear: 1952
+  level: 2
+  title: 乔治六世在位
+  summary: 乔治六世在爱德华八世退位后继位，二战期间留守伦敦、鼓舞民心，赢得国民尊敬。
+  tags: [王朝更迭]
+  figures: [george_vi]
+
+- id: uk_victory_wwii_europe
   year: 1945
   level: 2
-  title: 福利国家建立
-  summary: 工党政府上台，建立国家医疗服务体系（NHS），推行一系列社会福利改革。
+  title: 欧洲战场胜利日
+  summary: 纳粹德国无条件投降，英国宣布欧洲战场胜利（VE日），伦敦民众涌上街头庆祝。
+  tags: [战争]
+  figures: [churchill]
+
+# ─── Level 3 ───────────────────────────────────────────────────────────────
+
+- id: uk_victoria_death
+  year: 1901
+  level: 3
+  title: 维多利亚女王驾崩
+  summary: 维多利亚女王于1901年1月22日在奥斯本宫驾崩，在位64年，举国哀悼。
+  tags: [王朝更迭]
+  figures: [queen_victoria]
+
+- id: uk_edward_vii_coronation
+  year: 1902
+  level: 3
+  title: 爱德华七世加冕
+  summary: 爱德华七世在威斯敏斯特教堂举行加冕典礼，典礼因阑尾炎手术推迟数周举行。
+  tags: [王朝更迭]
+
+- id: uk_entente_cordiale_signed
+  year: 1904
+  level: 3
+  title: 英法协约正式签署
+  summary: 英法签署系列协议，解决摩洛哥与埃及争端，结束两国数十年外交对立。
+  tags: [条约外交]
+
+- id: uk_liberal_landslide_1906
+  year: 1906
+  level: 3
+  title: 自由党大选大胜
+  summary: 自由党在1906年大选中以压倒性优势获胜，启动一系列社会改革立法。
   tags: [改革运动]
+
+- id: uk_dreadnought_launched
+  year: 1906
+  level: 3
+  title: 无畏舰下水
+  summary: 英国建成革命性全大口径战列舰无畏号，使所有旧式战列舰即刻过时，引发海军军备竞赛。
+  tags: [战争, 科技发明]
+
+- id: uk_naval_arms_race_germany
+  year: 1906
+  endYear: 1914
+  level: 3
+  title: 英德海军军备竞赛
+  summary: 英德两国争相建造无畏舰，德国海军法案与英国造舰回应，加剧战前紧张局势。
+  tags: [战争, 经济贸易]
+
+- id: uk_lord_haldane_army_reform
+  year: 1906
+  endYear: 1912
+  level: 3
+  title: 霍尔丹陆军改革
+  summary: 陆军大臣霍尔丹改组英国陆军，成立远征军与领土军，为一战参战奠定军事组织基础。
+  tags: [改革运动, 战争]
+
+- id: uk_budget_crisis_1909
+  year: 1909
+  level: 3
+  title: 劳合·乔治"人民预算"
+  summary: 财政大臣劳合·乔治提出对富人征税以资助社会改革的预算，上议院罕见否决，引发宪政危机。
+  tags: [经济贸易, 改革运动]
+  figures: [lloyd_george]
+
+- id: uk_titanic_sinking
+  year: 1912
+  level: 3
+  title: 泰坦尼克号沉没
+  summary: 英国白星航运公司豪华邮轮泰坦尼克号在处女航中撞冰山沉没，逾1500人遇难。
+  tags: [经济贸易]
+
+- id: uk_suffragette_emily_davidson
+  year: 1913
+  level: 3
+  title: 艾米莉·戴维森在赛马场牺牲
+  summary: 妇女参政运动者艾米莉·戴维森冲入英皇赛马场抗议，被马踩踏身亡，成为运动象征。
+  tags: [改革运动]
+  figures: [emmeline_pankhurst]
+
+- id: uk_archduke_assassination_response
+  year: 1914
+  level: 3
+  title: 英国宣战德国
+  summary: 德国违反比利时中立后，英国于1914年8月4日正式对德宣战，参加第一次世界大战。
+  tags: [战争]
+
+- id: uk_gallipoli_campaign
+  year: 1915
+  endYear: 1916
+  level: 3
+  title: 加利波利战役
+  summary: 英军与澳新军团在达达尼尔海峡强行登陆，遭顽强抵抗后被迫撤退，伤亡惨重。
+  tags: [战争]
+  figures: [churchill]
+
+- id: uk_zeppelin_raids
+  year: 1915
+  endYear: 1918
+  level: 3
+  title: 德国飞艇轰炸英国
+  summary: 德国齐柏林飞艇多次空袭英国城市，造成平民伤亡，是历史上首次对英国本土的战略空袭。
+  tags: [战争]
+
+- id: uk_jutland_battle
+  year: 1916
+  level: 3
+  title: 日德兰海战
+  summary: 英德两国主力舰队在北海展开大规模海战，双方各有损失，英国维持海上控制权。
+  tags: [战争]
+
+- id: uk_tank_first_use
+  year: 1916
+  level: 3
+  title: 坦克首次投入战场
+  summary: 英国陆军在索姆河战役中首次使用坦克，尽管初期效果有限，标志着装甲战争时代开始。
+  tags: [战争, 科技发明]
+
+- id: uk_zimmermann_telegram
+  year: 1917
+  level: 3
+  title: 齐默尔曼电报解密
+  summary: 英国情报机构破译德国向墨西哥提议结盟的电报，促使美国加入一战，协约国局势改观。
+  tags: [战争]
+
+- id: uk_armistice_1918
+  year: 1918
+  level: 3
+  title: 一战停战协定
+  summary: 德国于1918年11月11日上午11时签署停战协定，第一次世界大战正式结束。
+  tags: [战争, 条约外交]
+
+- id: uk_paris_peace_conference
+  year: 1919
+  level: 3
+  title: 巴黎和会
+  summary: 英国首相劳合·乔治参加巴黎和会，在严厉惩罚德国与维持欧洲均势之间艰难斡旋。
+  tags: [条约外交]
+  figures: [lloyd_george]
+
+- id: uk_irish_free_state
+  year: 1922
+  level: 3
+  title: 爱尔兰自由邦成立
+  summary: 爱尔兰自由邦依据英爱条约正式成立，成为英联邦自治领，随即爆发内战。
+  tags: [革命政变, 条约外交]
+
+- id: uk_partition_of_ireland
+  year: 1921
+  level: 3
+  title: 爱尔兰分治
+  summary: 北爱尔兰六郡留在英国版图，南方二十六郡成立自由邦，爱尔兰分治格局形成。
+  tags: [条约外交]
+
+- id: uk_black_friday_1929
+  year: 1929
+  level: 3
+  title: 华尔街崩溃影响英国
+  summary: 美国华尔街股市崩溃引发全球经济危机，英国出口下滑、失业率急增，工业区受创尤深。
+  tags: [经济贸易]
+
+- id: uk_ramsay_macdonald_govt
+  year: 1924
+  level: 3
+  title: 首届工党政府
+  summary: 拉姆齐·麦克唐纳率工党成立英国首届工党政府，执政不足一年后倒台。
+  tags: [改革运动]
+
+- id: uk_gold_standard_abandon
+  year: 1931
+  level: 3
+  title: 英国放弃金本位
+  summary: 大萧条压力下英国宣布放弃金本位制，英镑贬值，英国得以实施更灵活的货币政策。
+  tags: [经济贸易]
+
+- id: uk_national_government_formed
+  year: 1931
+  level: 3
+  title: 国民政府成立
+  summary: 经济危机促使保守、自由与部分工党议员组成联合"国民政府"，以紧缩财政应对危机。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_hunger_marches
+  year: 1932
+  endYear: 1936
+  level: 3
+  title: 贾罗饥饿大行军
+  summary: 失业工人从贾罗等地徒步行军至伦敦，请愿要求政府提供就业，成为大萧条标志事件。
+  tags: [改革运动]
+
+- id: uk_george_v_silver_jubilee
+  year: 1935
+  level: 3
+  title: 乔治五世登基银禧
+  summary: 乔治五世庆祝登基二十五周年，利用无线电向全国广播，成为传统君主制的重要时刻。
+  tags: [王朝更迭]
+  figures: [george_v]
+
+- id: uk_george_v_death
+  year: 1936
+  level: 3
+  title: 乔治五世驾崩
+  summary: 乔治五世于1936年1月驾崩，临终前医生加速其死亡以赶上早报头条，引发后世争议。
+  tags: [王朝更迭]
+  figures: [george_v]
+
+- id: uk_abdication_crisis
+  year: 1936
+  level: 3
+  title: 退位危机
+  summary: 爱德华八世坚持迎娶离婚美国女子沃利斯·辛普森，首相鲍德温拒绝妥协，王室危机公开化。
+  tags: [王朝更迭]
+  figures: [edward_viii]
+
+- id: uk_george_vi_coronation
+  year: 1937
+  level: 3
+  title: 乔治六世加冕
+  summary: 乔治六世在威斯敏斯特教堂举行加冕典礼，首次通过BBC电视直播，为王室传媒时代开端。
+  tags: [王朝更迭]
+  figures: [george_vi]
+
+- id: uk_churchill_becomes_pm
+  year: 1940
+  level: 3
+  title: 丘吉尔出任首相
+  summary: 张伯伦政府倒台后，温斯顿·丘吉尔出任首相，发表"鲜血、辛劳、眼泪和汗水"演讲。
+  tags: [战争]
+  figures: [churchill]
+
+- id: uk_blitz
+  year: 1940
+  endYear: 1941
+  level: 3
+  title: 伦敦大轰炸
+  summary: 德国空军对伦敦及英国城市进行大规模夜间轰炸，持续数月，数万平民死亡，大量建筑被毁。
+  tags: [战争]
+  figures: [churchill]
+
+- id: uk_lend_lease_1941
+  year: 1941
+  level: 3
+  title: 美国《租借法案》与英国
+  summary: 美国通过《租借法案》向英国提供大量军事物资，英国得以在美国参战前坚持抗战。
+  tags: [战争, 经济贸易]
+
+- id: uk_north_africa_campaign
+  year: 1940
+  endYear: 1943
+  level: 3
+  title: 北非战役
+  summary: 英军与意大利、德国非洲军团在北非沙漠展开长期拉锯战，最终英美联军取得胜利。
+  tags: [战争]
+  figures: [montgomery]
+
+- id: uk_sicily_italy_invasion
+  year: 1943
+  level: 3
+  title: 盟军入侵西西里与意大利
+  summary: 英美联军登陆西西里，随后进入意大利本土，迫使意大利退出轴心国并宣布投降。
+  tags: [战争]
+  figures: [montgomery]
+
+- id: uk_bombing_germany
+  year: 1942
+  endYear: 1945
+  level: 3
+  title: 英国战略轰炸德国
+  summary: 英国皇家空军轰炸机司令部对德国城市展开大规模夜间战略轰炸，损失惨重，争议延续至今。
+  tags: [战争]
+
+- id: uk_bletchley_park
+  year: 1939
+  endYear: 1945
+  level: 3
+  title: 布莱奇利园密码破译
+  summary: 图灵等密码学家在布莱奇利园破解德国恩尼格玛密码机，情报支持盟军重大战略决策。
+  tags: [战争, 科技发明]
+  figures: [turing]
+
+- id: uk_raf_fighter_command
+  year: 1940
+  level: 3
+  title: 皇家空军"少数精英"
+  summary: 不列颠之战中约2500名皇家空军飞行员迎战德国空军，丘吉尔赞其为"如此之少数人"。
+  tags: [战争]
+  figures: [churchill]
+
+- id: uk_potsdam_conference
+  year: 1945
+  level: 3
+  title: 波茨坦会议
+  summary: 丘吉尔（后换为艾德礼）与斯大林、杜鲁门在波茨坦讨论战后安排，决定战后欧洲格局。
+  tags: [条约外交]
+  figures: [churchill, attlee]
+
+- id: uk_general_election_1945
+  year: 1945
+  level: 3
+  title: 1945年英国大选
+  summary: 工党以393席对保守党的213席赢得压倒性多数，丘吉尔作为战时英雄却在选举中落败。
+  tags: [改革运动]
+  figures: [attlee, churchill]
+
+- id: uk_empire_windrush
+  year: 1948
+  level: 3
+  title: 帝国疾风号抵达英国
+  summary: 帝国疾风号载492名西印度群岛移民抵达提尔伯里，标志英国从加勒比殖民地移民潮开始。
+  tags: [经济贸易, 殖民扩张]
+
+- id: uk_marshall_plan_aid
+  year: 1948
+  level: 3
+  title: 马歇尔计划援助
+  summary: 英国获得美国马歇尔计划大量援助，支持战后经济重建，但同时积累了大量对美债务。
+  tags: [经济贸易, 条约外交]
+
+- id: uk_berlin_airlift_support
+  year: 1948
+  endYear: 1949
+  level: 3
+  title: 柏林空运
+  summary: 英国参加美英联合柏林空运，应对苏联封锁西柏林，每日飞行数百架次运送物资。
+  tags: [战争, 条约外交]
+
+- id: uk_nato_founding
+  year: 1949
+  level: 3
+  title: 加入北约
+  summary: 英国作为创始成员签署《北大西洋公约》，加入北约集体防御体系，对抗苏联威胁。
+  tags: [条约外交, 战争]
+
+- id: uk_british_raj_end
+  year: 1947
+  level: 3
+  title: 英属印度终结
+  summary: 蒙巴顿勋爵主持英属印度权力移交，1947年8月14日与15日巴基斯坦与印度相继宣告独立。
+  tags: [殖民扩张, 条约外交]
+
+- id: uk_national_coal_board
+  year: 1947
+  level: 3
+  title: 煤矿国有化
+  summary: 英国工党政府将煤矿收归国有，成立国家煤炭委员会，约百万矿工成为国家雇员。
+  tags: [经济贸易, 改革运动]
+  figures: [attlee]
+
+- id: uk_railways_nationalised
+  year: 1948
+  level: 3
+  title: 铁路国有化
+  summary: 英国四大铁路公司合并为国有的英国铁路，成为工党战后国有化计划的重要组成部分。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_orwell_nineteen_eighty_four
+  year: 1949
+  level: 3
+  title: 奥威尔《一九八四》出版
+  summary: 乔治·奥威尔出版反乌托邦小说《一九八四》，警示极权主义与监控社会，成为经典之作。
+  tags: [文化思想]
+  figures: [george_orwell]
+
+- id: uk_orwell_animal_farm
+  year: 1945
+  level: 3
+  title: 奥威尔《动物农场》出版
+  summary: 乔治·奥威尔出版政治寓言《动物农场》，以农场动物影射斯大林主义与革命腐败。
+  tags: [文化思想]
+  figures: [george_orwell]
+
+- id: uk_virginia_woolf_death
+  year: 1941
+  level: 3
+  title: 弗吉尼亚·伍尔夫辞世
+  summary: 弗吉尼亚·伍尔夫在英国南部因精神健康问题投河去世，留下大量意识流小说与文学批评。
+  tags: [文化思想]
+  figures: [virginia_woolf]
+
+- id: uk_keynes_general_theory
+  year: 1936
+  level: 3
+  title: 凯恩斯《就业、利息与货币通论》出版
+  summary: 约翰·梅纳德·凯恩斯出版《通论》，主张政府干预经济以应对衰退，改变经济学主流。
+  tags: [经济贸易, 文化思想]
+  figures: [keynes]
+
+- id: uk_bretton_woods
+  year: 1944
+  level: 3
+  title: 布雷顿森林会议
+  summary: 凯恩斯代表英国参加布雷顿森林会议，推动建立国际货币基金组织与世界银行。
+  tags: [条约外交, 经济贸易]
+  figures: [keynes]
+
+- id: uk_russell_principia
+  year: 1910
+  endYear: 1913
+  level: 3
+  title: 罗素《数学原理》出版
+  summary: 伯特兰·罗素与怀特海合著《数学原理》，尝试将全部数学建立在逻辑公理基础上。
+  tags: [文化思想, 科技发明]
+  figures: [bertrand_russell]
+
+- id: uk_rutherford_nucleus
+  year: 1911
+  level: 3
+  title: 卢瑟福发现原子核
+  summary: 欧内斯特·卢瑟福通过金箔散射实验，提出原子核模型，开创核物理学研究新时代。
+  tags: [科技发明]
+  figures: [rutherford]
+
+- id: uk_rutherford_proton
+  year: 1919
+  level: 3
+  title: 卢瑟福发现质子
+  summary: 卢瑟福在曼彻斯特大学实验室中首次实现人工核反应，证明质子的存在。
+  tags: [科技发明]
+  figures: [rutherford]
+
+- id: uk_cockroft_walton_atom
+  year: 1932
+  level: 3
+  title: 科克罗夫特与沃尔顿分裂原子
+  summary: 约翰·科克罗夫特与欧内斯特·沃尔顿在剑桥首次以人工加速粒子分裂原子核，获诺贝尔奖。
+  tags: [科技发明]
+
+- id: uk_dirac_quantum_mechanics
+  year: 1928
+  level: 3
+  title: 狄拉克量子力学方程
+  summary: 保罗·狄拉克提出相对论量子力学方程，预言反物质存在，后获1933年诺贝尔物理学奖。
+  tags: [科技发明]
+
+- id: uk_wwii_end_vj_day
+  year: 1945
+  level: 3
+  title: 日本投降英国庆祝
+  summary: 日本宣布无条件投降后，英国宣布对日战争胜利日（VJ日），标志第二次世界大战彻底结束。
+  tags: [战争]
+
+- id: uk_election_1906_liberals
+  year: 1906
+  level: 3
+  title: 自由党改革内阁
+  summary: 自由党大选获胜后，坎贝尔—班纳曼组阁，成员包括劳合·乔治、丘吉尔等，推动社会改革。
+  tags: [改革运动]
+  figures: [lloyd_george, churchill]

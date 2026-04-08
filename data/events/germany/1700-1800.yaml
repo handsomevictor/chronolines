@@ -1,32 +1,600 @@
-- id: germany_prussia_rise
-  year: 1701
-  level: 2
-  title: 普鲁士王国建立
-  summary: 勃兰登堡选帝侯弗里德里希三世加冕，普鲁士王国正式建立。
-  tags: [王朝更迭]
+# 德意志地区 1700-1800（神圣罗马帝国/普鲁士）
+# Level 1: 改变历史走向的大事件
+# Level 2: 重要次一级事件
+# Level 3: 具体历史细节
 
-- id: germany_frederick_great
+# ── Level 1 ──────────────────────────────────────────
+
+- id: germany_prussia_kingdom_1701
+  year: 1701
+  level: 1
+  title: 普鲁士王国建立
+  summary: 勃兰登堡选帝侯腓特烈一世在柯尼希斯贝格加冕，普鲁士王国正式建立。
+  tags: [王朝更迭]
+  figures: [frederick_i_prussia]
+
+- id: germany_frederick_ii_reign
   year: 1740
   endYear: 1786
   level: 1
   title: 腓特烈大帝在位
-  summary: 腓特烈二世在位期间，普鲁士在七年战争中崛起，成为欧洲强国。
-  tags: [王朝更迭, 战争]
+  summary: 腓特烈二世在位46年，通过战争与改革使普鲁士跻身欧洲强国之列。
+  tags: [王朝更迭, 改革运动]
   figures: [frederick_great]
 
-- id: germany_austrian_succession
+- id: germany_silesia_wars
   year: 1740
-  endYear: 1748
-  level: 2
-  title: 奥地利王位继承战争
-  summary: 普鲁士入侵奥地利西里西亚，引发欧洲多国卷入的大规模战争。
+  endYear: 1742
+  level: 1
+  title: 西里西亚战争
+  summary: 腓特烈二世入侵并占领奥属西里西亚，普鲁士领土大幅扩张。
   tags: [战争]
+  figures: [frederick_great]
+  related: [germany_austrian_succession_war]
 
 - id: germany_seven_years_war_de
   year: 1756
   endYear: 1763
   level: 1
-  title: 七年战争（普鲁士参战）
-  summary: 普鲁士在腓特烈大帝率领下，以较少力量对抗奥地利、俄国、法国等多强联盟。
+  title: 七年战争
+  summary: 普鲁士以一国之力对抗奥地利、俄国、法国等多国联盟，最终维持领土完整。
   tags: [战争]
-  related: [uk_seven_years_war, france_seven_years_war]
+  figures: [frederick_great]
+  related: [uk_seven_years_war, france_seven_years_war_1756]
+
+- id: germany_hre_dissolution_foreshadow
+  year: 1795
+  endYear: 1806
+  level: 1
+  title: 拿破仑入侵与神圣罗马帝国危机
+  summary: 法国革命战争冲击德意志各邦，普鲁士于1795年退出反法联盟，帝国秩序动摇。
+  tags: [战争, 王朝更迭]
+  related: [france_revolutionary_wars]
+
+- id: germany_enlightenment_philosophy
+  year: 1781
+  level: 1
+  title: 康德《纯粹理性批判》出版
+  summary: 康德于1781年出版《纯粹理性批判》，奠定德国古典哲学基础，影响深远。
+  tags: [文化思想]
+  figures: [kant]
+
+- id: germany_joseph_ii_reforms
+  year: 1780
+  endYear: 1790
+  level: 1
+  title: 约瑟夫二世开明专制改革
+  summary: 哈布斯堡皇帝约瑟夫二世推行宗教宽容、农奴制改革等系列开明专制政策。
+  tags: [改革运动]
+  figures: [joseph_ii]
+
+- id: germany_first_poland_partition
+  year: 1772
+  level: 1
+  title: 第一次瓜分波兰
+  summary: 普鲁士、俄国、奥地利三国协议瓜分波兰领土，普鲁士获得西普鲁士。
+  tags: [条约外交, 殖民扩张]
+  figures: [frederick_great]
+
+# ── Level 2 ──────────────────────────────────────────
+
+- id: germany_fw1_soldier_king
+  year: 1713
+  endYear: 1740
+  level: 2
+  title: 腓特烈·威廉一世建军
+  summary: 腓特烈·威廉一世大力扩充普鲁士军队，以军人国王之名建立高效军事官僚体制。
+  tags: [改革运动]
+  figures: [frederick_william_i]
+
+- id: germany_austrian_succession_war
+  year: 1740
+  endYear: 1748
+  level: 2
+  title: 奥地利王位继承战争
+  summary: 多国围绕奥地利女王玛丽亚·特蕾莎继承权爆发战争，普鲁士趁机获取西里西亚。
+  tags: [战争, 条约外交]
+  figures: [frederick_great]
+
+- id: germany_rossbach_battle
+  year: 1757
+  level: 2
+  title: 罗斯巴赫战役
+  summary: 腓特烈大帝以3万普军击败约4万法奥联军，七年战争中最重要的胜利之一。
+  tags: [战争]
+  figures: [frederick_great]
+
+- id: germany_leuthen_battle
+  year: 1757
+  level: 2
+  title: 洛伊滕战役
+  summary: 普军以3.3万人大败奥地利6.5万精锐，洛伊滕战役被誉为腓特烈大帝的巅峰之作。
+  tags: [战争]
+  figures: [frederick_great]
+
+- id: germany_sans_souci_palace
+  year: 1745
+  endYear: 1747
+  level: 2
+  title: 无忧宫建造
+  summary: 腓特烈大帝主持修建波茨坦无忧宫，成为德意志洛可可建筑的代表性杰作。
+  tags: [文化思想]
+  figures: [frederick_great]
+
+- id: germany_kunersdorf_defeat
+  year: 1759
+  level: 2
+  title: 库内斯多夫战役惨败
+  summary: 普军在库内斯多夫被俄奥联军重创，腓特烈大帝损失约1.9万人，几乎绝境。
+  tags: [战争]
+  figures: [frederick_great]
+
+- id: germany_miracle_of_house_brandon
+  year: 1762
+  level: 2
+  title: 勃兰登堡的奇迹
+  summary: 俄国女皇伊丽莎白驾崩，彼得三世即位并与普鲁士议和，普鲁士绝处逢生。
+  tags: [条约外交, 战争]
+  figures: [frederick_great]
+
+- id: germany_hubertusburg_treaty
+  year: 1763
+  level: 2
+  title: 《胡伯图斯堡条约》签订
+  summary: 七年战争结束，普鲁士保有西里西亚，确立为欧洲五大强国之一。
+  tags: [条约外交]
+  figures: [frederick_great]
+
+- id: germany_potato_introduction
+  year: 1747
+  level: 2
+  title: 腓特烈大帝推广马铃薯种植
+  summary: 腓特烈大帝强制推广马铃薯种植，改善普鲁士粮食结构，影响民众饮食习惯。
+  tags: [改革运动, 经济贸易]
+  figures: [frederick_great]
+
+- id: germany_religious_tolerance_edict
+  year: 1740
+  level: 2
+  title: 普鲁士宗教宽容政策
+  summary: 腓特烈大帝即位后宣布宗教宽容，天主教徒、胡格诺派等各教派在普鲁士可自由信仰。
+  tags: [改革运动, 文化思想]
+  figures: [frederick_great]
+
+- id: germany_fredericks_law_reform
+  year: 1747
+  level: 2
+  title: 腓特烈大帝司法改革
+  summary: 腓特烈大帝废除酷刑、限制死刑，推动普鲁士司法走向启蒙理念。
+  tags: [改革运动]
+  figures: [frederick_great]
+
+- id: germany_second_silesian_war
+  year: 1744
+  endYear: 1745
+  level: 2
+  title: 第二次西里西亚战争
+  summary: 普鲁士再次对奥开战，以《德累斯顿和约》结束，再度确认对西里西亚的控制。
+  tags: [战争, 条约外交]
+  figures: [frederick_great]
+
+- id: germany_weimar_classicism_start
+  year: 1775
+  level: 2
+  title: 歌德入驻魏玛宫廷
+  summary: 歌德受萨克森-魏玛公爵邀请入宫，魏玛成为德意志文化中心，古典主义兴起。
+  tags: [文化思想]
+  figures: [goethe]
+
+- id: germany_young_werther
+  year: 1774
+  level: 2
+  title: 《少年维特之烦恼》出版
+  summary: 歌德出版书信体小说《少年维特之烦恼》，狂飙突进运动代表作，引发欧洲轰动。
+  tags: [文化思想]
+  figures: [goethe]
+
+- id: germany_schiller_robbers
+  year: 1781
+  level: 2
+  title: 席勒《强盗》首演
+  summary: 席勒创作的《强盗》在曼海姆首演，成为德意志狂飙突进运动的重要戏剧作品。
+  tags: [文化思想]
+  figures: [schiller]
+
+- id: germany_third_poland_partition
+  year: 1793
+  level: 2
+  title: 第二次瓜分波兰
+  summary: 普鲁士与俄国再次瓜分波兰，普鲁士获得但泽和大波兰地区。
+  tags: [条约外交, 殖民扩张]
+  figures: [frederick_william_ii]
+
+- id: germany_fourth_poland_partition
+  year: 1795
+  level: 2
+  title: 第三次瓜分波兰
+  summary: 普鲁士、俄国、奥地利三国完成对波兰的最终瓜分，波兰从地图上消失。
+  tags: [条约外交, 殖民扩张]
+
+- id: germany_leibniz_influence
+  year: 1700
+  level: 2
+  title: 莱布尼茨创立柏林科学院
+  summary: 莱布尼茨在柏林创立普鲁士科学院（今柏林-勃兰登堡科学院），推动德意志科学发展。
+  tags: [科技发明, 文化思想]
+  figures: [leibniz]
+
+- id: germany_bach_career_peak
+  year: 1723
+  endYear: 1750
+  level: 2
+  title: 巴赫任莱比锡圣托马斯教堂乐长
+  summary: 约翰·塞巴斯蒂安·巴赫在莱比锡任职27年，创作大量重要宗教和器乐作品。
+  tags: [文化思想]
+  figures: [bach]
+
+- id: germany_handel_born
+  year: 1703
+  level: 2
+  title: 亨德尔早期音乐生涯
+  summary: 亨德尔在汉堡起步，后赴意大利深造，德意志巴洛克音乐代表人物之一。
+  tags: [文化思想]
+  figures: [handel]
+
+- id: germany_wolff_philosophy
+  year: 1720
+  level: 2
+  title: 沃尔夫理性主义哲学兴起
+  summary: 克里斯蒂安·沃尔夫系统化莱布尼茨哲学，在普鲁士大学广泛传播理性主义思想。
+  tags: [文化思想]
+
+- id: germany_hre_reichstag_inefficiency
+  year: 1740
+  level: 2
+  title: 神圣罗马帝国统治日趋松散
+  summary: 帝国议会效率低下，各邦权力扩大，神圣罗马帝国名存实亡格局日益明显。
+  tags: [王朝更迭]
+
+- id: germany_prussian_army_expansion
+  year: 1740
+  endYear: 1756
+  level: 2
+  title: 普鲁士军事扩张
+  summary: 腓特烈大帝将军队从8万扩充至15万，发展斜线战术，建立欧洲最具战斗力的陆军之一。
+  tags: [改革运动]
+  figures: [frederick_great]
+
+- id: germany_kant_critiques
+  year: 1787
+  level: 2
+  title: 康德《实践理性批判》出版
+  summary: 康德出版道德哲学著作《实践理性批判》，与《纯粹理性批判》构成批判哲学核心。
+  tags: [文化思想]
+  figures: [kant]
+
+- id: germany_french_revolution_impact
+  year: 1789
+  level: 2
+  title: 法国大革命对德意志的冲击
+  summary: 法国大革命的自由平等理念传入德意志各邦，引发知识界广泛讨论与政治震动。
+  tags: [革命政变, 文化思想]
+  related: [france_revolution_1789]
+
+# ── Level 3 ──────────────────────────────────────────
+
+- id: germany_fw1_tall_guards
+  year: 1713
+  level: 3
+  title: 普鲁士"高个子卫队"
+  summary: 腓特烈·威廉一世痴迷于招募身高超常的士兵组建御林军，成为其标志性奇癖。
+  tags: [改革运动]
+  figures: [frederick_william_i]
+
+- id: germany_prussia_bureaucracy
+  year: 1723
+  level: 3
+  title: 普鲁士总行政委员会建立
+  summary: 腓特烈·威廉一世设立总行政委员会，统一管理普鲁士财政与内政，官僚体制趋于完善。
+  tags: [改革运动]
+  figures: [frederick_william_i]
+
+- id: germany_frederick_flute
+  year: 1730
+  level: 3
+  title: 腓特烈与笛子
+  summary: 青年腓特烈热爱横笛演奏与法国文学，父亲腓特烈·威廉一世曾因此严厉惩处他。
+  tags: [文化思想]
+  figures: [frederick_great]
+
+- id: germany_voltaire_sans_souci
+  year: 1750
+  endYear: 1753
+  level: 3
+  title: 伏尔泰居住无忧宫
+  summary: 法国启蒙思想家伏尔泰受邀在无忧宫居住三年，与腓特烈大帝频繁书信往来讨论哲学。
+  tags: [文化思想]
+  figures: [frederick_great]
+
+- id: germany_habsburg_pragmatic_sanction
+  year: 1713
+  level: 3
+  title: 哈布斯堡《国事诏书》
+  summary: 神圣罗马帝国皇帝卡尔六世颁布《国事诏书》，确保女儿玛丽亚·特蕾莎的继承权。
+  tags: [王朝更迭]
+
+- id: germany_seven_years_war_first_coalition
+  year: 1756
+  level: 3
+  title: 外交革命与七年战争爆发
+  summary: 1756年奥法结盟打破旧格局，被称为"外交革命"，普英联手对抗欧陆联盟。
+  tags: [条约外交, 战争]
+
+- id: germany_zorn_von_bulach_battle
+  year: 1758
+  level: 3
+  title: 佐恩多夫战役
+  summary: 普鲁士军队在佐恩多夫击退俄军进攻，双方伤亡均极为惨重，战果难分高下。
+  tags: [战争]
+  figures: [frederick_great]
+
+- id: germany_kolberg_siege
+  year: 1761
+  level: 3
+  title: 科尔贝格围城战
+  summary: 俄军围攻普属科尔贝格长达数月，城市坚守，成为七年战争后期重要防御节点。
+  tags: [战争]
+
+- id: germany_maria_theresa_reforms
+  year: 1749
+  level: 3
+  title: 玛丽亚·特蕾莎行政改革
+  summary: 哈布斯堡女王玛丽亚·特蕾莎推行行政与军事改革，强化奥地利中央集权。
+  tags: [改革运动]
+
+- id: germany_aufklarung_universities
+  year: 1737
+  level: 3
+  title: 哥廷根大学建立
+  summary: 汉诺威选帝侯乔治二世建立哥廷根大学，成为德意志启蒙运动的重要学术中心。
+  tags: [文化思想]
+
+- id: germany_konigssberg_circle
+  year: 1770
+  level: 3
+  title: 康德的哲学讲座
+  summary: 康德在柯尼希斯堡大学讲授哲学，吸引来自德意志各地的学生，启蒙思想广泛传播。
+  tags: [文化思想]
+  figures: [kant]
+
+- id: germany_hegel_born
+  year: 1770
+  level: 3
+  title: 黑格尔与荷尔德林出生
+  summary: 1770年德国哲学家黑格尔与诗人荷尔德林相继出生，德国古典哲学代际传承初现。
+  tags: [文化思想]
+  figures: [hegel]
+
+- id: germany_lessing_hamburgische
+  year: 1767
+  level: 3
+  title: 莱辛《汉堡剧评》
+  summary: 莱辛出版《汉堡剧评》批评法国古典主义，倡导德意志民族戏剧，影响后世文学。
+  tags: [文化思想]
+
+- id: germany_sturm_und_drang
+  year: 1770
+  endYear: 1785
+  level: 3
+  title: 狂飙突进运动
+  summary: 德意志青年文人掀起强调情感与个性的狂飙突进运动，反对启蒙理性的机械化倾向。
+  tags: [文化思想]
+  figures: [goethe, schiller]
+
+- id: germany_herder_nationalism
+  year: 1773
+  level: 3
+  title: 赫尔德民族文化思想
+  summary: 赫尔德出版《论德意志的性格与艺术》，强调民族文化特殊性，奠定德意志民族主义思想基础。
+  tags: [文化思想]
+
+- id: germany_schiller_don_carlos
+  year: 1787
+  level: 3
+  title: 席勒《唐·卡洛斯》
+  summary: 席勒出版政治戏剧《唐·卡洛斯》，以西班牙历史为背景探讨自由与专制的矛盾。
+  tags: [文化思想]
+  figures: [schiller]
+
+- id: germany_bach_mass_in_b_minor
+  year: 1749
+  level: 3
+  title: 巴赫《b小调弥撒曲》完成
+  summary: 巴赫晚年完成宏大的《b小调弥撒曲》，被后世视为西方音乐史上的巅峰之作之一。
+  tags: [文化思想]
+  figures: [bach]
+
+- id: germany_handel_messiah
+  year: 1741
+  level: 3
+  title: 亨德尔《弥赛亚》创作
+  summary: 亨德尔在24天内完成清唱剧《弥赛亚》，首演于都柏林，随后风行欧洲。
+  tags: [文化思想]
+  figures: [handel]
+
+- id: germany_leibniz_calculus_dispute
+  year: 1711
+  level: 3
+  title: 莱布尼茨与牛顿微积分之争
+  summary: 英国皇家学会裁定牛顿优先发明微积分，莱布尼茨被指抄袭，两国学界交恶。
+  tags: [科技发明]
+  figures: [leibniz]
+
+- id: germany_prussian_education
+  year: 1717
+  level: 3
+  title: 普鲁士义务教育令
+  summary: 腓特烈·威廉一世颁布义务教育令，规定儿童须接受基础学校教育，开近代教育制度先河。
+  tags: [改革运动]
+  figures: [frederick_william_i]
+
+- id: germany_baroque_architecture
+  year: 1700
+  endYear: 1750
+  level: 3
+  title: 德意志巴洛克建筑繁荣
+  summary: 维尔茨堡宫、茨温格宫等德意志巴洛克建筑相继建成，成为欧洲建筑艺术珍品。
+  tags: [文化思想]
+
+- id: germany_rosicrucian_order
+  year: 1710
+  level: 3
+  title: 共济会与神秘主义流行
+  summary: 18世纪初共济会在德意志各邦蔓延，腓特烈大帝青年时期亦曾入会，秘密结社现象盛行。
+  tags: [文化思想]
+
+- id: germany_habsburg_war_of_succession_end
+  year: 1748
+  level: 3
+  title: 《亚琛条约》签订
+  summary: 奥地利王位继承战争以《亚琛条约》结束，普鲁士正式获得西里西亚，成为列强。
+  tags: [条约外交]
+
+- id: germany_second_partition_poland_context
+  year: 1791
+  level: 3
+  title: 波兰《五月三日宪法》
+  summary: 波兰颁布欧洲第一部成文宪法，随即遭俄普两国干预，加速波兰的瓦解。
+  tags: [革命政变, 条约外交]
+
+- id: germany_valmy_battle
+  year: 1792
+  level: 3
+  title: 普军参与瓦尔米战役
+  summary: 普鲁士与奥地利联军在瓦尔米被法国革命军击退，普鲁士对法国革命军事干涉受挫。
+  tags: [战争]
+  related: [france_revolutionary_wars]
+
+- id: germany_rhineland_occupied
+  year: 1794
+  level: 3
+  title: 法军占领莱茵兰
+  summary: 法国革命军越过莱茵河，占领德意志莱茵兰地区，威斯特法伦旧秩序开始瓦解。
+  tags: [战争]
+  related: [france_revolutionary_wars]
+
+- id: germany_kant_religion_book
+  year: 1793
+  level: 3
+  title: 康德《单纯理性限度内的宗教》
+  summary: 康德出版宗教哲学著作《单纯理性限度内的宗教》，因批评基督教正统而遭普鲁士当局警告。
+  tags: [文化思想]
+  figures: [kant]
+
+- id: germany_frederickgreat_death
+  year: 1786
+  level: 3
+  title: 腓特烈大帝逝世
+  summary: 腓特烈二世在无忧宫逝世，遗嘱要求葬于无忧宫台阶旁，最终于1991年实现遗愿。
+  tags: [王朝更迭]
+  figures: [frederick_great]
+
+- id: germany_austrian_netherlands_revolt
+  year: 1789
+  level: 3
+  title: 奥属尼德兰革命
+  summary: 约瑟夫二世的改革引发奥属尼德兰（今比利时）爆发独立革命，帝国周边秩序动荡。
+  tags: [革命政变]
+  figures: [joseph_ii]
+
+- id: germany_edict_on_religion_joseph
+  year: 1781
+  level: 3
+  title: 约瑟夫二世《宗教宽容诏书》
+  summary: 约瑟夫二世颁布《宗教宽容诏书》，赋予新教徒、东正教徒与犹太人有限宗教自由。
+  tags: [改革运动]
+  figures: [joseph_ii]
+
+- id: germany_prussian_land_reform_fw
+  year: 1763
+  level: 3
+  title: 七年战争后普鲁士重建
+  summary: 战后腓特烈大帝主导农业复兴，分配军马给农民、免除税赋三年，迅速恢复经济。
+  tags: [改革运动, 经济贸易]
+  figures: [frederick_great]
+
+- id: germany_goethe_iphigenie
+  year: 1787
+  level: 3
+  title: 歌德《伊菲格尼亚在陶里斯》
+  summary: 歌德出版散文诗剧《伊菲格尼亚在陶里斯》，标志其从狂飙突进走向古典主义的转变。
+  tags: [文化思想]
+  figures: [goethe]
+
+- id: germany_schiller_wallenstein_plan
+  year: 1791
+  level: 3
+  title: 席勒《三十年战争史》
+  summary: 席勒出版《三十年战争史》历史研究，为其后来创作《华伦斯坦》三部曲奠定基础。
+  tags: [文化思想]
+  figures: [schiller]
+
+- id: germany_beethoven_born
+  year: 1770
+  level: 3
+  title: 贝多芬出生于波恩
+  summary: 路德维希·凡·贝多芬出生于波恩，幼年受父亲严格音乐训练，后成为欧洲最重要的作曲家之一。
+  tags: [文化思想]
+  figures: [beethoven]
+
+- id: germany_beethoven_vienna
+  year: 1792
+  level: 3
+  title: 贝多芬赴维也纳求学
+  summary: 贝多芬22岁赴维也纳，师从海顿，定居维也纳，此后创作了大量奠基性音乐作品。
+  tags: [文化思想]
+  figures: [beethoven]
+
+- id: germany_gauss_born
+  year: 1777
+  level: 3
+  title: 高斯出生
+  summary: 卡尔·弗里德里希·高斯出生于不伦瑞克，早年展现数学天赋，后成为近代数学奠基人之一。
+  tags: [科技发明]
+  figures: [gauss]
+
+- id: germany_humboldts_born
+  year: 1769
+  level: 3
+  title: 洪堡兄弟出生
+  summary: 亚历山大·冯·洪堡（自然科学家）与威廉·冯·洪堡（语言学家）相继出生，德意志科学人文并举。
+  tags: [科技发明, 文化思想]
+
+- id: germany_schiller_aesthetics
+  year: 1795
+  level: 3
+  title: 席勒《美育书简》
+  summary: 席勒发表《美育书简》，提出审美教育在人格完善中的核心作用，对德国教育思想影响深远。
+  tags: [文化思想]
+  figures: [schiller]
+
+- id: germany_prussian_civil_code
+  year: 1794
+  level: 3
+  title: 普鲁士《普通邦法》颁布
+  summary: 普鲁士颁布《普通邦法》，是德意志历史上规模最大的法典化成果，整合封建与近代法律因素。
+  tags: [改革运动]
+
+- id: germany_three_polish_partitions_done
+  year: 1795
+  level: 3
+  title: 波兰彻底消亡
+  summary: 第三次瓜分波兰完成，波兰国家在地图上消失长达123年，普鲁士领土持续扩大。
+  tags: [条约外交]
+
+- id: germany_last_hre_emperor_francis
+  year: 1792
+  level: 3
+  title: 弗朗茨二世就任神圣罗马帝国皇帝
+  summary: 弗朗茨二世成为最后一位神圣罗马帝国皇帝，在拿破仑压力下于1806年宣告帝国解散。
+  tags: [王朝更迭]

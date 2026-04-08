@@ -1,35 +1,189 @@
-- id: france_napoleon
-  year: 1799
-  endYear: 1815
+# 法国 1800-1900 历史事件
+
+# ===== Level 1 =====
+
+- id: france_napoleon_emperor
+  year: 1804
   level: 1
-  title: 拿破仑时代
-  summary: 拿破仑从第一执政到皇帝，建立帝国并发动系列战争，最终战败流放。
-  tags: [战争, 王朝更迭]
-  related: [uk_napoleonic_wars]
+  title: 拿破仑称帝
+  summary: 拿破仑在巴黎圣母院加冕为法兰西皇帝，建立法兰西第一帝国。
+  tags: [王朝更迭]
   figures: [napoleon]
 
-- id: france_restoration
+- id: france_civil_code
+  year: 1804
+  level: 1
+  title: 《拿破仑法典》颁布
+  summary: 拿破仑法典（民法典）颁布，统一法律体系，确立平等、私产和契约自由原则。
+  tags: [改革运动, 文化思想]
+  figures: [napoleon]
+
+- id: france_austerlitz
+  year: 1805
+  level: 1
+  title: 奥斯特利茨战役
+  summary: 拿破仑以劣势兵力击败俄奥联军，史称"三皇会战"，是拿破仑最辉煌胜利之一。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_russia_campaign
+  year: 1812
+  level: 1
+  title: 拿破仑远征俄国
+  summary: 拿破仑率60余万大军入侵俄国，攻占莫斯科后撤退，军队几乎全军覆没。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_napoleon_abdication
+  year: 1814
+  level: 1
+  title: 拿破仑第一次退位
+  summary: 反法联军攻入巴黎，拿破仑在枫丹白露宫签署退位书，被流放厄尔巴岛。
+  tags: [王朝更迭, 战争]
+  figures: [napoleon]
+
+- id: france_hundred_days
   year: 1815
-  endYear: 1830
-  level: 2
-  title: 波旁王朝复辟
-  summary: 维也纳会议后波旁王朝复辟，路易十八、查理十世相继执政。
-  tags: [王朝更迭]
+  level: 1
+  title: 百日王朝
+  summary: 拿破仑从厄尔巴岛返回法国，重夺权力，历时百日后在滑铁卢战败，二度退位。
+  tags: [王朝更迭, 战争]
+  figures: [napoleon]
+
+- id: france_1830_revolution
+  year: 1830
+  level: 1
+  title: 七月革命
+  summary: 查理十世颁布反动法令引发巴黎起义，七月王朝建立，路易-菲利普成为国王。
+  tags: [革命政变, 王朝更迭]
 
 - id: france_1848_revolution
   year: 1848
   level: 1
-  title: 1848年革命
-  summary: 法国爆发革命，七月王朝覆灭，第二共和国成立，路易·拿破仑当选总统。
-  tags: [革命政变]
+  title: 二月革命
+  summary: 法国爆发革命，七月王朝覆灭，第二共和国成立，路易-拿破仑当选总统。
+  tags: [革命政变, 王朝更迭]
 
 - id: france_second_empire
   year: 1852
   endYear: 1870
-  level: 2
+  level: 1
   title: 法兰西第二帝国
-  summary: 路易·拿破仑称帝为拿破仑三世，法国经历工业化和城市改造时期。
+  summary: 路易-拿破仑称帝为拿破仑三世，法国经历工业化和城市大改造时期。
   tags: [王朝更迭, 经济贸易]
+  figures: [napoleon_iii]
+
+- id: france_franco_prussian
+  year: 1870
+  endYear: 1871
+  level: 1
+  title: 普法战争
+  summary: 法国战败，拿破仑三世在色当被俘，割让阿尔萨斯-洛林，第三共和国成立。
+  tags: [战争]
+
+- id: france_third_republic
+  year: 1871
+  endYear: 1940
+  level: 1
+  title: 法兰西第三共和国
+  summary: 普法战争后第三共和国成立，历经70年，是法国历史上持续时间最长的共和政体。
+  tags: [王朝更迭, 改革运动]
+
+- id: france_dreyfus_affair
+  year: 1894
+  endYear: 1906
+  level: 1
+  title: 德雷福斯事件
+  summary: 犹太裔军官德雷福斯被诬告叛国，事件引发法国社会深刻的反犹与共和主义争论。
+  tags: [改革运动, 文化思想]
+  figures: [zola]
+
+# ===== Level 2 =====
+
+- id: france_bourbon_restoration
+  year: 1814
+  endYear: 1830
+  level: 2
+  title: 波旁王朝复辟
+  summary: 维也纳会议后波旁王朝复辟，路易十八、查理十世相继执政，实行保守政策。
+  tags: [王朝更迭]
+
+- id: france_waterloo
+  year: 1815
+  level: 2
+  title: 滑铁卢战役
+  summary: 拿破仑在比利时滑铁卢被英普联军击败，法国帝国时代彻底终结。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_congress_vienna
+  year: 1815
+  level: 2
+  title: 维也纳会议重划欧洲版图
+  summary: 战胜国在维也纳会议上重新划定欧洲边界，法国恢复大革命前疆域。
+  tags: [条约外交]
+
+- id: france_charles_x_ordinances
+  year: 1830
+  level: 2
+  title: 查理十世颁布七月法令
+  summary: 查理十世颁布限制出版自由和选举权的法令，直接引发七月革命。
+  tags: [革命政变]
+
+- id: france_louis_philippe_reign
+  year: 1830
+  endYear: 1848
+  level: 2
+  title: 路易-菲利普七月王朝
+  summary: 路易-菲利普统治期间，工业化加速，中产阶级地位上升，史称七月王朝。
+  tags: [王朝更迭, 经济贸易]
+
+- id: france_algeria_conquest
+  year: 1830
+  endYear: 1847
+  level: 2
+  title: 征服阿尔及利亚
+  summary: 法国出兵占领阿尔及利亚，历经多年抵抗后确立统治，开启北非殖民扩张。
+  tags: [殖民扩张, 战争]
+
+- id: france_second_republic
+  year: 1848
+  endYear: 1852
+  level: 2
+  title: 法兰西第二共和国
+  summary: 第二共和国实行男性普选，社会主义思潮兴起，路易-拿破仑当选总统。
+  tags: [改革运动, 王朝更迭]
+
+- id: france_june_days_1848
+  year: 1848
+  level: 2
+  title: 六月起义
+  summary: 巴黎工人因国家工场关闭发动武装起义，遭军队镇压，伤亡人数各方记载存在差异。
+  tags: [革命政变]
+
+- id: france_napoleon_iii_coup
+  year: 1851
+  level: 2
+  title: 路易-拿破仑政变
+  summary: 总统路易-拿破仑发动政变解散议会，次年公投称帝，第二共和国终结。
+  tags: [革命政变, 王朝更迭]
+  figures: [napoleon_iii]
+
+- id: france_crimean_war
+  year: 1853
+  endYear: 1856
+  level: 2
+  title: 克里米亚战争
+  summary: 法英联军与俄国在克里米亚交战，法国在色瓦斯托波尔围城战中发挥重要作用。
+  tags: [战争, 条约外交]
+
+- id: france_haussmann_paris
+  year: 1853
+  endYear: 1870
+  level: 2
+  title: 奥斯曼改造巴黎
+  summary: 奥斯曼男爵主持巴黎城市大改造，拓宽道路、建设下水道和公园，塑造现代巴黎面貌。
+  tags: [改革运动, 经济贸易]
   figures: [napoleon_iii]
 
 - id: france_second_opium
@@ -39,13 +193,412 @@
   title: 参与第二次鸦片战争
   summary: 法国与英国联合对华作战，攻入北京，签订《北京条约》。
   tags: [战争, 殖民扩张]
-  related: [opium_war_2]
 
-- id: france_franco_prussian
+- id: france_suez_canal
+  year: 1859
+  endYear: 1869
+  level: 2
+  title: 苏伊士运河开凿
+  summary: 法国工程师雷赛布主导苏伊士运河工程，1869年竣工，连接地中海与红海。
+  tags: [经济贸易, 科技发明]
+
+- id: france_indochina_expansion
+  year: 1858
+  endYear: 1885
+  level: 2
+  title: 法属印度支那扩张
+  summary: 法国逐步吞并越南、柬埔寨，建立法属印度支那联邦，扩大东南亚殖民势力。
+  tags: [殖民扩张, 战争]
+
+- id: france_sedan_battle
+  year: 1870
+  level: 2
+  title: 色当战役
+  summary: 普法战争关键战役，拿破仑三世在色当被俘，法国军队惨败，帝国随即崩溃。
+  tags: [战争]
+  figures: [napoleon_iii]
+
+- id: france_paris_commune
+  year: 1871
+  level: 2
+  title: 巴黎公社
+  summary: 普法战争后巴黎工人建立公社政权，历时72天后被临时政府军队镇压。
+  tags: [革命政变]
+
+- id: france_eiffel_tower
+  year: 1889
+  level: 2
+  title: 埃菲尔铁塔建成
+  summary: 为纪念大革命百年而建的埃菲尔铁塔在巴黎世博会揭幕，高300米，成为法国标志。
+  tags: [科技发明, 文化思想]
+
+- id: france_pasteur_vaccine
+  year: 1885
+  level: 2
+  title: 巴斯德研发狂犬病疫苗
+  summary: 路易·巴斯德成功研制狂犬病疫苗，首次用于人体接种，是医学史上里程碑事件。
+  tags: [科技发明]
+  figures: [pasteur]
+
+- id: france_curie_radium
+  year: 1898
+  level: 2
+  title: 居里夫妇发现镭
+  summary: 玛丽·居里和皮埃尔·居里发现放射性元素镭和钋，开创放射性研究新时代。
+  tags: [科技发明]
+  figures: [marie_curie]
+
+- id: france_franco_russian_alliance
+  year: 1894
+  level: 2
+  title: 法俄同盟
+  summary: 法国与俄国签订军事同盟协议，打破俾斯麦体系，重塑欧洲外交格局。
+  tags: [条约外交]
+
+- id: france_entente_cordiale
+  year: 1904
+  level: 2
+  title: 英法协约
+  summary: 法国与英国签订《英法协约》，化解殖民地矛盾，奠定一战协约国阵营基础。
+  tags: [条约外交]
+
+# ===== Level 3 =====
+
+- id: france_concordat_1801
+  year: 1801
+  level: 3
+  title: 拿破仑与教皇签订政教协定
+  summary: 拿破仑与罗马教皇签订《政教协定》，重建法国天主教秩序，化解宗教纷争。
+  tags: [条约外交, 文化思想]
+  figures: [napoleon]
+
+- id: france_legion_of_honor
+  year: 1802
+  level: 3
+  title: 荣誉军团勋章设立
+  summary: 拿破仑创立荣誉军团制度，以功绩而非出身授予荣誉，延续至今。
+  tags: [改革运动]
+  figures: [napoleon]
+
+- id: france_life_consul
+  year: 1802
+  level: 3
+  title: 拿破仑成为终身执政
+  summary: 公民投票通过，拿破仑获任终身第一执政，距称帝又进一步。
+  tags: [王朝更迭]
+  figures: [napoleon]
+
+- id: france_trafalgar
+  year: 1805
+  level: 3
+  title: 特拉法加海战
+  summary: 英国海军上将纳尔逊在特拉法加角击溃法西联合舰队，法国放弃入侵英国计划。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_jena_battle
+  year: 1806
+  level: 3
+  title: 耶拿战役
+  summary: 拿破仑在耶拿和奥尔施泰特同日击败普鲁士军队，普鲁士几乎全境沦陷。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_continental_blockade
+  year: 1806
+  level: 3
+  title: 大陆封锁令
+  summary: 拿破仑颁布柏林法令，禁止欧洲大陆与英国贸易，实施经济封锁战略。
+  tags: [经济贸易, 战争]
+  figures: [napoleon]
+
+- id: france_university_founded
+  year: 1806
+  level: 3
+  title: 拿破仑建立帝国大学
+  summary: 拿破仑建立帝国大学体系，统一法国教育管理，奠定现代法国教育制度基础。
+  tags: [改革运动, 文化思想]
+  figures: [napoleon]
+
+- id: france_spain_campaign
+  year: 1808
+  endYear: 1814
+  level: 3
+  title: 半岛战争
+  summary: 拿破仑入侵西班牙半岛，遭遇持久游击战，被称为"西班牙溃疡"，严重消耗法军。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_napoleon_marriage_marie_louise
+  year: 1810
+  level: 3
+  title: 拿破仑与玛丽-路易丝联姻
+  summary: 拿破仑离婚约瑟芬后娶奥地利公主玛丽-路易丝，政治联姻加强法奥关系。
+  tags: [条约外交, 王朝更迭]
+  figures: [napoleon]
+
+- id: france_moscow_fire
+  year: 1812
+  level: 3
+  title: 莫斯科大火
+  summary: 法军占领莫斯科后城市遭大火，各方记载起火原因存在差异，拿破仑被迫撤退。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_leipzig_battle
+  year: 1813
+  level: 3
+  title: 莱比锡战役
+  summary: 欧洲各国联军在莱比锡击败拿破仑，史称"民族会战"，法国帝国开始崩溃。
+  tags: [战争]
+  figures: [napoleon]
+
+- id: france_elba_exile
+  year: 1814
+  level: 3
+  title: 拿破仑流放厄尔巴岛
+  summary: 拿破仑退位后被流放至地中海厄尔巴岛，获名义统治权，暗中筹划复辟。
+  tags: [王朝更迭]
+  figures: [napoleon]
+
+- id: france_saint_helena_exile
+  year: 1815
+  level: 3
+  title: 拿破仑流放圣赫勒拿岛
+  summary: 滑铁卢战败后拿破仑被流放至大西洋孤岛圣赫勒拿，1821年在岛上去世。
+  tags: [王朝更迭]
+  figures: [napoleon]
+
+- id: france_ultra_royalists
+  year: 1815
+  endYear: 1820
+  level: 3
+  title: 极端保王党主导议会
+  summary: 复辟后极端保王党在议会占多数，推行反动政策，路易十八与其周旋维持平衡。
+  tags: [王朝更迭]
+
+- id: france_saint_simon_socialism
+  year: 1817
+  level: 3
+  title: 圣西门空想社会主义
+  summary: 圣西门发表社会主义著作，主张以工业家取代贵族统治社会，影响法国左翼思潮。
+  tags: [文化思想]
+
+- id: france_hugo_first_works
+  year: 1822
+  level: 3
+  title: 雨果早期诗作出版
+  summary: 维克多·雨果出版早期诗集，开始在巴黎文学界崭露头角。
+  tags: [文化思想]
+  figures: [hugo]
+
+- id: france_revolution_1830_july_days
+  year: 1830
+  level: 3
+  title: 三荣耀日
+  summary: 1830年7月27-29日，巴黎市民三天内推翻查理十世，史称"三荣耀日"。
+  tags: [革命政变]
+
+- id: france_balzac_comedie_humaine
+  year: 1830
+  endYear: 1850
+  level: 3
+  title: 巴尔扎克《人间喜剧》创作
+  summary: 巴尔扎克历时二十年创作《人间喜剧》系列，以近百部小说描绘法国社会全景。
+  tags: [文化思想]
+  figures: [balzac]
+
+- id: france_railway_first
+  year: 1832
+  level: 3
+  title: 法国首条铁路开通
+  summary: 法国第一条蒸汽铁路在圣艾蒂安至里昂间开通，工业化进程加速。
+  tags: [科技发明, 经济贸易]
+
+- id: france_blanc_national_workshops
+  year: 1848
+  level: 3
+  title: 路易·布朗创立国家工场
+  summary: 社会主义者路易·布朗推动建立国家工场为失业者提供就业，后因财政压力关闭。
+  tags: [改革运动, 经济贸易]
+
+- id: france_hugo_les_miserables
+  year: 1862
+  level: 3
+  title: 雨果《悲惨世界》出版
+  summary: 雨果出版《悲惨世界》，揭示社会不公与人道主义，成为法国文学经典。
+  tags: [文化思想]
+  figures: [hugo]
+
+- id: france_flaubert_bovary
+  year: 1857
+  level: 3
+  title: 福楼拜《包法利夫人》出版
+  summary: 福楼拜出版《包法利夫人》，开创批判现实主义文学风格，曾遭当局起诉。
+  tags: [文化思想]
+  figures: [flaubert]
+
+- id: france_second_empire_industry
+  year: 1855
+  level: 3
+  title: 巴黎举办首届世界博览会
+  summary: 拿破仑三世在巴黎举办世界博览会，展示法国工业成就，吸引数百万参观者。
+  tags: [经济贸易, 科技发明]
+  figures: [napoleon_iii]
+
+- id: france_mexico_intervention
+  year: 1861
+  endYear: 1867
+  level: 3
+  title: 干涉墨西哥
+  summary: 拿破仑三世出兵墨西哥，扶植马克西米连一世为皇帝，最终在美国压力下撤军。
+  tags: [殖民扩张, 战争]
+  figures: [napoleon_iii]
+
+- id: france_indochina_cochinchina
+  year: 1862
+  level: 3
+  title: 占领交趾支那
+  summary: 法国迫使越南签约割让交趾支那（今越南南部），建立印度支那殖民统治基础。
+  tags: [殖民扩张, 条约外交]
+
+- id: france_paris_commune_bloody_week
+  year: 1871
+  level: 3
+  title: 巴黎公社"血腥周"
+  summary: 5月21-28日，临时政府军队进入巴黎镇压公社，伤亡人数各方记载存在差异。
+  tags: [革命政变]
+
+- id: france_gambetta_republic
+  year: 1879
+  endYear: 1885
+  level: 3
+  title: 共和派巩固第三共和国
+  summary: 甘必达等共和派领袖推动共和制度巩固，制定世俗教育法，限制教会在教育中的影响。
+  tags: [改革运动]
+
+- id: france_ferry_laws_education
+  year: 1882
+  level: 3
+  title: 费里教育改革法
+  summary: 教育部长费里推行义务免费世俗教育，将宗教从公立学校课程中移除。
+  tags: [改革运动, 文化思想]
+
+- id: france_indochina_federation
+  year: 1887
+  level: 3
+  title: 法属印度支那联邦成立
+  summary: 法国将越南、柬埔寨合并为法属印度支那联邦，后纳入老挝。
+  tags: [殖民扩张]
+
+- id: france_pasteur_institute
+  year: 1888
+  level: 3
+  title: 巴斯德研究所成立
+  summary: 路易·巴斯德在巴黎创立巴斯德研究所，成为微生物学和免疫学研究重要机构。
+  tags: [科技发明]
+  figures: [pasteur]
+
+- id: france_panama_scandal
+  year: 1892
+  endYear: 1893
+  level: 3
+  title: 巴拿马运河公司丑闻
+  summary: 法国巴拿马运河公司破产，暴露政府官员受贿，引发第三共和国严重政治危机。
+  tags: [经济贸易]
+
+- id: france_dreyfus_degradation
+  year: 1895
+  level: 3
+  title: 德雷福斯军衔被剥夺
+  summary: 德雷福斯被判终身流放魔鬼岛，公开剥夺军衔仪式在舆论中引发广泛反应。
+  tags: [改革运动]
+
+- id: france_zola_jaccuse
+  year: 1898
+  level: 3
+  title: 左拉发表《我控诉》
+  summary: 左拉在报纸发表《我控诉》公开信，抨击军方对德雷福斯的不公正审判，引发全国争论。
+  tags: [文化思想, 改革运动]
+  figures: [zola]
+
+- id: france_monet_impressionism
+  year: 1874
+  level: 3
+  title: 印象派首次联展
+  summary: 莫奈、雷诺阿等画家在巴黎举办首次独立联展，印象派由此得名并走向世界。
+  tags: [文化思想]
+  figures: [monet, renoir]
+
+- id: france_lumiere_cinema
+  year: 1895
+  level: 3
+  title: 卢米埃兄弟发明电影
+  summary: 卢米埃兄弟在巴黎首次公映电影，被视为现代电影艺术的起点。
+  tags: [科技发明, 文化思想]
+
+- id: france_zola_germinal
+  year: 1885
+  level: 3
+  title: 左拉《萌芽》出版
+  summary: 左拉出版《萌芽》，描写矿工苦难生活与罢工抗争，自然主义文学代表作。
+  tags: [文化思想]
+  figures: [zola]
+
+- id: france_debussy_prelude
+  year: 1894
+  level: 3
+  title: 德彪西《牧神午后前奏曲》首演
+  summary: 德彪西《牧神午后前奏曲》在巴黎首演，印象主义音乐风格由此兴起。
+  tags: [文化思想]
+  figures: [debussy]
+
+- id: france_socialist_party_sfio
+  year: 1879
+  level: 3
+  title: 法国工人党成立
+  summary: 法国第一个全国性社会主义政党成立，马克思主义开始在法国工人运动中传播。
+  tags: [改革运动]
+
+- id: france_curie_dissertation
+  year: 1903
+  level: 3
+  title: 居里夫人获诺贝尔物理学奖
+  summary: 玛丽·居里与丈夫皮埃尔及贝克勒尔共同获得诺贝尔物理学奖，表彰放射性研究。
+  tags: [科技发明]
+  figures: [marie_curie]
+
+# 以下为跨轨道 related 字段兼容 id
+
+- id: france_napoleon
+  year: 1799
+  endYear: 1815
+  level: 3
+  title: 拿破仑时代（跨轨道关联）
+  summary: 拿破仑从执政府到第一帝国，征服欧洲大部，深刻影响德意志、俄国和欧洲秩序。
+  tags: [战争, 王朝更迭]
+  figures: [napoleon]
+
+- id: france_napoleon_empire
+  year: 1804
+  endYear: 1815
+  level: 3
+  title: 法兰西第一帝国（跨轨道关联）
+  summary: 拿破仑建立的法兰西第一帝国控制欧洲大部，其法律与行政制度影响德意志各邦。
+  tags: [王朝更迭, 战争]
+  figures: [napoleon]
+
+- id: france_revolution_1848
+  year: 1848
+  level: 3
+  title: 法国1848年革命（跨轨道关联）
+  summary: 法国二月革命引发欧洲1848年革命浪潮，影响德意志、奥地利、意大利各地起义。
+  tags: [革命政变]
+
+- id: france_franco_prussian_war
   year: 1870
   endYear: 1871
-  level: 1
-  title: 普法战争
-  summary: 法国战败，割让阿尔萨斯-洛林，巴黎公社短暂成立后被镇压。
+  level: 3
+  title: 普法战争（跨轨道关联）
+  summary: 普法战争法国战败，割让阿尔萨斯-洛林，普鲁士完成德意志统一，建立德意志帝国。
   tags: [战争]
-  related: [germany_unification]

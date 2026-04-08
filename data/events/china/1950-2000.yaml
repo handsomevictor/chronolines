@@ -1,55 +1,591 @@
-- id: china_prc_founded
-  year: 1949
-  level: 1
-  title: 中华人民共和国成立
-  summary: 中国人民政治协商会议召开，中华人民共和国正式宣告成立。
-  tags: [王朝更迭, 革命政变]
-  figures: [mao_zedong]
+# 中国 1950-2000 历史事件
+# 涵盖中华人民共和国成立初期、文化大革命、改革开放、经济腾飞
+
+# ===== Level 1 事件 =====
 
 - id: china_korean_war
   year: 1950
   endYear: 1953
   level: 1
-  title: 抗美援朝
-  summary: 中国人民志愿军赴朝参战，与联合国军对峙，1953年签订停战协定。
+  title: 抗美援朝战争
+  summary: 中国人民志愿军赴朝参战，与联合国军对峙，1953年签订停战协定，朝鲜半岛停火。
   tags: [战争]
   related: [usa_korean_war]
+  figures: [mao_zedong, peng_dehuai]
+
+- id: china_first_five_year_plan
+  year: 1953
+  endYear: 1957
+  level: 1
+  title: 第一个五年计划
+  summary: 中国效仿苏联模式推行第一个五年计划，重点发展重工业，初步建立工业体系。
+  tags: [经济贸易, 改革运动]
+  figures: [mao_zedong]
 
 - id: china_great_leap
   year: 1958
   endYear: 1960
-  level: 2
-  title: 大跃进
-  summary: 大规模工农业生产运动，目标未能实现，随后出现严重饥荒，各方记载数字存在差异。
+  level: 1
+  title: 大跃进运动
+  summary: 大规模工农业生产运动推行虚报浮夸，目标严重脱离实际，随后出现严重饥荒。
   tags: [改革运动, 经济贸易]
+  figures: [mao_zedong]
+
+- id: china_great_famine
+  year: 1959
+  endYear: 1961
+  level: 1
+  title: 三年困难时期
+  summary: 大跃进政策失误叠加自然灾害，全国出现严重粮食短缺，各方记载死亡数字存在差异。
+  tags: [经济贸易]
+  figures: [mao_zedong]
 
 - id: china_cultural_revolution
   year: 1966
   endYear: 1976
   level: 1
   title: 文化大革命
-  summary: 全国性政治运动，大量文化遗产遭受破坏，各方对运动性质评价存在分歧。
+  summary: 全国性政治运动席卷各地，大量文化遗产遭破坏，各方对运动性质及影响存在分歧。
   tags: [革命政变, 文化思想]
+  figures: [mao_zedong, liu_shaoqi, deng_xiaoping]
 
 - id: china_reform_opening
   year: 1978
   level: 1
-  title: 改革开放
-  summary: 中共十一届三中全会确立改革开放路线，中国开始大规模经济改革。
+  title: 改革开放政策确立
+  summary: 中共十一届三中全会确立以经济建设为中心的改革开放路线，中国开始大规模经济改革。
   tags: [改革运动, 经济贸易]
   figures: [deng_xiaoping]
 
-- id: china_tiananmen
-  year: 1989
-  level: 2
-  title: 1989年政治风波
-  summary: 北京天安门广场发生大规模学生示威，随后政府实施戒严，各方记载存在差异。
-  tags: [革命政变]
-
 - id: china_hk_handover
   year: 1997
-  level: 2
-  title: 香港回归
-  summary: 英国将香港主权移交中国，香港成为特别行政区，实行"一国两制"。
+  level: 1
+  title: 香港回归中国
+  summary: 英国将香港主权移交中国，香港成为特别行政区，实行"一国两制"政策。
   tags: [条约外交]
   related: [uk_hk_handover]
+  figures: [deng_xiaoping]
+
+- id: china_macao_handover
+  year: 1999
+  level: 1
+  title: 澳门回归中国
+  summary: 葡萄牙将澳门主权移交中国，澳门成为特别行政区，"一国两制"适用于澳门。
+  tags: [条约外交]
+
+# ===== Level 2 事件 =====
+
+- id: china_land_reform
+  year: 1950
+  endYear: 1952
+  level: 2
+  title: 全国土地改革
+  summary: 中共推行全国性土地改革，没收地主土地分配给农民，约三亿农民获得土地。
+  tags: [改革运动]
+  figures: [mao_zedong]
+
+- id: china_three_anti_five_anti
+  year: 1951
+  endYear: 1952
+  level: 2
+  title: 三反五反运动
+  summary: 中共在党政机关开展反贪污、反浪费、反官僚主义，在工商界开展"五反"运动。
+  tags: [改革运动]
+  figures: [mao_zedong]
+
+- id: china_socialist_transformation
+  year: 1953
+  endYear: 1956
+  level: 2
+  title: 社会主义改造
+  summary: 对农业、手工业及工商业进行社会主义改造，私有制基本消灭，公有制确立。
+  tags: [改革运动, 经济贸易]
+  figures: [mao_zedong]
+
+- id: china_hundred_flowers
+  year: 1956
+  endYear: 1957
+  level: 2
+  title: 百花运动
+  summary: 中共鼓励知识分子"鸣放"批评，随即发动反右运动，大批知识分子被划为右派。
+  tags: [文化思想, 革命政变]
+  figures: [mao_zedong]
+
+- id: china_anti_rightist
+  year: 1957
+  endYear: 1958
+  level: 2
+  title: 反右运动
+  summary: 约五十万人被划为"右派分子"，发配农场或基层接受改造，知识界遭受重大冲击。
+  tags: [革命政变]
+  figures: [mao_zedong]
+
+- id: china_sino_soviet_split
+  year: 1960
+  endYear: 1963
+  level: 2
+  title: 中苏关系破裂
+  summary: 中苏两党在意识形态上产生严重分歧，苏联撤走全部援华专家，两国关系急剧恶化。
+  tags: [条约外交]
+  figures: [mao_zedong]
+
+- id: china_sino_indian_war
+  year: 1962
+  level: 2
+  title: 中印边境战争
+  summary: 中印两国在西段麦克马洪线附近发生边境武装冲突，中国军队获胜后主动后撤。
+  tags: [战争]
+  figures: [mao_zedong]
+
+- id: china_nuclear_test_1964
+  year: 1964
+  level: 2
+  title: 中国第一次核试验
+  summary: 中国在新疆罗布泊成功进行首次核试验，成为世界第五个拥有核武器的国家。
+  tags: [科技发明]
+  figures: [deng_jiaxian]
+
+- id: china_lin_biao_incident
+  year: 1971
+  level: 2
+  title: 林彪事件
+  summary: 毛泽东接班人林彪死于蒙古境内坠机事故，官方称其政变未遂后出逃，各方说法存在差异。
+  tags: [革命政变]
+  figures: [mao_zedong, lin_biao]
+
+- id: china_un_seat_restored
+  year: 1971
+  level: 2
+  title: 中国恢复联合国席位
+  summary: 联合国大会通过2758号决议，恢复中华人民共和国在联合国的合法席位，台湾退出联合国。
+  tags: [条约外交]
+  figures: [mao_zedong]
+
+- id: china_nixon_visit
+  year: 1972
+  level: 2
+  title: 尼克松访华
+  summary: 美国总统尼克松访问中国，签署《上海公报》，中美关系开始走向正常化。
+  tags: [条约外交]
+  figures: [mao_zedong, deng_xiaoping]
+  related: [usa_nixon_china]
+
+- id: china_mao_death
+  year: 1976
+  level: 2
+  title: 毛泽东逝世
+  summary: 毛泽东于1976年9月9日在北京逝世，终年83岁，其去世引发权力角逐。
+  tags: [人物, 王朝更迭]
+  figures: [mao_zedong]
+
+- id: china_gang_of_four_arrested
+  year: 1976
+  level: 2
+  title: 四人帮被捕
+  summary: 毛泽东逝世后，华国锋联合叶剑英等逮捕江青、张春桥、王洪文、姚文元，文革宣告结束。
+  tags: [革命政变]
+  figures: [deng_xiaoping]
+
+- id: china_deng_third_return
+  year: 1977
+  level: 2
+  title: 邓小平第三次复出
+  summary: 邓小平被恢复全部职务，随后在十一届三中全会上确立改革开放路线，掌握实际权力。
+  tags: [改革运动]
+  figures: [deng_xiaoping]
+
+- id: china_gaokao_restored
+  year: 1977
+  level: 2
+  title: 高考制度恢复
+  summary: 全国统一高考制度在停止十年后恢复，570余万人参加考试，开启人才选拔新时代。
+  tags: [改革运动, 文化思想]
+  figures: [deng_xiaoping]
+
+- id: china_rural_responsibility
+  year: 1978
+  endYear: 1984
+  level: 2
+  title: 家庭联产承包责任制
+  summary: 农村推行以家庭为单位的联产承包责任制，农民生产积极性大幅提升，粮食产量增加。
+  tags: [改革运动, 经济贸易]
+  figures: [deng_xiaoping]
+
+- id: china_shenzhen_sez
+  year: 1980
+  level: 2
+  title: 深圳经济特区建立
+  summary: 国务院批准在广东设立深圳、珠海、汕头、厦门四个经济特区，率先对外开放。
+  tags: [改革运动, 经济贸易]
+  figures: [deng_xiaoping]
+
+- id: china_one_child_policy
+  year: 1980
+  level: 2
+  title: 计划生育政策实施
+  summary: 中国开始在全国推行独生子女政策，以控制人口增长，政策持续实施至2015年。
+  tags: [改革运动]
+  figures: [deng_xiaoping]
+
+- id: china_tiananmen_1989
+  year: 1989
+  level: 2
+  title: 1989年北京政治风波
+  summary: 北京天安门广场发生大规模学生示威，政府随后宣布戒严并采取行动，各方记载存在差异。
+  tags: [革命政变]
+  figures: [deng_xiaoping]
+
+- id: china_deng_southern_tour
+  year: 1992
+  level: 2
+  title: 邓小平南巡
+  summary: 邓小平南下视察深圳等地，发表系列讲话，重新确认改革开放路线，推动经济加速发展。
+  tags: [改革运动, 经济贸易]
+  figures: [deng_xiaoping]
+
+- id: china_market_economy_confirmed
+  year: 1992
+  level: 2
+  title: 社会主义市场经济体制确立
+  summary: 中共十四大确定建立社会主义市场经济体制的改革目标，中国经济全面转向市场化。
+  tags: [改革运动, 经济贸易]
+  figures: [deng_xiaoping]
+
+- id: china_deng_death
+  year: 1997
+  level: 2
+  title: 邓小平逝世
+  summary: 邓小平于香港回归前夕在北京逝世，终年93岁，未能亲眼见到香港回归。
+  tags: [人物]
+  figures: [deng_xiaoping]
+
+# ===== Level 3 事件 =====
+
+- id: china_prc_constitution_1954
+  year: 1954
+  level: 3
+  title: 中华人民共和国第一部宪法颁布
+  summary: 第一届全国人民代表大会通过首部宪法，确立人民代表大会制度为根本政治制度。
+  tags: [改革运动]
+  figures: [mao_zedong]
+
+- id: china_peng_dehuai_dismissed
+  year: 1959
+  level: 3
+  title: 彭德怀被撤职
+  summary: 庐山会议上彭德怀批评大跃进失误被打为"右倾机会主义"，撤销国防部长职务。
+  tags: [革命政变]
+  figures: [peng_dehuai, mao_zedong]
+
+- id: china_lushan_conference
+  year: 1959
+  level: 3
+  title: 庐山会议
+  summary: 中共庐山会议由纠偏转为反右倾，大跃进政策继续推行，加剧此后的饥荒局面。
+  tags: [革命政变]
+  figures: [mao_zedong]
+
+- id: china_soviet_advisors_leave
+  year: 1960
+  level: 3
+  title: 苏联专家全部撤走
+  summary: 苏联于1960年宣布撤回全部在华专家，带走技术图纸，使若干重点工程陷入停滞。
+  tags: [条约外交]
+  figures: [mao_zedong]
+
+- id: china_hydrogen_bomb_test
+  year: 1967
+  level: 3
+  title: 中国第一次氢弹试验
+  summary: 中国在新疆罗布泊成功进行首次氢弹试验，成为世界第四个掌握氢弹技术的国家。
+  tags: [科技发明]
+  figures: [deng_jiaxian]
+
+- id: china_red_guards_formed
+  year: 1966
+  level: 3
+  title: 红卫兵运动兴起
+  summary: 文化大革命初期，中学大学生组建红卫兵组织，冲击各级党政机关与传统文化机构。
+  tags: [革命政变]
+  figures: [mao_zedong]
+
+- id: china_liu_shaoqi_purge
+  year: 1966
+  endYear: 1969
+  level: 3
+  title: 刘少奇被打倒
+  summary: 文化大革命中，国家主席刘少奇被定为"叛徒、内奸、工贼"，撤销一切职务，1969年含冤去世。
+  tags: [革命政变]
+  figures: [liu_shaoqi, mao_zedong]
+
+- id: china_deng_xiaoping_first_purge
+  year: 1966
+  level: 3
+  title: 邓小平首次被打倒
+  summary: 文化大革命初期，邓小平被定为"党内第二号走资本主义道路当权派"，撤销全部职务。
+  tags: [革命政变]
+  figures: [deng_xiaoping, mao_zedong]
+
+- id: china_pingfan_policy
+  year: 1978
+  endYear: 1981
+  level: 3
+  title: 历史冤案平反
+  summary: 文化大革命后，中共为大批冤假错案平反，包括为刘少奇彭德怀等人恢复名誉。
+  tags: [改革运动]
+  figures: [deng_xiaoping]
+
+- id: china_beijing_spring
+  year: 1978
+  level: 3
+  title: 北京西单民主墙
+  summary: 北京西单出现大量张贴政治评论的"民主墙"，要求民主化，后被当局清除。
+  tags: [改革运动]
+
+- id: china_sino_vietnamese_war
+  year: 1979
+  level: 3
+  title: 中越边境战争
+  summary: 中国对越南发动自卫还击战，两国军队在中越边境交战约一个月后撤军。
+  tags: [战争]
+  figures: [deng_xiaoping]
+
+- id: china_sino_us_diplomatic
+  year: 1979
+  level: 3
+  title: 中美正式建交
+  summary: 中美宣布正式建立外交关系，美国承认中华人民共和国为代表中国的合法政府。
+  tags: [条约外交]
+  figures: [deng_xiaoping]
+
+- id: china_zhao_ziyang_premier
+  year: 1980
+  level: 3
+  title: 赵紫阳出任国务院总理
+  summary: 赵紫阳接替华国锋担任国务院总理，推行经济体制改革，鼓励市场化与对外开放。
+  tags: [改革运动]
+
+- id: china_township_enterprises
+  year: 1984
+  endYear: 1990
+  level: 3
+  title: 乡镇企业迅速发展
+  summary: 农村改革后乡镇企业大量兴起，成为农村工业化的重要力量，创造大量就业。
+  tags: [经济贸易, 改革运动]
+
+- id: china_coastal_open_cities
+  year: 1984
+  level: 3
+  title: 沿海城市开放
+  summary: 国务院批准开放大连、天津、上海等14个沿海城市，进一步扩大对外开放范围。
+  tags: [改革运动, 经济贸易]
+  figures: [deng_xiaoping]
+
+- id: china_price_reform_debate
+  year: 1988
+  level: 3
+  title: 价格闯关与通货膨胀
+  summary: 政府推动价格体制改革，引发抢购风潮与通货膨胀，社会不满情绪积累。
+  tags: [经济贸易]
+
+- id: china_hu_yaobang_death
+  year: 1989
+  level: 3
+  title: 胡耀邦逝世
+  summary: 前中共中央总书记胡耀邦突然病逝，学生自发悼念成为1989年政治风波的导火索之一。
+  tags: [人物]
+  figures: [deng_xiaoping]
+
+- id: china_three_gorges_approved
+  year: 1992
+  level: 3
+  title: 三峡工程获批
+  summary: 全国人大通过三峡工程建设决议，工程于1994年正式开工，为世界最大水利枢纽之一。
+  tags: [科技发明, 经济贸易]
+
+- id: china_jiang_zemin_power
+  year: 1989
+  level: 3
+  title: 江泽民出任中共中央总书记
+  summary: 胡耀邦、赵紫阳相继去职后，江泽民于1989年6月出任中共中央总书记。
+  tags: [革命政变]
+
+- id: china_fourteen_th_party_congress
+  year: 1992
+  level: 3
+  title: 中共十四大召开
+  summary: 中共十四大确立社会主义市场经济体制目标，"邓小平理论"写入党章。
+  tags: [改革运动]
+  figures: [deng_xiaoping]
+
+- id: china_stock_exchange_open
+  year: 1990
+  level: 3
+  title: 上海证券交易所成立
+  summary: 上海证券交易所于1990年12月开业，深圳证券交易所同年成立，中国股市正式启动。
+  tags: [经济贸易]
+
+- id: china_satellite_launch
+  year: 1970
+  level: 3
+  title: 中国第一颗人造卫星升空
+  summary: 中国成功发射"东方红一号"卫星，成为世界第五个独立研制并发射卫星的国家。
+  tags: [科技发明]
+
+- id: china_ping_pong_diplomacy
+  year: 1971
+  level: 3
+  title: 乒乓外交
+  summary: 美国乒乓球队访华，成为中美关系改善的先行信号，史称"乒乓外交"。
+  tags: [条约外交]
+  figures: [mao_zedong]
+
+- id: china_zhou_enlai_death
+  year: 1976
+  level: 3
+  title: 周恩来逝世
+  summary: 国务院总理周恩来于1976年1月8日在北京逝世，终年78岁，引发全国大规模悼念活动。
+  tags: [人物]
+  figures: [mao_zedong]
+
+- id: china_april_fifth_movement
+  year: 1976
+  level: 3
+  title: 四五天安门事件
+  summary: 北京市民自发聚集天安门广场悼念周恩来，随后遭到清场，邓小平被指策动再度去职。
+  tags: [革命政变]
+  figures: [deng_xiaoping]
+
+- id: china_zhu_rongji_premier
+  year: 1998
+  level: 3
+  title: 朱镕基出任国务院总理
+  summary: 朱镕基接任国务院总理，推行国有企业改革与金融整顿，应对亚洲金融危机冲击。
+  tags: [经济贸易, 改革运动]
+
+- id: china_asia_financial_crisis
+  year: 1997
+  endYear: 1998
+  level: 3
+  title: 亚洲金融危机影响
+  summary: 亚洲金融危机爆发，中国坚持人民币不贬值，维护区域金融稳定，经济增速放缓。
+  tags: [经济贸易]
+
+- id: china_sichuan_earthquake_1976
+  year: 1976
+  level: 3
+  title: 唐山大地震
+  summary: 1976年7月唐山发生7.8级强烈地震，城市几乎夷为平地，各方记载死亡数字存在差异。
+  tags: [人物]
+
+- id: china_hua_guofeng_successor
+  year: 1976
+  level: 3
+  title: 华国锋出任党政领导职务
+  summary: 毛泽东去世后华国锋相继担任党主席与国务院总理，提出"凡是"路线，后逐步让权于邓小平。
+  tags: [革命政变]
+  figures: [deng_xiaoping]
+
+- id: china_culture_great_wall_rebuild
+  year: 1984
+  level: 3
+  title: 长城修缮与旅游开发
+  summary: 长城部分段落在80年代进行修缮，逐步发展为重要旅游景区，吸引大批国内外游客。
+  tags: [文化思想]
+
+- id: china_nine_year_compulsory_education
+  year: 1986
+  level: 3
+  title: 九年义务教育法颁布
+  summary: 《义务教育法》颁布实施，规定接受九年制义务教育为国家法定权利，扩大教育普及。
+  tags: [改革运动]
+
+- id: china_private_enterprise_legalized
+  year: 1988
+  level: 3
+  title: 宪法修正案承认私营经济
+  summary: 全国人大通过宪法修正案，明确私营经济是社会主义公有制经济的补充。
+  tags: [改革运动, 经济贸易]
+
+- id: china_hk_handover_negotiations
+  year: 1984
+  level: 3
+  title: 《中英联合声明》签署
+  summary: 中英两国就香港问题签署《联合声明》，确认1997年将香港主权移交中国。
+  tags: [条约外交]
+  figures: [deng_xiaoping]
+  related: [uk_hk_handover]
+
+- id: china_macao_declaration
+  year: 1987
+  level: 3
+  title: 《中葡联合声明》签署
+  summary: 中葡两国就澳门问题签署《联合声明》，确认1999年将澳门主权移交中国。
+  tags: [条约外交]
+
+- id: china_basic_law_hk
+  year: 1990
+  level: 3
+  title: 香港基本法颁布
+  summary: 全国人大通过《香港基本法》，规定香港回归后实行"一国两制"五十年不变。
+  tags: [条约外交]
+
+- id: china_first_expressway
+  year: 1988
+  level: 3
+  title: 中国第一条高速公路通车
+  summary: 沪嘉高速公路建成通车，是中国第一条全封闭、全立交的高速公路，标志基础设施提升。
+  tags: [科技发明, 经济贸易]
+
+- id: china_internet_connected
+  year: 1994
+  level: 3
+  title: 中国接入国际互联网
+  summary: 1994年中国通过64K国际专线正式接入国际互联网，开启中国信息化发展新阶段。
+  tags: [科技发明]
+
+- id: china_prc_45_anniversary
+  year: 1994
+  level: 3
+  title: 中华人民共和国成立45周年
+  summary: 中国举行建国45周年庆典，展示改革开放以来经济社会发展成就。
+  tags: [人物]
+
+- id: china_three_gorges_groundbreaking
+  year: 1994
+  level: 3
+  title: 三峡大坝正式动工
+  summary: 三峡水利枢纽工程正式开工建设，计划2009年全部完工，为世界规模最大的水利工程之一。
+  tags: [科技发明, 经济贸易]
+
+- id: china_social_security_reform
+  year: 1997
+  endYear: 1999
+  level: 3
+  title: 社会保险制度改革
+  summary: 中国推行养老保险、医疗保险社会化改革，由单位保障向社会保障体系转变。
+  tags: [改革运动]
+
+- id: china_state_enterprise_reform
+  year: 1997
+  endYear: 2000
+  level: 3
+  title: 国有企业改革攻坚
+  summary: 朱镕基主导的国企改革使大批亏损国有企业关停并转，引发大规模工人下岗潮。
+  tags: [经济贸易, 改革运动]
+
+- id: china_huang_he_diversion
+  year: 1999
+  level: 3
+  title: 西部大开发战略提出
+  summary: 中国政府提出"西部大开发"战略，加大对西部省份基础设施与经济发展的投入。
+  tags: [经济贸易, 改革运动]
+
+- id: china_gdp_growth_1990s
+  year: 1990
+  endYear: 1999
+  level: 3
+  title: 中国经济高速增长
+  summary: 1990年代中国年均GDP增速约10%，城乡居民收入大幅提升，成为全球增长最快的经济体之一。
+  tags: [经济贸易]
+  figures: [deng_xiaoping]

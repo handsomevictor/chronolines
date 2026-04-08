@@ -1,38 +1,465 @@
-- id: russia_cold_war
-  year: 1947
-  endYear: 1991
-  level: 1
-  title: 冷战
-  summary: 苏联与美国在政治、军事和意识形态领域展开全球对抗，形成两极格局。
-  tags: [条约外交]
-  related: [usa_cold_war]
+# 苏联/俄国 1950-2000 历史事件
 
-- id: russia_sputnik
+# ==================== Level 1 ====================
+
+- id: russia_stalin_death
+  year: 1953
+  level: 1
+  title: 斯大林逝世
+  summary: 约瑟夫·斯大林在莫斯科病逝，权力真空引发党内激烈权力斗争，苏联进入后斯大林时代。
+  tags: [王朝更迭]
+  figures: [stalin]
+
+- id: russia_khrushchev_era
+  year: 1953
+  endYear: 1964
+  level: 1
+  title: 赫鲁晓夫执政时期
+  summary: 赫鲁晓夫主导去斯大林化，推进有限政治解冻，参与古巴导弹危机，被政变解除职务。
+  tags: [王朝更迭, 改革运动]
+  figures: [khrushchev]
+
+- id: russia_sputnik_launch
   year: 1957
-  level: 2
-  title: 人造卫星发射
-  summary: 苏联成功发射世界上第一颗人造地球卫星斯普特尼克1号，开启太空时代。
+  level: 1
+  title: 人造卫星斯普特尼克发射
+  summary: 苏联成功发射世界上第一颗人造地球卫星斯普特尼克1号，开启人类太空时代。
   tags: [科技发明]
 
-- id: russia_cuban_missile
+- id: russia_cuban_missile_crisis
   year: 1962
-  level: 2
+  level: 1
   title: 古巴导弹危机
-  summary: 苏联在古巴部署导弹，美苏紧张对峙13天，最终通过谈判解决危机。
+  summary: 苏联在古巴秘密部署核导弹，美苏对峙长达13天，最终通过谈判解除，世界险于核战。
   tags: [条约外交]
   related: [usa_cold_war]
+  figures: [khrushchev]
 
-- id: russia_prague_spring
-  year: 1968
-  level: 2
-  title: 镇压布拉格之春
-  summary: 苏联及华约国家出兵捷克斯洛伐克，镇压捷克斯洛伐克的政治改革运动。
-  tags: [革命政变]
+- id: russia_brezhnev_era
+  year: 1964
+  endYear: 1982
+  level: 1
+  title: 勃列日涅夫执政时期
+  summary: 勃列日涅夫长期执政，推行"停滞政策"，对外干涉布拉格之春，苏联经济逐渐陷入僵化。
+  tags: [王朝更迭]
+  figures: [brezhnev]
+
+- id: russia_afghanistan_war
+  year: 1979
+  endYear: 1989
+  level: 1
+  title: 阿富汗战争
+  summary: 苏联军队入侵阿富汗支持亲苏政权，遭圣战者顽强抵抗，历时近十年撤军，伤亡惨重。
+  tags: [战争]
+  figures: [brezhnev]
+
+- id: russia_gorbachev_era
+  year: 1985
+  endYear: 1991
+  level: 1
+  title: 戈尔巴乔夫改革时期
+  summary: 戈尔巴乔夫推行公开性与改革重建，打破政治禁区，释放民族运动，最终苏联走向解体。
+  tags: [改革运动, 王朝更迭]
+  figures: [gorbachev]
 
 - id: russia_ussr_dissolution
   year: 1991
   level: 1
   title: 苏联解体
-  summary: 各加盟共和国相继宣告独立，苏联正式宣告解体，俄罗斯联邦继承其主要遗产。
+  summary: 各加盟共和国相继宣告独立，1991年12月苏联正式宣告解体，俄罗斯联邦继承其主要遗产。
   tags: [王朝更迭, 革命政变]
   figures: [gorbachev, yeltsin]
+
+# ==================== Level 2 ====================
+
+- id: russia_cold_war
+  year: 1947
+  endYear: 1991
+  level: 2
+  title: 冷战格局
+  summary: 苏联与美国在政治、军事和意识形态领域展开全球对抗，形成两极格局，持续逾四十年。
+  tags: [条约外交]
+  related: [usa_cold_war]
+
+- id: russia_destalinization_speech
+  year: 1956
+  level: 2
+  title: 赫鲁晓夫秘密报告
+  summary: 赫鲁晓夫在苏共二十大作秘密报告，揭露斯大林的罪行，开启去斯大林化进程，震动整个共产世界。
+  tags: [改革运动, 革命政变]
+  figures: [khrushchev]
+
+- id: russia_warsaw_pact
+  year: 1955
+  level: 2
+  title: 华沙条约组织成立
+  summary: 苏联与东欧国家缔结华沙条约，建立军事同盟对抗北约，东西方对峙格局正式确立。
+  tags: [条约外交]
+  figures: [khrushchev]
+
+- id: russia_gagarin_space
+  year: 1961
+  level: 2
+  title: 加加林太空飞行
+  summary: 尤里·加加林乘东方1号飞船完成人类首次太空飞行，绕地球一圈后安全返回，历时108分钟。
+  tags: [科技发明]
+  figures: [gagarin]
+
+- id: russia_berlin_wall
+  year: 1961
+  level: 2
+  title: 柏林墙建造
+  summary: 东德在苏联支持下建造柏林墙，封锁东西柏林，成为冷战分裂欧洲最具象征性的建筑。
+  tags: [条约外交]
+  figures: [khrushchev]
+
+- id: russia_prague_spring_suppression
+  year: 1968
+  level: 2
+  title: 镇压布拉格之春
+  summary: 苏联及华约国家联合出兵捷克斯洛伐克，镇压杜布切克领导的政治自由化改革运动。
+  tags: [革命政变]
+  figures: [brezhnev]
+
+- id: russia_brezhnev_doctrine
+  year: 1968
+  level: 2
+  title: 勃列日涅夫主义
+  summary: 苏联确立"社会主义大家庭"干涉原则，宣称有权干预社会主义国家的内政，影响冷战格局。
+  tags: [条约外交]
+  figures: [brezhnev]
+
+- id: russia_khrushchev_removed
+  year: 1964
+  level: 2
+  title: 赫鲁晓夫被迫下台
+  summary: 勃列日涅夫等党内领导人发动政变，以政策失误为由迫使赫鲁晓夫辞职，下台后隐居至死。
+  tags: [革命政变]
+  figures: [khrushchev, brezhnev]
+
+- id: russia_chernobyl_disaster
+  year: 1986
+  level: 2
+  title: 切尔诺贝利核事故
+  summary: 乌克兰切尔诺贝利核电站发生爆炸，大量放射性物质扩散，是迄今最严重的核事故之一。
+  tags: [科技发明]
+  figures: [gorbachev]
+
+- id: russia_arms_race
+  year: 1950
+  endYear: 1980
+  level: 2
+  title: 苏美军备竞赛
+  summary: 苏美两国竞相扩充核武库和常规军备，各方记载的核弹头数量峰值存在差异，冷战核阴影笼罩世界。
+  tags: [战争, 条约外交]
+
+- id: russia_salt_agreements
+  year: 1972
+  endYear: 1979
+  level: 2
+  title: SALT军备限制谈判
+  summary: 苏美先后签署SALT-I和SALT-II战略武器限制条约，是冷战期间重要的军控外交成就。
+  tags: [条约外交]
+  figures: [brezhnev]
+
+- id: russia_1991_coup_attempt
+  year: 1991
+  level: 2
+  title: 八月政变失败
+  summary: 保守派强硬人士软禁戈尔巴乔夫，试图阻止苏联改革，叶利钦号召抵抗，三天后政变失败。
+  tags: [革命政变]
+  figures: [gorbachev, yeltsin]
+
+- id: russia_yeltsin_era
+  year: 1991
+  endYear: 1999
+  level: 2
+  title: 叶利钦执政时期
+  summary: 叶利钦主导俄罗斯向市场经济过渡，推行休克疗法，经济动荡，寡头崛起，国家影响力衰落。
+  tags: [王朝更迭, 改革运动]
+  figures: [yeltsin]
+
+- id: russia_chechen_war_1
+  year: 1994
+  endYear: 1996
+  level: 2
+  title: 第一次车臣战争
+  summary: 俄罗斯军队进入车臣镇压独立运动，遭顽强抵抗，以协议撤军结束，俄军伤亡惨重。
+  tags: [战争]
+  figures: [yeltsin]
+
+- id: russia_1998_financial_crisis
+  year: 1998
+  level: 2
+  title: 俄罗斯金融危机
+  summary: 俄罗斯因债务违约引发金融危机，卢布大幅贬值，储蓄蒸发，经济陷入严重衰退。
+  tags: [经济贸易]
+  figures: [yeltsin]
+
+- id: russia_shock_therapy
+  year: 1992
+  level: 2
+  title: 休克疗法经济改革
+  summary: 俄罗斯推行快速私有化和市场自由化，通货膨胀急剧上升，大量国有资产转入少数人之手。
+  tags: [改革运动, 经济贸易]
+  figures: [yeltsin]
+
+- id: russia_berlin_wall_fall
+  year: 1989
+  level: 2
+  title: 柏林墙倒塌与东欧剧变
+  summary: 苏联放弃干涉东欧内政后，柏林墙倒塌，波兰、东德等国共产政权相继垮台，冷战走向终结。
+  tags: [革命政变, 条约外交]
+  figures: [gorbachev]
+
+- id: russia_nuclear_test_1949
+  year: 1949
+  level: 2
+  title: 苏联首次核试验
+  summary: 苏联在哈萨克斯坦成功进行首次核试验，打破美国核垄断，冷战军备竞赛全面升级。
+  tags: [科技发明]
+  figures: [zeldovich]
+
+- id: russia_andropov_chernenko
+  year: 1982
+  endYear: 1985
+  level: 2
+  title: 安德罗波夫与契尔年科执政
+  summary: 勃列日涅夫后，安德罗波夫与契尔年科相继短暂执政，均因病早逝，苏联领导层老化问题突出。
+  tags: [王朝更迭]
+
+- id: russia_space_race
+  year: 1957
+  endYear: 1969
+  level: 2
+  title: 太空竞赛
+  summary: 苏联在人造卫星和载人航天上率先取得突破，美苏太空竞赛深刻推动科技进步与冷战格局。
+  tags: [科技发明]
+  figures: [gagarin]
+
+# ==================== Level 3 ====================
+
+- id: russia_beriya_executed
+  year: 1953
+  level: 3
+  title: 贝利亚被处决
+  summary: 斯大林死后，秘密警察头目贝利亚在政治斗争中被捕，随即以叛国罪被秘密审判处决。
+  tags: [革命政变]
+  figures: [khrushchev]
+
+- id: russia_korean_war_involvement
+  year: 1950
+  endYear: 1953
+  level: 3
+  title: 苏联介入朝鲜战争
+  summary: 苏联以军事顾问和装备援助介入朝鲜战争，同时派遣飞行员秘密参与空战，各方细节记载存在差异。
+  tags: [战争, 条约外交]
+  figures: [stalin]
+
+- id: russia_doctor_plot
+  year: 1953
+  level: 3
+  title: 医生阴谋案
+  summary: 斯大林晚年策划迫害一批主要为犹太人的医生，指控其谋杀苏联领导人，斯大林死后案件撤销。
+  tags: [革命政变]
+  figures: [stalin]
+
+- id: russia_hungarian_revolution_1956
+  year: 1956
+  level: 3
+  title: 镇压匈牙利革命
+  summary: 苏联军队镇压匈牙利反苏起义，纳吉政府被推翻，大量人员伤亡，各方记载数字存在差异。
+  tags: [革命政变]
+  figures: [khrushchev]
+
+- id: russia_sputnik_2_laika
+  year: 1957
+  level: 3
+  title: 斯普特尼克2号携狗上天
+  summary: 苏联发射斯普特尼克2号，搭载名为莱卡的狗，是首次将活体动物送入地球轨道的太空飞行。
+  tags: [科技发明]
+
+- id: russia_gagarin_born
+  year: 1934
+  level: 3
+  title: 加加林出生
+  summary: 尤里·加加林生于斯摩棱斯克州克卢希诺村，后成为人类历史上首位进入太空的航天员。
+  tags: [人物]
+  figures: [gagarin]
+
+- id: russia_gagarin_death
+  year: 1968
+  level: 3
+  title: 加加林意外身亡
+  summary: 尤里·加加林在一次飞行训练事故中坠机身亡，享年34岁，举国哀悼。
+  tags: [人物]
+  figures: [gagarin]
+
+- id: russia_test_ban_treaty
+  year: 1963
+  level: 3
+  title: 部分禁核试验条约
+  summary: 苏美英三国签署《部分禁止核试验条约》，禁止大气层、水下和外层空间的核试验。
+  tags: [条约外交]
+  figures: [khrushchev]
+
+- id: russia_solzhenitsyn_one_day
+  year: 1962
+  level: 3
+  title: 索尔仁尼琴《伊万·杰尼索维奇的一天》出版
+  summary: 索尔仁尼琴描述苏联劳改营生活的短篇小说在赫鲁晓夫解冻时期发表，引发广泛震动。
+  tags: [文化思想]
+  figures: [solzhenitsyn]
+
+- id: russia_pasternak_nobel_refused
+  year: 1958
+  level: 3
+  title: 帕斯捷尔纳克被迫拒绝诺贝尔奖
+  summary: 帕斯捷尔纳克因《日瓦戈医生》获诺贝尔文学奖，苏联当局施压迫其拒绝，次年病逝。
+  tags: [文化思想]
+  figures: [pasternak]
+
+- id: russia_pasternak_death
+  year: 1960
+  level: 3
+  title: 帕斯捷尔纳克逝世
+  summary: 鲍里斯·帕斯捷尔纳克在莫斯科近郊别列杰尔金诺病逝，享年70岁，葬于当地公墓。
+  tags: [人物]
+  figures: [pasternak]
+
+- id: russia_shostakovich_8th_quartet
+  year: 1960
+  level: 3
+  title: 肖斯塔科维奇《第八弦乐四重奏》
+  summary: 肖斯塔科维奇在德累斯顿目睹二战废墟后创作《第八弦乐四重奏》，被视为反战之作。
+  tags: [文化思想]
+  figures: [shostakovich]
+
+- id: russia_shostakovich_death
+  year: 1975
+  level: 3
+  title: 肖斯塔科维奇逝世
+  summary: 季米特里·肖斯塔科维奇在莫斯科逝世，享年68岁，身后留下15部交响曲等大量作品。
+  tags: [人物]
+  figures: [shostakovich]
+
+- id: russia_solzhenitsyn_expelled
+  year: 1974
+  level: 3
+  title: 索尔仁尼琴被驱逐出境
+  summary: 苏联当局将索尔仁尼琴强制驱逐出境，理由是其著作《古拉格群岛》在西方出版。
+  tags: [文化思想, 革命政变]
+  figures: [solzhenitsyn]
+
+- id: russia_solzhenitsyn_gulag_archipelago
+  year: 1973
+  level: 3
+  title: 索尔仁尼琴《古拉格群岛》出版
+  summary: 《古拉格群岛》在巴黎出版，详细记录苏联劳改营制度，在国际社会引发极大震动。
+  tags: [文化思想]
+  figures: [solzhenitsyn]
+
+- id: russia_brezhnev_death
+  year: 1982
+  level: 3
+  title: 勃列日涅夫逝世
+  summary: 列昂尼德·勃列日涅夫在莫斯科病逝，享年75岁，在位18年间苏联逐渐陷入停滞状态。
+  tags: [人物, 王朝更迭]
+  figures: [brezhnev]
+
+- id: russia_glasnost_policy
+  year: 1986
+  level: 3
+  title: 公开性政策推行
+  summary: 戈尔巴乔夫推行"公开性"政策，放开媒体管制，允许批评历史，释放大量政治犯。
+  tags: [改革运动]
+  figures: [gorbachev]
+
+- id: russia_1991_independence_waves
+  year: 1990
+  endYear: 1991
+  level: 3
+  title: 加盟共和国宣告独立浪潮
+  summary: 爱沙尼亚、立陶宛、拉脱维亚等波罗的海国家率先宣告独立，随后多个加盟共和国跟进。
+  tags: [革命政变, 王朝更迭]
+  figures: [gorbachev]
+
+- id: russia_yeltsin_parliament_crisis
+  year: 1993
+  level: 3
+  title: 叶利钦炮击议会危机
+  summary: 俄罗斯总统与议会对峙，叶利钦下令坦克炮击白宫议会大厦，镇压反对派，引发国际关注。
+  tags: [革命政变]
+  figures: [yeltsin]
+
+- id: russia_grozny_battle
+  year: 1994
+  endYear: 1995
+  level: 3
+  title: 格罗兹尼巷战
+  summary: 俄军在车臣首府格罗兹尼展开激烈巷战，城市遭受严重破坏，各方伤亡数字记载存在差异。
+  tags: [战争]
+  figures: [yeltsin]
+
+- id: russia_chechen_peace_1996
+  year: 1996
+  level: 3
+  title: 哈萨维尤尔特停战协议
+  summary: 俄罗斯与车臣签订停战协议，俄军撤出，车臣获事实自治，第一次车臣战争结束。
+  tags: [条约外交]
+  figures: [yeltsin]
+
+- id: russia_khrushchev_death
+  year: 1971
+  level: 3
+  title: 赫鲁晓夫逝世
+  summary: 尼基塔·赫鲁晓夫在莫斯科病逝，享年77岁，逝世消息一度遭苏联官方媒体淡化处理。
+  tags: [人物]
+  figures: [khrushchev]
+
+- id: russia_space_station_mir
+  year: 1986
+  level: 3
+  title: 和平号空间站发射
+  summary: 苏联和平号空间站核心舱发射升空，此后扩建成全球首个长期有人驻留的空间站。
+  tags: [科技发明]
+
+- id: russia_olympic_boycott_1980
+  year: 1980
+  level: 3
+  title: 莫斯科奥运会西方国家抵制
+  summary: 因苏联入侵阿富汗，美国等西方国家抵制莫斯科奥运会，苏联将举办权转变为外交战场。
+  tags: [条约外交]
+  figures: [brezhnev]
+
+- id: russia_cis_founded
+  year: 1991
+  level: 3
+  title: 独立国家联合体成立
+  summary: 俄罗斯、乌克兰、白俄罗斯签署《别洛韦日协议》宣告苏联终结，建立独立国家联合体。
+  tags: [条约外交, 王朝更迭]
+  figures: [yeltsin]
+
+- id: russia_yeltsin_resignation
+  year: 1999
+  level: 3
+  title: 叶利钦辞职
+  summary: 叶利钦在1999年最后一天宣布辞职，将权力移交给弗拉基米尔·普京，结束其执政时代。
+  tags: [王朝更迭]
+  figures: [yeltsin]
+
+- id: russia_zeldovich_death
+  year: 1987
+  level: 3
+  title: 泽尔多维奇逝世
+  summary: 雅科夫·泽尔多维奇在莫斯科逝世，享年73岁，在核物理与天体物理领域留下大量理论成果。
+  tags: [人物]
+  figures: [zeldovich]
+
+- id: russia_pavlov_death
+  year: 1936
+  level: 3
+  title: 巴甫洛夫逝世
+  summary: 伊万·巴甫洛夫在列宁格勒逝世，享年86岁，条件反射理论对心理学和神经科学影响深远。
+  tags: [人物]
+  figures: [pavlov]

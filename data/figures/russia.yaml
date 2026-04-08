@@ -1,63 +1,420 @@
+# 俄国/苏联历史人物
+
+# ==================== 政治 ====================
+
 - id: peter_great
   name: 彼得大帝
   birthYear: 1672
   deathYear: 1725
   level: 1
-  summary: 俄国沙皇，推行西化改革，建立圣彼得堡，将俄国确立为欧洲强国。
-  events: [russia_peter_great, russia_great_northern_war]
+  category: 政治
+  summary: 俄国沙皇彼得一世，推行西化改革，建立圣彼得堡，将俄国确立为欧洲强国。
+  events: [russia_great_northern_war, russia_peter_reforms, russia_st_petersburg_founded, russia_battle_poltava, russia_nystad_treaty, russia_peter_great_empire_title]
 
 - id: catherine_great
   name: 叶卡捷琳娜大帝
   birthYear: 1729
   deathYear: 1796
   level: 1
-  summary: 俄国女皇，在位34年，扩张领土，推行开明专制，文化艺术赞助者。
-  events: [russia_catherine_great]
+  category: 政治
+  summary: 俄国女皇叶卡捷琳娜二世，在位34年，扩张领土，推行开明专制，三次瓜分波兰。
+  events: [russia_catherine_great_reign, russia_russo_turkish_war_1768, russia_crimea_annexed, russia_polish_partitions, russia_noble_charter]
 
-- id: kutuzov
-  name: 库图佐夫将军
-  birthYear: 1745
-  deathYear: 1813
+- id: elizabeth_i
+  name: 伊丽莎白女皇
+  birthYear: 1709
+  deathYear: 1762
   level: 2
-  summary: 俄国陆军元帅，1812年率军抵御拿破仑入侵，以空间换时间策略奏效。
-  events: [russia_napoleon_invasion]
+  category: 政治
+  summary: 俄国女皇伊丽莎白一世，彼得大帝之女，在位期间文化繁荣，参与七年战争。
+  events: [russia_elizabeth_reign, russia_moscow_university, russia_elizabeth_winter_palace]
+
+- id: pugachev
+  name: 普加乔夫
+  birthYear: 1742
+  deathYear: 1775
+  level: 2
+  category: 政治
+  summary: 哥萨克领袖叶梅利扬·普加乔夫，自称彼得三世，领导俄国最大规模农民起义，后被处决。
+  events: [russia_pugachev_rebellion, russia_pugachev_rebellion_start, russia_pugachev_captured]
+
+- id: alexander_i
+  name: 亚历山大一世
+  birthYear: 1777
+  deathYear: 1825
+  level: 2
+  category: 政治
+  summary: 俄国沙皇，领导俄国击败拿破仑，参与主导维也纳会议，晚期转向保守主义。
+  events: [russia_alexander_i_reign, russia_napoleon_invasion, russia_vienna_congress, russia_holy_alliance]
+
+- id: nicholas_i
+  name: 尼古拉一世
+  birthYear: 1796
+  deathYear: 1855
+  level: 2
+  category: 政治
+  summary: 俄国沙皇，以专制铁腕镇压十二月党人和波兰起义，发动克里米亚战争，俄国被称"欧洲宪兵"。
+  events: [russia_decembrist_revolt, russia_decembrist_five_hanged, russia_nicholas_i_reign, russia_suppress_poland_1830, russia_crimean_war]
 
 - id: alexander_ii
   name: 亚历山大二世
   birthYear: 1818
   deathYear: 1881
+  level: 1
+  category: 政治
+  summary: 俄国沙皇，颁布解放法令废除农奴制，推行大改革，后遭民意党人炸弹袭击身亡。
+  events: [russia_serf_emancipation, russia_great_reforms, russia_zemstvo_reform, russia_judicial_reform_1864, russia_alexander_ii_assassinated]
+
+- id: nicholas_ii
+  name: 尼古拉二世
+  birthYear: 1868
+  deathYear: 1918
+  level: 1
+  category: 政治
+  summary: 俄国末代沙皇，在位期间经历日俄战争、1905年革命和一战，二月革命后退位，后被处决。
+  events: [russia_nicholas_ii_accession, russia_russo_japanese_war, russia_1905_revolution, russia_october_manifesto, russia_february_revolution, russia_nicholas_ii_abdication, russia_romanov_execution]
+
+- id: alexander_kerensky
+  name: 克伦斯基
+  birthYear: 1881
+  deathYear: 1970
   level: 2
-  summary: 俄国沙皇，颁布解放法令废除农奴制，推行司法改革，遭暗杀身亡。
-  events: [russia_serf_emancipation]
+  category: 政治
+  summary: 俄国二月革命后临时政府领导人，坚持继续参与一战，十月革命后被推翻，流亡海外。
+  events: [russia_february_revolution, russia_provisional_government]
+
+- id: stolypin
+  name: 斯托雷平
+  birthYear: 1862
+  deathYear: 1911
+  level: 2
+  category: 政治
+  summary: 俄国首相，推行农业改革允许农民独立持地，以铁腕镇压革命，1911年遇刺身亡。
+  events: [russia_stolypin_reforms, russia_stolypin_prime_minister, russia_stolypin_assassinated]
 
 - id: lenin
   name: 列宁
   birthYear: 1870
   deathYear: 1924
   level: 1
-  summary: 俄国布尔什维克党领袖，领导十月革命，建立苏维埃政权。
-  events: [russia_revolution_1917]
+  category: 政治
+  summary: 布尔什维克党领袖，领导十月革命推翻临时政府，建立苏维埃政权，创立苏联。
+  events: [russia_october_revolution, russia_ussr_founded, russia_war_communism, russia_nep_policy, russia_brest_litovsk_treaty, russia_bolshevik_party_founded, russia_lenin_death]
 
 - id: trotsky
   name: 托洛茨基
   birthYear: 1879
   deathYear: 1940
   level: 2
-  summary: 布尔什维克领导人，组建红军并指挥内战，后与斯大林政治斗争失败被流放。
-  events: [russia_revolution_1917, russia_civil_war]
+  category: 政治
+  summary: 布尔什维克领袖，组建并指挥红军，与斯大林权力斗争失败后被流放，在墨西哥遭暗杀。
+  events: [russia_october_revolution, russia_civil_war, russia_brest_litovsk_treaty, russia_red_army_founded, russia_kronstadt_rebellion, russia_trotsky_permanent_revolution, russia_trotsky_assassinated]
+
+- id: stalin
+  name: 斯大林
+  birthYear: 1878
+  deathYear: 1953
+  level: 1
+  category: 政治
+  summary: 苏联领导人，推行工业化和集体化，主导卫国战争，大清洗期间大规模政治镇压。
+  events: [russia_stalin_rise, russia_five_year_plan_1, russia_collectivization, russia_stalinist_purges, russia_molotov_ribbentrop_pact, russia_ww2_eastern, russia_yalta_conference, russia_atomic_project_start, russia_stalingrad_battle, russia_berlin_capture, russia_trotsky_assassinated, russia_stalin_death]
+
+- id: khrushchev
+  name: 赫鲁晓夫
+  birthYear: 1894
+  deathYear: 1971
+  level: 1
+  category: 政治
+  summary: 苏联领导人，推行去斯大林化和政治解冻，发动古巴导弹危机，1964年被政变迫下台。
+  events: [russia_khrushchev_era, russia_destalinization_speech, russia_cuban_missile_crisis, russia_khrushchev_removed, russia_berlin_wall, russia_warsaw_pact, russia_test_ban_treaty, russia_beriya_executed, russia_khrushchev_death]
+
+- id: brezhnev
+  name: 勃列日涅夫
+  birthYear: 1906
+  deathYear: 1982
+  level: 2
+  category: 政治
+  summary: 苏联领导人，在位18年推行停滞政策，镇压布拉格之春，深陷阿富汗战争泥潭。
+  events: [russia_brezhnev_era, russia_prague_spring_suppression, russia_brezhnev_doctrine, russia_afghanistan_war, russia_salt_agreements, russia_khrushchev_removed, russia_brezhnev_death]
 
 - id: gorbachev
   name: 戈尔巴乔夫
   birthYear: 1931
   deathYear: 2022
   level: 1
-  summary: 苏联最后一任领导人，推行开放和改革政策，苏联在其任内解体。
-  events: [russia_ussr_dissolution]
+  category: 政治
+  summary: 苏联最后一任领导人，推行公开性与改革重建，切尔诺贝利后加速改革，苏联在其任内解体。
+  events: [russia_gorbachev_era, russia_chernobyl_disaster, russia_glasnost_policy, russia_berlin_wall_fall, russia_1991_coup_attempt, russia_ussr_dissolution, russia_1991_independence_waves]
 
 - id: yeltsin
   name: 叶利钦
   birthYear: 1931
   deathYear: 2007
   level: 2
-  summary: 俄罗斯联邦首任总统，苏联解体后主导俄罗斯政治转型。
-  events: [russia_ussr_dissolution]
+  category: 政治
+  summary: 俄罗斯联邦首任总统，主导苏联解体后俄罗斯转型，推行休克疗法，发动车臣战争。
+  events: [russia_ussr_dissolution, russia_1991_coup_attempt, russia_yeltsin_era, russia_chechen_war_1, russia_1998_financial_crisis, russia_shock_therapy, russia_yeltsin_parliament_crisis, russia_cis_founded, russia_yeltsin_resignation]
+
+# ==================== 军事 ====================
+
+- id: suvorov
+  name: 苏沃洛夫
+  birthYear: 1730
+  deathYear: 1800
+  level: 2
+  category: 军事
+  summary: 俄国陆军元帅，一生征战从未败绩，以翻越阿尔卑斯山远征等战绩著称，被视为军事天才。
+  events: [russia_russo_turkish_war_1787, russia_suvorov_campaigns, russia_suvorov_ismail, russia_suvorov_italian_swiss, russia_suvorov_death]
+
+- id: kutuzov
+  name: 库图佐夫
+  birthYear: 1745
+  deathYear: 1813
+  level: 2
+  category: 军事
+  summary: 俄国陆军元帅，1812年任总司令抵御拿破仑入侵，以空间换时间策略使法军陷入困境。
+  events: [russia_napoleon_invasion, russia_borodino_battle, russia_moscow_fire, russia_napoleon_retreat, russia_kutuzov_appointed, russia_kutuzov_death]
+
+- id: zhukov
+  name: 朱可夫
+  birthYear: 1896
+  deathYear: 1974
+  level: 1
+  category: 军事
+  summary: 苏联陆军元帅，卫国战争中指挥多次重大战役，主持攻克柏林，被视为苏联最重要的军事领袖。
+  events: [russia_ww2_eastern, russia_leningrad_siege, russia_stalingrad_battle, russia_kursk_battle, russia_berlin_capture, russia_zhukov_moscow_defense]
+
+- id: gagarin
+  name: 加加林
+  birthYear: 1934
+  deathYear: 1968
+  level: 2
+  category: 军事
+  summary: 苏联宇航员，1961年成为人类历史上首位进入太空并完成地球轨道飞行的航天员。
+  events: [russia_gagarin_space, russia_gagarin_born, russia_gagarin_death]
+
+# ==================== 科学 ====================
+
+- id: lomonosov
+  name: 罗蒙诺索夫
+  birthYear: 1711
+  deathYear: 1765
+  level: 2
+  category: 科学
+  summary: 俄国博物学家和诗人，提出物质守恒理论，推动莫斯科大学创建，是俄国启蒙时代代表人物。
+  events: [russia_moscow_university, russia_lomonosov_born, russia_lomonosov_science_works, russia_lomonosov_grammar, russia_lomonosov_death]
+
+- id: mendeleev
+  name: 门捷列夫
+  birthYear: 1834
+  deathYear: 1907
+  level: 2
+  category: 科学
+  summary: 俄国化学家，发现元素周期律并制作元素周期表，是现代化学史上最重要的成就之一。
+  events: [russia_mendeleev_table, russia_mendeleev_death]
+
+- id: pavlov
+  name: 巴甫洛夫
+  birthYear: 1849
+  deathYear: 1936
+  level: 2
+  category: 科学
+  summary: 俄国生理学家，以条件反射理论著称，1904年获诺贝尔生理学或医学奖，是俄国首位诺贝尔科学奖得主。
+  events: [russia_pavlov_research, russia_pavlov_nobel, russia_pavlov_death]
+
+- id: zeldovich
+  name: 泽尔多维奇
+  birthYear: 1914
+  deathYear: 1987
+  level: 2
+  category: 科学
+  summary: 苏联物理学家，参与苏联核武器理论研究，后转向宇宙学，在核物理与天体物理两领域贡献卓著。
+  events: [russia_atomic_project_start, russia_nuclear_test_1949, russia_zeldovich_nuclear_theory, russia_zeldovich_death]
+
+# ==================== 文学 ====================
+
+- id: pushkin
+  name: 普希金
+  birthYear: 1799
+  deathYear: 1837
+  level: 1
+  category: 文学
+  summary: 俄国最伟大的诗人，俄语文学的奠基人，以诗歌、小说和戏剧奠定俄国文学的语言基础。
+  events: [russia_golden_age_literature, russia_pushkin_born, russia_pushkin_ruslan_ludmila, russia_pushkin_evgeny_onegin, russia_pushkin_death]
+
+- id: gogol
+  name: 果戈理
+  birthYear: 1809
+  deathYear: 1852
+  level: 2
+  category: 文学
+  summary: 俄国作家，以讽刺笔法揭露官场与社会腐败，代表作《钦差大臣》和《死魂灵》影响深远。
+  events: [russia_golden_age_literature, russia_gogol_inspector, russia_gogol_dead_souls]
+
+- id: turgenev
+  name: 屠格涅夫
+  birthYear: 1818
+  deathYear: 1883
+  level: 2
+  category: 文学
+  summary: 俄国作家，以《父与子》等作品描绘俄国社会转型时期的知识分子，是俄国现实主义文学重要代表。
+  events: [russia_golden_age_literature, russia_turgenev_fathers_sons]
+
+- id: dostoevsky
+  name: 陀思妥耶夫斯基
+  birthYear: 1821
+  deathYear: 1881
+  level: 1
+  category: 文学
+  summary: 俄国小说家，以《罪与罚》《卡拉马佐夫兄弟》等作品深刻探索人性、道德与宗教，影响世界文学。
+  events: [russia_golden_age_literature, russia_dostoevsky_crime_punishment, russia_dostoevsky_brothers_karamazov, russia_dostoevsky_death]
+
+- id: tolstoy
+  name: 托尔斯泰
+  birthYear: 1828
+  deathYear: 1910
+  level: 1
+  category: 文学
+  summary: 俄国作家，《战争与和平》《安娜·卡列尼娜》作者，晚年致力于道德改革与和平主义运动。
+  events: [russia_golden_age_literature, russia_tolstoy_war_peace, russia_tolstoy_anna_karenina, russia_tolstoy_death]
+
+- id: chekhov
+  name: 契诃夫
+  birthYear: 1860
+  deathYear: 1904
+  level: 2
+  category: 文学
+  summary: 俄国作家和剧作家，以精炼的短篇小说和《三姐妹》等剧作著称，对现代戏剧影响深远。
+  events: [russia_chekhov_first_plays, russia_chekhov_three_sisters, russia_chekhov_death]
+
+- id: gorky
+  name: 高尔基
+  birthYear: 1868
+  deathYear: 1936
+  level: 2
+  category: 文学
+  summary: 俄国作家，笔名马克西姆·高尔基，以描写底层生活著称，代表作《母亲》被视为无产阶级文学经典。
+  events: [russia_gorky_early_works, russia_gorky_mother_published, russia_gorky_death]
+
+- id: pasternak
+  name: 帕斯捷尔纳克
+  birthYear: 1890
+  deathYear: 1960
+  level: 2
+  category: 文学
+  summary: 苏联诗人和小说家，《日瓦戈医生》作者，1958年获诺贝尔文学奖但被迫拒绝接受。
+  events: [russia_pasternак_early_poems, russia_pasternак_doctor_zhivago_written, russia_pasternak_nobel_refused, russia_pasternak_death]
+
+- id: solzhenitsyn
+  name: 索尔仁尼琴
+  birthYear: 1918
+  deathYear: 2008
+  level: 2
+  category: 文学
+  summary: 苏联作家，以《古拉格群岛》揭露苏联劳改营制度，1974年被驱逐出境，后获诺贝尔文学奖。
+  events: [russia_solzhenitsyn_born, russia_solzhenitsyn_one_day, russia_solzhenitsyn_gulag_archipelago, russia_solzhenitsyn_expelled]
+
+# ==================== 音乐 ====================
+
+- id: glinka
+  name: 格林卡
+  birthYear: 1804
+  deathYear: 1857
+  level: 2
+  category: 音乐
+  summary: 俄国作曲家，创作第一部具有民族风格的大型歌剧《为沙皇献身》，被称为俄国古典音乐奠基人。
+  events: [russia_glinka_life_for_tsar]
+
+- id: tchaikovsky
+  name: 柴可夫斯基
+  birthYear: 1840
+  deathYear: 1893
+  level: 1
+  category: 音乐
+  summary: 俄国作曲家，以《天鹅湖》《胡桃夹子》《第一钢琴协奏曲》等享誉世界，是俄国最著名的音乐家。
+  events: [russia_tchaikovsky_swan_lake, russia_tchaikovsky_death]
+
+- id: mussorgsky
+  name: 穆索尔斯基
+  birthYear: 1839
+  deathYear: 1881
+  level: 2
+  category: 音乐
+  summary: 俄国作曲家，强力集团核心成员，以歌剧《鲍里斯·戈东诺夫》和钢琴组曲《展览会之画》著称。
+  events: [russia_music_mighty_five, russia_mussorgsky_boris_godunov, russia_mussorgsky_death]
+
+- id: rachmaninoff
+  name: 拉赫玛尼诺夫
+  birthYear: 1873
+  deathYear: 1943
+  level: 2
+  category: 音乐
+  summary: 俄国作曲家和钢琴家，以浪漫主义风格著称，《第二钢琴协奏曲》是其最受欢迎的代表作。
+  events: [russia_rachmaninoff_first_concerto, russia_rachmaninoff_second_concerto, russia_rachmaninoff_emigrates]
+
+- id: stravinsky
+  name: 斯特拉文斯基
+  birthYear: 1882
+  deathYear: 1971
+  level: 2
+  category: 音乐
+  summary: 俄裔作曲家，《火鸟》《春之祭》作者，以颠覆传统的音乐语言对20世纪音乐产生深远影响。
+  events: [russia_stravinsky_firebird, russia_stravinsky_rite_of_spring]
+
+- id: shostakovich
+  name: 肖斯塔科维奇
+  birthYear: 1906
+  deathYear: 1975
+  level: 2
+  category: 音乐
+  summary: 苏联作曲家，创作15部交响曲，在斯大林时代以音乐记录苦难历史，是20世纪最重要的作曲家之一。
+  events: [russia_shostakovich_first_symphony, russia_shostakovich_7th_symphony, russia_shostakovich_8th_quartet, russia_shostakovich_death]
+
+# ==================== 艺术 ====================
+
+- id: repin
+  name: 列宾
+  birthYear: 1844
+  deathYear: 1930
+  level: 2
+  category: 艺术
+  summary: 俄国写实主义画家，以《伏尔加河上的纤夫》《伊万雷帝杀子》等作品揭示社会现实，影响深远。
+  events: [russia_repin_barge_haulers, russia_repin_ivan_terrible]
+
+- id: kandinsky
+  name: 康定斯基
+  birthYear: 1866
+  deathYear: 1944
+  level: 2
+  category: 艺术
+  summary: 俄裔画家，被认为是抽象主义绘画先驱，其理论著作对现代艺术理论影响深远。
+  events: [russia_kandinsky_early_life, russia_kandinsky_abstract_painting]
+
+# ==================== 哲学思想 ====================
+
+- id: bakunin
+  name: 巴枯宁
+  birthYear: 1814
+  deathYear: 1876
+  level: 2
+  category: 哲学思想
+  summary: 俄国革命家和无政府主义理论家，在第一国际内与马克思展开路线斗争，影响欧洲左翼运动。
+  events: [russia_bakunin_anarchism]
+
+- id: kropotkin
+  name: 克鲁泡特金
+  birthYear: 1842
+  deathYear: 1921
+  level: 2
+  category: 哲学思想
+  summary: 俄国地理学家和无政府共产主义思想家，提出互助论，是无政府主义最重要的理论家之一。
+  events: [russia_kropotkin_mutual_aid]
+
+- id: plekhanov
+  name: 普列汉诺夫
+  birthYear: 1856
+  deathYear: 1918
+  level: 2
+  category: 哲学思想
+  summary: 俄国马克思主义理论家，创立"劳动解放社"将马克思主义系统引入俄国，被称为俄国马克思主义之父。
+  events: [russia_marxism_enters, russia_plekhanov_labor_liberation]

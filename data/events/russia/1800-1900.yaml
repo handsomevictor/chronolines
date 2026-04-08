@@ -1,41 +1,555 @@
+# 俄国 1800-1900 历史事件
+
+# ==================== Level 1 ====================
+
 - id: russia_napoleon_invasion
   year: 1812
   level: 1
   title: 拿破仑入侵俄国
-  summary: 拿破仑率大军入侵俄国，占领莫斯科，随后被迫撤退，损失惨重。
+  summary: 拿破仑率六十万大军入侵俄国，占领莫斯科，随后被迫撤退，法军损失惨重。
   tags: [战争]
   related: [france_napoleon]
-  figures: [kutuzov]
+  figures: [kutuzov, alexander_i]
 
 - id: russia_decembrist_revolt
   year: 1825
-  level: 2
+  level: 1
   title: 十二月党人起义
-  summary: 俄国贵族军官发动起义，要求宪政改革，被镇压，领导者被处决或流放。
+  summary: 俄国贵族军官发动起义，要求宪政改革，被尼古拉一世镇压，领导者被处决或流放。
   tags: [革命政变]
+  figures: [nicholas_i]
 
 - id: russia_crimean_war
   year: 1853
   endYear: 1856
   level: 1
   title: 克里米亚战争
-  summary: 俄国与英法土耳其联军在克里米亚半岛交战，俄国战败，签订《巴黎和约》。
+  summary: 俄国与英法土耳其联军在克里米亚半岛交战，俄国战败，签订《巴黎和约》，黑海中立化。
   tags: [战争, 条约外交]
   related: [uk_crimean]
 
 - id: russia_serf_emancipation
   year: 1861
-  level: 2
+  level: 1
   title: 废除农奴制
-  summary: 沙皇亚历山大二世颁布《解放法令》，正式废除农奴制度。
+  summary: 亚历山大二世颁布《解放法令》，正式废除在俄国延续数百年的农奴制度。
   tags: [改革运动]
   figures: [alexander_ii]
 
-- id: russia_russo_japanese_war
-  year: 1904
-  endYear: 1905
+- id: russia_alexander_ii_assassinated
+  year: 1881
   level: 1
-  title: 日俄战争
-  summary: 俄国在东北亚与日本争夺利益，战败后签订《朴茨茅斯条约》。
+  title: 亚历山大二世遇刺
+  summary: 亚历山大二世在圣彼得堡遭民意党人炸弹袭击，当日伤重身亡，改革进程中断。
+  tags: [革命政变]
+  figures: [alexander_ii]
+
+- id: russia_trans_siberian_railway
+  year: 1891
+  endYear: 1904
+  level: 1
+  title: 西伯利亚大铁路开工
+  summary: 俄国开始建造横跨西伯利亚的大铁路，全长超过九千公里，是当时世界最长铁路。
+  tags: [经济贸易, 科技发明]
+
+- id: russia_great_reforms
+  year: 1861
+  endYear: 1874
+  level: 1
+  title: 亚历山大二世大改革
+  summary: 废除农奴制后，亚历山大二世相继推行司法、地方自治、教育和军事改革，史称大改革时代。
+  tags: [改革运动]
+  figures: [alexander_ii]
+
+- id: russia_conquest_central_asia
+  year: 1864
+  endYear: 1885
+  level: 1
+  title: 征服中亚
+  summary: 俄国军队相继征服浩罕、布哈拉、希瓦等中亚汗国，将中亚纳入帝国版图。
+  tags: [殖民扩张, 战争]
+
+# ==================== Level 2 ====================
+
+- id: russia_alexander_i_reign
+  year: 1801
+  endYear: 1825
+  level: 2
+  title: 亚历山大一世执政
+  summary: 亚历山大一世早期推行自由化改革，后趋保守，领导俄国击败拿破仑，成为欧洲仲裁者。
+  tags: [王朝更迭, 改革运动]
+  figures: [alexander_i]
+
+- id: russia_borodino_battle
+  year: 1812
+  level: 2
+  title: 博罗季诺战役
+  summary: 俄法两军在莫斯科近郊博罗季诺展开大战，双方伤亡惨重，俄军随后战略撤退。
+  tags: [战争]
+  figures: [kutuzov]
+
+- id: russia_moscow_fire
+  year: 1812
+  level: 2
+  title: 莫斯科大火
+  summary: 法军占领莫斯科后城市遭大火，大部分建筑付之一炬，法军无法在此过冬。
+  tags: [战争]
+  figures: [kutuzov]
+
+- id: russia_napoleon_retreat
+  year: 1812
+  level: 2
+  title: 法军撤退溃败
+  summary: 拿破仑被迫率军从莫斯科撤退，在严冬、疾病与俄军追击下死伤惨重，六十万大军几近全灭。
+  tags: [战争]
+  figures: [kutuzov]
+
+- id: russia_holy_alliance
+  year: 1815
+  level: 2
+  title: 神圣同盟建立
+  summary: 维也纳会议后，俄普奥三国君主缔结神圣同盟，以维护欧洲君主制度和抑制革命浪潮。
+  tags: [条约外交]
+  figures: [alexander_i]
+
+- id: russia_vienna_congress
+  year: 1815
+  level: 2
+  title: 维也纳会议参与
+  summary: 俄国作为战胜国主导维也纳会议，亚历山大一世扮演关键角色，俄国声望达到顶点。
+  tags: [条约外交]
+  figures: [alexander_i]
+
+- id: russia_speransky_reforms
+  year: 1809
+  level: 2
+  title: 斯佩兰斯基改革方案
+  summary: 改革家斯佩兰斯基提出立宪方案，设立国家杜马，后被保守派压制，斯佩兰斯基遭流放。
+  tags: [改革运动]
+  figures: [alexander_i]
+
+- id: russia_decembrist_five_hanged
+  year: 1826
+  level: 2
+  title: 十二月党人领袖处决
+  summary: 尼古拉一世下令处决五名起义领袖，其余逾百人被流放西伯利亚，推翻了改革希望。
+  tags: [革命政变]
+  figures: [nicholas_i]
+
+- id: russia_nicholas_i_reign
+  year: 1825
+  endYear: 1855
+  level: 2
+  title: 尼古拉一世执政
+  summary: 尼古拉一世以专制铁腕统治，镇压波兰起义与十二月党人，俄国被称为"欧洲宪兵"。
+  tags: [王朝更迭]
+  figures: [nicholas_i]
+
+- id: russia_suppress_poland_1830
+  year: 1830
+  endYear: 1831
+  level: 2
+  title: 镇压波兰起义
+  summary: 波兰爆发十一月起义，俄国派兵镇压，废除波兰宪法，波兰自治地位被大幅削减。
+  tags: [革命政变, 殖民扩张]
+  figures: [nicholas_i]
+
+- id: russia_paris_treaty_1856
+  year: 1856
+  level: 2
+  title: 《巴黎和约》签订
+  summary: 克里米亚战争结束，俄国被迫接受黑海中立化等苛刻条款，影响力退出近东。
+  tags: [条约外交]
+
+- id: russia_zemstvo_reform
+  year: 1864
+  level: 2
+  title: 地方自治局改革
+  summary: 亚历山大二世建立地方自治机构泽姆斯特沃，赋予各阶层地方议政权，推动基层治理。
+  tags: [改革运动]
+  figures: [alexander_ii]
+
+- id: russia_judicial_reform_1864
+  year: 1864
+  level: 2
+  title: 司法改革
+  summary: 亚历山大二世推行司法改革，引入独立法庭、陪审团制度，以近代法治原则改造旧体系。
+  tags: [改革运动]
+  figures: [alexander_ii]
+
+- id: russia_alaska_sold
+  year: 1867
+  level: 2
+  title: 俄国出售阿拉斯加
+  summary: 俄国以720万美元将阿拉斯加出售给美国，结束在北美的战略存在。
+  tags: [条约外交, 经济贸易]
+
+- id: russia_russo_turkish_war_1877
+  year: 1877
+  endYear: 1878
+  level: 2
+  title: 俄土战争（1877-1878）
+  summary: 俄国为支持巴尔干斯拉夫民族与奥斯曼交战，胜利后签订《圣斯特凡诺条约》，影响巴尔干格局。
   tags: [战争, 条约外交]
-  related: [japan_russo_japanese]
+
+- id: russia_berlin_congress
+  year: 1878
+  level: 2
+  title: 柏林会议
+  summary: 列强召开柏林会议重新划定巴尔干版图，修改俄国获益过多的《圣斯特凡诺条约》。
+  tags: [条约外交]
+
+- id: russia_narodnaya_volya
+  year: 1879
+  level: 2
+  title: 民意党成立
+  summary: 俄国革命组织民意党成立，以恐怖手段反对沙皇专制，最终成功刺杀亚历山大二世。
+  tags: [革命政变]
+
+- id: russia_alexander_iii_reign
+  year: 1881
+  endYear: 1894
+  level: 2
+  title: 亚历山大三世执政
+  summary: 亚历山大三世即位后推行反改革政策，强化专制，镇压自由主义，提倡俄罗斯民族主义。
+  tags: [王朝更迭]
+
+- id: russia_nicholas_ii_accession
+  year: 1894
+  level: 2
+  title: 尼古拉二世即位
+  summary: 亚历山大三世病逝后，尼古拉二世继承皇位，成为俄罗斯帝国末代沙皇。
+  tags: [王朝更迭]
+  figures: [nicholas_ii]
+
+- id: russia_industrialization_witte
+  year: 1892
+  endYear: 1903
+  level: 2
+  title: 维特工业化政策
+  summary: 财政大臣维特主导俄国工业化，大量吸引外资，推进铁路建设，俄国工业产值快速增长。
+  tags: [经济贸易, 改革运动]
+
+- id: russia_franco_russian_alliance
+  year: 1894
+  level: 2
+  title: 法俄同盟缔结
+  summary: 俄国与法国签订军事同盟，形成对抗德奥意三国同盟的战略格局，重塑欧洲力量均衡。
+  tags: [条约外交]
+
+- id: russia_populist_movement
+  year: 1870
+  endYear: 1880
+  level: 2
+  title: 民粹主义运动高峰
+  summary: 俄国知识分子"到民间去"运动高涨，革命者赴农村宣传，遭当局大规模逮捕镇压。
+  tags: [革命政变, 改革运动]
+
+- id: russia_marxism_enters
+  year: 1883
+  level: 2
+  title: 马克思主义传入俄国
+  summary: 普列汉诺夫在日内瓦创立"劳动解放社"，将马克思主义理论系统引入俄国革命运动。
+  tags: [革命政变, 文化思想]
+  figures: [plekhanov]
+
+- id: russia_beijing_treaty_vladivostok
+  year: 1860
+  level: 2
+  title: 《北京条约》与海参崴
+  summary: 俄国通过《北京条约》获得乌苏里江以东领土，建立符拉迪沃斯托克（海参崴）港口。
+  tags: [条约外交, 殖民扩张]
+
+- id: russia_golden_age_literature
+  year: 1820
+  endYear: 1900
+  level: 2
+  title: 俄国文学黄金时代
+  summary: 普希金、果戈理、屠格涅夫、陀思妥耶夫斯基、托尔斯泰等大师相继涌现，俄国文学成就卓著。
+  tags: [文化思想]
+  figures: [pushkin, turgenev, dostoevsky, tolstoy, gogol]
+
+- id: russia_music_mighty_five
+  year: 1856
+  endYear: 1880
+  level: 2
+  title: '"强力集团"音乐创作'
+  summary: 穆索尔斯基、鲍罗丁、里姆斯基-科萨科夫等五人组成强力集团，创作富有民族特色的音乐。
+  tags: [文化思想]
+  figures: [mussorgsky]
+
+# ==================== Level 3 ====================
+
+- id: russia_kutuzov_appointed
+  year: 1812
+  level: 3
+  title: 库图佐夫任总司令
+  summary: 拿破仑入侵后局势危急，亚历山大一世任命库图佐夫为俄国军队总司令。
+  tags: [战争]
+  figures: [kutuzov]
+
+- id: russia_kutuzov_death
+  year: 1813
+  level: 3
+  title: 库图佐夫逝世
+  summary: 米哈伊尔·库图佐夫在率军追击拿破仑途中于波兰病逝，享年67岁。
+  tags: [人物]
+  figures: [kutuzov]
+
+- id: russia_nations_battle_leipzig
+  year: 1813
+  level: 3
+  title: 莱比锡民族之战
+  summary: 俄普奥英联军大败拿破仑于莱比锡，史称民族之战，拿破仑被迫撤回法国。
+  tags: [战争]
+  figures: [alexander_i]
+
+- id: russia_pushkin_born
+  year: 1799
+  level: 3
+  title: 普希金出生
+  summary: 亚历山大·普希金生于莫斯科，后成为俄国最伟大的诗人，俄语文学的奠基人之一。
+  tags: [人物]
+  figures: [pushkin]
+
+- id: russia_pushkin_ruslan_ludmila
+  year: 1820
+  level: 3
+  title: 普希金《鲁斯兰与柳德米拉》出版
+  summary: 普希金长篇叙事诗《鲁斯兰与柳德米拉》出版，奠定其作为俄国文坛新星的地位。
+  tags: [文化思想]
+  figures: [pushkin]
+
+- id: russia_pushkin_evgeny_onegin
+  year: 1825
+  endYear: 1832
+  level: 3
+  title: 普希金《叶甫根尼·奥涅金》写作
+  summary: 普希金创作韵文小说《叶甫根尼·奥涅金》，被视为俄国文学的百科全书，影响深远。
+  tags: [文化思想]
+  figures: [pushkin]
+
+- id: russia_pushkin_death
+  year: 1837
+  level: 3
+  title: 普希金决斗身亡
+  summary: 普希金在圣彼得堡因捍卫妻子名誉与人决斗中弹，两日后不治身亡，年仅37岁。
+  tags: [人物]
+  figures: [pushkin]
+
+- id: russia_gogol_inspector
+  year: 1836
+  level: 3
+  title: 果戈理《钦差大臣》首演
+  summary: 果戈理讽刺戏剧《钦差大臣》在圣彼得堡首演，犀利嘲讽官场腐败，引起广泛震动。
+  tags: [文化思想]
+  figures: [gogol]
+
+- id: russia_gogol_dead_souls
+  year: 1842
+  level: 3
+  title: 果戈理《死魂灵》出版
+  summary: 果戈理长篇小说《死魂灵》出版，通过地主形象的刻画深刻揭示俄国社会的病态。
+  tags: [文化思想]
+  figures: [gogol]
+
+- id: russia_turgenev_fathers_sons
+  year: 1862
+  level: 3
+  title: 屠格涅夫《父与子》出版
+  summary: 屠格涅夫小说《父与子》出版，塑造"虚无主义者"巴扎罗夫形象，引发社会大讨论。
+  tags: [文化思想]
+  figures: [turgenev]
+
+- id: russia_dostoevsky_crime_punishment
+  year: 1866
+  level: 3
+  title: 陀思妥耶夫斯基《罪与罚》出版
+  summary: 《罪与罚》在《俄国信使》连载出版，确立陀思妥耶夫斯基在世界文学史上的地位。
+  tags: [文化思想]
+  figures: [dostoevsky]
+
+- id: russia_dostoevsky_brothers_karamazov
+  year: 1880
+  level: 3
+  title: 陀思妥耶夫斯基《卡拉马佐夫兄弟》出版
+  summary: 陀思妥耶夫斯基最后一部长篇小说《卡拉马佐夫兄弟》出版，翌年作者病逝。
+  tags: [文化思想]
+  figures: [dostoevsky]
+
+- id: russia_dostoevsky_death
+  year: 1881
+  level: 3
+  title: 陀思妥耶夫斯基逝世
+  summary: 费奥多尔·陀思妥耶夫斯基在圣彼得堡逝世，享年59岁，葬于亚历山大·涅夫斯基修道院。
+  tags: [人物]
+  figures: [dostoevsky]
+
+- id: russia_tolstoy_war_peace
+  year: 1869
+  level: 3
+  title: 托尔斯泰《战争与和平》完成
+  summary: 托尔斯泰历时六年完成长篇历史小说《战争与和平》，被誉为人类文学史最伟大作品之一。
+  tags: [文化思想]
+  figures: [tolstoy]
+
+- id: russia_tolstoy_anna_karenina
+  year: 1878
+  level: 3
+  title: 托尔斯泰《安娜·卡列尼娜》出版
+  summary: 托尔斯泰小说《安娜·卡列尼娜》出版，探讨爱情与社会道德，成为俄国现实主义杰作。
+  tags: [文化思想]
+  figures: [tolstoy]
+
+- id: russia_chekhov_first_plays
+  year: 1887
+  endYear: 1900
+  level: 3
+  title: 契诃夫早期戏剧创作
+  summary: 契诃夫相继创作《伊万诺夫》《海鸥》《万尼亚舅舅》等剧作，开创现代戏剧的新风格。
+  tags: [文化思想]
+  figures: [chekhov]
+
+- id: russia_tchaikovsky_swan_lake
+  year: 1877
+  level: 3
+  title: 柴可夫斯基《天鹅湖》首演
+  summary: 柴可夫斯基芭蕾舞剧《天鹅湖》在莫斯科首演，首演并不成功，后经修订成为经典。
+  tags: [文化思想]
+  figures: [tchaikovsky]
+
+- id: russia_tchaikovsky_death
+  year: 1893
+  level: 3
+  title: 柴可夫斯基逝世
+  summary: 彼得·柴可夫斯基在圣彼得堡逝世，享年53岁，身后留下大量管弦乐、歌剧和芭蕾舞曲。
+  tags: [人物]
+  figures: [tchaikovsky]
+
+- id: russia_mussorgsky_boris_godunov
+  year: 1874
+  level: 3
+  title: 穆索尔斯基《鲍里斯·戈东诺夫》上演
+  summary: 穆索尔斯基歌剧《鲍里斯·戈东诺夫》在圣彼得堡首演，被视为俄国歌剧最重要的代表作。
+  tags: [文化思想]
+  figures: [mussorgsky]
+
+- id: russia_mussorgsky_death
+  year: 1881
+  level: 3
+  title: 穆索尔斯基逝世
+  summary: 穆索尔斯基在圣彼得堡军事医院逝世，享年42岁，多部作品未竟留由友人整理出版。
+  tags: [人物]
+  figures: [mussorgsky]
+
+- id: russia_mendeleev_table
+  year: 1869
+  level: 3
+  title: 门捷列夫发表元素周期表
+  summary: 德米特里·门捷列夫向俄国化学学会提交元素周期律论文，建立现代化学基础框架。
+  tags: [科技发明]
+  figures: [mendeleev]
+
+- id: russia_pavlov_research
+  year: 1891
+  endYear: 1900
+  level: 3
+  title: 巴甫洛夫条件反射研究
+  summary: 伊万·巴甫洛夫开展消化系统和条件反射研究，1904年获得诺贝尔生理学或医学奖。
+  tags: [科技发明]
+  figures: [pavlov]
+
+- id: russia_repin_barge_haulers
+  year: 1873
+  level: 3
+  title: 列宾《伏尔加河上的纤夫》完成
+  summary: 伊利亚·列宾完成油画《伏尔加河上的纤夫》，真实描绘底层劳动者的苦难，引起广泛关注。
+  tags: [文化思想]
+  figures: [repin]
+
+- id: russia_nihilist_movement
+  year: 1860
+  endYear: 1870
+  level: 3
+  title: 虚无主义思想兴起
+  summary: 俄国知识青年间兴起虚无主义思潮，否定传统权威与道德体系，推动激进革命意识形成。
+  tags: [文化思想, 革命政变]
+
+- id: russia_bakunin_anarchism
+  year: 1868
+  level: 3
+  title: 巴枯宁无政府主义活动
+  summary: 巴枯宁在第一国际内推广无政府主义，与马克思产生路线分歧，影响俄国革命左翼思想。
+  tags: [文化思想, 革命政变]
+  figures: [bakunin]
+
+- id: russia_kropotkin_mutual_aid
+  year: 1890
+  level: 3
+  title: 克鲁泡特金互助论发展
+  summary: 克鲁泡特金发展无政府共产主义理论，提出互助论，影响俄国和国际无政府主义运动。
+  tags: [文化思想]
+  figures: [kropotkin]
+
+- id: russia_suppress_poland_1863
+  year: 1863
+  level: 3
+  title: 镇压波兰一月起义
+  summary: 波兰爆发一月起义，俄国军队镇压，约一万人被杀，数万人流放，波兰自治遭进一步削减。
+  tags: [革命政变, 殖民扩张]
+
+- id: russia_glinka_life_for_tsar
+  year: 1836
+  level: 3
+  title: 格林卡《为沙皇献身》首演
+  summary: 格林卡歌剧《为沙皇献身》在圣彼得堡首演，是俄国第一部具有民族风格的大型歌剧。
+  tags: [文化思想]
+  figures: [glinka]
+
+- id: russia_suvorov_death
+  year: 1800
+  level: 3
+  title: 苏沃洛夫逝世
+  summary: 亚历山大·苏沃洛夫在圣彼得堡逝世，享年69岁，一生大小战役未尝一败。
+  tags: [人物]
+  figures: [suvorov]
+
+- id: russia_plekhanov_labor_liberation
+  year: 1883
+  level: 3
+  title: 普列汉诺夫创立劳动解放社
+  summary: 格奥尔基·普列汉诺夫在日内瓦创立俄国第一个马克思主义团体，翻译马克思主义著作。
+  tags: [革命政变, 文化思想]
+  figures: [plekhanov]
+
+- id: russia_famine_1891
+  year: 1891
+  level: 3
+  title: 俄国大饥荒
+  summary: 伏尔加河流域和乌拉尔地区爆发严重饥荒，数十万人死亡，暴露农村经济的脆弱。
+  tags: [经济贸易]
+
+- id: russia_gorky_early_works
+  year: 1892
+  endYear: 1900
+  level: 3
+  title: 高尔基早期文学创作
+  summary: 阿列克谢·高尔基（笔名马克西姆·高尔基）开始发表短篇小说，描绘底层流浪汉生活。
+  tags: [文化思想]
+  figures: [gorky]
+
+- id: russia_rachmaninoff_first_concerto
+  year: 1891
+  level: 3
+  title: 拉赫玛尼诺夫早期创作
+  summary: 拉赫玛尼诺夫在圣彼得堡音乐学院完成学业，开始创作钢琴协奏曲等重要作品。
+  tags: [文化思想]
+  figures: [rachmaninoff]
+
+- id: russia_kandinsky_early_life
+  year: 1866
+  level: 3
+  title: 康定斯基出生
+  summary: 瓦西里·康定斯基生于莫斯科，后成为抽象主义绘画先驱，对现代艺术史影响深远。
+  tags: [人物]
+  figures: [kandinsky]

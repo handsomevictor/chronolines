@@ -1,27 +1,72 @@
+# 德意志 1900-1950（帝国末期→一战→魏玛→纳粹→二战→战败）
+
+# ── Level 1 ──────────────────────────────────────────
+
+- id: germany_naval_buildup
+  year: 1898
+  endYear: 1914
+  level: 1
+  title: 德国海军扩张
+  summary: 威廉二世与海军上将提尔皮茨推动海军扩军计划，与英国展开海军军备竞赛，加剧欧洲紧张。
+  tags: [战争, 殖民扩张]
+  figures: [kaiser_wilhelm_ii]
+
 - id: germany_wwi
   year: 1914
   endYear: 1918
   level: 1
   title: 第一次世界大战
-  summary: 德国以同盟国身份参战，发动西线进攻，战败后签订《凡尔赛条约》，割地赔款。
-  tags: [战争, 条约外交]
-  related: [france_wwi, uk_wwi, russia_wwi]
+  summary: 德国以同盟国身份参战，发动施里芬计划西线进攻，战线陷入堑壕对峙，1918年战败投降。
+  tags: [战争]
+  figures: [kaiser_wilhelm_ii, hindenburg]
+  related: [france_wwi, uk_wwi, russia_wwi_revolution]
+
+- id: germany_nov_revolution
+  year: 1918
+  level: 1
+  title: 十一月革命
+  summary: 基尔水兵起义点燃革命烽火，威廉二世退位，共和国宣告成立，德国君主制终结。
+  tags: [革命政变, 王朝更迭]
   figures: [kaiser_wilhelm_ii]
 
 - id: germany_weimar_republic
   year: 1919
   endYear: 1933
-  level: 2
-  title: 魏玛共和国
-  summary: 德国战后建立议会共和国，面临经济危机和政治动荡，最终被纳粹夺权。
+  level: 1
+  title: 魏玛共和国建立
+  summary: 德国制定魏玛宪法建立议会共和国，面临《凡尔赛条约》束缚、超级通胀与政治极化挑战。
   tags: [王朝更迭, 改革运动]
 
-- id: germany_nazi_rise
+- id: germany_versailles_treaty
+  year: 1919
+  level: 1
+  title: 《凡尔赛条约》签订
+  summary: 德国被迫接受巨额战争赔款、领土割让及军备限制，"战争罪责条款"引发强烈民族情绪。
+  tags: [条约外交]
+  related: [france_wwi, uk_wwi]
+
+- id: germany_hyperinflation
+  year: 1923
+  level: 1
+  title: 超级通货膨胀
+  summary: 1923年德国马克急剧贬值，通胀率达数百亿倍，中产阶级储蓄化为乌有，社会动荡加剧。
+  tags: [经济贸易]
+
+- id: germany_nazi_rise_power
   year: 1933
   level: 1
   title: 纳粹党执政
-  summary: 希特勒出任总理，纳粹党通过《授权法》取得独裁权力，建立一党专政。
+  summary: 1933年1月30日希特勒出任总理，《授权法》通过后取得独裁权，魏玛共和国终结。
   tags: [革命政变, 王朝更迭]
+  figures: [hitler]
+
+- id: germany_holocaust
+  year: 1941
+  endYear: 1945
+  level: 1
+  title: 大屠杀
+  summary: 纳粹德国在欧洲各地建立灭绝营，系统屠杀犹太人及其他群体，各方记载死亡人数存在差异。
+  tags: [战争]
   figures: [hitler]
 
 - id: germany_wwii
@@ -29,15 +74,545 @@
   endYear: 1945
   level: 1
   title: 第二次世界大战
-  summary: 德国发动闪电战入侵波兰，引发欧战，1941年入侵苏联，1945年战败投降。
+  summary: 德国闪击波兰引爆欧战，横扫西欧后入侵苏联，1943年后战局逆转，1945年5月无条件投降。
   tags: [战争]
-  related: [russia_wwii_east, uk_wwii, france_wwii, usa_wwii]
   figures: [hitler, rommel]
+  related: [france_wwii, uk_wwii, russia_wwii_ussr, usa_wwii]
 
-- id: germany_holocaust
-  year: 1941
-  endYear: 1945
+- id: germany_unconditional_surrender
+  year: 1945
   level: 1
-  title: 大屠杀
-  summary: 纳粹德国在欧洲各地建立灭绝营，对犹太人及其他群体实施系统性屠杀。
+  title: 德国无条件投降
+  summary: 1945年5月8日德国无条件投降，欧洲战事结束，德国被盟国四国分区占领。
+  tags: [战争, 条约外交]
+  figures: [hitler]
+  related: [usa_wwii, russia_wwii_ussr, uk_wwii]
+
+- id: germany_einstein_relativity
+  year: 1905
+  level: 1
+  title: 爱因斯坦奇迹年
+  summary: 爱因斯坦1905年发表狭义相对论、光电效应、布朗运动等四篇划时代论文，改变物理学基础。
+  tags: [科技发明]
+  figures: [einstein]
+
+# ── Level 2 ──────────────────────────────────────────
+
+- id: germany_schliffen_plan
+  year: 1914
+  level: 2
+  title: 施里芬计划实施
+  summary: 德军依施里芬计划经比利时进攻法国，因马恩河战役受阻，速决战失败，陷入堑壕战。
   tags: [战争]
+
+- id: germany_marne_battle
+  year: 1914
+  level: 2
+  title: 马恩河战役
+  summary: 法英联军在马恩河阻截德军进攻，德军被迫后退，西线速决战计划宣告失败。
+  tags: [战争]
+  related: [france_wwi]
+
+- id: germany_verdun_battle
+  year: 1916
+  level: 2
+  title: 凡尔登战役
+  summary: 德军发动凡尔登战役意图消耗法军，双方历时10个月伤亡逾70万人，战役以德军撤退告终。
+  tags: [战争]
+  related: [france_wwi]
+
+- id: germany_unrestricted_submarine
+  year: 1917
+  level: 2
+  title: 无限制潜艇战
+  summary: 德国宣布无限制潜艇战，击沉中立国船只，导致美国于1917年对德宣战。
+  tags: [战争]
+  related: [usa_wwi]
+
+- id: germany_brest_litovsk
+  year: 1918
+  level: 2
+  title: 《布列斯特-立托夫斯克条约》
+  summary: 德国与苏俄签订和约，俄国退出战争，德国暂时控制大片东欧领土，随后因西线战败而废止。
+  tags: [条约外交]
+  related: [russia_revolution_1917]
+
+- id: germany_kiel_mutiny
+  year: 1918
+  level: 2
+  title: 基尔水兵起义
+  summary: 德国水兵拒绝执行自杀式出击命令，起义迅速蔓延至汉堡等城市，引发全国革命风潮。
+  tags: [革命政变]
+
+- id: germany_weimar_constitution
+  year: 1919
+  level: 2
+  title: 魏玛宪法颁布
+  summary: 德国制定欧洲最民主的成文宪法之一，设立比例代表制与总统紧急权，后者成为被滥用的漏洞。
+  tags: [改革运动]
+
+- id: germany_ruhr_occupation
+  year: 1923
+  level: 2
+  title: 法比军队占领鲁尔
+  summary: 法国与比利时军队因德国拖欠赔款而占领鲁尔工业区，德国工人被动抵抗，经济进一步崩溃。
+  tags: [经济贸易, 战争]
+  related: [france_interwar]
+
+- id: germany_beer_hall_putsch
+  year: 1923
+  level: 2
+  title: 啤酒馆政变
+  summary: 希特勒率纳粹党在慕尼黑发动政变未遂，被捕入狱，在狱中口述《我的奋斗》。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_dawes_plan
+  year: 1924
+  level: 2
+  title: 道威斯计划
+  summary: 美国主导道威斯计划重组德国赔款安排，美国资本大量流入，德国经济短暂复苏。
+  tags: [经济贸易, 条约外交]
+  related: [usa_interwar]
+
+- id: germany_stresemann_era
+  year: 1923
+  endYear: 1929
+  level: 2
+  title: 施特莱斯曼时代
+  summary: 外长施特莱斯曼推动德国加入国联、签订《洛迦诺公约》，魏玛共和国进入相对稳定时期。
+  tags: [条约外交, 改革运动]
+  figures: [stresemann]
+
+- id: germany_locarno_pact
+  year: 1925
+  level: 2
+  title: 《洛迦诺公约》
+  summary: 德国与法、英、意等国签订边界保证协议，德国重返国际社会，获1926年诺贝尔和平奖。
+  tags: [条约外交]
+  figures: [stresemann]
+
+- id: germany_great_depression_impact
+  year: 1929
+  endYear: 1933
+  level: 2
+  title: 大萧条冲击
+  summary: 美国资本撤离，德国失业人口超600万，社会极度不稳，为纳粹党崛起提供了社会基础。
+  tags: [经济贸易]
+  related: [usa_great_depression]
+
+- id: germany_reichstag_fire
+  year: 1933
+  level: 2
+  title: 国会大厦纵火案
+  summary: 国会大厦遭纵火，纳粹政府将责任归咎于共产党，借此颁布紧急法令，暂停公民自由权利。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_enabling_act
+  year: 1933
+  level: 2
+  title: 《授权法》通过
+  summary: 帝国议会以2/3多数通过《授权法》，赋予希特勒政府无限立法权，魏玛宪政正式终结。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_night_long_knives
+  year: 1934
+  level: 2
+  title: 长刀之夜
+  summary: 希特勒下令清洗冲锋队领导层及政治对手，数百人被杀，纳粹党内权力集中于希特勒。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_nuremberg_laws
+  year: 1935
+  level: 2
+  title: 《纽伦堡法律》颁布
+  summary: 德国颁布剥夺犹太人公民权的《纽伦堡种族法》，系统性歧视犹太人的法律框架正式确立。
+  tags: [改革运动]
+  figures: [hitler]
+
+- id: germany_rhineland_remilitarization
+  year: 1936
+  level: 2
+  title: 莱茵兰重新军事化
+  summary: 德国军队开进非军事区莱茵兰，违反《凡尔赛条约》，英法未采取行动，希特勒声望大涨。
+  tags: [战争, 条约外交]
+  figures: [hitler]
+
+- id: germany_anschluss
+  year: 1938
+  level: 2
+  title: 奥地利并入德国
+  summary: 德国军队进入奥地利，希特勒宣布奥地利并入德意志帝国，各方记载当地反应存在差异。
+  tags: [王朝更迭]
+  figures: [hitler]
+
+- id: germany_munich_agreement
+  year: 1938
+  level: 2
+  title: 《慕尼黑协议》
+  summary: 英法与德意签订《慕尼黑协议》，允许德国吞并捷克苏台德地区，绥靖政策达到顶点。
+  tags: [条约外交]
+  figures: [hitler]
+  related: [uk_appeasement, france_interwar]
+
+- id: germany_kristallnacht
+  year: 1938
+  level: 2
+  title: 水晶之夜
+  summary: 1938年11月9日纳粹党发动全国性反犹骚乱，大批犹太人商铺、会堂遭破坏，数万人被捕。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_poland_invasion
+  year: 1939
+  level: 2
+  title: 闪击波兰
+  summary: 德国以闪电战入侵波兰，17天内华沙被围，英法随即对德宣战，第二次世界大战爆发。
+  tags: [战争]
+  related: [uk_wwii, france_wwii]
+
+- id: germany_france_fall
+  year: 1940
+  level: 2
+  title: 法国陷落
+  summary: 德军绕过马其诺防线穿越阿登山区，40天内击败法国，巴黎被占，法国签署停战协定。
+  tags: [战争]
+  figures: [rommel]
+  related: [france_wwii]
+
+- id: germany_battle_britain
+  year: 1940
+  level: 2
+  title: 不列颠之战
+  summary: 德国空军对英国展开大规模空袭，英国皇家空军成功阻击，德国海狮计划被搁置。
+  tags: [战争]
+  related: [uk_wwii]
+
+- id: germany_operation_barbarossa
+  year: 1941
+  level: 2
+  title: 巴巴罗萨行动
+  summary: 德国以约380万兵力入侵苏联，初期进展迅速，随后在莫斯科城下受阻，东线战事旷日持久。
+  tags: [战争]
+  related: [russia_wwii_ussr]
+
+- id: germany_stalingrad
+  year: 1942
+  endYear: 1943
+  level: 2
+  title: 斯大林格勒战役
+  summary: 德第六集团军在斯大林格勒被围歼，近30万人伤亡或被俘，东线战局自此逆转。
+  tags: [战争]
+  related: [russia_wwii_ussr]
+
+- id: germany_july_plot
+  year: 1944
+  level: 2
+  title: 七月密谋刺杀希特勒
+  summary: 德国陆军军官施陶芬贝格在希特勒大本营放置炸弹，刺杀未遂，参与者遭大规模处决。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_berlin_fall
+  year: 1945
+  level: 2
+  title: 柏林之战
+  summary: 苏军以约250万兵力强攻柏林，希特勒在地堡自杀，柏林于1945年5月2日陷落。
+  tags: [战争]
+  figures: [hitler]
+  related: [russia_wwii_ussr]
+
+- id: germany_weimar_culture_golden
+  year: 1924
+  endYear: 1929
+  level: 2
+  title: 魏玛文化黄金时代
+  summary: 柏林成为欧洲最具活力的文化都市，包豪斯、表现主义电影、爵士乐与夜生活繁荣并存。
+  tags: [文化思想]
+
+- id: germany_heisenberg_uncertainty
+  year: 1927
+  level: 2
+  title: 海森堡不确定性原理
+  summary: 海森堡提出量子力学不确定性原理，表明粒子位置与动量无法同时精确测定，改变物理学基础。
+  tags: [科技发明]
+  figures: [heisenberg]
+
+- id: germany_nuremberg_trials
+  year: 1945
+  endYear: 1946
+  level: 2
+  title: 纽伦堡审判
+  summary: 盟国对德国战犯进行纽伦堡国际军事法庭审判，确立战争罪与反人类罪的国际法先例。
+  tags: [条约外交]
+
+# ── Level 3 ──────────────────────────────────────────
+
+- id: germany_moroccan_crisis_1905
+  year: 1905
+  level: 3
+  title: 第一次摩洛哥危机
+  summary: 威廉二世访问丹吉尔宣示在摩洛哥的权益，引发法德外交危机，欧洲战争风险上升。
+  tags: [殖民扩张, 条约外交]
+  figures: [kaiser_wilhelm_ii]
+
+- id: germany_agadir_crisis
+  year: 1911
+  level: 3
+  title: 第二次摩洛哥危机（阿加迪尔危机）
+  summary: 德国派遣炮艇至摩洛哥阿加迪尔，要求补偿，最终德国获部分刚果领土，英法关系更趋紧密。
+  tags: [殖民扩张, 条约外交]
+
+- id: germany_blank_check_austria
+  year: 1914
+  level: 3
+  title: 德国对奥地利的"空白支票"
+  summary: 萨拉热窝刺杀事件后，德国给予奥匈帝国无条件支持，被史学界视为一战爆发的关键因素之一。
+  tags: [战争, 条约外交]
+  figures: [kaiser_wilhelm_ii]
+
+- id: germany_tannenberg_battle
+  year: 1914
+  level: 3
+  title: 坦能堡战役
+  summary: 德军在坦能堡以少胜多围歼俄国第二集团军，约9万俄军被俘，兴登堡声名大振。
+  tags: [战争]
+  figures: [hindenburg]
+  related: [russia_wwi_revolution]
+
+- id: germany_lusitania_sinking
+  year: 1915
+  level: 3
+  title: 德国击沉卢西塔尼亚号
+  summary: 德国潜艇击沉英国客轮卢西塔尼亚号，约1200人罹难，加速美国舆论向参战倾斜。
+  tags: [战争]
+  related: [usa_wwi]
+
+- id: germany_jutland_battle
+  year: 1916
+  level: 3
+  title: 日德兰海战
+  summary: 德英两国主力舰队在日德兰半岛附近交战，德军战术胜利但战略未能突破英国海上封锁。
+  tags: [战争]
+  related: [uk_wwi]
+
+- id: germany_zimmerann_telegram
+  year: 1917
+  level: 3
+  title: 齐默尔曼电报事件
+  summary: 德国外交部秘密电报建议墨西哥对美宣战，电报被英国截获公布，促使美国国会对德宣战。
+  tags: [条约外交]
+  related: [usa_wwi]
+
+- id: germany_rosa_luxemburg_spartacus
+  year: 1919
+  level: 3
+  title: 斯巴达克同盟起义
+  summary: 罗莎·卢森堡与卡尔·李卜克内西领导柏林工人起义，遭政府军镇压，两人随后被杀。
+  tags: [革命政变]
+
+- id: germany_inflation_rentenmark
+  year: 1923
+  level: 3
+  title: 地租马克稳定货币
+  summary: 德国发行地租马克取代崩溃的纸马克，以1兆旧马克换1新马克，终结超级通胀。
+  tags: [经济贸易]
+
+- id: germany_locarno_spirit
+  year: 1926
+  level: 3
+  title: 德国加入国际联盟
+  summary: 德国在施特莱斯曼斡旋下加入国际联盟，成为常任理事国，重回国际社会舞台。
+  tags: [条约外交]
+  figures: [stresemann]
+
+- id: germany_bauhaus_dessau
+  year: 1919
+  endYear: 1933
+  level: 3
+  title: 包豪斯学院
+  summary: 瓦尔特·格罗皮乌斯在魏玛创立包豪斯，融合艺术与工业设计，对现代设计影响深远。
+  tags: [文化思想]
+
+- id: germany_fritz_lang_metropolis
+  year: 1927
+  level: 3
+  title: 弗里茨·朗《大都会》上映
+  summary: 德国表现主义科幻电影《大都会》上映，以视觉奇观展示工业社会的阶级对立，影响深远。
+  tags: [文化思想]
+
+- id: germany_brecht_opera
+  year: 1928
+  level: 3
+  title: 布莱希特《三分钱歌剧》首演
+  summary: 贝托尔特·布莱希特与库尔特·魏尔合作的《三分钱歌剧》在柏林首演，大获成功。
+  tags: [文化思想]
+  figures: [brecht]
+
+- id: germany_mein_kampf
+  year: 1925
+  level: 3
+  title: 《我的奋斗》出版
+  summary: 希特勒在狱中口述的政治自传《我的奋斗》出版，阐述种族主义与扩张主义思想。
+  tags: [文化思想, 革命政变]
+  figures: [hitler]
+
+- id: germany_nazi_electoral_rise
+  year: 1930
+  endYear: 1932
+  level: 3
+  title: 纳粹党选举大胜
+  summary: 大萧条背景下纳粹党在1930年国会选举获18.3%，1932年7月升至37.4%，成为最大党。
+  tags: [革命政变]
+  figures: [hitler]
+
+- id: germany_book_burning
+  year: 1933
+  level: 3
+  title: 纳粹焚书事件
+  summary: 纳粹学生组织在柏林等地公开焚烧"非德意志"书籍，众多作家、学者被迫流亡海外。
+  tags: [文化思想]
+  figures: [hitler]
+
+- id: germany_gestapo_founded
+  year: 1933
+  level: 3
+  title: 盖世太保成立
+  summary: 纳粹德国建立秘密国家警察（盖世太保），大规模监控、逮捕政治异见人士。
+  tags: [革命政变]
+
+- id: germany_nuremberg_rally
+  year: 1934
+  level: 3
+  title: 纽伦堡党代会
+  summary: 纳粹党在纽伦堡举行大规模党代会，导演里芬施塔尔拍摄宣传纪录片《意志的胜利》。
+  tags: [文化思想, 革命政变]
+  figures: [hitler]
+
+- id: germany_berlin_olympics
+  year: 1936
+  level: 3
+  title: 柏林奥运会
+  summary: 德国承办第11届奥运会，非裔美国运动员杰西·欧文斯夺四金，各方对赛事政治意义解读各异。
+  tags: [文化思想]
+  figures: [hitler]
+
+- id: germany_four_year_plan
+  year: 1936
+  level: 3
+  title: 四年计划
+  summary: 希特勒启动四年计划，戈林主持，目标是四年内使德国经济和军事做好战争准备。
+  tags: [经济贸易, 战争]
+  figures: [hitler]
+
+- id: germany_molotov_ribbentrop
+  year: 1939
+  level: 3
+  title: 《莫洛托夫-里宾特洛甫条约》
+  summary: 德苏签订互不侵犯条约，含秘密议定书划分东欧势力范围，为德国进攻波兰扫清障碍。
+  tags: [条约外交]
+  figures: [hitler]
+  related: [russia_wwii_ussr]
+
+- id: germany_dunkirk_evacuation
+  year: 1940
+  level: 3
+  title: 敦刻尔克撤退
+  summary: 德军停止追击，英法约33万军队从敦刻尔克海滩撤回英国，德军未能全歼英国远征军。
+  tags: [战争]
+  related: [uk_wwii, france_wwii]
+
+- id: germany_north_africa_campaign
+  year: 1941
+  endYear: 1943
+  level: 3
+  title: 北非战役
+  summary: 隆美尔率非洲军团在北非沙漠驰骋，一度逼近开罗，后在阿拉曼被英军击败，被迫撤退。
+  tags: [战争]
+  figures: [rommel]
+  related: [uk_wwii]
+
+- id: germany_wannsee_conference
+  year: 1942
+  level: 3
+  title: 万湖会议
+  summary: 纳粹高级官员在柏林万湖召开秘密会议，协调"最终解决方案"的系统化实施。
+  tags: [战争]
+
+- id: germany_d_day_response
+  year: 1944
+  level: 3
+  title: 诺曼底登陆后的德军反应
+  summary: 盟军在诺曼底登陆，德军指挥决策迟缓，装甲部队未能及时投入反击，西线防线逐步崩溃。
+  tags: [战争]
+  related: [usa_wwii, uk_wwii, france_wwii]
+
+- id: germany_v_weapons
+  year: 1944
+  level: 3
+  title: V-1、V-2导弹攻击英国
+  summary: 德国发射V-1飞弹和V-2弹道导弹轰炸英国城市，是历史上首次实战部署弹道导弹。
+  tags: [科技发明, 战争]
+  related: [uk_wwii]
+
+- id: germany_battle_of_bulge
+  year: 1944
+  endYear: 1945
+  level: 3
+  title: 阿登反击战
+  summary: 德军在阿登发动最后一次大规模攻势，初期突破盟军防线，最终因油料不足而失败。
+  tags: [战争]
+  related: [usa_wwii]
+
+- id: germany_atomic_bomb_program
+  year: 1939
+  endYear: 1945
+  level: 3
+  title: 德国核武器研究计划
+  summary: 德国铀俱乐部研究核武器，因资源分散与海森堡估算错误等因素，未能制造原子弹。
+  tags: [科技发明]
+  figures: [heisenberg]
+
+- id: germany_einstein_us_letter
+  year: 1939
+  level: 3
+  title: 爱因斯坦致罗斯福信函
+  summary: 爱因斯坦致信罗斯福总统，提醒核武器的可能性，间接推动美国曼哈顿计划启动。
+  tags: [科技发明]
+  figures: [einstein]
+  related: [usa_wwii]
+
+- id: germany_refugee_exodus
+  year: 1933
+  endYear: 1939
+  level: 3
+  title: 德国知识分子流亡潮
+  summary: 大批科学家、艺术家、学者因纳粹迫害被迫出走，爱因斯坦、布莱希特等人流亡美英。
+  tags: [文化思想]
+  figures: [einstein, brecht, thomas_mann]
+
+- id: germany_stunde_null
+  year: 1945
+  level: 3
+  title: 零点时刻
+  summary: 德国战败后，城市大面积被毁，数百万人流亡，"零点时刻"成为德国人描述战后重建起点的历史概念。
+  tags: [战争]
+
+- id: germany_potsdam_conference
+  year: 1945
+  level: 3
+  title: 波茨坦会议
+  summary: 美英苏三国领导人在波茨坦会议确定战后德国处置方案，含非纳粹化、赔款与领土问题。
+  tags: [条约外交]
+  related: [usa_wwii, russia_wwii_ussr, uk_wwii]
+
+- id: germany_planck_bomb_aftermath
+  year: 1944
+  level: 3
+  title: 普朗克家族的战争悲剧
+  summary: 马克斯·普朗克之子埃尔文因参与1944年七月密谋而遭纳粹处决，普朗克晚年深受打击。
+  tags: [文化思想]
+  figures: [planck]

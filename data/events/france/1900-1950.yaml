@@ -1,3 +1,7 @@
+# 法国 1900-1950 历史事件
+
+# ===== Level 1 =====
+
 - id: france_wwi
   year: 1914
   endYear: 1918
@@ -7,36 +11,436 @@
   tags: [战争]
   related: [germany_wwi, uk_wwi]
 
-- id: france_versailles
+- id: france_verdun
+  year: 1916
+  level: 1
+  title: 凡尔登战役
+  summary: 法德两军在凡尔登激战约10个月，伤亡人数各方记载存在差异，法军守住阵地。
+  tags: [战争]
+  figures: [petain]
+
+- id: france_versailles_treaty
   year: 1919
-  level: 2
+  level: 1
   title: 《凡尔赛条约》签订
-  summary: 巴黎和会在法国召开，签订《凡尔赛条约》，确定战后欧洲秩序。
+  summary: 巴黎和会在法国召开，《凡尔赛条约》确定战后秩序，法国收回阿尔萨斯-洛林。
   tags: [条约外交]
-  related: [germany_wwi]
+
+- id: france_wwii_fall
+  year: 1940
+  level: 1
+  title: 法国沦陷
+  summary: 德军绕过马其诺防线，6周内击败法军，法国签署停战协定，维希政府成立。
+  tags: [战争]
+  related: [germany_wwii]
+
+- id: france_free_france
+  year: 1940
+  endYear: 1944
+  level: 1
+  title: 自由法国运动
+  summary: 戴高乐在伦敦发表"六·一八"演说，组建自由法国力量，坚持对德抵抗。
+  tags: [战争, 革命政变]
+  figures: [de_gaulle]
+
+- id: france_liberation_1944
+  year: 1944
+  level: 1
+  title: 法国光复
+  summary: 诺曼底登陆后盟军推进，8月巴黎解放，戴高乐领导临时政府重建法国。
+  tags: [战争]
+  figures: [de_gaulle]
+
+- id: france_fourth_republic
+  year: 1946
+  level: 1
+  title: 法兰西第四共和国成立
+  summary: 战后新宪法通过，第四共和国建立，议会制政体使政府更迭频繁。
+  tags: [王朝更迭, 改革运动]
+
+# ===== Level 2 =====
+
+- id: france_dreyfus_retrial
+  year: 1906
+  level: 2
+  title: 德雷福斯最终平反
+  summary: 最高法院宣判德雷福斯无罪，恢复军衔，事件最终以共和派和世俗派胜利告终。
+  tags: [改革运动]
+  figures: [zola]
+
+- id: france_church_state_separation
+  year: 1905
+  level: 2
+  title: 政教分离法
+  summary: 法国通过政教分离法，确立国家与天主教会的正式分离，奠定法国世俗主义基础。
+  tags: [改革运动, 文化思想]
+
+- id: france_triple_entente
+  year: 1907
+  level: 2
+  title: 三国协约形成
+  summary: 法国、英国、俄国三国协约正式确立，与三国同盟对峙，欧洲对抗格局成型。
+  tags: [条约外交]
+
+- id: france_marne_first_battle
+  year: 1914
+  level: 2
+  title: 第一次马恩河战役
+  summary: 法军在马恩河阻止德军推进，史称"马恩河奇迹"，西线陷入堑壕战僵局。
+  tags: [战争]
+
+- id: france_somme_battle
+  year: 1916
+  level: 2
+  title: 索姆河战役
+  summary: 英法联军在索姆河发动大规模进攻，伤亡人数各方记载存在差异，战线推进有限。
+  tags: [战争]
+
+- id: france_mutinies_1917
+  year: 1917
+  level: 2
+  title: 法军兵变
+  summary: 尼韦尔攻势失败后，法军多个师爆发兵变，贝当接任总司令后逐步恢复秩序。
+  tags: [战争]
+  figures: [petain]
+
+- id: france_locarno_pact
+  year: 1925
+  level: 2
+  title: 《洛迦诺公约》
+  summary: 法国与德国、比利时互保边界，法国主导战后欧洲和解外交努力。
+  tags: [条约外交]
 
 - id: france_maginot_line
   year: 1930
   endYear: 1936
-  level: 3
+  level: 2
   title: 马其诺防线建造
-  summary: 法国沿德法边境建造大规模防御工事体系，旨在防范德国入侵。
+  summary: 法国沿德法边境建造大规模防御工事体系，旨在防范德国再度入侵。
   tags: [战争]
 
-- id: france_wwii
+- id: france_popular_front
+  year: 1936
+  endYear: 1938
+  level: 2
+  title: 人民阵线政府执政
+  summary: 社会党、共产党、激进党联合组成人民阵线政府，推行社会改革立法。
+  tags: [改革运动]
+  figures: [blum]
+
+- id: france_40_hour_week
+  year: 1936
+  level: 2
+  title: 实行每周40小时工作制
+  summary: 人民阵线政府通过法律，规定每周工作40小时和带薪假期，法国劳工权利重要里程碑。
+  tags: [改革运动, 经济贸易]
+  figures: [blum]
+
+- id: france_phony_war
   year: 1939
-  endYear: 1945
-  level: 1
-  title: 第二次世界大战
-  summary: 法国1940年沦陷，维希政府成立，戴高乐领导自由法国继续抵抗，1944年光复。
+  endYear: 1940
+  level: 2
+  title: 奇怪战争
+  summary: 法国对德宣战后双方长达8个月无大规模交战，法国以为马其诺防线可保安全。
   tags: [战争]
-  related: [germany_wwii, uk_wwii]
+
+- id: france_vichy_regime
+  year: 1940
+  endYear: 1944
+  level: 2
+  title: 维希政府
+  summary: 贝当元帅领导维希法国与德国合作，实行威权统治，各方对其性质评价存在分歧。
+  tags: [战争, 王朝更迭]
+  figures: [petain]
+
+- id: france_resistance_movement
+  year: 1940
+  endYear: 1944
+  level: 2
+  title: 法国抵抗运动
+  summary: 法国各地自发形成抵抗组织，与自由法国配合开展情报、破坏和游击活动。
+  tags: [战争]
   figures: [de_gaulle]
 
-- id: france_suez
-  year: 1956
+- id: france_normandy_landing
+  year: 1944
   level: 2
-  title: 参与苏伊士运河危机
-  summary: 法国与英国、以色列联合入侵埃及，迫于国际压力撤军。
+  title: 诺曼底登陆
+  summary: 1944年6月6日，英美加盟军在诺曼底登陆，法国境内大规模战事重新开始。
+  tags: [战争]
+
+- id: france_paris_liberation
+  year: 1944
+  level: 2
+  title: 巴黎解放
+  summary: 盟军与法国内部起义者共同解放巴黎，戴高乐率领的法国军队率先入城。
+  tags: [战争]
+  figures: [de_gaulle]
+
+- id: france_provisional_government
+  year: 1944
+  endYear: 1946
+  level: 2
+  title: 戴高乐领导临时政府
+  summary: 戴高乐主持战后重建，推行国有化政策，创建社会保障体系，1946年辞职。
+  tags: [改革运动]
+  figures: [de_gaulle]
+
+- id: france_women_suffrage
+  year: 1944
+  level: 2
+  title: 法国女性获得选举权
+  summary: 临时政府颁布法令赋予法国女性选举权，她们于1945年首次参与全国选举投票。
+  tags: [改革运动]
+
+- id: france_indochina_war_begins
+  year: 1946
+  level: 2
+  title: 第一次印度支那战争爆发
+  summary: 法国与越盟在印度支那展开战争，法国试图恢复殖民统治与越南独立运动对抗。
+  tags: [战争, 殖民扩张]
+
+# ===== Level 3 =====
+
+- id: france_proust_swann
+  year: 1913
+  level: 3
+  title: 普鲁斯特《追忆似水年华》第一卷出版
+  summary: 普鲁斯特出版《追忆似水年华》第一卷，开创意识流小说新风格。
+  tags: [文化思想]
+  figures: [proust]
+
+- id: france_assassination_jaurès
+  year: 1914
+  level: 3
+  title: 社会主义领袖饶勒斯遇刺
+  summary: 坚决反战的社会党领袖饶勒斯在巴黎咖啡馆遭民族主义者刺杀，战争前夕和平之声消失。
+  tags: [战争]
+
+- id: france_mobilization_1914
+  year: 1914
+  level: 3
+  title: 法国宣布总动员
+  summary: 奥匈对塞尔维亚宣战后，法国随即宣布总动员，数百万士兵奔赴前线。
+  tags: [战争]
+
+- id: france_trench_warfare
+  year: 1914
+  endYear: 1918
+  level: 3
+  title: 西线堑壕战
+  summary: 马恩河战役后西线形成绵延数百公里的堑壕体系，双方陷入长期阵地战。
+  tags: [战争]
+
+- id: france_ypres_gas_attack
+  year: 1915
+  level: 3
+  title: 伊普尔毒气战
+  summary: 德军在伊普尔首次大规模使用氯气，法军遭受严重损失，化学战时代开启。
+  tags: [战争, 科技发明]
+
+- id: france_verdun_fort_douaumont
+  year: 1916
+  level: 3
+  title: 杜奥蒙要塞攻防
+  summary: 凡尔登战役中双方围绕杜奥蒙要塞反复争夺，成为凡尔登战役最激烈局部战斗。
+  tags: [战争]
+
+- id: france_petain_verdun_commander
+  year: 1916
+  level: 3
+  title: 贝当出任凡尔登守将
+  summary: 贝当接替凡尔登指挥，以"他们不会通过"的口号激励士气，赢得"凡尔登英雄"称号。
+  tags: [战争]
+  figures: [petain]
+
+- id: france_nivelle_offensive
+  year: 1917
+  level: 3
+  title: 尼韦尔攻势失败
+  summary: 法军总司令尼韦尔发动大规模攻势，伤亡惨重却未能突破，引发大规模兵变。
+  tags: [战争]
+
+- id: france_paris_peace_conference
+  year: 1919
+  endYear: 1920
+  level: 3
+  title: 巴黎和会召开
+  summary: 战胜国在凡尔赛宫召开和会，克里孟梭代表法国力争最大战争赔偿和领土补偿。
+  tags: [条约外交]
+
+- id: france_clemenceau_tiger
+  year: 1917
+  endYear: 1920
+  level: 3
+  title: 克里孟梭主导战时法国
+  summary: 克里孟梭出任总理，以铁腕手段主持战时动员和外交，推动法国坚持至战争胜利。
+  tags: [战争]
+
+- id: france_reparations_demand
+  year: 1919
+  level: 3
+  title: 法国争取最高战争赔款
+  summary: 法国在巴黎和会坚持对德索取巨额战争赔款，以弥补战争破坏造成的损失。
+  tags: [条约外交, 经济贸易]
+
+- id: france_ruhr_occupation
+  year: 1923
+  endYear: 1925
+  level: 3
+  title: 法国占领鲁尔工业区
+  summary: 德国拖欠战争赔款，法比联军出兵占领鲁尔，遭到德国消极抵抗，最终撤军。
+  tags: [战争, 经济贸易]
+
+- id: france_briand_kellogg_pact
+  year: 1928
+  level: 3
+  title: 白里安参与《非战公约》
+  summary: 法国外长白里安与美国国务卿凯洛格共同推动《非战公约》，宣布以战争解决国际争端为非法。
+  tags: [条约外交]
+
+- id: france_great_depression_impact
+  year: 1931
+  endYear: 1935
+  level: 3
+  title: 大萧条冲击法国
+  summary: 世界经济危机波及法国，工业产值下降，失业增加，政局动荡，极右派运动兴起。
+  tags: [经济贸易]
+
+- id: france_stavisky_affair
+  year: 1934
+  level: 3
+  title: 斯塔维斯基事件
+  summary: 金融骗局暴露出政界腐败，引发极右团体在巴黎冲击议会，共和国面临危机。
+  tags: [革命政变]
+
+- id: france_blum_election
+  year: 1936
+  level: 3
+  title: 莱昂·布鲁姆出任总理
+  summary: 社会党领袖莱昂·布鲁姆成为法国历史上首位社会主义者兼犹太裔总理。
+  tags: [改革运动]
+  figures: [blum]
+
+- id: france_matignon_agreements
+  year: 1936
+  level: 3
+  title: 马提尼翁协议
+  summary: 人民阵线政府与资方签署马提尼翁协议，规定加薪和集体谈判权，是劳工权利重大进展。
+  tags: [改革运动, 经济贸易]
+  figures: [blum]
+
+- id: france_munich_agreement
+  year: 1938
+  level: 3
+  title: 签署慕尼黑协定
+  summary: 法国总理达拉第与英德意签署慕尼黑协定，将苏台德区让与德国，法国后被批评为绥靖。
+  tags: [条约外交]
+
+- id: france_war_declaration_1939
+  year: 1939
+  level: 3
+  title: 法国对德宣战
+  summary: 德国入侵波兰后，法国于1939年9月3日对德宣战，第二次世界大战西线战场开启。
+  tags: [战争]
+
+- id: france_dunkirk_evacuation
+  year: 1940
+  level: 3
+  title: 敦刻尔克大撤退
+  summary: 法英联军在敦刻尔克被围，通过海上撤退保存大量兵力，法军也有部队参与撤退。
+  tags: [战争]
+
+- id: france_armistice_1940
+  year: 1940
+  level: 3
+  title: 法德停战协定签署
+  summary: 法国在贡比涅签署停战协定，北部由德国占领，南部成立维希政府。
   tags: [战争, 条约外交]
-  related: [uk_suez_crisis]
+  figures: [petain]
+
+- id: france_de_gaulle_june18_appeal
+  year: 1940
+  level: 3
+  title: 戴高乐"六·一八"广播
+  summary: 戴高乐在BBC发表广播讲话，呼吁法国人继续抵抗，被视为自由法国运动的创始宣言。
+  tags: [战争]
+  figures: [de_gaulle]
+
+- id: france_vel_dhiv_roundup
+  year: 1942
+  level: 3
+  title: 冬赛馆大逮捕
+  summary: 维希警察逮捕巴黎数千名犹太人并交德国，各方记载对维希当局责任存在不同解读。
+  tags: [战争]
+  figures: [petain]
+
+- id: france_resistance_jean_moulin
+  year: 1943
+  level: 3
+  title: 让·穆兰统一抵抗运动
+  summary: 戴高乐特使让·穆兰将法国各抵抗组织整合为全国抵抗委员会，后遭盖世太保逮捕。
+  tags: [战争]
+
+- id: france_liberation_provence
+  year: 1944
+  level: 3
+  title: 普罗旺斯登陆
+  summary: 盟军在法国南部普罗旺斯登陆，配合诺曼底方向推进，加速法国全境解放。
+  tags: [战争]
+
+- id: france_nuremberg_trial_participation
+  year: 1945
+  endYear: 1946
+  level: 3
+  title: 参与纽伦堡审判
+  summary: 法国作为战胜国参与纽伦堡国际军事法庭，审判纳粹德国战争罪犯。
+  tags: [条约外交, 战争]
+
+- id: france_petain_trial
+  year: 1945
+  level: 3
+  title: 贝当受审
+  summary: 贝当因叛国罪受审，被判死刑后戴高乐将其减为终身监禁，1951年在岛上去世。
+  tags: [战争]
+  figures: [petain, de_gaulle]
+
+- id: france_social_security_created
+  year: 1945
+  level: 3
+  title: 建立社会保障体系
+  summary: 临时政府建立法国社会保障制度，涵盖医疗、退休和失业保险，奠定福利国家基础。
+  tags: [改革运动]
+  figures: [de_gaulle]
+
+- id: france_nationalizations_1945
+  year: 1945
+  level: 3
+  title: 战后国有化浪潮
+  summary: 临时政府将煤矿、航空、银行等关键产业收归国有，推动战后经济重建。
+  tags: [经济贸易, 改革运动]
+  figures: [de_gaulle]
+
+- id: france_sartre_existentialism
+  year: 1945
+  level: 3
+  title: 萨特宣扬存在主义
+  summary: 萨特发表演讲和著作，将存在主义哲学推向公众，成为战后法国最具影响力的思想家。
+  tags: [文化思想]
+  figures: [sartre]
+
+- id: france_camus_stranger
+  year: 1942
+  level: 3
+  title: 加缪《局外人》出版
+  summary: 加缪出版《局外人》，荒诞主义文学代表作，二战期间在被占领的巴黎问世。
+  tags: [文化思想]
+  figures: [camus]
+
+- id: france_curie_chemistry_nobel
+  year: 1911
+  level: 3
+  title: 居里夫人获诺贝尔化学奖
+  summary: 玛丽·居里因发现镭和钋获诺贝尔化学奖，成为首位两度获诺贝尔奖的人。
+  tags: [科技发明]
+  figures: [marie_curie]

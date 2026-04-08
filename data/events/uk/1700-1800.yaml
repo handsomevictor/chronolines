@@ -1,40 +1,852 @@
-- id: uk_act_of_union
+# UK Events 1700-1800
+# Level 1: 10 events | Level 2: 30 events | Level 3: 68 events
+
+# ─── Level 1 ───────────────────────────────────────────────────────────────
+
+- id: uk_queen_anne_reign
+  year: 1702
+  endYear: 1714
+  level: 1
+  title: 安妮女王即位
+  summary: 安妮女王继承英格兰、苏格兰及爱尔兰王位，斯图亚特王朝末代君主。
+  tags: [王朝更迭]
+  figures: [queen_anne]
+
+- id: uk_act_of_union_1707
   year: 1707
   level: 1
-  title: 英格兰与苏格兰合并
-  summary: 《联合法案》通过，英格兰与苏格兰合并为大不列颠王国。
+  title: 大不列颠王国成立
+  summary: 《联合法令》通过，英格兰与苏格兰议会合并，大不列颠王国正式成立。
   tags: [条约外交, 王朝更迭]
+
+- id: uk_hanover_dynasty
+  year: 1714
+  level: 1
+  title: 汉诺威王朝开始
+  summary: 安妮女王驾崩，乔治一世继位，汉诺威王朝在英国开始，延续至1901年。
+  tags: [王朝更迭]
+  figures: [george_i]
 
 - id: uk_seven_years_war
   year: 1756
   endYear: 1763
   level: 1
   title: 七年战争
-  summary: 英国与法国等欧洲强国展开全球争霸，英国最终获得大量殖民地。
+  summary: 英国联合普鲁士对抗法国、奥地利等国，战场遍及五大洲，英国扩大殖民版图。
   tags: [战争, 殖民扩张]
   related: [france_seven_years_war]
+  figures: [pitt_elder]
 
 - id: uk_industrial_revolution
   year: 1760
   endYear: 1840
   level: 1
   title: 工业革命
-  summary: 英国率先发生工业革命，蒸汽机广泛应用，纺织、冶铁等行业机械化生产。
+  summary: 英国率先发生工业革命，蒸汽机普及，纺织、冶铁等行业实现机械化生产。
   tags: [科技发明, 经济贸易]
 
-- id: uk_american_independence
-  year: 1776
+- id: uk_american_revolution
+  year: 1775
   endYear: 1783
   level: 1
   title: 美国独立战争
-  summary: 北美十三州宣布独立，经过战争后英国承认美国独立，签订《巴黎条约》。
+  summary: 北美十三殖民地宣布独立并击败英军，英国签订《巴黎条约》承认美国独立。
   tags: [战争, 条约外交]
   related: [usa_independence]
+  figures: [george_iii]
 
-- id: uk_watt_steam
+- id: uk_spain_succession_war
+  year: 1702
+  endYear: 1713
+  level: 1
+  title: 西班牙王位继承战争
+  summary: 英国参与欧洲联军对抗法国，战争以《乌得勒支条约》结束，英国获得直布罗陀。
+  tags: [战争, 条约外交]
+
+- id: uk_ireland_rebellion_1798
+  year: 1798
+  level: 1
+  title: 爱尔兰联合爱尔兰人起义
+  summary: 受法国大革命影响，爱尔兰爆发武装起义，遭英军镇压，为联合法令铺路。
+  tags: [革命政变]
+
+- id: uk_george_iii_reign
+  year: 1760
+  endYear: 1820
+  level: 1
+  title: 乔治三世在位
+  summary: 英国历史上在位时间最长君主之一，任内经历美国独立与工业革命兴起。
+  tags: [王朝更迭]
+  figures: [george_iii]
+
+- id: uk_utrecht_treaty
+  year: 1713
+  level: 1
+  title: 《乌得勒支条约》签订
+  summary: 西班牙王位继承战争结束，英国获得直布罗陀、梅诺卡岛及北美殖民地权益。
+  tags: [条约外交, 殖民扩张]
+
+# ─── Level 2 ───────────────────────────────────────────────────────────────
+
+- id: uk_marlborough_campaigns
+  year: 1704
+  endYear: 1711
+  level: 2
+  title: 马尔博罗公爵欧陆征战
+  summary: 马尔博罗公爵率英军在布伦海姆、拉米利等役中大败法军，确立英国军事威望。
+  tags: [战争]
+  figures: [marlborough]
+
+- id: uk_south_sea_bubble
+  year: 1720
+  level: 2
+  title: 南海泡沫事件
+  summary: 南海公司股价暴涨后崩溃，大量投资者破产，暴露早期金融监管缺陷。
+  tags: [经济贸易]
+
+- id: uk_walpole_pm
+  year: 1721
+  endYear: 1742
+  level: 2
+  title: 沃波尔担任首相
+  summary: 罗伯特·沃波尔成为英国事实上的首位首相，确立内阁制与议会政府惯例。
+  tags: [改革运动]
+  figures: [walpole]
+
+- id: uk_methodism_founded
+  year: 1739
+  level: 2
+  title: 卫理公会创立
+  summary: 约翰·卫斯理与弟弟查理开始布道运动，卫理公会兴起，成为新教重要支系。
+  tags: [文化思想]
+  figures: [john_wesley]
+
+- id: uk_jenkins_ear_war
+  year: 1739
+  endYear: 1748
+  level: 2
+  title: 詹金斯的耳朵战争
+  summary: 英国与西班牙因贸易争端开战，后并入奥地利王位继承战争，英国扩大加勒比影响。
+  tags: [战争, 经济贸易]
+
+- id: uk_austrian_succession_war
+  year: 1740
+  endYear: 1748
+  level: 2
+  title: 奥地利王位继承战争
+  summary: 英国支持奥地利女皇玛丽亚·特蕾莎，与法国、普鲁士展开欧洲争霸。
+  tags: [战争]
+
+- id: uk_battle_of_plassey
+  year: 1757
+  level: 2
+  title: 普拉西战役
+  summary: 英国东印度公司军队击败孟加拉纳瓦布及法国盟军，奠定英国控制印度基础。
+  tags: [战争, 殖民扩张]
+  figures: [clive_of_india]
+
+- id: uk_conquest_of_canada
+  year: 1759
+  level: 2
+  title: 征服加拿大
+  summary: 英军在魁北克战役击败法军，沃尔夫将军阵亡，法属加拿大正式并入英国版图。
+  tags: [战争, 殖民扩张]
+
+- id: uk_stamp_act
+  year: 1765
+  level: 2
+  title: 印花税法颁布
+  summary: 英国议会对北美殖民地征收印花税，引发强烈抗议，成为美国独立战争导火索之一。
+  tags: [改革运动, 经济贸易]
+  related: [usa_stamp_act_crisis]
+
+- id: uk_hargreaves_jenny
+  year: 1764
+  level: 2
+  title: 珍妮纺纱机发明
+  summary: 詹姆斯·哈格里夫斯发明多锭珍妮纺纱机，大幅提升棉纱产量，推动纺织工业化。
+  tags: [科技发明]
+  figures: [hargreaves]
+
+- id: uk_watt_steam_engine
   year: 1769
   level: 2
   title: 瓦特改良蒸汽机
-  summary: 詹姆斯·瓦特取得改良蒸汽机专利，为工业革命提供重要动力来源。
+  summary: 詹姆斯·瓦特取得改良蒸汽机专利，独立冷凝器设计大幅提升热效率。
   tags: [科技发明]
   figures: [james_watt]
+
+- id: uk_arkwright_water_frame
+  year: 1769
+  level: 2
+  title: 阿克赖特水力纺纱机
+  summary: 理查德·阿克赖特发明水力纺纱机并建立工厂制度，推动现代工厂模式诞生。
+  tags: [科技发明, 经济贸易]
+  figures: [arkwright]
+
+- id: uk_boston_tea_party
+  year: 1773
+  level: 2
+  title: 波士顿倾茶事件
+  summary: 北美殖民者将东印度公司茶叶倒入波士顿港，抗议英国垄断茶叶贸易及征税。
+  tags: [革命政变]
+  related: [usa_boston_tea]
+
+- id: uk_wealth_of_nations
+  year: 1776
+  level: 2
+  title: 《国富论》出版
+  summary: 亚当·斯密出版《国富论》，系统阐述自由市场、劳动分工与国民财富理论。
+  tags: [文化思想, 经济贸易]
+  figures: [adam_smith]
+
+- id: uk_paris_treaty_1783
+  year: 1783
+  level: 2
+  title: 《巴黎条约》签订
+  summary: 英国正式承认美利坚合众国独立，将密西西比河以东领土割让给美国。
+  tags: [条约外交]
+
+- id: uk_pitt_younger_pm
+  year: 1783
+  endYear: 1801
+  level: 2
+  title: 小皮特担任首相
+  summary: 小威廉·皮特出任首相，推行财政改革与自由贸易政策，主导对法战争准备。
+  tags: [改革运动]
+  figures: [pitt_younger]
+
+- id: uk_india_act_1784
+  year: 1784
+  level: 2
+  title: 印度法案通过
+  summary: 英国议会通过《印度法案》，设立双重政府体制，加强国家对东印度公司监管。
+  tags: [改革运动, 殖民扩张]
+
+- id: uk_french_revolution_response
+  year: 1789
+  endYear: 1793
+  level: 2
+  title: 英国对法国大革命的回应
+  summary: 法国大革命爆发后英国舆论分裂，伯克发表《对法国大革命的反思》，反对激进变革。
+  tags: [文化思想, 革命政变]
+  figures: [burke]
+
+- id: uk_abolitionist_movement
+  year: 1787
+  endYear: 1807
+  level: 2
+  title: 废奴运动兴起
+  summary: 威廉·威伯福斯等人在议会推动废除奴隶贸易，废奴协会成立并展开公众运动。
+  tags: [改革运动]
+  figures: [wilberforce]
+
+- id: uk_ireland_act_of_union_1800
+  year: 1800
+  level: 2
+  title: 《爱尔兰联合法令》
+  summary: 英国与爱尔兰议会合并，大不列颠及爱尔兰联合王国正式成立，1801年生效。
+  tags: [条约外交, 王朝更迭]
+
+- id: uk_enclosure_movement
+  year: 1750
+  endYear: 1820
+  level: 2
+  title: 圈地运动高峰
+  summary: 议会圈地法令大规模颁布，公有土地转为私有，大批农民失地涌入城市工厂。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_seven_years_war_treaty
+  year: 1763
+  level: 2
+  title: 《巴黎和约》结束七年战争
+  summary: 英法签订和约，英国获得加拿大、佛罗里达、塞内加尔及印度大片殖民地。
+  tags: [条约外交, 殖民扩张]
+
+- id: uk_george_i_accession
+  year: 1714
+  level: 2
+  title: 乔治一世继位
+  summary: 汉诺威选帝侯乔治登上英国王位，依据《定居法》排除斯图亚特天主教继承权。
+  tags: [王朝更迭]
+  figures: [george_i]
+
+- id: uk_jacobite_rising_1715
+  year: 1715
+  level: 2
+  title: 1715年詹姆斯党叛乱
+  summary: 苏格兰詹姆斯党支持者起兵拥立詹姆斯三世，遭政府军镇压于谢里夫穆尔战役。
+  tags: [革命政变]
+
+- id: uk_jacobite_rising_1745
+  year: 1745
+  level: 2
+  title: 1745年詹姆斯党叛乱
+  summary: 小王位觊觎者查理·爱德华·斯图亚特入侵苏格兰，在卡洛登战役惨败，詹姆斯运动终结。
+  tags: [革命政变]
+
+- id: uk_gordon_riots
+  year: 1780
+  level: 2
+  title: 戈登暴动
+  summary: 伦敦爆发大规模反天主教骚乱，持续数日，数百人死伤，英国历史最大城市骚乱之一。
+  tags: [革命政变]
+
+- id: uk_iron_industry_growth
+  year: 1780
+  endYear: 1800
+  level: 2
+  title: 冶铁业快速扩张
+  summary: 焦炭炼铁与蒸汽鼓风技术结合，英国生铁产量在18世纪末数倍增长。
+  tags: [科技发明, 经济贸易]
+
+- id: uk_canal_mania
+  year: 1790
+  endYear: 1800
+  level: 2
+  title: 运河建设热潮
+  summary: 英国各地兴建运河，形成连通煤矿、工厂与港口的内河运输网络，促进贸易扩张。
+  tags: [经济贸易, 科技发明]
+
+- id: uk_newspaper_growth
+  year: 1702
+  level: 2
+  title: 英国报业兴起
+  summary: 《每日新闻》于1702年创刊，成为英国第一份日报，推动公共舆论与新闻自由发展。
+  tags: [文化思想]
+
+- id: uk_bank_of_england_notes
+  year: 1797
+  level: 2
+  title: 英格兰银行停止兑付黄金
+  summary: 对法战争财政压力下，英格兰银行暂停银行券兑换黄金，纸币正式成为主要货币。
+  tags: [经济贸易]
+
+# ─── Level 3 ───────────────────────────────────────────────────────────────
+
+- id: uk_anne_coronation
+  year: 1702
+  level: 3
+  title: 安妮女王加冕
+  summary: 安妮女王在威斯敏斯特教堂举行加冕典礼，宣誓维护新教信仰与议会权威。
+  tags: [王朝更迭]
+
+- id: uk_blenheim_battle
+  year: 1704
+  level: 3
+  title: 布伦海姆战役
+  summary: 马尔博罗公爵联合奥地利亲王欧根击败法巴联军，被视为英国历史最辉煌战役之一。
+  tags: [战争]
+  figures: [marlborough]
+
+- id: uk_scotland_parliament_dissolved
+  year: 1707
+  level: 3
+  title: 苏格兰议会解散
+  summary: 苏格兰议会依据《联合法令》自行解散，苏格兰议员并入威斯敏斯特议会。
+  tags: [王朝更迭]
+
+- id: uk_ramillies_battle
+  year: 1706
+  level: 3
+  title: 拉米利战役
+  summary: 马尔博罗公爵在比利时大败法军，英荷联军控制西属尼德兰大部分地区。
+  tags: [战争]
+  figures: [marlborough]
+
+- id: uk_anne_death
+  year: 1714
+  level: 3
+  title: 安妮女王驾崩
+  summary: 安妮女王于1714年8月驾崩，无子嗣存活，斯图亚特王朝绝嗣，汉诺威继位。
+  tags: [王朝更迭]
+
+- id: uk_septennial_act
+  year: 1716
+  level: 3
+  title: 《七年任期法》颁布
+  summary: 议会通过法令，将议会任期从三年延长至七年，加强执政党对议会的控制。
+  tags: [改革运动]
+
+- id: uk_south_sea_company_founded
+  year: 1711
+  level: 3
+  title: 南海公司成立
+  summary: 南海公司获特许状，取得对西班牙美洲殖民地的贸易垄断权，吸引大量投资。
+  tags: [经济贸易]
+
+- id: uk_south_sea_crash
+  year: 1720
+  level: 3
+  title: 南海公司股价崩溃
+  summary: 南海公司股价在数月内涨至顶点后骤跌，议会通过《泡沫法》限制股份公司发行。
+  tags: [经济贸易]
+
+- id: uk_walpole_excise_crisis
+  year: 1733
+  level: 3
+  title: 消费税危机
+  summary: 沃波尔提出扩大消费税计划，遭公众强烈反对，被迫撤回，政治权威受损。
+  tags: [改革运动, 经济贸易]
+
+- id: uk_porteous_riot
+  year: 1736
+  level: 3
+  title: 波蒂厄斯骚乱
+  summary: 爱丁堡警察局长波蒂厄斯在处决罪犯时下令向人群开枪，后被暴民处决。
+  tags: [革命政变]
+
+- id: uk_bonnie_prince_charlie_exile
+  year: 1746
+  level: 3
+  title: 小王位觊觎者流亡
+  summary: 卡洛登战役后，查理·爱德华·斯图亚特出逃法国，詹姆斯党运动彻底瓦解。
+  tags: [革命政变]
+
+- id: uk_highland_clearances_begin
+  year: 1746
+  level: 3
+  title: 高地清洗开始
+  summary: 卡洛登战役后，英国政府禁止苏格兰高地氏族制度，没收詹姆斯党土地。
+  tags: [改革运动]
+
+- id: uk_john_harrison_chronometer
+  year: 1759
+  level: 3
+  title: 哈里森航海计时仪
+  summary: 约翰·哈里森制成H3航海计时仪，为远洋航行精确测定经度提供可靠工具。
+  tags: [科技发明]
+
+- id: uk_josiah_wedgwood_pottery
+  year: 1759
+  level: 3
+  title: 韦奇伍德陶瓷厂建立
+  summary: 约西亚·韦奇伍德在斯塔福德郡建立陶瓷工厂，以工业方法生产精美瓷器。
+  tags: [经济贸易, 科技发明]
+
+- id: uk_james_cook_voyage_1
+  year: 1768
+  endYear: 1771
+  level: 3
+  title: 库克船长第一次航行
+  summary: 詹姆斯·库克率奋进号赴太平洋观测金星凌日，绘制新西兰与澳大利亚海岸地图。
+  tags: [科技发明, 殖民扩张]
+
+- id: uk_james_cook_voyage_2
+  year: 1772
+  endYear: 1775
+  level: 3
+  title: 库克船长第二次航行
+  summary: 库克深入南极圈，证明不存在假设中的南方大陆，环绕南冰洋航行。
+  tags: [科技发明, 殖民扩张]
+
+- id: uk_james_cook_death
+  year: 1779
+  level: 3
+  title: 库克船长遇难
+  summary: 詹姆斯·库克在第三次航行途中，于夏威夷群岛与当地居民冲突中遇难。
+  tags: [殖民扩张]
+
+- id: uk_townshend_acts
+  year: 1767
+  level: 3
+  title: 汤森税法颁布
+  summary: 英国议会对北美殖民地玻璃、纸张、茶叶等商品征税，引发抵制英货运动。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_boston_massacre
+  year: 1770
+  level: 3
+  title: 波士顿惨案
+  summary: 英国驻军在波士顿与殖民地民众冲突，开枪打死五人，加剧独立运动情绪。
+  tags: [革命政变]
+
+- id: uk_intolerable_acts
+  year: 1774
+  level: 3
+  title: 强制法令颁布
+  summary: 英国议会针对波士顿倾茶事件颁布系列惩罚法令，促使北美殖民地联合抵制。
+  tags: [改革运动]
+
+- id: uk_continental_congress_1
+  year: 1774
+  level: 3
+  title: 第一届大陆会议
+  summary: 北美殖民地代表在费城集会，决议联合抵制英货，要求废除强制法令。
+  tags: [革命政变]
+
+- id: uk_declaration_of_independence
+  year: 1776
+  level: 3
+  title: 美国《独立宣言》发布
+  summary: 北美十三殖民地宣告脱离英国独立，英国随即加强对北美的军事镇压。
+  tags: [革命政变]
+  related: [usa_declaration]
+
+- id: uk_saratoga_defeat
+  year: 1777
+  level: 3
+  title: 萨拉托加战役失败
+  summary: 英军在萨拉托加向美军投降，促使法国正式参战支持美国，局势对英不利。
+  tags: [战争]
+
+- id: uk_yorktown_surrender
+  year: 1781
+  level: 3
+  title: 约克镇英军投降
+  summary: 科恩沃利斯将军率英军在约克镇向华盛顿与拉法耶特联军投降，独立战争实质结束。
+  tags: [战争]
+
+- id: uk_fox_north_coalition
+  year: 1783
+  level: 3
+  title: 福克斯-诺斯联合政府
+  summary: 查尔斯·福克斯与诺斯勋爵组成短暂联合政府，数月后被乔治三世解散。
+  tags: [革命政变]
+
+- id: uk_thomas_paine_rights_of_man
+  year: 1791
+  level: 3
+  title: 《人权论》出版
+  summary: 托马斯·潘恩出版《人权论》，为法国大革命辩护，批判英国贵族制度。
+  tags: [文化思想]
+
+- id: uk_wollstonecraft_vindication
+  year: 1792
+  level: 3
+  title: 《女权辩护》出版
+  summary: 玛丽·沃斯通克拉夫特出版《女权辩护》，系统论述女性平等权利，开现代女权运动先河。
+  tags: [文化思想]
+  figures: [wollstonecraft]
+
+- id: uk_war_with_france_1793
+  year: 1793
+  level: 3
+  title: 英国对法宣战
+  summary: 法国处决路易十六并入侵荷兰后，英国加入反法同盟，拉开英法长达22年战争序幕。
+  tags: [战争]
+
+- id: uk_naval_mutinies_1797
+  year: 1797
+  level: 3
+  title: 斯皮特黑德与诺尔海军兵变
+  summary: 英国皇家海军水兵因薪资待遇不满发动兵变，政府部分接受诉求后平息。
+  tags: [革命政变]
+
+- id: uk_nelson_battle_of_nile
+  year: 1798
+  level: 3
+  title: 尼罗河口海战
+  summary: 纳尔逊舰队在埃及摧毁法国地中海舰队，切断拿破仑在埃及军队的退路。
+  tags: [战争]
+  figures: [nelson]
+
+- id: uk_habeas_corpus_suspension
+  year: 1794
+  level: 3
+  title: 人身保护令暂停
+  summary: 英国政府以防止激进革命活动为由，暂停人身保护令，逮捕多名激进主义者。
+  tags: [改革运动]
+
+- id: uk_combination_acts
+  year: 1799
+  level: 3
+  title: 禁止结社法令颁布
+  summary: 议会通过《结社禁止法》，宣布工人联合组织违法，严厉限制劳工集体行动。
+  tags: [经济贸易, 改革运动]
+
+- id: uk_royal_academy_founded
+  year: 1768
+  level: 3
+  title: 皇家艺术学院成立
+  summary: 乔治三世批准成立皇家艺术学院，雷诺兹爵士任首任院长，推动英国艺术发展。
+  tags: [文化思想]
+  figures: [reynolds]
+
+- id: uk_samuel_johnson_dictionary
+  year: 1755
+  level: 3
+  title: 约翰逊《英语词典》出版
+  summary: 塞缪尔·约翰逊历时九年完成《英语词典》，收录四万余词条，奠定现代英语规范。
+  tags: [文化思想]
+  figures: [samuel_johnson]
+
+- id: uk_david_hume_treatise
+  year: 1739
+  level: 3
+  title: 休谟《人性论》出版
+  summary: 大卫·休谟出版《人性论》，以经验论批判形而上学，对西方哲学影响深远。
+  tags: [文化思想]
+  figures: [david_hume]
+
+- id: uk_bentham_intro_morals
+  year: 1789
+  level: 3
+  title: 边沁《道德与立法原理》出版
+  summary: 杰里米·边沁出版功利主义代表作，提出以"最大多数人的最大幸福"为立法基础。
+  tags: [文化思想]
+  figures: [bentham]
+
+- id: uk_james_watt_partnership
+  year: 1775
+  level: 3
+  title: 瓦特与博尔顿合伙
+  summary: 詹姆斯·瓦特与马修·博尔顿在伯明翰索霍工厂合伙生产蒸汽机，商业化推广。
+  tags: [科技发明, 经济贸易]
+  figures: [james_watt]
+
+- id: uk_edward_jenner_vaccine
+  year: 1796
+  level: 3
+  title: 詹纳发明天花疫苗
+  summary: 爱德华·詹纳用牛痘病毒成功免疫天花，开创现代免疫学与疫苗技术先河。
+  tags: [科技发明]
+  figures: [jenner]
+
+- id: uk_erasmus_darwin_zoonomia
+  year: 1794
+  level: 3
+  title: 伊拉斯谟斯·达尔文《动物法则》出版
+  summary: 查尔斯·达尔文祖父出版《动物法则》，早期提出物种进化思想，预示进化论萌芽。
+  tags: [文化思想, 科技发明]
+
+- id: uk_young_arthur_india
+  year: 1784
+  level: 3
+  title: 东印度公司治印度确立
+  summary: 《印度法案》通过后，英国设立董事会与政府双重监督机制，东印度公司权力受限。
+  tags: [殖民扩张, 改革运动]
+
+- id: uk_william_blake_songs
+  year: 1789
+  level: 3
+  title: 布莱克《天真之歌》出版
+  summary: 威廉·布莱克出版诗集《天真之歌》，浪漫主义文学在英国开始兴起。
+  tags: [文化思想]
+  figures: [blake]
+
+- id: uk_lunar_society
+  year: 1765
+  endYear: 1813
+  level: 3
+  title: 伯明翰月亮协会
+  summary: 瓦特、博尔顿、普里斯特利等科学家与工业家组成月亮协会，定期讨论科学与工业进展。
+  tags: [科技发明, 文化思想]
+
+- id: uk_priestley_oxygen
+  year: 1774
+  level: 3
+  title: 普里斯特利发现氧气
+  summary: 约瑟夫·普里斯特利通过实验分离出氧气，推动现代化学革命的形成。
+  tags: [科技发明]
+
+- id: uk_henry_cavendish_hydrogen
+  year: 1766
+  level: 3
+  title: 卡文迪什发现氢气
+  summary: 亨利·卡文迪什发现并描述氢气的性质，后又证明水由氢氧两种元素组成。
+  tags: [科技发明]
+
+- id: uk_george_ii_death
+  year: 1760
+  level: 3
+  title: 乔治二世驾崩
+  summary: 乔治二世突发心脏病驾崩，孙子乔治三世继位，开始长达60年的统治。
+  tags: [王朝更迭]
+
+- id: uk_pitt_elder_pm
+  year: 1757
+  endYear: 1761
+  level: 3
+  title: 老皮特主导战时内阁
+  summary: 威廉·皮特（老皮特）担任实际战时首相，指挥七年战争中英国的全球军事战略。
+  tags: [战争]
+  figures: [pitt_elder]
+
+- id: uk_john_wilkes_expelled
+  year: 1764
+  level: 3
+  title: 约翰·威尔克斯被逐出议会
+  summary: 记者出身的约翰·威尔克斯因批评国王演讲被捕并逐出议会，引发出版自由争议。
+  tags: [改革运动, 文化思想]
+
+- id: uk_middlesex_election
+  year: 1769
+  level: 3
+  title: 米德尔塞克斯选举争议
+  summary: 威尔克斯四度当选后议会仍拒绝承认其资格，引发全国对议会代表制改革的呼声。
+  tags: [改革运动]
+
+- id: uk_east_india_clive_return
+  year: 1760
+  level: 3
+  title: 克莱夫返回印度任总督
+  summary: 罗伯特·克莱夫再度出任孟加拉总督，整顿东印度公司腐败，巩固英国在印度的控制。
+  tags: [殖民扩张]
+  figures: [clive_of_india]
+
+- id: uk_regulating_act_india
+  year: 1773
+  level: 3
+  title: 《管理法》颁布
+  summary: 英国议会通过《管理法》，设立印度总督职位，首任总督沃伦·黑斯廷斯就任。
+  tags: [殖民扩张, 改革运动]
+
+- id: uk_fox_libel_act
+  year: 1792
+  level: 3
+  title: 《福克斯诽谤法》
+  summary: 议会通过该法，规定陪审团有权对诽谤案中的事实与法律问题作出裁定，扩大新闻自由。
+  tags: [改革运动, 文化思想]
+
+- id: uk_slave_trade_lobbying
+  year: 1787
+  level: 3
+  title: 废奴协会成立
+  summary: 废除奴隶贸易协会在伦敦成立，由威伯福斯、克拉克森等人主导，启动长期议会游说。
+  tags: [改革运动]
+  figures: [wilberforce]
+
+- id: uk_thomas_clarkson_essay
+  year: 1786
+  level: 3
+  title: 克拉克森发表废奴论文
+  summary: 托马斯·克拉克森发表关于奴隶贸易的获奖论文，推动废奴运动进入公众视野。
+  tags: [改革运动, 文化思想]
+
+- id: uk_gibbon_decline_fall
+  year: 1776
+  endYear: 1788
+  level: 3
+  title: 吉本《罗马帝国衰亡史》出版
+  summary: 爱德华·吉本陆续出版六卷《罗马帝国衰亡史》，成为英语历史写作的经典之作。
+  tags: [文化思想]
+
+- id: uk_first_fleet_australia
+  year: 1788
+  level: 3
+  title: 第一舰队抵达澳大利亚
+  summary: 英国派遣第一舰队运送罪犯抵达博特尼湾，建立新南威尔士殖民地，开始定居澳洲。
+  tags: [殖民扩张]
+
+- id: uk_botany_bay_colony
+  year: 1788
+  level: 3
+  title: 悉尼湾殖民地建立
+  summary: 亚瑟·菲利普船长率移民在今悉尼湾建立英国最早的澳洲永久定居点。
+  tags: [殖民扩张]
+
+- id: uk_pitt_india_budget
+  year: 1786
+  level: 3
+  title: 小皮特财政改革
+  summary: 小皮特推行关税改革，降低茶叶税率以打击走私，并整顿国家债务结构。
+  tags: [经济贸易, 改革运动]
+  figures: [pitt_younger]
+
+- id: uk_cornwallis_india_reform
+  year: 1793
+  level: 3
+  title: 康沃利斯法典颁布
+  summary: 印度总督康沃利斯颁布法典，固定土地税收体系，建立孟加拉司法与行政改革框架。
+  tags: [改革运动, 殖民扩张]
+
+- id: uk_pitt_treason_acts
+  year: 1795
+  level: 3
+  title: 叛国罪与煽动集会法
+  summary: 小皮特政府通过系列镇压法令，限制公众集会与煽动性言论，应对国内革命浪潮。
+  tags: [改革运动]
+  figures: [pitt_younger]
+
+- id: uk_george_iii_illness
+  year: 1788
+  level: 3
+  title: 乔治三世首次精神病发
+  summary: 乔治三世突发严重精神疾病，引发摄政危机，后自行康复，但此后多次复发。
+  tags: [王朝更迭]
+  figures: [george_iii]
+
+- id: uk_coal_production_surge
+  year: 1780
+  endYear: 1800
+  level: 3
+  title: 煤炭产量急增
+  summary: 工业革命带动煤炭需求大增，英国煤矿产量在18世纪末大幅增长，成为工业核心能源。
+  tags: [经济贸易]
+
+- id: uk_population_growth_18c
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 英国人口快速增长
+  summary: 18世纪后半叶英格兰人口快速增长，从约550万增至约860万，城市化进程加速。
+  tags: [经济贸易]
+
+- id: uk_sunday_schools
+  year: 1780
+  level: 3
+  title: 星期日学校运动
+  summary: 罗伯特·雷克斯在格洛斯特创办星期日学校，为工人阶级儿童提供基础教育。
+  tags: [文化思想, 改革运动]
+
+- id: uk_turnpike_roads
+  year: 1750
+  endYear: 1800
+  level: 3
+  title: 收费公路网络扩张
+  summary: 英国各地成立公路信托，建设和改善收费公路，大幅改善国内商品运输条件。
+  tags: [经济贸易]
+
+- id: uk_hume_history_england
+  year: 1754
+  endYear: 1761
+  level: 3
+  title: 休谟《英格兰史》出版
+  summary: 大卫·休谟出版多卷本《英格兰史》，成为18世纪最畅销的英国历史著作。
+  tags: [文化思想]
+  figures: [david_hume]
+
+- id: uk_burn_brighton_pavilion
+  year: 1787
+  level: 3
+  title: 布赖顿皇家行宫开始建设
+  summary: 威尔士王子（未来的乔治四世）开始建造布赖顿皇家行宫，新古典主义转向东方风格。
+  tags: [文化思想]
+
+- id: uk_warren_hastings_trial
+  year: 1788
+  endYear: 1795
+  level: 3
+  title: 沃伦·黑斯廷斯弹劾审判
+  summary: 前印度总督黑斯廷斯被伯克等人在上议院提出弹劾，历时七年后宣告无罪。
+  tags: [殖民扩张, 改革运动]
+  figures: [burke]
+
+- id: uk_john_howard_prison_reform
+  year: 1777
+  level: 3
+  title: 霍华德《监狱状况》出版
+  summary: 约翰·霍华德出版监狱调查报告，揭露英国监狱恶劣条件，推动监狱改革运动。
+  tags: [改革运动]
+
+- id: uk_scotland_highland_ban
+  year: 1747
+  level: 3
+  title: 《禁止着装法》颁布
+  summary: 议会禁止苏格兰高地居民穿戴传统格纹服饰与携带武器，打压氏族文化认同。
+  tags: [改革运动]
+
+- id: uk_naturalization_act
+  year: 1740
+  level: 3
+  title: 《殖民地归化法》
+  summary: 议会允许居住北美殖民地七年以上的外国移民入籍，促进殖民地人口增长。
+  tags: [改革运动, 殖民扩张]
+
+- id: uk_first_census_1801
+  year: 1801
+  level: 3
+  title: 首次人口普查
+  summary: 英国进行首次全国人口普查，登记人口约一千零七十万，为现代人口统计奠基。
+  tags: [改革运动]

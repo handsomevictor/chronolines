@@ -1,49 +1,488 @@
-- id: usa_korean_war
-  year: 1950
-  endYear: 1953
-  level: 1
-  title: 朝鲜战争
-  summary: 美国以联合国军名义参与朝鲜战争，与中朝军队对峙，1953年停战。
-  tags: [战争]
-  related: [china_korean_war]
+# 美国 1950-2000 事件数据
 
-- id: usa_cold_war
+# ===== Level 1 =====
+
+- id: usa_cold_war_47
   year: 1947
   endYear: 1991
   level: 1
   title: 冷战
-  summary: 美苏两国在政治、军事、经济等领域展开全球对抗，形成两极格局。
-  tags: [条约外交]
+  summary: 美苏两国在政治、军事、经济等领域展开全球对抗，形成两极格局，1991年苏联解体后结束。
+  tags: [条约外交, 战争]
   related: [russia_cold_war]
 
-- id: usa_civil_rights
+- id: usa_korean_war_50
+  year: 1950
+  endYear: 1953
+  level: 1
+  title: 朝鲜战争
+  summary: 美国以联合国军名义参战，与中朝军队在朝鲜半岛激烈交战，1953年签订停战协定，南北分治维持至今。
+  tags: [战争]
+  related: [china_korean_war]
+  figures: [macarthur, eisenhower]
+
+- id: usa_civil_rights_mov_55
   year: 1955
   endYear: 1968
   level: 1
   title: 民权运动
-  summary: 非裔美国人争取平等权利的运动，推动了《民权法》和《选举权法》的通过。
+  summary: 非裔美国人以罢乘、示威、法律诉讼等方式争取平等权利，推动《民权法案》和《选举权法案》通过。
   tags: [改革运动]
   figures: [mlk]
 
-- id: usa_vietnam_war
-  year: 1965
+- id: usa_vietnam_war_64
+  year: 1964
   endYear: 1975
   level: 1
   title: 越南战争
-  summary: 美国大规模军事介入越南，1975年撤军，越南统一于越南社会主义共和国。
+  summary: 美国大规模介入越战，高峰期逾50万兵力部署越南，1975年撤军，越南随后统一。
   tags: [战争]
 
-- id: usa_moon_landing
+- id: usa_moon_landing_69
   year: 1969
-  level: 2
-  title: 阿波罗登月
-  summary: 阿波罗11号载人飞船登月成功，宇航员阿姆斯特朗成为首位踏上月球的人类。
+  level: 1
+  title: 阿波罗11号登月
+  summary: 7月20日宇航员阿姆斯特朗与奥尔德林在月球表面行走，首次载人登月任务成功完成。
   tags: [科技发明]
 
-- id: usa_suez
-  year: 1956
-  level: 3
-  title: 苏伊士危机中的美国立场
-  summary: 美国对英法以色列入侵埃及施压，要求停火撤军，显示美国中东影响力上升。
+- id: usa_watergate_72
+  year: 1972
+  endYear: 1974
+  level: 1
+  title: 水门事件
+  summary: 尼克松竞选团队闯入民主党总部被捕，调查揭示白宫参与掩盖，尼克松成为美国首位辞职总统。
+  tags: [革命政变]
+
+- id: usa_reagan_era_81
+  year: 1981
+  endYear: 1989
+  level: 1
+  title: 里根执政与里根经济学
+  summary: 里根推行大规模减税、削减政府管制与增加国防开支，引发关于供给侧经济学效果的持续争论。
+  tags: [改革运动, 经济贸易]
+  figures: [reagan]
+
+- id: usa_soviet_collapse_91
+  year: 1991
+  level: 1
+  title: 苏联解体与冷战终结
+  summary: 苏联于12月25日正式解体，美国成为唯一超级大国，冷战对抗格局终结，单极世界格局形成。
   tags: [条约外交]
-  related: [uk_suez_crisis]
+  related: [russia_soviet_collapse]
+
+# ===== Level 2 =====
+
+- id: usa_mccarthyism_50
+  year: 1950
+  endYear: 1954
+  level: 2
+  title: 麦卡锡主义
+  summary: 参议员麦卡锡发起大规模"红色猎巫"，数百名政府官员、演艺人员遭调查，公民自由受到严重侵蚀。
+  tags: [革命政变]
+
+- id: usa_brown_v_board_54
+  year: 1954
+  level: 2
+  title: 布朗诉教育委员会案
+  summary: 最高法院一致裁定公立学校种族隔离违宪，推翻1896年"隔离但平等"原则，民权运动进入新阶段。
+  tags: [改革运动]
+  figures: [mlk]
+
+- id: usa_interstate_highway_56
+  year: 1956
+  level: 2
+  title: 州际公路系统建立
+  summary: 艾森豪威尔签署《联邦公路援助法》，启动全国州际公路网建设，深刻改变美国城市化与经济地理格局。
+  tags: [科技发明, 经济贸易]
+  figures: [eisenhower]
+
+- id: usa_sputnik_nasa_57
+  year: 1957
+  endYear: 1958
+  level: 2
+  title: 苏联卫星危机与NASA成立
+  summary: 苏联发射人造卫星引发美国太空焦虑，国会随即通过立法建立NASA，加速太空竞赛投入。
+  tags: [科技发明, 战争]
+
+- id: usa_kennedy_elected_60
+  year: 1960
+  level: 2
+  title: 肯尼迪当选总统
+  summary: 约翰·肯尼迪以微弱多数击败尼克松，成为最年轻的当选总统与首位天主教总统。
+  tags: [革命政变]
+  figures: [kennedy_j]
+
+- id: usa_bay_of_pigs_61
+  year: 1961
+  level: 2
+  title: 猪湾事件
+  summary: CIA支持的古巴流亡者入侵行动在猪湾惨败，肯尼迪政府公开承担责任，美国声望受损。
+  tags: [战争, 条约外交]
+  figures: [kennedy_j]
+
+- id: usa_cuban_missile_62
+  year: 1962
+  level: 2
+  title: 古巴导弹危机
+  summary: 美国发现苏联在古巴部署核导弹，历经13天对峙，苏联同意撤除导弹，危机和平解决，被视为冷战最危险时刻。
+  tags: [战争, 条约外交]
+  related: [russia_cuban_missile]
+  figures: [kennedy_j]
+
+- id: usa_kennedy_assassin_63
+  year: 1963
+  level: 2
+  title: 肯尼迪遇刺
+  summary: 1963年11月22日，总统肯尼迪在达拉斯遭枪击身亡，案件调查结论至今在美国社会存在争议。
+  tags: [革命政变]
+  figures: [kennedy_j]
+
+- id: usa_civil_rights_act_64
+  year: 1964
+  level: 2
+  title: 《民权法案》通过
+  summary: 国会通过《1964年民权法案》，禁止基于种族、肤色、宗教、性别或国籍的歧视，是民权运动最重要的立法成果之一。
+  tags: [改革运动]
+  figures: [mlk]
+
+- id: usa_voting_rights_65
+  year: 1965
+  level: 2
+  title: 《投票权法案》通过
+  summary: 国会通过法案，明确禁止阻碍少数族裔投票的措施，联邦政府直接监督南方各州选举执行情况。
+  tags: [改革运动]
+  figures: [mlk]
+
+- id: usa_mlk_assassin_68
+  year: 1968
+  level: 2
+  title: 马丁·路德·金遇刺
+  summary: 1968年4月4日，马丁·路德·金在孟菲斯遭枪击身亡，各地随即爆发大规模抗议与骚乱。
+  tags: [革命政变]
+  figures: [mlk]
+
+- id: usa_apollo_program_61
+  year: 1961
+  endYear: 1972
+  level: 2
+  title: 阿波罗登月计划
+  summary: 肯尼迪宣布十年内登月目标，阿波罗计划共实现6次成功登月，耗资约250亿美元。
+  tags: [科技发明]
+  figures: [kennedy_j]
+
+- id: usa_nixon_china_72
+  year: 1972
+  level: 2
+  title: 尼克松访华
+  summary: 尼克松访问中国，与毛泽东、周恩来会面，发表《上海公报》，开启中美关系正常化进程。
+  tags: [条约外交]
+  related: [china_sino_us_72]
+
+- id: usa_vietnam_withdrawal_73
+  year: 1973
+  level: 2
+  title: 《巴黎和平协议》与越战撤军
+  summary: 美越签署停战协议，美军开始撤离，1975年西贡陷落，越战以美国支持的南越政权终结告终。
+  tags: [战争, 条约外交]
+
+- id: usa_opec_oil_shock_73
+  year: 1973
+  level: 2
+  title: 石油危机
+  summary: 阿拉伯国家石油禁运引发能源危机，油价四倍上涨，美国经济陷入滞胀，推动能源政策转型。
+  tags: [经济贸易]
+
+- id: usa_carter_iran_79
+  year: 1979
+  level: 2
+  title: 伊朗人质危机
+  summary: 伊朗革命后，美国驻德黑兰使馆52名外交人员遭扣押444天，救援行动失败，卡特政府声望重挫。
+  tags: [战争, 条约外交]
+
+- id: usa_reagan_coldwar_83
+  year: 1983
+  level: 2
+  title: 战略防御计划（星球大战）
+  summary: 里根宣布建立太空导弹防御系统计划，苏联视为重大威胁，加剧军备竞赛压力并拖累苏联经济。
+  tags: [战争, 科技发明]
+  figures: [reagan]
+
+- id: usa_berlin_wall_89
+  year: 1989
+  level: 2
+  title: 柏林墙倒塌
+  summary: 东德宣布开放边境，柏林市民自发拆除柏林墙，冷战欧洲铁幕象征性终结，德国统一随即展开。
+  tags: [条约外交]
+  related: [germany_berlin_wall]
+  figures: [reagan]
+
+- id: usa_gulf_war_91
+  year: 1991
+  level: 2
+  title: 海湾战争
+  summary: 美国率34国联军驱逐伊拉克对科威特的占领，100小时地面作战结束，萨达姆政权退出科威特。
+  tags: [战争, 条约外交]
+
+- id: usa_internet_boom_94
+  year: 1994
+  endYear: 2000
+  level: 2
+  title: 互联网繁荣与科技泡沫
+  summary: 网景浏览器上市引爆互联网投资热潮，纳斯达克指数五年内上涨逾500%，2000年泡沫破裂。
+  tags: [科技发明, 经济贸易]
+
+- id: usa_nafta_94
+  year: 1994
+  level: 2
+  title: 北美自由贸易协定生效
+  summary: 美国、加拿大、墨西哥三国贸易协定正式生效，消除大部分关税，推动北美经济整合。
+  tags: [经济贸易, 条约外交]
+  figures: [clinton_b]
+
+- id: usa_clinton_impeach_98
+  year: 1998
+  level: 2
+  title: 克林顿弹劾案
+  summary: 众院以伪证罪和妨碍司法罪对克林顿提起弹劾，参院审判以未达三分之二多数未通过定罪。
+  tags: [革命政变]
+  figures: [clinton_b]
+
+# ===== Level 3 =====
+
+- id: usa_inchon_landing_50
+  year: 1950
+  level: 3
+  title: 仁川登陆
+  summary: 麦克阿瑟指挥联合国军实施仁川两栖登陆，切断朝鲜军后路，迅速扭转战场态势。
+  tags: [战争]
+  figures: [macarthur]
+
+- id: usa_macarthur_fired_51
+  year: 1951
+  level: 3
+  title: 麦克阿瑟被解职
+  summary: 杜鲁门以违抗命令为由解除麦克阿瑟联合国军最高统帅职务，引发国内广泛争议。
+  tags: [战争]
+  figures: [macarthur]
+
+- id: usa_hydrogen_bomb_52
+  year: 1952
+  level: 3
+  title: 氢弹试验
+  summary: 美国在太平洋马绍尔群岛试爆首枚热核武器，爆炸当量约1000万吨TNT，进入核武器新阶段。
+  tags: [战争, 科技发明]
+
+- id: usa_polio_vaccine_55
+  year: 1955
+  level: 3
+  title: 脊髓灰质炎疫苗问世
+  summary: 约纳斯·沙克研发的脊髓灰质炎疫苗宣布安全有效，大规模接种开始，儿童瘫痪症病例急剧下降。
+  tags: [科技发明]
+
+- id: usa_montgomery_bus_55
+  year: 1955
+  level: 3
+  title: 蒙哥马利公交罢乘
+  summary: 罗莎·帕克斯拒绝让座被捕，黑人社区发起381天公交罢乘，马丁·路德·金由此崛起，隔离制度被推翻。
+  tags: [改革运动]
+  figures: [mlk]
+
+- id: usa_little_rock_57
+  year: 1957
+  level: 3
+  title: 小石城学校融合危机
+  summary: 阿肯色州州长动用国民警卫队阻止黑人学生入学，艾森豪威尔派遣联邦军队强制执行法院命令。
+  tags: [改革运动]
+  figures: [eisenhower]
+
+- id: usa_nasa_founded_58
+  year: 1958
+  level: 3
+  title: NASA成立
+  summary: 国会通过《国家航空暨太空法》，建立国家航空航天局，统一协调美国的民用太空探索计划。
+  tags: [科技发明]
+
+- id: usa_freedom_riders_61
+  year: 1961
+  level: 3
+  title: 自由乘车者运动
+  summary: 跨种族活动人士乘坐跨州汽车挑战南方隔离设施，多人遭暴力袭击，推动联邦强制执行交通反隔离规定。
+  tags: [改革运动]
+  figures: [mlk]
+
+- id: usa_march_on_washington_63
+  year: 1963
+  level: 3
+  title: 华盛顿大游行
+  summary: 约25万人聚集华盛顿，马丁·路德·金发表"我有一个梦想"演讲，成为民权运动最具代表性的历史时刻之一。
+  tags: [改革运动, 文化思想]
+  figures: [mlk]
+
+- id: usa_great_society_64
+  year: 1964
+  endYear: 1968
+  level: 3
+  title: 约翰逊"伟大社会"计划
+  summary: 约翰逊政府推出医疗保险（Medicare/Medicaid）、教育与住房扶贫计划，大幅扩展联邦福利体系。
+  tags: [改革运动]
+
+- id: usa_tet_offensive_68
+  year: 1968
+  level: 3
+  title: 越战春节攻势
+  summary: 北越与越共在春节期间对南越多座城市发动突袭，美方军事压制成功但政治上引发严重信任危机。
+  tags: [战争]
+
+- id: usa_rkennedy_assassin_68
+  year: 1968
+  level: 3
+  title: 罗伯特·肯尼迪遇刺
+  summary: 参议员罗伯特·肯尼迪在洛杉矶赢得加州初选后遭枪击，次日身亡，1968年政治动荡进一步加剧。
+  tags: [革命政变]
+  figures: [kennedy_j]
+
+- id: usa_woodstock_69
+  year: 1969
+  level: 3
+  title: 伍德斯托克音乐节
+  summary: 约40万人聚集纽约州伍德斯托克，为期三天的音乐节成为反主流文化运动的标志性事件。
+  tags: [文化思想]
+
+- id: usa_epa_70
+  year: 1970
+  level: 3
+  title: 环境保护署成立与地球日
+  summary: 尼克松签署法令建立EPA，首届地球日20万人参与，标志美国环保运动进入政策主流。
+  tags: [改革运动]
+
+- id: usa_pentagon_papers_71
+  year: 1971
+  level: 3
+  title: 五角大楼文件公开
+  summary: 《纽约时报》刊载机密越战报告，揭示政府向公众隐瞒真实战情，最高法院裁定可以发表。
+  tags: [文化思想, 改革运动]
+
+- id: usa_title_ix_72
+  year: 1972
+  level: 3
+  title: 教育法第九章通过
+  summary: 联邦法规禁止联邦资助教育项目中的性别歧视，大幅推动女性参与体育运动与高等教育机会均等。
+  tags: [改革运动]
+
+- id: usa_roe_v_wade_73
+  year: 1973
+  level: 3
+  title: 罗诉韦德案裁决
+  summary: 最高法院裁定宪法保障女性堕胎权，此裁决引发持续数十年的法律与社会争议，2022年被推翻。
+  tags: [改革运动]
+
+- id: usa_camp_david_78
+  year: 1978
+  level: 3
+  title: 戴维营协议
+  summary: 卡特斡旋埃及总统萨达特与以色列总理贝京达成协议，奠定以埃和平条约基础，卡特获高度国际评价。
+  tags: [条约外交]
+
+- id: usa_reagan_assassination_attempt_81
+  year: 1981
+  level: 3
+  title: 里根遇刺未遂
+  summary: 就职69天后里根在华盛顿遭枪击，胸部中弹后手术获救，幽默从容的公开反应大幅提升其民望。
+  tags: [革命政变]
+  figures: [reagan]
+
+- id: usa_challenger_86
+  year: 1986
+  level: 3
+  title: 挑战者号航天飞机失事
+  summary: 挑战者号升空73秒后爆炸，7名宇航员全部遇难，NASA停止载人飞行任务并全面检讨安全流程。
+  tags: [科技发明]
+
+- id: usa_iran_contra_86
+  year: 1986
+  level: 3
+  title: 伊朗-门斗事件
+  summary: 里根政府秘密向伊朗售武并将资金转给尼加拉瓜反政府武装，违反国会明确禁令，引发宪政危机。
+  tags: [战争, 条约外交]
+  figures: [reagan]
+
+- id: usa_tiananmen_response_89
+  year: 1989
+  level: 3
+  title: 美国对天安门事件的反应
+  summary: 美国国会通过制裁措施暂停军售，美中关系随之紧张，但布什政府同期保持外交沟通渠道。
+  tags: [条约外交]
+  related: [china_tiananmen]
+
+- id: usa_rodney_king_92
+  year: 1992
+  level: 3
+  title: 洛杉矶骚乱
+  summary: 洛杉矶警察殴打黑人司机罗德尼·金案陪审团宣告无罪后，洛杉矶爆发大规模骚乱，历时6天，63人死亡。
+  tags: [革命政变, 改革运动]
+
+- id: usa_oklahoma_bombing_95
+  year: 1995
+  level: 3
+  title: 俄克拉荷马市爆炸案
+  summary: 联邦政府大楼遭炸弹袭击，168人遇难，是当时美国本土最惨烈的恐怖袭击事件，凶手为国内极端人士。
+  tags: [革命政变]
+
+- id: usa_y2k_99
+  year: 1999
+  level: 3
+  title: 千年虫危机应对
+  summary: 各国政府与企业斥巨资修复计算机系统日期处理问题，2000年元旦过渡总体平稳，灾难性故障未发生。
+  tags: [科技发明]
+
+- id: usa_dont_ask_dont_tell_93
+  year: 1993
+  level: 3
+  title: 军队"不问不说"政策
+  summary: 克林顿政府妥协出台政策，允许同性恋者在不公开性取向的前提下服役，2011年被正式废除。
+  tags: [改革运动]
+  figures: [clinton_b]
+
+- id: usa_health_care_reform_94
+  year: 1994
+  level: 3
+  title: 医疗改革失败
+  summary: 希拉里主导的全民医疗改革方案遭国会否决，是克林顿政府内政上的重大挫折。
+  tags: [改革运动]
+  figures: [clinton_b]
+
+- id: usa_lewinsky_98
+  year: 1998
+  level: 3
+  title: 克林顿-莱温斯基丑闻
+  summary: 总统克林顿与白宫实习生关系在独立检察官调查中曝光，成为弹劾案的直接导火索。
+  tags: [革命政变]
+  figures: [clinton_b]
+
+- id: usa_election_2000
+  year: 2000
+  level: 3
+  title: 2000年总统选举争议
+  summary: 小布什与戈尔选票争议在佛罗里达引发重新计票，最高法院裁决中止重计，布什以271张选举人票获胜。
+  tags: [革命政变]
+
+- id: usa_space_shuttle_81
+  year: 1981
+  level: 3
+  title: 航天飞机首飞
+  summary: 哥伦比亚号航天飞机成功完成首次飞行，可重复使用的轨道运载工具开启太空运输新时代。
+  tags: [科技发明]
+
+- id: usa_personal_computer_76
+  year: 1976
+  level: 3
+  title: 苹果公司成立与个人电脑
+  summary: 史蒂夫·乔布斯与沃兹尼亚克创立苹果公司，Apple I上市，推动个人电脑走向消费市场。
+  tags: [科技发明, 经济贸易]
+
+- id: usa_world_wide_web_91
+  year: 1991
+  level: 3
+  title: 万维网对公众开放
+  summary: 蒂姆·伯纳斯-李的万维网项目向公众开放，互联网进入大众应用时代，数字信息时代随之开启。
+  tags: [科技发明]

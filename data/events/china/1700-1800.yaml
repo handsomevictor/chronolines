@@ -1,36 +1,129 @@
+# 中国 1700-1800 历史事件
+# 涵盖清朝康熙末年、雍正朝、乾隆朝、嘉庆初年
+
+# ===== Level 1 事件 =====
+
 - id: china_kangxi_death
   year: 1722
   level: 1
   title: 康熙帝驾崩
-  summary: 康熙帝在位61年后驾崩，雍正帝继位，清朝进入新阶段。
+  summary: 康熙帝在位61年后驾崩，四皇子胤禛继位，是为雍正帝。
   tags: [王朝更迭]
   figures: [kangxi]
 
-- id: china_yongzheng_reform
-  year: 1723
-  endYear: 1735
-  level: 2
-  title: 雍正朝改革
-  summary: 雍正帝推行摊丁入亩、改土归流等改革，强化中央集权。
-  tags: [改革运动]
+- id: china_yongzheng_ascends
+  year: 1722
+  level: 1
+  title: 雍正帝继位
+  summary: 胤禛继位为雍正帝，继位过程存在争议，史称"九子夺嫡"之后的结局。
+  tags: [王朝更迭]
   figures: [yongzheng]
+
+- id: china_dzungar_war_1
+  year: 1718
+  endYear: 1720
+  level: 1
+  title: 清军驱逐准噶尔入藏
+  summary: 康熙帝派兵入藏，驱逐占领西藏的准噶尔势力，清朝确立对西藏的统治。
+  tags: [战争]
+  figures: [kangxi]
 
 - id: china_qianlong_reign
   year: 1735
   endYear: 1796
   level: 1
   title: 乾隆帝在位
-  summary: 乾隆帝在位61年，清朝疆域达到极盛，人口突破三亿。
+  summary: 爱新觉罗弘历即位，年号乾隆，在位61年，清朝疆域与人口达极盛。
   tags: [王朝更迭]
   figures: [qianlong]
 
+- id: china_dzungar_final
+  year: 1755
+  endYear: 1757
+  level: 1
+  title: 平定准噶尔汗国
+  summary: 清军彻底消灭准噶尔汗国，将天山以北纳入版图，结束百年准噶尔威胁。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_xinjiang_pacify
+  year: 1758
+  endYear: 1759
+  level: 1
+  title: 平定回部大小和卓
+  summary: 清军平定天山南路大小和卓叛乱，将新疆全境纳入清朝直接统治。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_jiaqing_ascends
+  year: 1796
+  level: 1
+  title: 嘉庆帝继位
+  summary: 乾隆帝禅位，皇十五子颙琰继位为嘉庆帝，乾隆以太上皇身份继续影响朝政。
+  tags: [王朝更迭]
+  figures: [jiaqing, qianlong]
+
+- id: china_white_lotus_uprising
+  year: 1796
+  endYear: 1804
+  level: 1
+  title: 白莲教起义
+  summary: 湖北、四川等地白莲教信徒起义，历时近十年，耗费清廷大量财力兵力。
+  tags: [革命政变]
+  figures: [jiaqing]
+
 - id: china_macartney_mission
   year: 1793
-  level: 2
+  level: 1
   title: 马戛尔尼使团访华
-  summary: 英国使团访华请求通商，乾隆帝拒绝，中英贸易谈判未能达成协议。
+  summary: 英国使团访华，请求扩大通商并建立外交关系，乾隆帝以不符礼制为由拒绝。
   tags: [条约外交, 经济贸易]
+  figures: [qianlong]
   related: [uk_industrial_revolution]
+
+# ===== Level 2 事件 =====
+
+- id: china_yongzheng_tandingrumu
+  year: 1723
+  endYear: 1729
+  level: 2
+  title: 摊丁入亩推广
+  summary: 雍正帝将丁税并入田赋，减轻无地农民负担，税制趋向统一。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_yongzheng_huohao
+  year: 1724
+  level: 2
+  title: 火耗归公改革
+  summary: 雍正帝将地方官员私征的"火耗"改为官方征收并统一上缴，遏制地方腐败。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_junjichu_established
+  year: 1729
+  level: 2
+  title: 军机处设立
+  summary: 雍正帝设立军机处，皇帝可直接发布政令，中央集权进一步强化。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_yongzheng_gaitu
+  year: 1726
+  endYear: 1731
+  level: 2
+  title: 改土归流大规模推行
+  summary: 雍正帝大规模推行改土归流，撤销西南各省土司，改设流官直接管理。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_yongzheng_death
+  year: 1735
+  level: 2
+  title: 雍正帝驾崩
+  summary: 雍正帝在位13年后驾崩，乾隆帝继位，雍正朝结束。
+  tags: [王朝更迭]
+  figures: [yongzheng]
 
 - id: china_canton_system
   year: 1757
@@ -38,3 +131,470 @@
   title: 广州一口通商
   summary: 清廷规定西方商船只能在广州一口贸易，设立十三行管理对外贸易。
   tags: [经济贸易, 条约外交]
+
+- id: china_jinchuan_war_1
+  year: 1747
+  endYear: 1749
+  level: 2
+  title: 第一次大金川之役
+  summary: 清军讨伐四川大金川土司莎罗奔，历时两年后达成和解，耗费大量军费。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_jinchuan_war_2
+  year: 1771
+  endYear: 1776
+  level: 2
+  title: 第二次大小金川之役
+  summary: 清军再度出兵大小金川，历时五年彻底平定，将当地纳入中央直辖。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_taiwan_linshuangwen
+  year: 1786
+  endYear: 1788
+  level: 2
+  title: 台湾林爽文事件
+  summary: 台湾天地会领袖林爽文发动起义，清廷派兵镇压，历时约两年平定。
+  tags: [革命政变]
+  figures: [qianlong]
+
+- id: china_burma_war
+  year: 1765
+  endYear: 1769
+  level: 2
+  title: 清缅战争
+  summary: 清军四次进攻缅甸，均未获决定性胜利，最终双方议和，缅甸承认清朝宗主权。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_vietnam_war
+  year: 1788
+  endYear: 1789
+  level: 2
+  title: 清越战争
+  summary: 清军应阮惠之敌安南莫氏后裔之请出兵越南，被阮惠军击败后撤回。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_tibet_gurkha_1
+  year: 1788
+  endYear: 1789
+  level: 2
+  title: 廓尔喀第一次入侵西藏
+  summary: 尼泊尔廓尔喀军队入侵西藏，双方和解，廓尔喀获部分赔偿。
+  tags: [战争]
+
+- id: china_tibet_gurkha_2
+  year: 1791
+  endYear: 1792
+  level: 2
+  title: 清军驱逐廓尔喀
+  summary: 廓尔喀再次入侵西藏，清军翻越喜马拉雅山反击，迫使廓尔喀臣服纳贡。
+  tags: [战争]
+  figures: [qianlong]
+
+- id: china_siku_quanshu
+  year: 1773
+  endYear: 1782
+  level: 2
+  title: 《四库全书》编纂
+  summary: 乾隆帝下令编纂《四库全书》，历时约十年，收录历代典籍三千五百余种。
+  tags: [文化思想]
+  figures: [qianlong]
+
+- id: china_population_growth
+  year: 1741
+  endYear: 1796
+  level: 2
+  title: 人口突破三亿
+  summary: 乾隆年间中国人口从约1.4亿增长至3亿以上，玉米、红薯等作物推广发挥重要作用。
+  tags: [经济贸易]
+
+- id: china_thirteen_hongs
+  year: 1720
+  level: 2
+  title: 广州十三行公行成立
+  summary: 广州十三行商人组建公行垄断对外贸易，成为清朝对外贸易的主要渠道。
+  tags: [经济贸易]
+
+- id: china_kangxi_renounce_poll_tax
+  year: 1712
+  level: 2
+  title: 康熙宣布永不加赋
+  summary: 康熙帝宣布以1711年人丁数为准永不加征丁税，为后来摊丁入亩奠定基础。
+  tags: [改革运动]
+  figures: [kangxi]
+
+- id: china_dzungar_war_2
+  year: 1730
+  endYear: 1735
+  level: 2
+  title: 清准战争（雍正朝）
+  summary: 雍正朝与准噶尔汗国再度开战，双方在西北对峙，雍正帝死后战事暂停。
+  tags: [战争]
+  figures: [yongzheng]
+
+- id: china_hetao_ninguta_exploration
+  year: 1750
+  level: 2
+  title: 乾隆朝西域勘测
+  summary: 清廷对新近纳入版图的西域进行测绘，制作《皇舆全览图》续编，记录边疆地理。
+  tags: [科技发明]
+
+- id: china_trade_surplus
+  year: 1760
+  endYear: 1800
+  level: 2
+  title: 对外贸易持续顺差
+  summary: 清朝通过广州口岸大量出口茶、丝、瓷器，形成持续贸易顺差，白银大量流入。
+  tags: [经济贸易]
+
+# ===== Level 3 事件 =====
+
+- id: china_kangxi_circle_land_abolish
+  year: 1700
+  level: 3
+  title: 康熙帝停止圈地
+  summary: 康熙帝正式停止清初以来的满洲圈地行为，缓和满汉矛盾。
+  tags: [改革运动]
+  figures: [kangxi]
+
+- id: china_gujin_tushu_jicheng
+  year: 1700
+  endYear: 1725
+  level: 3
+  title: 《古今图书集成》编纂
+  summary: 陈梦雷主编、蒋廷锡续修，共一万卷，是中国现存最大的类书之一。
+  tags: [文化思想]
+  figures: [kangxi]
+
+- id: china_kangxi_south_tour
+  year: 1703
+  level: 3
+  title: 康熙第五次南巡
+  summary: 康熙帝第五次巡视江南，考察水利、民情，加强对汉族士绅的怀柔政策。
+  tags: [改革运动]
+  figures: [kangxi]
+
+- id: china_xizang_dalai_lama_5_install
+  year: 1706
+  level: 3
+  title: 西藏政局动荡
+  summary: 拉藏汗废黜并处死仓央嘉措，另立新达赖，西藏政局陷入动荡。
+  tags: [革命政变]
+
+- id: china_russia_kyakhta_treaty
+  year: 1727
+  level: 3
+  title: 《恰克图条约》签订
+  summary: 清俄签订《恰克图条约》，划定中俄北方边界，确立两国贸易规则。
+  tags: [条约外交]
+  figures: [yongzheng]
+
+- id: china_yongzheng_proscribe_christianity
+  year: 1724
+  level: 3
+  title: 雍正帝禁止天主教传教
+  summary: 雍正帝以干预中国礼俗为由驱逐传教士，禁止天主教在中国内地传播。
+  tags: [文化思想]
+  figures: [yongzheng]
+
+- id: china_yongzheng_secret_succession
+  year: 1723
+  level: 3
+  title: 秘密立储制度确立
+  summary: 雍正帝创立秘密立储制度，将皇位继承人名字写于匣中存于乾清宫，以防争位。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_yongzheng_literary_inquisition
+  year: 1726
+  level: 3
+  title: 吕留良文字狱
+  summary: 雍正帝以文字狱处置批评清廷的著作，株连作者子孙，加强文化控制。
+  tags: [文化思想]
+  figures: [yongzheng]
+
+- id: china_qianlong_ascends
+  year: 1735
+  level: 3
+  title: 乾隆帝登基
+  summary: 爱新觉罗弘历正式即位，年号乾隆，时年25岁。
+  tags: [王朝更迭]
+  figures: [qianlong]
+
+- id: china_red_dream_completed
+  year: 1754
+  endYear: 1763
+  level: 3
+  title: 《红楼梦》基本完成
+  summary: 曹雪芹于约此期间完成《红楼梦》前八十回，后由高鹗续写后四十回出版。
+  tags: [文化思想]
+  figures: [caoxueqin]
+
+- id: china_qianlong_literary_inquisition
+  year: 1755
+  endYear: 1790
+  level: 3
+  title: 乾隆朝文字狱高峰
+  summary: 乾隆年间文字狱案件大量增加，涉及诗文中被认为有悖清廷的词句，株连甚广。
+  tags: [文化思想]
+  figures: [qianlong]
+
+- id: china_heshen_rises
+  year: 1775
+  level: 3
+  title: 和珅得宠
+  summary: 和珅入乾隆帝幸臣，逐步掌握军机处与内务府大权，成为清廷权臣。
+  tags: [人物]
+  figures: [heshen, qianlong]
+
+- id: china_yihetuan_precursor
+  year: 1774
+  level: 3
+  title: 山东王伦起义
+  summary: 清水教首领王伦在山东寿张发动起义，清军迅速镇压，为清中叶民变先声。
+  tags: [革命政变]
+
+- id: china_tibet_panchen_visits_beijing
+  year: 1779
+  level: 3
+  title: 班禅额尔德尼六世进京
+  summary: 六世班禅赴北京觐见乾隆帝，在承德热河行宫后染痘疾去世，影响西藏局势。
+  tags: [条约外交]
+  figures: [qianlong]
+
+- id: china_qianlong_retire
+  year: 1796
+  level: 3
+  title: 乾隆帝禅位
+  summary: 乾隆帝为不超越康熙在位年数，禅位于嘉庆帝，但仍以太上皇身份训政至1799年。
+  tags: [王朝更迭]
+  figures: [qianlong, jiaqing]
+
+- id: china_canton_trade_opium_begin
+  year: 1780
+  level: 3
+  title: 鸦片走私规模扩大
+  summary: 英国东印度公司扩大向中国输出鸦片，白银开始从中国外流，清廷屡禁不止。
+  tags: [经济贸易]
+
+- id: china_heshen_corruption
+  year: 1780
+  endYear: 1799
+  level: 3
+  title: 和珅大肆敛财
+  summary: 和珅利用职权广敛财富，其家产总量据称相当于清廷数年税收，各方记载存在差异。
+  tags: [人物]
+  figures: [heshen]
+
+- id: china_staunton_macartney_refused
+  year: 1793
+  level: 3
+  title: 乾隆帝颁诏拒绝英国通商要求
+  summary: 乾隆帝致英王乔治三世诏书，历数英国所提通商驻使各项要求均不可行。
+  tags: [条约外交]
+  figures: [qianlong]
+
+- id: china_qianlong_death
+  year: 1799
+  level: 3
+  title: 乾隆太上皇驾崩
+  summary: 乾隆帝于89岁高龄驾崩，为中国历史上实际统治时间最长的皇帝之一。
+  tags: [王朝更迭]
+  figures: [qianlong]
+
+- id: china_heshen_executed
+  year: 1799
+  level: 3
+  title: 和珅被赐死
+  summary: 乾隆帝驾崩后，嘉庆帝立即逮捕和珅，列二十大罪赐其自尽，抄没巨额家产。
+  tags: [人物]
+  figures: [heshen, jiaqing]
+
+- id: china_miao_rebellion_guizhou
+  year: 1795
+  endYear: 1806
+  level: 3
+  title: 贵州苗民起义
+  summary: 贵州石柳邓领导苗民起义，波及湘黔两省，清军历经十余年才平定。
+  tags: [革命政变]
+
+- id: china_baijian_edict_canton
+  year: 1760
+  level: 3
+  title: 清廷整顿广州贸易秩序
+  summary: 清廷颁布法令，规定外商在华活动范围，禁止外国人在广州以外地区经商居住。
+  tags: [经济贸易]
+
+- id: china_kangxi_jesuits_astronomy
+  year: 1700
+  endYear: 1722
+  level: 3
+  title: 耶稣会士参与钦天监事务
+  summary: 康熙帝允许耶稣会传教士主管钦天监，引入西方天文历法知识，并与中国传统天文学融合。
+  tags: [科技发明]
+  figures: [kangxi]
+
+- id: china_imperial_garden_yuanmingyuan_expand
+  year: 1737
+  endYear: 1760
+  level: 3
+  title: 圆明园大规模扩建
+  summary: 乾隆帝持续扩建圆明园，加入西洋楼等建筑群，规模远超雍正时期。
+  tags: [文化思想]
+  figures: [qianlong]
+
+- id: china_xinjiang_province_prep
+  year: 1762
+  level: 3
+  title: 伊犁将军府设立
+  summary: 清廷设立伊犁将军，统辖天山南北新疆全境军政事务，巩固西北边疆统治。
+  tags: [改革运动]
+  figures: [qianlong]
+
+- id: china_siku_quanshu_banned_books
+  year: 1772
+  endYear: 1782
+  level: 3
+  title: 《四库全书》修纂中大量销毁书籍
+  summary: 编纂《四库全书》过程中，清廷同时销毁大量被认为有悖清朝统治的汉族著作。
+  tags: [文化思想]
+  figures: [qianlong]
+
+- id: china_population_300million
+  year: 1790
+  level: 3
+  title: 人口突破三亿
+  summary: 清廷人口统计显示，全国人口在乾隆末年已超过三亿，为历朝之最。
+  tags: [经济贸易]
+
+- id: china_grain_tribute_system
+  year: 1700
+  level: 3
+  title: 漕运制度运行
+  summary: 清廷通过漕运系统每年将南方数百万石漕粮运往北京，支撑京师及北方军队供给。
+  tags: [经济贸易]
+
+- id: china_kangxi_six_south_tours
+  year: 1707
+  level: 3
+  title: 康熙第六次南巡
+  summary: 康熙帝完成最后一次南巡，共六次南巡期间视察治水工程，展示朝廷对民间关注。
+  tags: [改革运动]
+  figures: [kangxi]
+
+- id: china_yongzheng_suppresses_princes
+  year: 1727
+  level: 3
+  title: 雍正帝清洗政敌兄弟
+  summary: 雍正帝以谋逆罪处置允禩、允禟等竞争皇位的兄弟，巩固皇权。
+  tags: [革命政变]
+  figures: [yongzheng]
+
+- id: china_silk_tea_export_peak
+  year: 1780
+  endYear: 1800
+  level: 3
+  title: 丝茶出口达到高峰
+  summary: 清朝茶叶年出口量在18世纪末达数百万斤，丝绸出口同步增长，贸易顺差持续扩大。
+  tags: [经济贸易]
+
+- id: china_dunhuang_manuscripts_hidden
+  year: 1700
+  level: 3
+  title: 敦煌藏经洞封存
+  summary: 莫高窟藏经洞约于此前封存大量文献，至1900年方被发现，其具体封存时间学界存在讨论。
+  tags: [文化思想]
+
+- id: china_yongzheng_abolish_jianmin
+  year: 1723
+  level: 3
+  title: 雍正帝废除贱民制度
+  summary: 雍正帝陆续废除山西乐户、浙江惰民、广东疍户等"贱民"身份，使其可科举入仕。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_tibet_ambans_installed
+  year: 1727
+  level: 3
+  title: 驻藏大臣制度确立
+  summary: 清廷设置驻藏办事大臣，正式参与西藏行政事务，加强对西藏的直接管理。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_qianlong_ten_victories_title
+  year: 1792
+  level: 3
+  title: 乾隆自称"十全老人"
+  summary: 乾隆帝以平定十次重大军事行动为由，自称"十全老人"，并撰《十全记》。
+  tags: [人物]
+  figures: [qianlong]
+
+- id: china_population_sweet_potato_spread
+  year: 1750
+  level: 3
+  title: 红薯玉米在全国普及
+  summary: 美洲引入的红薯、玉米在18世纪中叶已广泛种植于南北各省，推动人口持续增长。
+  tags: [经济贸易]
+
+- id: china_green_standard_army
+  year: 1700
+  level: 3
+  title: 绿营兵制日趋腐化
+  summary: 18世纪初清朝绿营兵员额虚冒、训练荒废的问题日趋突出，战斗力持续下降。
+  tags: [改革运动]
+
+- id: china_yongzheng_inner_cabinet_decline
+  year: 1730
+  level: 3
+  title: 内阁权力向军机处转移
+  summary: 随军机处成立并扩大职权，原内阁票拟权力逐渐萎缩，皇权进一步集中。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_qing_coins_debase
+  year: 1740
+  endYear: 1800
+  level: 3
+  title: 清朝铜钱制钱铸造量减少
+  summary: 乾隆中期后铜料紧缺，制钱成色下降，私铸铜钱增多，货币流通出现混乱。
+  tags: [经济贸易]
+
+- id: china_kangxi_proscribes_opium_1729
+  year: 1729
+  level: 3
+  title: 雍正帝首次明令禁烟
+  summary: 雍正七年清廷颁布禁止销售吸食鸦片的法令，为清朝最早明确的禁烟立法。
+  tags: [改革运动]
+  figures: [yongzheng]
+
+- id: china_macartney_kowtow_controversy
+  year: 1793
+  level: 3
+  title: 马戛尔尼觐见礼仪之争
+  summary: 英国使团拒绝按清廷要求行三跪九叩之礼，双方就觐见礼仪产生分歧，各方记载存在差异。
+  tags: [条约外交]
+
+- id: china_eighteen_provinces_system
+  year: 1700
+  level: 3
+  title: 十八省行政体系稳定运行
+  summary: 清朝内地十八省总督巡抚制度在18世纪运转稳定，形成完整的地方行政层级体系。
+  tags: [改革运动]
+
+- id: china_qing_military_banner_system
+  year: 1700
+  level: 3
+  title: 八旗制度日趋衰落
+  summary: 18世纪初八旗兵丁数量虽庞大，但生计困难、战斗力退化的问题已日趋明显。
+  tags: [改革运动]
+
+- id: china_jiaqing_emperor_attack
+  year: 1803
+  level: 3
+  title: 嘉庆帝遇刺未遂
+  summary: 嘉庆帝进入神武门时遭一名男子持刀袭击，侍卫将其制服，为清朝罕见的针对皇帝的暴力事件。
+  tags: [人物]
+  figures: [jiaqing]

@@ -1,46 +1,666 @@
+# 中国 1900-1950 历史事件
+# 涵盖清末新政、辛亥革命、北洋政府、北伐战争、抗日战争、国共内战
+
+# ===== Level 1 事件 =====
+
 - id: china_boxer_uprising
   year: 1900
   level: 1
-  title: 义和团运动与八国联军
-  summary: 义和团运动兴起，八国联军攻入北京，清廷签订《辛丑条约》。
-  tags: [战争, 条约外交]
+  title: 庚子之变：义和团运动与八国联军
+  summary: 义和团运动兴起后清廷向列强宣战，八国联军攻入北京，慈禧出走西安。
+  tags: [战争, 革命政变]
+  figures: [cixi]
+
+- id: china_xinchou_treaty
+  year: 1901
+  level: 1
+  title: 《辛丑条约》签订
+  summary: 清廷与十一国签订《辛丑条约》，赔款4.5亿两白银，允许各国在北京驻军。
+  tags: [条约外交]
+  figures: [li_hongzhang, cixi]
 
 - id: china_qing_end
   year: 1912
   level: 1
   title: 清朝灭亡与中华民国成立
-  summary: 辛亥革命后清帝退位，中华民国宣告成立，孙中山就任临时大总统。
+  summary: 辛亥革命后清帝溥仪退位，中华民国宣告成立，孙中山就任临时大总统。
   tags: [革命政变, 王朝更迭]
-  figures: [sun_yatsen]
+  figures: [sun_yatsen, yuan_shikai]
 
 - id: china_may_fourth
   year: 1919
   level: 1
   title: 五四运动
-  summary: 巴黎和会中国外交失败，北京学生发起示威，引发全国范围的文化运动。
+  summary: 巴黎和会中国外交失败，北京学生发起示威游行，引发全国文化运动与思想解放。
   tags: [改革运动, 文化思想]
+  figures: [chen_duxiu, li_dazhao, hu_shi]
 
 - id: china_cpc_founded
   year: 1921
-  level: 2
+  level: 1
   title: 中国共产党成立
-  summary: 中国共产党在上海召开第一次全国代表大会，正式宣告成立。
+  summary: 中国共产党在上海召开第一次全国代表大会，陈独秀当选中央局书记。
   tags: [革命政变]
+  figures: [chen_duxiu, li_dazhao, mao_zedong]
 
 - id: china_northern_expedition
   year: 1926
   endYear: 1928
-  level: 2
+  level: 1
   title: 北伐战争
-  summary: 国民革命军进行北伐，统一中国南方，国民政府定都南京。
+  summary: 国民革命军进行北伐，统一中国南方，国民政府定都南京，北洋军阀势力覆灭。
   tags: [战争]
-  figures: [chiang_kaishek]
+  figures: [chiang_kaishek, sun_yatsen]
+
+- id: china_nanjing_massacre
+  year: 1937
+  endYear: 1938
+  level: 1
+  title: 南京大屠杀
+  summary: 日军攻占南京后对城内平民及战俘进行大规模杀害，各方记载伤亡数字存在差异。
+  tags: [战争]
+  related: [japan_wwii_asia]
 
 - id: china_sino_japanese_war2
   year: 1937
   endYear: 1945
   level: 1
   title: 抗日战争
-  summary: 卢沟桥事变后中日全面开战，持续八年，各方记载伤亡数字存在差异。
+  summary: 卢沟桥事变后中日全面开战，持续八年，中国最终以战胜国身份结束战争。
   tags: [战争]
   related: [japan_wwii_asia]
+  figures: [chiang_kaishek, mao_zedong, zhu_de]
+
+- id: china_civil_war
+  year: 1946
+  endYear: 1949
+  level: 1
+  title: 国共内战
+  summary: 抗战结束后国共谈判破裂，全面内战爆发，三大战役后国民党军队主力溃败。
+  tags: [战争, 革命政变]
+  figures: [chiang_kaishek, mao_zedong, zhu_de, lin_biao]
+
+- id: china_prc_founded
+  year: 1949
+  level: 1
+  title: 中华人民共和国成立
+  summary: 毛泽东在北京天安门城楼宣布中华人民共和国成立，国民政府退守台湾。
+  tags: [王朝更迭, 革命政变]
+  figures: [mao_zedong, zhu_de]
+
+# ===== Level 2 事件 =====
+
+- id: china_xinzheng_reform
+  year: 1901
+  endYear: 1911
+  level: 2
+  title: 清末新政
+  summary: 慈禧太后推行新政，仿行宪政，废科举，编练新军，但改革未能挽救清朝统治。
+  tags: [改革运动]
+  figures: [cixi, yuan_shikai]
+
+- id: china_abolish_keju
+  year: 1905
+  level: 2
+  title: 废除科举制度
+  summary: 清廷宣布废除延续一千余年的科举制度，改办学堂，近代教育体系开始取代传统教育。
+  tags: [改革运动]
+  figures: [cixi]
+
+- id: china_yuan_emperor
+  year: 1915
+  endYear: 1916
+  level: 2
+  title: 袁世凯称帝与护国运动
+  summary: 袁世凯接受"二十一条"后宣布复辟帝制，遭各省反对，护国运动兴起，袁称帝83天后撤销。
+  tags: [革命政变]
+  figures: [yuan_shikai]
+
+- id: china_wuchang_uprising
+  year: 1911
+  level: 2
+  title: 武昌起义
+  summary: 湖北新军士兵在武昌发动起义，各省相继响应，引发全国性革命，清朝统治迅速瓦解。
+  tags: [革命政变]
+  figures: [sun_yatsen, yuan_shikai]
+
+- id: china_new_culture_movement
+  year: 1915
+  endYear: 1925
+  level: 2
+  title: 新文化运动
+  summary: 陈独秀等人倡导科学与民主，批判儒家传统，推动白话文运动，影响中国思想界。
+  tags: [文化思想]
+  figures: [chen_duxiu, hu_shi, li_dazhao]
+
+- id: china_twenty_one_demands
+  year: 1915
+  level: 2
+  title: 日本提出二十一条要求
+  summary: 日本向袁世凯政府提出"二十一条"，大幅扩张在华特权，5月9日成为"国耻纪念日"。
+  tags: [条约外交, 殖民扩张]
+  figures: [yuan_shikai]
+  related: [japan_wwii_asia]
+
+- id: china_first_kuomintang_cpc_cooperation
+  year: 1923
+  endYear: 1927
+  level: 2
+  title: 国共第一次合作
+  summary: 孙中山与共产国际合作，共产党员以个人身份加入国民党，推动国民革命。
+  tags: [革命政变]
+  figures: [sun_yatsen, chen_duxiu, mao_zedong]
+
+- id: china_sun_yatsen_death
+  year: 1925
+  level: 2
+  title: 孙中山逝世
+  summary: 孙中山在北京病逝，遗嘱中呼吁继续革命，完成三民主义。
+  tags: [人物]
+  figures: [sun_yatsen]
+
+- id: china_april_12_massacre
+  year: 1927
+  level: 2
+  title: 四一二政变
+  summary: 蒋介石在上海发动清党行动，大批共产党员及工人被杀，国共第一次合作破裂。
+  tags: [革命政变]
+  figures: [chiang_kaishek, chen_duxiu]
+
+- id: china_jiangxi_soviet
+  year: 1931
+  endYear: 1934
+  level: 2
+  title: 中华苏维埃共和国成立
+  summary: 中共在江西瑞金建立苏维埃政权，毛泽东等领导土地革命，国民党军队五次围剿。
+  tags: [革命政变]
+  figures: [mao_zedong, zhu_de]
+
+- id: china_long_march
+  year: 1934
+  endYear: 1935
+  level: 2
+  title: 红军长征
+  summary: 中央红军突破国民党包围，历经约一年两万五千里行军，抵达陕北延安。
+  tags: [战争]
+  figures: [mao_zedong, zhu_de, lin_biao]
+
+- id: china_september_18_incident
+  year: 1931
+  level: 2
+  title: 九一八事变
+  summary: 日本关东军炸毁南满铁路并出兵沈阳，占领东北三省，史称"九一八事变"。
+  tags: [战争]
+  related: [japan_wwii_asia]
+  figures: [chiang_kaishek]
+
+- id: china_xian_incident
+  year: 1936
+  level: 2
+  title: 西安事变
+  summary: 张学良、杨虎城扣押蒋介石，迫使其接受停止内战、联共抗日的要求，促成国共再合作。
+  tags: [革命政变]
+  figures: [chiang_kaishek]
+
+- id: china_marco_polo_bridge
+  year: 1937
+  level: 2
+  title: 卢沟桥事变
+  summary: 日军在北京卢沟桥与中国守军发生冲突，成为抗日战争全面爆发的导火索。
+  tags: [战争]
+  related: [japan_wwii_asia]
+
+- id: china_huaihai_battle
+  year: 1948
+  endYear: 1949
+  level: 2
+  title: 淮海战役
+  summary: 解放军在淮海地区歼灭国民党军主力约55万人，为国共内战决定性战役之一。
+  tags: [战争]
+  figures: [mao_zedong, zhu_de, lin_biao]
+
+- id: china_liaoshen_battle
+  year: 1948
+  level: 2
+  title: 辽沈战役
+  summary: 解放军在东北歼灭国民党军约47万人，解放东北全境，为三大战役之首。
+  tags: [战争]
+  figures: [lin_biao]
+
+- id: china_pingjin_battle
+  year: 1948
+  endYear: 1949
+  level: 2
+  title: 平津战役
+  summary: 解放军解放北平、天津，华北国民党军约52万人被歼，平津和平解放谈判完成。
+  tags: [战争]
+  figures: [mao_zedong, lin_biao]
+
+- id: china_land_reform_liberated_area
+  year: 1946
+  endYear: 1949
+  level: 2
+  title: 解放区土地改革
+  summary: 中共在各解放区推行土地改革，分配地主土地给农民，获得大量农村支持。
+  tags: [改革运动]
+  figures: [mao_zedong]
+
+- id: china_puppet_manchukuo
+  year: 1932
+  endYear: 1945
+  level: 2
+  title: 满洲国建立
+  summary: 日本扶植末代皇帝溥仪在东北建立满洲国，实际由关东军控制，为傀儡政权。
+  tags: [殖民扩张, 战争]
+  related: [japan_wwii_asia]
+
+- id: china_yan_an_rectification
+  year: 1942
+  endYear: 1944
+  level: 2
+  title: 延安整风运动
+  summary: 毛泽东主导的党内思想整顿运动，确立毛泽东思想在中共内的指导地位。
+  tags: [革命政变]
+  figures: [mao_zedong]
+
+- id: china_may_30_movement
+  year: 1925
+  level: 2
+  title: 五卅运动
+  summary: 上海日本纱厂工人被杀引发大规模反帝示威，英租界巡捕开枪造成五卅惨案，影响全国。
+  tags: [革命政变]
+
+# ===== Level 3 事件 =====
+
+- id: china_li_hongzhang_death
+  year: 1901
+  level: 3
+  title: 李鸿章逝世
+  summary: 李鸿章在签订《辛丑条约》后不久去世，终年79岁，是晚清最具争议的官员之一。
+  tags: [人物]
+  figures: [li_hongzhang]
+
+- id: china_cixi_return_beijing
+  year: 1902
+  level: 3
+  title: 慈禧太后回京
+  summary: 慈禧太后和光绪帝从西安返回北京，继续推行新政，名义上接受宪政改革方向。
+  tags: [改革运动]
+  figures: [cixi]
+
+- id: china_new_army_trained
+  year: 1903
+  endYear: 1911
+  level: 3
+  title: 编练新军
+  summary: 清廷各省编练仿西式装备与训练的新军，其中湖北新军成为辛亥革命的主要力量。
+  tags: [改革运动]
+  figures: [yuan_shikai]
+
+- id: china_tongmenghui_founded
+  year: 1905
+  level: 3
+  title: 中国同盟会成立
+  summary: 孙中山在东京联合兴中会、华兴会等，成立同盟会，以推翻清廷建立共和国为目标。
+  tags: [革命政变]
+  figures: [sun_yatsen]
+
+- id: china_guangxu_cixi_death
+  year: 1908
+  level: 3
+  title: 光绪帝与慈禧太后相继驾崩
+  summary: 光绪帝于1908年11月14日驾崩，次日慈禧太后亦去世，两人死亡时间相隔不足一天。
+  tags: [王朝更迭]
+  figures: [guangxu, cixi]
+
+- id: china_xuantong_ascends
+  year: 1908
+  level: 3
+  title: 宣统帝（溥仪）继位
+  summary: 年仅三岁的溥仪继位，年号宣统，其父载沣摄政，清朝进入最后阶段。
+  tags: [王朝更迭]
+
+- id: china_china_railway_recovery
+  year: 1911
+  level: 3
+  title: 保路运动
+  summary: 清廷宣布铁路国有化，四川等地民众发起保路运动，成为武昌起义的导火索之一。
+  tags: [革命政变]
+
+- id: china_republic_nanjing_provisional
+  year: 1912
+  level: 3
+  title: 中华民国南京临时政府成立
+  summary: 1912年元旦，中华民国南京临时政府成立，孙中山就任临时大总统，五色旗为国旗。
+  tags: [革命政变, 王朝更迭]
+  figures: [sun_yatsen]
+
+- id: china_qing_abdication
+  year: 1912
+  level: 3
+  title: 清帝退位
+  summary: 宣统帝溥仪于1912年2月12日正式退位，颁布《退位诏书》，清朝结束统治。
+  tags: [王朝更迭]
+
+- id: china_yuan_becomes_president
+  year: 1912
+  level: 3
+  title: 袁世凯就任临时大总统
+  summary: 孙中山辞职，袁世凯就任临时大总统，将临时政府迁往北京，民国政权落入北洋之手。
+  tags: [革命政变]
+  figures: [yuan_shikai]
+
+- id: china_song_jiaoren_assassinated
+  year: 1913
+  level: 3
+  title: 宋教仁遇刺
+  summary: 国民党代理理事长宋教仁在上海遇刺身亡，被认为与袁世凯有关，引发二次革命。
+  tags: [革命政变]
+  figures: [yuan_shikai]
+
+- id: china_second_revolution_fail
+  year: 1913
+  level: 3
+  title: 二次革命失败
+  summary: 孙中山发动讨袁的"二次革命"，因力量薄弱迅速失败，孙中山再度出走日本。
+  tags: [革命政变]
+  figures: [sun_yatsen, yuan_shikai]
+
+- id: china_yuan_shikai_death
+  year: 1916
+  level: 3
+  title: 袁世凯病逝
+  summary: 袁世凯在称帝失败、各方谴责中病逝，终年57岁，此后中国进入军阀割据时期。
+  tags: [人物, 王朝更迭]
+  figures: [yuan_shikai]
+
+- id: china_warlord_era
+  year: 1916
+  endYear: 1928
+  level: 3
+  title: 军阀割据时期
+  summary: 袁世凯死后中央政权瓦解，各省军阀相互混战，北京政府形同虚设，民不聊生。
+  tags: [战争]
+
+- id: china_new_youth_magazine
+  year: 1915
+  level: 3
+  title: 《新青年》创刊
+  summary: 陈独秀在上海创刊《新青年》，倡导科学与民主，成为新文化运动的主要阵地。
+  tags: [文化思想]
+  figures: [chen_duxiu]
+
+- id: china_versailles_shandong_question
+  year: 1919
+  level: 3
+  title: 巴黎和会山东问题
+  summary: 巴黎和会将德国在山东的权益转让给日本，引发中国强烈抗议，北京学生随即上街。
+  tags: [条约外交]
+
+- id: china_hu_shi_vernacular
+  year: 1917
+  level: 3
+  title: 胡适提倡白话文
+  summary: 胡适在《新青年》发表《文学改良刍议》，主张以白话文取代文言文，推动文学改革。
+  tags: [文化思想]
+  figures: [hu_shi]
+
+- id: china_lu_xun_madman_diary
+  year: 1918
+  level: 3
+  title: 鲁迅发表《狂人日记》
+  summary: 鲁迅以笔名发表中国第一篇现代白话文小说《狂人日记》，批判封建礼教。
+  tags: [文化思想]
+  figures: [lu_xun]
+
+- id: china_peking_university_reform
+  year: 1917
+  level: 3
+  title: 北京大学改革
+  summary: 蔡元培任北大校长后推行学术自由，聘请陈独秀、胡适、李大钊等，北大成为新思想中心。
+  tags: [文化思想, 改革运动]
+  figures: [chen_duxiu, hu_shi, li_dazhao]
+
+- id: china_zhili_fengtian_wars
+  year: 1920
+  endYear: 1924
+  level: 3
+  title: 直奉战争
+  summary: 直系军阀与奉系军阀先后两次爆发战争，争夺北京中央政权，民国政局动荡不安。
+  tags: [战争]
+
+- id: china_yellow_banner_communist_comintern
+  year: 1920
+  level: 3
+  title: 共产国际代表来华
+  summary: 共产国际代表马林抵华，协助组建中国共产党，并促成国共合作方针的形成。
+  tags: [革命政变]
+  figures: [chen_duxiu]
+
+- id: china_canton_massacre_1927
+  year: 1927
+  level: 3
+  title: 广州起义失败
+  summary: 中共发动广州起义，建立广州苏维埃，三天后被镇压，大批共产党员牺牲。
+  tags: [革命政变]
+  figures: [chen_duxiu]
+
+- id: china_autumn_harvest_uprising
+  year: 1927
+  level: 3
+  title: 秋收起义
+  summary: 毛泽东领导湘赣边界秋收起义，失败后率部上井冈山，开始农村包围城市道路探索。
+  tags: [革命政变]
+  figures: [mao_zedong]
+
+- id: china_nanchang_uprising
+  year: 1927
+  level: 3
+  title: 南昌起义
+  summary: 周恩来、朱德等领导南昌起义，打响武装反抗国民党的第一枪，八一建军节由此而来。
+  tags: [革命政变]
+  figures: [zhu_de]
+
+- id: china_red_army_founded
+  year: 1928
+  level: 3
+  title: 中国工农红军正式建立
+  summary: 井冈山会师后，朱德、毛泽东合编部队，正式建立中国工农红军，初有数千人。
+  tags: [革命政变]
+  figures: [mao_zedong, zhu_de]
+
+- id: china_chiang_capital_nanjing
+  year: 1928
+  level: 3
+  title: 国民政府定都南京
+  summary: 北伐完成后蒋介石国民政府迁都南京，开始"黄金十年"建设，完成名义上的统一。
+  tags: [革命政变]
+  figures: [chiang_kaishek]
+
+- id: china_encirclement_campaigns
+  year: 1930
+  endYear: 1934
+  level: 3
+  title: 国民党五次围剿红军
+  summary: 国民党军队对中央苏区发动五次围剿，前四次被红军击退，第五次成功迫使红军长征。
+  tags: [战争]
+  figures: [chiang_kaishek, mao_zedong]
+
+- id: china_zunyi_conference
+  year: 1935
+  level: 3
+  title: 遵义会议
+  summary: 长征途中召开的遵义会议确立毛泽东在红军中的领导地位，成为中共历史转折点。
+  tags: [革命政变]
+  figures: [mao_zedong, zhu_de]
+
+- id: china_lugouqiao_full_war
+  year: 1937
+  level: 3
+  title: 抗战全面爆发
+  summary: 1937年7月7日卢沟桥事变后，国共宣告第二次合作，组成抗日民族统一战线。
+  tags: [战争]
+  figures: [chiang_kaishek, mao_zedong]
+
+- id: china_taierzhuang_victory
+  year: 1938
+  level: 3
+  title: 台儿庄战役
+  summary: 中国军队在台儿庄大败日军，为抗战初期最具代表性的正面战场胜利之一。
+  tags: [战争]
+  figures: [chiang_kaishek]
+
+- id: china_wuhan_fall
+  year: 1938
+  level: 3
+  title: 武汉会战与武汉失守
+  summary: 中国军队在武汉地区与日军展开大规模会战后撤退，国民政府迁至重庆。
+  tags: [战争]
+  figures: [chiang_kaishek]
+
+- id: china_hundred_regiments_battle
+  year: 1940
+  level: 3
+  title: 百团大战
+  summary: 八路军在华北对日军铁路线及据点发动大规模反击，参战兵力达百余团。
+  tags: [战争]
+  figures: [zhu_de, lin_biao]
+
+- id: china_chongqing_bombing
+  year: 1938
+  endYear: 1943
+  level: 3
+  title: 日军轰炸重庆
+  summary: 日本空军对陪都重庆进行长达五年的战略轰炸，造成大量平民伤亡，各方统计存在差异。
+  tags: [战争]
+
+- id: china_japan_surrender
+  year: 1945
+  level: 3
+  title: 日本宣布投降
+  summary: 日本宣布无条件投降，抗日战争胜利，中国收回台湾及澎湖列岛主权。
+  tags: [战争]
+  related: [japan_wwii_asia]
+  figures: [chiang_kaishek]
+
+- id: china_chongqing_negotiations
+  year: 1945
+  level: 3
+  title: 重庆谈判
+  summary: 毛泽东赴重庆与蒋介石谈判，双方签署《双十协定》，但战后和平局面未能维持。
+  tags: [条约外交]
+  figures: [chiang_kaishek, mao_zedong]
+
+- id: china_pcc_conference
+  year: 1946
+  level: 3
+  title: 政治协商会议
+  summary: 国共及各民主党派在重庆召开政治协商会议，通过决议，但随后因内战爆发而未能实施。
+  tags: [条约外交]
+  figures: [chiang_kaishek, mao_zedong]
+
+- id: china_land_crossing_yangzi
+  year: 1949
+  level: 3
+  title: 渡江战役
+  summary: 解放军百万大军强渡长江，攻克南京，国民政府撤退台湾，全国大陆易帜。
+  tags: [战争]
+  figures: [mao_zedong, zhu_de]
+
+- id: china_yan_fu_evolution
+  year: 1898
+  level: 3
+  title: 严复《天演论》出版
+  summary: 严复翻译赫胥黎《进化论与伦理学》，以"物竞天择、适者生存"唤起变法图强意识。
+  tags: [文化思想]
+  figures: [yan_fu]
+
+- id: china_guo_moruo_creation_society
+  year: 1921
+  level: 3
+  title: 创造社成立
+  summary: 郭沫若、郁达夫等留日学生创立创造社，倡导浪漫主义文学，是五四文学运动重要流派。
+  tags: [文化思想]
+  figures: [guo_moruo]
+
+- id: china_liang_qichao_new_citizen
+  year: 1902
+  level: 3
+  title: 梁启超创办《新民丛报》
+  summary: 梁启超在日本创办《新民丛报》，宣传维新变法与新思想，影响无数青年读者。
+  tags: [文化思想]
+  figures: [liang_qichao]
+
+- id: china_nie_er_compose
+  year: 1935
+  level: 3
+  title: 聂耳创作《义勇军进行曲》
+  summary: 聂耳为电影《风云儿女》创作《义勇军进行曲》，后成为中华人民共和国国歌。
+  tags: [文化思想, 人物]
+  figures: [nie_er]
+
+- id: china_xian_er_yellow_river_cantata
+  year: 1939
+  level: 3
+  title: 冼星海创作《黄河大合唱》
+  summary: 冼星海在延安创作《黄河大合唱》，成为抗战时期最重要的音乐作品之一。
+  tags: [文化思想, 人物]
+  figures: [xian_xinghai]
+
+- id: china_lu_xun_death
+  year: 1936
+  level: 3
+  title: 鲁迅逝世
+  summary: 鲁迅在上海病逝，终年56岁，为中国现代文学的奠基人之一。
+  tags: [人物]
+  figures: [lu_xun]
+
+- id: china_nanjing_government_golden_decade
+  year: 1928
+  endYear: 1937
+  level: 3
+  title: 南京国民政府"黄金十年"
+  summary: 南京政府推动工业化、铁路建设与法律改革，中国经济在抗战前十年有所增长。
+  tags: [经济贸易, 改革运动]
+  figures: [chiang_kaishek]
+
+- id: china_shanghai_massacre_1932
+  year: 1932
+  level: 3
+  title: 一二八事变
+  summary: 日军进攻上海闸北，第十九路军奋起抵抗，经数月激战后停战，日军未能占领上海。
+  tags: [战争]
+
+- id: china_binyin_opium_suppression
+  year: 1934
+  endYear: 1939
+  level: 3
+  title: 国民政府禁烟运动
+  summary: 蒋介石推行"新生活运动"与禁烟政策，试图禁绝鸦片，但成效受战时局势制约。
+  tags: [改革运动]
+  figures: [chiang_kaishek]
+
+- id: china_yanan_base_founded
+  year: 1936
+  endYear: 1947
+  level: 3
+  title: 延安成为中共根据地
+  summary: 红军长征结束后以延安为中心建立陕甘宁边区，成为中共抗战及建国的重要根据地。
+  tags: [革命政变]
+  figures: [mao_zedong]
+
+- id: china_atom_bomb_american_use
+  year: 1945
+  level: 3
+  title: 美国对日使用原子弹
+  summary: 美国在日本广岛、长崎投下原子弹，加速日本投降，中国抗战随即胜利结束。
+  tags: [战争]
+  related: [usa_atomic_bomb]
+
+- id: china_ccp_seventh_congress
+  year: 1945
+  level: 3
+  title: 中共七大召开
+  summary: 中共第七次全国代表大会确立毛泽东思想为党的指导思想，毛泽东当选中央委员会主席。
+  tags: [革命政变]
+  figures: [mao_zedong]
