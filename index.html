@@ -18,7 +18,10 @@
       <span class="app-subtitle">1700–2025 · 多国历史时间轴</span>
     </div>
     <div class="header-center">
-      <div class="year-range-display" id="year-range-display">1700 — 2025</div>
+      <div class="year-range-display" id="year-range-display">
+        <span class="year-range-label">可见年份</span>
+        <span class="year-range-value" id="year-range-value">1700 — 2000</span>
+      </div>
     </div>
     <div class="header-right">
       <div class="level-controls" id="level-controls">
@@ -73,10 +76,17 @@
     </div>
   </div>
 
-  <!-- Visible year range bar -->
+  <!-- Year bar: hover year + visible range -->
   <div class="year-bar" id="year-bar">
-    <span class="year-bar-label">可见年份</span>
-    <span class="year-bar-range" id="year-bar-range">1700 — 2000</span>
+    <div class="year-bar-hover-block">
+      <span class="year-bar-hover-label">当前年份</span>
+      <span class="year-bar-hover-year" id="year-bar-hover">—</span>
+    </div>
+    <div class="year-bar-divider"></div>
+    <div class="year-bar-range-block">
+      <span class="year-bar-range-label">可见范围</span>
+      <span class="year-bar-range" id="year-bar-range">1700 — 2000</span>
+    </div>
     <span class="year-bar-hint">滚轮缩放 · 拖拽平移</span>
   </div>
 

@@ -23,7 +23,7 @@ var Canvas = (function () {
   var FIGURE_LANE_H       = 8;
   var FIGURE_LANE_GAP     = 3;
   var MAX_FIGURE_LANES    = 6;
-  var PAD_TOP             = 52;   // breathing room at top of SVG
+  var PAD_TOP             = 96;   // breathing room at top of SVG
   var PAD_BOTTOM          = 48;   // breathing room at bottom of SVG
 
   var DOT_R = { 1: 5, 2: 3.5, 3: 2 };
@@ -772,8 +772,10 @@ var Canvas = (function () {
     var s = Math.max(App.YEAR_START, Math.round(range.start));
     var e = Math.min(App.YEAR_END,   Math.round(range.end));
     var text = s + ' \u2014 ' + e;
-    var el = document.getElementById('year-range-display');
-    if (el) el.textContent = text;
+    // Header center value span
+    var val = document.getElementById('year-range-value');
+    if (val) val.textContent = text;
+    // Year bar range
     var bar = document.getElementById('year-bar-range');
     if (bar) bar.textContent = text;
   }
@@ -809,53 +811,15 @@ var Canvas = (function () {
     });
     layerHover.appendChild(vline);
 
-    // Year badge — large floating pill at the top of the hover line
-    var badgeW = 62;
-    var badgeH = 28;
-    var badgeY = PAD_TOP - badgeH - 6;  // sit just above first track
-    var badgeX = xSnap - badgeW / 2;
-
-    // Clamp badge so it doesn't overflow SVG edges
-    badgeX = Math.max(4, Math.min(svgW - badgeW - 4, badgeX));
-
-    // Shadow layer (slightly larger, dark)
-    var shadow = mkSvg('rect', {
-      x: badgeX - 1, y: badgeY + 2,
-      width: badgeW + 2, height: badgeH,
-      rx: 8,
-      fill: 'rgba(0,0,0,0.55)',
-      'pointer-events': 'none',
-    });
-    layerHover.appendChild(shadow);
-
-    // Badge background
-    var badge = mkSvg('rect', {
-      x: badgeX, y: badgeY,
-      width: badgeW, height: badgeH,
-      rx: 7,
-      fill: '#4f8ef7',
-      'pointer-events': 'none',
-    });
-    layerHover.appendChild(badge);
-
-    // Badge text
-    var txt = mkSvg('text', {
-      x: xSnap, y: badgeY + badgeH / 2,
-      fill: '#ffffff',
-      'font-size': 14,
-      'font-weight': 700,
-      'font-family': 'Inter, sans-serif',
-      'text-anchor': 'middle',
-      'dominant-baseline': 'central',
-      'letter-spacing': '0.5',
-      'pointer-events': 'none',
-    });
-    txt.textContent = year;
-    layerHover.appendChild(txt);
+    // Update year bar with current hover year
+    var hoverEl = document.getElementById('year-bar-hover');
+    if (hoverEl) hoverEl.textContent = year;
   }
 
   function clearHoverBand() {
     layerHover.innerHTML = '';
+    var hoverEl = document.getElementById('year-bar-hover');
+    if (hoverEl) hoverEl.textContent = '—';
   }
 
   // ─── Arc lines (related events) ──────────────────────────────────────────
