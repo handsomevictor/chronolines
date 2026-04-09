@@ -368,79 +368,38 @@ html, body {
   left: 0;
   right: 0;
   height: var(--yearbar-height);
-  display: flex;
-  align-items: center;
-  gap: 0;
-  padding: 0 20px 0 calc(var(--sidebar-width) + 20px);
   background: var(--bg-surface);
   border-bottom: 1px solid var(--border);
   z-index: 185;
+  pointer-events: none;
 }
 
-/* Hover year block — left, prominent */
-.year-bar-hover-block {
-  display: flex;
-  align-items: baseline;
-  gap: 7px;
-  flex-shrink: 0;
-}
-
-.year-bar-hover-label {
-  font-size: 10px;
-  font-weight: 500;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-.year-bar-hover-year {
-  font-size: 22px;
-  font-weight: 700;
-  color: #ffffff;
-  letter-spacing: -0.5px;
-  font-variant-numeric: tabular-nums;
-  min-width: 52px;
-  line-height: 1;
-}
-
-/* Divider between hover year and range */
-.year-bar-divider {
-  width: 1px;
-  height: 20px;
-  background: var(--border);
-  margin: 0 16px;
-  flex-shrink: 0;
-}
-
-/* Visible range block — right of divider */
-.year-bar-range-block {
-  display: flex;
-  align-items: baseline;
-  gap: 7px;
-  flex-shrink: 0;
-}
-
-.year-bar-range-label {
-  font-size: 10px;
-  font-weight: 500;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.4px;
-}
-
-.year-bar-range {
-  font-size: 14px;
-  font-weight: 600;
+/* Floating pill — absolutely positioned, follows mouse X */
+.year-bar-hover-pill {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(79,142,247,0.12);
+  border: 1px solid rgba(79,142,247,0.45);
   color: var(--accent);
-  letter-spacing: 0.3px;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 2px 9px;
+  border-radius: 5px;
   font-variant-numeric: tabular-nums;
+  letter-spacing: 0.3px;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
-.year-bar-hint {
+/* Hint text moved to filter bar */
+.filter-hint {
   font-size: 11px;
   color: var(--text-muted);
   margin-left: auto;
   letter-spacing: 0.2px;
+  flex-shrink: 0;
+  padding-right: 4px;
 }
 
 .main-layout {

@@ -808,15 +808,19 @@ var Canvas = (function () {
     });
     layerHover.appendChild(vline);
 
-    // Update year bar with current hover year
+    // Update floating year pill in year bar — position follows mouse X
     var hoverEl = document.getElementById('year-bar-hover');
-    if (hoverEl) hoverEl.textContent = year;
+    if (hoverEl) {
+      hoverEl.textContent = year;
+      hoverEl.style.display = '';
+      hoverEl.style.left = (rect.left + xSnap) + 'px';
+    }
   }
 
   function clearHoverBand() {
     layerHover.innerHTML = '';
     var hoverEl = document.getElementById('year-bar-hover');
-    if (hoverEl) hoverEl.textContent = '—';
+    if (hoverEl) hoverEl.style.display = 'none';
   }
 
   // ─── Arc lines (related events) ──────────────────────────────────────────
