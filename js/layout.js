@@ -1,22 +1,65 @@
 /**
  * layout.js — Coordinate math, zoom levels, label collision detection,
- *             event clustering.
+ *             event clustering, figure lane assignment.
+ *
+ * Fix 3: shouldCluster() — auto expand/collapse based on pixelsPerYear
+ * Fix 4: getZoomMaxLevel(), getEventOpacity() — smooth level transitions
+ * Fix 5: assignFigureLanes() — swim-lane layout for figure bars
  */
 
 var Layout = (function () {
   'use strict';
 
-  // ─── Zoom / Level ──────────────────────────────────────────────────────────
+  // ─── Fix 4: Zoom → Max Level ───────────────────────────────────────────────
 
   /**
-   * Returns which event levels are visible given current pixels-per-year.
-   * yearsPerGrid = years spanned by 100 pixels.
+   * Return the maximum event level that should be VISIBLE at this zoom.
+   * yearsPerViewport100px = number of years that fit in 100 SVG pixels.
+   */
+  function getZoomMaxLevel(pixelsPerYear) {
+    var yearsPerVP = 100 / pixelsPerYear;
+    if (yearsPerVP > 50) return 1;   // very zoomed out → Level 1 only
+    if (yearsPerVP > 15) return 2;   // medium → L1 + L2
+    return 3;                         // zoomed in → all three
+  }
+
+  /**
+   * Legacy wrapper: returns an array of visible level numbers.
+   * Used by canvas.js drawEvents filter.
    */
   function visibleLevels(pixelsPerYear) {
-    var yearsPerGrid = 100 / pixelsPerYear;
-    if (yearsPerGrid > 50) return [1];
-    if (yearsPerGrid > 10) return [1, 2];
-    return [1, 2, 3];
+    var max = getZoomMaxLevel(pixelsPerYear);
+    var arr = [1];
+    if (max >= 2) arr.push(2);
+    if (max >= 3) arr.push(3);
+    return arr;
+  }
+
+  /**
+   * Fix 4: Compute per-event opacity for smooth zoom-level transitions.
+   *
+   * Level 2 fades in/out in the yearsPerVP range 40–60.
+   * Level 3 fades in/out in the yearsPerVP range 10–20.
+   * Level 1 is always fully visible (1.0).
+   */
+  function getEventOpacity(eventLevel, pixelsPerYear) {
+    var yearsPerVP = 100 / pixelsPerYear;
+
+    if (eventLevel === 1) return 1;
+
+    if (eventLevel === 2) {
+      if (yearsPerVP < 40) return 1;
+      if (yearsPerVP > 60) return 0;
+      return 1 - (yearsPerVP - 40) / 20;
+    }
+
+    if (eventLevel === 3) {
+      if (yearsPerVP < 10) return 1;
+      if (yearsPerVP > 20) return 0;
+      return 1 - (yearsPerVP - 10) / 10;
+    }
+
+    return 1;
   }
 
   // ─── Coordinate transforms ─────────────────────────────────────────────────
@@ -59,17 +102,30 @@ var Layout = (function () {
     });
   }
 
-  // ─── Clustering ────────────────────────────────────────────────────────────
+  // ─── Fix 3: Clustering ─────────────────────────────────────────────────────
 
   /**
-   * Cluster events within a track that are closer than MIN_PX pixels.
+   * When pixelsPerYear > 20, never cluster — show all events individually.
+   * When pixelsPerYear <= 20, cluster events closer than CLUSTER_THRESHOLD_PX.
+   */
+  var CLUSTER_THRESHOLD_PX = 12;
+
+  function shouldCluster(pixelsPerYear) {
+    return pixelsPerYear < 20;
+  }
+
+  /**
+   * Cluster events within a track that are closer than CLUSTER_THRESHOLD_PX.
    * Level 1 events are never clustered.
    * Returns array of groups; each group is an array of events.
    */
-  var MIN_CLUSTER_PX = 8;
-
   function clusterEvents(events, pixelsPerYear, panX) {
     if (!events || !events.length) return [];
+
+    // High zoom: never cluster — each event is its own singleton group
+    if (!shouldCluster(pixelsPerYear)) {
+      return events.map(function (e) { return [e]; });
+    }
 
     // Sort by year
     var sorted = events.slice().sort(function (a, b) { return a.year - b.year; });
@@ -95,7 +151,7 @@ var Layout = (function () {
         var next = sorted[i + 1];
         if (next.level === 1) break;
         var nextX = yearToX(next.year, panX, pixelsPerYear);
-        if (nextX - groupX < MIN_CLUSTER_PX) {
+        if (nextX - groupX < CLUSTER_THRESHOLD_PX) {
           group.push(next);
           i++;
         } else {
@@ -112,37 +168,22 @@ var Layout = (function () {
 
   // ─── Label placement ────────────────────────────────────────────────────────
 
-  /**
-   * Assign Y positions to event labels using a greedy lane-stacking algorithm.
-   *
-   * Each label occupies a bounding box:
-   *   x = event x − LABEL_W/2  (we approximate label width)
-   *   width = LABEL_W
-   *   height = LABEL_H
-   *
-   * We stack labels upward in lanes. Lane 0 is just above the track line.
-   * If a new label overlaps something in lane k, try lane k+1 (higher up).
-   *
-   * Returns array of {event, x, labelY, laneY} objects.
-   */
-  var LABEL_H       = 14;   // estimated label height (px)
-  var LABEL_GAP     = 3;    // vertical gap between stacked labels
-  var LABEL_STEP    = LABEL_H + LABEL_GAP;
-  var LABEL_X_PAD   = 4;    // horizontal clearance between labels (px)
+  var LABEL_H     = 14;
+  var LABEL_GAP   = 3;
+  var LABEL_STEP  = LABEL_H + LABEL_GAP;
+  var LABEL_X_PAD = 4;
 
   function layoutLabels(events, trackY, pixelsPerYear, panX, svgWidth) {
     if (!events || !events.length) return [];
 
-    // Build items sorted by x
     var items = events.map(function (e) {
-      var x = yearToX(e.year, panX, pixelsPerYear);
+      var x    = yearToX(e.year, panX, pixelsPerYear);
       var wEst = estimateLabelWidth(e.title, e.level);
       return { event: e, x: x, w: wEst };
     });
 
     items.sort(function (a, b) { return a.x - b.x; });
 
-    // placed = array of {x, w, labelY}
     var placed = [];
 
     var results = items.map(function (item) {
@@ -150,10 +191,9 @@ var Layout = (function () {
         return { event: item.event, x: item.x, labelY: null };
       }
 
-      // Try lanes: 0 = closest to track, higher = further up
-      var baseY = trackY - 18;  // default: just above the track dot
+      var baseY  = trackY - 18;
       var labelY = baseY;
-      var found = false;
+      var found  = false;
 
       for (var lane = 0; lane < 12; lane++) {
         labelY = baseY - lane * LABEL_STEP;
@@ -166,7 +206,7 @@ var Layout = (function () {
         if (!overlap) { found = true; break; }
       }
 
-      if (!found) { labelY = null; } // give up — too crowded
+      if (!found) { labelY = null; }
 
       placed.push({ x: item.x, w: item.w, labelY: labelY });
       return { event: item.event, x: item.x, labelY: labelY };
@@ -175,40 +215,84 @@ var Layout = (function () {
     return results;
   }
 
-  /** Rough label width estimation (characters × font-size × factor) */
   function estimateLabelWidth(title, level) {
     if (!title) return 60;
-    var fontSize = level === 1 ? 12 : 11;
-    var charWidth = fontSize * 0.56;  // approximate for mixed CJK+Latin
+    var fontSize  = level === 1 ? 12 : 11;
+    var charWidth = fontSize * 0.56;
     return Math.min(title.length * charWidth, 160);
+  }
+
+  // ─── Fix 5: Figure swim-lane assignment ─────────────────────────────────────
+
+  /**
+   * Assign each figure to a swim lane so overlapping lifespans don't collide.
+   * Uses a greedy algorithm: find the first lane whose last occupant ended
+   * before this figure's birthYear.
+   *
+   * @param  {Array} figures  Array of figure objects with birthYear, deathYear
+   * @returns {Array}         Same figures with an added `.lane` property (0-based)
+   */
+  function assignFigureLanes(figures) {
+    if (!figures || !figures.length) return [];
+
+    // Sort by birth year so we assign lanes left to right
+    var sorted = figures.slice().sort(function (a, b) {
+      return (a.birthYear || 0) - (b.birthYear || 0);
+    });
+
+    // lanes[i] = the end year of the last figure placed in lane i
+    var laneEndYears = [];
+
+    var result = sorted.map(function (fig) {
+      var birth = fig.birthYear || 0;
+      var death = fig.deathYear || (fig.birthYear ? fig.birthYear + 10 : 0);
+
+      // Find first free lane
+      var lane = -1;
+      for (var li = 0; li < laneEndYears.length; li++) {
+        if (birth > laneEndYears[li] + 2) {
+          lane = li;
+          break;
+        }
+      }
+      if (lane === -1) {
+        lane = laneEndYears.length;
+        laneEndYears.push(0);
+      }
+      laneEndYears[lane] = death;
+
+      return Object.assign({}, fig, { lane: lane });
+    });
+
+    return result;
   }
 
   // ─── Grid intervals ─────────────────────────────────────────────────────────
 
-  /**
-   * Choose grid tick intervals based on zoom level.
-   * Returns { major, minor } in years.
-   */
   function gridIntervals(pixelsPerYear) {
     var ppy = pixelsPerYear;
-    if (ppy < 0.3)       return { major: 100, minor: 50 };
-    if (ppy < 0.8)       return { major: 50,  minor: 10 };
-    if (ppy < 2)         return { major: 25,  minor: 5  };
-    if (ppy < 6)         return { major: 10,  minor: 2  };
-    if (ppy < 15)        return { major: 5,   minor: 1  };
+    if (ppy < 0.3)  return { major: 100, minor: 50 };
+    if (ppy < 0.8)  return { major: 50,  minor: 10 };
+    if (ppy < 2)    return { major: 25,  minor: 5  };
+    if (ppy < 6)    return { major: 10,  minor: 2  };
+    if (ppy < 15)   return { major: 5,   minor: 1  };
     return               { major: 2,   minor: 1  };
   }
 
   return {
-    visibleLevels:  visibleLevels,
-    yearToX:        yearToX,
-    xToYear:        xToYear,
-    visibleRange:   visibleRange,
-    filterByTag:    filterByTag,
-    filterBySearch: filterBySearch,
-    clusterEvents:  clusterEvents,
-    layoutLabels:   layoutLabels,
-    gridIntervals:  gridIntervals,
+    getZoomMaxLevel:    getZoomMaxLevel,
+    visibleLevels:      visibleLevels,
+    getEventOpacity:    getEventOpacity,
+    shouldCluster:      shouldCluster,
+    yearToX:            yearToX,
+    xToYear:            xToYear,
+    visibleRange:       visibleRange,
+    filterByTag:        filterByTag,
+    filterBySearch:     filterBySearch,
+    clusterEvents:      clusterEvents,
+    layoutLabels:       layoutLabels,
+    gridIntervals:      gridIntervals,
     estimateLabelWidth: estimateLabelWidth,
+    assignFigureLanes:  assignFigureLanes,
   };
 })();

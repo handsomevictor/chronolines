@@ -1,13 +1,17 @@
 /**
- * controls.js — Zoom / Pan interactions, tag/category filters, search.
+ * controls.js — Zoom / Pan interactions, tag/category/level filters, search.
+ *
+ * Fix 1: Level selector button wiring → App.state.userMaxLevel
+ * Fix 2: Zoom boundary limits (min = full timeline fit, max = 80 px/year)
+ *         Pan clamping — no overscroll beyond timeline edges
  */
 
 var Controls = (function () {
   'use strict';
 
   var wrapper;
-  var isDragging  = false;
-  var lastMouseX  = 0;
+  var isDragging = false;
+  var lastMouseX = 0;
 
   // Touch state
   var touch1LastX    = 0;
@@ -15,9 +19,10 @@ var Controls = (function () {
   var touchStartZoom = 1;
   var touchStartPanX = 0;
 
-  // Zoom bounds
-  var ZOOM_MIN  = 0.08;  // full timeline on screen
-  var ZOOM_MAX  = 50;    // ~10 year view
+  // Fix 2: zoom bounds
+  // ZOOM_MIN is computed dynamically (= viewport/totalYears), so that the full
+  // timeline always fits on screen.  ZOOM_MAX = 80 px/year ≈ 10-year window.
+  var ZOOM_MAX  = 80;
   var ZOOM_STEP = 1.25;
 
   function init() {
@@ -42,6 +47,24 @@ var Controls = (function () {
       zoomAround(wrapper.clientWidth / 2, 1 / ZOOM_STEP);
     });
     document.getElementById('btn-zoom-reset').addEventListener('click', resetView);
+
+    // ── Fix 1: Level selector ─────────────────────────────────────────────
+    document.querySelectorAll('.level-btn').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.level-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        btn.classList.add('active');
+
+        var val = btn.getAttribute('data-level');
+        if (val === 'all') {
+          App.state.userMaxLevel = 3;
+        } else {
+          App.state.userMaxLevel = parseInt(val, 10);
+        }
+        Canvas.scheduleRender();
+      });
+    });
 
     // ── Tag filter ────────────────────────────────────────────────────────
     document.querySelectorAll('.tag-chip').forEach(function (btn) {
@@ -79,14 +102,13 @@ var Controls = (function () {
       }, 150);
     });
 
-    // ── Detail panel close ─────────────────────────────────────────────────
+    // ── Detail panel close ────────────────────────────────────────────────
     document.getElementById('detail-close').addEventListener('click', function () {
       Tooltip.hideDetail();
     });
 
     // ── Keyboard shortcuts ────────────────────────────────────────────────
     window.addEventListener('keydown', function (e) {
-      // Ignore when focused on input
       if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
 
       switch (e.key) {
@@ -120,13 +142,20 @@ var Controls = (function () {
     restoreFromURL();
   }
 
+  // ─── Fix 2: zoom min (dynamic) ────────────────────────────────────────────
+
+  function getZoomMin() {
+    // Full timeline fits exactly in viewport width
+    var w = wrapper ? wrapper.clientWidth : window.innerWidth;
+    return w / (App.YEAR_END - App.YEAR_START);
+  }
+
   // ─── Wheel zoom ──────────────────────────────────────────────────────────
 
   function onWheel(e) {
     e.preventDefault();
     var rect   = wrapper.getBoundingClientRect();
     var mouseX = e.clientX - rect.left;
-    // Normalize delta across different browsers / platforms
     var delta  = e.deltaY || e.detail || -e.wheelDelta;
     var factor = delta < 0 ? ZOOM_STEP : 1 / ZOOM_STEP;
     zoomAround(mouseX, factor);
@@ -134,13 +163,13 @@ var Controls = (function () {
 
   function zoomAround(pivotX, factor) {
     var oldZoom = App.state.zoom;
-    var newZoom = clamp(oldZoom * factor, ZOOM_MIN, ZOOM_MAX);
+    var zoomMin = getZoomMin();
+    var newZoom = clamp(oldZoom * factor, zoomMin, ZOOM_MAX);
     if (newZoom === oldZoom) return;
 
-    // Keep the pivot year fixed
-    var pivotYear   = Layout.xToYear(pivotX, App.state.panX, oldZoom);
-    App.state.zoom  = newZoom;
-    App.state.panX  = pivotX - (pivotYear - App.YEAR_START) * newZoom;
+    var pivotYear  = Layout.xToYear(pivotX, App.state.panX, oldZoom);
+    App.state.zoom = newZoom;
+    App.state.panX = pivotX - (pivotYear - App.YEAR_START) * newZoom;
 
     clampPan();
     syncURL();
@@ -151,15 +180,15 @@ var Controls = (function () {
 
   function onMouseDown(e) {
     if (e.button !== 0) return;
-    isDragging  = true;
-    lastMouseX  = e.clientX;
+    isDragging = true;
+    lastMouseX = e.clientX;
     wrapper.classList.add('dragging');
   }
 
   function onMouseMove(e) {
     if (!isDragging) return;
-    var dx       = e.clientX - lastMouseX;
-    lastMouseX   = e.clientX;
+    var dx     = e.clientX - lastMouseX;
+    lastMouseX = e.clientX;
     App.state.panX += dx;
     clampPan();
     Canvas.scheduleRender();
@@ -176,7 +205,7 @@ var Controls = (function () {
 
   function onTouchStart(e) {
     if (e.touches.length === 1) {
-      touch1LastX  = e.touches[0].clientX;
+      touch1LastX = e.touches[0].clientX;
     } else if (e.touches.length === 2) {
       touchStartDist = touchDist(e);
       touchStartZoom = App.state.zoom;
@@ -186,6 +215,7 @@ var Controls = (function () {
 
   function onTouchMove(e) {
     e.preventDefault();
+    var zoomMin = getZoomMin();
     if (e.touches.length === 1) {
       var dx = e.touches[0].clientX - touch1LastX;
       touch1LastX = e.touches[0].clientX;
@@ -193,13 +223,13 @@ var Controls = (function () {
       clampPan();
       Canvas.scheduleRender();
     } else if (e.touches.length === 2) {
-      var dist   = touchDist(e);
-      var factor = dist / touchStartDist;
-      var cx     = (e.touches[0].clientX + e.touches[1].clientX) / 2;
-      var rect   = wrapper.getBoundingClientRect();
-      var pivotX = cx - rect.left;
+      var dist      = touchDist(e);
+      var factor    = dist / touchStartDist;
+      var cx        = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+      var rect      = wrapper.getBoundingClientRect();
+      var pivotX    = cx - rect.left;
       var pivotYear = Layout.xToYear(pivotX, touchStartPanX, touchStartZoom);
-      var newZoom   = clamp(touchStartZoom * factor, ZOOM_MIN, ZOOM_MAX);
+      var newZoom   = clamp(touchStartZoom * factor, zoomMin, ZOOM_MAX);
       App.state.zoom = newZoom;
       App.state.panX = pivotX - (pivotYear - App.YEAR_START) * newZoom;
       clampPan();
@@ -215,21 +245,30 @@ var Controls = (function () {
     return Math.sqrt(dx * dx + dy * dy);
   }
 
-  // ─── Pan clamping ─────────────────────────────────────────────────────────
+  // ─── Fix 2: Pan clamping — hard boundary, no overscroll ──────────────────
 
   function clampPan() {
-    var w         = wrapper.clientWidth || window.innerWidth;
-    var totalW    = (App.YEAR_END - App.YEAR_START) * App.state.zoom;
-    var overscroll = w * 0.1;
-    var maxPan    = overscroll;
-    var minPan    = w - totalW - overscroll;
-    App.state.panX = clamp(App.state.panX, minPan, maxPan);
+    var w      = wrapper ? wrapper.clientWidth : window.innerWidth;
+    var ppy    = App.state.zoom;
+    var totalW = (App.YEAR_END - App.YEAR_START) * ppy;
+
+    // maxPan = 0 → leftmost year (1700) aligns to left edge of viewport
+    // minPan = w - totalW → rightmost year (2025) aligns to right edge
+    var maxPan = 0;
+    var minPan = w - totalW;
+
+    // If timeline is narrower than viewport (very zoomed out), center it
+    if (totalW < w) {
+      App.state.panX = (w - totalW) / 2;
+    } else {
+      App.state.panX = clamp(App.state.panX, minPan, maxPan);
+    }
   }
 
   // ─── Reset ───────────────────────────────────────────────────────────────
 
   function resetView() {
-    var w = wrapper.clientWidth || window.innerWidth;
+    var w = wrapper ? wrapper.clientWidth : window.innerWidth;
     App.state.zoom = w / (App.YEAR_END - App.YEAR_START);
     App.state.panX = 0;
     syncURL();
@@ -260,7 +299,6 @@ var Controls = (function () {
     try {
       var params = new URLSearchParams(window.location.search);
 
-      // Restore tag
       var tag = params.get('tag');
       if (tag) {
         App.state.activeTag = tag;
@@ -269,7 +307,6 @@ var Controls = (function () {
         });
       }
 
-      // Restore year range
       var years = params.get('years');
       if (years) {
         var parts = years.split('-');
@@ -294,9 +331,9 @@ var Controls = (function () {
   }
 
   return {
-    init:      init,
-    resetView: resetView,
-    clampPan:  clampPan,
+    init:       init,
+    resetView:  resetView,
+    clampPan:   clampPan,
     zoomAround: zoomAround,
   };
 })();

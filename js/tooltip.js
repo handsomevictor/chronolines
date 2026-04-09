@@ -1,5 +1,7 @@
 /**
  * tooltip.js — Hover tooltip, detail panel, arc drawing.
+ * Fix 0: dark theme colors throughout.
+ * Fix 5: updated CATEGORY_COLORS to match canvas.js vivid palette.
  */
 
 var Tooltip = (function () {
@@ -9,29 +11,30 @@ var Tooltip = (function () {
   var OFFSET_X = 16;
   var OFFSET_Y = -12;
 
-  // Tag color map — low-saturation, readable on white bg
+  // Fix 0: tag colors — vivid enough to read on dark backgrounds
   var TAG_COLORS = {
-    '战争':    '#c0392b',
-    '条约外交': '#1a5276',
-    '革命政变': '#6c3483',
-    '改革运动': '#1e8449',
-    '经济贸易': '#b7770d',
-    '科技发明': '#0e6655',
-    '文化思想': '#a04000',
-    '王朝更迭': '#515a5a',
-    '殖民扩张': '#2c3e50',
-    '人物':    '#922b21',
+    '战争':    '#e05c4f',
+    '条约外交': '#4f8ef7',
+    '革命政变': '#a78bfa',
+    '改革运动': '#4ade80',
+    '经济贸易': '#fb923c',
+    '科技发明': '#06b6d4',
+    '文化思想': '#f59e0b',
+    '王朝更迭': '#94a3b8',
+    '殖民扩张': '#f472b6',
+    '人物':    '#e05c4f',
   };
 
+  // Fix 5: vivid category colors matching canvas.js CATEGORY_COLORS
   var CATEGORY_COLORS = {
-    '政治':    '#c0392b',
-    '军事':    '#922b21',
-    '科学':    '#1a5276',
-    '文学':    '#6c3483',
-    '音乐':    '#7d1a4e',
-    '艺术':    '#b7770d',
-    '经济金融': '#1e8449',
-    '哲学思想': '#0e6655',
+    '政治':    '#ef4444',
+    '军事':    '#f97316',
+    '科学':    '#3b82f6',
+    '文学':    '#a855f7',
+    '音乐':    '#ec4899',
+    '艺术':    '#f59e0b',
+    '经济金融': '#10b981',
+    '哲学思想': '#06b6d4',
   };
 
   function init() {
@@ -41,14 +44,16 @@ var Tooltip = (function () {
   // ─── Show / Hide ─────────────────────────────────────────────────────────
 
   function show(event, track, mouseEvt) {
+    var color = Canvas.TRACK_COLORS[track.id] || track.color || '#888';
+
     var yearStr = event.endYear
       ? event.year + '–' + event.endYear
       : event.year + ' 年';
 
     var tagsHtml = (event.tags || []).map(function (t) {
-      var color = TAG_COLORS[t] || '#888';
-      return '<span class="tt-tag" style="background:' + color + '22;color:' + color +
-             ';border:1px solid ' + color + '44">' + t + '</span>';
+      var c = TAG_COLORS[t] || '#888';
+      return '<span class="tt-tag" style="background:' + c + '18;color:' + c +
+             ';border:1px solid ' + c + '44">' + t + '</span>';
     }).join('');
 
     var figuresHtml = '';
@@ -66,7 +71,7 @@ var Tooltip = (function () {
       '<div class="tt-header">' +
         '<div class="tt-meta">' +
           '<span class="tt-year">' + yearStr + '</span>' +
-          '<span class="tt-track-dot" style="background:' + track.color + '"></span>' +
+          '<span class="tt-track-dot" style="background:' + color + '"></span>' +
           '<span class="tt-track-name">' + track.name + '</span>' +
         '</div>' +
         '<div class="tt-title">' + escHtml(event.title) + '</div>' +
@@ -82,6 +87,8 @@ var Tooltip = (function () {
   }
 
   function showCluster(group, track, mouseEvt) {
+    var color = Canvas.TRACK_COLORS[track.id] || track.color || '#888';
+
     var minYear = group.reduce(function (m, e) { return Math.min(m, e.year); }, Infinity);
     var maxYear = group.reduce(function (m, e) { return Math.max(m, e.year); }, -Infinity);
 
@@ -89,7 +96,7 @@ var Tooltip = (function () {
       return '<div class="tt-cluster-item">' + e.year + ' · ' + escHtml(e.title) + '</div>';
     }).join('');
     if (group.length > 8) {
-      itemsHtml += '<div class="tt-cluster-item" style="color:#a39e98">…还有 ' +
+      itemsHtml += '<div class="tt-cluster-item" style="color:rgba(255,255,255,0.25)">…还有 ' +
                    (group.length - 8) + ' 个</div>';
     }
 
@@ -97,7 +104,7 @@ var Tooltip = (function () {
       '<div class="tt-header">' +
         '<div class="tt-meta">' +
           '<span class="tt-year">' + minYear + '–' + maxYear + '</span>' +
-          '<span class="tt-track-dot" style="background:' + track.color + '"></span>' +
+          '<span class="tt-track-dot" style="background:' + color + '"></span>' +
           '<span class="tt-track-name">' + track.name + '</span>' +
         '</div>' +
         '<div class="tt-title">' + group.length + ' 个事件</div>' +
@@ -109,13 +116,14 @@ var Tooltip = (function () {
   }
 
   function showRuler(ruler, track, mouseEvt) {
-    var dur = ruler.endYear - ruler.startYear;
+    var color = Canvas.TRACK_COLORS[track.id] || track.color || '#888';
+    var dur   = ruler.endYear - ruler.startYear;
     var durStr = dur > 0 ? '（' + dur + ' 年）' : '';
 
     el.innerHTML =
       '<div class="tt-header">' +
         '<div class="tt-meta">' +
-          '<span class="tt-track-dot" style="background:' + track.color + '"></span>' +
+          '<span class="tt-track-dot" style="background:' + color + '"></span>' +
           '<span class="tt-track-name">' + track.name + '</span>' +
         '</div>' +
         '<div class="tt-ruler-name">' + escHtml(ruler.name) + '</div>' +
@@ -129,12 +137,12 @@ var Tooltip = (function () {
 
   function showFigure(figure, track, mouseEvt) {
     var catColor = CATEGORY_COLORS[figure.category] || '#888';
-    var lifeStr = (figure.birthYear || '?') + ' — ' + (figure.deathYear || '?');
+    var lifeStr  = (figure.birthYear || '?') + ' — ' + (figure.deathYear || '?');
 
     el.innerHTML =
       '<div class="tt-header">' +
         '<div class="tt-figure-name">' + escHtml(figure.name) +
-          '<span class="tt-figure-cat" style="background:' + catColor + '22;color:' + catColor +
+          '<span class="tt-figure-cat" style="background:' + catColor + '18;color:' + catColor +
           ';border:1px solid ' + catColor + '44">' + (figure.category || '') + '</span>' +
         '</div>' +
         '<div class="tt-figure-years">' + lifeStr + '</div>' +
@@ -173,31 +181,27 @@ var Tooltip = (function () {
 
   // ─── Detail Panel ─────────────────────────────────────────────────────────
 
-  var TAG_COLORS_DETAIL = TAG_COLORS;
-
   function showDetail(event, track) {
-    var panel  = document.getElementById('detail-panel');
-    var body   = document.getElementById('detail-body');
-    var badge  = document.getElementById('detail-track-badge');
+    var panel = document.getElementById('detail-panel');
+    var body  = document.getElementById('detail-body');
+    var badge = document.getElementById('detail-track-badge');
+    var color = Canvas.TRACK_COLORS[track.id] || track.color || '#888';
 
-    // Track badge
     badge.textContent = track.name;
-    badge.style.background = track.color + '22';
-    badge.style.color       = track.color;
-    badge.style.border      = '1px solid ' + track.color + '55';
+    badge.style.background = color + '18';
+    badge.style.color       = color;
+    badge.style.border      = '1px solid ' + color + '55';
 
     var yearStr = event.endYear
       ? event.year + ' — ' + event.endYear
       : event.year + ' 年';
 
-    // Tags
     var tagsHtml = (event.tags || []).map(function (t) {
-      var c = TAG_COLORS_DETAIL[t] || '#888';
-      return '<span class="detail-tag" style="background:' + c + '22;color:' + c +
+      var c = TAG_COLORS[t] || '#888';
+      return '<span class="detail-tag" style="background:' + c + '18;color:' + c +
              ';border:1px solid ' + c + '44">' + t + '</span>';
     }).join('');
 
-    // Figures
     var figuresHtml = '';
     if (event.figures && event.figures.length) {
       var chips = event.figures.map(function (fid) {
@@ -214,7 +218,6 @@ var Tooltip = (function () {
       }
     }
 
-    // Related events
     var relatedHtml = '';
     if (event.related && event.related.length) {
       var items = event.related.map(function (rid) {
@@ -249,7 +252,6 @@ var Tooltip = (function () {
         var res = findEvent(eid);
         if (res) {
           showDetail(res.event, res.track);
-          // Pan the timeline to focus that event
           Canvas.panToYear(res.event.year);
         }
       });
@@ -258,7 +260,6 @@ var Tooltip = (function () {
     panel.classList.remove('hidden');
     App.state.selectedEvent = event;
 
-    // Draw arc lines to related events
     Canvas.drawRelatedArcs(event);
   }
 
@@ -299,7 +300,7 @@ var Tooltip = (function () {
     if (!App.data) return null;
     var tracks = App.data.tracks;
     for (var i = 0; i < tracks.length; i++) {
-      var t = tracks[i];
+      var t    = tracks[i];
       var evts = App.data.events[t.id] || [];
       for (var j = 0; j < evts.length; j++) {
         if (evts[j].id === eid) return { event: evts[j], track: t };
@@ -318,17 +319,17 @@ var Tooltip = (function () {
   }
 
   return {
-    init:       init,
-    show:       show,
-    showCluster: showCluster,
-    showRuler:  showRuler,
-    showFigure: showFigure,
-    move:       move,
-    hide:       hide,
-    showDetail: showDetail,
-    hideDetail: hideDetail,
-    findFigure: findFigure,
-    findEvent:  findEvent,
+    init:         init,
+    show:         show,
+    showCluster:  showCluster,
+    showRuler:    showRuler,
+    showFigure:   showFigure,
+    move:         move,
+    hide:         hide,
+    showDetail:   showDetail,
+    hideDetail:   hideDetail,
+    findFigure:   findFigure,
+    findEvent:    findEvent,
     CATEGORY_COLORS: CATEGORY_COLORS,
   };
 })();

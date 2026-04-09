@@ -1,14 +1,14 @@
 /**
- * canvas.js — SVG rendering engine.
+ * canvas.js — SVG rendering engine (v3 — dark theme + all fixes).
  *
  * Layout constants (all in px):
- *   TRACK_HEIGHT   = 108  (total height per track row)
- *   RULER_H        = 8    (ruler bar at top of each row)
- *   TRACK_LINE_Y   = RULER_H + 54   (center line within row)
- *
- * The SVG origin (0,0) maps to the top-left of the canvas-wrapper.
- * Sidebar labels are HTML divs absolutely positioned in .sidebar,
- * so their top = trackIndex * TRACK_HEIGHT + TRACK_HEIGHT/2 - 9 (center text).
+ *   TRACK_HEIGHT       = 160   (Fix 6: increased from 108 to 160)
+ *   RULER_H            = 8
+ *   TRACK_LINE_Y_OFFSET = 60   (center line from top of row)
+ *   FIGURE_LANE_START  = TRACK_LINE_Y_OFFSET + 20  (first figure swim lane)
+ *   FIGURE_LANE_H      = 8     (height of each lane bar)
+ *   FIGURE_LANE_GAP    = 3     (gap between swim lanes)
+ *   MAX_FIGURE_LANES   = 8
  */
 
 var Canvas = (function () {
@@ -16,20 +16,41 @@ var Canvas = (function () {
 
   // ─── Constants ─────────────────────────────────────────────────────────────
 
-  var TRACK_HEIGHT = 108;   // px, total height per track row
-  var RULER_H      = 8;     // px, ruler bar height at top of row
-  var TRACK_LINE_Y_OFFSET = RULER_H + 50;  // from top of row to center line
+  var TRACK_HEIGHT        = 160;
+  var RULER_H             = 8;
+  var TRACK_LINE_Y_OFFSET = 60;   // from top of row to center line
+  // Figure swim lanes start 14px below the center line (relative to track top + RULER_H)
+  // Center line is at RULER_H + TRACK_LINE_Y_OFFSET = 68px from track top.
+  // Lane area: 68 + 14 = 82px from top, up to 156px (leaving 4px margin).
+  // Available: 74px → fits 6 lanes of 8px + 3px gap (11px each): 6*11 - 3 = 63px ✓
+  var FIGURE_LANE_START   = TRACK_LINE_Y_OFFSET + 14;  // from RULER_H baseline
+  var FIGURE_LANE_H       = 8;
+  var FIGURE_LANE_GAP     = 3;
+  var MAX_FIGURE_LANES    = 6;
 
   var DOT_R = { 1: 5, 2: 3.5, 3: 2 };
 
+  // Fix 0: brighter track colors for dark background
   var TRACK_COLORS = {
-    china:   '#c0392b',   // deep red
-    uk:      '#1a5276',   // deep ocean blue
-    france:  '#6c3483',   // deep purple
-    usa:     '#1e8449',   // deep green
-    russia:  '#b7770d',   // dark gold
-    germany: '#515a5a',   // deep gray
-    japan:   '#922b21',   // deep rose-red
+    china:   '#e05c4f',  // warm red
+    uk:      '#4f8ef7',  // blue
+    france:  '#a78bfa',  // lavender
+    usa:     '#4ade80',  // green
+    russia:  '#fb923c',  // orange
+    germany: '#94a3b8',  // slate-blue gray
+    japan:   '#f472b6',  // pink
+  };
+
+  // Fix 5: category colors (vivid, dark-bg optimised)
+  var CATEGORY_COLORS = {
+    '政治':    '#ef4444',
+    '军事':    '#f97316',
+    '科学':    '#3b82f6',
+    '文学':    '#a855f7',
+    '音乐':    '#ec4899',
+    '艺术':    '#f59e0b',
+    '经济金融': '#10b981',
+    '哲学思想': '#06b6d4',
   };
 
   // ─── State ────────────────────────────────────────────────────────────────
@@ -39,6 +60,7 @@ var Canvas = (function () {
   var layerEvents, layerArcs, layerLabels, layerHover;
   var sidebar;
   var wrapper;
+  var mainLayout;
   var axisCanvas, axisCtx;
   var raf = null;
 
@@ -48,6 +70,7 @@ var Canvas = (function () {
     svg        = document.getElementById('timeline-svg');
     wrapper    = document.getElementById('canvas-wrapper');
     sidebar    = document.getElementById('sidebar');
+    mainLayout = document.getElementById('main-layout');
     axisCanvas = document.getElementById('axis-canvas');
     axisCtx    = axisCanvas.getContext('2d');
 
@@ -62,14 +85,11 @@ var Canvas = (function () {
 
     updateSize();
 
-    // Build sidebar labels
     buildSidebar();
 
-    // SVG mousemove → hover band + year indicator
     wrapper.addEventListener('mousemove', onSVGMouseMove);
     wrapper.addEventListener('mouseleave', clearHoverBand);
 
-    // Click on blank area → close detail
     wrapper.addEventListener('click', function (e) {
       if (e.target === svg || e.target === wrapper) {
         Tooltip.hideDetail();
@@ -77,18 +97,30 @@ var Canvas = (function () {
       }
     });
 
+    // Fix 6: sync sidebar scroll with main-layout vertical scroll
+    mainLayout.addEventListener('scroll', onVerticalScroll);
+
     window.addEventListener('resize', onResize);
   }
 
   function updateSize() {
     svgW = wrapper.clientWidth;
-    svgH = wrapper.clientHeight;
+    // Fix 6: SVG height = total of all tracks (enables vertical scroll)
+    var numTracks = App.data ? App.data.tracks.length : 7;
+    svgH = numTracks * TRACK_HEIGHT;
+
     svg.setAttribute('width', svgW);
     svg.setAttribute('height', svgH);
+
+    // Set explicit heights so the layout area scrolls
+    var totalH = svgH;
+    sidebar.style.height    = totalH + 'px';
+    wrapper.style.height    = totalH + 'px';
+
     axisCanvas.width  = axisCanvas.parentElement.clientWidth;
     axisCanvas.height = axisCanvas.parentElement.clientHeight;
 
-    // Initial zoom: fit 1700-2000 in view
+    // Initial zoom: fit all years in view
     if (App.state.zoom === 0) {
       App.state.zoom = svgW / (App.YEAR_END - App.YEAR_START);
       App.state.panX = 0;
@@ -101,6 +133,12 @@ var Canvas = (function () {
     scheduleRender();
   }
 
+  // Fix 6: keep sidebar labels visible during vertical scroll
+  function onVerticalScroll() {
+    // Labels are position:absolute within .sidebar which shares the same scroll
+    // container — they naturally stay aligned. Nothing extra needed.
+  }
+
   // ─── Sidebar (HTML labels) ────────────────────────────────────────────────
 
   function buildSidebar() {
@@ -109,7 +147,7 @@ var Canvas = (function () {
 
     tracks.forEach(function (track, i) {
       var color = TRACK_COLORS[track.id] || track.color || '#888';
-      var topY  = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET - 9;  // center text on line
+      var topY  = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET - 9;
 
       var label = document.createElement('div');
       label.className = 'sidebar-label';
@@ -137,10 +175,15 @@ var Canvas = (function () {
   function render() {
     if (!App.data) return;
 
-    var ppy    = App.state.zoom;
-    var panX   = App.state.panX;
-    var levels = Layout.visibleLevels(ppy);
-    var range  = Layout.visibleRange(panX, svgW, ppy);
+    var ppy  = App.state.zoom;
+    var panX = App.state.panX;
+
+    // Fix 1 + Fix 4: effective max level
+    var effectiveMax = App.getEffectiveMaxLevel(ppy);
+    var levels = [];
+    for (var lv = 1; lv <= effectiveMax; lv++) levels.push(lv);
+
+    var range = Layout.visibleRange(panX, svgW, ppy);
 
     clearAll();
 
@@ -148,7 +191,7 @@ var Canvas = (function () {
     drawRulerBars(ppy, panX, range);
     drawGrid(ppy, panX, range);
     drawFigureBars(ppy, panX, range);
-    drawEvents(ppy, panX, levels, range);
+    drawEvents(ppy, panX, levels, effectiveMax, range);
     drawAxisCanvas(ppy, panX);
     updateYearDisplay(ppy, panX);
   }
@@ -161,7 +204,7 @@ var Canvas = (function () {
     layerEvents.innerHTML  = '';
     layerArcs.innerHTML    = '';
     layerLabels.innerHTML  = '';
-    // layerHover is managed by mousemove
+    // layerHover managed by mousemove
   }
 
   // ─── Track bands ─────────────────────────────────────────────────────────
@@ -169,9 +212,10 @@ var Canvas = (function () {
   function drawBands() {
     var tracks = App.data.tracks;
     tracks.forEach(function (track, i) {
-      var y     = i * TRACK_HEIGHT;
       var color = TRACK_COLORS[track.id] || track.color || '#888';
-      var fill  = i % 2 === 0 ? '#ffffff' : 'rgba(246,245,244,0.65)';
+      // Fix 0: dark alternating fills
+      var fill  = i % 2 === 0 ? '#0d0d0d' : '#111111';
+      var y = i * TRACK_HEIGHT;
 
       var rect = mkSvg('rect', {
         x: 0, y: y, width: svgW, height: TRACK_HEIGHT,
@@ -179,10 +223,10 @@ var Canvas = (function () {
       });
       layerBands.appendChild(rect);
 
-      // Subtle bottom separator line
+      // Subtle separator
       var sepLine = mkSvg('line', {
         x1: 0, y1: y + TRACK_HEIGHT - 1, x2: svgW, y2: y + TRACK_HEIGHT - 1,
-        stroke: 'rgba(0,0,0,0.06)', 'stroke-width': 1,
+        stroke: 'rgba(255,255,255,0.05)', 'stroke-width': 1,
         class: 'track-center-line',
       });
       layerBands.appendChild(sepLine);
@@ -191,7 +235,7 @@ var Canvas = (function () {
       var lineY = y + RULER_H + TRACK_LINE_Y_OFFSET;
       var line = mkSvg('line', {
         x1: 0, y1: lineY, x2: svgW, y2: lineY,
-        stroke: color, 'stroke-width': 1, opacity: 0.25,
+        stroke: color, 'stroke-width': 1, opacity: 0.15,
         class: 'track-center-line',
       });
       layerBands.appendChild(line);
@@ -223,12 +267,11 @@ var Canvas = (function () {
           width: Math.min(x2, svgW) - Math.max(x1, 0),
           height: RULER_H,
           fill: color,
-          opacity: 0.3,
+          opacity: 0.5,
           rx: 3,
           class: 'ruler-bar-segment',
         });
 
-        // Hover → tooltip
         (function (r, t) {
           rect.addEventListener('mouseenter', function (e) {
             Tooltip.showRuler(r, t, e);
@@ -239,7 +282,6 @@ var Canvas = (function () {
 
         layerRulers.appendChild(rect);
 
-        // Ruler name label (only when wide enough)
         var w = x2 - x1;
         if (w > 40) {
           var txtX = Math.max(x1 + 3, 3);
@@ -248,8 +290,8 @@ var Canvas = (function () {
             var txt = mkSvg('text', {
               x: txtX,
               y: y + RULER_H - 2,
-              fill: '#ffffff',
-              opacity: 0.9,
+              fill: 'rgba(255,255,255,0.85)',
+              opacity: 1,
               'font-size': 7,
               'font-weight': 600,
               'font-family': 'Inter, sans-serif',
@@ -257,8 +299,7 @@ var Canvas = (function () {
               'text-anchor': 'start',
               'dominant-baseline': 'auto',
             });
-            var shortName = truncateRulerName(ruler.name, maxW);
-            txt.textContent = shortName;
+            txt.textContent = truncateRulerName(ruler.name, maxW);
             layerRulers.appendChild(txt);
           }
         }
@@ -267,7 +308,6 @@ var Canvas = (function () {
   }
 
   function truncateRulerName(name, maxPx) {
-    // ~6px per character at font-size 8
     var maxChars = Math.floor(maxPx / 5.5);
     if (name.length <= maxChars) return name;
     return name.substring(0, Math.max(2, maxChars - 1)) + '…';
@@ -276,11 +316,9 @@ var Canvas = (function () {
   // ─── Grid ────────────────────────────────────────────────────────────────
 
   function drawGrid(ppy, panX, range) {
-    var intervals = Layout.gridIntervals(ppy);
-    var major = intervals.major;
-    var minor = intervals.minor;
-
-    var startMajor = Math.ceil(range.start / major) * major;
+    var intervals  = Layout.gridIntervals(ppy);
+    var major      = intervals.major;
+    var minor      = intervals.minor;
     var totalH     = App.data.tracks.length * TRACK_HEIGHT;
 
     // Minor gridlines
@@ -291,107 +329,160 @@ var Canvas = (function () {
       if (xm < 0 || xm > svgW) continue;
       var lm = mkSvg('line', {
         x1: xm, y1: 0, x2: xm, y2: totalH,
-        stroke: 'rgba(0,0,0,0.04)', 'stroke-width': 0.5,
+        // Fix 0: dark grid
+        stroke: 'rgba(255,255,255,0.03)', 'stroke-width': 0.5,
       });
       layerGrid.appendChild(lm);
     }
 
-    // Major gridlines + labels on grid
+    // Major gridlines
+    var startMajor = Math.ceil(range.start / major) * major;
     for (var y = startMajor; y <= range.end; y += major) {
       var x = Layout.yearToX(y, panX, ppy);
       if (x < 0 || x > svgW) continue;
-
       var isCentury = (y % 100 === 0);
       var line = mkSvg('line', {
         x1: x, y1: 0, x2: x, y2: totalH,
-        stroke: isCentury ? 'rgba(0,0,0,0.14)' : 'rgba(0,0,0,0.07)',
+        // Fix 0: dark grid
+        stroke: isCentury ? 'rgba(255,255,255,0.1)' : 'rgba(255,255,255,0.04)',
         'stroke-width': isCentury ? 1 : 0.7,
       });
       layerGrid.appendChild(line);
     }
   }
 
-  // ─── Figure bars ─────────────────────────────────────────────────────────
+  // ─── Fix 5: Figure bars with swim-lane layout ────────────────────────────
 
   function drawFigureBars(ppy, panX, range) {
     var activeCategory = App.state.activeCategory;
     if (!activeCategory || activeCategory === 'none') return;
 
-    var catColor = Tooltip.CATEGORY_COLORS[activeCategory] || '#888';
+    var catColor = CATEGORY_COLORS[activeCategory] ||
+                   Tooltip.CATEGORY_COLORS[activeCategory] || '#888';
     var tracks = App.data.tracks;
 
-    tracks.forEach(function (track, i) {
-      var figures = (App.data.figures[track.id] || []).filter(function (f) {
+    tracks.forEach(function (trackObj, i) {
+      var allFigures = (App.data.figures[trackObj.id] || []).filter(function (f) {
         return f.category === activeCategory &&
-               f.birthYear !== undefined &&
-               f.deathYear !== undefined;
+               f.birthYear !== undefined;
       });
 
-      var lineY = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      if (!allFigures.length) return;
 
-      figures.forEach(function (fig) {
-        var fStart = Math.max(fig.birthYear, range.start - 1);
-        var fEnd   = Math.min(fig.deathYear, range.end   + 1);
-        if (fStart >= fEnd) return;
+      var trackTop = i * TRACK_HEIGHT;
 
-        var x1 = Layout.yearToX(fStart, panX, ppy);
-        var x2 = Layout.yearToX(fEnd,   panX, ppy);
+      // Fix 5: assign swim lanes
+      var lanesAssigned = Layout.assignFigureLanes(allFigures);
+
+      lanesAssigned.forEach(function (fig) {
+        if (fig.lane >= MAX_FIGURE_LANES) return;
+
+        var fStart = fig.birthYear;
+        var fEnd   = fig.deathYear || (fig.birthYear + 10);
+
+        // Skip if outside visible range
+        if (fEnd < range.start - 1 || fStart > range.end + 1) return;
+
+        var x1 = Layout.yearToX(Math.max(fStart, range.start - 1), panX, ppy);
+        var x2 = Layout.yearToX(Math.min(fEnd,   range.end   + 1), panX, ppy);
         if (x2 < 0 || x1 > svgW) return;
 
-        var barH  = 6;
-        var barY  = lineY + 12;
+        var barY = trackTop + RULER_H + FIGURE_LANE_START +
+                   fig.lane * (FIGURE_LANE_H + FIGURE_LANE_GAP);
+
+        // Cap bar to SVG boundaries
+        var drawX1 = Math.max(x1, 0);
+        var drawX2 = Math.min(x2, svgW);
+        var barW   = drawX2 - drawX1;
+        if (barW <= 0) return;
 
         var bar = mkSvg('rect', {
-          x: Math.max(x1, 0),
+          x: drawX1,
           y: barY,
-          width: Math.min(x2, svgW) - Math.max(x1, 0),
-          height: barH,
+          width: barW,
+          height: FIGURE_LANE_H,
           fill: catColor,
-          opacity: 0.35,
-          rx: 3,
+          opacity: 0.7,
+          rx: 4,
           class: 'figure-bar',
         });
 
-        (function (f, t) {
-          bar.addEventListener('mouseenter', function (e) {
-            Tooltip.showFigure(f, t, e);
-          });
-          bar.addEventListener('mousemove', function (e) { Tooltip.move(e); });
-          bar.addEventListener('mouseleave', function () { Tooltip.hide(); });
-        })(fig, track);
+        // Inline name if bar is wide enough
+        if (barW > 60) {
+          var nameG = mkSvg('g', {});
 
-        layerFigures.appendChild(bar);
+          nameG.appendChild(bar);
+
+          var label = mkSvg('text', {
+            x: drawX1 + 5,
+            y: barY + FIGURE_LANE_H / 2,
+            fill: 'rgba(255,255,255,0.9)',
+            'font-size': 9,
+            'font-weight': 500,
+            'font-family': 'Inter, sans-serif',
+            'dominant-baseline': 'central',
+            'pointer-events': 'none',
+            'text-anchor': 'start',
+          });
+          var maxChars = Math.floor((barW - 10) / 6);
+          label.textContent = truncateName(fig.name, maxChars);
+          nameG.appendChild(label);
+
+          // Tooltip events on the group
+          (function (f, t) {
+            nameG.addEventListener('mouseenter', function (e) {
+              Tooltip.showFigure(f, t, e);
+            });
+            nameG.addEventListener('mousemove', function (e) { Tooltip.move(e); });
+            nameG.addEventListener('mouseleave', function () { Tooltip.hide(); });
+          })(fig, trackObj);
+
+          layerFigures.appendChild(nameG);
+        } else {
+          (function (f, t) {
+            bar.addEventListener('mouseenter', function (e) {
+              Tooltip.showFigure(f, t, e);
+            });
+            bar.addEventListener('mousemove', function (e) { Tooltip.move(e); });
+            bar.addEventListener('mouseleave', function () { Tooltip.hide(); });
+          })(fig, trackObj);
+
+          layerFigures.appendChild(bar);
+        }
       });
     });
   }
 
+  function truncateName(name, maxChars) {
+    if (!name) return '';
+    if (name.length <= maxChars) return name;
+    return name.substring(0, Math.max(1, maxChars - 1)) + '…';
+  }
+
   // ─── Events ──────────────────────────────────────────────────────────────
 
-  function drawEvents(ppy, panX, levels, range) {
+  function drawEvents(ppy, panX, levels, effectiveMax, range) {
     var tracks     = App.data.tracks;
     var activeTag  = App.state.activeTag;
     var searchQ    = App.state.searchQuery;
     var selectedId = App.state.selectedEvent ? App.state.selectedEvent.id : null;
 
     tracks.forEach(function (track, i) {
-      var color    = TRACK_COLORS[track.id] || track.color || '#888';
-      var lineY    = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
-      var allEvts  = App.data.events[track.id] || [];
+      var color   = TRACK_COLORS[track.id] || track.color || '#888';
+      var lineY   = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      var allEvts = App.data.events[track.id] || [];
 
-      // Filter to visible year range and levels
+      // Filter to visible year range and effective max level
       var inView = allEvts.filter(function (e) {
-        return levels.indexOf(e.level) !== -1 &&
+        return e.level <= effectiveMax &&
                e.year >= range.start &&
                e.year <= range.end;
       });
 
-      // Tag-matching events (or all if 'all')
-      var tagged = Layout.filterByTag(inView, activeTag);
-
-      // Search-matching events
+      var tagged   = Layout.filterByTag(inView, activeTag);
       var searched = searchQ ? Layout.filterBySearch(inView, searchQ) : null;
 
-      // Draw faded dots for non-matching events (tag filter)
+      // Draw faded dots for non-tag-matching events
       if (activeTag !== 'all') {
         var tagFaded = inView.filter(function (e) {
           return !e.tags || e.tags.indexOf(activeTag) === -1;
@@ -400,18 +491,19 @@ var Canvas = (function () {
           var x = Layout.yearToX(e.year, panX, ppy);
           if (x < -10 || x > svgW + 10) return;
           var r  = DOT_R[e.level] || 3;
+          var zoomOpacity = Layout.getEventOpacity(e.level, ppy);
           var dot = mkSvg('circle', {
             cx: x, cy: lineY, r: r,
-            fill: color, opacity: 0.12,
+            fill: color, opacity: 0.08 * zoomOpacity,
           });
           layerEvents.appendChild(dot);
         });
       }
 
-      // Cluster active events
+      // Fix 3: cluster based on zoom
       var groups = Layout.clusterEvents(tagged, ppy, panX);
 
-      // Level-1 label layout (for label collision)
+      // Label layout for L1 and L2 events
       var l1events = tagged.filter(function (e) { return e.level === 1; });
       var l2events = ppy > 2 ? tagged.filter(function (e) { return e.level === 2; }) : [];
       var labelEvts = l1events.concat(l2events);
@@ -424,8 +516,7 @@ var Canvas = (function () {
         var isSingleton = group.length === 1;
 
         if (isSingleton) {
-          var ev = group[0];
-          drawSingleEvent(ev, track, color, lineY, ppy, panX,
+          drawSingleEvent(group[0], track, color, lineY, ppy, panX,
                           labelMap, selectedId, searched, activeTag);
         } else {
           drawCluster(group, track, color, lineY, ppy, panX);
@@ -441,6 +532,10 @@ var Canvas = (function () {
 
     var r = DOT_R[ev.level] || 3;
 
+    // Fix 4: zoom-level opacity transition
+    var zoomOpacity = Layout.getEventOpacity(ev.level, ppy);
+    if (zoomOpacity <= 0.01) return; // fully invisible — skip DOM node
+
     // Duration bar
     if (ev.endYear) {
       var x2   = Layout.yearToX(ev.endYear, panX, ppy);
@@ -449,42 +544,44 @@ var Canvas = (function () {
       var durBar = mkSvg('rect', {
         x: x, y: lineY - barH / 2,
         width: barW, height: barH,
-        fill: color, opacity: 0.2, rx: 1,
+        fill: color, opacity: 0.2 * zoomOpacity, rx: 1,
         class: 'event-duration-bar',
       });
       layerEvents.appendChild(durBar);
     }
 
     // Dot
-    var classes = 'event-dot';
     var dotOpacity = 1;
-
     if (searched !== null) {
       var inSearch = searched.some(function (s) { return s.id === ev.id; });
-      if (!inSearch) { dotOpacity = 0.1; }
+      if (!inSearch) dotOpacity = 0.08;
     }
 
     var isSelected = selectedId && ev.id === selectedId;
 
-    var dotFillOpacity = ev.level === 1 ? 1 : ev.level === 2 ? 0.7 : 0.45;
+    // Fix 0: dark bg — dots are lighter fill, L1 has ring stroke
+    var dotFillOpacity = ev.level === 1 ? 1 : ev.level === 2 ? 0.8 : 0.55;
+    var finalOpacity   = dotOpacity * dotFillOpacity * zoomOpacity;
+
     var dot = mkSvg('circle', {
       cx: x, cy: lineY, r: r,
       fill: color,
-      opacity: dotOpacity * dotFillOpacity,
-      class: classes,
-      'stroke-width': ev.level === 1 ? 2 : 0,
-      stroke: ev.level === 1 ? '#ffffff' : 'none',
+      opacity: finalOpacity,
+      class: 'event-dot',
+      'stroke-width': ev.level === 1 ? 1.5 : 0,
+      // Fix 0: use semi-transparent dark ring instead of pure white
+      stroke: ev.level === 1 ? 'rgba(13,13,13,0.6)' : 'none',
       'data-id': ev.id,
     });
 
     if (isSelected) {
       dot.setAttribute('r', r * 1.6);
       dot.setAttribute('stroke', color);
-      dot.setAttribute('stroke-width', 3);
-      dot.setAttribute('fill', '#ffffff');
+      dot.setAttribute('stroke-width', 2.5);
+      dot.setAttribute('fill', '#0d0d0d');
+      dot.setAttribute('opacity', zoomOpacity);
     }
 
-    // Events
     dot.addEventListener('mouseenter', function (e) {
       Tooltip.show(ev, track, e);
     });
@@ -500,13 +597,15 @@ var Canvas = (function () {
 
     // Label
     var lp = labelMap[ev.id];
+    // Fix 3: only show label when label spacing is sufficient
     if (lp && lp.labelY !== null) {
       var titleShort = truncLabel(ev.title, ev.level, ppy);
       var fontSize   = ev.level === 1 ? 12 : 10;
       var fontWeight = ev.level === 1 ? 600 : 500;
-      var fillColor  = ev.level === 1 ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.55)';
+      // Fix 0: dark bg label colors
+      var fillColor  = ev.level === 1 ? 'rgba(255,255,255,0.92)' : 'rgba(255,255,255,0.65)';
 
-      var labelOpacity = (searched !== null && dotOpacity < 0.5) ? 0.15 : 1;
+      var labelOpacity = (searched !== null && dotOpacity < 0.5) ? 0.12 : zoomOpacity;
 
       var txt = mkSvg('text', {
         x: lp.x + r + 4,
@@ -521,12 +620,12 @@ var Canvas = (function () {
       txt.textContent = titleShort;
       layerLabels.appendChild(txt);
 
-      // Connector line: from label bottom to dot
+      // Connector line
       if (lp.labelY < lineY - r - 4) {
         var connLine = mkSvg('line', {
           x1: lp.x, y1: lp.labelY + 2,
           x2: lp.x, y2: lineY - r - 1,
-          stroke: color, 'stroke-width': 0.5, opacity: 0.3,
+          stroke: color, 'stroke-width': 0.5, opacity: 0.25 * zoomOpacity,
           class: 'event-label-line',
         });
         layerLabels.appendChild(connLine);
@@ -535,8 +634,7 @@ var Canvas = (function () {
   }
 
   function drawCluster(group, track, color, lineY, ppy, panX) {
-    // Center cluster on average year
-    var sumY = group.reduce(function (s, e) { return s + e.year; }, 0);
+    var sumY    = group.reduce(function (s, e) { return s + e.year; }, 0);
     var avgYear = sumY / group.length;
     var x = Layout.yearToX(avgYear, panX, ppy);
     if (x < -20 || x > svgW + 20) return;
@@ -544,9 +642,10 @@ var Canvas = (function () {
     var r = 10;
     var g = mkSvg('g', { class: 'event-cluster-g' });
 
+    // Fix 0: dark bg cluster circle
     var circle = mkSvg('circle', {
       cx: x, cy: lineY, r: r,
-      fill: '#ffffff', opacity: 1,
+      fill: '#1a1a1a', opacity: 1,
       stroke: color, 'stroke-width': 1.5,
     });
 
@@ -571,7 +670,6 @@ var Canvas = (function () {
     g.addEventListener('mouseleave', function () { Tooltip.hide(); });
     g.addEventListener('click', function (e) {
       e.stopPropagation();
-      // Show detail for first event in cluster
       Tooltip.hide();
       Tooltip.showDetail(group[0], track);
     });
@@ -587,17 +685,26 @@ var Canvas = (function () {
     var h   = axisCanvas.height;
 
     ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = '#f6f5f4';
+    // Fix 0: dark axis background
+    ctx.fillStyle = '#141414';
     ctx.fillRect(0, 0, w, h);
 
-    var intervals = Layout.gridIntervals(ppy);
+    // Top border line
+    ctx.strokeStyle = 'rgba(255,255,255,0.08)';
+    ctx.lineWidth   = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(w, 0);
+    ctx.stroke();
+
+    var intervals  = Layout.gridIntervals(ppy);
     var major  = intervals.major;
     var minor  = intervals.minor;
     var range  = Layout.visibleRange(panX, w, ppy);
 
     // Minor ticks
     var startMinor = Math.ceil(range.start / minor) * minor;
-    ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.2)';
     ctx.lineWidth   = 0.8;
     for (var ym = startMinor; ym <= range.end; ym += minor) {
       if (ym % major === 0) continue;
@@ -611,9 +718,9 @@ var Canvas = (function () {
 
     // Major ticks + labels
     var startMajor = Math.ceil(range.start / major) * major;
-    ctx.strokeStyle = 'rgba(0,0,0,0.35)';
+    ctx.strokeStyle = 'rgba(255,255,255,0.3)';
     ctx.lineWidth   = 1;
-    ctx.fillStyle   = '#615d59';
+    ctx.fillStyle   = 'rgba(255,255,255,0.5)';
     ctx.font        = '500 11px Inter, sans-serif';
     ctx.textAlign   = 'center';
     ctx.textBaseline = 'top';
@@ -653,43 +760,42 @@ var Canvas = (function () {
     var year  = Math.round(Layout.xToYear(mx, panX, ppy));
     var xSnap = Layout.yearToX(year, panX, ppy);
 
-    // Clear previous hover band
     layerHover.innerHTML = '';
 
     var totalH = App.data.tracks.length * TRACK_HEIGHT;
     var bandW  = Math.max(ppy * 1, 2);
 
+    // Fix 0: dark hover band
     var band = mkSvg('rect', {
       x: xSnap - bandW / 2, y: 0,
       width: bandW, height: totalH,
-      fill: 'rgba(0,117,222,0.04)',
+      fill: 'rgba(255,255,255,0.03)',
       class: 'hover-band',
     });
     layerHover.appendChild(band);
 
-    // Vertical hairline
     var vline = mkSvg('line', {
       x1: xSnap, y1: 0, x2: xSnap, y2: totalH,
-      stroke: 'rgba(0,117,222,0.25)', 'stroke-width': 1,
+      stroke: 'rgba(79,142,247,0.4)', 'stroke-width': 1,
       'pointer-events': 'none',
     });
     layerHover.appendChild(vline);
 
-    // Year label at top — pill background
+    // Year pill
     var labelW = 36;
     var labelH = 16;
     var pill = mkSvg('rect', {
       x: xSnap - labelW / 2, y: 2,
       width: labelW, height: labelH,
       rx: 4,
-      fill: 'rgba(0,117,222,0.1)',
+      fill: 'rgba(79,142,247,0.15)',
       'pointer-events': 'none',
     });
     layerHover.appendChild(pill);
 
     var txt = mkSvg('text', {
       x: xSnap, y: 10,
-      fill: '#005bab',
+      fill: '#6ba3ff',
       'font-size': 10,
       'font-weight': 600,
       'font-family': 'Inter, sans-serif',
@@ -715,7 +821,6 @@ var Canvas = (function () {
     var panX   = App.state.panX;
     var tracks = App.data.tracks;
 
-    // Find source track index
     var srcTrackIdx = -1;
     tracks.forEach(function (t, i) {
       if ((App.data.events[t.id] || []).some(function (e) { return e.id === event.id; })) {
@@ -737,15 +842,14 @@ var Canvas = (function () {
       var relIdx   = tracks.indexOf(relTrack);
       if (relIdx < 0) return;
 
-      var tgtX = Layout.yearToX(relEvt.year, panX, ppy);
-      var tgtY = relIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      var tgtX  = Layout.yearToX(relEvt.year, panX, ppy);
+      var tgtY  = relIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
       var color = TRACK_COLORS[relTrack.id] || relTrack.color || '#888';
 
-      // SVG quadratic bezier arc
-      var dx    = tgtX - srcX;
-      var dy    = tgtY - srcY;
-      var cpX   = (srcX + tgtX) / 2;
-      var cpY   = Math.min(srcY, tgtY) - Math.abs(dy) * 0.6 - Math.abs(dx) * 0.15;
+      var dx  = tgtX - srcX;
+      var dy  = tgtY - srcY;
+      var cpX = (srcX + tgtX) / 2;
+      var cpY = Math.min(srcY, tgtY) - Math.abs(dy) * 0.6 - Math.abs(dx) * 0.15;
 
       var path = mkSvg('path', {
         d: 'M ' + srcX + ' ' + srcY +
@@ -760,7 +864,6 @@ var Canvas = (function () {
       });
       layerArcs.appendChild(path);
 
-      // Highlight the related dot
       var relDot = layerEvents.querySelector('[data-id="' + rid + '"]');
       if (relDot) {
         relDot.setAttribute('r', parseFloat(relDot.getAttribute('r') || 4) * 1.5);
@@ -796,8 +899,8 @@ var Canvas = (function () {
 
   function truncLabel(title, level, ppy) {
     var maxChars = level === 1 ? 12 : 8;
-    if (ppy > 4) maxChars = 20;
-    if (ppy > 8) maxChars = 40;
+    if (ppy > 4)  maxChars = 20;
+    if (ppy > 8)  maxChars = 40;
     if (!title || title.length <= maxChars) return title;
     return title.substring(0, maxChars - 1) + '…';
   }
@@ -805,17 +908,18 @@ var Canvas = (function () {
   // ─── Public API ───────────────────────────────────────────────────────────
 
   return {
-    init:           init,
-    render:         render,
-    scheduleRender: scheduleRender,
+    init:            init,
+    render:          render,
+    scheduleRender:  scheduleRender,
     drawRelatedArcs: drawRelatedArcs,
-    clearArcs:      clearArcs,
-    panToYear:      panToYear,
-    TRACK_HEIGHT:   TRACK_HEIGHT,
-    RULER_H:        RULER_H,
+    clearArcs:       clearArcs,
+    panToYear:       panToYear,
+    TRACK_HEIGHT:    TRACK_HEIGHT,
+    RULER_H:         RULER_H,
     TRACK_LINE_Y_OFFSET: TRACK_LINE_Y_OFFSET,
-    TRACK_COLORS:   TRACK_COLORS,
-    getSvgW:        function () { return svgW; },
-    getSvgH:        function () { return svgH; },
+    TRACK_COLORS:    TRACK_COLORS,
+    CATEGORY_COLORS: CATEGORY_COLORS,
+    getSvgW:         function () { return svgW; },
+    getSvgH:         function () { return svgH; },
   };
 })();

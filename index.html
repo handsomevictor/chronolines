@@ -20,6 +20,12 @@
       <div class="year-range-display" id="year-range-display">1700 — 2025</div>
     </div>
     <div class="header-right">
+      <div class="level-controls" id="level-controls">
+        <button class="level-btn" data-level="1" title="只显示 Level 1 大事件">L1</button>
+        <button class="level-btn" data-level="2" title="显示 Level 1 + 2">L2</button>
+        <button class="level-btn" data-level="3" title="显示全部三级">L3</button>
+        <button class="level-btn active" data-level="all" title="显示全部（默认）">全部</button>
+      </div>
       <div class="search-box">
         <input type="text" id="search-input" class="search-input" placeholder="搜索事件…" autocomplete="off">
       </div>
@@ -85,7 +91,7 @@
             </feMerge>
           </filter>
           <filter id="shadow-filter" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.18)"/>
+            <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.5)"/>
           </filter>
         </defs>
         <!-- Layers in z-order -->
