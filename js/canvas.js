@@ -15,8 +15,8 @@ var Canvas = (function () {
   // ─── Constants ─────────────────────────────────────────────────────────────
 
   var TRACK_HEIGHT        = 192;
-  var RULER_H             = 8;
-  var TRACK_LINE_Y_OFFSET = 60;   // from top of row to center line
+  var RULER_H             = 16;   // increased from 8 — taller ruler bar, bigger text
+  var TRACK_LINE_Y_OFFSET = 72;   // increased from 60 — more gap between ruler and event line
   var FIGURE_LANE_START   = TRACK_LINE_Y_OFFSET + 14;
   var PAD_TOP             = 96;   // breathing room at top of SVG
   var PAD_BOTTOM          = 48;   // breathing room at bottom of SVG
@@ -313,20 +313,19 @@ var Canvas = (function () {
 
         var w = x2 - x1;
         if (w > 40) {
-          var txtX = Math.max(x1 + 3, 3);
-          var maxW = Math.min(x2, svgW) - txtX - 4;
-          if (maxW > 20) {
+          var txtX = Math.max(x1 + 5, 5);
+          var maxW = Math.min(x2, svgW) - txtX - 6;
+          if (maxW > 24) {
             var txt = mkSvg('text', {
               x: txtX,
-              y: y + RULER_H - 2,
-              fill: 'rgba(255,255,255,0.85)',
-              opacity: 1,
-              'font-size': 7,
+              y: y + RULER_H / 2,
+              fill: 'rgba(255,255,255,0.9)',
+              'font-size': 11,
               'font-weight': 600,
               'font-family': 'Inter, sans-serif',
               'pointer-events': 'none',
               'text-anchor': 'start',
-              'dominant-baseline': 'auto',
+              'dominant-baseline': 'central',
             });
             txt.textContent = truncateRulerName(ruler.name, maxW);
             layerRulers.appendChild(txt);
@@ -337,7 +336,7 @@ var Canvas = (function () {
   }
 
   function truncateRulerName(name, maxPx) {
-    var maxChars = Math.floor(maxPx / 5.5);
+    var maxChars = Math.floor(maxPx / 7);
     if (name.length <= maxChars) return name;
     return name.substring(0, Math.max(2, maxChars - 1)) + '…';
   }

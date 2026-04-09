@@ -91,18 +91,6 @@ var Controls = (function () {
       });
     });
 
-    // ── Figure size (S/M/L) ───────────────────────────────────────────────
-    document.querySelectorAll('.fig-size-btn').forEach(function (btn) {
-      btn.addEventListener('click', function () {
-        document.querySelectorAll('.fig-size-btn').forEach(function (b) {
-          b.classList.remove('active');
-        });
-        btn.classList.add('active');
-        App.state.figureSize = btn.getAttribute('data-size');
-        Canvas.scheduleRender();
-      });
-    });
-
     // ── Search ────────────────────────────────────────────────────────────
     var searchInput = document.getElementById('search-input');
     var searchTimer = null;
