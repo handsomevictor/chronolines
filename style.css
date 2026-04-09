@@ -405,78 +405,138 @@ html, body {
   /* Height auto — grows with SVG total height */
 }
 
+/* Full-height track card in sidebar */
 .sidebar-label {
   position: absolute;
   left: 0;
   right: 0;
   display: flex;
-  align-items: center;
-  padding-left: 2px;
-  padding-right: 14px;
-  gap: 6px;
-  cursor: default;
+  flex-direction: column;
+  align-items: stretch;
+  border-bottom: 1px solid var(--border);
   transition: background var(--transition-fast);
   user-select: none;
+  will-change: transform;
+  overflow: hidden;
+}
+
+/* Tinted background via --track-color set inline */
+.sidebar-label::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: var(--track-color, transparent);
+  opacity: 0.06;
+  pointer-events: none;
+}
+
+/* Left accent bar */
+.sidebar-label::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background: var(--track-color, rgba(255,255,255,0.2));
+  opacity: 0.8;
+  border-radius: 0 2px 2px 0;
 }
 
 .sidebar-label:hover {
-  background: var(--bg-hover);
+  background: rgba(255,255,255,0.03);
+}
+
+/* =====================
+   Drag Handle — full-height strip
+   ===================== */
+.drag-handle {
+  position: absolute;
+  left: 3px;   /* just after the accent bar */
+  top: 0;
+  bottom: 0;
+  width: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  z-index: 1;
+}
+
+/* Six-dot grip icon made with CSS */
+.drag-handle::before,
+.drag-handle::after {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.25);
+  box-shadow:
+    0 5px 0 rgba(255,255,255,0.25),
+    0 10px 0 rgba(255,255,255,0.25),
+    5px 0 0 rgba(255,255,255,0.25),
+    5px 5px 0 rgba(255,255,255,0.25),
+    5px 10px 0 rgba(255,255,255,0.25);
+  transition: background var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.drag-handle:hover::before,
+.drag-handle:hover::after {
+  background: rgba(255,255,255,0.7);
+  box-shadow:
+    0 5px 0 rgba(255,255,255,0.7),
+    0 10px 0 rgba(255,255,255,0.7),
+    5px 0 0 rgba(255,255,255,0.7),
+    5px 5px 0 rgba(255,255,255,0.7),
+    5px 10px 0 rgba(255,255,255,0.7);
+}
+
+.drag-handle:active,
+.drag-ghost .drag-handle {
+  cursor: grabbing;
+}
+
+/* Country name + dot inside card */
+.sidebar-card-body {
+  position: absolute;
+  left: 28px;   /* after drag handle */
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10px 0 4px;
+  gap: 6px;
+}
+
+.sidebar-label-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
 }
 
 .sidebar-label-name {
   font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.6px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
   text-transform: uppercase;
-  flex: 1;
-  text-align: right;
-}
-
-.sidebar-label-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  opacity: 0.8;
-}
-
-/* =====================
-   Drag Handle
-   ===================== */
-.drag-handle {
-  cursor: grab;
-  color: rgba(255,255,255,0.18);
-  font-size: 13px;
-  padding: 0 4px 0 2px;
-  line-height: 1;
-  user-select: none;
-  flex-shrink: 0;
-  transition: color var(--transition-fast);
-  touch-action: none;
-}
-
-.drag-handle:hover {
-  color: rgba(255,255,255,0.6);
-}
-
-.sidebar-label:active .drag-handle {
-  cursor: grabbing;
-  color: rgba(255,255,255,0.7);
+  line-height: 1.2;
 }
 
 /* Ghost element created during drag */
 .drag-ghost {
   user-select: none;
-  cursor: grabbing;
-}
-
-.drag-ghost .drag-handle {
-  color: rgba(255,255,255,0.6);
-}
-
-/* Smooth sidebar label transitions during reorder */
-.sidebar-label {
-  will-change: transform;
+  cursor: grabbing !important;
+  border-left: 3px solid var(--track-color, rgba(255,255,255,0.4)) !important;
 }
 
 /* =====================

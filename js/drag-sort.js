@@ -88,8 +88,9 @@ var DragSort = (function () {
     DRAG.rowHeight   = trackH;
     DRAG.sidebarRect = sidebar.getBoundingClientRect();
 
-    // Create ghost: a floating copy of the sidebar label that follows the cursor
+    // Create ghost: a floating copy of the full-height sidebar card
     var rect  = label.getBoundingClientRect();
+    var color = label.style.getPropertyValue('--track-color') || 'rgba(255,255,255,0.3)';
     var ghost = document.createElement('div');
     ghost.className = 'drag-ghost';
     ghost.style.cssText = [
@@ -98,18 +99,17 @@ var DragSort = (function () {
       'top:' + rect.top + 'px',
       'width:' + rect.width + 'px',
       'height:' + rect.height + 'px',
-      'opacity:0.90',
+      'opacity:0.92',
       'pointer-events:none',
       'z-index:2000',
-      'border-radius:6px',
-      'box-shadow:0 0 0 1px rgba(255,255,255,0.18),0 12px 40px rgba(0,0,0,0.7)',
-      'background:var(--bg-elevated)',
-      'display:flex',
-      'align-items:center',
-      'padding:0 14px 0 2px',
-      'gap:6px',
+      'border-radius:0',
+      'border-left:3px solid ' + color,
+      'box-shadow:0 0 0 1px rgba(255,255,255,0.15),0 16px 48px rgba(0,0,0,0.8)',
+      'background:#1a1a1a',
       'transition:none',
+      'overflow:hidden',
     ].join(';');
+    ghost.style.setProperty('--track-color', color);
 
     // Copy label content into ghost
     ghost.innerHTML = label.innerHTML;

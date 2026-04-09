@@ -143,33 +143,40 @@ var Canvas = (function () {
     var tracks = App.getOrderedTracks();
 
     tracks.forEach(function (track, i) {
-      var color = TRACK_COLORS[track.id] || track.color || '#888';
-      var topY  = PAD_TOP + i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET - 9;
+      var color  = TRACK_COLORS[track.id] || track.color || '#888';
+      var topY   = PAD_TOP + i * TRACK_HEIGHT;   // full-height card from track top
 
       var label = document.createElement('div');
       label.className = 'sidebar-label';
       label.setAttribute('data-track-id', track.id);
       label.setAttribute('data-track-index', i);
       label.style.top    = topY + 'px';
-      label.style.height = '18px';
+      label.style.height = TRACK_HEIGHT + 'px';
+      label.style.setProperty('--track-color', color);
 
-      var handle = document.createElement('span');
+      // Drag handle (full-height strip, CSS dots drawn via ::before/::after)
+      var handle = document.createElement('div');
       handle.className = 'drag-handle';
-      handle.textContent = '\u283f'; // ⠿ braille pattern
-      handle.title = '拖拽排序';
+      handle.title = '拖拽调整顺序';
+
+      // Card body: dot + name
+      var body = document.createElement('div');
+      body.className = 'sidebar-card-body';
+
+      var dot = document.createElement('span');
+      dot.className = 'sidebar-label-dot';
+      dot.style.background = color;
 
       var nameSpan = document.createElement('span');
       nameSpan.className = 'sidebar-label-name';
       nameSpan.style.color = color;
       nameSpan.textContent = track.name;
 
-      var dot = document.createElement('span');
-      dot.className = 'sidebar-label-dot';
-      dot.style.background = color;
+      body.appendChild(dot);
+      body.appendChild(nameSpan);
 
       label.appendChild(handle);
-      label.appendChild(nameSpan);
-      label.appendChild(dot);
+      label.appendChild(body);
 
       sidebar.appendChild(label);
     });
@@ -236,10 +243,17 @@ var Canvas = (function () {
       });
       layerBands.appendChild(rect);
 
-      // Subtle separator
+      // Subtle color tint over the band (track color at low alpha)
+      var tint = mkSvg('rect', {
+        x: 0, y: y, width: svgW, height: TRACK_HEIGHT,
+        fill: color, opacity: '0.03', 'pointer-events': 'none',
+      });
+      layerBands.appendChild(tint);
+
+      // Stronger separator line between tracks
       var sepLine = mkSvg('line', {
         x1: 0, y1: y + TRACK_HEIGHT - 1, x2: svgW, y2: y + TRACK_HEIGHT - 1,
-        stroke: 'rgba(255,255,255,0.05)', 'stroke-width': 1,
+        stroke: 'rgba(255,255,255,0.09)', 'stroke-width': 1,
         class: 'track-center-line',
       });
       layerBands.appendChild(sepLine);
