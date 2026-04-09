@@ -9,29 +9,29 @@ var Tooltip = (function () {
   var OFFSET_X = 16;
   var OFFSET_Y = -12;
 
-  // Tag color map (mirrors CSS --chip-color values)
+  // Tag color map — low-saturation, readable on white bg
   var TAG_COLORS = {
     '战争':    '#c0392b',
-    '条约外交': '#2980b9',
-    '革命政变': '#8e44ad',
-    '改革运动': '#27ae60',
-    '经济贸易': '#f39c12',
-    '科技发明': '#16a085',
-    '文化思想': '#d35400',
-    '王朝更迭': '#7f8c8d',
+    '条约外交': '#1a5276',
+    '革命政变': '#6c3483',
+    '改革运动': '#1e8449',
+    '经济贸易': '#b7770d',
+    '科技发明': '#0e6655',
+    '文化思想': '#a04000',
+    '王朝更迭': '#515a5a',
     '殖民扩张': '#2c3e50',
-    '人物':    '#c0392b',
+    '人物':    '#922b21',
   };
 
   var CATEGORY_COLORS = {
-    '政治':    '#e74c3c',
-    '军事':    '#c0392b',
-    '科学':    '#3498db',
-    '文学':    '#9b59b6',
-    '音乐':    '#e91e63',
-    '艺术':    '#f39c12',
-    '经济金融': '#27ae60',
-    '哲学思想': '#1abc9c',
+    '政治':    '#c0392b',
+    '军事':    '#922b21',
+    '科学':    '#1a5276',
+    '文学':    '#6c3483',
+    '音乐':    '#7d1a4e',
+    '艺术':    '#b7770d',
+    '经济金融': '#1e8449',
+    '哲学思想': '#0e6655',
   };
 
   function init() {
@@ -89,7 +89,7 @@ var Tooltip = (function () {
       return '<div class="tt-cluster-item">' + e.year + ' · ' + escHtml(e.title) + '</div>';
     }).join('');
     if (group.length > 8) {
-      itemsHtml += '<div class="tt-cluster-item" style="color:#666688">…还有 ' +
+      itemsHtml += '<div class="tt-cluster-item" style="color:#a39e98">…还有 ' +
                    (group.length - 8) + ' 个</div>';
     }
 

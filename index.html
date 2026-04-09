@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chronolines — 多轨道历史时间线</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,10 +14,10 @@
   <header class="app-header" id="app-header">
     <div class="header-left">
       <h1 class="app-title">Chronolines</h1>
-      <span class="app-subtitle">多轨道历史时间线</span>
+      <span class="app-subtitle">1700–2025 · 多国历史时间轴</span>
     </div>
     <div class="header-center">
-      <div class="year-range-display" id="year-range-display">1700 — 2000</div>
+      <div class="year-range-display" id="year-range-display">1700 — 2025</div>
     </div>
     <div class="header-right">
       <div class="search-box">
@@ -32,34 +34,34 @@
   <!-- Tag filter bar -->
   <div class="filter-bar" id="filter-bar">
     <div class="filter-section">
-      <span class="filter-label">事件类型：</span>
+      <span class="filter-label">事件</span>
       <div class="tag-chips" id="tag-chips">
         <button class="tag-chip active" data-tag="all">全部</button>
-        <button class="tag-chip" data-tag="战争" style="--chip-color:#c0392b">战争</button>
-        <button class="tag-chip" data-tag="条约外交" style="--chip-color:#2980b9">条约外交</button>
-        <button class="tag-chip" data-tag="革命政变" style="--chip-color:#8e44ad">革命政变</button>
-        <button class="tag-chip" data-tag="改革运动" style="--chip-color:#27ae60">改革运动</button>
-        <button class="tag-chip" data-tag="经济贸易" style="--chip-color:#f39c12">经济贸易</button>
-        <button class="tag-chip" data-tag="科技发明" style="--chip-color:#16a085">科技发明</button>
-        <button class="tag-chip" data-tag="文化思想" style="--chip-color:#d35400">文化思想</button>
-        <button class="tag-chip" data-tag="王朝更迭" style="--chip-color:#7f8c8d">王朝更迭</button>
-        <button class="tag-chip" data-tag="殖民扩张" style="--chip-color:#2c3e50">殖民扩张</button>
-        <button class="tag-chip" data-tag="人物" style="--chip-color:#c0392b">人物</button>
+        <button class="tag-chip" data-tag="战争">战争</button>
+        <button class="tag-chip" data-tag="条约外交">条约外交</button>
+        <button class="tag-chip" data-tag="革命政变">革命政变</button>
+        <button class="tag-chip" data-tag="改革运动">改革运动</button>
+        <button class="tag-chip" data-tag="经济贸易">经济贸易</button>
+        <button class="tag-chip" data-tag="科技发明">科技发明</button>
+        <button class="tag-chip" data-tag="文化思想">文化思想</button>
+        <button class="tag-chip" data-tag="王朝更迭">王朝更迭</button>
+        <button class="tag-chip" data-tag="殖民扩张">殖民扩张</button>
+        <button class="tag-chip" data-tag="人物">人物</button>
       </div>
     </div>
     <div class="filter-divider"></div>
     <div class="filter-section">
-      <span class="filter-label">人物类别：</span>
+      <span class="filter-label">人物</span>
       <div class="category-chips" id="category-chips">
         <button class="cat-chip active" data-category="none">关闭</button>
-        <button class="cat-chip" data-category="政治" style="--chip-color:#e74c3c">政治</button>
-        <button class="cat-chip" data-category="军事" style="--chip-color:#c0392b">军事</button>
-        <button class="cat-chip" data-category="科学" style="--chip-color:#3498db">科学</button>
-        <button class="cat-chip" data-category="文学" style="--chip-color:#9b59b6">文学</button>
-        <button class="cat-chip" data-category="音乐" style="--chip-color:#e91e63">音乐</button>
-        <button class="cat-chip" data-category="艺术" style="--chip-color:#f39c12">艺术</button>
-        <button class="cat-chip" data-category="经济金融" style="--chip-color:#27ae60">经济金融</button>
-        <button class="cat-chip" data-category="哲学思想" style="--chip-color:#1abc9c">哲学思想</button>
+        <button class="cat-chip" data-category="政治">政治</button>
+        <button class="cat-chip" data-category="军事">军事</button>
+        <button class="cat-chip" data-category="科学">科学</button>
+        <button class="cat-chip" data-category="文学">文学</button>
+        <button class="cat-chip" data-category="音乐">音乐</button>
+        <button class="cat-chip" data-category="艺术">艺术</button>
+        <button class="cat-chip" data-category="经济金融">经济金融</button>
+        <button class="cat-chip" data-category="哲学思想">哲学思想</button>
       </div>
     </div>
   </div>
@@ -75,15 +77,15 @@
     <div class="canvas-wrapper" id="canvas-wrapper">
       <svg id="timeline-svg" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <filter id="glow-filter">
-            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+          <filter id="glow-filter" x="-50%" y="-50%" width="200%" height="200%">
+            <feGaussianBlur stdDeviation="2" result="blur"/>
             <feMerge>
               <feMergeNode in="blur"/>
               <feMergeNode in="SourceGraphic"/>
             </feMerge>
           </filter>
           <filter id="shadow-filter" x="-20%" y="-20%" width="140%" height="140%">
-            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/>
+            <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.18)"/>
           </filter>
         </defs>
         <!-- Layers in z-order -->

@@ -58,11 +58,11 @@
 
   function showError(msg) {
     document.body.innerHTML =
-      '<div style="color:#e74c3c;padding:48px;font-family:sans-serif;background:#1a1a2e;height:100vh">' +
-      '<h2 style="margin-bottom:12px">Chronolines — 加载失败</h2>' +
-      '<p style="color:#888">' + msg + '</p>' +
-      '<p style="margin-top:16px;color:#666;font-size:13px">' +
-      '请通过 HTTP 服务器访问（如 <code>python3 -m http.server</code>），' +
+      '<div style="color:#c0392b;padding:64px;font-family:Inter,-apple-system,sans-serif;background:#ffffff;height:100vh">' +
+      '<h2 style="margin-bottom:12px;font-size:22px;font-weight:700;color:rgba(0,0,0,0.9);letter-spacing:-0.4px">Chronolines — 加载失败</h2>' +
+      '<p style="color:#615d59;font-size:14px">' + msg + '</p>' +
+      '<p style="margin-top:16px;color:#a39e98;font-size:13px">' +
+      '请通过 HTTP 服务器访问（如 <code style="background:#f6f5f4;padding:2px 6px;border-radius:4px;border:1px solid rgba(0,0,0,0.1)">python3 -m http.server</code>），' +
       '而不是直接打开 file:// 链接。</p>' +
       '</div>';
   }

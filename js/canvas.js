@@ -20,16 +20,16 @@ var Canvas = (function () {
   var RULER_H      = 8;     // px, ruler bar height at top of row
   var TRACK_LINE_Y_OFFSET = RULER_H + 50;  // from top of row to center line
 
-  var DOT_R = { 1: 6, 2: 4, 3: 2.5 };
+  var DOT_R = { 1: 5, 2: 3.5, 3: 2 };
 
   var TRACK_COLORS = {
-    china:   '#e74c3c',
-    uk:      '#3498db',
-    france:  '#9b59b6',
-    usa:     '#2ecc71',
-    russia:  '#e67e22',
-    germany: '#95a5a6',
-    japan:   '#e91e63',
+    china:   '#c0392b',   // deep red
+    uk:      '#1a5276',   // deep ocean blue
+    france:  '#6c3483',   // deep purple
+    usa:     '#1e8449',   // deep green
+    russia:  '#b7770d',   // dark gold
+    germany: '#515a5a',   // deep gray
+    japan:   '#922b21',   // deep rose-red
   };
 
   // ─── State ────────────────────────────────────────────────────────────────
@@ -171,7 +171,7 @@ var Canvas = (function () {
     tracks.forEach(function (track, i) {
       var y     = i * TRACK_HEIGHT;
       var color = TRACK_COLORS[track.id] || track.color || '#888';
-      var fill  = i % 2 === 0 ? 'rgba(255,255,255,0.015)' : 'transparent';
+      var fill  = i % 2 === 0 ? '#ffffff' : 'rgba(246,245,244,0.65)';
 
       var rect = mkSvg('rect', {
         x: 0, y: y, width: svgW, height: TRACK_HEIGHT,
@@ -179,11 +179,19 @@ var Canvas = (function () {
       });
       layerBands.appendChild(rect);
 
+      // Subtle bottom separator line
+      var sepLine = mkSvg('line', {
+        x1: 0, y1: y + TRACK_HEIGHT - 1, x2: svgW, y2: y + TRACK_HEIGHT - 1,
+        stroke: 'rgba(0,0,0,0.06)', 'stroke-width': 1,
+        class: 'track-center-line',
+      });
+      layerBands.appendChild(sepLine);
+
       // Center track line
       var lineY = y + RULER_H + TRACK_LINE_Y_OFFSET;
       var line = mkSvg('line', {
         x1: 0, y1: lineY, x2: svgW, y2: lineY,
-        stroke: color, 'stroke-width': 1.5, opacity: 0.35,
+        stroke: color, 'stroke-width': 1, opacity: 0.25,
         class: 'track-center-line',
       });
       layerBands.appendChild(line);
@@ -215,8 +223,8 @@ var Canvas = (function () {
           width: Math.min(x2, svgW) - Math.max(x1, 0),
           height: RULER_H,
           fill: color,
-          opacity: 0.65,
-          rx: 0,
+          opacity: 0.3,
+          rx: 3,
           class: 'ruler-bar-segment',
         });
 
@@ -240,10 +248,11 @@ var Canvas = (function () {
             var txt = mkSvg('text', {
               x: txtX,
               y: y + RULER_H - 2,
-              fill: '#fff',
-              opacity: 0.85,
-              'font-size': 8,
-              'font-family': 'sans-serif',
+              fill: '#ffffff',
+              opacity: 0.9,
+              'font-size': 7,
+              'font-weight': 600,
+              'font-family': 'Inter, sans-serif',
               'pointer-events': 'none',
               'text-anchor': 'start',
               'dominant-baseline': 'auto',
@@ -282,7 +291,7 @@ var Canvas = (function () {
       if (xm < 0 || xm > svgW) continue;
       var lm = mkSvg('line', {
         x1: xm, y1: 0, x2: xm, y2: totalH,
-        stroke: '#252540', 'stroke-width': 0.5,
+        stroke: 'rgba(0,0,0,0.04)', 'stroke-width': 0.5,
       });
       layerGrid.appendChild(lm);
     }
@@ -295,7 +304,7 @@ var Canvas = (function () {
       var isCentury = (y % 100 === 0);
       var line = mkSvg('line', {
         x1: x, y1: 0, x2: x, y2: totalH,
-        stroke: isCentury ? '#3a3a6a' : '#2a2a50',
+        stroke: isCentury ? 'rgba(0,0,0,0.14)' : 'rgba(0,0,0,0.07)',
         'stroke-width': isCentury ? 1 : 0.7,
       });
       layerGrid.appendChild(line);
@@ -338,8 +347,8 @@ var Canvas = (function () {
           width: Math.min(x2, svgW) - Math.max(x1, 0),
           height: barH,
           fill: catColor,
-          opacity: 0.55,
-          rx: 2,
+          opacity: 0.35,
+          rx: 3,
           class: 'figure-bar',
         });
 
@@ -457,19 +466,22 @@ var Canvas = (function () {
 
     var isSelected = selectedId && ev.id === selectedId;
 
+    var dotFillOpacity = ev.level === 1 ? 1 : ev.level === 2 ? 0.7 : 0.45;
     var dot = mkSvg('circle', {
       cx: x, cy: lineY, r: r,
       fill: color,
-      opacity: dotOpacity,
+      opacity: dotOpacity * dotFillOpacity,
       class: classes,
-      'stroke-width': ev.level === 1 ? 1.5 : 0,
-      stroke: '#ffffff',
+      'stroke-width': ev.level === 1 ? 2 : 0,
+      stroke: ev.level === 1 ? '#ffffff' : 'none',
       'data-id': ev.id,
     });
 
     if (isSelected) {
       dot.setAttribute('r', r * 1.6);
-      dot.setAttribute('filter', 'url(#glow-filter)');
+      dot.setAttribute('stroke', color);
+      dot.setAttribute('stroke-width', 3);
+      dot.setAttribute('fill', '#ffffff');
     }
 
     // Events
@@ -491,8 +503,8 @@ var Canvas = (function () {
     if (lp && lp.labelY !== null) {
       var titleShort = truncLabel(ev.title, ev.level, ppy);
       var fontSize   = ev.level === 1 ? 12 : 10;
-      var fontWeight = ev.level === 1 ? 700 : 400;
-      var fillColor  = ev.level === 1 ? '#d8d8f0' : '#8888a8';
+      var fontWeight = ev.level === 1 ? 600 : 500;
+      var fillColor  = ev.level === 1 ? 'rgba(0,0,0,0.85)' : 'rgba(0,0,0,0.55)';
 
       var labelOpacity = (searched !== null && dotOpacity < 0.5) ? 0.15 : 1;
 
@@ -503,7 +515,7 @@ var Canvas = (function () {
         opacity: labelOpacity,
         'font-size': fontSize,
         'font-weight': fontWeight,
-        'font-family': 'sans-serif',
+        'font-family': 'Inter, -apple-system, sans-serif',
         class: 'event-label-text',
       });
       txt.textContent = titleShort;
@@ -514,7 +526,7 @@ var Canvas = (function () {
         var connLine = mkSvg('line', {
           x1: lp.x, y1: lp.labelY + 2,
           x2: lp.x, y2: lineY - r - 1,
-          stroke: color, 'stroke-width': 0.8, opacity: 0.4,
+          stroke: color, 'stroke-width': 0.5, opacity: 0.3,
           class: 'event-label-line',
         });
         layerLabels.appendChild(connLine);
@@ -534,14 +546,15 @@ var Canvas = (function () {
 
     var circle = mkSvg('circle', {
       cx: x, cy: lineY, r: r,
-      fill: color, opacity: 0.35,
-      stroke: color, 'stroke-width': 1.2,
+      fill: '#ffffff', opacity: 1,
+      stroke: color, 'stroke-width': 1.5,
     });
 
     var label = mkSvg('text', {
       x: x, y: lineY,
-      fill: '#fff', 'font-size': 9,
-      'font-family': 'sans-serif',
+      fill: color, 'font-size': 9,
+      'font-weight': 600,
+      'font-family': 'Inter, sans-serif',
       'text-anchor': 'middle',
       'dominant-baseline': 'central',
       'pointer-events': 'none',
@@ -574,16 +587,8 @@ var Canvas = (function () {
     var h   = axisCanvas.height;
 
     ctx.clearRect(0, 0, w, h);
-    ctx.fillStyle = '#16213e';
+    ctx.fillStyle = '#f6f5f4';
     ctx.fillRect(0, 0, w, h);
-
-    // Top border line
-    ctx.strokeStyle = '#252540';
-    ctx.lineWidth = 1;
-    ctx.beginPath();
-    ctx.moveTo(0, 0);
-    ctx.lineTo(w, 0);
-    ctx.stroke();
 
     var intervals = Layout.gridIntervals(ppy);
     var major  = intervals.major;
@@ -592,24 +597,24 @@ var Canvas = (function () {
 
     // Minor ticks
     var startMinor = Math.ceil(range.start / minor) * minor;
-    ctx.strokeStyle = '#3a3a5a';
-    ctx.lineWidth   = 0.7;
+    ctx.strokeStyle = 'rgba(0,0,0,0.18)';
+    ctx.lineWidth   = 0.8;
     for (var ym = startMinor; ym <= range.end; ym += minor) {
       if (ym % major === 0) continue;
       var xm = Layout.yearToX(ym, panX, ppy);
       if (xm < 0 || xm > w) continue;
       ctx.beginPath();
-      ctx.moveTo(xm, 0);
-      ctx.lineTo(xm, 6);
+      ctx.moveTo(xm, 4);
+      ctx.lineTo(xm, 10);
       ctx.stroke();
     }
 
     // Major ticks + labels
     var startMajor = Math.ceil(range.start / major) * major;
-    ctx.strokeStyle = '#5a5a8a';
+    ctx.strokeStyle = 'rgba(0,0,0,0.35)';
     ctx.lineWidth   = 1;
-    ctx.fillStyle   = '#8888a8';
-    ctx.font        = '11px sans-serif';
+    ctx.fillStyle   = '#615d59';
+    ctx.font        = '500 11px Inter, sans-serif';
     ctx.textAlign   = 'center';
     ctx.textBaseline = 'top';
 
@@ -618,10 +623,10 @@ var Canvas = (function () {
       if (x < 0 || x > w) continue;
       ctx.beginPath();
       ctx.moveTo(x, 0);
-      ctx.lineTo(x, 10);
+      ctx.lineTo(x, 12);
       ctx.stroke();
-      if (x > 18 && x < w - 18) {
-        ctx.fillText(y, x, 12);
+      if (x > 22 && x < w - 22) {
+        ctx.fillText(y, x, 14);
       }
     }
   }
@@ -657,19 +662,39 @@ var Canvas = (function () {
     var band = mkSvg('rect', {
       x: xSnap - bandW / 2, y: 0,
       width: bandW, height: totalH,
-      fill: 'rgba(255,255,255,0.05)',
+      fill: 'rgba(0,117,222,0.04)',
       class: 'hover-band',
     });
     layerHover.appendChild(band);
 
-    // Year label at top
+    // Vertical hairline
+    var vline = mkSvg('line', {
+      x1: xSnap, y1: 0, x2: xSnap, y2: totalH,
+      stroke: 'rgba(0,117,222,0.25)', 'stroke-width': 1,
+      'pointer-events': 'none',
+    });
+    layerHover.appendChild(vline);
+
+    // Year label at top — pill background
+    var labelW = 36;
+    var labelH = 16;
+    var pill = mkSvg('rect', {
+      x: xSnap - labelW / 2, y: 2,
+      width: labelW, height: labelH,
+      rx: 4,
+      fill: 'rgba(0,117,222,0.1)',
+      'pointer-events': 'none',
+    });
+    layerHover.appendChild(pill);
+
     var txt = mkSvg('text', {
-      x: xSnap, y: 4,
-      fill: 'rgba(200,169,110,0.85)',
+      x: xSnap, y: 10,
+      fill: '#005bab',
       'font-size': 10,
-      'font-family': 'sans-serif',
+      'font-weight': 600,
+      'font-family': 'Inter, sans-serif',
       'text-anchor': 'middle',
-      'dominant-baseline': 'hanging',
+      'dominant-baseline': 'central',
       'pointer-events': 'none',
     });
     txt.textContent = year;
