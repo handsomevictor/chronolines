@@ -1,63 +1,73 @@
 /**
- * main.js — Entry point for Chronolines
- * Loads data.json, initializes all modules.
+ * main.js — Entry point for Chronolines v2.
+ * Loads data.json and bootstraps all modules.
  */
 
 (function () {
   'use strict';
 
-  // Global app state
+  // ─── Global app state ───────────────────────────────────────────────────────
   window.App = {
     data: null,
+
     state: {
-      zoom: 1,          // pixels per year
-      panX: 0,          // horizontal offset in pixels
-      activeTag: 'all', // current tag filter
-      selectedEvent: null,
+      zoom:           0,      // pixels per year (0 = not yet set)
+      panX:           0,      // horizontal pixel offset
+      activeTag:      'all',  // tag filter
+      activeCategory: 'none', // figure category filter
+      searchQuery:    '',     // search string
+      selectedEvent:  null,   // currently selected event object
     },
-    // Year range
+
     YEAR_START: 1700,
-    YEAR_END: 2000,
+    YEAR_END:   2025,
   };
 
+  // ─── Bootstrap ──────────────────────────────────────────────────────────────
+
   function init() {
-    // Load data from embedded JSON
     fetch('js/data.json')
       .then(function (res) {
-        if (!res.ok) throw new Error('Failed to load data.json: ' + res.status);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
         return res.json();
       })
       .then(function (data) {
         App.data = data;
-        console.log(
-          'Chronolines loaded:',
-          data._meta.total_events, 'events,',
-          data._meta.total_figures, 'figures'
-        );
-        onDataReady();
+        if (data._meta) {
+          console.info(
+            '[Chronolines] loaded',
+            data._meta.total_events, 'events,',
+            data._meta.total_figures, 'figures'
+          );
+        }
+        onReady();
       })
       .catch(function (err) {
-        console.error('Data load error:', err);
         showError(err.message);
       });
   }
 
-  function onDataReady() {
+  function onReady() {
+    // Boot order matters: Layout has no deps, Tooltip needs App.data,
+    // Canvas needs Layout + Tooltip, Controls needs Canvas + Layout.
     Canvas.init();
-    Controls.init();
     Tooltip.init();
+    Controls.init();
     Canvas.render();
   }
 
   function showError(msg) {
     document.body.innerHTML =
-      '<div style="color:#e74c3c;padding:40px;font-family:sans-serif;">' +
-      '<h2>加载失败</h2><p>' + msg + '</p>' +
-      '<p style="margin-top:12px;color:#888;">请确保通过 HTTP 服务器访问页面，而不是直接打开文件。</p>' +
+      '<div style="color:#e74c3c;padding:48px;font-family:sans-serif;background:#1a1a2e;height:100vh">' +
+      '<h2 style="margin-bottom:12px">Chronolines — 加载失败</h2>' +
+      '<p style="color:#888">' + msg + '</p>' +
+      '<p style="margin-top:16px;color:#666;font-size:13px">' +
+      '请通过 HTTP 服务器访问（如 <code>python3 -m http.server</code>），' +
+      '而不是直接打开 file:// 链接。</p>' +
       '</div>';
   }
 
-  // Start
+  // ─── Start ──────────────────────────────────────────────────────────────────
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
   } else {

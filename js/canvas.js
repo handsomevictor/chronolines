@@ -1,306 +1,551 @@
 /**
  * canvas.js — SVG rendering engine.
- * Draws the timeline grid, track lines, event dots and labels.
+ *
+ * Layout constants (all in px):
+ *   TRACK_HEIGHT   = 108  (total height per track row)
+ *   RULER_H        = 8    (ruler bar at top of each row)
+ *   TRACK_LINE_Y   = RULER_H + 54   (center line within row)
+ *
+ * The SVG origin (0,0) maps to the top-left of the canvas-wrapper.
+ * Sidebar labels are HTML divs absolutely positioned in .sidebar,
+ * so their top = trackIndex * TRACK_HEIGHT + TRACK_HEIGHT/2 - 9 (center text).
  */
 
 var Canvas = (function () {
   'use strict';
 
-  var svg, svgContent, gridLayer, arcsLayer, tracksLayer, eventsLayer, labelsLayer;
-  var trackLabelsEl;
-  var svgWidth, svgHeight;
+  // ─── Constants ─────────────────────────────────────────────────────────────
 
-  // Layout constants
-  var AXIS_HEIGHT = 40;      // px for year axis at top
-  var TRACK_HEIGHT = 80;     // px per track
-  var TRACK_GAP = 16;        // px between tracks
+  var TRACK_HEIGHT = 108;   // px, total height per track row
+  var RULER_H      = 8;     // px, ruler bar height at top of row
+  var TRACK_LINE_Y_OFFSET = RULER_H + 50;  // from top of row to center line
 
-  // Dot sizes per level
-  var DOT_RADIUS = { 1: 7, 2: 5, 3: 3.5 };
+  var DOT_R = { 1: 6, 2: 4, 3: 2.5 };
+
+  var TRACK_COLORS = {
+    china:   '#e74c3c',
+    uk:      '#3498db',
+    france:  '#9b59b6',
+    usa:     '#2ecc71',
+    russia:  '#e67e22',
+    germany: '#95a5a6',
+    japan:   '#e91e63',
+  };
+
+  // ─── State ────────────────────────────────────────────────────────────────
+
+  var svg, svgW, svgH;
+  var layerBands, layerRulers, layerGrid, layerFigures;
+  var layerEvents, layerArcs, layerLabels, layerHover;
+  var sidebar;
+  var wrapper;
+  var axisCanvas, axisCtx;
+  var raf = null;
+
+  // ─── Init ─────────────────────────────────────────────────────────────────
 
   function init() {
-    svg = document.getElementById('timeline-svg');
-    svgContent = document.getElementById('svg-content');
-    gridLayer = document.getElementById('grid-layer');
-    arcsLayer = document.getElementById('arcs-layer');
-    tracksLayer = document.getElementById('tracks-layer');
-    eventsLayer = document.getElementById('events-layer');
-    labelsLayer = document.getElementById('labels-layer');
-    trackLabelsEl = document.getElementById('track-labels');
+    svg        = document.getElementById('timeline-svg');
+    wrapper    = document.getElementById('canvas-wrapper');
+    sidebar    = document.getElementById('sidebar');
+    axisCanvas = document.getElementById('axis-canvas');
+    axisCtx    = axisCanvas.getContext('2d');
 
-    // Set initial zoom: fit the full year range
-    var wrapper = document.getElementById('canvas-wrapper');
-    svgWidth = wrapper.clientWidth;
-    svgHeight = wrapper.clientHeight;
+    layerBands   = document.getElementById('layer-bands');
+    layerRulers  = document.getElementById('layer-rulers');
+    layerGrid    = document.getElementById('layer-grid');
+    layerFigures = document.getElementById('layer-figures');
+    layerEvents  = document.getElementById('layer-events');
+    layerArcs    = document.getElementById('layer-arcs');
+    layerLabels  = document.getElementById('layer-labels');
+    layerHover   = document.getElementById('layer-hover');
 
-    svg.setAttribute('width', svgWidth);
-    svg.setAttribute('height', svgHeight);
+    updateSize();
 
-    // Initial zoom: 300 years visible on screen
-    var totalYears = App.YEAR_END - App.YEAR_START;
-    App.state.zoom = svgWidth / totalYears;
-    App.state.panX = 0;
+    // Build sidebar labels
+    buildSidebar();
 
-    // Build track label sidebar
-    buildTrackLabels();
+    // SVG mousemove → hover band + year indicator
+    wrapper.addEventListener('mousemove', onSVGMouseMove);
+    wrapper.addEventListener('mouseleave', clearHoverBand);
 
-    // Handle resize
-    window.addEventListener('resize', function () {
-      var w = wrapper.clientWidth;
-      var h = wrapper.clientHeight;
-      if (w !== svgWidth || h !== svgHeight) {
-        svgWidth = w;
-        svgHeight = h;
-        svg.setAttribute('width', svgWidth);
-        svg.setAttribute('height', svgHeight);
-        render();
+    // Click on blank area → close detail
+    wrapper.addEventListener('click', function (e) {
+      if (e.target === svg || e.target === wrapper) {
+        Tooltip.hideDetail();
+        clearArcs();
       }
     });
+
+    window.addEventListener('resize', onResize);
   }
 
-  function buildTrackLabels() {
-    trackLabelsEl.innerHTML = '';
+  function updateSize() {
+    svgW = wrapper.clientWidth;
+    svgH = wrapper.clientHeight;
+    svg.setAttribute('width', svgW);
+    svg.setAttribute('height', svgH);
+    axisCanvas.width  = axisCanvas.parentElement.clientWidth;
+    axisCanvas.height = axisCanvas.parentElement.clientHeight;
+
+    // Initial zoom: fit 1700-2000 in view
+    if (App.state.zoom === 0) {
+      App.state.zoom = svgW / (App.YEAR_END - App.YEAR_START);
+      App.state.panX = 0;
+    }
+  }
+
+  function onResize() {
+    updateSize();
+    buildSidebar();
+    scheduleRender();
+  }
+
+  // ─── Sidebar (HTML labels) ────────────────────────────────────────────────
+
+  function buildSidebar() {
+    sidebar.innerHTML = '';
     var tracks = App.data.tracks;
 
-    // Add axis spacer
-    var spacer = document.createElement('div');
-    spacer.style.height = AXIS_HEIGHT + 'px';
-    spacer.style.flexShrink = '0';
-    trackLabelsEl.appendChild(spacer);
+    tracks.forEach(function (track, i) {
+      var color = TRACK_COLORS[track.id] || track.color || '#888';
+      var topY  = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET - 9;  // center text on line
 
-    tracks.forEach(function (track) {
       var label = document.createElement('div');
-      label.className = 'track-label';
-      label.style.height = (TRACK_HEIGHT + TRACK_GAP) + 'px';
-      label.style.color = track.color;
-      label.innerHTML = track.name +
-        '<span class="label-dot" style="background:' + track.color + '"></span>';
+      label.className = 'sidebar-label';
+      label.style.top    = topY + 'px';
+      label.style.height = '18px';
 
-      label.addEventListener('click', function () {
-        // Scroll to center this track (no-op for now, track is visible)
-      });
+      label.innerHTML =
+        '<span class="sidebar-label-name" style="color:' + color + '">' + track.name + '</span>' +
+        '<span class="sidebar-label-dot" style="background:' + color + '"></span>';
 
-      trackLabelsEl.appendChild(label);
+      sidebar.appendChild(label);
     });
   }
 
-  function getTrackY(trackIndex) {
-    return AXIS_HEIGHT + trackIndex * (TRACK_HEIGHT + TRACK_GAP) + TRACK_HEIGHT / 2;
+  // ─── Render orchestration ─────────────────────────────────────────────────
+
+  function scheduleRender() {
+    if (raf) cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(function () {
+      raf = null;
+      render();
+    });
   }
 
   function render() {
     if (!App.data) return;
 
-    clearLayers();
-
-    var ppy = App.state.zoom; // pixels per year
-    var panX = App.state.panX;
-    var activeTag = App.state.activeTag;
+    var ppy    = App.state.zoom;
+    var panX   = App.state.panX;
     var levels = Layout.visibleLevels(ppy);
+    var range  = Layout.visibleRange(panX, svgW, ppy);
 
-    drawGrid(ppy, panX);
-    drawTracks(ppy, panX);
-    drawEvents(ppy, panX, levels, activeTag);
+    clearAll();
+
+    drawBands();
+    drawRulerBars(ppy, panX, range);
+    drawGrid(ppy, panX, range);
+    drawFigureBars(ppy, panX, range);
+    drawEvents(ppy, panX, levels, range);
+    drawAxisCanvas(ppy, panX);
+    updateYearDisplay(ppy, panX);
   }
 
-  function clearLayers() {
-    gridLayer.innerHTML = '';
-    arcsLayer.innerHTML = '';
-    tracksLayer.innerHTML = '';
-    eventsLayer.innerHTML = '';
-    labelsLayer.innerHTML = '';
+  function clearAll() {
+    layerBands.innerHTML   = '';
+    layerRulers.innerHTML  = '';
+    layerGrid.innerHTML    = '';
+    layerFigures.innerHTML = '';
+    layerEvents.innerHTML  = '';
+    layerArcs.innerHTML    = '';
+    layerLabels.innerHTML  = '';
+    // layerHover is managed by mousemove
   }
 
-  function drawGrid(ppy, panX) {
-    // Determine grid interval based on zoom
-    var yearsPerPixel = 1 / ppy;
-    var interval;
-    if (ppy < 0.5) interval = 100;
-    else if (ppy < 2) interval = 50;
-    else if (ppy < 5) interval = 25;
-    else if (ppy < 10) interval = 10;
-    else interval = 5;
+  // ─── Track bands ─────────────────────────────────────────────────────────
 
-    var visRange = Layout.visibleYearRange(panX, svgWidth, ppy);
-    var startYear = Math.ceil(visRange.start / interval) * interval;
-
-    for (var y = startYear; y <= visRange.end; y += interval) {
-      var x = Layout.yearToX(y, panX, ppy);
-      if (x < -2 || x > svgWidth + 2) continue;
-
-      var isCentury = (y % 100 === 0);
-      var line = makeSVG('line', {
-        x1: x, y1: 0, x2: x, y2: svgHeight,
-        class: isCentury ? 'grid-line-major' : 'grid-line',
-      });
-      gridLayer.appendChild(line);
-
-      // Year label
-      if (x > 10 && x < svgWidth - 10) {
-        var text = makeSVG('text', {
-          x: x, y: AXIS_HEIGHT - 8,
-          class: 'year-label',
-        });
-        text.textContent = y;
-        gridLayer.appendChild(text);
-      }
-    }
-  }
-
-  function drawTracks(ppy, panX) {
+  function drawBands() {
     var tracks = App.data.tracks;
     tracks.forEach(function (track, i) {
-      var y = getTrackY(i);
+      var y     = i * TRACK_HEIGHT;
+      var color = TRACK_COLORS[track.id] || track.color || '#888';
+      var fill  = i % 2 === 0 ? 'rgba(255,255,255,0.015)' : 'transparent';
 
-      // Track background band
-      var band = makeSVG('rect', {
-        x: 0, y: y - TRACK_HEIGHT / 2,
-        width: svgWidth, height: TRACK_HEIGHT,
-        fill: track.color, class: 'track-band',
+      var rect = mkSvg('rect', {
+        x: 0, y: y, width: svgW, height: TRACK_HEIGHT,
+        fill: fill, class: 'track-band',
       });
-      tracksLayer.appendChild(band);
+      layerBands.appendChild(rect);
 
-      // Track center line
-      var line = makeSVG('line', {
-        x1: 0, y1: y, x2: svgWidth, y2: y,
-        stroke: track.color, class: 'track-line',
+      // Center track line
+      var lineY = y + RULER_H + TRACK_LINE_Y_OFFSET;
+      var line = mkSvg('line', {
+        x1: 0, y1: lineY, x2: svgW, y2: lineY,
+        stroke: color, 'stroke-width': 1.5, opacity: 0.35,
+        class: 'track-center-line',
       });
-      tracksLayer.appendChild(line);
+      layerBands.appendChild(line);
     });
   }
 
-  function drawEvents(ppy, panX, levels, activeTag) {
+  // ─── Ruler bars ──────────────────────────────────────────────────────────
+
+  function drawRulerBars(ppy, panX, range) {
     var tracks = App.data.tracks;
-    var visRange = Layout.visibleYearRange(panX, svgWidth, ppy);
 
-    tracks.forEach(function (track, trackIndex) {
-      var trackY = getTrackY(trackIndex);
-      var allEvents = App.data.events[track.id] || [];
+    tracks.forEach(function (track, i) {
+      var rulers = track.rulers || [];
+      var color  = TRACK_COLORS[track.id] || track.color || '#888';
+      var y      = i * TRACK_HEIGHT;
 
-      // Filter by visible levels
-      var visibleEvents = allEvents.filter(function (e) {
-        return levels.indexOf(e.level) !== -1 &&
-               e.year >= visRange.start &&
-               e.year <= visRange.end;
+      rulers.forEach(function (ruler) {
+        var rStart = Math.max(ruler.startYear, range.start - 1);
+        var rEnd   = Math.min(ruler.endYear,   range.end   + 1);
+        if (rStart >= rEnd) return;
+
+        var x1 = Layout.yearToX(rStart, panX, ppy);
+        var x2 = Layout.yearToX(rEnd,   panX, ppy);
+        if (x2 < -2 || x1 > svgW + 2) return;
+
+        var rect = mkSvg('rect', {
+          x: Math.max(x1, 0),
+          y: y,
+          width: Math.min(x2, svgW) - Math.max(x1, 0),
+          height: RULER_H,
+          fill: color,
+          opacity: 0.65,
+          rx: 0,
+          class: 'ruler-bar-segment',
+        });
+
+        // Hover → tooltip
+        (function (r, t) {
+          rect.addEventListener('mouseenter', function (e) {
+            Tooltip.showRuler(r, t, e);
+          });
+          rect.addEventListener('mousemove', function (e) { Tooltip.move(e); });
+          rect.addEventListener('mouseleave', function () { Tooltip.hide(); });
+        })(ruler, track);
+
+        layerRulers.appendChild(rect);
+
+        // Ruler name label (only when wide enough)
+        var w = x2 - x1;
+        if (w > 40) {
+          var txtX = Math.max(x1 + 3, 3);
+          var maxW = Math.min(x2, svgW) - txtX - 4;
+          if (maxW > 20) {
+            var txt = mkSvg('text', {
+              x: txtX,
+              y: y + RULER_H - 2,
+              fill: '#fff',
+              opacity: 0.85,
+              'font-size': 8,
+              'font-family': 'sans-serif',
+              'pointer-events': 'none',
+              'text-anchor': 'start',
+              'dominant-baseline': 'auto',
+            });
+            var shortName = truncateRulerName(ruler.name, maxW);
+            txt.textContent = shortName;
+            layerRulers.appendChild(txt);
+          }
+        }
+      });
+    });
+  }
+
+  function truncateRulerName(name, maxPx) {
+    // ~6px per character at font-size 8
+    var maxChars = Math.floor(maxPx / 5.5);
+    if (name.length <= maxChars) return name;
+    return name.substring(0, Math.max(2, maxChars - 1)) + '…';
+  }
+
+  // ─── Grid ────────────────────────────────────────────────────────────────
+
+  function drawGrid(ppy, panX, range) {
+    var intervals = Layout.gridIntervals(ppy);
+    var major = intervals.major;
+    var minor = intervals.minor;
+
+    var startMajor = Math.ceil(range.start / major) * major;
+    var totalH     = App.data.tracks.length * TRACK_HEIGHT;
+
+    // Minor gridlines
+    var startMinor = Math.ceil(range.start / minor) * minor;
+    for (var ym = startMinor; ym <= range.end; ym += minor) {
+      if (ym % major === 0) continue;
+      var xm = Layout.yearToX(ym, panX, ppy);
+      if (xm < 0 || xm > svgW) continue;
+      var lm = mkSvg('line', {
+        x1: xm, y1: 0, x2: xm, y2: totalH,
+        stroke: '#252540', 'stroke-width': 0.5,
+      });
+      layerGrid.appendChild(lm);
+    }
+
+    // Major gridlines + labels on grid
+    for (var y = startMajor; y <= range.end; y += major) {
+      var x = Layout.yearToX(y, panX, ppy);
+      if (x < 0 || x > svgW) continue;
+
+      var isCentury = (y % 100 === 0);
+      var line = mkSvg('line', {
+        x1: x, y1: 0, x2: x, y2: totalH,
+        stroke: isCentury ? '#3a3a6a' : '#2a2a50',
+        'stroke-width': isCentury ? 1 : 0.7,
+      });
+      layerGrid.appendChild(line);
+    }
+  }
+
+  // ─── Figure bars ─────────────────────────────────────────────────────────
+
+  function drawFigureBars(ppy, panX, range) {
+    var activeCategory = App.state.activeCategory;
+    if (!activeCategory || activeCategory === 'none') return;
+
+    var catColor = Tooltip.CATEGORY_COLORS[activeCategory] || '#888';
+    var tracks = App.data.tracks;
+
+    tracks.forEach(function (track, i) {
+      var figures = (App.data.figures[track.id] || []).filter(function (f) {
+        return f.category === activeCategory &&
+               f.birthYear !== undefined &&
+               f.deathYear !== undefined;
       });
 
-      // Apply tag filter
-      var filteredEvents = Layout.filterByTag(visibleEvents, activeTag);
+      var lineY = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
 
-      // Cluster non-level-1 nearby events
-      var groups = Layout.clusterEvents(filteredEvents, ppy, panX);
+      figures.forEach(function (fig) {
+        var fStart = Math.max(fig.birthYear, range.start - 1);
+        var fEnd   = Math.min(fig.deathYear, range.end   + 1);
+        if (fStart >= fEnd) return;
 
-      // Label layout for level 1 events
-      var labelEvents = filteredEvents.filter(function (e) { return e.level === 1; });
-      var labelPositions = Layout.layoutLabels(labelEvents, trackY, ppy, panX);
+        var x1 = Layout.yearToX(fStart, panX, ppy);
+        var x2 = Layout.yearToX(fEnd,   panX, ppy);
+        if (x2 < 0 || x1 > svgW) return;
+
+        var barH  = 6;
+        var barY  = lineY + 12;
+
+        var bar = mkSvg('rect', {
+          x: Math.max(x1, 0),
+          y: barY,
+          width: Math.min(x2, svgW) - Math.max(x1, 0),
+          height: barH,
+          fill: catColor,
+          opacity: 0.55,
+          rx: 2,
+          class: 'figure-bar',
+        });
+
+        (function (f, t) {
+          bar.addEventListener('mouseenter', function (e) {
+            Tooltip.showFigure(f, t, e);
+          });
+          bar.addEventListener('mousemove', function (e) { Tooltip.move(e); });
+          bar.addEventListener('mouseleave', function () { Tooltip.hide(); });
+        })(fig, track);
+
+        layerFigures.appendChild(bar);
+      });
+    });
+  }
+
+  // ─── Events ──────────────────────────────────────────────────────────────
+
+  function drawEvents(ppy, panX, levels, range) {
+    var tracks     = App.data.tracks;
+    var activeTag  = App.state.activeTag;
+    var searchQ    = App.state.searchQuery;
+    var selectedId = App.state.selectedEvent ? App.state.selectedEvent.id : null;
+
+    tracks.forEach(function (track, i) {
+      var color    = TRACK_COLORS[track.id] || track.color || '#888';
+      var lineY    = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      var allEvts  = App.data.events[track.id] || [];
+
+      // Filter to visible year range and levels
+      var inView = allEvts.filter(function (e) {
+        return levels.indexOf(e.level) !== -1 &&
+               e.year >= range.start &&
+               e.year <= range.end;
+      });
+
+      // Tag-matching events (or all if 'all')
+      var tagged = Layout.filterByTag(inView, activeTag);
+
+      // Search-matching events
+      var searched = searchQ ? Layout.filterBySearch(inView, searchQ) : null;
+
+      // Draw faded dots for non-matching events (tag filter)
+      if (activeTag !== 'all') {
+        var tagFaded = inView.filter(function (e) {
+          return !e.tags || e.tags.indexOf(activeTag) === -1;
+        });
+        tagFaded.forEach(function (e) {
+          var x = Layout.yearToX(e.year, panX, ppy);
+          if (x < -10 || x > svgW + 10) return;
+          var r  = DOT_R[e.level] || 3;
+          var dot = mkSvg('circle', {
+            cx: x, cy: lineY, r: r,
+            fill: color, opacity: 0.12,
+          });
+          layerEvents.appendChild(dot);
+        });
+      }
+
+      // Cluster active events
+      var groups = Layout.clusterEvents(tagged, ppy, panX);
+
+      // Level-1 label layout (for label collision)
+      var l1events = tagged.filter(function (e) { return e.level === 1; });
+      var l2events = ppy > 2 ? tagged.filter(function (e) { return e.level === 2; }) : [];
+      var labelEvts = l1events.concat(l2events);
       var labelMap = {};
-      labelPositions.forEach(function (lp) {
+      Layout.layoutLabels(labelEvts, lineY, ppy, panX, svgW).forEach(function (lp) {
         labelMap[lp.event.id] = lp;
       });
 
       groups.forEach(function (group) {
-        if (group.length === 1) {
-          drawSingleEvent(group[0], track, trackY, ppy, panX, labelMap, activeTag, allEvents);
+        var isSingleton = group.length === 1;
+
+        if (isSingleton) {
+          var ev = group[0];
+          drawSingleEvent(ev, track, color, lineY, ppy, panX,
+                          labelMap, selectedId, searched, activeTag);
         } else {
-          drawCluster(group, track, trackY, ppy, panX);
+          drawCluster(group, track, color, lineY, ppy, panX);
         }
       });
-
-      // Draw faded dots for events not matching tag filter
-      if (activeTag !== 'all') {
-        var fadedEvents = visibleEvents.filter(function (e) {
-          return !e.tags || e.tags.indexOf(activeTag) === -1;
-        });
-        fadedEvents.forEach(function (event) {
-          var x = Layout.yearToX(event.year, panX, ppy);
-          if (x < -20 || x > svgWidth + 20) return;
-          var r = DOT_RADIUS[event.level] || 4;
-          var dot = makeSVG('circle', {
-            cx: x, cy: trackY, r: r,
-            fill: track.color,
-            class: 'event-dot faded',
-          });
-          eventsLayer.appendChild(dot);
-        });
-      }
     });
   }
 
-  function drawSingleEvent(event, track, trackY, ppy, panX, labelMap, activeTag, allEvents) {
-    var x = Layout.yearToX(event.year, panX, ppy);
-    if (x < -20 || x > svgWidth + 20) return;
+  function drawSingleEvent(ev, track, color, lineY, ppy, panX,
+                           labelMap, selectedId, searched, activeTag) {
+    var x = Layout.yearToX(ev.year, panX, ppy);
+    if (x < -15 || x > svgW + 15) return;
 
-    var r = DOT_RADIUS[event.level] || 4;
-    var dot = makeSVG('circle', {
-      cx: x, cy: trackY, r: r,
-      fill: track.color,
-      class: 'event-dot',
-      'data-id': event.id,
+    var r = DOT_R[ev.level] || 3;
+
+    // Duration bar
+    if (ev.endYear) {
+      var x2   = Layout.yearToX(ev.endYear, panX, ppy);
+      var barW  = Math.max(x2 - x, 2);
+      var barH  = ev.level === 1 ? 4 : 3;
+      var durBar = mkSvg('rect', {
+        x: x, y: lineY - barH / 2,
+        width: barW, height: barH,
+        fill: color, opacity: 0.2, rx: 1,
+        class: 'event-duration-bar',
+      });
+      layerEvents.appendChild(durBar);
+    }
+
+    // Dot
+    var classes = 'event-dot';
+    var dotOpacity = 1;
+
+    if (searched !== null) {
+      var inSearch = searched.some(function (s) { return s.id === ev.id; });
+      if (!inSearch) { dotOpacity = 0.1; }
+    }
+
+    var isSelected = selectedId && ev.id === selectedId;
+
+    var dot = mkSvg('circle', {
+      cx: x, cy: lineY, r: r,
+      fill: color,
+      opacity: dotOpacity,
+      class: classes,
+      'stroke-width': ev.level === 1 ? 1.5 : 0,
+      stroke: '#ffffff',
+      'data-id': ev.id,
     });
 
+    if (isSelected) {
+      dot.setAttribute('r', r * 1.6);
+      dot.setAttribute('filter', 'url(#glow-filter)');
+    }
+
+    // Events
     dot.addEventListener('mouseenter', function (e) {
-      Tooltip.show(event, track, e);
+      Tooltip.show(ev, track, e);
     });
-    dot.addEventListener('mousemove', function (e) {
-      Tooltip.move(e);
-    });
-    dot.addEventListener('mouseleave', function () {
+    dot.addEventListener('mousemove', function (e) { Tooltip.move(e); });
+    dot.addEventListener('mouseleave', function () { Tooltip.hide(); });
+    dot.addEventListener('click', function (e) {
+      e.stopPropagation();
       Tooltip.hide();
-    });
-    dot.addEventListener('click', function () {
-      showDetail(event, track, allEvents);
+      Tooltip.showDetail(ev, track);
     });
 
-    eventsLayer.appendChild(dot);
+    layerEvents.appendChild(dot);
 
-    // Draw duration bar for events with endYear
-    if (event.endYear) {
-      var x2 = Layout.yearToX(event.endYear, panX, ppy);
-      var bar = makeSVG('rect', {
-        x: x, y: trackY - 2,
-        width: Math.max(x2 - x, 2), height: 4,
-        fill: track.color, opacity: 0.25,
-        rx: 2,
+    // Label
+    var lp = labelMap[ev.id];
+    if (lp && lp.labelY !== null) {
+      var titleShort = truncLabel(ev.title, ev.level, ppy);
+      var fontSize   = ev.level === 1 ? 12 : 10;
+      var fontWeight = ev.level === 1 ? 700 : 400;
+      var fillColor  = ev.level === 1 ? '#d8d8f0' : '#8888a8';
+
+      var labelOpacity = (searched !== null && dotOpacity < 0.5) ? 0.15 : 1;
+
+      var txt = mkSvg('text', {
+        x: lp.x + r + 4,
+        y: lp.labelY,
+        fill: fillColor,
+        opacity: labelOpacity,
+        'font-size': fontSize,
+        'font-weight': fontWeight,
+        'font-family': 'sans-serif',
+        class: 'event-label-text',
       });
-      eventsLayer.insertBefore(bar, dot);
-    }
+      txt.textContent = titleShort;
+      layerLabels.appendChild(txt);
 
-    // Draw label for level 1 and 2 events with enough zoom
-    if (event.level === 1 || (event.level === 2 && ppy > 1.5)) {
-      var lp = labelMap[event.id];
-      var labelY = lp ? lp.labelY : trackY - 16;
-
-      var text = makeSVG('text', {
-        x: x + r + 4,
-        y: labelY,
-        class: 'event-label level-' + event.level,
-      });
-      // Truncate long titles
-      var title = event.title;
-      if (title.length > 16 && ppy < 3) {
-        title = title.substring(0, 14) + '…';
+      // Connector line: from label bottom to dot
+      if (lp.labelY < lineY - r - 4) {
+        var connLine = mkSvg('line', {
+          x1: lp.x, y1: lp.labelY + 2,
+          x2: lp.x, y2: lineY - r - 1,
+          stroke: color, 'stroke-width': 0.8, opacity: 0.4,
+          class: 'event-label-line',
+        });
+        layerLabels.appendChild(connLine);
       }
-      text.textContent = title;
-      labelsLayer.appendChild(text);
     }
   }
 
-  function drawCluster(group, track, trackY, ppy, panX) {
-    // Place cluster at centroid year
-    var sumYear = group.reduce(function (s, e) { return s + e.year; }, 0);
-    var centroidYear = sumYear / group.length;
-    var x = Layout.yearToX(centroidYear, panX, ppy);
-    if (x < -20 || x > svgWidth + 20) return;
+  function drawCluster(group, track, color, lineY, ppy, panX) {
+    // Center cluster on average year
+    var sumY = group.reduce(function (s, e) { return s + e.year; }, 0);
+    var avgYear = sumY / group.length;
+    var x = Layout.yearToX(avgYear, panX, ppy);
+    if (x < -20 || x > svgW + 20) return;
 
     var r = 10;
-    var g = makeSVG('g', { class: 'event-cluster' });
-    var circle = makeSVG('circle', { cx: x, cy: trackY, r: r });
-    circle.style.fill = track.color;
-    circle.style.fillOpacity = '0.4';
-    circle.style.stroke = track.color;
-    circle.style.strokeWidth = '1';
+    var g = mkSvg('g', { class: 'event-cluster-g' });
 
-    var label = makeSVG('text', { x: x, y: trackY });
+    var circle = mkSvg('circle', {
+      cx: x, cy: lineY, r: r,
+      fill: color, opacity: 0.35,
+      stroke: color, 'stroke-width': 1.2,
+    });
+
+    var label = mkSvg('text', {
+      x: x, y: lineY,
+      fill: '#fff', 'font-size': 9,
+      'font-family': 'sans-serif',
+      'text-anchor': 'middle',
+      'dominant-baseline': 'central',
+      'pointer-events': 'none',
+    });
     label.textContent = group.length;
 
     g.appendChild(circle);
@@ -311,84 +556,212 @@ var Canvas = (function () {
     });
     g.addEventListener('mousemove', function (e) { Tooltip.move(e); });
     g.addEventListener('mouseleave', function () { Tooltip.hide(); });
-
-    eventsLayer.appendChild(g);
-  }
-
-  function showDetail(event, track, allEvents) {
-    App.state.selectedEvent = event;
-    var panel = document.getElementById('detail-panel');
-    var content = document.getElementById('detail-content');
-
-    var yearStr = event.endYear
-      ? event.year + '–' + event.endYear
-      : event.year + ' 年';
-
-    var tagsHtml = (event.tags || []).map(function (t) {
-      return '<span class="detail-tag">' + t + '</span>';
-    }).join('');
-
-    var relatedHtml = '';
-    if (event.related && event.related.length) {
-      var relatedItems = event.related.map(function (rid) {
-        // Find event across all tracks
-        var found = null;
-        Object.keys(App.data.events).forEach(function (tid) {
-          App.data.events[tid].forEach(function (e) {
-            if (e.id === rid) found = e;
-          });
-        });
-        if (!found) return '';
-        return '<span class="detail-related-item" data-event-id="' + rid + '">' +
-               found.title + '</span>';
-      }).join('');
-      if (relatedItems) {
-        relatedHtml = '<div class="detail-related">' +
-          '<div class="detail-related-title">关联事件</div>' + relatedItems + '</div>';
-      }
-    }
-
-    var detailHtml = '';
-    if (event.detail) {
-      detailHtml = '<div class="detail-detail">' + event.detail + '</div>';
-    }
-
-    content.innerHTML =
-      '<div class="detail-year">' + yearStr + ' · ' + track.name + '</div>' +
-      '<div class="detail-title">' + event.title + '</div>' +
-      '<div class="detail-summary">' + event.summary + '</div>' +
-      detailHtml +
-      '<div class="detail-tags">' + tagsHtml + '</div>' +
-      relatedHtml;
-
-    // Wire up related event clicks
-    content.querySelectorAll('.detail-related-item').forEach(function (el) {
-      el.addEventListener('click', function () {
-        var eid = el.getAttribute('data-event-id');
-        var found = null;
-        var foundTrack = null;
-        App.data.tracks.forEach(function (t) {
-          (App.data.events[t.id] || []).forEach(function (e) {
-            if (e.id === eid) { found = e; foundTrack = t; }
-          });
-        });
-        if (found && foundTrack) {
-          showDetail(found, foundTrack, App.data.events[foundTrack.id] || []);
-          // Pan to that event
-          var targetX = Layout.yearToX(found.year, App.state.panX, App.state.zoom);
-          if (targetX < 50 || targetX > svgWidth - 50) {
-            App.state.panX += svgWidth / 2 - targetX;
-            render();
-          }
-        }
-      });
+    g.addEventListener('click', function (e) {
+      e.stopPropagation();
+      // Show detail for first event in cluster
+      Tooltip.hide();
+      Tooltip.showDetail(group[0], track);
     });
 
-    panel.classList.remove('hidden');
+    layerEvents.appendChild(g);
   }
 
-  // Utility: create SVG element with attributes
-  function makeSVG(tag, attrs) {
+  // ─── Axis canvas ─────────────────────────────────────────────────────────
+
+  function drawAxisCanvas(ppy, panX) {
+    var ctx = axisCtx;
+    var w   = axisCanvas.width;
+    var h   = axisCanvas.height;
+
+    ctx.clearRect(0, 0, w, h);
+    ctx.fillStyle = '#16213e';
+    ctx.fillRect(0, 0, w, h);
+
+    // Top border line
+    ctx.strokeStyle = '#252540';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.moveTo(0, 0);
+    ctx.lineTo(w, 0);
+    ctx.stroke();
+
+    var intervals = Layout.gridIntervals(ppy);
+    var major  = intervals.major;
+    var minor  = intervals.minor;
+    var range  = Layout.visibleRange(panX, w, ppy);
+
+    // Minor ticks
+    var startMinor = Math.ceil(range.start / minor) * minor;
+    ctx.strokeStyle = '#3a3a5a';
+    ctx.lineWidth   = 0.7;
+    for (var ym = startMinor; ym <= range.end; ym += minor) {
+      if (ym % major === 0) continue;
+      var xm = Layout.yearToX(ym, panX, ppy);
+      if (xm < 0 || xm > w) continue;
+      ctx.beginPath();
+      ctx.moveTo(xm, 0);
+      ctx.lineTo(xm, 6);
+      ctx.stroke();
+    }
+
+    // Major ticks + labels
+    var startMajor = Math.ceil(range.start / major) * major;
+    ctx.strokeStyle = '#5a5a8a';
+    ctx.lineWidth   = 1;
+    ctx.fillStyle   = '#8888a8';
+    ctx.font        = '11px sans-serif';
+    ctx.textAlign   = 'center';
+    ctx.textBaseline = 'top';
+
+    for (var y = startMajor; y <= range.end; y += major) {
+      var x = Layout.yearToX(y, panX, ppy);
+      if (x < 0 || x > w) continue;
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x, 10);
+      ctx.stroke();
+      if (x > 18 && x < w - 18) {
+        ctx.fillText(y, x, 12);
+      }
+    }
+  }
+
+  // ─── Year display ─────────────────────────────────────────────────────────
+
+  function updateYearDisplay(ppy, panX) {
+    var range = Layout.visibleRange(panX, svgW, ppy);
+    var el = document.getElementById('year-range-display');
+    if (el) {
+      var s = Math.max(App.YEAR_START, Math.round(range.start));
+      var e = Math.min(App.YEAR_END,   Math.round(range.end));
+      el.textContent = s + ' \u2014 ' + e;
+    }
+  }
+
+  // ─── Hover band ──────────────────────────────────────────────────────────
+
+  function onSVGMouseMove(e) {
+    var rect  = wrapper.getBoundingClientRect();
+    var mx    = e.clientX - rect.left;
+    var ppy   = App.state.zoom;
+    var panX  = App.state.panX;
+    var year  = Math.round(Layout.xToYear(mx, panX, ppy));
+    var xSnap = Layout.yearToX(year, panX, ppy);
+
+    // Clear previous hover band
+    layerHover.innerHTML = '';
+
+    var totalH = App.data.tracks.length * TRACK_HEIGHT;
+    var bandW  = Math.max(ppy * 1, 2);
+
+    var band = mkSvg('rect', {
+      x: xSnap - bandW / 2, y: 0,
+      width: bandW, height: totalH,
+      fill: 'rgba(255,255,255,0.05)',
+      class: 'hover-band',
+    });
+    layerHover.appendChild(band);
+
+    // Year label at top
+    var txt = mkSvg('text', {
+      x: xSnap, y: 4,
+      fill: 'rgba(200,169,110,0.85)',
+      'font-size': 10,
+      'font-family': 'sans-serif',
+      'text-anchor': 'middle',
+      'dominant-baseline': 'hanging',
+      'pointer-events': 'none',
+    });
+    txt.textContent = year;
+    layerHover.appendChild(txt);
+  }
+
+  function clearHoverBand() {
+    layerHover.innerHTML = '';
+  }
+
+  // ─── Arc lines (related events) ──────────────────────────────────────────
+
+  function drawRelatedArcs(event) {
+    clearArcs();
+    if (!event.related || !event.related.length) return;
+
+    var ppy    = App.state.zoom;
+    var panX   = App.state.panX;
+    var tracks = App.data.tracks;
+
+    // Find source track index
+    var srcTrackIdx = -1;
+    tracks.forEach(function (t, i) {
+      if ((App.data.events[t.id] || []).some(function (e) { return e.id === event.id; })) {
+        srcTrackIdx = i;
+      }
+    });
+
+    if (srcTrackIdx < 0) return;
+
+    var srcX = Layout.yearToX(event.year, panX, ppy);
+    var srcY = srcTrackIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+
+    event.related.forEach(function (rid) {
+      var res = Tooltip.findEvent(rid);
+      if (!res) return;
+
+      var relEvt   = res.event;
+      var relTrack = res.track;
+      var relIdx   = tracks.indexOf(relTrack);
+      if (relIdx < 0) return;
+
+      var tgtX = Layout.yearToX(relEvt.year, panX, ppy);
+      var tgtY = relIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      var color = TRACK_COLORS[relTrack.id] || relTrack.color || '#888';
+
+      // SVG quadratic bezier arc
+      var dx    = tgtX - srcX;
+      var dy    = tgtY - srcY;
+      var cpX   = (srcX + tgtX) / 2;
+      var cpY   = Math.min(srcY, tgtY) - Math.abs(dy) * 0.6 - Math.abs(dx) * 0.15;
+
+      var path = mkSvg('path', {
+        d: 'M ' + srcX + ' ' + srcY +
+           ' Q ' + cpX + ' ' + cpY +
+           ' ' + tgtX + ' ' + tgtY,
+        stroke: color,
+        'stroke-width': 1.2,
+        opacity: 0.5,
+        'stroke-dasharray': '5 3',
+        fill: 'none',
+        class: 'arc-path',
+      });
+      layerArcs.appendChild(path);
+
+      // Highlight the related dot
+      var relDot = layerEvents.querySelector('[data-id="' + rid + '"]');
+      if (relDot) {
+        relDot.setAttribute('r', parseFloat(relDot.getAttribute('r') || 4) * 1.5);
+        relDot.setAttribute('filter', 'url(#glow-filter)');
+      }
+    });
+  }
+
+  function clearArcs() {
+    layerArcs.innerHTML = '';
+  }
+
+  // ─── Pan to year ─────────────────────────────────────────────────────────
+
+  function panToYear(year) {
+    var targetX = Layout.yearToX(year, App.state.panX, App.state.zoom);
+    if (targetX < 60 || targetX > svgW - 60) {
+      App.state.panX += svgW / 2 - targetX;
+      Controls.clampPan();
+      scheduleRender();
+    }
+  }
+
+  // ─── Utility ──────────────────────────────────────────────────────────────
+
+  function mkSvg(tag, attrs) {
     var el = document.createElementNS('http://www.w3.org/2000/svg', tag);
     Object.keys(attrs).forEach(function (k) {
       el.setAttribute(k, attrs[k]);
@@ -396,17 +769,28 @@ var Canvas = (function () {
     return el;
   }
 
-  // Public: get track Y for a given index
-  function getTrackYPublic(index) {
-    return getTrackY(index);
+  function truncLabel(title, level, ppy) {
+    var maxChars = level === 1 ? 12 : 8;
+    if (ppy > 4) maxChars = 20;
+    if (ppy > 8) maxChars = 40;
+    if (!title || title.length <= maxChars) return title;
+    return title.substring(0, maxChars - 1) + '…';
   }
 
+  // ─── Public API ───────────────────────────────────────────────────────────
+
   return {
-    init: init,
-    render: render,
-    getTrackY: getTrackYPublic,
-    AXIS_HEIGHT: AXIS_HEIGHT,
-    TRACK_HEIGHT: TRACK_HEIGHT,
-    TRACK_GAP: TRACK_GAP,
+    init:           init,
+    render:         render,
+    scheduleRender: scheduleRender,
+    drawRelatedArcs: drawRelatedArcs,
+    clearArcs:      clearArcs,
+    panToYear:      panToYear,
+    TRACK_HEIGHT:   TRACK_HEIGHT,
+    RULER_H:        RULER_H,
+    TRACK_LINE_Y_OFFSET: TRACK_LINE_Y_OFFSET,
+    TRACK_COLORS:   TRACK_COLORS,
+    getSvgW:        function () { return svgW; },
+    getSvgH:        function () { return svgH; },
   };
 })();

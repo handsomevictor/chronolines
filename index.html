@@ -7,64 +7,117 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="app-header">
+
+  <!-- Top control bar -->
+  <header class="app-header" id="app-header">
     <div class="header-left">
       <h1 class="app-title">Chronolines</h1>
-      <span class="app-subtitle">多轨道历史时间线 · 1700–2000</span>
+      <span class="app-subtitle">多轨道历史时间线</span>
+    </div>
+    <div class="header-center">
+      <div class="year-range-display" id="year-range-display">1700 — 2000</div>
     </div>
     <div class="header-right">
+      <div class="search-box">
+        <input type="text" id="search-input" class="search-input" placeholder="搜索事件…" autocomplete="off">
+      </div>
       <div class="zoom-controls">
-        <button id="btn-zoom-in" class="ctrl-btn" title="放大">+</button>
-        <button id="btn-zoom-reset" class="ctrl-btn" title="重置视图">重置</button>
-        <button id="btn-zoom-out" class="ctrl-btn" title="缩小">−</button>
+        <button id="btn-zoom-in" class="ctrl-btn" title="放大 (+)">+</button>
+        <button id="btn-zoom-reset" class="ctrl-btn" title="重置视图 (0)">重置</button>
+        <button id="btn-zoom-out" class="ctrl-btn" title="缩小 (-)">−</button>
       </div>
     </div>
   </header>
 
-  <div class="tag-filter-bar" id="tag-filter-bar">
-    <span class="filter-label">筛选：</span>
-    <button class="tag-btn active" data-tag="all">全部</button>
-    <button class="tag-btn" data-tag="战争">战争</button>
-    <button class="tag-btn" data-tag="条约外交">条约外交</button>
-    <button class="tag-btn" data-tag="革命政变">革命政变</button>
-    <button class="tag-btn" data-tag="改革运动">改革运动</button>
-    <button class="tag-btn" data-tag="经济贸易">经济贸易</button>
-    <button class="tag-btn" data-tag="科技发明">科技发明</button>
-    <button class="tag-btn" data-tag="文化思想">文化思想</button>
-    <button class="tag-btn" data-tag="王朝更迭">王朝更迭</button>
-    <button class="tag-btn" data-tag="殖民扩张">殖民扩张</button>
+  <!-- Tag filter bar -->
+  <div class="filter-bar" id="filter-bar">
+    <div class="filter-section">
+      <span class="filter-label">事件类型：</span>
+      <div class="tag-chips" id="tag-chips">
+        <button class="tag-chip active" data-tag="all">全部</button>
+        <button class="tag-chip" data-tag="战争" style="--chip-color:#c0392b">战争</button>
+        <button class="tag-chip" data-tag="条约外交" style="--chip-color:#2980b9">条约外交</button>
+        <button class="tag-chip" data-tag="革命政变" style="--chip-color:#8e44ad">革命政变</button>
+        <button class="tag-chip" data-tag="改革运动" style="--chip-color:#27ae60">改革运动</button>
+        <button class="tag-chip" data-tag="经济贸易" style="--chip-color:#f39c12">经济贸易</button>
+        <button class="tag-chip" data-tag="科技发明" style="--chip-color:#16a085">科技发明</button>
+        <button class="tag-chip" data-tag="文化思想" style="--chip-color:#d35400">文化思想</button>
+        <button class="tag-chip" data-tag="王朝更迭" style="--chip-color:#7f8c8d">王朝更迭</button>
+        <button class="tag-chip" data-tag="殖民扩张" style="--chip-color:#2c3e50">殖民扩张</button>
+        <button class="tag-chip" data-tag="人物" style="--chip-color:#c0392b">人物</button>
+      </div>
+    </div>
+    <div class="filter-divider"></div>
+    <div class="filter-section">
+      <span class="filter-label">人物类别：</span>
+      <div class="category-chips" id="category-chips">
+        <button class="cat-chip active" data-category="none">关闭</button>
+        <button class="cat-chip" data-category="政治" style="--chip-color:#e74c3c">政治</button>
+        <button class="cat-chip" data-category="军事" style="--chip-color:#c0392b">军事</button>
+        <button class="cat-chip" data-category="科学" style="--chip-color:#3498db">科学</button>
+        <button class="cat-chip" data-category="文学" style="--chip-color:#9b59b6">文学</button>
+        <button class="cat-chip" data-category="音乐" style="--chip-color:#e91e63">音乐</button>
+        <button class="cat-chip" data-category="艺术" style="--chip-color:#f39c12">艺术</button>
+        <button class="cat-chip" data-category="经济金融" style="--chip-color:#27ae60">经济金融</button>
+        <button class="cat-chip" data-category="哲学思想" style="--chip-color:#1abc9c">哲学思想</button>
+      </div>
+    </div>
   </div>
 
-  <div class="timeline-container" id="timeline-container">
-    <div class="track-labels" id="track-labels"></div>
+  <!-- Main layout -->
+  <div class="main-layout" id="main-layout">
+    <!-- Left sidebar: track labels -->
+    <div class="sidebar" id="sidebar">
+      <!-- Labels are injected by JS with absolute positioning -->
+    </div>
+
+    <!-- SVG canvas area -->
     <div class="canvas-wrapper" id="canvas-wrapper">
       <svg id="timeline-svg" xmlns="http://www.w3.org/2000/svg">
         <defs>
-          <filter id="glow">
-            <feGaussianBlur stdDeviation="2" result="blur"/>
-            <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+          <filter id="glow-filter">
+            <feGaussianBlur stdDeviation="2.5" result="blur"/>
+            <feMerge>
+              <feMergeNode in="blur"/>
+              <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+          </filter>
+          <filter id="shadow-filter" x="-20%" y="-20%" width="140%" height="140%">
+            <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="rgba(0,0,0,0.5)"/>
           </filter>
         </defs>
-        <g id="svg-content">
-          <g id="grid-layer"></g>
-          <g id="arcs-layer"></g>
-          <g id="tracks-layer"></g>
-          <g id="events-layer"></g>
-          <g id="labels-layer"></g>
-        </g>
+        <!-- Layers in z-order -->
+        <g id="layer-bands"></g>
+        <g id="layer-rulers"></g>
+        <g id="layer-grid"></g>
+        <g id="layer-figures"></g>
+        <g id="layer-events"></g>
+        <g id="layer-arcs"></g>
+        <g id="layer-labels"></g>
+        <g id="layer-hover"></g>
       </svg>
     </div>
   </div>
 
-  <div id="tooltip" class="tooltip hidden"></div>
-
-  <div id="detail-panel" class="detail-panel hidden">
-    <button class="detail-close" id="detail-close">×</button>
-    <div class="detail-content" id="detail-content"></div>
+  <!-- Bottom fixed time axis -->
+  <div class="time-axis" id="time-axis">
+    <canvas id="axis-canvas"></canvas>
   </div>
 
-  <script src="js/tooltip.js"></script>
+  <!-- Hover tooltip -->
+  <div id="tooltip" class="tooltip" style="display:none"></div>
+
+  <!-- Detail panel (right drawer) -->
+  <div id="detail-panel" class="detail-panel hidden">
+    <div class="detail-header">
+      <div class="detail-header-track" id="detail-track-badge"></div>
+      <button class="detail-close" id="detail-close" title="关闭 (Esc)">×</button>
+    </div>
+    <div class="detail-body" id="detail-body"></div>
+  </div>
+
   <script src="js/layout.js"></script>
+  <script src="js/tooltip.js"></script>
   <script src="js/canvas.js"></script>
   <script src="js/controls.js"></script>
   <script src="js/main.js"></script>
