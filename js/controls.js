@@ -285,8 +285,11 @@ var Controls = (function () {
     var w = wrapper ? wrapper.clientWidth : window.innerWidth;
     App.state.zoom = w / (App.YEAR_END - App.YEAR_START);
     App.state.panX = 0;
+    // Reset track order to default
+    try { localStorage.removeItem('trackOrder'); } catch (e) {}
+    App.state.trackOrder = ['china', 'uk', 'france', 'usa', 'germany', 'russia', 'japan'];
     syncURL();
-    Canvas.scheduleRender();
+    Canvas.rebuildAfterReorder();
   }
 
   // ─── URL sync ────────────────────────────────────────────────────────────
