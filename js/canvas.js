@@ -775,9 +775,6 @@ var Canvas = (function () {
     // Header center value span
     var val = document.getElementById('year-range-value');
     if (val) val.textContent = text;
-    // Year bar range
-    var bar = document.getElementById('year-bar-range');
-    if (bar) bar.textContent = text;
   }
 
   // ─── Hover band ──────────────────────────────────────────────────────────
