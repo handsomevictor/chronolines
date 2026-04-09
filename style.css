@@ -115,6 +115,14 @@ html, body {
   font-weight: 400;
 }
 
+.app-hint {
+  font-size: 10px;
+  color: var(--text-muted);
+  opacity: 0.6;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+}
+
 .header-center {
   flex: 1;
   display: flex;
@@ -392,15 +400,6 @@ html, body {
   pointer-events: none;
 }
 
-/* Hint text moved to filter bar */
-.filter-hint {
-  font-size: 11px;
-  color: var(--text-muted);
-  margin-left: auto;
-  letter-spacing: 0.2px;
-  flex-shrink: 0;
-  padding-right: 4px;
-}
 
 .main-layout {
   position: fixed;
