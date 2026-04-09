@@ -369,10 +369,10 @@ html, body {
   right: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  padding-left: 2px;
   padding-right: 14px;
   gap: 6px;
-  cursor: pointer;
+  cursor: default;
   transition: background var(--transition-fast);
   user-select: none;
 }
@@ -386,6 +386,8 @@ html, body {
   font-weight: 600;
   letter-spacing: 0.6px;
   text-transform: uppercase;
+  flex: 1;
+  text-align: right;
 }
 
 .sidebar-label-dot {
@@ -394,6 +396,45 @@ html, body {
   border-radius: 50%;
   flex-shrink: 0;
   opacity: 0.8;
+}
+
+/* =====================
+   Drag Handle
+   ===================== */
+.drag-handle {
+  cursor: grab;
+  color: rgba(255,255,255,0.18);
+  font-size: 13px;
+  padding: 0 4px 0 2px;
+  line-height: 1;
+  user-select: none;
+  flex-shrink: 0;
+  transition: color var(--transition-fast);
+  touch-action: none;
+}
+
+.drag-handle:hover {
+  color: rgba(255,255,255,0.6);
+}
+
+.sidebar-label:active .drag-handle {
+  cursor: grabbing;
+  color: rgba(255,255,255,0.7);
+}
+
+/* Ghost element created during drag */
+.drag-ghost {
+  user-select: none;
+  cursor: grabbing;
+}
+
+.drag-ghost .drag-handle {
+  color: rgba(255,255,255,0.6);
+}
+
+/* Smooth sidebar label transitions during reorder */
+.sidebar-label {
+  will-change: transform;
 }
 
 /* =====================

@@ -298,7 +298,7 @@ var Tooltip = (function () {
 
   function findEvent(eid) {
     if (!App.data) return null;
-    var tracks = App.data.tracks;
+    var tracks = App.getOrderedTracks();
     for (var i = 0; i < tracks.length; i++) {
       var t    = tracks[i];
       var evts = App.data.events[t.id] || [];

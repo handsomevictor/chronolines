@@ -2,10 +2,14 @@
  * main.js — Entry point for Chronolines v3.
  * Loads data.json and bootstraps all modules.
  * Adds userMaxLevel state for Level selector (Fix 1).
+ * Adds trackOrder state with localStorage persistence and drag-sort support.
  */
 
 (function () {
   'use strict';
+
+  // Default track order (germany and russia swapped vs data.json)
+  var DEFAULT_TRACK_ORDER = ['china', 'uk', 'france', 'usa', 'germany', 'russia', 'japan'];
 
   // ─── Global app state ───────────────────────────────────────────────────────
   window.App = {
@@ -19,6 +23,7 @@
       searchQuery:    '',     // search string
       selectedEvent:  null,   // currently selected event object
       userMaxLevel:   3,      // Fix 1: user-selected max level (1/2/3)
+      trackOrder:     null,   // array of track ids in display order
     },
 
     YEAR_START: 1700,
@@ -31,6 +36,27 @@
     getEffectiveMaxLevel: function (pixelsPerYear) {
       var zoomMax = Layout.getZoomMaxLevel(pixelsPerYear);
       return Math.min(zoomMax, App.state.userMaxLevel);
+    },
+
+    /**
+     * Return tracks array sorted by App.state.trackOrder.
+     * Falls back to App.data.tracks order if trackOrder is not set.
+     */
+    getOrderedTracks: function () {
+      if (!App.data) return [];
+      var order = App.state.trackOrder;
+      if (!order || !order.length) return App.data.tracks.slice();
+      var trackMap = {};
+      App.data.tracks.forEach(function (t) { trackMap[t.id] = t; });
+      var result = [];
+      order.forEach(function (id) {
+        if (trackMap[id]) result.push(trackMap[id]);
+      });
+      // Append any tracks not in order (safety net)
+      App.data.tracks.forEach(function (t) {
+        if (order.indexOf(t.id) === -1) result.push(t);
+      });
+      return result;
     },
   };
 
@@ -58,10 +84,31 @@
       });
   }
 
+  // ─── Track order: load from localStorage or use default ────────────────────
+
+  function loadTrackOrder() {
+    try {
+      var saved = localStorage.getItem('trackOrder');
+      if (saved) {
+        var parsed = JSON.parse(saved);
+        // Validate: must contain all track ids from the default order
+        var allIds = DEFAULT_TRACK_ORDER;
+        if (Array.isArray(parsed) &&
+            parsed.length === allIds.length &&
+            parsed.every(function (id) { return allIds.indexOf(id) !== -1; })) {
+          return parsed;
+        }
+      }
+    } catch (e) { /* ignore */ }
+    return DEFAULT_TRACK_ORDER.slice();
+  }
+
   function onReady() {
+    App.state.trackOrder = loadTrackOrder();
     Canvas.init();
     Tooltip.init();
     Controls.init();
+    DragSort.init();
     Canvas.render();
   }
 

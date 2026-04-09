@@ -106,7 +106,7 @@ var Canvas = (function () {
   function updateSize() {
     svgW = wrapper.clientWidth;
     // Fix 6: SVG height = total of all tracks (enables vertical scroll)
-    var numTracks = App.data ? App.data.tracks.length : 7;
+    var numTracks = App.data ? App.getOrderedTracks().length : 7;
     svgH = numTracks * TRACK_HEIGHT;
 
     svg.setAttribute('width', svgW);
@@ -143,7 +143,7 @@ var Canvas = (function () {
 
   function buildSidebar() {
     sidebar.innerHTML = '';
-    var tracks = App.data.tracks;
+    var tracks = App.getOrderedTracks();
 
     tracks.forEach(function (track, i) {
       var color = TRACK_COLORS[track.id] || track.color || '#888';
@@ -151,12 +151,28 @@ var Canvas = (function () {
 
       var label = document.createElement('div');
       label.className = 'sidebar-label';
+      label.setAttribute('data-track-id', track.id);
+      label.setAttribute('data-track-index', i);
       label.style.top    = topY + 'px';
       label.style.height = '18px';
 
-      label.innerHTML =
-        '<span class="sidebar-label-name" style="color:' + color + '">' + track.name + '</span>' +
-        '<span class="sidebar-label-dot" style="background:' + color + '"></span>';
+      var handle = document.createElement('span');
+      handle.className = 'drag-handle';
+      handle.textContent = '\u283f'; // ⠿ braille pattern
+      handle.title = '拖拽排序';
+
+      var nameSpan = document.createElement('span');
+      nameSpan.className = 'sidebar-label-name';
+      nameSpan.style.color = color;
+      nameSpan.textContent = track.name;
+
+      var dot = document.createElement('span');
+      dot.className = 'sidebar-label-dot';
+      dot.style.background = color;
+
+      label.appendChild(handle);
+      label.appendChild(nameSpan);
+      label.appendChild(dot);
 
       sidebar.appendChild(label);
     });
@@ -210,7 +226,7 @@ var Canvas = (function () {
   // ─── Track bands ─────────────────────────────────────────────────────────
 
   function drawBands() {
-    var tracks = App.data.tracks;
+    var tracks = App.getOrderedTracks();
     tracks.forEach(function (track, i) {
       var color = TRACK_COLORS[track.id] || track.color || '#888';
       // Fix 0: dark alternating fills
@@ -245,7 +261,7 @@ var Canvas = (function () {
   // ─── Ruler bars ──────────────────────────────────────────────────────────
 
   function drawRulerBars(ppy, panX, range) {
-    var tracks = App.data.tracks;
+    var tracks = App.getOrderedTracks();
 
     tracks.forEach(function (track, i) {
       var rulers = track.rulers || [];
@@ -319,7 +335,7 @@ var Canvas = (function () {
     var intervals  = Layout.gridIntervals(ppy);
     var major      = intervals.major;
     var minor      = intervals.minor;
-    var totalH     = App.data.tracks.length * TRACK_HEIGHT;
+    var totalH     = App.getOrderedTracks().length * TRACK_HEIGHT;
 
     // Minor gridlines
     var startMinor = Math.ceil(range.start / minor) * minor;
@@ -359,7 +375,7 @@ var Canvas = (function () {
 
     var catColor = CATEGORY_COLORS[activeCategory] ||
                    Tooltip.CATEGORY_COLORS[activeCategory] || '#888';
-    var tracks = App.data.tracks;
+    var tracks = App.getOrderedTracks();
 
     tracks.forEach(function (trackObj, i) {
       var allFigures = (App.data.figures[trackObj.id] || []).filter(function (f) {
@@ -462,7 +478,7 @@ var Canvas = (function () {
   // ─── Events ──────────────────────────────────────────────────────────────
 
   function drawEvents(ppy, panX, levels, effectiveMax, range) {
-    var tracks     = App.data.tracks;
+    var tracks     = App.getOrderedTracks();
     var activeTag  = App.state.activeTag;
     var searchQ    = App.state.searchQuery;
     var selectedId = App.state.selectedEvent ? App.state.selectedEvent.id : null;
@@ -762,7 +778,7 @@ var Canvas = (function () {
 
     layerHover.innerHTML = '';
 
-    var totalH = App.data.tracks.length * TRACK_HEIGHT;
+    var totalH = App.getOrderedTracks().length * TRACK_HEIGHT;
     var bandW  = Math.max(ppy * 1, 2);
 
     // Fix 0: dark hover band
@@ -819,7 +835,7 @@ var Canvas = (function () {
 
     var ppy    = App.state.zoom;
     var panX   = App.state.panX;
-    var tracks = App.data.tracks;
+    var tracks = App.getOrderedTracks();
 
     var srcTrackIdx = -1;
     tracks.forEach(function (t, i) {
@@ -905,21 +921,30 @@ var Canvas = (function () {
     return title.substring(0, maxChars - 1) + '…';
   }
 
+  // ─── Rebuild after track reorder ─────────────────────────────────────────
+
+  function rebuildAfterReorder() {
+    updateSize();
+    buildSidebar();
+    scheduleRender();
+  }
+
   // ─── Public API ───────────────────────────────────────────────────────────
 
   return {
-    init:            init,
-    render:          render,
-    scheduleRender:  scheduleRender,
-    drawRelatedArcs: drawRelatedArcs,
-    clearArcs:       clearArcs,
-    panToYear:       panToYear,
-    TRACK_HEIGHT:    TRACK_HEIGHT,
-    RULER_H:         RULER_H,
+    init:               init,
+    render:             render,
+    scheduleRender:     scheduleRender,
+    rebuildAfterReorder: rebuildAfterReorder,
+    drawRelatedArcs:    drawRelatedArcs,
+    clearArcs:          clearArcs,
+    panToYear:          panToYear,
+    TRACK_HEIGHT:       TRACK_HEIGHT,
+    RULER_H:            RULER_H,
     TRACK_LINE_Y_OFFSET: TRACK_LINE_Y_OFFSET,
-    TRACK_COLORS:    TRACK_COLORS,
-    CATEGORY_COLORS: CATEGORY_COLORS,
-    getSvgW:         function () { return svgW; },
-    getSvgH:         function () { return svgH; },
+    TRACK_COLORS:       TRACK_COLORS,
+    CATEGORY_COLORS:    CATEGORY_COLORS,
+    getSvgW:            function () { return svgW; },
+    getSvgH:            function () { return svgH; },
   };
 })();
