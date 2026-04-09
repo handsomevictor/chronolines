@@ -19,14 +19,12 @@ var Canvas = (function () {
   var TRACK_HEIGHT        = 160;
   var RULER_H             = 8;
   var TRACK_LINE_Y_OFFSET = 60;   // from top of row to center line
-  // Figure swim lanes start 14px below the center line (relative to track top + RULER_H)
-  // Center line is at RULER_H + TRACK_LINE_Y_OFFSET = 68px from track top.
-  // Lane area: 68 + 14 = 82px from top, up to 156px (leaving 4px margin).
-  // Available: 74px → fits 6 lanes of 8px + 3px gap (11px each): 6*11 - 3 = 63px ✓
-  var FIGURE_LANE_START   = TRACK_LINE_Y_OFFSET + 14;  // from RULER_H baseline
+  var FIGURE_LANE_START   = TRACK_LINE_Y_OFFSET + 14;
   var FIGURE_LANE_H       = 8;
   var FIGURE_LANE_GAP     = 3;
   var MAX_FIGURE_LANES    = 6;
+  var PAD_TOP             = 24;   // breathing room at top of SVG
+  var PAD_BOTTOM          = 28;   // breathing room at bottom of SVG
 
   var DOT_R = { 1: 5, 2: 3.5, 3: 2 };
 
@@ -105,9 +103,8 @@ var Canvas = (function () {
 
   function updateSize() {
     svgW = wrapper.clientWidth;
-    // Fix 6: SVG height = total of all tracks (enables vertical scroll)
     var numTracks = App.data ? App.getOrderedTracks().length : 7;
-    svgH = numTracks * TRACK_HEIGHT;
+    svgH = PAD_TOP + numTracks * TRACK_HEIGHT + PAD_BOTTOM;
 
     svg.setAttribute('width', svgW);
     svg.setAttribute('height', svgH);
@@ -147,7 +144,7 @@ var Canvas = (function () {
 
     tracks.forEach(function (track, i) {
       var color = TRACK_COLORS[track.id] || track.color || '#888';
-      var topY  = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET - 9;
+      var topY  = PAD_TOP + i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET - 9;
 
       var label = document.createElement('div');
       label.className = 'sidebar-label';
@@ -231,7 +228,7 @@ var Canvas = (function () {
       var color = TRACK_COLORS[track.id] || track.color || '#888';
       // Fix 0: dark alternating fills
       var fill  = i % 2 === 0 ? '#0d0d0d' : '#111111';
-      var y = i * TRACK_HEIGHT;
+      var y = PAD_TOP + i * TRACK_HEIGHT;
 
       var rect = mkSvg('rect', {
         x: 0, y: y, width: svgW, height: TRACK_HEIGHT,
@@ -266,7 +263,7 @@ var Canvas = (function () {
     tracks.forEach(function (track, i) {
       var rulers = track.rulers || [];
       var color  = TRACK_COLORS[track.id] || track.color || '#888';
-      var y      = i * TRACK_HEIGHT;
+      var y      = PAD_TOP + i * TRACK_HEIGHT;
 
       rulers.forEach(function (ruler) {
         var rStart = Math.max(ruler.startYear, range.start - 1);
@@ -335,7 +332,7 @@ var Canvas = (function () {
     var intervals  = Layout.gridIntervals(ppy);
     var major      = intervals.major;
     var minor      = intervals.minor;
-    var totalH     = App.getOrderedTracks().length * TRACK_HEIGHT;
+    var totalH     = PAD_TOP + App.getOrderedTracks().length * TRACK_HEIGHT + PAD_BOTTOM;
 
     // Minor gridlines
     var startMinor = Math.ceil(range.start / minor) * minor;
@@ -385,7 +382,7 @@ var Canvas = (function () {
 
       if (!allFigures.length) return;
 
-      var trackTop = i * TRACK_HEIGHT;
+      var trackTop = PAD_TOP + i * TRACK_HEIGHT;
 
       // Fix 5: assign swim lanes
       var lanesAssigned = Layout.assignFigureLanes(allFigures);
@@ -485,7 +482,7 @@ var Canvas = (function () {
 
     tracks.forEach(function (track, i) {
       var color   = TRACK_COLORS[track.id] || track.color || '#888';
-      var lineY   = i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      var lineY   = PAD_TOP + i * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
       var allEvts = App.data.events[track.id] || [];
 
       // Filter to visible year range and effective max level
@@ -758,12 +755,13 @@ var Canvas = (function () {
 
   function updateYearDisplay(ppy, panX) {
     var range = Layout.visibleRange(panX, svgW, ppy);
+    var s = Math.max(App.YEAR_START, Math.round(range.start));
+    var e = Math.min(App.YEAR_END,   Math.round(range.end));
+    var text = s + ' \u2014 ' + e;
     var el = document.getElementById('year-range-display');
-    if (el) {
-      var s = Math.max(App.YEAR_START, Math.round(range.start));
-      var e = Math.min(App.YEAR_END,   Math.round(range.end));
-      el.textContent = s + ' \u2014 ' + e;
-    }
+    if (el) el.textContent = text;
+    var bar = document.getElementById('year-bar-range');
+    if (bar) bar.textContent = text;
   }
 
   // ─── Hover band ──────────────────────────────────────────────────────────
@@ -778,7 +776,7 @@ var Canvas = (function () {
 
     layerHover.innerHTML = '';
 
-    var totalH = App.getOrderedTracks().length * TRACK_HEIGHT;
+    var totalH = PAD_TOP + App.getOrderedTracks().length * TRACK_HEIGHT + PAD_BOTTOM;
     var bandW  = Math.max(ppy * 1, 2);
 
     // Fix 0: dark hover band
@@ -847,7 +845,7 @@ var Canvas = (function () {
     if (srcTrackIdx < 0) return;
 
     var srcX = Layout.yearToX(event.year, panX, ppy);
-    var srcY = srcTrackIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+    var srcY = PAD_TOP + srcTrackIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
 
     event.related.forEach(function (rid) {
       var res = Tooltip.findEvent(rid);
@@ -859,7 +857,7 @@ var Canvas = (function () {
       if (relIdx < 0) return;
 
       var tgtX  = Layout.yearToX(relEvt.year, panX, ppy);
-      var tgtY  = relIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
+      var tgtY  = PAD_TOP + relIdx * TRACK_HEIGHT + RULER_H + TRACK_LINE_Y_OFFSET;
       var color = TRACK_COLORS[relTrack.id] || relTrack.color || '#888';
 
       var dx  = tgtX - srcX;

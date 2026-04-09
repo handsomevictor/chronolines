@@ -44,6 +44,7 @@
   /* Layout */
   --header-height:      56px;
   --filter-height:      40px;
+  --yearbar-height:     32px;
   --axis-height:        40px;
   --sidebar-width:      120px;
   --track-height:       160px;
@@ -340,9 +341,50 @@ html, body {
 /* =====================
    Main Layout
    ===================== */
-.main-layout {
+/* =====================
+   Year Bar
+   ===================== */
+.year-bar {
   position: fixed;
   top: calc(var(--header-height) + var(--filter-height));
+  left: 0;
+  right: 0;
+  height: var(--yearbar-height);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px 0 calc(var(--sidebar-width) + 16px);
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  z-index: 185;
+}
+
+.year-bar-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+.year-bar-range {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.year-bar-hint {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-left: auto;
+  letter-spacing: 0.2px;
+}
+
+.main-layout {
+  position: fixed;
+  top: calc(var(--header-height) + var(--filter-height) + var(--yearbar-height));
   left: 0;
   right: 0;
   bottom: var(--axis-height);
