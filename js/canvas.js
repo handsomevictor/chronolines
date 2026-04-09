@@ -15,8 +15,8 @@ var Canvas = (function () {
   // ─── Constants ─────────────────────────────────────────────────────────────
 
   var TRACK_HEIGHT        = 192;
-  var RULER_H             = 16;   // increased from 8 — taller ruler bar, bigger text
-  var TRACK_LINE_Y_OFFSET = 72;   // increased from 60 — more gap between ruler and event line
+  var RULER_H             = 11;   // slightly taller than original 8px
+  var TRACK_LINE_Y_OFFSET = 64;   // slightly more gap between ruler and event line (was 60)
   var FIGURE_LANE_START   = TRACK_LINE_Y_OFFSET + 14;
   var PAD_TOP             = 96;   // breathing room at top of SVG
   var PAD_BOTTOM          = 48;   // breathing room at bottom of SVG
@@ -320,7 +320,7 @@ var Canvas = (function () {
               x: txtX,
               y: y + RULER_H / 2,
               fill: 'rgba(255,255,255,0.9)',
-              'font-size': 11,
+              'font-size': 10,
               'font-weight': 600,
               'font-family': 'Inter, sans-serif',
               'pointer-events': 'none',
@@ -336,7 +336,7 @@ var Canvas = (function () {
   }
 
   function truncateRulerName(name, maxPx) {
-    var maxChars = Math.floor(maxPx / 7);
+    var maxChars = Math.floor(maxPx / 6.5);
     if (name.length <= maxChars) return name;
     return name.substring(0, Math.max(2, maxChars - 1)) + '…';
   }
@@ -542,7 +542,9 @@ var Canvas = (function () {
       var l2events = ppy > 2 ? tagged.filter(function (e) { return e.level === 2; }) : [];
       var labelEvts = l1events.concat(l2events);
       var labelMap = {};
-      Layout.layoutLabels(labelEvts, lineY, ppy, panX, svgW).forEach(function (lp) {
+      // minLabelY: labels must not go above the bottom of the ruler bar (+4px margin)
+      var minLabelY = PAD_TOP + i * TRACK_HEIGHT + RULER_H + 4;
+      Layout.layoutLabels(labelEvts, lineY, ppy, panX, svgW, minLabelY).forEach(function (lp) {
         labelMap[lp.event.id] = lp;
       });
 

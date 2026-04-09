@@ -173,7 +173,7 @@ var Layout = (function () {
   var LABEL_STEP  = LABEL_H + LABEL_GAP;
   var LABEL_X_PAD = 4;
 
-  function layoutLabels(events, trackY, pixelsPerYear, panX, svgWidth) {
+  function layoutLabels(events, trackY, pixelsPerYear, panX, svgWidth, minLabelY) {
     if (!events || !events.length) return [];
 
     var items = events.map(function (e) {
@@ -197,6 +197,8 @@ var Layout = (function () {
 
       for (var lane = 0; lane < 12; lane++) {
         labelY = baseY - lane * LABEL_STEP;
+        // Stop if this lane would overlap with the ruler bar
+        if (minLabelY !== undefined && labelY < minLabelY) break;
         var overlap = placed.some(function (p) {
           if (p.labelY === null) return false;
           var xOverlap = Math.abs(p.x - item.x) < ((p.w + item.w) / 2 + LABEL_X_PAD);
