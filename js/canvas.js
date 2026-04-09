@@ -21,11 +21,11 @@ var Canvas = (function () {
   var PAD_TOP             = 96;   // breathing room at top of SVG
   var PAD_BOTTOM          = 48;   // breathing room at bottom of SVG
 
-  // Figure lane size presets (driven by App.state.figureSize)
+  // Figure lane size — matches ruler bar dimensions (RULER_H / ruler font)
   var FIGURE_SIZES = {
-    S: { laneH: 9,  gap: 3, font: 9,  charW: 6, maxLanes: 6 },
-    M: { laneH: 13, gap: 4, font: 11, charW: 7, maxLanes: 6 },
-    L: { laneH: 17, gap: 4, font: 13, charW: 8, maxLanes: 5 },
+    S: { laneH: RULER_H, gap: 3, font: 10, charW: 6.5, maxLanes: 6 },
+    M: { laneH: RULER_H, gap: 3, font: 10, charW: 6.5, maxLanes: 6 },
+    L: { laneH: RULER_H, gap: 3, font: 10, charW: 6.5, maxLanes: 6 },
   };
 
   var DOT_R = { 1: 5, 2: 3.5, 3: 2 };
