@@ -2,13 +2,11 @@
  * canvas.js — SVG rendering engine (v3 — dark theme + all fixes).
  *
  * Layout constants (all in px):
- *   TRACK_HEIGHT       = 160   (Fix 6: increased from 108 to 160)
+ *   TRACK_HEIGHT       = 192   (increased from 160, +20%)
  *   RULER_H            = 8
  *   TRACK_LINE_Y_OFFSET = 60   (center line from top of row)
- *   FIGURE_LANE_START  = TRACK_LINE_Y_OFFSET + 20  (first figure swim lane)
- *   FIGURE_LANE_H      = 8     (height of each lane bar)
- *   FIGURE_LANE_GAP    = 3     (gap between swim lanes)
- *   MAX_FIGURE_LANES   = 8
+ *   FIGURE_LANE_START  = TRACK_LINE_Y_OFFSET + 14  (first figure swim lane)
+ *   Figure lane sizes driven by App.state.figureSize ('S'|'M'|'L')
  */
 
 var Canvas = (function () {
@@ -16,15 +14,19 @@ var Canvas = (function () {
 
   // ─── Constants ─────────────────────────────────────────────────────────────
 
-  var TRACK_HEIGHT        = 160;
+  var TRACK_HEIGHT        = 192;
   var RULER_H             = 8;
   var TRACK_LINE_Y_OFFSET = 60;   // from top of row to center line
   var FIGURE_LANE_START   = TRACK_LINE_Y_OFFSET + 14;
-  var FIGURE_LANE_H       = 8;
-  var FIGURE_LANE_GAP     = 3;
-  var MAX_FIGURE_LANES    = 6;
   var PAD_TOP             = 96;   // breathing room at top of SVG
   var PAD_BOTTOM          = 48;   // breathing room at bottom of SVG
+
+  // Figure lane size presets (driven by App.state.figureSize)
+  var FIGURE_SIZES = {
+    S: { laneH: 9,  gap: 3, font: 9,  charW: 6, maxLanes: 6 },
+    M: { laneH: 13, gap: 4, font: 11, charW: 7, maxLanes: 6 },
+    L: { laneH: 17, gap: 4, font: 13, charW: 8, maxLanes: 5 },
+  };
 
   var DOT_R = { 1: 5, 2: 3.5, 3: 2 };
 
@@ -384,6 +386,12 @@ var Canvas = (function () {
     var activeCategory = App.state.activeCategory;
     if (!activeCategory || activeCategory === 'none') return;
 
+    // Pick lane size preset
+    var fs = FIGURE_SIZES[App.state.figureSize] || FIGURE_SIZES.M;
+    var FIGURE_LANE_H   = fs.laneH;
+    var FIGURE_LANE_GAP = fs.gap;
+    var MAX_FIGURE_LANES = fs.maxLanes;
+
     var catColor = CATEGORY_COLORS[activeCategory] ||
                    Tooltip.CATEGORY_COLORS[activeCategory] || '#888';
     var tracks = App.getOrderedTracks();
@@ -430,7 +438,7 @@ var Canvas = (function () {
           height: FIGURE_LANE_H,
           fill: catColor,
           opacity: 0.7,
-          rx: 4,
+          rx: Math.min(4, FIGURE_LANE_H / 2),
           class: 'figure-bar',
         });
 
@@ -444,14 +452,14 @@ var Canvas = (function () {
             x: drawX1 + 5,
             y: barY + FIGURE_LANE_H / 2,
             fill: 'rgba(255,255,255,0.9)',
-            'font-size': 9,
+            'font-size': fs.font,
             'font-weight': 500,
             'font-family': 'Inter, sans-serif',
             'dominant-baseline': 'central',
             'pointer-events': 'none',
             'text-anchor': 'start',
           });
-          var maxChars = Math.floor((barW - 10) / 6);
+          var maxChars = Math.floor((barW - 10) / fs.charW);
           label.textContent = truncateName(fig.name, maxChars);
           nameG.appendChild(label);
 

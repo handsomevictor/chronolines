@@ -20,6 +20,7 @@
       panX:           0,      // horizontal pixel offset
       activeTag:      'all',  // tag filter
       activeCategory: 'none', // figure category filter
+      figureSize:     'M',   // figure lane size: 'S' | 'M' | 'L'
       searchQuery:    '',     // search string
       selectedEvent:  null,   // currently selected event object
       userMaxLevel:   3,      // Fix 1: user-selected max level (1/2/3)

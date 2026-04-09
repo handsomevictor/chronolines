@@ -47,7 +47,7 @@
   --yearbar-height:     32px;
   --axis-height:        40px;
   --sidebar-width:      120px;
-  --track-height:       160px;
+  --track-height:       192px;
   --ruler-height:       8px;
   --track-line-offset:  60px;
 
@@ -358,6 +358,43 @@ html, body {
   color: #ffffff;
   border-color: var(--accent);
   font-weight: 600;
+}
+
+/* Figure lane size buttons */
+.figure-size-btns {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 6px;
+  border-left: 1px solid var(--border);
+  padding-left: 8px;
+}
+
+.fig-size-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  line-height: 1.4;
+  min-width: 22px;
+}
+
+.fig-size-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+  background: var(--bg-hover);
+}
+
+.fig-size-btn.active {
+  color: var(--accent);
+  border-color: rgba(79,142,247,0.4);
+  background: rgba(79,142,247,0.08);
 }
 
 /* =====================
