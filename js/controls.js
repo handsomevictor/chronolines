@@ -10,8 +10,10 @@ var Controls = (function () {
   'use strict';
 
   var wrapper;
+  var mainLayout;
   var isDragging = false;
   var lastMouseX = 0;
+  var lastMouseY = 0;
 
   // Touch state
   var touch1LastX    = 0;
@@ -26,7 +28,8 @@ var Controls = (function () {
   var ZOOM_STEP = 1.25;
 
   function init() {
-    wrapper = document.getElementById('canvas-wrapper');
+    wrapper    = document.getElementById('canvas-wrapper');
+    mainLayout = document.getElementById('main-layout');
 
     // ── Zoom / Pan ────────────────────────────────────────────────────────
     wrapper.addEventListener('wheel', onWheel, { passive: false });
@@ -182,15 +185,19 @@ var Controls = (function () {
     if (e.button !== 0) return;
     isDragging = true;
     lastMouseX = e.clientX;
+    lastMouseY = e.clientY;
     wrapper.classList.add('dragging');
   }
 
   function onMouseMove(e) {
     if (!isDragging) return;
     var dx     = e.clientX - lastMouseX;
+    var dy     = e.clientY - lastMouseY;
     lastMouseX = e.clientX;
+    lastMouseY = e.clientY;
     App.state.panX += dx;
     clampPan();
+    clampScrollY(-dy);   // drag up → content scrolls up (dy>0 means mouse moved down)
     Canvas.scheduleRender();
   }
 
@@ -199,6 +206,13 @@ var Controls = (function () {
     isDragging = false;
     wrapper.classList.remove('dragging');
     syncURL();
+  }
+
+  // Clamp vertical scroll: browser naturally clamps scrollTop to [0, scrollHeight-clientHeight]
+  function clampScrollY(delta) {
+    if (!mainLayout) return;
+    var maxScroll = mainLayout.scrollHeight - mainLayout.clientHeight;
+    mainLayout.scrollTop = Math.max(0, Math.min(maxScroll, mainLayout.scrollTop + delta));
   }
 
   // ─── Touch ──────────────────────────────────────────────────────────────
